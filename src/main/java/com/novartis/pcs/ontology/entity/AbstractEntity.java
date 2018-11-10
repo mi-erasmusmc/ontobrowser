@@ -18,6 +18,7 @@ limitations under the License.
 package com.novartis.pcs.ontology.entity;
 
 import static javax.persistence.GenerationType.SEQUENCE;
+import static javax.persistence.GenerationType.IDENTITY;
 
 import java.io.Serializable;
 
@@ -38,10 +39,10 @@ public abstract class AbstractEntity implements Serializable {
 	
 	@Id
 	// Oracle sequence implementation
-	@SequenceGenerator(name="ONTOLOGY_ENTITY_ID_SEQ", sequenceName="PRIMARY_KEY_SEQ", allocationSize=1)
-	@GeneratedValue(strategy=SEQUENCE, generator="ONTOLOGY_ENTITY_ID_SEQ")
+	//@SequenceGenerator(name="ONTOLOGY_ENTITY_ID_SEQ", sequenceName="PRIMARY_KEY_SEQ", allocationSize=1)
+	//@GeneratedValue(strategy=SEQUENCE, generator="ONTOLOGY_ENTITY_ID_SEQ")
 	// Non-Oracle (e.g. MySQL, PostgreSQL) auto increment implementation
-	// @GeneratedValue(strategy=IDENTITY)
+	@GeneratedValue(strategy=IDENTITY)
 	private long id;
 		
     protected AbstractEntity() {

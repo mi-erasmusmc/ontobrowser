@@ -354,7 +354,8 @@ public class OntologiesServlet extends HttpServlet {
 	
 	public Curator loadCurator(HttpServletRequest request) {
 		Curator curator = null;
-		String username = getUsername(request);
+		// String username = getUsername(request);
+		String username = "SYSTEM";
 						
 		if(username != null) {
 			curator = curatorService.loadByUsername(username);
