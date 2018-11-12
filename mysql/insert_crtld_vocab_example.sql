@@ -55,5 +55,4 @@ VALUES (
   'Specimen',
   'C77529'
   1,
-  1,
   1);
