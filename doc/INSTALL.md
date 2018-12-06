@@ -72,7 +72,7 @@ Below is an example configuration for an Mysql database (from the `$JBOSS_HOME/s
 		 <password>root</password>
 	</security>
 	</datasource>
-datasource jndi-name="java:/MySqlDS" pool-name="MySqlDS">
+<datasource jndi-name="java:/MySqlDS" pool-name="MySqlDS">
 	                    <connection-url>jdbc:mysql://localhost:3306/mysqldb</connection-url>
 	                    <driver-class>com.mysql.jdbc.Driver</driver-class>
 	                    <driver>mysql-connector-java-8.0.13.jar</driver>
@@ -224,7 +224,7 @@ The following example downloads the [Mouse adult gross anatomy](http://www.obofo
 $ curl -s -S -O -L http://purl.obolibrary.org/obo/ma.obo
 $ curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@ma.obo" -u SYSTEM "http://localhost/ontobrowser/ontologies/Mouse%20adult%20gross%20anatomy"
 ```
-
+Note: This setting works with the String username = "SYSTEM" in java file.
 Note: Proxy parameters or environment variables maybe be require when downloading behind a corporate firewall.
 
 ## Setup a Controlled Vocabulary
