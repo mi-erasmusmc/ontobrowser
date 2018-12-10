@@ -229,7 +229,7 @@ Note: This setting works with the String username = "SYSTEM" in java file.
 Note: Proxy parameters or environment variables maybe be require when downloading behind a corporate firewall.
 
 ## Setup a Controlled Vocabulary
-An example SQL script to setup a *controlled vocabulary* is provided in the [mysql](../mysql) directory of the project: [insert_crtld_vocab_example.sql](../sql/insert_crtld_vocab_example.sql). The example defines the [SEND Specimen](http://evs.nci.nih.gov/ftp1/CDISC/SEND/SEND%20Terminology.html#CL.C77529.SPEC) code list in the database as a *controlled vocabulary* so the terms from the code list can be subsequently loaded (and then mapped to the *Mouse adult gross anatomy* ontology loaded previously).
+An example SQL script to setup a *controlled vocabulary* is provided in the [mysql](../mysql) directory of the project: [insert_crtld_vocab_example.sql](../mysql/insert_crtld_vocab_example.sql). The example defines the [SEND Specimen](http://evs.nci.nih.gov/ftp1/CDISC/SEND/SEND%20Terminology.html#CL.C77529.SPEC) code list in the database as a *controlled vocabulary* so the terms from the code list can be subsequently loaded (and then mapped to the *Mouse adult gross anatomy* ontology loaded previously).
 
 The following is an example on how to run the example SQL script using Oracle's SQL*Plus command line tool:
 
