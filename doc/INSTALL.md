@@ -243,7 +243,7 @@ The recommend technique to load *controlled vocabulary* terms is in batch using 
 The *controlled vocabulary* terms must be loaded into the `CTRLD_VOCAB_TERM` table.
 
 ## Add a Curator
-The SQL DML scripts to add a curator to the OntoBrowser database schema are located in the [mysql](../mysql) directory of the project. Use the corresponding DML script for the selected database e.g. [insert_curator_mysql.sql](../mysql/insert_curator_mysql.sql) for Oracle databases.
+The SQL DML scripts to add a curator to the OntoBrowser database schema are located in the [mysql](../mysql) directory of the project. Use the corresponding DML script for the selected database e.g. [insert_curator_mysql.sql](../mysql/insert_curator_mysql.sql) for Mysql databases.
 
 The following is an example on how to add a curator with the username *smith* to the database using Oracle's SQL*Plus command line tool:
 
