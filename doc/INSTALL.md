@@ -29,7 +29,7 @@ CREATE SCHEMA `Ontobrowser Schema` ;
 See the [database design](./database_design.pdf) documentation for the more information regarding the database schema. 
 
 ### Insert initial data
-The SQL DML scripts to insert initial data into the OntoBrowser database schema are located in the [sql](../sql) directory of the project. Use the corresponding MYSQL script for the selected database e.g. [insert_initial_data_mysql.sql](../sql/insert_initial_data_mysql.sql) for Mysql databases
+The SQL DML scripts to insert initial data into the OntoBrowser database schema are located in the [mysql](../mysql) directory of the project. Use the corresponding MYSQL script for the selected database e.g. [insert_initial_data_mysql.sql](../mysql/insert_initial_data_mysql.sql) for Mysql databases
 
 The following is an example on how to insert initial data into the OntoBrowser schema using MYSQL command line tool:
 
@@ -225,10 +225,11 @@ $ curl -s -S -O -L http://purl.obolibrary.org/obo/ma.obo
 $ curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@ma.obo" -u SYSTEM "http://localhost/ontobrowser/ontologies/Mouse%20adult%20gross%20anatomy"
 ```
 Note: This setting works with the String username = "SYSTEM" in java file.
+
 Note: Proxy parameters or environment variables maybe be require when downloading behind a corporate firewall.
 
 ## Setup a Controlled Vocabulary
-An example SQL script to setup a *controlled vocabulary* is provided in the [sql](../sql) directory of the project: [insert_crtld_vocab_example.sql](../sql/insert_crtld_vocab_example.sql). The example defines the [SEND Specimen](http://evs.nci.nih.gov/ftp1/CDISC/SEND/SEND%20Terminology.html#CL.C77529.SPEC) code list in the database as a *controlled vocabulary* so the terms from the code list can be subsequently loaded (and then mapped to the *Mouse adult gross anatomy* ontology loaded previously).
+An example SQL script to setup a *controlled vocabulary* is provided in the [mysql](../mysql) directory of the project: [insert_crtld_vocab_example.sql](../sql/insert_crtld_vocab_example.sql). The example defines the [SEND Specimen](http://evs.nci.nih.gov/ftp1/CDISC/SEND/SEND%20Terminology.html#CL.C77529.SPEC) code list in the database as a *controlled vocabulary* so the terms from the code list can be subsequently loaded (and then mapped to the *Mouse adult gross anatomy* ontology loaded previously).
 
 The following is an example on how to run the example SQL script using Oracle's SQL*Plus command line tool:
 
@@ -242,7 +243,7 @@ The recommend technique to load *controlled vocabulary* terms is in batch using 
 The *controlled vocabulary* terms must be loaded into the `CTRLD_VOCAB_TERM` table.
 
 ## Add a Curator
-The SQL DML scripts to add a curator to the OntoBrowser database schema are located in the [sql](../sql) directory of the project. Use the corresponding DML script for the selected database e.g. [insert_curator_oracle.sql](../sql/insert_curator_oracle.sql) for Oracle databases.
+The SQL DML scripts to add a curator to the OntoBrowser database schema are located in the [mysql](../mysql) directory of the project. Use the corresponding DML script for the selected database e.g. [insert_curator_mysql.sql](../mysql/insert_curator_mysql.sql) for Oracle databases.
 
 The following is an example on how to add a curator with the username *smith* to the database using Oracle's SQL*Plus command line tool:
 
