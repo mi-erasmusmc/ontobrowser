@@ -13,7 +13,7 @@ Building and Deploying OntoBrowser
 ## Database Requirements
 OntoBrowser requires access to a relational database supported by Hibernate (the ORM used by Wildfly) e.g. Oracle, MySQL, PostgreSQL etc... See [Supported Databases](https://developer.jboss.org/wiki/SupportedDatabases2) for more information.
 
-**Note:** OntoBrowser has been extensively tested and deployed in production environments using Oracle databases (versions 10g and 11g). It is recommend that system testing is performed prior to using any non-Oracle databases in a production environment.
+
 
 ## Database setup
 ### Create Schema
