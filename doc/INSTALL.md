@@ -87,6 +87,22 @@ Below is an example configuration for an Mysql database (from the `$JBOSS_HOME/s
 		 </validation>
 		</datasource>
 ```
+### Module setup
+For module setup, system require module.xml file under module folder in jboss with mysql-connector jar file.
+
+```
+<?xml version="1.0" encoding="UTF-8"?> 
+  <module xmlns="urn:jboss:module:1.1" name="com.mysql"> 
+     <resources> 
+         <resource-root path="mysql-connector-java-5.1.35-bin.jar"/>
+     </resources> 
+     <dependencies> 
+         <module name="javax.api"/> 
+         <module name="javax.transaction.api"/> 
+     </dependencies> 
+ </module>
+ ```
+ 
 ### Email Setup
 By default Wildfly is configured to send email using STMP on localhost port 25. See the [Mail Service Configuration](http://www.mastertheboss.com/jboss-server/jboss-configuration/jboss-mail-service-configuration) documentation to configure a remote STMP server. 
 
@@ -231,11 +247,7 @@ Note: Proxy parameters or environment variables maybe be require when downloadin
 ## Setup a Controlled Vocabulary
 An example SQL script to setup a *controlled vocabulary* is provided in the [mysql](../mysql) directory of the project: [insert_crtld_vocab_example.sql](../mysql/insert_crtld_vocab_example.sql). The example defines the [SEND Specimen](http://evs.nci.nih.gov/ftp1/CDISC/SEND/SEND%20Terminology.html#CL.C77529.SPEC) code list in the database as a *controlled vocabulary* so the terms from the code list can be subsequently loaded (and then mapped to the *Mouse adult gross anatomy* ontology loaded previously).
 
-The following is an example on how to run the example SQL script using Oracle's SQL*Plus command line tool:
 
-```bash
-$ sqlplus ontobrowser@DEV @insert_crtld_vocab_example.sql
-```
 
 ## Loading Controlled Vocabulary Terms
 The recommend technique to load *controlled vocabulary* terms is in batch using a dedicated [ETL](http://en.wikipedia.org/wiki/Extract,_transform,_load) tool e.g. [Informatica](http://www.informatica.com), [Kettle](http://community.pentaho.com/projects/data-integration/), [Talend](https://www.talend.com) etc...
@@ -245,9 +257,5 @@ The *controlled vocabulary* terms must be loaded into the `CTRLD_VOCAB_TERM` tab
 ## Add a Curator
 The SQL DML scripts to add a curator to the OntoBrowser database schema are located in the [mysql](../mysql) directory of the project. Use the corresponding DML script for the selected database e.g. [insert_curator_mysql.sql](../mysql/insert_curator_mysql.sql) for Mysql databases.
 
-The following is an example on how to add a curator with the username *smith* to the database using Oracle's SQL*Plus command line tool:
 
-```bash
-$ sqlplus ontobrowser@DEV @insert_curator_oracle.sql 'smith'
-```
 
