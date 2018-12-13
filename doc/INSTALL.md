@@ -248,7 +248,6 @@ An example SQL script to setup a *controlled vocabulary* is provided in the [mys
 
 
 ## Loading Controlled Vocabulary Terms
-The recommend technique to load *controlled vocabulary* terms is in batch using a dedicated [ETL](http://en.wikipedia.org/wiki/Extract,_transform,_load) tool e.g. [Informatica](http://www.informatica.com), [Kettle](http://community.pentaho.com/projects/data-integration/), [Talend](https://www.talend.com) etc...
 
 The *controlled vocabulary* terms must be loaded into the `CTRLD_VOCAB_TERM` table.
 
