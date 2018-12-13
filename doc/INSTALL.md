@@ -103,8 +103,6 @@ For module setup, system require module.xml file under module folder in jboss wi
  </module>
  ```
  
-### Email Setup
-By default Wildfly is configured to send email using STMP on localhost port 25. See the [Mail Service Configuration](http://www.mastertheboss.com/jboss-server/jboss-configuration/jboss-mail-service-configuration) documentation to configure a remote STMP server. 
 
 ### OntoBrowser Configuration
 Edit the `$JBOSS_HOME/standalone/configuration/standalone.xml` configuration file and add the following XML to the `<bindings>` element of the `urn:jboss:domain:naming:2.0` subsystem configuration. Change configuration values to suit the deployment environment:
