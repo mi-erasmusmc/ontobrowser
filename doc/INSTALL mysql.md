@@ -1,8 +1,8 @@
 Building and Deploying OntoBrowser
 ---
 ## System Requirements
-* [Mysql](https://dev.mysql.com/downloads/mysql/) version 8 
-* [Mysql connector-java-jar file](https://dev.mysql.com/downloads/connector/j/5.1.html) - [Download]
+* [Mysql](https://dev.mysql.com/downloads/mysql/) server and client version 8 or above
+* [Mysql connector-java-jar file](https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-8.0.14.zip) - [Download]
 * [Java Development Kit (JDK)](http://www.oracle.com/technetwork/java/javase/overview/) version 8 (or above) - [Download](http://www.oracle.com/technetwork/java/javase/downloads/)
 * [Apache Maven](http://maven.apache.org) version 3 (or above) - [Download](http://maven.apache.org/download.cgi)
 * [Graphviz](http://www.graphviz.org) version 2.28 (or above) - [Download](http://www.graphviz.org/Download.php)
