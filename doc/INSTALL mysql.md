@@ -1,12 +1,12 @@
 Building and Deploying OntoBrowser
 ---
 ## System Requirements
-* [Mysql](https://dev.mysql.com/downloads/mysql/) server and client version 8 or above
+* [Mysql](https://dev.mysql.com/downloads/mysql/) server and client version 8 (or above)
 * [Mysql connector-java-jar file](https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-8.0.14.zip) - [Download]
 * [Java Development Kit (JDK)](http://www.oracle.com/technetwork/java/javase/overview/) version 8 (or above) - [Download](http://www.oracle.com/technetwork/java/javase/downloads/)
 * [Apache Maven](http://maven.apache.org) version 3 (or above) - [Download](http://maven.apache.org/download.cgi)
 * [Graphviz](http://www.graphviz.org) version 2.28 (or above) - [Download](http://www.graphviz.org/Download.php)
-* [Wildfly](http://wildfly.org) version 8.2 (or above) - [Download](http://wildfly.org/downloads/) [Install](https://docs.jboss.org/author/display/WFLY8/Getting+Started+Guide)
+* [Wildfly](http://wildfly.org) version 14.0.1 (or above) - [Download](http://wildfly.org/downloads/) 
 
 **Note:** OntoBrowser has been extensively tested and deployed on Linux in production environments. System testing should be performed before deploying OntoBrowser on a Windows production environment.
 
