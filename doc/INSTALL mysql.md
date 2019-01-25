@@ -1,37 +1,42 @@
 Building and Deploying OntoBrowser
 ---
 ## System Requirements
+* [Mysql](https://dev.mysql.com/downloads/mysql/) server and client version 8 (or above)
+* [Mysql connector-java-jar file](https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-8.0.14.zip) - [Download]
 * [Java Development Kit (JDK)](http://www.oracle.com/technetwork/java/javase/overview/) version 8 (or above) - [Download](http://www.oracle.com/technetwork/java/javase/downloads/)
 * [Apache Maven](http://maven.apache.org) version 3 (or above) - [Download](http://maven.apache.org/download.cgi)
 * [Graphviz](http://www.graphviz.org) version 2.28 (or above) - [Download](http://www.graphviz.org/Download.php)
-* [Wildfly](http://wildfly.org) version 8.2 (or above) - [Download](http://wildfly.org/downloads/) [Install](https://docs.jboss.org/author/display/WFLY8/Getting+Started+Guide)
+* [Wildfly](http://wildfly.org) version 14.0.1 (or above) - [Download](http://wildfly.org/downloads/) 
 
 **Note:** OntoBrowser has been extensively tested and deployed on Linux in production environments. System testing should be performed before deploying OntoBrowser on a Windows production environment.
 
 ## Database Requirements
 OntoBrowser requires access to a relational database supported by Hibernate (the ORM used by Wildfly) e.g. Oracle, MySQL, PostgreSQL etc... See [Supported Databases](https://developer.jboss.org/wiki/SupportedDatabases2) for more information.
 
-**Note:** OntoBrowser has been extensively tested and deployed in production environments using Oracle databases (versions 10g and 11g). It is recommend that system testing is performed prior to using any non-Oracle databases in a production environment.
+
 
 ## Database setup
 ### Create Schema
-The SQL DDL scripts to create the OntoBrowser database schema are located in the [sql](../sql) directory of the project. Use the corresponding DDL script for the selected database e.g. [create_schema_oracle.sql](../sql/create_schema_oracle.sql) for Oracle databases.
+The SQL scripts to create the OntoBrowser database schema are located in the [mysql] directory of the project. Use the corresponding DDL script for the selected database eg. create_schema_mysql.sql for Mysql database.
 
-The following is an example on how to create the OntoBrowser schema using Oracle's SQL*Plus command line tool:
+The following is an example on how to create the OntoBrowser schema using Mysql command line tool:
 
 ```bash
-$ sqlplus ontobrowser@DEV @create_schema_oracle.sql
+CREATE SCHEMA `Ontobrowser Schema` ;
+
 ```
 
 See the [database design](./database_design.pdf) documentation for the more information regarding the database schema. 
 
 ### Insert initial data
-The SQL DML scripts to insert initial data into the OntoBrowser database schema are located in the [sql](../sql) directory of the project. Use the corresponding DML script for the selected database e.g. [insert_initial_data_oracle.sql](../sql/insert_initial_data_oracle.sql) for Oracle databases
+The SQL DML scripts to insert initial data into the OntoBrowser database schema are located in the [mysql](../mysql) directory of the project. Use the corresponding MYSQL script for the selected database e.g. [insert_initial_data_mysql.sql](../mysql/insert_initial_data_mysql.sql) for Mysql databases
 
-The following is an example on how to insert initial data into the OntoBrowser schema using Oracle's SQL*Plus command line tool:
+The following is an example on how to insert initial data into the OntoBrowser schema using MYSQL command line tool:
 
 ```bash
-$ sqlplus ontobrowser@DEV @insert_initial_data_oracle.sql
+$ INSERT INTO table name(
+values 
+)
 ```
 
 The initial data consists of:
@@ -48,34 +53,56 @@ As recommended by the Wildfly [documentation](https://docs.jboss.org/author/disp
 ```bash
 cp ojdbc7.jar $JBOSS_HOME/standalone/deployments
 ```
-Note: the latest Oracle JDBC driver can be downloaded from the Oracle [website](http://www.oracle.com/technetwork/database/features/jdbc/).
+
 ### Datasource Setup
 See the [DataSource Configuration](https://docs.jboss.org/author/display/WFLY8/DataSource+configuration) Wildfly documentation. The JNDI name of the datasource must be specifed as `java:jboss/datasources/ontobrowser`.
 
-Below is an example configuration for an Oracle database (from the `$JBOSS_HOME/standalone/configuration/standalone.xml` configuration file):
+Below is an example configuration for an Mysql database (from the `$JBOSS_HOME/standalone/configuration/standalone.xml` configuration file):
 
 ```xml
-<datasource jndi-name="java:jboss/datasources/ontobrowser" pool-name="ontobrowser">
-	<connection-url>jdbc:oracle:thin:@localhost:1521:dev</connection-url>
-	<driver>ojdbc7.jar</driver>
+<datasource jndi-name="java:jboss/datasources/ontobrowser" pool-name="ontobrowser" enabled="true" use-java-context="true">
+	<connection-url>jdbc:mysql://localhost:3306/ontobrowser</connection-url>
+	<driver>com.mysql</driver>
 	<pool>
-		<min-pool-size>1</min-pool-size>
-		<max-pool-size>8</max-pool-size>
-		<prefill>true</prefill>
+	      <min-pool-size>1</min-pool-size>
+	      <max-pool-size>20</max-pool-size>
 	</pool>
 	<security>
-		<user-name>ontobrowser</user-name>
-		<password>secret</password>
+		<user-name>root</user-name>
+		 <password>root</password>
 	</security>
-	<validation>
-		<valid-connection-checker class-name="org.jboss.jca.adapters.jdbc.extensions.oracle.OracleValidConnectionChecker"/>
-		<stale-connection-checker class-name="org.jboss.jca.adapters.jdbc.extensions.oracle.OracleStaleConnectionChecker"/>
-		<exception-sorter class-name="org.jboss.jca.adapters.jdbc.extensions.oracle.OracleExceptionSorter"/>
-	</validation>
-</datasource>
+	</datasource>
+<datasource jndi-name="java:/MySqlDS" pool-name="MySqlDS">
+	                    <connection-url>jdbc:mysql://localhost:3306/mysqldb</connection-url>
+	                    <driver-class>com.mysql.jdbc.Driver</driver-class>
+	                    <driver>mysql-connector-java-8.0.13.jar</driver>
+	                 <security>
+	                        <user-name>root</user-name>
+	                        <password>root</password>
+		        </security>
+	                    <validation>
+	   <valid-connection-checker class name="org.jboss.jca.adapters.jdbc.extensions.mysql.MySQLValidConnectionChecker"/>
+		<background-validation>true</background-validation>
+	        <exception-sorter class-name="org.jboss.jca.adapters.jdbc.extensions.mysql.MySQLExceptionSorter"/>
+		 </validation>
+		</datasource>
 ```
-### Email Setup
-By default Wildfly is configured to send email using STMP on localhost port 25. See the [Mail Service Configuration](http://www.mastertheboss.com/jboss-server/jboss-configuration/jboss-mail-service-configuration) documentation to configure a remote STMP server. 
+### Module setup
+For module setup, system require module.xml file under module folder in jboss with mysql-connector jar file.
+
+```
+<?xml version="1.0" encoding="UTF-8"?> 
+  <module xmlns="urn:jboss:module:1.1" name="com.mysql"> 
+     <resources> 
+         <resource-root path="mysql-connector-java-5.1.35-bin.jar"/>
+     </resources> 
+     <dependencies> 
+         <module name="javax.api"/> 
+         <module name="javax.transaction.api"/> 
+     </dependencies> 
+ </module>
+ ```
+ 
 
 ### OntoBrowser Configuration
 Edit the `$JBOSS_HOME/standalone/configuration/standalone.xml` configuration file and add the following XML to the `<bindings>` element of the `urn:jboss:domain:naming:2.0` subsystem configuration. Change configuration values to suit the deployment environment:
@@ -88,11 +115,11 @@ Edit the `$JBOSS_HOME/standalone/configuration/standalone.xml` configuration fil
 <!-- local filesystem path for Lucene index -->
 <simple name="java:global/ontobrowser/index/path" value="${jboss.server.data.dir}/ontobrowser/index" type="java.lang.String"/>
 <!-- path to dot command line program. Check local installation of Graphviz. -->
-<simple name="java:global/ontobrowser/dot/path" value="/usr/local/bin/dot" type="java.lang.String"/>
+<simple name="java:global/ontobrowser/dot/path" value="/usr/bin/dot" type="java.lang.String"/>
 <!-- external URI for ontologies exported in OWL format -->
 <simple name="java:global/ontobrowser/export/owl/uri" value="http://localhost/ontobrowser/ontologies" type="java.net.URL"/>
 <!-- boolean flag indicating if OntoBrowser is using an Oracle database -->
-<simple name="java:global/ontobrowser/database/oracle" value="true" type="boolean"/>
+<simple name="java:global/ontobrowser/database/oracle" value="false" type="boolean"/>
 ```
 
 See the [Naming Subsystem Configuration](https://docs.jboss.org/author/display/WFLY8/Naming+Subsystem+Configuration) Wildfly documentation for more information.
@@ -144,7 +171,7 @@ The example Hibernate secondary cache configuration below (from the `$JBOSS_HOME
 </cache-container>
 ```
 
-## Apache Basic Authentication and Proxy Setup (optional)
+## Apache Basic Authentication and Proxy Setup
 In a production environment it is recommended to perform the user authentication using a web server (e.g. Apache) located in a [DMZ](http://en.wikipedia.org/wiki/DMZ_(computing)).  Alternatively if installing OntoBrowser on a corporate intranet it is recommended to use a corporate single sign-on (SSO) system for user authentication.
 
 The following example Apache configuration protects the `/ontobrowser` location using [Basic access ](http://en.wikipedia.org/wiki/Basic_access_authentication) and proxies requests (using AJP) to Wildfly running on the same machine:
@@ -154,7 +181,7 @@ The following example Apache configuration protects the `/ontobrowser` location 
     AuthType Basic
     AuthName "OntoBrowser"
     AuthBasicProvider dbd
-    AuthDBDUserPWQuery "SELECT password FROM curator WHERE username = %s"
+    AuthDBDUserPWQuery "SELECT password FROM CURATOR WHERE username = %s"
     Require valid-user
     ProxyPass ajp://localhost:8009/ontobrowser/
     ProxyPassReverse ajp://localhost:8009/ontobrowser/
@@ -163,11 +190,11 @@ The following example Apache configuration protects the `/ontobrowser` location 
 
 Note: the configuration above can alternatively be defined in a `<VirtualHost>` container.
 
-The following is an example Apache DBD configuration for an Oracle database with a SID of DEV:
+The following is an example Apache DBD configuration for an Mysql database :
 
 ```
-DBDriver oracle
-DBDParams user=ontobrowser,pass=secret,server=DEV
+DBDriver mysql
+DBDParams host=localhost,dbname=ontobrowser,port=3306,user=root,pass=root
 DBDMin  2
 DBDKeep 4
 DBDMax  10
@@ -182,7 +209,6 @@ For more details see the Apache [mod_authn_dbd](http://httpd.apache.org/docs/2.2
 3. Build and package the project using Maven i.e. `mvn package`
 4. Copy the `ontobrowser.war` file (located in the `target` directory) to Wildfly's `deployments` directory
 
-**Note:** If using a non-Oracle database perform the changes listed in the [non-oracle_changes.md](./non-oracle_changes.md) file before building the project.
 
 The following bash commands provides and example on how to perform the steps above on a Unix based operating system:
 
@@ -212,29 +238,21 @@ The following example downloads the [Mouse adult gross anatomy](http://www.obofo
 $ curl -s -S -O -L http://purl.obolibrary.org/obo/ma.obo
 $ curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@ma.obo" -u SYSTEM "http://localhost/ontobrowser/ontologies/Mouse%20adult%20gross%20anatomy"
 ```
+Note: This setting works with the String username = "SYSTEM" in java file.
 
 Note: Proxy parameters or environment variables maybe be require when downloading behind a corporate firewall.
 
 ## Setup a Controlled Vocabulary
-An example SQL script to setup a *controlled vocabulary* is provided in the [sql](../sql) directory of the project: [insert_crtld_vocab_example.sql](../sql/insert_crtld_vocab_example.sql). The example defines the [SEND Specimen](http://evs.nci.nih.gov/ftp1/CDISC/SEND/SEND%20Terminology.html#CL.C77529.SPEC) code list in the database as a *controlled vocabulary* so the terms from the code list can be subsequently loaded (and then mapped to the *Mouse adult gross anatomy* ontology loaded previously).
+An example SQL script to setup a *controlled vocabulary* is provided in the [mysql](../mysql) directory of the project: [insert_crtld_vocab_example.sql](../mysql/insert_crtld_vocab_example.sql). The example defines the [SEND Specimen](http://evs.nci.nih.gov/ftp1/CDISC/SEND/SEND%20Terminology.html#CL.C77529.SPEC) code list in the database as a *controlled vocabulary* so the terms from the code list can be subsequently loaded (and then mapped to the *Mouse adult gross anatomy* ontology loaded previously).
 
-The following is an example on how to run the example SQL script using Oracle's SQL*Plus command line tool:
 
-```bash
-$ sqlplus ontobrowser@DEV @insert_crtld_vocab_example.sql
-```
 
 ## Loading Controlled Vocabulary Terms
-The recommend technique to load *controlled vocabulary* terms is in batch using a dedicated [ETL](http://en.wikipedia.org/wiki/Extract,_transform,_load) tool e.g. [Informatica](http://www.informatica.com), [Kettle](http://community.pentaho.com/projects/data-integration/), [Talend](https://www.talend.com) etc...
 
 The *controlled vocabulary* terms must be loaded into the `CTRLD_VOCAB_TERM` table.
 
 ## Add a Curator
-The SQL DML scripts to add a curator to the OntoBrowser database schema are located in the [sql](../sql) directory of the project. Use the corresponding DML script for the selected database e.g. [insert_curator_oracle.sql](../sql/insert_curator_oracle.sql) for Oracle databases.
+The SQL DML scripts to add a curator to the OntoBrowser database schema are located in the [mysql](../mysql) directory of the project. Use the corresponding DML script for the selected database e.g. [insert_curator_mysql.sql](../mysql/insert_curator_mysql.sql) for Mysql databases.
 
-The following is an example on how to add a curator with the username *smith* to the database using Oracle's SQL*Plus command line tool:
 
-```bash
-$ sqlplus ontobrowser@DEV @insert_curator_oracle.sql 'smith'
-```
 
