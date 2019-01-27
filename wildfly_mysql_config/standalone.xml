@@ -540,8 +540,8 @@
         <deployment name="mysql-connector-java-8.0.13.jar" runtime-name="mysql-connector-java-8.0.13.jar">
             <content sha1="953696f04371daccaeffa0c858df021ae3e85e31"/>
         </deployment>
-        <deployment name="jboss-modules.jar" runtime-name="jboss-modules.jar">
+        <!--<deployment name="jboss-modules.jar" runtime-name="jboss-modules.jar">
             <content sha1="78fab247226a5c3bd7a21043c82dc87145c7234c"/>
-        </deployment>
+        </deployment>-->
     </deployments>
 </server>
