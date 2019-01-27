@@ -2,9 +2,11 @@
 #This is a comment!
 
 echo "This script helps users to install Ontobrowser on their Linux distribution."
-echo "We assume that you have installed MySql 8 or above and you are running it at port 3306."
+echo "We assume that you have installed a) MySql 8 or above, b) JAVA_HOME is set to JRE 8 or above."
 
-echo "Would you like to continue with the installation? (y/n)"
+#Install dot (graphviz) if user says yes
+
+echo "Would you still like to continue with the installation of ontobrowser? (y/n)"
 read yesno
 
 if [ "$yesno" != "y" ]; then 
@@ -86,3 +88,23 @@ mysql -h $mysql_ip -P $mysql_port -u $new_user_name -p$password ontobrowser < in
 
 wget https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/mysql/insert_initial_data_mysql.sql
 mysql -h $mysql_ip -P $mysql_port -u $new_user_name -p$password ontobrowser < insert_initial_data_mysql.sql
+
+
+
+
+
+#echo "Do you want to load the Rat ontology (y/n)?"
+
+#Install curl if user says 
+#sudo apt-get install curl
+
+echo "Enter installation path for Ontobrowser?"
+read final_path
+
+mv wildfly-14.0.1.Final/ $final_path
+
+#When done all, move the wildfly folder out of .tmp_onto to a location
+#Ask that location from user, where do you want to put wildfly 
+#Tell him how to run wildfly ..go to bin and type ./standalone.sh 
+cd ..
+rm -r .tmp_onto
