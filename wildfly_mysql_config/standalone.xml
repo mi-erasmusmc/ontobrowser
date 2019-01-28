@@ -157,7 +157,7 @@
                         <password>root</password>
                     </security>
                 </datasource>
-                <datasource jndi-name="java:/MySqlDS" pool-name="MySqlDS">
+                <!--<datasource jndi-name="java:/MySqlDS" pool-name="MySqlDS">
                     <connection-url>jdbc:mysql://localhost:3306/mysqldb</connection-url>
                     <driver-class>com.mysql.jdbc.Driver</driver-class>
                     <driver>mysql-connector-java-8.0.13.jar</driver>
@@ -170,7 +170,7 @@
                         <background-validation>true</background-validation>
                         <exception-sorter class-name="org.jboss.jca.adapters.jdbc.extensions.mysql.MySQLExceptionSorter"/>
                     </validation>
-                </datasource>
+                </datasource>-->
                 <drivers>
                     <driver name="com.mysql" module="com.mysql">
                         <xa-datasource-class>com.mysql.cj.jdbc.MysqlXADataSource</xa-datasource-class>
@@ -536,12 +536,12 @@
             <remote-destination host="localhost" port="25"/>
         </outbound-socket-binding>
     </socket-binding-group>
-    <deployments>
-        <!--<deployment name="mysql-connector-java-8.0.13.jar" runtime-name="mysql-connector-java-8.0.13.jar">
+    <!--<deployments>
+        <deployment name="mysql-connector-java-8.0.13.jar" runtime-name="mysql-connector-java-8.0.13.jar">
             <content sha1="953696f04371daccaeffa0c858df021ae3e85e31"/>
-        </deployment>-->
-        <!--<deployment name="jboss-modules.jar" runtime-name="jboss-modules.jar">
+        </deployment>
+        <deployment name="jboss-modules.jar" runtime-name="jboss-modules.jar">
             <content sha1="78fab247226a5c3bd7a21043c82dc87145c7234c"/>
-        </deployment>-->
-    </deployments>
+        </deployment>
+    </deployments>-->
 </server>
