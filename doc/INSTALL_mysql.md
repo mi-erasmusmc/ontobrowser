@@ -236,7 +236,7 @@ The following example downloads the [Mouse adult gross anatomy](http://www.obofo
 
 ```bash
 $ curl -s -S -O -L http://purl.obolibrary.org/obo/ma.obo
-$ curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@ma.obo" -u SYSTEM "http://localhost:3306/ontobrowser/ontologies/Mouse%20adult%20gross%20anatomy"
+$ curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@ma.obo" -u SYSTEM "http://localhost:8080/ontobrowser/ontologies/Mouse%20adult%20gross%20anatomy"
 ```
 Note: This setting works with the String username = "SYSTEM" in java file.
 
