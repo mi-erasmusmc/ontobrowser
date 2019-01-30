@@ -1,12 +1,10 @@
-#!/bin/sh
+#!/bin/bash
 #This is a comment!
 
 echo "This script helps users to install Ontobrowser on their Linux distribution."
-echo "We assume that you have installed a) MySql 8 or above, b) JAVA_HOME is set to JRE 8 or above."
+echo "Ontobrowser requires a) MySql 8 or above, b)Graphviz 2.28 or above c) JAVA_HOME is set to JRE 8 or above."
 
-#Install dot (graphviz) if user says yes
-
-echo "Would you still like to continue with the installation of ontobrowser? (y/n)"
+echo "Please confirm the above 3 requirements are fulfilled on this machine? (y/n)"
 read yesno
 
 if [ "$yesno" != "y" ]; then 
@@ -54,7 +52,7 @@ else
 	mysql_port="3306"
 fi
 
-echo "Enter MySql username (default is 'root',  but if you don't want to change this then please press Enter)"
+echo "Enter MySql username (default is 'root', but if you don't want to change this then please press Enter)"
 read new_user_name
 
 if [ "$new_user_name" != "" ]; then
@@ -63,8 +61,7 @@ else
    new_user_name="root"
 fi
 
-
-echo "Enter MySql password (default is 'root',  but if you don't want to change this then please press Enter)"
+echo "Enter MySql password (default is 'root', but if you don't want to change this then please press Enter)"
 read password
 
 if [ "$password" != "" ]; then
@@ -73,11 +70,18 @@ else
    password="root"
 fi
 
+echo "Enter the port number on which the ontobrowser web-application should run (default is '8080', but if you don't want to change this then please press Enter)"
+read ontobrowser_web_port
+if [ "$ontobrowser_web_port" != "" ]; then
+	sed -i "s/8080/${ontobrowser_web_port}/g" wildfly-14.0.1.Final/standalone/configuration/standalone.xml
+fi
+
 echo "Loading MySql schema for ontobrowser"
+mysql -h $mysql_ip -P $mysql_port -u $new_user_name -p$password -e 'drop SCHEMA if exists ontobrowser'
+
 mysql -h $mysql_ip -P $mysql_port -u $new_user_name -p$password -e 'CREATE SCHEMA ontobrowser'
 
 wget  https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/mysql/create_schema_mysql.sql
-
 mysql -h $mysql_ip -P $mysql_port -u $new_user_name -p$password ontobrowser < create_schema_mysql.sql
 
 wget https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/mysql/insert_crtld_vocab_example.sql
@@ -89,22 +93,11 @@ mysql -h $mysql_ip -P $mysql_port -u $new_user_name -p$password ontobrowser < in
 wget https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/mysql/insert_initial_data_mysql.sql
 mysql -h $mysql_ip -P $mysql_port -u $new_user_name -p$password ontobrowser < insert_initial_data_mysql.sql
 
-
-
-
-
-#echo "Do you want to load the Rat ontology (y/n)?"
-
-#Install curl if user says 
-#sudo apt-get install curl
-
-echo "Enter installation path for Ontobrowser?"
-read final_path
-
+read -e -p "Enter installation path for Ontobrowser:" final_path
 mv wildfly-14.0.1.Final/ $final_path
 
-#When done all, move the wildfly folder out of .tmp_onto to a location
-#Ask that location from user, where do you want to put wildfly 
-#Tell him how to run wildfly ..go to bin and type ./standalone.sh 
 cd ..
 rm -r .tmp_onto
+
+echo "Installation complete"
+echo "You can run wildfly by executing the standalone.sh file in $final_path/bin folder."
