@@ -84,14 +84,14 @@ mysql -h $mysql_ip -P $mysql_port -u $new_user_name -p$password -e 'CREATE SCHEM
 wget  https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/mysql/create_schema_mysql.sql
 mysql -h $mysql_ip -P $mysql_port -u $new_user_name -p$password ontobrowser < create_schema_mysql.sql
 
+wget https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/mysql/insert_initial_data_mysql.sql
+mysql -h $mysql_ip -P $mysql_port -u $new_user_name -p$password ontobrowser < insert_initial_data_mysql.sql
+
 wget https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/mysql/insert_crtld_vocab_example.sql
 mysql -h $mysql_ip -P $mysql_port -u $new_user_name -p$password ontobrowser < insert_crtld_vocab_example.sql
 
 wget https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/mysql/insert_curator_mysql.sql
 mysql -h $mysql_ip -P $mysql_port -u $new_user_name -p$password ontobrowser < insert_curator_mysql.sql
-
-wget https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/mysql/insert_initial_data_mysql.sql
-mysql -h $mysql_ip -P $mysql_port -u $new_user_name -p$password ontobrowser < insert_initial_data_mysql.sql
 
 read -e -p "Enter installation path for Ontobrowser:" final_path
 mv wildfly-14.0.1.Final/ $final_path
