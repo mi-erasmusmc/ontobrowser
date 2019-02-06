@@ -23,7 +23,7 @@ import javax.ejb.Local;
 
 import com.novartis.pcs.ontology.entity.Ontology;
 import com.novartis.pcs.ontology.entity.Term;
-import com.novartis.pcs.ontology.entity.TermDAOLocal;
+
 import com.novartis.pcs.ontology.entity.VersionedEntity.Status;
 
 
@@ -38,7 +38,7 @@ public interface TermDAOLocal extends VersionedDAO<Term> {
 	
 	public Term loadByReferenceId(String referenceId);
 	
-	public Term loadByReferenceId(java.lang.String referenceId, boolean loadLazyAssociations);
+	public Term loadByReferenceId(String referenceId, boolean loadLazyAssociations);
 	
 	public Term loadByName(String name, Ontology ontology);
 	
