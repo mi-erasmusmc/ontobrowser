@@ -94,6 +94,10 @@ public class OntoBrowserServiceImpl extends RemoteServiceServlet implements
 			}
 		}
 		
+		if (username == null) {
+			username = "SYSTEM";
+		}
+		
 		return username;
 	}
 	

@@ -1,0 +1,3 @@
+<jboss-web>
+  <security-domain>ontobrowser_domain</security-domain>
+</jboss-web>

@@ -69,6 +69,7 @@ public class OntologyCuratorServiceImpl extends OntologyService implements Ontol
 	public Curator loadByUsername(String username) {
 		Curator curator = curatorDAO.loadByUsername(username);
 				
+		
 		if(curator != null && curator.isActive()) {
 			return curator;
 		}

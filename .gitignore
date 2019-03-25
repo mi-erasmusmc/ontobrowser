@@ -10,3 +10,4 @@
 log/
 target/*
 !target/ontobrowser.war
+/target/

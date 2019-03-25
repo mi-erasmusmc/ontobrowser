@@ -1,0 +1,10 @@
+/subsystem=elytron/jdbc-realm=ontobrowser_realm:add(principal-query=[{sql="SELECT password FROM CURATOR WHERE username=?",data-source=ontobrowser,clear-password-mapper={password-index=1}}])
+
+
+/subsystem=elytron/security-domain=ontobrowserSD:add(realms=[{realm=ontobrowser_realm,role-decoder=groups-to-roles}],default-realm=ontobrowser_realm,permission-mapper=default-permission-mapper)
+
+
+/subsystem=elytron/http-authentication-factory=ontobrowser_http_auth:add(http-server-mechanism-factory=global,security-domain=ontobrowserSD,mechanism-configurations=[{mechanism-name=BASIC,mechanism-realm-configurations=[{realm-name=ontobrowserSD}]}])
+
+
+/subsystem=undertow/application-security-domain=ontobrowser_domain:add(http-authentication-factory=ontobrowser_http_auth)
