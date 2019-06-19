@@ -4804,7 +4804,7 @@ is_a: ILO:0000056 ! locomotive behaviour
 id: ILO:0000258
 name: eye abnormal
 synonym: "Eyes unspecified" RELATED [VX]
-synonym: "\"Eye Abnormality - Opacity, exophthalmos, damage, small\"" RELATED [VX]
+synonym: "Eye Abnormality - Opacity, exophthalmos, damage, small" RELATED [VX]
 synonym: "Eyes twisted" RELATED [VX]
 synonym: "Eye unspecific" RELATED [VX]
 synonym: "Eye changes" RELATED [VX]
@@ -6085,7 +6085,7 @@ synonym: "SKIN & PELAGE; ALOPECIA" RELATED [VX]
 synonym: "Alopecia, hind quarters" RELATED [VX]
 synonym: "Skin & pelage, alopecia, dorsal-thoracic-right" RELATED [VX]
 synonym: "Skin & pelage, alopecia, ventral-abdominal" RELATED [VX]
-synonym: "\"HAIR; ALOPECIA; BACK, ISOLATED\"" RELATED [VX]
+synonym: "HAIR; ALOPECIA; BACK, ISOLATED" RELATED [VX]
 synonym: "Alopecia; Whole Body" RELATED [VX]
 synonym: "Alopecia, body ventral" RELATED [VX]
 synonym: "Alopecia - hindlimb" RELATED [VX]
@@ -9104,7 +9104,7 @@ is_a: ILO:0000017 ! reproductive finding
 id: ILO:0000422
 name: nodule mass
 synonym: "Head neck, masses" RELATED [VX]
-synonym: "Axillary region (including \"behind front legs\"), masses" RELATED [VX]
+synonym: "Axillary region (including behind front legs), masses" RELATED [VX]
 synonym: "Axillary region, masses" RELATED [VX]
 synonym: "Dermal mass(es)" RELATED [VX]
 synonym: "Head behind ears, masses" RELATED [VX]
@@ -9213,7 +9213,7 @@ synonym: "Palpable mass at the throat" RELATED [VX]
 synonym: "Palpable mass at the chest wall" RELATED [VX]
 synonym: "Solid lump at injection site" RELATED [VX]
 synonym: "Palpable mass" RELATED [VX]
-synonym: "Palpable masses (\"lumps\") in the axillary and or inguinal regions" RELATED [VX]
+synonym: "Palpable masses (lumps) in the axillary and or inguinal regions" RELATED [VX]
 synonym: "Palpable masses in the axillary and or inguinal regions" RELATED [VX]
 is_a: ILO:0000019 ! administration collection site
 
@@ -14741,7 +14741,7 @@ synonym: "Head swollen" RELATED [VX]
 synonym: "Swollen right forelimb(s)" RELATED [VX]
 synonym: "Swollen right forelimb-partial" RELATED [VX]
 synonym: "Right hind limb swollen" RELATED [VX]
-synonym: "Clinically healthy apart from a localised swelling in the ventral neck area. The swelling is smaller than yesterday and is more \"circumscribed\" localised on the left hand side" RELATED [VX]
+synonym: "Clinically healthy apart from a localised swelling in the ventral neck area. The swelling is smaller than yesterday and is more circumscribed localised on the left hand side" RELATED [VX]
 synonym: "Right forelimb partially swollen" RELATED [VX]
 synonym: "Skin swelling, extremities,inguinal region" RELATED [VX]
 synonym: "Skin swellings at the application sites" RELATED [VX]
@@ -15043,7 +15043,7 @@ is_a: ILO:0000045 ! tail
 [Term]
 id: ILO:0000605
 name: tail degloving mutilation
-synonym: "Tail degloving mutilation of approximtely 2\" from tip of tail" RELATED [VX]
+synonym: "Tail degloving mutilation of approximtely 2 from tip of tail" RELATED [VX]
 is_a: ILO:0000045 ! tail
 
 [Term]
