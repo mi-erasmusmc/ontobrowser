@@ -232,11 +232,18 @@ $ ./standalone.sh
 ## Loading an Ontology
 Ontologies can be loaded into OntoBrowser using the `/ontobrowser/ontologies` [RESTful](http://en.wikipedia.org/wiki/Representational_state_transfer) web service. The web service only supports the PUT method for loading ontologies and only accepts [OBO formatted](http://oboformat.googlecode.com/svn/trunk/doc/GO.format.obo-1_2.html) data.
 
-The following example downloads the [Mouse adult gross anatomy](http://www.obofoundry.org/cgi-bin/detail.cgi?id=adult_mouse_anatomy) ontology then loads it into OntoBrowser using the web service:
+The following example downloads demo ontologies, and then loads them into OntoBrowser using the web service:
 
 ```bash
-$ curl -s -S -O -L http://purl.obolibrary.org/obo/ma.obo
+$ wget https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/ontologies/hpath.obo
+$ wget https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/ontologies/in-life_observation.obo
+$ wget https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/ontologies/ma.obo
+$ wget https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/ontologies/moa.obo
+
+$ curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@hpath.obo" -u SYSTEM "http://localhost:8080/ontobrowser/ontologies/hpath"
+$  curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@in-life_observation.obo" -u SYSTEM "http://localhost:8080/ontobrowser/ontologies/inlife_observation"
 $ curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@ma.obo" -u SYSTEM "http://localhost:8080/ontobrowser/ontologies/Mouse%20adult%20gross%20anatomy"
+$  curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@moa.obo" -u SYSTEM "http://localhost:8080/ontobrowser/ontologies/moa"
 ```
 Note: This setting works with the String username = "SYSTEM" in java file.
 
