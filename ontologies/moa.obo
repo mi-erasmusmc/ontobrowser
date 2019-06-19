@@ -1,0 +1,4175 @@
+format-version: 1.2
+data-version: 1
+date: 29:01:2018 01:11
+auto-generated-by: OntoBrowser Export Service
+
+[Term]
+id: MOA:0000000
+name: Enzyme
+is_a: MOA:0000483 ! Target
+
+[Term]
+id: MOA:0000001
+name: Auxiliary transport protein
+is_a: MOA:0000483 ! Target
+
+[Term]
+id: MOA:0000002
+name: Epigenetic regulator
+is_a: MOA:0000483 ! Target
+
+[Term]
+id: MOA:0000003
+name: Ion channel
+is_a: MOA:0000483 ! Target
+
+[Term]
+id: MOA:0000004
+name: Membrane receptor
+is_a: MOA:0000483 ! Target
+
+[Term]
+id: MOA:0000005
+name: Not applicable
+is_a: MOA:0000483 ! Target
+
+[Term]
+id: MOA:0000006
+name: Other cytosolic protein
+is_a: MOA:0000483 ! Target
+
+[Term]
+id: MOA:0000007
+name: Secreted protein
+is_a: MOA:0000483 ! Target
+
+[Term]
+id: MOA:0000008
+name: Structural protein
+is_a: MOA:0000483 ! Target
+
+[Term]
+id: MOA:0000009
+name: Surface antigen
+is_a: MOA:0000483 ! Target
+
+[Term]
+id: MOA:0000010
+name: Transporter
+is_a: MOA:0000483 ! Target
+
+[Term]
+id: MOA:0000011
+name: Transcription factor
+is_a: MOA:0000483 ! Target
+
+[Term]
+id: MOA:0000012
+name: Unclassified protein
+is_a: MOA:0000483 ! Target
+
+[Term]
+id: MOA:0000013
+name: Calcium channel auxiliary subunit alpha2delta family
+is_a: MOA:0000001 ! Auxiliary transport protein
+
+[Term]
+id: MOA:0000014
+name: Calcium channel auxiliary subunit beta family
+is_a: MOA:0000001 ! Auxiliary transport protein
+
+[Term]
+id: MOA:0000015
+name: Calcium channel auxiliary subunit gamma family
+is_a: MOA:0000001 ! Auxiliary transport protein
+
+[Term]
+id: MOA:0000016
+name: Cytochrome p450
+is_a: MOA:0000000 ! Enzyme
+
+[Term]
+id: MOA:0000017
+name: Cytochrome p450 family 19
+is_a: MOA:0000016 ! Cytochrome p450
+
+[Term]
+id: MOA:0000018
+name: Cytochrome p450 family 19a
+is_a: MOA:0000017 ! Cytochrome p450 family 19
+
+[Term]
+id: MOA:0000019
+name: Cytochrome P450 19A1
+synonym: "Aromatase" RELATED [ChEMBL]
+synonym: "CYP19" RELATED [ChEMBL]
+synonym: "Cytochrome P450 19A1" RELATED [ChEMBL]
+synonym: "CYP19A1" RELATED [ChEMBL]
+synonym: "Estrogen synthase" RELATED [ChEMBL]
+synonym: "CYPXIX" RELATED [ChEMBL]
+synonym: "CYAR" RELATED [ChEMBL]
+synonym: "ARO1" RELATED [ChEMBL]
+synonym: "Cytochrome P-450AROM" RELATED [ChEMBL]
+is_a: MOA:0000018 ! Cytochrome p450 family 19a
+
+[Term]
+id: MOA:0000020
+name: Cytochrome p450 family 2
+is_a: MOA:0000016 ! Cytochrome p450
+
+[Term]
+id: MOA:0000021
+name: Cytochrome p450 family 2d
+is_a: MOA:0000020 ! Cytochrome p450 family 2
+
+[Term]
+id: MOA:0000022
+name: Cytochrome P450 2D6
+synonym: "CYP2DL1" RELATED [ChEMBL]
+synonym: "Cytochrome P450 2D6" RELATED [ChEMBL]
+synonym: "CYPIID6" RELATED [ChEMBL]
+synonym: "CYP2D6" RELATED [ChEMBL]
+synonym: "Cytochrome P450-DB1" RELATED [ChEMBL]
+synonym: "Debrisoquine 4-hydroxylase" RELATED [ChEMBL]
+is_a: MOA:0000021 ! Cytochrome p450 family 2d
+
+[Term]
+id: MOA:0000023
+name: Hydrolase
+is_a: MOA:0000000 ! Enzyme
+
+[Term]
+id: MOA:0000024
+name: Isomerase
+is_a: MOA:0000000 ! Enzyme
+
+[Term]
+id: MOA:0000025
+name: Kinase
+is_a: MOA:0000000 ! Enzyme
+
+[Term]
+id: MOA:0000026
+name: Protein kinase
+is_a: MOA:0000025 ! Kinase
+
+[Term]
+id: MOA:0000027
+name: Agc protein kinase group
+is_a: MOA:0000026 ! Protein kinase
+
+[Term]
+id: MOA:0000028
+name: Agc protein kinase dmpk family
+is_a: MOA:0000027 ! Agc protein kinase group
+
+[Term]
+id: MOA:0000029
+name: Agc protein kinase rock subfamily
+is_a: MOA:0000028 ! Agc protein kinase dmpk family
+
+[Term]
+id: MOA:0000030
+name: Agc protein kinase grk family
+is_a: MOA:0000027 ! Agc protein kinase group
+
+[Term]
+id: MOA:0000031
+name: Agc protein kinase bark subfamily
+is_a: MOA:0000030 ! Agc protein kinase grk family
+
+[Term]
+id: MOA:0000032
+name: Agc protein kinase pkc family
+is_a: MOA:0000027 ! Agc protein kinase group
+
+[Term]
+id: MOA:0000033
+name: Agc protein kinase pkc alpha subfamily
+is_a: MOA:0000032 ! Agc protein kinase pkc family
+
+[Term]
+id: MOA:0000034
+name: Agc protein kinase pkc delta subfamily
+is_a: MOA:0000032 ! Agc protein kinase pkc family
+
+[Term]
+id: MOA:0000035
+name: Agc protein kinase pkc eta subfamily
+is_a: MOA:0000032 ! Agc protein kinase pkc family
+
+[Term]
+id: MOA:0000036
+name: Agc protein kinase pkc iota subfamily
+is_a: MOA:0000032 ! Agc protein kinase pkc family
+
+[Term]
+id: MOA:0000037
+name: Atypical protein kinase group
+is_a: MOA:0000026 ! Protein kinase
+
+[Term]
+id: MOA:0000038
+name: Atypical protein kinase pdhk subfamily
+is_a: MOA:0000037 ! Atypical protein kinase group
+
+[Term]
+id: MOA:0000039
+name: Atypical protein kinase pikk family
+is_a: MOA:0000037 ! Atypical protein kinase group
+
+[Term]
+id: MOA:0000040
+name: Camk protein kinase group
+is_a: MOA:0000026 ! Protein kinase
+
+[Term]
+id: MOA:0000041
+name: Camk protein kinase pkd family
+is_a: MOA:0000040 ! Camk protein kinase group
+
+[Term]
+id: MOA:0000042
+name: Cmgc protein kinase cdk group
+is_a: MOA:0000026 ! Protein kinase
+
+[Term]
+id: MOA:0000043
+name: Cmgc protein kinase cdk family
+is_a: MOA:0000042 ! Cmgc protein kinase cdk group
+
+[Term]
+id: MOA:0000044
+name: Cmgc protein kinase cdc2 subfamily
+is_a: MOA:0000043 ! Cmgc protein kinase cdk family
+
+[Term]
+id: MOA:0000045
+name: Cmgc protein kinase gsk family
+is_a: MOA:0000042 ! Cmgc protein kinase cdk group
+
+[Term]
+id: MOA:0000046
+name: Cmgc protein kinase mapk family
+is_a: MOA:0000042 ! Cmgc protein kinase cdk group
+
+[Term]
+id: MOA:0000047
+name: Cmgc protein kinase p38 subfamily
+is_a: MOA:0000046 ! Cmgc protein kinase mapk family
+
+[Term]
+id: MOA:0000048
+name: Cmgc protein kinase rck family
+is_a: MOA:0000042 ! Cmgc protein kinase cdk group
+
+[Term]
+id: MOA:0000049
+name: Cmgc protein kinase mak
+is_a: MOA:0000048 ! Cmgc protein kinase rck family
+
+[Term]
+id: MOA:0000050
+name: Other protein kinase group
+is_a: MOA:0000026 ! Protein kinase
+
+[Term]
+id: MOA:0000051
+name: Other protein kinase aur family
+is_a: MOA:0000050 ! Other protein kinase group
+
+[Term]
+id: MOA:0000052
+name: Other protein kinase plk family
+is_a: MOA:0000050 ! Other protein kinase group
+
+[Term]
+id: MOA:0000053
+name: Ste protein kinase group
+is_a: MOA:0000026 ! Protein kinase
+
+[Term]
+id: MOA:0000054
+name: Ste protein kinase ste20 family
+is_a: MOA:0000053 ! Ste protein kinase group
+
+[Term]
+id: MOA:0000055
+name: Ste protein kinase khs subfamily
+is_a: MOA:0000054 ! Ste protein kinase ste20 family
+
+[Term]
+id: MOA:0000056
+name: Ste protein kinase ste7 family
+is_a: MOA:0000053 ! Ste protein kinase group
+
+[Term]
+id: MOA:0000057
+name: Tk protein kinase group
+is_a: MOA:0000026 ! Protein kinase
+
+[Term]
+id: MOA:0000058
+name: Tyrosine protein kinase abl family
+is_a: MOA:0000057 ! Tk protein kinase group
+
+[Term]
+id: MOA:0000059
+name: Tyrosine protein kinase egfr family
+is_a: MOA:0000057 ! Tk protein kinase group
+
+[Term]
+id: MOA:0000060
+name: Tyrosine protein kinase fak family
+is_a: MOA:0000057 ! Tk protein kinase group
+
+[Term]
+id: MOA:0000061
+name: Tyrosine protein kinase fgfr family
+is_a: MOA:0000057 ! Tk protein kinase group
+
+[Term]
+id: MOA:0000062
+name: Tyrosine protein kinase insr family
+is_a: MOA:0000057 ! Tk protein kinase group
+
+[Term]
+id: MOA:0000063
+name: Tyrosine protein kinase jaka family
+is_a: MOA:0000057 ! Tk protein kinase group
+
+[Term]
+id: MOA:0000064
+name: Tyrosine protein kinase jakb family
+is_a: MOA:0000057 ! Tk protein kinase group
+
+[Term]
+id: MOA:0000065
+name: Tyrosine protein kinase met family
+is_a: MOA:0000057 ! Tk protein kinase group
+
+[Term]
+id: MOA:0000066
+name: Tyrosine protein kinase pdgfr family
+is_a: MOA:0000057 ! Tk protein kinase group
+
+[Term]
+id: MOA:0000067
+name: Tyrosine protein kinase src family
+is_a: MOA:0000057 ! Tk protein kinase group
+
+[Term]
+id: MOA:0000068
+name: Tyrosine protein kinase srm
+is_a: MOA:0000067 ! Tyrosine protein kinase src family
+
+[Term]
+id: MOA:0000069
+name: Tyrosine protein kinase vegfr family
+is_a: MOA:0000057 ! Tk protein kinase group
+
+[Term]
+id: MOA:0000070
+name: Tkl protein kinase group
+is_a: MOA:0000026 ! Protein kinase
+
+[Term]
+id: MOA:0000071
+name: Tkl protein kinase raf family
+is_a: MOA:0000070 ! Tkl protein kinase group
+
+[Term]
+id: MOA:0000072
+name: Tkl protein kinase stkr family
+is_a: MOA:0000070 ! Tkl protein kinase group
+
+[Term]
+id: MOA:0000073
+name: Tkl protein kinase stkr type 1 subfamily
+is_a: MOA:0000072 ! Tkl protein kinase stkr family
+
+[Term]
+id: MOA:0000074
+name: Lyase
+is_a: MOA:0000000 ! Enzyme
+
+[Term]
+id: MOA:0000075
+name: Guanylate cyclase
+is_a: MOA:0000074 ! Lyase
+
+[Term]
+id: MOA:0000076
+name: Soluble guanylate cyclase
+synonym: "Guanylate cyclase soluble subunit alpha-3" RELATED [ChEMBL]
+synonym: "Guanylate cyclase soluble subunit alpha-2" RELATED [ChEMBL]
+synonym: "GUCSA3" RELATED [ChEMBL]
+synonym: "GCS-alpha-2" RELATED [ChEMBL]
+synonym: "GCS-alpha-3" RELATED [ChEMBL]
+synonym: "GCS-alpha-1" RELATED [ChEMBL]
+synonym: "GUCY1B1" RELATED [ChEMBL]
+synonym: "GUCY1B3" RELATED [ChEMBL]
+synonym: "GUCY1B2" RELATED [ChEMBL]
+synonym: "Soluble guanylate cyclase large subunit" RELATED [ChEMBL]
+synonym: "GUCSB3" RELATED [ChEMBL]
+synonym: "Soluble guanylate cyclase small subunit" RELATED [ChEMBL]
+synonym: "GUC1B3" RELATED [ChEMBL]
+synonym: "GUC1A2" RELATED [ChEMBL]
+synonym: "GUC1A3" RELATED [ChEMBL]
+synonym: "GCS-beta-3" RELATED [ChEMBL]
+synonym: "GCS-beta-2" RELATED [ChEMBL]
+synonym: "GCS-beta-1" RELATED [ChEMBL]
+synonym: "GUCY1A3" RELATED [ChEMBL]
+synonym: "Guanylate cyclase soluble subunit beta-3" RELATED [ChEMBL]
+synonym: "GUCY1A1" RELATED [ChEMBL]
+synonym: "Guanylate cyclase soluble subunit beta-2" RELATED [ChEMBL]
+synonym: "GUCY1A2" RELATED [ChEMBL]
+synonym: "Guanylate cyclase soluble subunit beta-1" RELATED [ChEMBL]
+synonym: "GUCSA2" RELATED [ChEMBL]
+is_a: MOA:0000075 ! Guanylate cyclase
+
+[Term]
+id: MOA:0000077
+name: Oxidoreductase
+is_a: MOA:0000000 ! Enzyme
+
+[Term]
+id: MOA:0000078
+name: Phosphodiesterase
+synonym: "PDE" RELATED []
+is_a: MOA:0000000 ! Enzyme
+
+[Term]
+id: MOA:0000079
+name: Phosphodiesterase 3
+synonym: "Cyclic GMP-inhibited phosphodiesterase B" RELATED [ChEMBL]
+synonym: "PDE3B" RELATED [ChEMBL]
+synonym: "PDE3A" RELATED [ChEMBL]
+synonym: "cGMP-inhibited 3',5'-cyclic phosphodiesterase A" RELATED [ChEMBL]
+synonym: "cGMP-inhibited 3',5'-cyclic phosphodiesterase B" RELATED [ChEMBL]
+synonym: "CGI-PDE A" RELATED [ChEMBL]
+synonym: "CGI-PDE B" RELATED [ChEMBL]
+synonym: "Cyclic GMP-inhibited phosphodiesterase A" RELATED [ChEMBL]
+synonym: "CGIP1" RELATED [ChEMBL]
+synonym: "CGIPDE1" RELATED [ChEMBL]
+is_a: MOA:0000078 ! Phosphodiesterase
+
+[Term]
+id: MOA:0000080
+name: Phosphodiesterase 4
+synonym: "PDE4D" RELATED [ChEMBL]
+synonym: "DPDE2" RELATED [ChEMBL]
+synonym: "PDE4B" RELATED [ChEMBL]
+synonym: "PDE4C" RELATED [ChEMBL]
+synonym: "DPDE1" RELATED [ChEMBL]
+synonym: "cAMP-specific 3',5'-cyclic phosphodiesterase 4C" RELATED [ChEMBL]
+synonym: "cAMP-specific 3',5'-cyclic phosphodiesterase 4B" RELATED [ChEMBL]
+synonym: "DPDE4" RELATED [ChEMBL]
+synonym: "cAMP-specific 3',5'-cyclic phosphodiesterase 4A" RELATED [ChEMBL]
+synonym: "PDE32" RELATED [ChEMBL]
+synonym: "PDE4A" RELATED [ChEMBL]
+synonym: "DPDE3" RELATED [ChEMBL]
+synonym: "cAMP-specific 3',5'-cyclic phosphodiesterase 4D" RELATED [ChEMBL]
+synonym: "PDE46" RELATED [ChEMBL]
+synonym: "PDE43" RELATED [ChEMBL]
+synonym: "PDE21" RELATED [ChEMBL]
+is_a: MOA:0000078 ! Phosphodiesterase
+
+[Term]
+id: MOA:0000081
+name: Phosphodiesterase 5
+synonym: "PDE-5" RELATED []
+synonym: "PDE5" RELATED []
+is_a: MOA:0000078 ! Phosphodiesterase
+
+[Term]
+id: MOA:0000082
+name: Sodium channel
+is_a: MOA:0000141 ! Voltage-gated sodium channel
+
+[Term]
+id: MOA:0000083
+name: Sodium-(potassium)-chloride cotransporter
+is_a: MOA:0000209 ! Slc12 family of cation-coupled chloride transporters
+
+[Term]
+id: MOA:0000084
+name: Alpha-1a adrenergic receptor
+is_a: MOA:0000172 ! Adrenergic receptor
+
+[Term]
+id: MOA:0000085
+name: Alpha-2 adrenergic receptor
+is_a: MOA:0000172 ! Adrenergic receptor
+
+[Term]
+id: MOA:0000086
+name: Cytochrome p450 family 2c
+is_a: MOA:0000020 ! Cytochrome p450 family 2
+
+[Term]
+id: MOA:0000087
+name: Cytochrome P450 2C9
+synonym: "Cytochrome P450 2C9" RELATED [ChEMBL]
+synonym: "Cholesterol 25-hydroxylase" RELATED [ChEMBL]
+synonym: "Cytochrome P-450MP" RELATED [ChEMBL]
+synonym: "(S)-limonene 6-monooxygenase" RELATED [ChEMBL]
+synonym: "(S)-limonene 7-monooxygenase" RELATED [ChEMBL]
+synonym: "S-mephenytoin 4-hydroxylase" RELATED [ChEMBL]
+synonym: "CYP2C9" RELATED [ChEMBL]
+synonym: "Cytochrome P450 MP-4" RELATED [ChEMBL]
+synonym: "CYPIIC9" RELATED [ChEMBL]
+synonym: "Cytochrome P450 PB-1" RELATED [ChEMBL]
+synonym: "(R)-limonene 6-monooxygenase" RELATED [ChEMBL]
+synonym: "CYP2C10" RELATED [ChEMBL]
+synonym: "Cytochrome P450 MP-8" RELATED [ChEMBL]
+is_a: MOA:0000086 ! Cytochrome p450 family 2c
+
+[Term]
+id: MOA:0000088
+name: Protease
+is_a: MOA:0000000 ! Enzyme
+
+[Term]
+id: MOA:0000089
+name: Aspartic protease
+is_a: MOA:0000088 ! Protease
+
+[Term]
+id: MOA:0000090
+name: Aspartic protease aa clan
+is_a: MOA:0000089 ! Aspartic protease
+
+[Term]
+id: MOA:0000091
+name: Aspartic protease ad clan
+is_a: MOA:0000089 ! Aspartic protease
+
+[Term]
+id: MOA:0000092
+name: Aspartic protease a1a subfamily
+is_a: MOA:0000090 ! Aspartic protease aa clan
+
+[Term]
+id: MOA:0000093
+name: Aspartic protease a22a subfamily
+is_a: MOA:0000091 ! Aspartic protease ad clan
+
+[Term]
+id: MOA:0000094
+name: Aspartic protease a22a regulatory subfamily
+is_a: MOA:0000093 ! Aspartic protease a22a subfamily
+
+[Term]
+id: MOA:0000095
+name: Cysteine protease
+is_a: MOA:0000088 ! Protease
+
+[Term]
+id: MOA:0000096
+name: Cysteine protease ca clan
+is_a: MOA:0000095 ! Cysteine protease
+
+[Term]
+id: MOA:0000097
+name: HIV-1 retropepsin
+is_a: MOA:0000089 ! Aspartic protease
+
+[Term]
+id: MOA:0000098
+name: Cysteine protease c1a family
+is_a: MOA:0000096 ! Cysteine protease ca clan
+
+[Term]
+id: MOA:0000099
+name: P-glycoprotein 1
+synonym: "P-glycoprotein 1" RELATED [ChEMBL]
+synonym: "ATP-binding cassette sub-family B member 1" RELATED [ChEMBL]
+synonym: "Multidrug resistance protein 1" RELATED [ChEMBL]
+synonym: "CD_antigen=CD243" RELATED [ChEMBL]
+synonym: "ABCB1" RELATED [ChEMBL]
+synonym: "PGY1" RELATED [ChEMBL]
+synonym: "MDR1" RELATED [ChEMBL]
+is_a: MOA:0000213 ! Abcg subfamily
+
+[Term]
+id: MOA:0000100
+name: Metallo protease
+is_a: MOA:0000088 ! Protease
+
+[Term]
+id: MOA:0000101
+name: Metallo protease mae clan
+is_a: MOA:0000100 ! Metallo protease
+
+[Term]
+id: MOA:0000102
+name: Metallo protease mam clan
+is_a: MOA:0000100 ! Metallo protease
+
+[Term]
+id: MOA:0000103
+name: Metallo protease m13 family
+is_a: MOA:0000101 ! Metallo protease mae clan
+
+[Term]
+id: MOA:0000104
+name: metallo protease m2 family
+is_a: MOA:0000101 ! Metallo protease mae clan
+
+[Term]
+id: MOA:0000105
+name: Metallo protease m10a subfamily
+is_a: MOA:0000102 ! Metallo protease mam clan
+
+[Term]
+id: MOA:0000106
+name: Metallo protease m12b subfamily
+is_a: MOA:0000102 ! Metallo protease mam clan
+
+[Term]
+id: MOA:0000107
+name: Serine protease
+is_a: MOA:0000088 ! Protease
+
+[Term]
+id: MOA:0000108
+name: Serine protease pa clan
+is_a: MOA:0000107 ! Serine protease
+
+[Term]
+id: MOA:0000109
+name: Serine protease s1a subfamily
+is_a: MOA:0000108 ! Serine protease pa clan
+
+[Term]
+id: MOA:0000110
+name: Serine protease sc clan
+is_a: MOA:0000107 ! Serine protease
+
+[Term]
+id: MOA:0000111
+name: Serine protease s33 family
+is_a: MOA:0000110 ! Serine protease sc clan
+
+[Term]
+id: MOA:0000112
+name: Serine protease s9b subfamily
+is_a: MOA:0000110 ! Serine protease sc clan
+
+[Term]
+id: MOA:0000113
+name: Transferase
+is_a: MOA:0000000 ! Enzyme
+
+[Term]
+id: MOA:0000114
+name: Eraser
+is_a: MOA:0000002 ! Epigenetic regulator
+
+[Term]
+id: MOA:0000115
+name: Histone deacetylase
+synonym: "MEF2-interacting transcription repressor MITR" RELATED [ChEMBL]
+synonym: "HDRP" RELATED [ChEMBL]
+synonym: "KIAA0901" RELATED [ChEMBL]
+synonym: "Antigen NY-CO-9" RELATED [ChEMBL]
+synonym: "Histone deacetylase 11" RELATED [ChEMBL]
+synonym: "Histone deacetylase 10" RELATED [ChEMBL]
+synonym: "SMAP45" RELATED [ChEMBL]
+synonym: "Histone deacetylase-related protein" RELATED [ChEMBL]
+synonym: "HDAC7A" RELATED [ChEMBL]
+synonym: "HDAC7B" RELATED [ChEMBL]
+synonym: "Histone deacetylase 9" RELATED [ChEMBL]
+synonym: "Histone deacetylase 8" RELATED [ChEMBL]
+synonym: "RPD3-2" RELATED [ChEMBL]
+synonym: "Histone deacetylase 2" RELATED [ChEMBL]
+synonym: "Histone deacetylase 3" RELATED [ChEMBL]
+synonym: "Histone deacetylase 1" RELATED [ChEMBL]
+synonym: "HDAC10" RELATED [ChEMBL]
+synonym: "KIAA0744" RELATED [ChEMBL]
+synonym: "HDAC11" RELATED [ChEMBL]
+synonym: "Histone deacetylase 7" RELATED [ChEMBL]
+synonym: "Histone deacetylase 6" RELATED [ChEMBL]
+synonym: "Histone deacetylase 5" RELATED [ChEMBL]
+synonym: "KIAA0600" RELATED [ChEMBL]
+synonym: "Histone deacetylase 4" RELATED [ChEMBL]
+synonym: "HD1" RELATED [ChEMBL]
+synonym: "HD2" RELATED [ChEMBL]
+synonym: "HD3" RELATED [ChEMBL]
+synonym: "HD4" RELATED [ChEMBL]
+synonym: "HD5" RELATED [ChEMBL]
+synonym: "HD6" RELATED [ChEMBL]
+synonym: "RPD3L1" RELATED [ChEMBL]
+synonym: "HD7" RELATED [ChEMBL]
+synonym: "HD8" RELATED [ChEMBL]
+synonym: "HD9" RELATED [ChEMBL]
+synonym: "HDACL1" RELATED [ChEMBL]
+synonym: "Histone deacetylase 7A" RELATED [ChEMBL]
+synonym: "Histone deacetylase 7B" RELATED [ChEMBL]
+synonym: "KIAA0288" RELATED [ChEMBL]
+synonym: "MITR" RELATED [ChEMBL]
+synonym: "HD7b" RELATED [ChEMBL]
+synonym: "HDAC9" RELATED [ChEMBL]
+synonym: "HDAC8" RELATED [ChEMBL]
+synonym: "HD7a" RELATED [ChEMBL]
+synonym: "HDAC7" RELATED [ChEMBL]
+synonym: "HDAC6" RELATED [ChEMBL]
+synonym: "HD10" RELATED [ChEMBL]
+synonym: "HD11" RELATED [ChEMBL]
+synonym: "HDAC3" RELATED [ChEMBL]
+synonym: "HDAC2" RELATED [ChEMBL]
+synonym: "HDAC1" RELATED [ChEMBL]
+synonym: "HDAC5" RELATED [ChEMBL]
+synonym: "HDAC4" RELATED [ChEMBL]
+is_a: MOA:0000114 ! Eraser
+
+[Term]
+id: MOA:0000116
+name: Calcium channel
+is_a: MOA:0000140 ! Voltage-gated calcium channel
+
+[Term]
+id: MOA:0000119
+name: Ligand-gated ion channel
+is_a: MOA:0000003 ! Ion channel
+
+[Term]
+id: MOA:0000120
+name: 5ht3 receptor
+is_a: MOA:0000119 ! Ligand-gated ion channel
+
+[Term]
+id: MOA:0000121
+name: GABA A receptor
+synonym: "gaba-a receptor" RELATED []
+is_a: MOA:0000119 ! Ligand-gated ion channel
+
+[Term]
+id: MOA:0000122
+name: Glycine receptor
+is_a: MOA:0000119 ! Ligand-gated ion channel
+
+[Term]
+id: MOA:0000123
+name: Ionotropic glutamate receptor
+is_a: MOA:0000119 ! Ligand-gated ion channel
+
+[Term]
+id: MOA:0000124
+name: AMPA receptor
+is_a: MOA:0000123 ! Ionotropic glutamate receptor
+
+[Term]
+id: MOA:0000125
+name: NMDA receptor
+is_a: MOA:0000123 ! Ionotropic glutamate receptor
+
+[Term]
+id: MOA:0000126
+name: Nicotinic acetylcholine receptor
+synonym: "Acetylcholine receptor protein subunit alpha-L1, putative" RELATED [ChEMBL]
+synonym: "DrosGluCl, putative" RELATED [ChEMBL]
+synonym: "Acetylcholine receptor protein alpha 1, 2, 3, 4 invertebrate, putative" RELATED [ChEMBL]
+is_a: MOA:0000119 ! Ligand-gated ion channel
+
+[Term]
+id: MOA:0000127
+name: Nicotinic acetylcholine receptor alpha subunit
+is_a: MOA:0000126 ! Nicotinic acetylcholine receptor
+
+[Term]
+id: MOA:0000128
+name: Nicotinic acetylcholine receptor beta subunit
+is_a: MOA:0000126 ! Nicotinic acetylcholine receptor
+
+[Term]
+id: MOA:0000129
+name: P2X receptor
+is_a: MOA:0000119 ! Ligand-gated ion channel
+
+[Term]
+id: MOA:0000130
+name: Other ion channel
+is_a: MOA:0000003 ! Ion channel
+
+[Term]
+id: MOA:0000131
+name: Chloride channel
+is_a: MOA:0000130 ! Other ion channel
+
+[Term]
+id: MOA:0000132
+name: Cystic fibrosis transmembrane conductance regulator
+synonym: "ATP-binding cassette sub-family C member 7" RELATED [ChEMBL]
+synonym: "Channel conductance-controlling ATPase" RELATED [ChEMBL]
+synonym: "cAMP-dependent chloride channel" RELATED [ChEMBL]
+synonym: "CFTR" RELATED [ChEMBL]
+synonym: "ABCC7" RELATED [ChEMBL]
+synonym: "Cystic fibrosis transmembrane conductance regulator" RELATED [ChEMBL]
+is_a: MOA:0000131 ! Chloride channel
+
+[Term]
+id: MOA:0000133
+name: Miscellaneous ion channel
+is_a: MOA:0000130 ! Other ion channel
+
+[Term]
+id: MOA:0000134
+name: Presenilin er ca2+ leak channel family
+is_a: MOA:0000130 ! Other ion channel
+
+[Term]
+id: MOA:0000135
+name: Pore-forming toxins (proteins and peptides)
+is_a: MOA:0000130 ! Other ion channel
+
+[Term]
+id: MOA:0000136
+name: Voltage-gated ion channel
+is_a: MOA:0000003 ! Ion channel
+
+[Term]
+id: MOA:0000137
+name: Potassium channels
+is_a: MOA:0000136 ! Voltage-gated ion channel
+
+[Term]
+id: MOA:0000138
+name: Voltage-gated potassium channel
+is_a: MOA:0000137 ! Potassium channels
+
+[Term]
+id: MOA:0000139
+name: Transient receptor potential channel
+is_a: MOA:0000136 ! Voltage-gated ion channel
+
+[Term]
+id: MOA:0000140
+name: Voltage-gated calcium channel
+is_a: MOA:0000014 ! Calcium channel auxiliary subunit beta family
+is_a: MOA:0000136 ! Voltage-gated ion channel
+is_a: MOA:0000015 ! Calcium channel auxiliary subunit gamma family
+is_a: MOA:0000013 ! Calcium channel auxiliary subunit alpha2delta family
+
+[Term]
+id: MOA:0000141
+name: Voltage-gated sodium channel
+is_a: MOA:0000136 ! Voltage-gated ion channel
+
+[Term]
+id: MOA:0000142
+name: Family a g protein-coupled receptor
+is_a: MOA:0000004 ! Membrane receptor
+
+[Term]
+id: MOA:0000143
+name: Family c g protein-coupled receptor
+is_a: MOA:0000004 ! Membrane receptor
+
+[Term]
+id: MOA:0000144
+name: Peptide receptor (family a gpcr)
+is_a: MOA:0000142 ! Family a g protein-coupled receptor
+
+[Term]
+id: MOA:0000145
+name: Small molecule receptor (family a gpcr)
+is_a: MOA:0000142 ! Family a g protein-coupled receptor
+
+[Term]
+id: MOA:0000146
+name: Small molecule receptor (family c gpcr)
+is_a: MOA:0000143 ! Family c g protein-coupled receptor
+
+[Term]
+id: MOA:0000147
+name: Chemokine receptor
+synonym: "Chemokine receptor" RELATED [ChEMBL]
+synonym: "Uncharacterized protein" RELATED [ChEMBL]
+is_a: MOA:0000144 ! Peptide receptor (family a gpcr)
+
+[Term]
+id: MOA:0000148
+name: CC chemokine receptor
+is_a: MOA:0000147 ! Chemokine receptor
+
+[Term]
+id: MOA:0000149
+name: CX3C chemokine receptor
+is_a: MOA:0000147 ! Chemokine receptor
+
+[Term]
+id: MOA:0000150
+name: CXC chemokine receptor
+is_a: MOA:0000147 ! Chemokine receptor
+
+[Term]
+id: MOA:0000151
+name: Short peptide receptor (family a gpcr)
+is_a: MOA:0000144 ! Peptide receptor (family a gpcr)
+
+[Term]
+id: MOA:0000152
+name: Angiotensin receptor
+is_a: MOA:0000151 ! Short peptide receptor (family a gpcr)
+
+[Term]
+id: MOA:0000153
+name: Bradykinin receptor
+is_a: MOA:0000151 ! Short peptide receptor (family a gpcr)
+
+[Term]
+id: MOA:0000154
+name: Cholecystokinin receptor
+is_a: MOA:0000151 ! Short peptide receptor (family a gpcr)
+
+[Term]
+id: MOA:0000155
+name: Endothelin receptor
+is_a: MOA:0000151 ! Short peptide receptor (family a gpcr)
+
+[Term]
+id: MOA:0000156
+name: Gnrh receptor
+is_a: MOA:0000151 ! Short peptide receptor (family a gpcr)
+
+[Term]
+id: MOA:0000157
+name: Mch receptor
+is_a: MOA:0000151 ! Short peptide receptor (family a gpcr)
+
+[Term]
+id: MOA:0000158
+name: Melanocortin receptor
+is_a: MOA:0000151 ! Short peptide receptor (family a gpcr)
+
+[Term]
+id: MOA:0000159
+name: Neurokinin receptor
+is_a: MOA:0000151 ! Short peptide receptor (family a gpcr)
+
+[Term]
+id: MOA:0000160
+name: Neuropeptide y receptor
+is_a: MOA:0000151 ! Short peptide receptor (family a gpcr)
+
+[Term]
+id: MOA:0000161
+name: Opioid receptor
+is_a: MOA:0000151 ! Short peptide receptor (family a gpcr)
+
+[Term]
+id: MOA:0000162
+name: Vasopressin and oxytocin receptor
+is_a: MOA:0000151 ! Short peptide receptor (family a gpcr)
+
+[Term]
+id: MOA:0000163
+name: Carboxylic acid receptor
+is_a: MOA:0000145 ! Small molecule receptor (family a gpcr)
+
+[Term]
+id: MOA:0000164
+name: Kynurenic acid receptor
+is_a: MOA:0000163 ! Carboxylic acid receptor
+
+[Term]
+id: MOA:0000165
+name: Lipid-like ligand receptor (family a gpcr)
+is_a: MOA:0000145 ! Small molecule receptor (family a gpcr)
+
+[Term]
+id: MOA:0000166
+name: Cannabinoid receptor
+is_a: MOA:0000165 ! Lipid-like ligand receptor (family a gpcr)
+
+[Term]
+id: MOA:0000167
+name: Leukotriene receptor
+is_a: MOA:0000165 ! Lipid-like ligand receptor (family a gpcr)
+
+[Term]
+id: MOA:0000168
+name: Paf receptor
+is_a: MOA:0000165 ! Lipid-like ligand receptor (family a gpcr)
+
+[Term]
+id: MOA:0000169
+name: Prostanoid receptor
+is_a: MOA:0000165 ! Lipid-like ligand receptor (family a gpcr)
+
+[Term]
+id: MOA:0000170
+name: Monoamine receptor
+is_a: MOA:0000145 ! Small molecule receptor (family a gpcr)
+
+[Term]
+id: MOA:0000171
+name: Acetylcholine receptor
+is_a: MOA:0000170 ! Monoamine receptor
+
+[Term]
+id: MOA:0000172
+name: Adrenergic receptor
+is_a: MOA:0000170 ! Monoamine receptor
+
+[Term]
+id: MOA:0000173
+name: Dopamine receptor
+synonym: "Dopamine D4 receptor" RELATED [ChEMBL]
+synonym: "D(2C) dopamine receptor" RELATED [ChEMBL]
+synonym: "Dopamine D5 receptor" RELATED [ChEMBL]
+synonym: "Drd4" RELATED [ChEMBL]
+synonym: "D(5) dopamine receptor" RELATED [ChEMBL]
+synonym: "Drd5" RELATED [ChEMBL]
+synonym: "D(1B) dopamine receptor" RELATED [ChEMBL]
+synonym: "Drd1a" RELATED [ChEMBL]
+synonym: "D(4) dopamine receptor" RELATED [ChEMBL]
+is_a: MOA:0000170 ! Monoamine receptor
+
+[Term]
+id: MOA:0000174
+name: Histamine receptor
+is_a: MOA:0000170 ! Monoamine receptor
+
+[Term]
+id: MOA:0000175
+name: Serotonin receptor
+is_a: MOA:0000170 ! Monoamine receptor
+
+[Term]
+id: MOA:0000176
+name: Nucleotide-like receptor (family a gpcr)
+is_a: MOA:0000145 ! Small molecule receptor (family a gpcr)
+
+[Term]
+id: MOA:0000177
+name: Adenosine receptor
+is_a: MOA:0000176 ! Nucleotide-like receptor (family a gpcr)
+
+[Term]
+id: MOA:0000178
+name: Purine receptor
+is_a: MOA:0000176 ! Nucleotide-like receptor (family a gpcr)
+
+[Term]
+id: MOA:0000179
+name: Neurotransmitter receptor (family c gpcr)
+is_a: MOA:0000146 ! Small molecule receptor (family c gpcr)
+
+[Term]
+id: MOA:0000180
+name: GABA B receptor
+synonym: "Gabbr2" RELATED [ChEMBL]
+synonym: "GABABR2" RELATED [ChEMBL]
+synonym: "Gabbr1" RELATED [ChEMBL]
+synonym: "G-protein coupled receptor 51" RELATED [ChEMBL]
+synonym: "Gamma-aminobutyric acid type B receptor subunit 2" RELATED [ChEMBL]
+synonym: "Gb1" RELATED [ChEMBL]
+synonym: "Gb2" RELATED [ChEMBL]
+synonym: "GABA-BR1" RELATED [ChEMBL]
+synonym: "GABA-B-R2" RELATED [ChEMBL]
+synonym: "GABA-B-R1" RELATED [ChEMBL]
+synonym: "GABA-B receptor 2" RELATED [ChEMBL]
+synonym: "Gamma-aminobutyric acid type B receptor subunit 1" RELATED [ChEMBL]
+synonym: "Gpr51" RELATED [ChEMBL]
+synonym: "GABABR1" RELATED [ChEMBL]
+synonym: "GABA-B receptor 1" RELATED [ChEMBL]
+synonym: "GABA-BR2" RELATED [ChEMBL]
+is_a: MOA:0000179 ! Neurotransmitter receptor (family c gpcr)
+
+[Term]
+id: MOA:0000181
+name: Metabotropic glutamate receptor
+is_a: MOA:0000179 ! Neurotransmitter receptor (family c gpcr)
+
+[Term]
+id: MOA:0000182
+name: Toll-like and il-1 receptors
+is_a: MOA:0000004 ! Membrane receptor
+
+[Term]
+id: MOA:0000183
+name: Nuclear receptor
+is_a: MOA:0000011 ! Transcription factor
+
+[Term]
+id: MOA:0000184
+name: Nuclear hormone receptor subfamily 1
+is_a: MOA:0000183 ! Nuclear receptor
+
+[Term]
+id: MOA:0000185
+name: Nuclear hormone receptor subfamily 3
+is_a: MOA:0000183 ! Nuclear receptor
+
+[Term]
+id: MOA:0000186
+name: Nuclear hormone receptor subfamily 1 group b
+is_a: MOA:0000184 ! Nuclear hormone receptor subfamily 1
+
+[Term]
+id: MOA:0000187
+name: Nuclear hormone receptor subfamily 1 group c
+is_a: MOA:0000184 ! Nuclear hormone receptor subfamily 1
+
+[Term]
+id: MOA:0000188
+name: Nuclear hormone receptor subfamily 1 group h
+is_a: MOA:0000184 ! Nuclear hormone receptor subfamily 1
+
+[Term]
+id: MOA:0000189
+name: Nuclear hormone receptor subfamily 1 group i
+is_a: MOA:0000184 ! Nuclear hormone receptor subfamily 1
+
+[Term]
+id: MOA:0000190
+name: Nuclear hormone receptor subfamily 1 group b member 3
+is_a: MOA:0000186 ! Nuclear hormone receptor subfamily 1 group b
+
+[Term]
+id: MOA:0000191
+name: Nuclear hormone receptor subfamily 1 group c member 1
+is_a: MOA:0000187 ! Nuclear hormone receptor subfamily 1 group c
+
+[Term]
+id: MOA:0000192
+name: Nuclear hormone receptor subfamily 1 group c member 3
+is_a: MOA:0000187 ! Nuclear hormone receptor subfamily 1 group c
+
+[Term]
+id: MOA:0000193
+name: Nuclear hormone receptor subfamily 1 group h member 3
+is_a: MOA:0000188 ! Nuclear hormone receptor subfamily 1 group h
+
+[Term]
+id: MOA:0000194
+name: Nuclear hormone receptor subfamily 1 group i member 1
+is_a: MOA:0000189 ! Nuclear hormone receptor subfamily 1 group i
+
+[Term]
+id: MOA:0000195
+name: Nuclear hormone receptor subfamily 3 group a
+is_a: MOA:0000185 ! Nuclear hormone receptor subfamily 3
+
+[Term]
+id: MOA:0000196
+name: Nuclear hormone receptor subfamily 3 group c
+is_a: MOA:0000185 ! Nuclear hormone receptor subfamily 3
+
+[Term]
+id: MOA:0000197
+name: Nuclear hormone receptor subfamily 3 group a member 1
+is_a: MOA:0000195 ! Nuclear hormone receptor subfamily 3 group a
+
+[Term]
+id: MOA:0000198
+name: Nuclear hormone receptor subfamily 3 group a member 2
+is_a: MOA:0000195 ! Nuclear hormone receptor subfamily 3 group a
+
+[Term]
+id: MOA:0000199
+name: Nuclear hormone receptor subfamily 3 group c member 1
+is_a: MOA:0000196 ! Nuclear hormone receptor subfamily 3 group c
+
+[Term]
+id: MOA:0000200
+name: Nuclear hormone receptor subfamily 3 group c member 2
+is_a: MOA:0000196 ! Nuclear hormone receptor subfamily 3 group c
+
+[Term]
+id: MOA:0000201
+name: Nuclear hormone receptor subfamily 3 group c member 3
+is_a: MOA:0000196 ! Nuclear hormone receptor subfamily 3 group c
+
+[Term]
+id: MOA:0000202
+name: Nuclear hormone receptor subfamily 3 group c member 4
+is_a: MOA:0000196 ! Nuclear hormone receptor subfamily 3 group c
+
+[Term]
+id: MOA:0000203
+name: Electrochemical transporter
+is_a: MOA:0000010 ! Transporter
+
+[Term]
+id: MOA:0000204
+name: Slc superfamily of solute carriers
+is_a: MOA:0000203 ! Electrochemical transporter
+
+[Term]
+id: MOA:0000206
+name: Slc06 neurotransmitter transporter family
+is_a: MOA:0000204 ! Slc superfamily of solute carriers
+
+[Term]
+id: MOA:0000207
+name: Slc09 family of sodium/hydrogen exchangers
+is_a: MOA:0000204 ! Slc superfamily of solute carriers
+
+[Term]
+id: MOA:0000208
+name: Slc10 family of sodium-bile acid co-transporters
+is_a: MOA:0000204 ! Slc superfamily of solute carriers
+
+[Term]
+id: MOA:0000209
+name: Slc12 family of cation-coupled chloride transporters
+is_a: MOA:0000204 ! Slc superfamily of solute carriers
+
+[Term]
+id: MOA:0000210
+name: Slc16 family of monocarboxylate transporters
+is_a: MOA:0000204 ! Slc superfamily of solute carriers
+
+[Term]
+id: MOA:0000211
+name: Primary active transporter
+is_a: MOA:0000010 ! Transporter
+
+[Term]
+id: MOA:0000212
+name: Atp-binding cassette
+is_a: MOA:0000211 ! Primary active transporter
+
+[Term]
+id: MOA:0000213
+name: Abcg subfamily
+is_a: MOA:0000212 ! Atp-binding cassette
+
+[Term]
+id: MOA:0000214
+name: P-type atpase
+is_a: MOA:0000211 ! Primary active transporter
+
+[Term]
+id: MOA:0000215
+name: Hydrogen potassium atpase
+is_a: MOA:0000214 ! P-type atpase
+
+[Term]
+id: MOA:0000216
+name: Voltage-gated potassium channel subunit Kv7.1
+synonym: "Potassium voltage-gated channel subfamily KQT member 1" RELATED [ChEMBL]
+synonym: "KCNQ1" RELATED [ChEMBL]
+synonym: "KCNA9" RELATED [ChEMBL]
+synonym: "KCNA8" RELATED [ChEMBL]
+synonym: "Voltage-gated potassium channel subunit Kv7.1" RELATED [ChEMBL]
+synonym: "KQT-like 1" RELATED [ChEMBL]
+synonym: "KVLQT1" RELATED [ChEMBL]
+synonym: "IKs producing slow voltage-gated potassium channel subunit alpha KvLQT1" RELATED [ChEMBL]
+is_a: MOA:0000138 ! Voltage-gated potassium channel
+
+[Term]
+id: MOA:0000217
+name: Voltage-gated potassium channel subunit Kv1.5
+synonym: "HPCN1" RELATED [ChEMBL]
+synonym: "KCNA5" RELATED [ChEMBL]
+synonym: "Voltage-gated potassium channel HK2" RELATED [ChEMBL]
+synonym: "Potassium voltage-gated channel subfamily A member 5" RELATED [ChEMBL]
+synonym: "Voltage-gated potassium channel subunit Kv1.5" RELATED [ChEMBL]
+is_a: MOA:0000138 ! Voltage-gated potassium channel
+
+[Term]
+id: MOA:0000218
+name: Voltage-gated L-type calcium channel
+synonym: "Voltage-dependent L-type calcium channel subunit alpha-1D" RELATED [ChEMBL]
+synonym: "Voltage-dependent L-type calcium channel subunit alpha-1F" RELATED [ChEMBL]
+synonym: "CACNA1S" RELATED [ChEMBL]
+synonym: "Calcium channel, L type, alpha-1 polypeptide, isoform 3, skeletal muscle" RELATED [ChEMBL]
+synonym: "Voltage-dependent L-type calcium channel subunit alpha-1S" RELATED [ChEMBL]
+synonym: "CACNL1A3" RELATED [ChEMBL]
+synonym: "CCHL1A2" RELATED [ChEMBL]
+synonym: "CACNL1A2" RELATED [ChEMBL]
+synonym: "CACNL1A1" RELATED [ChEMBL]
+synonym: "Voltage-dependent L-type calcium channel subunit alpha-1C" RELATED [ChEMBL]
+synonym: "CACNA1C" RELATED [ChEMBL]
+synonym: "CACNA1D" RELATED [ChEMBL]
+synonym: "Calcium channel, L type, alpha-1 polypeptide, isoform 1, cardiac muscle" RELATED [ChEMBL]
+synonym: "CACH2" RELATED [ChEMBL]
+synonym: "CACH1" RELATED [ChEMBL]
+synonym: "CACNA1F" RELATED [ChEMBL]
+synonym: "CCHL1A1" RELATED [ChEMBL]
+synonym: "CACH3" RELATED [ChEMBL]
+synonym: "CACNAF1" RELATED [ChEMBL]
+synonym: "Voltage-gated calcium channel subunit alpha Cav1.4" RELATED [ChEMBL]
+synonym: "CACN2" RELATED [ChEMBL]
+synonym: "Voltage-gated calcium channel subunit alpha Cav1.3" RELATED [ChEMBL]
+synonym: "Voltage-gated calcium channel subunit alpha Cav1.1" RELATED [ChEMBL]
+synonym: "CACN4" RELATED [ChEMBL]
+synonym: "Voltage-gated calcium channel subunit alpha Cav1.2" RELATED [ChEMBL]
+synonym: "CACN1" RELATED [ChEMBL]
+synonym: "Calcium channel, L type, alpha-1 polypeptide, isoform 2" RELATED [ChEMBL]
+is_a: MOA:0000140 ! Voltage-gated calcium channel
+
+[Term]
+id: MOA:0000219
+name: Vitamin D receptor
+synonym: "VDR" RELATED [ChEMBL]
+synonym: "Vitamin D3 receptor" RELATED [ChEMBL]
+synonym: "1,25-dihydroxyvitamin D3 receptor" RELATED [ChEMBL]
+synonym: "NR1I1" RELATED [ChEMBL]
+synonym: "Nuclear receptor subfamily 1 group I member 1" RELATED [ChEMBL]
+is_a: MOA:0000194 ! Nuclear hormone receptor subfamily 1 group i member 1
+
+[Term]
+id: MOA:0000220
+name: Vasopressin V1b receptor
+synonym: "Vasopressin V1b receptor" RELATED [ChEMBL]
+synonym: "AVPR1B" RELATED [ChEMBL]
+synonym: "AVPR V3" RELATED [ChEMBL]
+synonym: "AVPR V1b" RELATED [ChEMBL]
+synonym: "AVPR3" RELATED [ChEMBL]
+synonym: "VPR3" RELATED [ChEMBL]
+synonym: "V1bR" RELATED [ChEMBL]
+synonym: "Antidiuretic hormone receptor 1b" RELATED [ChEMBL]
+synonym: "Vasopressin V3 receptor" RELATED [ChEMBL]
+is_a: MOA:0000162 ! Vasopressin and oxytocin receptor
+
+[Term]
+id: MOA:0000221
+name: Vascular endothelial growth factor receptor
+synonym: "FRT" RELATED [ChEMBL]
+synonym: "Fms-like tyrosine kinase 1" RELATED [ChEMBL]
+synonym: "FLT-1" RELATED [ChEMBL]
+synonym: "Vascular endothelial growth factor receptor 1" RELATED [ChEMBL]
+synonym: "FLT1" RELATED [ChEMBL]
+synonym: "FLT" RELATED [ChEMBL]
+synonym: "VEGFR1" RELATED [ChEMBL]
+synonym: "Tyrosine-protein kinase FRT" RELATED [ChEMBL]
+synonym: "Tyrosine-protein kinase receptor FLT" RELATED [ChEMBL]
+synonym: "Vascular permeability factor receptor" RELATED [ChEMBL]
+synonym: "VEGFR-1" RELATED [ChEMBL]
+is_a: MOA:0000069 ! Tyrosine protein kinase vegfr family
+
+[Term]
+id: MOA:0000222
+name: Vascular endothelial growth factor receptor 2
+is_a: MOA:0000069 ! Tyrosine protein kinase vegfr family
+
+[Term]
+id: MOA:0000223
+name: Vascular endothelial growth factor receptor 3
+is_a: MOA:0000069 ! Tyrosine protein kinase vegfr family
+
+[Term]
+id: MOA:0000224
+name: Vanilloid receptor
+synonym: "Osm-9-like TRP channel 1" RELATED [ChEMBL]
+synonym: "OTRPC1" RELATED [ChEMBL]
+synonym: "Capsaicin receptor" RELATED [ChEMBL]
+synonym: "VR1" RELATED [ChEMBL]
+synonym: "Transient receptor potential cation channel subfamily V member 1" RELATED [ChEMBL]
+synonym: "TrpV1" RELATED [ChEMBL]
+synonym: "Vanilloid receptor 1" RELATED [ChEMBL]
+is_a: MOA:0000139 ! Transient receptor potential channel
+
+[Term]
+id: MOA:0000225
+name: Tyrosine-protein kinase JAK2
+synonym: "JAK2" RELATED [ChEMBL]
+synonym: "Janus kinase 2" RELATED [ChEMBL]
+synonym: "JAK-2" RELATED [ChEMBL]
+synonym: "Tyrosine-protein kinase JAK2" RELATED [ChEMBL]
+is_a: MOA:0000064 ! Tyrosine protein kinase jakb family
+is_a: MOA:0000063 ! Tyrosine protein kinase jaka family
+
+[Term]
+id: MOA:0000226
+name: Tyrosine-protein kinase ABL
+synonym: "Proto-oncogene c-Abl" RELATED [ChEMBL]
+synonym: "Tyrosine-protein kinase ABL1" RELATED [ChEMBL]
+synonym: "JTK7" RELATED [ChEMBL]
+synonym: "Abelson murine leukemia viral oncogene homolog 1" RELATED [ChEMBL]
+synonym: "p150" RELATED [ChEMBL]
+synonym: "ABL" RELATED [ChEMBL]
+synonym: "Abelson tyrosine-protein kinase 1" RELATED [ChEMBL]
+synonym: "ABL1" RELATED [ChEMBL]
+is_a: MOA:0000058 ! Tyrosine protein kinase abl family
+
+[Term]
+id: MOA:0000227
+name: Tryptase beta-1
+synonym: "Tryptase I" RELATED [ChEMBL]
+synonym: "Tryptase alpha/beta-1" RELATED [ChEMBL]
+synonym: "TPS2" RELATED [ChEMBL]
+synonym: "TPS1" RELATED [ChEMBL]
+synonym: "Tryptase alpha-1" RELATED [ChEMBL]
+synonym: "Tryptase-1" RELATED [ChEMBL]
+synonym: "TPSAB1" RELATED [ChEMBL]
+synonym: "TPSB1" RELATED [ChEMBL]
+is_a: MOA:0000109 ! Serine protease s1a subfamily
+
+[Term]
+id: MOA:0000228
+name: Topoisomerase IV
+is_a: MOA:0000024 ! Isomerase
+
+[Term]
+id: MOA:0000229
+name: Topoisomerase II
+is_a: MOA:0000024 ! Isomerase
+
+[Term]
+id: MOA:0000230
+name: Topoisomerase
+is_a: MOA:0000024 ! Isomerase
+
+[Term]
+id: MOA:0000231
+name: Toll-like receptor 7
+synonym: "Toll-like receptor 7" RELATED [ChEMBL]
+synonym: "TLR7" RELATED [ChEMBL]
+is_a: MOA:0000182 ! Toll-like and il-1 receptors
+
+[Term]
+id: MOA:0000232
+name: TNF-alpha
+synonym: "TNFA" RELATED []
+synonym: "Intracellular domain 1" RELATED []
+synonym: "NTF" RELATED []
+synonym: "Intracellular domain 2" RELATED []
+synonym: "Tumor necrosis factor" RELATED []
+synonym: "C-domain 2" RELATED []
+synonym: "C-domain 1" RELATED []
+synonym: "Tumor necrosis factor, soluble form" RELATED []
+synonym: "ICD2" RELATED []
+synonym: "ICD1" RELATED []
+synonym: "TNFSF2" RELATED []
+synonym: "TNF" RELATED []
+synonym: "Tumor necrosis factor ligand superfamily member 2" RELATED []
+synonym: "TNF-a" RELATED []
+synonym: "N-terminal fragment" RELATED []
+synonym: "TNF-alpha" RELATED []
+synonym: "Tumor necrosis factor, membrane form" RELATED []
+synonym: "Cachectin" RELATED []
+is_a: MOA:0000007 ! Secreted protein
+
+[Term]
+id: MOA:0000233
+name: Thymidylate synthase
+synonym: "TYMS" RELATED [ChEMBL]
+synonym: "TSase" RELATED [ChEMBL]
+synonym: "TS" RELATED [ChEMBL]
+synonym: "Thymidylate synthase" RELATED [ChEMBL]
+is_a: MOA:0000113 ! Transferase
+
+[Term]
+id: MOA:0000234
+name: Thromboxane A2 receptor
+synonym: "Thromboxane A2 receptor" RELATED [ChEMBL]
+synonym: "TBXA2R" RELATED [ChEMBL]
+synonym: "Prostanoid TP receptor" RELATED [ChEMBL]
+synonym: "TXA2-R" RELATED [ChEMBL]
+is_a: MOA:0000169 ! Prostanoid receptor
+
+[Term]
+id: MOA:0000235
+name: Thrombin & trypsin
+synonym: "Brain trypsinogen" RELATED [ChEMBL]
+synonym: "Trypsin-3" RELATED [ChEMBL]
+synonym: "TRYP2" RELATED [ChEMBL]
+synonym: "Trypsin III" RELATED [ChEMBL]
+synonym: "Trypsin II" RELATED [ChEMBL]
+synonym: "TRYP1" RELATED [ChEMBL]
+synonym: "Trypsin-2" RELATED [ChEMBL]
+synonym: "Trypsin-1" RELATED [ChEMBL]
+synonym: "Anionic trypsinogen" RELATED [ChEMBL]
+synonym: "TRY3" RELATED [ChEMBL]
+synonym: "TRY2" RELATED [ChEMBL]
+synonym: "TRY1" RELATED [ChEMBL]
+synonym: "Trypsin IV" RELATED [ChEMBL]
+synonym: "TRY4" RELATED [ChEMBL]
+synonym: "Cationic trypsinogen" RELATED [ChEMBL]
+synonym: "Serine protease 1" RELATED [ChEMBL]
+synonym: "Serine protease 2" RELATED [ChEMBL]
+synonym: "Serine protease 3" RELATED [ChEMBL]
+synonym: "PRSS2" RELATED [ChEMBL]
+synonym: "Trypsin I" RELATED [ChEMBL]
+synonym: "PRSS1" RELATED [ChEMBL]
+synonym: "PRSS4" RELATED [ChEMBL]
+synonym: "PRSS3" RELATED [ChEMBL]
+synonym: "Serine protease 4" RELATED [ChEMBL]
+synonym: "Beta-trypsin" RELATED [ChEMBL]
+synonym: "Alpha-trypsin chain 1" RELATED [ChEMBL]
+synonym: "Mesotrypsinogen" RELATED [ChEMBL]
+synonym: "Alpha-trypsin chain 2" RELATED [ChEMBL]
+synonym: "TRP1" RELATED [ChEMBL]
+is_a: MOA:0000109 ! Serine protease s1a subfamily
+
+[Term]
+id: MOA:0000236
+name: Thrombin
+is_a: MOA:0000109 ! Serine protease s1a subfamily
+
+[Term]
+id: MOA:0000237
+name: Thiazide-sensitive sodium-chloride cotransporter
+synonym: "Na-Cl cotransporter" RELATED [ChEMBL]
+synonym: "TSC" RELATED [ChEMBL]
+synonym: "Na-Cl symporter" RELATED [ChEMBL]
+synonym: "SLC12A3" RELATED [ChEMBL]
+synonym: "Solute carrier family 12 member 3" RELATED [ChEMBL]
+synonym: "Thiazide-sensitive sodium-chloride cotransporter" RELATED [ChEMBL]
+synonym: "NCC" RELATED [ChEMBL]
+is_a: MOA:0000209 ! Slc12 family of cation-coupled chloride transporters
+
+[Term]
+id: MOA:0000238
+name: 11-beta-hydroxysteroid dehydrogenase 1
+synonym: "HSD11B1" RELATED [ChEMBL]
+synonym: "HSD11L" RELATED [ChEMBL]
+synonym: "11-beta-hydroxysteroid dehydrogenase 1" RELATED [ChEMBL]
+synonym: "Corticosteroid 11-beta-dehydrogenase isozyme 1" RELATED [ChEMBL]
+synonym: "11-DH" RELATED [ChEMBL]
+synonym: "11-beta-HSD1" RELATED [ChEMBL]
+synonym: "HSD11" RELATED [ChEMBL]
+is_a: MOA:0000000 ! Enzyme
+
+[Term]
+id: MOA:0000239
+name: Acyl-CoA wax alcohol acyltransferase 1
+synonym: "AWAT1" RELATED [ChEMBL]
+synonym: "Diacylglycerol acyltransferase 2" RELATED [ChEMBL]
+synonym: "DGAT2L3" RELATED [ChEMBL]
+synonym: "DGA2" RELATED [ChEMBL]
+synonym: "Diacylglycerol O-acyltransferase 2-like protein 3" RELATED [ChEMBL]
+synonym: "Acyl-CoA wax alcohol acyltransferase 1" RELATED [ChEMBL]
+synonym: "Long-chain-alcohol O-fatty-acyltransferase 1" RELATED [ChEMBL]
+is_a: MOA:0000000 ! Enzyme
+
+[Term]
+id: MOA:0000240
+name: Adenosylhomocysteinase
+synonym: "AdoHcyase" RELATED [ChEMBL]
+synonym: "S-adenosyl-L-homocysteine hydrolase" RELATED [ChEMBL]
+synonym: "Adenosylhomocysteinase" RELATED [ChEMBL]
+synonym: "AHCY" RELATED [ChEMBL]
+synonym: "SAHH" RELATED [ChEMBL]
+is_a: MOA:0000000 ! Enzyme
+
+[Term]
+id: MOA:0000241
+name: Adenylate cyclase
+synonym: "Adenylate cyclase type 9" RELATED [ChEMBL]
+synonym: "KIAA0520" RELATED [ChEMBL]
+synonym: "Adenylyl cyclase 5" RELATED [ChEMBL]
+synonym: "Adenylyl cyclase 6" RELATED [ChEMBL]
+synonym: "Adenylyl cyclase 7" RELATED [ChEMBL]
+synonym: "Adenylyl cyclase 8" RELATED [ChEMBL]
+synonym: "Adenylyl cyclase 9" RELATED [ChEMBL]
+synonym: "ADCY1" RELATED [ChEMBL]
+synonym: "ADCY3" RELATED [ChEMBL]
+synonym: "ADCY2" RELATED [ChEMBL]
+synonym: "AC8" RELATED [ChEMBL]
+synonym: "KIAA1060" RELATED [ChEMBL]
+synonym: "Adenylate cyclase type 1" RELATED [ChEMBL]
+synonym: "Adenylate cyclase type 2" RELATED [ChEMBL]
+synonym: "Adenylate cyclase type 3" RELATED [ChEMBL]
+synonym: "Adenylate cyclase type 4" RELATED [ChEMBL]
+synonym: "Adenylate cyclase type 5" RELATED [ChEMBL]
+synonym: "Adenylate cyclase type 6" RELATED [ChEMBL]
+synonym: "Adenylate cyclase type 7" RELATED [ChEMBL]
+synonym: "Adenylate cyclase type 8" RELATED [ChEMBL]
+synonym: "KIAA0037" RELATED [ChEMBL]
+synonym: "Ca(2+)/calmodulin-activated adenylyl cyclase" RELATED [ChEMBL]
+synonym: "Adenylate cyclase type VII" RELATED [ChEMBL]
+synonym: "KIAA0511" RELATED [ChEMBL]
+synonym: "ADCY5" RELATED [ChEMBL]
+synonym: "ADCY4" RELATED [ChEMBL]
+synonym: "ADCY6" RELATED [ChEMBL]
+synonym: "Adenylate cyclase type IX" RELATED [ChEMBL]
+synonym: "ADCY9" RELATED [ChEMBL]
+synonym: "Adenylate cyclase type IV" RELATED [ChEMBL]
+synonym: "ADCY7" RELATED [ChEMBL]
+synonym: "ADCY8" RELATED [ChEMBL]
+synonym: "ATP pyrophosphate-lyase 5" RELATED [ChEMBL]
+synonym: "Adenylate cyclase type VI" RELATED [ChEMBL]
+synonym: "ATP pyrophosphate-lyase 6" RELATED [ChEMBL]
+synonym: "ATP pyrophosphate-lyase 2" RELATED [ChEMBL]
+synonym: "ATP pyrophosphate-lyase 1" RELATED [ChEMBL]
+synonym: "ATP pyrophosphate-lyase 4" RELATED [ChEMBL]
+synonym: "ATP pyrophosphate-lyase 3" RELATED [ChEMBL]
+synonym: "Adenylate cyclase type VIII" RELATED [ChEMBL]
+synonym: "AC-III" RELATED [ChEMBL]
+synonym: "Adenylate cyclase type II" RELATED [ChEMBL]
+synonym: "ATP pyrophosphate-lyase 9" RELATED [ChEMBL]
+synonym: "ATP pyrophosphate-lyase 7" RELATED [ChEMBL]
+synonym: "ATP pyrophosphate-lyase 8" RELATED [ChEMBL]
+synonym: "Adenylyl cyclase 3" RELATED [ChEMBL]
+synonym: "Adenylate cyclase, olfactive type" RELATED [ChEMBL]
+synonym: "Adenylyl cyclase 4" RELATED [ChEMBL]
+synonym: "Adenylyl cyclase 1" RELATED [ChEMBL]
+synonym: "Adenylyl cyclase 2" RELATED [ChEMBL]
+synonym: "Adenylate cyclase type I" RELATED [ChEMBL]
+synonym: "AC3" RELATED [ChEMBL]
+synonym: "Adenylate cyclase type V" RELATED [ChEMBL]
+synonym: "KIAA0422" RELATED [ChEMBL]
+synonym: "Ca(2+)-inhibitable adenylyl cyclase" RELATED [ChEMBL]
+synonym: "Adenylate cyclase type III" RELATED [ChEMBL]
+is_a: MOA:0000000 ! Enzyme
+
+[Term]
+id: MOA:0000242
+name: Alpha-glucosidase
+is_a: MOA:0000000 ! Enzyme
+
+[Term]
+id: MOA:0000243
+name: Anandamide amidohydrolase
+synonym: "FAAH1" RELATED [ChEMBL]
+synonym: "Anandamide amidohydrolase 1" RELATED [ChEMBL]
+synonym: "FAAH" RELATED [ChEMBL]
+synonym: "Oleamide hydrolase 1" RELATED [ChEMBL]
+synonym: "Fatty-acid amide hydrolase 1" RELATED [ChEMBL]
+is_a: MOA:0000000 ! Enzyme
+
+[Term]
+id: MOA:0000244
+name: Baculoviral IAP repeat-containing protein 2
+synonym: "API1" RELATED [ChEMBL]
+synonym: "IAP homolog B" RELATED [ChEMBL]
+synonym: "BIRC2" RELATED [ChEMBL]
+synonym: "TNFR2-TRAF-signaling complex protein 2" RELATED [ChEMBL]
+synonym: "MIHB" RELATED [ChEMBL]
+synonym: "IAP-2" RELATED [ChEMBL]
+synonym: "RING finger protein 48" RELATED [ChEMBL]
+synonym: "IAP2" RELATED [ChEMBL]
+synonym: "Inhibitor of apoptosis protein 2" RELATED [ChEMBL]
+synonym: "hIAP-2" RELATED [ChEMBL]
+synonym: "hIAP2" RELATED [ChEMBL]
+synonym: "RNF48" RELATED [ChEMBL]
+synonym: "C-IAP1" RELATED [ChEMBL]
+synonym: "Baculoviral IAP repeat-containing protein 2" RELATED [ChEMBL]
+is_a: MOA:0000000 ! Enzyme
+
+[Term]
+id: MOA:0000245
+name: Diacylglycerol O-acyltransferase 1
+synonym: "ARAT" RELATED [ChEMBL]
+synonym: "DGAT" RELATED [ChEMBL]
+synonym: "Diacylglycerol O-acyltransferase 1" RELATED [ChEMBL]
+synonym: "DGAT1" RELATED [ChEMBL]
+synonym: "ACAT-related gene product 1" RELATED [ChEMBL]
+synonym: "Acyl-CoA retinol O-fatty-acyltransferase" RELATED [ChEMBL]
+synonym: "Diglyceride acyltransferase" RELATED [ChEMBL]
+synonym: "AGRP1" RELATED [ChEMBL]
+synonym: "Retinol O-fatty-acyltransferase" RELATED [ChEMBL]
+is_a: MOA:0000000 ! Enzyme
+
+[Term]
+id: MOA:0000246
+name: DNA polymerase
+is_a: MOA:0000000 ! Enzyme
+
+[Term]
+id: MOA:0000247
+name: DNA-directed RNA polymerase beta chain
+synonym: "RNA polymerase subunit beta" RELATED [ChEMBL]
+synonym: "RNAP subunit beta" RELATED [ChEMBL]
+synonym: "Transcriptase subunit beta" RELATED [ChEMBL]
+synonym: "rpoB" RELATED [ChEMBL]
+synonym: "DNA-directed RNA polymerase subunit beta" RELATED [ChEMBL]
+is_a: MOA:0000000 ! Enzyme
+
+[Term]
+id: MOA:0000248
+name: Eosinophil peroxidase
+synonym: "Eosinophil peroxidase heavy chain" RELATED [ChEMBL]
+synonym: "EPP" RELATED [ChEMBL]
+synonym: "EPX" RELATED [ChEMBL]
+synonym: "EPER" RELATED [ChEMBL]
+synonym: "Eosinophil peroxidase" RELATED [ChEMBL]
+synonym: "Eosinophil peroxidase light chain" RELATED [ChEMBL]
+synonym: "EPO" RELATED [ChEMBL]
+is_a: MOA:0000000 ! Enzyme
+
+[Term]
+id: MOA:0000249
+name: Glycogen phosphorylase
+is_a: MOA:0000000 ! Enzyme
+
+[Term]
+id: MOA:0000250
+name: Hematopoietic prostaglandin D synthase
+synonym: "Glutathione-requiring prostaglandin D synthase" RELATED [ChEMBL]
+synonym: "PTGDS2" RELATED [ChEMBL]
+synonym: "Glutathione-dependent PGD synthase" RELATED [ChEMBL]
+synonym: "H-PGDS" RELATED [ChEMBL]
+synonym: "Hematopoietic prostaglandin D synthase" RELATED [ChEMBL]
+synonym: "Glutathione S-transferase" RELATED [ChEMBL]
+synonym: "Prostaglandin-H2 D-isomerase" RELATED [ChEMBL]
+synonym: "GSTS" RELATED [ChEMBL]
+synonym: "HPGDS" RELATED [ChEMBL]
+synonym: "PGDS" RELATED [ChEMBL]
+synonym: "GST class-sigma" RELATED [ChEMBL]
+is_a: MOA:0000000 ! Enzyme
+
+[Term]
+id: MOA:0000251
+name: Hexokinase type IV
+synonym: "Glucokinase" RELATED [ChEMBL]
+synonym: "GCK" RELATED [ChEMBL]
+synonym: "HK4" RELATED [ChEMBL]
+synonym: "Hexokinase-D" RELATED [ChEMBL]
+synonym: "HK IV" RELATED [ChEMBL]
+synonym: "Hexokinase-4" RELATED [ChEMBL]
+synonym: "Hexokinase type IV" RELATED [ChEMBL]
+is_a: MOA:0000000 ! Enzyme
+
+[Term]
+id: MOA:0000252
+name: Isoleucyl-tRNA synthetase
+synonym: "IARS" RELATED [ChEMBL]
+synonym: "IRS" RELATED [ChEMBL]
+synonym: "Isoleucyl-tRNA synthetase" RELATED [ChEMBL]
+synonym: "IleRS" RELATED [ChEMBL]
+synonym: "Isoleucine--tRNA ligase, cytoplasmic" RELATED [ChEMBL]
+is_a: MOA:0000000 ! Enzyme
+
+[Term]
+id: MOA:0000253
+name: Myeloperoxidase
+synonym: "Myeloperoxidase heavy chain" RELATED [ChEMBL]
+synonym: "84 kDa myeloperoxidase" RELATED [ChEMBL]
+synonym: "Myeloperoxidase light chain" RELATED [ChEMBL]
+synonym: "MPO" RELATED [ChEMBL]
+synonym: "89 kDa myeloperoxidase" RELATED [ChEMBL]
+synonym: "Myeloperoxidase" RELATED [ChEMBL]
+is_a: MOA:0000000 ! Enzyme
+
+[Term]
+id: MOA:0000254
+name: Nitric oxide synthase
+synonym: "NOS" RELATED []
+is_a: MOA:0000000 ! Enzyme
+
+[Term]
+id: MOA:0000255
+name: Nitric oxide synthase, inducible
+synonym: "Hepatocyte NOS" RELATED [ChEMBL]
+synonym: "Nitric oxide synthase, inducible" RELATED [ChEMBL]
+synonym: "HEP-NOS" RELATED [ChEMBL]
+synonym: "Inducible NO synthase" RELATED [ChEMBL]
+synonym: "Inducible NOS" RELATED [ChEMBL]
+synonym: "NOS2A" RELATED [ChEMBL]
+synonym: "NOS type II" RELATED [ChEMBL]
+synonym: "Peptidyl-cysteine S-nitrosylase NOS2" RELATED [ChEMBL]
+synonym: "iNOS" RELATED [ChEMBL]
+synonym: "NOS2" RELATED [ChEMBL]
+is_a: MOA:0000000 ! Enzyme
+
+[Term]
+id: MOA:0000257
+name: Poly [ADP-ribose] polymerase-1
+synonym: "Poly[ADP-ribose] synthase 1" RELATED [ChEMBL]
+synonym: "NAD(+) ADP-ribosyltransferase 1" RELATED [ChEMBL]
+synonym: "ARTD1" RELATED [ChEMBL]
+synonym: "ADPRT" RELATED [ChEMBL]
+synonym: "ADP-ribosyltransferase diphtheria toxin-like 1" RELATED [ChEMBL]
+synonym: "PARP1" RELATED [ChEMBL]
+synonym: "PARP-1" RELATED [ChEMBL]
+synonym: "Poly [ADP-ribose] polymerase 1" RELATED [ChEMBL]
+synonym: "PPOL" RELATED [ChEMBL]
+synonym: "ADPRT 1" RELATED [ChEMBL]
+is_a: MOA:0000000 ! Enzyme
+
+[Term]
+id: MOA:0000258
+name: Prostaglandin E synthase
+synonym: "Prostaglandin E synthase" RELATED [ChEMBL]
+synonym: "PTGES" RELATED [ChEMBL]
+synonym: "MPGES-1" RELATED [ChEMBL]
+synonym: "Microsomal prostaglandin E synthase 1" RELATED [ChEMBL]
+is_a: MOA:0000000 ! Enzyme
+
+[Term]
+id: MOA:0000259
+name: Prostaglandin G/H synthase 2
+is_a: MOA:0000000 ! Enzyme
+
+[Term]
+id: MOA:0000260
+name: Protein farnesyltransferase
+synonym: "Ras proteins prenyltransferase subunit alpha" RELATED [ChEMBL]
+synonym: "Protein farnesyltransferase subunit beta" RELATED [ChEMBL]
+synonym: "CAAX farnesyltransferase subunit alpha" RELATED [ChEMBL]
+synonym: "Protein farnesyltransferase/geranylgeranyltransferase type-1 subunit alpha" RELATED [ChEMBL]
+synonym: "FTase-beta" RELATED [ChEMBL]
+synonym: "GGTase-I-alpha" RELATED [ChEMBL]
+synonym: "CAAX farnesyltransferase subunit beta" RELATED [ChEMBL]
+synonym: "FNTB" RELATED [ChEMBL]
+synonym: "Ras proteins prenyltransferase subunit beta" RELATED [ChEMBL]
+synonym: "FTase-alpha" RELATED [ChEMBL]
+synonym: "FNTA" RELATED [ChEMBL]
+synonym: "Type I protein geranyl-geranyltransferase subunit alpha" RELATED [ChEMBL]
+is_a: MOA:0000000 ! Enzyme
+
+[Term]
+id: MOA:0000261
+name: Squalene monooxygenase
+synonym: "SE" RELATED [ChEMBL]
+synonym: "Squalene epoxidase" RELATED [ChEMBL]
+synonym: "Squalene monooxygenase" RELATED [ChEMBL]
+synonym: "SQLE" RELATED [ChEMBL]
+is_a: MOA:0000000 ! Enzyme
+
+[Term]
+id: MOA:0000264
+name: Acetylcholinesterase
+synonym: "AChE" RELATED [ChEMBL]
+synonym: "Acetylcholinesterase" RELATED [ChEMBL]
+is_a: MOA:0000023 ! Hydrolase
+
+[Term]
+id: MOA:0000265
+name: Gastric lipase
+synonym: "Gastric lipase" RELATED [ChEMBL]
+synonym: "GL" RELATED [ChEMBL]
+synonym: "LIPF" RELATED [ChEMBL]
+synonym: "Gastric triacylglycerol lipase" RELATED [ChEMBL]
+is_a: MOA:0000023 ! Hydrolase
+
+[Term]
+id: MOA:0000266
+name: Pancreatic lipase
+synonym: "Pancreatic triacylglycerol lipase" RELATED [ChEMBL]
+synonym: "PNLIP" RELATED [ChEMBL]
+synonym: "PL" RELATED [ChEMBL]
+synonym: "Pancreatic lipase" RELATED [ChEMBL]
+synonym: "PTL" RELATED [ChEMBL]
+is_a: MOA:0000023 ! Hydrolase
+
+[Term]
+id: MOA:0000267
+name: Bacterial DNA gyrase
+synonym: "DNA gyrase subunit B" RELATED [ChEMBL]
+synonym: "DNA gyrase subunit A" RELATED [ChEMBL]
+synonym: "pcbA" RELATED [ChEMBL]
+synonym: "acrB" RELATED [ChEMBL]
+synonym: "parD" RELATED [ChEMBL]
+synonym: "himB" RELATED [ChEMBL]
+synonym: "parA" RELATED [ChEMBL]
+synonym: "JW2225" RELATED [ChEMBL]
+synonym: "gyrB" RELATED [ChEMBL]
+synonym: "gyrA" RELATED [ChEMBL]
+synonym: "nalC" RELATED [ChEMBL]
+synonym: "nalA" RELATED [ChEMBL]
+synonym: "hisW" RELATED [ChEMBL]
+synonym: "JW5625" RELATED [ChEMBL]
+synonym: "hisU" RELATED [ChEMBL]
+is_a: MOA:0000024 ! Isomerase
+
+[Term]
+id: MOA:0000268
+name: DNA gyrase
+is_a: MOA:0000024 ! Isomerase
+
+[Term]
+id: MOA:0000269
+name: Rho-associated protein kinase
+synonym: "Rho-associated protein kinase 2" RELATED [ChEMBL]
+synonym: "Rho-associated, coiled-coil-containing protein kinase I" RELATED [ChEMBL]
+synonym: "Rho-associated protein kinase 1" RELATED [ChEMBL]
+synonym: "ROCK-II" RELATED [ChEMBL]
+synonym: "Rho-associated, coiled-coil-containing protein kinase 2" RELATED [ChEMBL]
+synonym: "ROCK1" RELATED [ChEMBL]
+synonym: "Rho-associated, coiled-coil-containing protein kinase 1" RELATED [ChEMBL]
+synonym: "p164 ROCK-2" RELATED [ChEMBL]
+synonym: "p160ROCK" RELATED [ChEMBL]
+synonym: "ROCK-I" RELATED [ChEMBL]
+synonym: "Rho kinase 2" RELATED [ChEMBL]
+synonym: "ROCK2" RELATED [ChEMBL]
+synonym: "KIAA0619" RELATED [ChEMBL]
+synonym: "p160 ROCK-1" RELATED [ChEMBL]
+synonym: "Rho-associated, coiled-coil-containing protein kinase II" RELATED [ChEMBL]
+synonym: "Renal carcinoma antigen NY-REN-35" RELATED [ChEMBL]
+is_a: MOA:0000029 ! Agc protein kinase rock subfamily
+
+[Term]
+id: MOA:0000270
+name: G-protein coupled receptor kinase 2
+synonym: "Beta-ARK-1" RELATED [ChEMBL]
+synonym: "Beta-adrenergic receptor kinase 1" RELATED [ChEMBL]
+synonym: "BARK" RELATED [ChEMBL]
+synonym: "BARK1" RELATED [ChEMBL]
+synonym: "G-protein coupled receptor kinase 2" RELATED [ChEMBL]
+synonym: "ADRBK1" RELATED [ChEMBL]
+synonym: "GRK2" RELATED [ChEMBL]
+is_a: MOA:0000031 ! Agc protein kinase bark subfamily
+
+[Term]
+id: MOA:0000271
+name: Protein kinase C (PKC)
+synonym: "PKCB" RELATED [ChEMBL]
+synonym: "Protein kinase C iota type" RELATED [ChEMBL]
+synonym: "PKCE" RELATED [ChEMBL]
+synonym: "nPKC-mu" RELATED [ChEMBL]
+synonym: "PKCG" RELATED [ChEMBL]
+synonym: "Protein kinase C alpha type" RELATED [ChEMBL]
+synonym: "PKCL" RELATED [ChEMBL]
+synonym: "Protein kinase C beta type" RELATED [ChEMBL]
+synonym: "Protein kinase C mu type" RELATED [ChEMBL]
+synonym: "Atypical protein kinase C-lambda/iota" RELATED [ChEMBL]
+synonym: "PKC-B" RELATED [ChEMBL]
+synonym: "PKC-A" RELATED [ChEMBL]
+synonym: "PKC-beta" RELATED [ChEMBL]
+synonym: "nPKC-theta" RELATED [ChEMBL]
+synonym: "Protein kinase EPK2" RELATED [ChEMBL]
+synonym: "SDK1" RELATED [ChEMBL]
+synonym: "Sphingosine-dependent protein kinase-1" RELATED [ChEMBL]
+synonym: "nPKC-nu" RELATED [ChEMBL]
+synonym: "PRKC-lambda/iota" RELATED [ChEMBL]
+synonym: "Protein kinase C delta type" RELATED [ChEMBL]
+synonym: "PKD" RELATED [ChEMBL]
+synonym: "nPKC-iota" RELATED [ChEMBL]
+synonym: "nPKC-epsilon" RELATED [ChEMBL]
+synonym: "Serine/threonine-protein kinase D1" RELATED [ChEMBL]
+synonym: "Serine/threonine-protein kinase D3" RELATED [ChEMBL]
+synonym: "PRKCB1" RELATED [ChEMBL]
+synonym: "PRKCG" RELATED [ChEMBL]
+synonym: "Tyrosine-protein kinase PRKCD" RELATED [ChEMBL]
+synonym: "PRKCE" RELATED [ChEMBL]
+synonym: "PRKCI" RELATED [ChEMBL]
+synonym: "PRKCH" RELATED [ChEMBL]
+synonym: "PKC-alpha" RELATED [ChEMBL]
+synonym: "PRKCD" RELATED [ChEMBL]
+synonym: "Protein kinase C delta type catalytic subunit" RELATED [ChEMBL]
+synonym: "PRKCB" RELATED [ChEMBL]
+synonym: "nPKC-eta" RELATED [ChEMBL]
+synonym: "PRKCA" RELATED [ChEMBL]
+synonym: "PRKCZ" RELATED [ChEMBL]
+synonym: "PKC-gamma" RELATED [ChEMBL]
+synonym: "PRKCT" RELATED [ChEMBL]
+synonym: "Protein kinase C nu type" RELATED [ChEMBL]
+synonym: "PRKCM" RELATED [ChEMBL]
+synonym: "PRKCN" RELATED [ChEMBL]
+synonym: "DXS1179E" RELATED [ChEMBL]
+synonym: "PRKCL" RELATED [ChEMBL]
+synonym: "PRKACA" RELATED [ChEMBL]
+synonym: "nPKC-D1" RELATED [ChEMBL]
+synonym: "Protein kinase C gamma type" RELATED [ChEMBL]
+synonym: "PRKCQ" RELATED [ChEMBL]
+synonym: "PKCA" RELATED [ChEMBL]
+synonym: "PKC-L" RELATED [ChEMBL]
+synonym: "aPKC-lambda/iota" RELATED [ChEMBL]
+synonym: "Protein kinase C epsilon type" RELATED [ChEMBL]
+synonym: "nPKC-delta" RELATED [ChEMBL]
+synonym: "PKD1" RELATED [ChEMBL]
+synonym: "EPK2" RELATED [ChEMBL]
+synonym: "Protein kinase C theta type" RELATED [ChEMBL]
+synonym: "PRKD1" RELATED [ChEMBL]
+synonym: "PRKD3" RELATED [ChEMBL]
+synonym: "Protein kinase C delta type regulatory subunit" RELATED [ChEMBL]
+synonym: "Protein kinase C zeta type" RELATED [ChEMBL]
+synonym: "PKC2" RELATED [ChEMBL]
+synonym: "nPKC-zeta" RELATED [ChEMBL]
+synonym: "Protein kinase D" RELATED [ChEMBL]
+synonym: "Protein kinase C eta type" RELATED [ChEMBL]
+is_a: MOA:0000033 ! Agc protein kinase pkc alpha subfamily
+is_a: MOA:0000036 ! Agc protein kinase pkc iota subfamily
+is_a: MOA:0000035 ! Agc protein kinase pkc eta subfamily
+is_a: MOA:0000034 ! Agc protein kinase pkc delta subfamily
+
+[Term]
+id: MOA:0000272
+name: Pyruvate dehydrogenase kinase
+synonym: "PDKII" RELATED [ChEMBL]
+synonym: "PDH kinase 1" RELATED [ChEMBL]
+synonym: "[Pyruvate dehydrogenase (acetyl-transferring)] kinase isozyme 2, mitochondrial" RELATED [ChEMBL]
+synonym: "Pyruvate dehydrogenase kinase isoform 4" RELATED [ChEMBL]
+synonym: "PDH kinase 2" RELATED [ChEMBL]
+synonym: "Pyruvate dehydrogenase kinase isoform 2" RELATED [ChEMBL]
+synonym: "Pyruvate dehydrogenase kinase isoform 1" RELATED [ChEMBL]
+synonym: "Pyruvate dehydrogenase kinase isoform 3" RELATED [ChEMBL]
+synonym: "PDK1" RELATED [ChEMBL]
+synonym: "PDHK4" RELATED [ChEMBL]
+synonym: "[Pyruvate dehydrogenase (acetyl-transferring)] kinase isozyme 1, mitochondrial" RELATED [ChEMBL]
+synonym: "PDK2" RELATED [ChEMBL]
+synonym: "PDK4" RELATED [ChEMBL]
+synonym: "PDK3" RELATED [ChEMBL]
+synonym: "PDHK1" RELATED [ChEMBL]
+synonym: "PDHK3" RELATED [ChEMBL]
+synonym: "[Pyruvate dehydrogenase (acetyl-transferring)] kinase isozyme 3, mitochondrial" RELATED [ChEMBL]
+synonym: "PDHK2" RELATED [ChEMBL]
+synonym: "[Pyruvate dehydrogenase (acetyl-transferring)] kinase isozyme 4, mitochondrial" RELATED [ChEMBL]
+is_a: MOA:0000038 ! Atypical protein kinase pdhk subfamily
+
+[Term]
+id: MOA:0000273
+name: DNA-dependent protein kinase
+synonym: "DNA-PK catalytic subunit" RELATED [ChEMBL]
+synonym: "HYRC1" RELATED [ChEMBL]
+synonym: "PRKDC" RELATED [ChEMBL]
+synonym: "DNA-dependent protein kinase catalytic subunit" RELATED [ChEMBL]
+synonym: "DNA-PKcs" RELATED [ChEMBL]
+synonym: "p460" RELATED [ChEMBL]
+synonym: "DNPK1" RELATED [ChEMBL]
+synonym: "HYRC" RELATED [ChEMBL]
+is_a: MOA:0000039 ! Atypical protein kinase pikk family
+
+[Term]
+id: MOA:0000274
+name: Serine-protein kinase ATR
+synonym: "FRP1" RELATED [ChEMBL]
+synonym: "Serine/threonine-protein kinase ATR" RELATED [ChEMBL]
+synonym: "ATR" RELATED [ChEMBL]
+synonym: "FRAP-related protein 1" RELATED [ChEMBL]
+synonym: "Ataxia telangiectasia and Rad3-related protein" RELATED [ChEMBL]
+is_a: MOA:0000039 ! Atypical protein kinase pikk family
+
+[Term]
+id: MOA:0000275
+name: Cyclin-dependent kinase 1
+synonym: "Cell division control protein 2 homolog" RELATED [ChEMBL]
+synonym: "p34 protein kinase" RELATED [ChEMBL]
+synonym: "CDC2" RELATED [ChEMBL]
+synonym: "P34CDC2" RELATED [ChEMBL]
+synonym: "CDKN1" RELATED [ChEMBL]
+synonym: "Cyclin-dependent kinase 1" RELATED [ChEMBL]
+synonym: "CDK1" RELATED [ChEMBL]
+synonym: "Cell division protein kinase 1" RELATED [ChEMBL]
+synonym: "CDC28A" RELATED [ChEMBL]
+is_a: MOA:0000044 ! Cmgc protein kinase cdc2 subfamily
+
+[Term]
+id: MOA:0000276
+name: Cyclin-dependent kinase 2
+is_a: MOA:0000044 ! Cmgc protein kinase cdc2 subfamily
+
+[Term]
+id: MOA:0000277
+name: Cyclin-dependent kinase 2/cyclin E
+synonym: "CCNE2" RELATED [ChEMBL]
+synonym: "CCNE1" RELATED [ChEMBL]
+synonym: "G1/S-specific cyclin-E2" RELATED [ChEMBL]
+synonym: "G1/S-specific cyclin-E1" RELATED [ChEMBL]
+synonym: "CCNE" RELATED [ChEMBL]
+is_a: MOA:0000044 ! Cmgc protein kinase cdc2 subfamily
+is_a: MOA:0000006 ! Other cytosolic protein
+
+[Term]
+id: MOA:0000278
+name: Glycogen synthase kinase-3
+synonym: "Glycogen synthase kinase-3 alpha" RELATED [ChEMBL]
+synonym: "GSK-3 alpha" RELATED [ChEMBL]
+synonym: "Serine/threonine-protein kinase GSK3A" RELATED [ChEMBL]
+synonym: "GSK3A" RELATED [ChEMBL]
+is_a: MOA:0000045 ! Cmgc protein kinase gsk family
+
+[Term]
+id: MOA:0000279
+name: Glycogen synthase kinase-3 beta
+is_a: MOA:0000045 ! Cmgc protein kinase gsk family
+
+[Term]
+id: MOA:0000280
+name: MAP kinase p38
+synonym: "Mitogen-activated protein kinase 11" RELATED [ChEMBL]
+synonym: "PRKM13" RELATED [ChEMBL]
+synonym: "Extracellular signal-regulated kinase 6" RELATED [ChEMBL]
+synonym: "MAPK13" RELATED [ChEMBL]
+synonym: "SAPK2" RELATED [ChEMBL]
+synonym: "Mitogen-activated protein kinase p38 delta" RELATED [ChEMBL]
+synonym: "PRKM11" RELATED [ChEMBL]
+synonym: "MAPK 13" RELATED [ChEMBL]
+synonym: "MAPK12" RELATED [ChEMBL]
+synonym: "MAPK11" RELATED [ChEMBL]
+synonym: "MAPK 12" RELATED [ChEMBL]
+synonym: "MAPK 11" RELATED [ChEMBL]
+synonym: "ERK6" RELATED [ChEMBL]
+synonym: "Stress-activated protein kinase 3" RELATED [ChEMBL]
+synonym: "Mitogen-activated protein kinase p38 beta" RELATED [ChEMBL]
+synonym: "ERK-6" RELATED [ChEMBL]
+synonym: "SAPK2b" RELATED [ChEMBL]
+synonym: "Stress-activated protein kinase 4" RELATED [ChEMBL]
+synonym: "p38-2" RELATED [ChEMBL]
+synonym: "MAP kinase p38 delta" RELATED [ChEMBL]
+synonym: "Stress-activated protein kinase 2b" RELATED [ChEMBL]
+synonym: "MAP kinase p38 gamma" RELATED [ChEMBL]
+synonym: "MAP kinase p38 beta" RELATED [ChEMBL]
+synonym: "MAP kinase 13" RELATED [ChEMBL]
+synonym: "p38b" RELATED [ChEMBL]
+synonym: "MAP kinase 12" RELATED [ChEMBL]
+synonym: "MAP kinase 11" RELATED [ChEMBL]
+synonym: "Mitogen-activated protein kinase p38 gamma" RELATED [ChEMBL]
+synonym: "Mitogen-activated protein kinase 12" RELATED [ChEMBL]
+synonym: "Mitogen-activated protein kinase 13" RELATED [ChEMBL]
+synonym: "SAPK3" RELATED [ChEMBL]
+synonym: "SAPK4" RELATED [ChEMBL]
+is_a: MOA:0000047 ! Cmgc protein kinase p38 subfamily
+
+[Term]
+id: MOA:0000281
+name: MAP kinase p38 alpha
+is_a: MOA:0000047 ! Cmgc protein kinase p38 subfamily
+
+[Term]
+id: MOA:0000282
+name: Serine/threonine-protein kinase ICK
+synonym: "Intestinal cell kinase" RELATED [ChEMBL]
+synonym: "Laryngeal cancer kinase 2" RELATED [ChEMBL]
+synonym: "ICK" RELATED [ChEMBL]
+synonym: "KIAA0936" RELATED [ChEMBL]
+synonym: "Serine/threonine-protein kinase ICK" RELATED [ChEMBL]
+synonym: "MAK-related kinase" RELATED [ChEMBL]
+synonym: "MRK" RELATED [ChEMBL]
+synonym: "hICK" RELATED [ChEMBL]
+synonym: "LCK2" RELATED [ChEMBL]
+is_a: MOA:0000049 ! Cmgc protein kinase mak
+
+[Term]
+id: MOA:0000283
+name: Inhibitor of nuclear factor kappa B kinase beta subunit
+synonym: "I-kappa-B kinase 2" RELATED [ChEMBL]
+synonym: "IKKB" RELATED [ChEMBL]
+synonym: "IKK-beta" RELATED [ChEMBL]
+synonym: "NFKBIKB" RELATED [ChEMBL]
+synonym: "Inhibitor of nuclear factor kappa-B kinase subunit beta" RELATED [ChEMBL]
+synonym: "IKK-B" RELATED [ChEMBL]
+synonym: "IKK2" RELATED [ChEMBL]
+synonym: "IkBKB" RELATED [ChEMBL]
+synonym: "Nuclear factor NF-kappa-B inhibitor kinase beta" RELATED [ChEMBL]
+synonym: "I-kappa-B-kinase beta" RELATED [ChEMBL]
+is_a: MOA:0000050 ! Other protein kinase group
+
+[Term]
+id: MOA:0000284
+name: Serine/threonine-protein kinase Aurora-B
+synonym: "STK5" RELATED [ChEMBL]
+synonym: "Serine/threonine-protein kinase aurora-B" RELATED [ChEMBL]
+synonym: "Serine/threonine-protein kinase 5" RELATED [ChEMBL]
+synonym: "STK1" RELATED [ChEMBL]
+synonym: "AIM1" RELATED [ChEMBL]
+synonym: "STK-1" RELATED [ChEMBL]
+synonym: "Aurora- and IPL1-like midbody-associated protein 1" RELATED [ChEMBL]
+synonym: "Aurora-related kinase 2" RELATED [ChEMBL]
+synonym: "ARK2" RELATED [ChEMBL]
+synonym: "AIK2" RELATED [ChEMBL]
+synonym: "AIRK2" RELATED [ChEMBL]
+synonym: "AURKB" RELATED [ChEMBL]
+synonym: "Aurora 1" RELATED [ChEMBL]
+synonym: "AIM-1" RELATED [ChEMBL]
+synonym: "Aurora kinase B" RELATED [ChEMBL]
+synonym: "STK12" RELATED [ChEMBL]
+synonym: "Serine/threonine-protein kinase 12" RELATED [ChEMBL]
+synonym: "Aurora/IPL1-related kinase 2" RELATED [ChEMBL]
+synonym: "ARK-2" RELATED [ChEMBL]
+is_a: MOA:0000051 ! Other protein kinase aur family
+
+[Term]
+id: MOA:0000285
+name: Serine/threonine-protein kinase PLK1
+synonym: "PLK-1" RELATED [ChEMBL]
+synonym: "Serine/threonine-protein kinase 13" RELATED [ChEMBL]
+synonym: "STPK13" RELATED [ChEMBL]
+synonym: "PLK1" RELATED [ChEMBL]
+synonym: "PLK" RELATED [ChEMBL]
+synonym: "Serine/threonine-protein kinase PLK1" RELATED [ChEMBL]
+synonym: "Polo-like kinase 1" RELATED [ChEMBL]
+is_a: MOA:0000052 ! Other protein kinase plk family
+
+[Term]
+id: MOA:0000286
+name: Dual specificity mitogen-activated protein kinase kinase; MEK1/2
+synonym: "MAPKK 2" RELATED [ChEMBL]
+synonym: "MAP kinase kinase 1" RELATED [ChEMBL]
+synonym: "MKK1" RELATED [ChEMBL]
+synonym: "MAPKK 1" RELATED [ChEMBL]
+synonym: "Dual specificity mitogen-activated protein kinase kinase 2" RELATED [ChEMBL]
+synonym: "MEK 2" RELATED [ChEMBL]
+synonym: "Dual specificity mitogen-activated protein kinase kinase 1" RELATED [ChEMBL]
+synonym: "MEK 1" RELATED [ChEMBL]
+synonym: "MAP2K1" RELATED [ChEMBL]
+synonym: "MAP kinase kinase 2" RELATED [ChEMBL]
+synonym: "MAP2K2" RELATED [ChEMBL]
+synonym: "PRKMK1" RELATED [ChEMBL]
+synonym: "MAPK/ERK kinase 1" RELATED [ChEMBL]
+synonym: "PRKMK2" RELATED [ChEMBL]
+synonym: "MAPK/ERK kinase 2" RELATED [ChEMBL]
+synonym: "MKK2" RELATED [ChEMBL]
+synonym: "ERK activator kinase 2" RELATED [ChEMBL]
+synonym: "ERK activator kinase 1" RELATED [ChEMBL]
+synonym: "MEK1" RELATED [ChEMBL]
+synonym: "MEK2" RELATED [ChEMBL]
+is_a: MOA:0000056 ! Ste protein kinase ste7 family
+
+[Term]
+id: MOA:0000287
+name: Epidermal growth factor receptor
+synonym: "s80HER4" RELATED [ChEMBL]
+synonym: "Epidermal growth factor receptor" RELATED [ChEMBL]
+synonym: "Proto-oncogene c-ErbB-1" RELATED [ChEMBL]
+synonym: "Tyrosine kinase-type cell surface receptor HER4" RELATED [ChEMBL]
+synonym: "Tyrosine kinase-type cell surface receptor HER3" RELATED [ChEMBL]
+synonym: "ERBB" RELATED [ChEMBL]
+synonym: "4ICD" RELATED [ChEMBL]
+synonym: "p180erbB4" RELATED [ChEMBL]
+synonym: "Receptor tyrosine-protein kinase erbB-3" RELATED [ChEMBL]
+synonym: "Proto-oncogene-like protein c-ErbB-4" RELATED [ChEMBL]
+synonym: "Receptor tyrosine-protein kinase erbB-1" RELATED [ChEMBL]
+synonym: "Proto-oncogene-like protein c-ErbB-3" RELATED [ChEMBL]
+synonym: "ERBB4 intracellular domain" RELATED [ChEMBL]
+synonym: "EGFR" RELATED [ChEMBL]
+synonym: "HER1" RELATED [ChEMBL]
+synonym: "HER3" RELATED [ChEMBL]
+synonym: "HER4" RELATED [ChEMBL]
+synonym: "ERBB3" RELATED [ChEMBL]
+synonym: "ERBB4" RELATED [ChEMBL]
+synonym: "ERBB1" RELATED [ChEMBL]
+synonym: "E4ICD" RELATED [ChEMBL]
+synonym: "Receptor tyrosine-protein kinase erbB-4" RELATED [ChEMBL]
+is_a: MOA:0000059 ! Tyrosine protein kinase egfr family
+
+[Term]
+id: MOA:0000288
+name: Receptor protein-tyrosine kinase erbB-2
+is_a: MOA:0000059 ! Tyrosine protein kinase egfr family
+
+[Term]
+id: MOA:0000289
+name: Focal adhesion kinase 1
+synonym: "p125FAK" RELATED [ChEMBL]
+synonym: "Focal adhesion kinase 1" RELATED [ChEMBL]
+synonym: "Protein-tyrosine kinase 2" RELATED [ChEMBL]
+synonym: "Focal adhesion kinase-related nonkinase" RELATED [ChEMBL]
+synonym: "Protein phosphatase 1 regulatory subunit 71" RELATED [ChEMBL]
+synonym: "FADK 1" RELATED [ChEMBL]
+synonym: "PTK2" RELATED [ChEMBL]
+synonym: "pp125FAK" RELATED [ChEMBL]
+synonym: "PPP1R71" RELATED [ChEMBL]
+synonym: "FAK" RELATED [ChEMBL]
+synonym: "FRNK" RELATED [ChEMBL]
+synonym: "FAK1" RELATED [ChEMBL]
+is_a: MOA:0000060 ! Tyrosine protein kinase fak family
+
+[Term]
+id: MOA:0000290
+name: Fibroblast growth factor receptor
+synonym: "TKF" RELATED [ChEMBL]
+synonym: "CD_antigen=CD334" RELATED [ChEMBL]
+synonym: "FGFR4" RELATED [ChEMBL]
+synonym: "Fibroblast growth factor receptor 4" RELATED [ChEMBL]
+synonym: "JTK2" RELATED [ChEMBL]
+synonym: "FGFR-4" RELATED [ChEMBL]
+is_a: MOA:0000061 ! Tyrosine protein kinase fgfr family
+
+[Term]
+id: MOA:0000291
+name: Fibroblast growth factor receptor 1
+is_a: MOA:0000061 ! Tyrosine protein kinase fgfr family
+
+[Term]
+id: MOA:0000292
+name: Fibroblast growth factor receptor 2
+is_a: MOA:0000061 ! Tyrosine protein kinase fgfr family
+
+[Term]
+id: MOA:0000293
+name: Fibroblast growth factor receptor 3
+is_a: MOA:0000061 ! Tyrosine protein kinase fgfr family
+
+[Term]
+id: MOA:0000294
+name: Insulin-like growth factor I receptor
+synonym: "Insulin-like growth factor I receptor" RELATED [ChEMBL]
+synonym: "IGF-I receptor" RELATED [ChEMBL]
+synonym: "Insulin-like growth factor 1 receptor beta chain" RELATED [ChEMBL]
+synonym: "Insulin-like growth factor 1 receptor" RELATED [ChEMBL]
+synonym: "IGF1R" RELATED [ChEMBL]
+synonym: "Insulin-like growth factor 1 receptor alpha chain" RELATED [ChEMBL]
+synonym: "CD_antigen=CD221" RELATED [ChEMBL]
+is_a: MOA:0000062 ! Tyrosine protein kinase insr family
+
+[Term]
+id: MOA:0000295
+name: Hepatocyte growth factor receptor
+synonym: "Tyrosine-protein kinase Met" RELATED [ChEMBL]
+synonym: "MET" RELATED [ChEMBL]
+synonym: "Hepatocyte growth factor receptor" RELATED [ChEMBL]
+synonym: "Proto-oncogene c-Met" RELATED [ChEMBL]
+synonym: "HGF receptor" RELATED [ChEMBL]
+synonym: "SF receptor" RELATED [ChEMBL]
+synonym: "Scatter factor receptor" RELATED [ChEMBL]
+synonym: "HGF/SF receptor" RELATED [ChEMBL]
+is_a: MOA:0000065 ! Tyrosine protein kinase met family
+
+[Term]
+id: MOA:0000296
+name: Macrophage colony stimulating factor receptor
+synonym: "CSF-1R" RELATED [ChEMBL]
+synonym: "FMS" RELATED [ChEMBL]
+synonym: "CD_antigen=CD115" RELATED [ChEMBL]
+synonym: "Proto-oncogene c-Fms" RELATED [ChEMBL]
+synonym: "M-CSF-R" RELATED [ChEMBL]
+synonym: "CSF-1 receptor" RELATED [ChEMBL]
+synonym: "CSF1R" RELATED [ChEMBL]
+synonym: "Macrophage colony-stimulating factor 1 receptor" RELATED [ChEMBL]
+synonym: "CSF-1-R" RELATED [ChEMBL]
+is_a: MOA:0000066 ! Tyrosine protein kinase pdgfr family
+
+[Term]
+id: MOA:0000297
+name: SRC
+synonym: "Proto-oncogene c-Fyn" RELATED [ChEMBL]
+synonym: "Nuclear tyrosine protein kinase RAK" RELATED [ChEMBL]
+synonym: "V-yes-1 Yamaguchi sarcoma viral related oncogene homolog" RELATED [ChEMBL]
+synonym: "Leukocyte C-terminal Src kinase" RELATED [ChEMBL]
+synonym: "Tyrosine-protein kinase Fyn" RELATED [ChEMBL]
+synonym: "Hematopoietic cell kinase" RELATED [ChEMBL]
+synonym: "LYN" RELATED [ChEMBL]
+synonym: "Hemopoietic cell kinase" RELATED [ChEMBL]
+synonym: "B lymphocyte kinase" RELATED [ChEMBL]
+synonym: "T cell-specific protein-tyrosine kinase" RELATED [ChEMBL]
+synonym: "FYN-related kinase" RELATED [ChEMBL]
+synonym: "Tyrosine-protein kinase Blk" RELATED [ChEMBL]
+synonym: "Tyrosine-protein kinase Yes" RELATED [ChEMBL]
+synonym: "p56-LCK" RELATED [ChEMBL]
+synonym: "Lymphocyte cell-specific protein-tyrosine kinase" RELATED [ChEMBL]
+synonym: "Tyrosine-protein kinase Lck" RELATED [ChEMBL]
+synonym: "SRC1" RELATED [ChEMBL]
+synonym: "SRC2" RELATED [ChEMBL]
+synonym: "SLK" RELATED [ChEMBL]
+synonym: "HCK" RELATED [ChEMBL]
+synonym: "p58-Fgr" RELATED [ChEMBL]
+synonym: "FRK" RELATED [ChEMBL]
+synonym: "pp60c-src" RELATED [ChEMBL]
+synonym: "p55-Fgr" RELATED [ChEMBL]
+synonym: "Proto-oncogene Syn" RELATED [ChEMBL]
+synonym: "Tyrosine-protein kinase FRK" RELATED [ChEMBL]
+synonym: "YES1" RELATED [ChEMBL]
+synonym: "Tyrosine-protein kinase HCK" RELATED [ChEMBL]
+synonym: "FYN" RELATED [ChEMBL]
+synonym: "p58c-Fgr" RELATED [ChEMBL]
+synonym: "Protein YT16" RELATED [ChEMBL]
+synonym: "Tyrosine-protein kinase Lyn" RELATED [ChEMBL]
+synonym: "YES" RELATED [ChEMBL]
+synonym: "p59-Fyn" RELATED [ChEMBL]
+synonym: "p56Lyn" RELATED [ChEMBL]
+synonym: "p59-HCK/p60-HCK" RELATED [ChEMBL]
+synonym: "Lck/Yes-related novel protein tyrosine kinase" RELATED [ChEMBL]
+synonym: "Proto-oncogene Lck" RELATED [ChEMBL]
+synonym: "Proto-oncogene tyrosine-protein kinase Src" RELATED [ChEMBL]
+synonym: "p53Lyn" RELATED [ChEMBL]
+synonym: "Tyrosine-protein kinase Fgr" RELATED [ChEMBL]
+synonym: "Protein-tyrosine kinase 5" RELATED [ChEMBL]
+synonym: "Src-like kinase" RELATED [ChEMBL]
+synonym: "JTK8" RELATED [ChEMBL]
+synonym: "SRC" RELATED [ChEMBL]
+synonym: "Tyrosine-protein kinase Srms" RELATED [ChEMBL]
+synonym: "FGR" RELATED [ChEMBL]
+synonym: "p59Hck" RELATED [ChEMBL]
+synonym: "SRMS" RELATED [ChEMBL]
+synonym: "p61Hck" RELATED [ChEMBL]
+synonym: "C20orf148" RELATED [ChEMBL]
+synonym: "p60-Src" RELATED [ChEMBL]
+synonym: "Proto-oncogene c-Yes" RELATED [ChEMBL]
+synonym: "Proto-oncogene c-Src" RELATED [ChEMBL]
+synonym: "p55-Blk" RELATED [ChEMBL]
+synonym: "PTK5" RELATED [ChEMBL]
+synonym: "BLK" RELATED [ChEMBL]
+synonym: "Gardner-Rasheed feline sarcoma viral (v-fgr) oncogene homolog" RELATED [ChEMBL]
+synonym: "p61-Yes" RELATED [ChEMBL]
+synonym: "RAK" RELATED [ChEMBL]
+synonym: "LSK" RELATED [ChEMBL]
+synonym: "LCK" RELATED [ChEMBL]
+is_a: MOA:0000068 ! Tyrosine protein kinase srm
+
+[Term]
+id: MOA:0000298
+name: Serine/threonine-protein kinase B-raf
+synonym: "p94" RELATED [ChEMBL]
+synonym: "Proto-oncogene B-Raf" RELATED [ChEMBL]
+synonym: "RAFB1" RELATED [ChEMBL]
+synonym: "BRAF1" RELATED [ChEMBL]
+synonym: "BRAF" RELATED [ChEMBL]
+synonym: "Serine/threonine-protein kinase B-raf" RELATED [ChEMBL]
+synonym: "v-Raf murine sarcoma viral oncogene homolog B1" RELATED [ChEMBL]
+is_a: MOA:0000071 ! Tkl protein kinase raf family
+
+[Term]
+id: MOA:0000299
+name: ALK tyrosine kinase receptor
+synonym: "CD_antigen=CD246" RELATED [ChEMBL]
+synonym: "Anaplastic lymphoma kinase" RELATED [ChEMBL]
+synonym: "ALK" RELATED [ChEMBL]
+synonym: "ALK tyrosine kinase receptor" RELATED [ChEMBL]
+is_a: MOA:0000073 ! Tkl protein kinase stkr type 1 subfamily
+
+[Term]
+id: MOA:0000301
+name: Arachidonate 5-lipoxygenase
+synonym: "ALOX5" RELATED [ChEMBL]
+synonym: "5-LO" RELATED [ChEMBL]
+synonym: "5-lipoxygenase" RELATED [ChEMBL]
+synonym: "LOG5" RELATED [ChEMBL]
+synonym: "Arachidonate 5-lipoxygenase" RELATED [ChEMBL]
+is_a: MOA:0000077 ! Oxidoreductase
+
+[Term]
+id: MOA:0000302
+name: Cyclooxygenase
+is_a: MOA:0000077 ! Oxidoreductase
+
+[Term]
+id: MOA:0000303
+name: Cyclooxygenase-1
+is_a: MOA:0000077 ! Oxidoreductase
+
+[Term]
+id: MOA:0000304
+name: Cyclooxygenase-2
+is_a: MOA:0000077 ! Oxidoreductase
+
+[Term]
+id: MOA:0000305
+name: Dihydroorotate Dehydrogenase
+synonym: "Dihydroorotate dehydrogenase (quinone), mitochondrial" RELATED [ChEMBL]
+synonym: "DHOdehase" RELATED [ChEMBL]
+synonym: "Dihydroorotate oxidase" RELATED [ChEMBL]
+synonym: "DHODH" RELATED [ChEMBL]
+is_a: MOA:0000077 ! Oxidoreductase
+
+[Term]
+id: MOA:0000306
+name: HMG-CoA reductase
+synonym: "HMGCR" RELATED [ChEMBL]
+synonym: "HMG-CoA reductase" RELATED [ChEMBL]
+synonym: "3-hydroxy-3-methylglutaryl-coenzyme A reductase" RELATED [ChEMBL]
+is_a: MOA:0000077 ! Oxidoreductase
+
+[Term]
+id: MOA:0000307
+name: Inosine-5'-monophosphate dehydrogenase (IMPDH)
+synonym: "IMPDH 1" RELATED [ChEMBL]
+synonym: "IMPDH1" RELATED [ChEMBL]
+synonym: "Inosine-5'-monophosphate dehydrogenase 2" RELATED [ChEMBL]
+synonym: "Inosine-5'-monophosphate dehydrogenase 1" RELATED [ChEMBL]
+synonym: "IMPDH 2" RELATED [ChEMBL]
+synonym: "IMPD1" RELATED [ChEMBL]
+synonym: "IMPD2" RELATED [ChEMBL]
+synonym: "IMPD 2" RELATED [ChEMBL]
+synonym: "IMPD 1" RELATED [ChEMBL]
+synonym: "IMP dehydrogenase 2" RELATED [ChEMBL]
+synonym: "IMPDH-II" RELATED [ChEMBL]
+synonym: "IMP dehydrogenase 1" RELATED [ChEMBL]
+synonym: "IMPDH-I" RELATED [ChEMBL]
+synonym: "IMPDH2" RELATED [ChEMBL]
+is_a: MOA:0000077 ! Oxidoreductase
+
+[Term]
+id: MOA:0000308
+name: Monoamine oxidase B
+synonym: "Monoamine oxidase type B" RELATED [ChEMBL]
+synonym: "MAO-B" RELATED [ChEMBL]
+synonym: "Amine oxidase [flavin-containing] B" RELATED [ChEMBL]
+synonym: "MAOB" RELATED [ChEMBL]
+is_a: MOA:0000077 ! Oxidoreductase
+
+[Term]
+id: MOA:0000309
+name: Beta-secretase (BACE)
+synonym: "Down region aspartic protease" RELATED [ChEMBL]
+synonym: "Beta-site amyloid precursor protein cleaving enzyme 2" RELATED [ChEMBL]
+synonym: "KIAA1149" RELATED [ChEMBL]
+synonym: "BACE1" RELATED [ChEMBL]
+synonym: "Beta-site amyloid precursor protein cleaving enzyme 1" RELATED [ChEMBL]
+synonym: "BACE2" RELATED [ChEMBL]
+synonym: "ASP1" RELATED [ChEMBL]
+synonym: "AEPLC" RELATED [ChEMBL]
+synonym: "ASP2" RELATED [ChEMBL]
+synonym: "Beta-secretase 2" RELATED [ChEMBL]
+synonym: "Beta-secretase 1" RELATED [ChEMBL]
+synonym: "ASP21" RELATED [ChEMBL]
+synonym: "Memapsin-1" RELATED [ChEMBL]
+synonym: "Beta-site APP cleaving enzyme 1" RELATED [ChEMBL]
+synonym: "UNQ418/PRO852" RELATED [ChEMBL]
+synonym: "Aspartic-like protease 56 kDa" RELATED [ChEMBL]
+synonym: "Asp 1" RELATED [ChEMBL]
+synonym: "Asp 2" RELATED [ChEMBL]
+synonym: "Beta-site APP cleaving enzyme 2" RELATED [ChEMBL]
+synonym: "Aspartyl protease 2" RELATED [ChEMBL]
+synonym: "Aspartyl protease 1" RELATED [ChEMBL]
+synonym: "BACE" RELATED [ChEMBL]
+synonym: "Membrane-associated aspartic protease 2" RELATED [ChEMBL]
+synonym: "DRAP" RELATED [ChEMBL]
+synonym: "ALP56" RELATED [ChEMBL]
+synonym: "Memapsin-2" RELATED [ChEMBL]
+synonym: "Theta-secretase" RELATED [ChEMBL]
+synonym: "Membrane-associated aspartic protease 1" RELATED [ChEMBL]
+is_a: MOA:0000092 ! Aspartic protease a1a subfamily
+
+[Term]
+id: MOA:0000310
+name: Gamma-secretase
+synonym: "AD3" RELATED [ChEMBL]
+synonym: "PSFL" RELATED [ChEMBL]
+synonym: "KIAA0253" RELATED [ChEMBL]
+synonym: "AD4" RELATED [ChEMBL]
+synonym: "AD5" RELATED [ChEMBL]
+synonym: "NCSTN" RELATED [ChEMBL]
+synonym: "Gamma-secretase subunit APH-1A" RELATED [ChEMBL]
+synonym: "Gamma-secretase subunit APH-1B" RELATED [ChEMBL]
+synonym: "PSNL2" RELATED [ChEMBL]
+synonym: "PSF" RELATED [ChEMBL]
+synonym: "AD3LP" RELATED [ChEMBL]
+synonym: "PS-2" RELATED [ChEMBL]
+synonym: "PS1-CTF12" RELATED [ChEMBL]
+synonym: "PS-1" RELATED [ChEMBL]
+synonym: "PSNL1" RELATED [ChEMBL]
+synonym: "Presenilin-1 CTF subunit" RELATED [ChEMBL]
+synonym: "APH-1a" RELATED [ChEMBL]
+synonym: "UNQ579/PRO1141" RELATED [ChEMBL]
+synonym: "STM2" RELATED [ChEMBL]
+synonym: "APH-1b" RELATED [ChEMBL]
+synonym: "Nicastrin" RELATED [ChEMBL]
+synonym: "Presenilin-2 NTF subunit" RELATED [ChEMBL]
+synonym: "Gamma-secretase subunit PEN-2" RELATED [ChEMBL]
+synonym: "PEN2" RELATED [ChEMBL]
+synonym: "Presenilin-stabilization factor-like" RELATED [ChEMBL]
+synonym: "Presenilin-1 NTF subunit" RELATED [ChEMBL]
+synonym: "E5-1" RELATED [ChEMBL]
+synonym: "Presenilin-1" RELATED [ChEMBL]
+synonym: "Presenilin-2" RELATED [ChEMBL]
+synonym: "PSENEN" RELATED [ChEMBL]
+synonym: "Protein S182" RELATED [ChEMBL]
+synonym: "Presenilin-2 CTF subunit" RELATED [ChEMBL]
+synonym: "Aph-1beta" RELATED [ChEMBL]
+synonym: "PSEN1" RELATED [ChEMBL]
+synonym: "STM-2" RELATED [ChEMBL]
+synonym: "Aph-1alpha" RELATED [ChEMBL]
+synonym: "PSEN2" RELATED [ChEMBL]
+synonym: "Presenilin-1 CTF12" RELATED [ChEMBL]
+synonym: "APH1A" RELATED [ChEMBL]
+synonym: "APH1B" RELATED [ChEMBL]
+synonym: "Presenilin-stabilization factor" RELATED [ChEMBL]
+synonym: "Presenilin enhancer protein 2" RELATED [ChEMBL]
+synonym: "PS1" RELATED [ChEMBL]
+synonym: "PS2" RELATED [ChEMBL]
+is_a: MOA:0000134 ! Presenilin er ca2+ leak channel family
+is_a: MOA:0000094 ! Aspartic protease a22a regulatory subfamily
+
+[Term]
+id: MOA:0000311
+name: Cathepsin K
+synonym: "CTSK" RELATED [ChEMBL]
+synonym: "Cathepsin O" RELATED [ChEMBL]
+synonym: "CTSO2" RELATED [ChEMBL]
+synonym: "Cathepsin X" RELATED [ChEMBL]
+synonym: "Cathepsin O2" RELATED [ChEMBL]
+synonym: "CTSO" RELATED [ChEMBL]
+synonym: "Cathepsin K" RELATED [ChEMBL]
+is_a: MOA:0000098 ! Cysteine protease c1a family
+
+[Term]
+id: MOA:0000313
+name: Neprilysin
+synonym: "Skin fibroblast elastase" RELATED [ChEMBL]
+synonym: "NEP" RELATED [ChEMBL]
+synonym: "Enkephalinase" RELATED [ChEMBL]
+synonym: "Common acute lymphocytic leukemia antigen" RELATED [ChEMBL]
+synonym: "Neutral endopeptidase 24.11" RELATED [ChEMBL]
+synonym: "Neutral endopeptidase" RELATED [ChEMBL]
+synonym: "Atriopeptidase" RELATED [ChEMBL]
+synonym: "CALLA" RELATED [ChEMBL]
+synonym: "SFE" RELATED [ChEMBL]
+synonym: "CD_antigen=CD10" RELATED [ChEMBL]
+synonym: "EPN" RELATED [ChEMBL]
+synonym: "Neprilysin" RELATED [ChEMBL]
+is_a: MOA:0000103 ! Metallo protease m13 family
+
+[Term]
+id: MOA:0000314
+name: Angiotensin-converting enzyme
+synonym: "Angiotensin-converting enzyme" RELATED [ChEMBL]
+synonym: "Kininase II" RELATED [ChEMBL]
+synonym: "Angiotensin-converting enzyme, soluble form" RELATED [ChEMBL]
+synonym: "DCP1" RELATED [ChEMBL]
+synonym: "Dipeptidyl carboxypeptidase I" RELATED [ChEMBL]
+synonym: "CD_antigen=CD143" RELATED [ChEMBL]
+synonym: "DCP" RELATED [ChEMBL]
+synonym: "ACE" RELATED [ChEMBL]
+is_a: MOA:0000105 ! Metallo protease m10a subfamily
+
+[Term]
+id: MOA:0000315
+name: Collagenase
+synonym: "MMP-9" RELATED [ChEMBL]
+synonym: "Neutrophil collagenase" RELATED [ChEMBL]
+synonym: "MMP2" RELATED [ChEMBL]
+synonym: "MMP-8" RELATED [ChEMBL]
+synonym: "MMP1" RELATED [ChEMBL]
+synonym: "MMP8" RELATED [ChEMBL]
+synonym: "CLG4A" RELATED [ChEMBL]
+synonym: "Interstitial collagenase" RELATED [ChEMBL]
+synonym: "CLG" RELATED [ChEMBL]
+synonym: "Fibroblast collagenase" RELATED [ChEMBL]
+synonym: "GELB" RELATED [ChEMBL]
+synonym: "92 kDa gelatinase" RELATED [ChEMBL]
+synonym: "MMP-1" RELATED [ChEMBL]
+synonym: "Gelatinase B" RELATED [ChEMBL]
+synonym: "MMP9" RELATED [ChEMBL]
+synonym: "Gelatinase A" RELATED [ChEMBL]
+synonym: "CLG4B" RELATED [ChEMBL]
+synonym: "MMP-2" RELATED [ChEMBL]
+synonym: "22 kDa interstitial collagenase" RELATED [ChEMBL]
+synonym: "27 kDa interstitial collagenase" RELATED [ChEMBL]
+synonym: "PMNL collagenase" RELATED [ChEMBL]
+synonym: "72 kDa gelatinase" RELATED [ChEMBL]
+synonym: "Matrix metalloproteinase-2" RELATED [ChEMBL]
+synonym: "Matrix metalloproteinase-1" RELATED [ChEMBL]
+synonym: "PEX" RELATED [ChEMBL]
+synonym: "67 kDa matrix metalloproteinase-9" RELATED [ChEMBL]
+synonym: "Matrix metalloproteinase-8" RELATED [ChEMBL]
+synonym: "Matrix metalloproteinase-9" RELATED [ChEMBL]
+synonym: "82 kDa matrix metalloproteinase-9" RELATED [ChEMBL]
+synonym: "CLG1" RELATED [ChEMBL]
+synonym: "92 kDa type IV collagenase" RELATED [ChEMBL]
+synonym: "72 kDa type IV collagenase" RELATED [ChEMBL]
+synonym: "TBE-1" RELATED [ChEMBL]
+synonym: "PMNL-CL" RELATED [ChEMBL]
+is_a: MOA:0000105 ! Metallo protease m10a subfamily
+
+[Term]
+id: MOA:0000316
+name: Matrix metalloproteinase 12
+synonym: "Macrophage metalloelastase" RELATED [ChEMBL]
+synonym: "MMP-12" RELATED [ChEMBL]
+synonym: "hME" RELATED [ChEMBL]
+synonym: "MMP12" RELATED [ChEMBL]
+synonym: "ME" RELATED [ChEMBL]
+synonym: "Macrophage elastase" RELATED [ChEMBL]
+synonym: "Matrix metalloproteinase-12" RELATED [ChEMBL]
+is_a: MOA:0000105 ! Metallo protease m10a subfamily
+
+[Term]
+id: MOA:0000317
+name: Matrix metalloproteinase 13
+is_a: MOA:0000105 ! Metallo protease m10a subfamily
+
+[Term]
+id: MOA:0000318
+name: ADAMTS4
+synonym: "ADAM-TS4" RELATED [ChEMBL]
+synonym: "ADAMTS4" RELATED [ChEMBL]
+synonym: "ADAMTS-4" RELATED [ChEMBL]
+synonym: "KIAA0688" RELATED [ChEMBL]
+synonym: "ADAM-TS 4" RELATED [ChEMBL]
+synonym: "Aggrecanase-1" RELATED [ChEMBL]
+synonym: "ADMP-1" RELATED [ChEMBL]
+synonym: "A disintegrin and metalloproteinase with thrombospondin motifs 4" RELATED [ChEMBL]
+is_a: MOA:0000106 ! Metallo protease m12b subfamily
+
+[Term]
+id: MOA:0000320
+name: Coagulation factor X
+synonym: "Factor X light chain" RELATED [ChEMBL]
+synonym: "Stuart factor" RELATED [ChEMBL]
+synonym: "F10" RELATED [ChEMBL]
+synonym: "Stuart-Prower factor" RELATED [ChEMBL]
+synonym: "Coagulation factor X" RELATED [ChEMBL]
+synonym: "Factor X heavy chain" RELATED [ChEMBL]
+synonym: "Activated factor Xa heavy chain" RELATED [ChEMBL]
+is_a: MOA:0000109 ! Serine protease s1a subfamily
+
+[Term]
+id: MOA:0000321
+name: Epoxide hydrolase
+synonym: "Bifunctional epoxide hydrolase 2" RELATED [ChEMBL]
+synonym: "SEH" RELATED [ChEMBL]
+synonym: "Epoxide hydratase" RELATED [ChEMBL]
+synonym: "Soluble epoxide hydrolase" RELATED [ChEMBL]
+synonym: "EPHX2" RELATED [ChEMBL]
+synonym: "Lipid-phosphate phosphatase" RELATED [ChEMBL]
+synonym: "Cytosolic epoxide hydrolase 2" RELATED [ChEMBL]
+synonym: "CEH" RELATED [ChEMBL]
+is_a: MOA:0000111 ! Serine protease s33 family
+
+[Term]
+id: MOA:0000322
+name: Dipeptidyl peptidase IV
+synonym: "ADCP2" RELATED [ChEMBL]
+synonym: "TP103" RELATED [ChEMBL]
+synonym: "CD_antigen=CD26" RELATED [ChEMBL]
+synonym: "Dipeptidyl peptidase IV" RELATED [ChEMBL]
+synonym: "Dipeptidyl peptidase IV soluble form" RELATED [ChEMBL]
+synonym: "T-cell activation antigen CD26" RELATED [ChEMBL]
+synonym: "Dipeptidyl peptidase 4 membrane form" RELATED [ChEMBL]
+synonym: "Dipeptidyl peptidase 4 soluble form" RELATED [ChEMBL]
+synonym: "ADCP-2" RELATED [ChEMBL]
+synonym: "Dipeptidyl peptidase 4" RELATED [ChEMBL]
+synonym: "Adenosine deaminase complexing protein 2" RELATED [ChEMBL]
+synonym: "ADABP" RELATED [ChEMBL]
+synonym: "Dipeptidyl peptidase IV membrane form" RELATED [ChEMBL]
+synonym: "DPP IV" RELATED [ChEMBL]
+synonym: "CD26" RELATED [ChEMBL]
+synonym: "DPP4" RELATED [ChEMBL]
+is_a: MOA:0000112 ! Serine protease s9b subfamily
+
+[Term]
+id: MOA:0000323
+name: Serotonin 3 (5-HT3) receptor
+is_a: MOA:0000120 ! 5ht3 receptor
+
+[Term]
+id: MOA:0000324
+name: Glutamate receptor ionotropic AMPA
+synonym: "AMPA-selective glutamate receptor 1" RELATED [ChEMBL]
+synonym: "GLUR1" RELATED [ChEMBL]
+synonym: "GLUR2" RELATED [ChEMBL]
+synonym: "AMPA-selective glutamate receptor 3" RELATED [ChEMBL]
+synonym: "GLUR3" RELATED [ChEMBL]
+synonym: "GluR4" RELATED [ChEMBL]
+synonym: "AMPA-selective glutamate receptor 2" RELATED [ChEMBL]
+synonym: "GluR-K2" RELATED [ChEMBL]
+synonym: "GluA3" RELATED [ChEMBL]
+synonym: "GluA4" RELATED [ChEMBL]
+synonym: "GluA2" RELATED [ChEMBL]
+synonym: "GluR-C" RELATED [ChEMBL]
+synonym: "GluR-K3" RELATED [ChEMBL]
+synonym: "GluR-B" RELATED [ChEMBL]
+synonym: "GluR-A" RELATED [ChEMBL]
+synonym: "GluA1" RELATED [ChEMBL]
+synonym: "GluR-K1" RELATED [ChEMBL]
+synonym: "GluR-D" RELATED [ChEMBL]
+synonym: "Glutamate receptor ionotropic, AMPA 4" RELATED [ChEMBL]
+synonym: "Glutamate receptor ionotropic, AMPA 3" RELATED [ChEMBL]
+synonym: "GLUH1" RELATED [ChEMBL]
+synonym: "Glutamate receptor ionotropic, AMPA 2" RELATED [ChEMBL]
+synonym: "Glutamate receptor ionotropic, AMPA 1" RELATED [ChEMBL]
+synonym: "GRIA3" RELATED [ChEMBL]
+synonym: "GLURC" RELATED [ChEMBL]
+synonym: "GRIA4" RELATED [ChEMBL]
+synonym: "Glutamate receptor 4" RELATED [ChEMBL]
+synonym: "GluR-2" RELATED [ChEMBL]
+synonym: "GluR-1" RELATED [ChEMBL]
+synonym: "Glutamate receptor 3" RELATED [ChEMBL]
+synonym: "GRIA1" RELATED [ChEMBL]
+synonym: "Glutamate receptor 2" RELATED [ChEMBL]
+synonym: "GRIA2" RELATED [ChEMBL]
+synonym: "Glutamate receptor 1" RELATED [ChEMBL]
+synonym: "GluR-3" RELATED [ChEMBL]
+synonym: "AMPA-selective glutamate receptor 4" RELATED [ChEMBL]
+synonym: "GluR-4" RELATED [ChEMBL]
+is_a: MOA:0000124 ! AMPA receptor
+
+[Term]
+id: MOA:0000325
+name: Glutamate [NMDA] receptor
+synonym: "GluN2D" RELATED [ChEMBL]
+synonym: "GRIN3A" RELATED [ChEMBL]
+synonym: "GluN2A" RELATED [ChEMBL]
+synonym: "GluN2C" RELATED [ChEMBL]
+synonym: "GluN2B" RELATED [ChEMBL]
+synonym: "GluN3A" RELATED [ChEMBL]
+synonym: "GluN3B" RELATED [ChEMBL]
+synonym: "GluN1" RELATED [ChEMBL]
+synonym: "EB11" RELATED [ChEMBL]
+synonym: "NR2A" RELATED [ChEMBL]
+synonym: "NR2C" RELATED [ChEMBL]
+synonym: "GRIN1" RELATED [ChEMBL]
+synonym: "NR2B" RELATED [ChEMBL]
+synonym: "NR2D" RELATED [ChEMBL]
+synonym: "GRIN2D" RELATED [ChEMBL]
+synonym: "hNR2A" RELATED [ChEMBL]
+synonym: "GRIN2C" RELATED [ChEMBL]
+synonym: "GRIN2B" RELATED [ChEMBL]
+synonym: "GRIN2A" RELATED [ChEMBL]
+synonym: "NR3A" RELATED [ChEMBL]
+synonym: "hNR3" RELATED [ChEMBL]
+synonym: "NR3B" RELATED [ChEMBL]
+synonym: "NMDAR-L" RELATED [ChEMBL]
+synonym: "N-methyl-D-aspartate receptor subunit 3" RELATED [ChEMBL]
+synonym: "N-methyl D-aspartate receptor subtype 2D" RELATED [ChEMBL]
+synonym: "N-methyl D-aspartate receptor subtype 2C" RELATED [ChEMBL]
+synonym: "N-methyl D-aspartate receptor subtype 2B" RELATED [ChEMBL]
+synonym: "N-methyl D-aspartate receptor subtype 2A" RELATED [ChEMBL]
+synonym: "KIAA1973" RELATED [ChEMBL]
+synonym: "Glutamate receptor ionotropic, NMDA 3A" RELATED [ChEMBL]
+synonym: "Glutamate receptor ionotropic, NMDA 1" RELATED [ChEMBL]
+synonym: "Glutamate receptor ionotropic, NMDA 3B" RELATED [ChEMBL]
+synonym: "N-methyl-D-aspartate receptor subtype 3A" RELATED [ChEMBL]
+synonym: "N-methyl-D-aspartate receptor subtype 3B" RELATED [ChEMBL]
+synonym: "NMDAR1" RELATED [ChEMBL]
+synonym: "Glutamate [NMDA] receptor subunit epsilon-2" RELATED [ChEMBL]
+synonym: "NR3" RELATED [ChEMBL]
+synonym: "NMDAR2D" RELATED [ChEMBL]
+synonym: "Glutamate [NMDA] receptor subunit epsilon-1" RELATED [ChEMBL]
+synonym: "NMDAR2C" RELATED [ChEMBL]
+synonym: "Glutamate [NMDA] receptor subunit epsilon-3" RELATED [ChEMBL]
+synonym: "Glutamate [NMDA] receptor subunit epsilon-4" RELATED [ChEMBL]
+synonym: "NMDAR2A" RELATED [ChEMBL]
+synonym: "NMDAR2B" RELATED [ChEMBL]
+synonym: "N-methyl-D-aspartate receptor subunit NR1" RELATED [ChEMBL]
+synonym: "Glutamate [NMDA] receptor subunit zeta-1" RELATED [ChEMBL]
+synonym: "NMDAR3B" RELATED [ChEMBL]
+synonym: "Glutamate receptor ionotropic, NMDA 2A" RELATED [ChEMBL]
+synonym: "NMD-R1" RELATED [ChEMBL]
+synonym: "NMDAR3A" RELATED [ChEMBL]
+synonym: "Glutamate receptor ionotropic, NMDA 2D" RELATED [ChEMBL]
+synonym: "Glutamate receptor ionotropic, NMDA 2C" RELATED [ChEMBL]
+synonym: "GRIN3B" RELATED [ChEMBL]
+synonym: "Glutamate receptor ionotropic, NMDA 2B" RELATED [ChEMBL]
+is_a: MOA:0000125 ! NMDA receptor
+
+[Term]
+id: MOA:0000326
+name: Neuronal acetylcholine receptor protein alpha-7 subunit
+synonym: "Acra7" RELATED [ChEMBL]
+synonym: "neuronal acetylcholine receptor subunit alpha-7" RELATED [ChEMBL]
+synonym: "nAChRa7" RELATED [ChEMBL]
+synonym: "NARAD" RELATED [ChEMBL]
+is_a: MOA:0000127 ! Nicotinic acetylcholine receptor alpha subunit
+
+[Term]
+id: MOA:0000327
+name: Nicotinic acetylcholine receptor alpha4/beta2
+synonym: "Acrb4" RELATED [ChEMBL]
+synonym: "Neuronal acetylcholine receptor subunit beta-2" RELATED [ChEMBL]
+synonym: "Neuronal acetylcholine receptor subunit beta-4" RELATED [ChEMBL]
+synonym: "Chrnb4" RELATED [ChEMBL]
+synonym: "Chrnb2" RELATED [ChEMBL]
+is_a: MOA:0000127 ! Nicotinic acetylcholine receptor alpha subunit
+is_a: MOA:0000128 ! Nicotinic acetylcholine receptor beta subunit
+
+[Term]
+id: MOA:0000328
+name: P2X purinoceptor 7
+synonym: "ATP receptor" RELATED [ChEMBL]
+synonym: "P2X purinoceptor 7" RELATED [ChEMBL]
+synonym: "P2RX7" RELATED [ChEMBL]
+synonym: "P2Z receptor" RELATED [ChEMBL]
+synonym: "Purinergic receptor" RELATED [ChEMBL]
+synonym: "P2X7" RELATED [ChEMBL]
+is_a: MOA:0000129 ! P2X receptor
+
+[Term]
+id: MOA:0000329
+name: Cholesteryl ester transfer protein
+synonym: "Cholesteryl ester transfer protein" RELATED [ChEMBL]
+synonym: "Lipid transfer protein I" RELATED [ChEMBL]
+synonym: "CETP" RELATED [ChEMBL]
+is_a: MOA:0000135 ! Pore-forming toxins (proteins and peptides)
+
+[Term]
+id: MOA:0000330
+name: HERG
+synonym: "ERG-1" RELATED [ChEMBL]
+synonym: "Ether-a-go-go-related gene potassium channel 1" RELATED [ChEMBL]
+synonym: "Potassium voltage-gated channel subfamily H member 2" RELATED [ChEMBL]
+synonym: "Voltage-gated potassium channel subunit Kv11.1" RELATED [ChEMBL]
+synonym: "hERG-1" RELATED [ChEMBL]
+synonym: "KCNH2" RELATED [ChEMBL]
+synonym: "Eag-related protein 1" RELATED [ChEMBL]
+synonym: "Eag homolog" RELATED [ChEMBL]
+synonym: "HERG" RELATED [ChEMBL]
+synonym: "H-ERG" RELATED [ChEMBL]
+synonym: "ERG" RELATED [ChEMBL]
+synonym: "hERG1" RELATED [ChEMBL]
+synonym: "Ether-a-go-go-related protein 1" RELATED [ChEMBL]
+is_a: MOA:0000138 ! Voltage-gated potassium channel
+
+[Term]
+id: MOA:0000331
+name: Sodium channel protein type IX alpha subunit
+synonym: "hNE-Na" RELATED [ChEMBL]
+synonym: "SCN9A" RELATED [ChEMBL]
+synonym: "Peripheral sodium channel 1" RELATED [ChEMBL]
+synonym: "Neuroendocrine sodium channel" RELATED [ChEMBL]
+synonym: "Voltage-gated sodium channel subunit alpha Nav1.7" RELATED [ChEMBL]
+synonym: "NENA" RELATED [ChEMBL]
+synonym: "PN1" RELATED [ChEMBL]
+synonym: "Sodium channel protein type IX subunit alpha" RELATED [ChEMBL]
+synonym: "Sodium channel protein type 9 subunit alpha" RELATED [ChEMBL]
+is_a: MOA:0000141 ! Voltage-gated sodium channel
+
+[Term]
+id: MOA:0000332
+name: GABA receptor alpha-2 subunit
+synonym: "GABA(A) receptor subunit alpha-2" RELATED [ChEMBL]
+synonym: "Gamma-aminobutyric acid receptor subunit alpha-2" RELATED [ChEMBL]
+synonym: "GABRA2" RELATED [ChEMBL]
+is_a: MOA:0000121 ! GABA A receptor
+
+[Term]
+id: MOA:0000333
+name: Erythropoietin receptor
+synonym: "EPO-R" RELATED [ChEMBL]
+synonym: "Erythropoietin receptor" RELATED [ChEMBL]
+synonym: "EPOR" RELATED [ChEMBL]
+is_a: MOA:0000004 ! Membrane receptor
+
+[Term]
+id: MOA:0000334
+name: Integrin alpha-4
+synonym: "CD49 antigen-like family member D" RELATED [ChEMBL]
+synonym: "VLA-4 subunit alpha" RELATED [ChEMBL]
+synonym: "Integrin alpha-4" RELATED [ChEMBL]
+synonym: "CD_antigen=CD49d" RELATED [ChEMBL]
+synonym: "ITGA4" RELATED [ChEMBL]
+synonym: "CD49D" RELATED [ChEMBL]
+synonym: "Integrin alpha-IV" RELATED [ChEMBL]
+is_a: MOA:0000004 ! Membrane receptor
+
+[Term]
+id: MOA:0000335
+name: LDL receptor
+synonym: "Low-density lipoprotein receptor" RELATED [ChEMBL]
+synonym: "LDLR" RELATED [ChEMBL]
+synonym: "LDL receptor" RELATED [ChEMBL]
+is_a: MOA:0000004 ! Membrane receptor
+
+[Term]
+id: MOA:0000336
+name: C-C chemokine receptor type 1
+synonym: "LD78 receptor" RELATED [ChEMBL]
+synonym: "SCYAR1" RELATED [ChEMBL]
+synonym: "MIP-1alpha-R" RELATED [ChEMBL]
+synonym: "CMKBR1" RELATED [ChEMBL]
+synonym: "RANTES-R" RELATED [ChEMBL]
+synonym: "HM145" RELATED [ChEMBL]
+synonym: "CD_antigen=CD191" RELATED [ChEMBL]
+synonym: "CC-CKR-1" RELATED [ChEMBL]
+synonym: "CMKR1" RELATED [ChEMBL]
+synonym: "Macrophage inflammatory protein 1-alpha receptor" RELATED [ChEMBL]
+synonym: "CCR-1" RELATED [ChEMBL]
+synonym: "C-C chemokine receptor type 1" RELATED [ChEMBL]
+synonym: "C-C CKR-1" RELATED [ChEMBL]
+is_a: MOA:0000148 ! CC chemokine receptor
+
+[Term]
+id: MOA:0000337
+name: C-C chemokine receptor type 2
+synonym: "CCR2" RELATED [ChEMBL]
+synonym: "CMKBR2" RELATED [ChEMBL]
+synonym: "C-C chemokine receptor type 2" RELATED [ChEMBL]
+synonym: "MCP-1-R" RELATED [ChEMBL]
+synonym: "CCR-2" RELATED [ChEMBL]
+synonym: "CC-CKR-2" RELATED [ChEMBL]
+synonym: "CD_antigen=CD192" RELATED [ChEMBL]
+synonym: "C-C CKR-2" RELATED [ChEMBL]
+synonym: "Monocyte chemoattractant protein 1 receptor" RELATED [ChEMBL]
+is_a: MOA:0000148 ! CC chemokine receptor
+
+[Term]
+id: MOA:0000338
+name: C-C chemokine receptor type 3
+synonym: "CC-CKR-3" RELATED [ChEMBL]
+synonym: "Eosinophil eotaxin receptor" RELATED [ChEMBL]
+synonym: "C-C chemokine receptor type 3" RELATED [ChEMBL]
+synonym: "CMKBR3" RELATED [ChEMBL]
+synonym: "C-C CKR-3" RELATED [ChEMBL]
+synonym: "CCR3" RELATED [ChEMBL]
+synonym: "CCR-3" RELATED [ChEMBL]
+synonym: "CKR3" RELATED [ChEMBL]
+synonym: "CD_antigen=CD193" RELATED [ChEMBL]
+is_a: MOA:0000148 ! CC chemokine receptor
+
+[Term]
+id: MOA:0000339
+name: C-C chemokine receptor type 4
+synonym: "CC-CKR-4" RELATED [ChEMBL]
+synonym: "CD_antigen=CD194" RELATED [ChEMBL]
+synonym: "K5-5" RELATED [ChEMBL]
+synonym: "C-C chemokine receptor type 4" RELATED [ChEMBL]
+synonym: "CMKBR4" RELATED [ChEMBL]
+synonym: "CCR-4" RELATED [ChEMBL]
+synonym: "C-C CKR-4" RELATED [ChEMBL]
+synonym: "CCR4" RELATED [ChEMBL]
+is_a: MOA:0000148 ! CC chemokine receptor
+
+[Term]
+id: MOA:0000340
+name: C-C chemokine receptor type 5
+synonym: "CC-CKR-5" RELATED [ChEMBL]
+synonym: "C-C chemokine receptor type 5" RELATED [ChEMBL]
+synonym: "CD_antigen=CD195" RELATED [ChEMBL]
+synonym: "CMKBR5" RELATED [ChEMBL]
+synonym: "CCR-5" RELATED [ChEMBL]
+synonym: "HIV-1 fusion coreceptor" RELATED [ChEMBL]
+synonym: "C-C CKR-5" RELATED [ChEMBL]
+synonym: "CHEMR13" RELATED [ChEMBL]
+synonym: "CCR5" RELATED [ChEMBL]
+is_a: MOA:0000148 ! CC chemokine receptor
+
+[Term]
+id: MOA:0000341
+name: C-C chemokine receptor type 8
+synonym: "C-C chemokine receptor type 8" RELATED [ChEMBL]
+synonym: "CD_antigen=CDw198" RELATED [ChEMBL]
+synonym: "Cmkbr8" RELATED [ChEMBL]
+synonym: "CC-CKR-8" RELATED [ChEMBL]
+synonym: "C-C CKR-8" RELATED [ChEMBL]
+synonym: "CCR-8" RELATED [ChEMBL]
+synonym: "Ccr8" RELATED [ChEMBL]
+synonym: "Ter1" RELATED [ChEMBL]
+is_a: MOA:0000148 ! CC chemokine receptor
+
+[Term]
+id: MOA:0000342
+name: C-C motif chemokine 2
+synonym: "Monocyte chemotactic and activating factor" RELATED [ChEMBL]
+synonym: "Monocyte secretory protein JE" RELATED [ChEMBL]
+synonym: "C-C motif chemokine 2" RELATED [ChEMBL]
+synonym: "SCYA2" RELATED [ChEMBL]
+synonym: "CCL2" RELATED [ChEMBL]
+synonym: "Monocyte chemoattractant protein 1" RELATED [ChEMBL]
+synonym: "MCAF" RELATED [ChEMBL]
+synonym: "MCP1" RELATED [ChEMBL]
+synonym: "MCP-1" RELATED [ChEMBL]
+synonym: "HC11" RELATED [ChEMBL]
+synonym: "Monocyte chemotactic protein 1" RELATED [ChEMBL]
+synonym: "Small-inducible cytokine A2" RELATED [ChEMBL]
+is_a: MOA:0000148 ! CC chemokine receptor
+
+[Term]
+id: MOA:0000343
+name: Interleukin-8 receptor B
+is_a: MOA:0000150 ! CXC chemokine receptor
+
+[Term]
+id: MOA:0000344
+name: C-X3-C chemokine receptor 1
+synonym: "CX3C chemokine receptor 1" RELATED [ChEMBL]
+synonym: "Fractalkine receptor" RELATED [ChEMBL]
+synonym: "CX3CR1" RELATED [ChEMBL]
+synonym: "V28" RELATED [ChEMBL]
+synonym: "G-protein coupled receptor 13" RELATED [ChEMBL]
+synonym: "CMK-BRL1" RELATED [ChEMBL]
+synonym: "Beta chemokine receptor-like 1" RELATED [ChEMBL]
+synonym: "CMKBRL1" RELATED [ChEMBL]
+synonym: "CMK-BRL-1" RELATED [ChEMBL]
+synonym: "C-X3-C CKR-1" RELATED [ChEMBL]
+synonym: "GPR13" RELATED [ChEMBL]
+is_a: MOA:0000149 ! CX3C chemokine receptor
+
+[Term]
+id: MOA:0000345
+name: C-X-C chemokine receptor type 2
+synonym: "IL-8R B" RELATED [ChEMBL]
+synonym: "CXC-R2" RELATED [ChEMBL]
+synonym: "GRO/MGSA receptor" RELATED [ChEMBL]
+synonym: "CXCR2" RELATED [ChEMBL]
+synonym: "CD_antigen=CD182" RELATED [ChEMBL]
+synonym: "Interleukin-8 receptor B" RELATED [ChEMBL]
+synonym: "CXCR-2" RELATED [ChEMBL]
+synonym: "C-X-C chemokine receptor type 2" RELATED [ChEMBL]
+synonym: "IL8RB" RELATED [ChEMBL]
+synonym: "High affinity interleukin-8 receptor B" RELATED [ChEMBL]
+is_a: MOA:0000150 ! CXC chemokine receptor
+
+[Term]
+id: MOA:0000346
+name: Angiotensin II receptor
+synonym: "AGTR1A" RELATED [ChEMBL]
+synonym: "AGTR1" RELATED [ChEMBL]
+synonym: "AT1AR" RELATED [ChEMBL]
+synonym: "AT2R1" RELATED [ChEMBL]
+synonym: "AT1BR" RELATED [ChEMBL]
+synonym: "AT2R1B" RELATED [ChEMBL]
+synonym: "Type-2 angiotensin II receptor" RELATED [ChEMBL]
+synonym: "AGTR2" RELATED [ChEMBL]
+synonym: "Type-1 angiotensin II receptor" RELATED [ChEMBL]
+synonym: "Angiotensin II type-2 receptor" RELATED [ChEMBL]
+synonym: "AT1" RELATED [ChEMBL]
+synonym: "Angiotensin II type-1 receptor" RELATED [ChEMBL]
+synonym: "AGTR1B" RELATED [ChEMBL]
+synonym: "AT2" RELATED [ChEMBL]
+is_a: MOA:0000152 ! Angiotensin receptor
+
+[Term]
+id: MOA:0000347
+name: Bradykinin B1 receptor
+synonym: "B1R" RELATED [ChEMBL]
+synonym: "B1 bradykinin receptor" RELATED [ChEMBL]
+synonym: "BK-1 receptor" RELATED [ChEMBL]
+synonym: "BDKRB1" RELATED [ChEMBL]
+synonym: "BRADYB1" RELATED [ChEMBL]
+is_a: MOA:0000153 ! Bradykinin receptor
+
+[Term]
+id: MOA:0000348
+name: Bradykinin B2 receptor
+synonym: "B2R" RELATED [ChEMBL]
+synonym: "BK-2 receptor" RELATED [ChEMBL]
+synonym: "BDKRB2" RELATED [ChEMBL]
+synonym: "B2 bradykinin receptor" RELATED [ChEMBL]
+synonym: "BKR2" RELATED [ChEMBL]
+is_a: MOA:0000153 ! Bradykinin receptor
+
+[Term]
+id: MOA:0000349
+name: Cholecystokinin A receptor
+synonym: "Cholecystokinin-1 receptor" RELATED [ChEMBL]
+synonym: "CCK-A receptor" RELATED [ChEMBL]
+synonym: "CCKAR" RELATED [ChEMBL]
+synonym: "CCK-AR" RELATED [ChEMBL]
+synonym: "Cholecystokinin receptor type A" RELATED [ChEMBL]
+synonym: "CCKRA" RELATED [ChEMBL]
+synonym: "CCK1-R" RELATED [ChEMBL]
+is_a: MOA:0000154 ! Cholecystokinin receptor
+
+[Term]
+id: MOA:0000350
+name: Endothelin receptor ET-A
+synonym: "ETRA" RELATED [ChEMBL]
+synonym: "Endothelin-1 receptor" RELATED [ChEMBL]
+synonym: "hET-AR" RELATED [ChEMBL]
+synonym: "ETA" RELATED [ChEMBL]
+synonym: "ET-A" RELATED [ChEMBL]
+synonym: "EDNRA" RELATED [ChEMBL]
+synonym: "Endothelin A receptor" RELATED [ChEMBL]
+synonym: "ETA-R" RELATED [ChEMBL]
+is_a: MOA:0000155 ! Endothelin receptor
+
+[Term]
+id: MOA:0000351
+name: Gonadotropin-releasing hormone receptor
+synonym: "GRHR" RELATED [ChEMBL]
+synonym: "GNRHR" RELATED [ChEMBL]
+synonym: "Gonadotropin-releasing hormone receptor" RELATED [ChEMBL]
+synonym: "GnRH receptor" RELATED [ChEMBL]
+synonym: "GnRH-R" RELATED [ChEMBL]
+is_a: MOA:0000156 ! Gnrh receptor
+
+[Term]
+id: MOA:0000352
+name: Melanin-concentrating hormone receptor 1
+synonym: "Somatostatin receptor-like protein" RELATED [ChEMBL]
+synonym: "G-protein coupled receptor 24" RELATED [ChEMBL]
+synonym: "SLC-1" RELATED [ChEMBL]
+synonym: "MCHR" RELATED [ChEMBL]
+synonym: "SLC1" RELATED [ChEMBL]
+synonym: "MCHR-1" RELATED [ChEMBL]
+synonym: "MCH1R" RELATED [ChEMBL]
+synonym: "GPR24" RELATED [ChEMBL]
+synonym: "MCH-R1" RELATED [ChEMBL]
+synonym: "MCH-1R" RELATED [ChEMBL]
+synonym: "MCHR1" RELATED [ChEMBL]
+synonym: "MCH receptor 1" RELATED [ChEMBL]
+synonym: "Melanin-concentrating hormone receptor 1" RELATED [ChEMBL]
+is_a: MOA:0000157 ! Mch receptor
+
+[Term]
+id: MOA:0000353
+name: Melanocortin receptor 2
+synonym: "ACTH-R" RELATED [ChEMBL]
+synonym: "ACTH receptor" RELATED [ChEMBL]
+synonym: "MC2-R" RELATED [ChEMBL]
+synonym: "ACTHR" RELATED [ChEMBL]
+synonym: "Adrenocorticotropic hormone receptor" RELATED [ChEMBL]
+synonym: "MC2R" RELATED [ChEMBL]
+synonym: "Adrenocorticotropin receptor" RELATED [ChEMBL]
+synonym: "Melanocortin receptor 2" RELATED [ChEMBL]
+is_a: MOA:0000158 ! Melanocortin receptor
+
+[Term]
+id: MOA:0000354
+name: Melanocortin receptor 4
+synonym: "Melanocortin receptor 4" RELATED [ChEMBL]
+synonym: "MC4-R" RELATED [ChEMBL]
+synonym: "MC4R" RELATED [ChEMBL]
+is_a: MOA:0000158 ! Melanocortin receptor
+
+[Term]
+id: MOA:0000355
+name: Neurokinin 1 receptor
+synonym: "NK-1 receptor" RELATED [ChEMBL]
+synonym: "NK1R" RELATED [ChEMBL]
+synonym: "NK-1R" RELATED [ChEMBL]
+synonym: "TAC1R" RELATED [ChEMBL]
+synonym: "TACR1" RELATED [ChEMBL]
+synonym: "Substance-P receptor" RELATED [ChEMBL]
+synonym: "SPR" RELATED [ChEMBL]
+synonym: "Tachykinin receptor 1" RELATED [ChEMBL]
+is_a: MOA:0000159 ! Neurokinin receptor
+
+[Term]
+id: MOA:0000356
+name: Neurokinin 2 receptor
+synonym: "TAC2R" RELATED [ChEMBL]
+synonym: "NK-2 receptor" RELATED [ChEMBL]
+synonym: "TACR2" RELATED [ChEMBL]
+synonym: "SKR" RELATED [ChEMBL]
+synonym: "Tachykinin receptor 2" RELATED [ChEMBL]
+synonym: "NKNAR" RELATED [ChEMBL]
+synonym: "NK-2R" RELATED [ChEMBL]
+synonym: "Neurokinin A receptor" RELATED [ChEMBL]
+synonym: "Substance-K receptor" RELATED [ChEMBL]
+synonym: "NK2R" RELATED [ChEMBL]
+is_a: MOA:0000159 ! Neurokinin receptor
+
+[Term]
+id: MOA:0000357
+name: Neurokinin 3 receptor
+synonym: "NK-3R" RELATED [ChEMBL]
+synonym: "NK-3 receptor" RELATED [ChEMBL]
+synonym: "NK3R" RELATED [ChEMBL]
+synonym: "TACR3" RELATED [ChEMBL]
+synonym: "NKR" RELATED [ChEMBL]
+synonym: "Tachykinin receptor 3" RELATED [ChEMBL]
+synonym: "Neuromedin-K receptor" RELATED [ChEMBL]
+synonym: "Neurokinin B receptor" RELATED [ChEMBL]
+synonym: "TAC3R" RELATED [ChEMBL]
+is_a: MOA:0000159 ! Neurokinin receptor
+
+[Term]
+id: MOA:0000358
+name: Neuropeptide Y receptor type 1
+synonym: "NPY1R" RELATED [ChEMBL]
+synonym: "NPYY1" RELATED [ChEMBL]
+synonym: "NPY1-R" RELATED [ChEMBL]
+synonym: "NPYR" RELATED [ChEMBL]
+synonym: "Neuropeptide Y receptor type 1" RELATED [ChEMBL]
+is_a: MOA:0000160 ! Neuropeptide y receptor
+
+[Term]
+id: MOA:0000359
+name: Neuropeptide Y receptor type 5
+synonym: "NPY5-R" RELATED [ChEMBL]
+synonym: "Y5 receptor" RELATED [ChEMBL]
+synonym: "Neuropeptide Y receptor type 5" RELATED [ChEMBL]
+synonym: "NPYY5-R" RELATED [ChEMBL]
+synonym: "NPY5R" RELATED [ChEMBL]
+synonym: "NPY-Y5 receptor" RELATED [ChEMBL]
+synonym: "NPYR5" RELATED [ChEMBL]
+is_a: MOA:0000160 ! Neuropeptide y receptor
+
+[Term]
+id: MOA:0000360
+name: Delta opioid receptor
+synonym: "DOR-1" RELATED [ChEMBL]
+synonym: "Delta-type opioid receptor" RELATED [ChEMBL]
+synonym: "OPRD1" RELATED [ChEMBL]
+synonym: "OPRD" RELATED [ChEMBL]
+synonym: "D-OR-1" RELATED [ChEMBL]
+is_a: MOA:0000161 ! Opioid receptor
+
+[Term]
+id: MOA:0000361
+name: Mu opioid receptor
+synonym: "M-OR-1" RELATED [ChEMBL]
+synonym: "Mu opiate receptor" RELATED [ChEMBL]
+synonym: "Mu-type opioid receptor" RELATED [ChEMBL]
+synonym: "Mu opioid receptor" RELATED [ChEMBL]
+synonym: "MOP" RELATED [ChEMBL]
+synonym: "hMOP" RELATED [ChEMBL]
+synonym: "MOR-1" RELATED [ChEMBL]
+synonym: "MOR1" RELATED [ChEMBL]
+synonym: "OPRM1" RELATED [ChEMBL]
+is_a: MOA:0000161 ! Opioid receptor
+
+[Term]
+id: MOA:0000362
+name: Oxytocin receptor
+synonym: "OT-R" RELATED [ChEMBL]
+synonym: "OXTR" RELATED [ChEMBL]
+synonym: "Oxytocin receptor" RELATED [ChEMBL]
+is_a: MOA:0000162 ! Vasopressin and oxytocin receptor
+
+[Term]
+id: MOA:0000363
+name: G-protein coupled receptor 35
+synonym: "KYNA receptor" RELATED [ChEMBL]
+synonym: "G-protein coupled receptor 35" RELATED [ChEMBL]
+synonym: "Kynurenic acid receptor" RELATED [ChEMBL]
+synonym: "GPR35" RELATED [ChEMBL]
+is_a: MOA:0000164 ! Kynurenic acid receptor
+
+[Term]
+id: MOA:0000364
+name: Glucose-dependent insulinotropic receptor
+synonym: "G-protein coupled receptor 119" RELATED [ChEMBL]
+synonym: "GPR119" RELATED [ChEMBL]
+synonym: "Glucose-dependent insulinotropic receptor" RELATED [ChEMBL]
+is_a: MOA:0000165 ! Lipid-like ligand receptor (family a gpcr)
+
+[Term]
+id: MOA:0000365
+name: Cannabinoid CB1 receptor
+synonym: "Cannabinoid receptor 1" RELATED [ChEMBL]
+synonym: "CANN6" RELATED [ChEMBL]
+synonym: "CNR" RELATED [ChEMBL]
+synonym: "CB1" RELATED [ChEMBL]
+synonym: "CNR1" RELATED [ChEMBL]
+synonym: "CB-R" RELATED [ChEMBL]
+is_a: MOA:0000166 ! Cannabinoid receptor
+
+[Term]
+id: MOA:0000366
+name: Cannabinoid CB2 receptor
+synonym: "CNR2" RELATED [ChEMBL]
+synonym: "Cannabinoid receptor 2" RELATED [ChEMBL]
+synonym: "hCB2" RELATED [ChEMBL]
+synonym: "CB-2" RELATED [ChEMBL]
+synonym: "CB2A" RELATED [ChEMBL]
+synonym: "CX5" RELATED [ChEMBL]
+synonym: "CB2B" RELATED [ChEMBL]
+synonym: "CB2" RELATED [ChEMBL]
+is_a: MOA:0000166 ! Cannabinoid receptor
+
+[Term]
+id: MOA:0000367
+name: Cysteinyl leukotriene receptor
+synonym: "LTD4 receptor" RELATED [ChEMBL]
+synonym: "HMTMF81" RELATED [ChEMBL]
+synonym: "CysLTR2" RELATED [ChEMBL]
+synonym: "CysLTR1" RELATED [ChEMBL]
+synonym: "hGPCR21" RELATED [ChEMBL]
+synonym: "CYSLT2" RELATED [ChEMBL]
+synonym: "G-protein coupled receptor HG55" RELATED [ChEMBL]
+synonym: "CYSLT1" RELATED [ChEMBL]
+synonym: "G-protein coupled receptor GPCR21" RELATED [ChEMBL]
+synonym: "G-protein coupled receptor HG57" RELATED [ChEMBL]
+synonym: "CYSLT2R" RELATED [ChEMBL]
+synonym: "Cysteinyl leukotriene D4 receptor" RELATED [ChEMBL]
+synonym: "HPN321" RELATED [ChEMBL]
+synonym: "Cysteinyl leukotriene receptor 1" RELATED [ChEMBL]
+synonym: "Cysteinyl leukotriene receptor 2" RELATED [ChEMBL]
+is_a: MOA:0000167 ! Leukotriene receptor
+
+[Term]
+id: MOA:0000369
+name: Platelet activating factor receptor
+synonym: "Platelet-activating factor receptor" RELATED [ChEMBL]
+synonym: "PTAFR" RELATED [ChEMBL]
+synonym: "PAF-R" RELATED [ChEMBL]
+synonym: "PAFr" RELATED [ChEMBL]
+is_a: MOA:0000168 ! Paf receptor
+
+[Term]
+id: MOA:0000370
+name: G protein-coupled receptor 44
+synonym: "Prostaglandin D2 receptor 2" RELATED [ChEMBL]
+synonym: "G-protein coupled receptor 44" RELATED [ChEMBL]
+synonym: "GPR44" RELATED [ChEMBL]
+synonym: "CD_antigen=CD294" RELATED [ChEMBL]
+synonym: "Chemoattractant receptor-homologous molecule expressed on Th2 cells" RELATED [ChEMBL]
+synonym: "PTGDR2" RELATED [ChEMBL]
+synonym: "CRTH2" RELATED [ChEMBL]
+synonym: "DL1R" RELATED [ChEMBL]
+is_a: MOA:0000169 ! Prostanoid receptor
+
+[Term]
+id: MOA:0000371
+name: Prostaglandin E2 receptor
+synonym: "PTGER4" RELATED [ChEMBL]
+synonym: "PGE receptor EP4 subtype" RELATED [ChEMBL]
+synonym: "PTGER3" RELATED [ChEMBL]
+synonym: "PGE receptor EP3 subtype" RELATED [ChEMBL]
+synonym: "Prostaglandin E2 receptor EP4 subtype" RELATED [ChEMBL]
+synonym: "PGE2-R" RELATED [ChEMBL]
+synonym: "PGE2 receptor EP4 subtype" RELATED [ChEMBL]
+synonym: "Prostanoid EP3 receptor" RELATED [ChEMBL]
+synonym: "Prostaglandin E2 receptor EP3 subtype" RELATED [ChEMBL]
+synonym: "PGE2 receptor EP3 subtype" RELATED [ChEMBL]
+synonym: "Prostanoid EP4 receptor" RELATED [ChEMBL]
+is_a: MOA:0000169 ! Prostanoid receptor
+
+[Term]
+id: MOA:0000372
+name: Prostanoid EP1 receptor
+is_a: MOA:0000169 ! Prostanoid receptor
+
+[Term]
+id: MOA:0000373
+name: Prostanoid EP2 receptor
+is_a: MOA:0000169 ! Prostanoid receptor
+
+[Term]
+id: MOA:0000375
+name: Muscarinic acetylcholine receptor
+synonym: "CHRM4" RELATED [ChEMBL]
+synonym: "CHRM5" RELATED [ChEMBL]
+synonym: "Muscarinic acetylcholine receptor M5" RELATED [ChEMBL]
+synonym: "Muscarinic acetylcholine receptor M4" RELATED [ChEMBL]
+is_a: MOA:0000171 ! Acetylcholine receptor
+
+[Term]
+id: MOA:0000376
+name: Muscarinic acetylcholine receptor M1
+is_a: MOA:0000171 ! Acetylcholine receptor
+
+[Term]
+id: MOA:0000377
+name: Muscarinic acetylcholine receptor M2
+is_a: MOA:0000171 ! Acetylcholine receptor
+
+[Term]
+id: MOA:0000378
+name: Muscarinic acetylcholine receptor M3
+is_a: MOA:0000171 ! Acetylcholine receptor
+
+[Term]
+id: MOA:0000379
+name: Adrenergic receptor alpha
+is_a: MOA:0000172 ! Adrenergic receptor
+
+[Term]
+id: MOA:0000381
+name: Adrenergic receptor beta
+is_a: MOA:0000172 ! Adrenergic receptor
+
+[Term]
+id: MOA:0000382
+name: Alpha-1 adrenergic receptor
+synonym: "Gpcr8" RELATED [ChEMBL]
+is_a: MOA:0000172 ! Adrenergic receptor
+
+[Term]
+id: MOA:0000383
+name: Beta-1 adrenergic receptor
+is_a: MOA:0000172 ! Adrenergic receptor
+
+[Term]
+id: MOA:0000384
+name: Beta-2 adrenergic receptor
+is_a: MOA:0000172 ! Adrenergic receptor
+
+[Term]
+id: MOA:0000385
+name: Beta-3 adrenergic receptor
+is_a: MOA:0000172 ! Adrenergic receptor
+
+[Term]
+id: MOA:0000386
+name: Dopamine D1 receptor
+is_a: MOA:0000173 ! Dopamine receptor
+
+[Term]
+id: MOA:0000387
+name: Dopamine D3 receptor
+is_a: MOA:0000173 ! Dopamine receptor
+
+[Term]
+id: MOA:0000388
+name: Dopamine D2 receptor
+is_a: MOA:0000173 ! Dopamine receptor
+
+[Term]
+id: MOA:0000389
+name: Histamine H1 receptor
+synonym: "Histamine H1 receptor" RELATED [ChEMBL]
+synonym: "HH1R" RELATED [ChEMBL]
+synonym: "H1R" RELATED [ChEMBL]
+synonym: "HRH1" RELATED [ChEMBL]
+is_a: MOA:0000174 ! Histamine receptor
+
+[Term]
+id: MOA:0000390
+name: Histamine H2 receptor
+synonym: "Histamine H2 receptor" RELATED [ChEMBL]
+synonym: "HH2R" RELATED [ChEMBL]
+synonym: "H2R" RELATED [ChEMBL]
+synonym: "Gastric receptor I" RELATED [ChEMBL]
+synonym: "HRH2" RELATED [ChEMBL]
+is_a: MOA:0000174 ! Histamine receptor
+
+[Term]
+id: MOA:0000391
+name: Histamine H3 receptor
+synonym: "G-protein coupled receptor 97" RELATED [ChEMBL]
+synonym: "H3R" RELATED [ChEMBL]
+synonym: "GPCR97" RELATED [ChEMBL]
+synonym: "HRH3" RELATED [ChEMBL]
+synonym: "Histamine H3 receptor" RELATED [ChEMBL]
+synonym: "HH3R" RELATED [ChEMBL]
+is_a: MOA:0000174 ! Histamine receptor
+
+[Term]
+id: MOA:0000392
+name: Serotonin (5-HT) receptor
+synonym: "5-HT-5" RELATED [ChEMBL]
+synonym: "HTR1E" RELATED [ChEMBL]
+synonym: "5-HT-6" RELATED [ChEMBL]
+synonym: "5-HT1E" RELATED [ChEMBL]
+synonym: "5-HT4" RELATED [ChEMBL]
+synonym: "HTR6" RELATED [ChEMBL]
+synonym: "HTR4" RELATED [ChEMBL]
+synonym: "S31" RELATED [ChEMBL]
+synonym: "5-hydroxytryptamine receptor 6" RELATED [ChEMBL]
+synonym: "5-HT6" RELATED [ChEMBL]
+synonym: "5-hydroxytryptamine receptor 4" RELATED [ChEMBL]
+synonym: "Serotonin receptor 5A" RELATED [ChEMBL]
+synonym: "5-HT5A" RELATED [ChEMBL]
+synonym: "Serotonin receptor 6" RELATED [ChEMBL]
+synonym: "Serotonin receptor 4" RELATED [ChEMBL]
+synonym: "5-hydroxytryptamine receptor 5A" RELATED [ChEMBL]
+synonym: "5-hydroxytryptamine receptor 1E" RELATED [ChEMBL]
+synonym: "HTR5A" RELATED [ChEMBL]
+synonym: "5-HT-1E" RELATED [ChEMBL]
+synonym: "HTR1EL" RELATED [ChEMBL]
+synonym: "5-HT-5A" RELATED [ChEMBL]
+synonym: "Serotonin receptor 1E" RELATED [ChEMBL]
+synonym: "5-HT-4" RELATED [ChEMBL]
+is_a: MOA:0000175 ! Serotonin receptor
+
+[Term]
+id: MOA:0000393
+name: Serotonin 1 (5-HT1) receptor
+synonym: "5ht1f" RELATED [ChEMBL]
+synonym: "5ht1a" RELATED [ChEMBL]
+synonym: "5ht1b" RELATED [ChEMBL]
+is_a: MOA:0000175 ! Serotonin receptor
+
+[Term]
+id: MOA:0000394
+name: Serotonin 1a (5-HT1a) receptor
+is_a: MOA:0000175 ! Serotonin receptor
+
+[Term]
+id: MOA:0000395
+name: Serotonin 1b (5-HT1b) receptor
+is_a: MOA:0000175 ! Serotonin receptor
+
+[Term]
+id: MOA:0000396
+name: Serotonin 1d (5-HT1d) receptor
+is_a: MOA:0000175 ! Serotonin receptor
+
+[Term]
+id: MOA:0000397
+name: Serotonin 2 (5-HT2) receptor
+is_a: MOA:0000175 ! Serotonin receptor
+
+[Term]
+id: MOA:0000398
+name: Serotonin 2a (5-HT2a) receptor
+is_a: MOA:0000175 ! Serotonin receptor
+
+[Term]
+id: MOA:0000399
+name: Serotonin 2c (5-HT2c) receptor
+is_a: MOA:0000175 ! Serotonin receptor
+
+[Term]
+id: MOA:0000401
+name: Serotonin 7 (5-HT7) receptor
+is_a: MOA:0000175 ! Serotonin receptor
+
+[Term]
+id: MOA:0000402
+name: Adenosine A2b receptor
+synonym: "Adenosine receptor A2b" RELATED [ChEMBL]
+synonym: "ADORA2B" RELATED [ChEMBL]
+is_a: MOA:0000177 ! Adenosine receptor
+
+[Term]
+id: MOA:0000403
+name: Adenosine A3 receptor
+synonym: "ADORA3" RELATED [ChEMBL]
+synonym: "Adenosine receptor A3" RELATED [ChEMBL]
+is_a: MOA:0000177 ! Adenosine receptor
+
+[Term]
+id: MOA:0000404
+name: Purinergic receptor P2Y11
+synonym: "P2RY11" RELATED [ChEMBL]
+synonym: "P2Y purinoceptor 11" RELATED [ChEMBL]
+synonym: "P2Y11" RELATED [ChEMBL]
+is_a: MOA:0000178 ! Purine receptor
+
+[Term]
+id: MOA:0000405
+name: Purinergic receptor P2Y12
+synonym: "P2Y(cyc)" RELATED [ChEMBL]
+synonym: "P2Y purinoceptor 12" RELATED [ChEMBL]
+synonym: "ADPG-R" RELATED [ChEMBL]
+synonym: "P2RY12" RELATED [ChEMBL]
+synonym: "P2T(AC)" RELATED [ChEMBL]
+synonym: "P2Y12" RELATED [ChEMBL]
+synonym: "P2Y(AC)" RELATED [ChEMBL]
+synonym: "P2Y12 platelet ADP receptor" RELATED [ChEMBL]
+synonym: "SP1999" RELATED [ChEMBL]
+synonym: "ADP-glucose receptor" RELATED [ChEMBL]
+synonym: "P2Y(ADP)" RELATED [ChEMBL]
+synonym: "HORK3" RELATED [ChEMBL]
+is_a: MOA:0000178 ! Purine receptor
+
+[Term]
+id: MOA:0000406
+name: Metabotropic glutamate receptor 2
+synonym: "mGluR2" RELATED [ChEMBL]
+synonym: "GRM2" RELATED [ChEMBL]
+synonym: "Metabotropic glutamate receptor 2" RELATED [ChEMBL]
+synonym: "GPRC1B" RELATED [ChEMBL]
+is_a: MOA:0000181 ! Metabotropic glutamate receptor
+
+[Term]
+id: MOA:0000407
+name: Metabotropic glutamate receptor 5
+synonym: "Metabotropic glutamate receptor 5" RELATED [ChEMBL]
+synonym: "mGluR5" RELATED [ChEMBL]
+synonym: "GPRC1E" RELATED [ChEMBL]
+synonym: "GRM5" RELATED [ChEMBL]
+is_a: MOA:0000181 ! Metabotropic glutamate receptor
+
+[Term]
+id: MOA:0000409
+name: Beta tubulin
+is_a: MOA:0000008 ! Structural protein
+
+[Term]
+id: MOA:0000410
+name: MHC class II
+synonym: "RT1-A3" RELATED [ChEMBL]
+synonym: "B3galt4" RELATED [ChEMBL]
+synonym: "RT1-A1" RELATED [ChEMBL]
+synonym: "Phf1" RELATED [ChEMBL]
+synonym: "Protein Pfdn6" RELATED [ChEMBL]
+synonym: "LOC224733l-2" RELATED [ChEMBL]
+synonym: "Pfdn6" RELATED [ChEMBL]
+synonym: "Col11a2" RELATED [ChEMBL]
+synonym: "Rxrb" RELATED [ChEMBL]
+synonym: "Hsd17b8" RELATED [ChEMBL]
+synonym: "LOC224733l-1" RELATED [ChEMBL]
+synonym: "RT1-Hb" RELATED [ChEMBL]
+synonym: "Sacm2l-ps2" RELATED [ChEMBL]
+synonym: "MHC class II region expressed gene KE2, isoform CRA_a" RELATED [ChEMBL]
+synonym: "Cdk2ap1-ps1" RELATED [ChEMBL]
+synonym: "H2-K region expressed gene 2, rat orthologue" RELATED [ChEMBL]
+synonym: "Sec61-ps" RELATED [ChEMBL]
+synonym: "Kifc1" RELATED [ChEMBL]
+is_a: MOA:0000009 ! Surface antigen
+
+[Term]
+id: MOA:0000411
+name: Retinoic acid receptor gamma
+synonym: "RARG" RELATED [ChEMBL]
+synonym: "Retinoic acid receptor gamma" RELATED [ChEMBL]
+synonym: "RAR-gamma" RELATED [ChEMBL]
+synonym: "NR1B3" RELATED [ChEMBL]
+synonym: "Nuclear receptor subfamily 1 group B member 3" RELATED [ChEMBL]
+is_a: MOA:0000190 ! Nuclear hormone receptor subfamily 1 group b member 3
+
+[Term]
+id: MOA:0000412
+name: Peroxisome proliferator-activated receptor alpha
+is_a: MOA:0000191 ! Nuclear hormone receptor subfamily 1 group c member 1
+
+[Term]
+id: MOA:0000413
+name: Peroxisome proliferator-activated receptor gamma
+is_a: MOA:0000192 ! Nuclear hormone receptor subfamily 1 group c member 3
+
+[Term]
+id: MOA:0000414
+name: PPAR alpha/gamma
+is_a: MOA:0000191 ! Nuclear hormone receptor subfamily 1 group c member 1
+is_a: MOA:0000192 ! Nuclear hormone receptor subfamily 1 group c member 3
+
+[Term]
+id: MOA:0000416
+name: Estrogen receptor
+synonym: "ESTRB" RELATED [ChEMBL]
+synonym: "ESR2" RELATED [ChEMBL]
+synonym: "ER-beta" RELATED [ChEMBL]
+synonym: "NR3A2" RELATED [ChEMBL]
+synonym: "Nuclear receptor subfamily 3 group A member 2" RELATED [ChEMBL]
+synonym: "Estrogen receptor beta" RELATED [ChEMBL]
+is_a: MOA:0000197 ! Nuclear hormone receptor subfamily 3 group a member 1
+is_a: MOA:0000198 ! Nuclear hormone receptor subfamily 3 group a member 2
+
+[Term]
+id: MOA:0000417
+name: Estrogen receptor alpha
+is_a: MOA:0000197 ! Nuclear hormone receptor subfamily 3 group a member 1
+
+[Term]
+id: MOA:0000418
+name: Glucocorticoid receptor
+synonym: "Nuclear receptor subfamily 3 group C member 1" RELATED [ChEMBL]
+synonym: "GRL" RELATED [ChEMBL]
+synonym: "Glucocorticoid receptor" RELATED [ChEMBL]
+synonym: "NR3C1" RELATED [ChEMBL]
+synonym: "GR" RELATED [ChEMBL]
+is_a: MOA:0000199 ! Nuclear hormone receptor subfamily 3 group c member 1
+
+[Term]
+id: MOA:0000419
+name: Mineralocorticoid receptor
+synonym: "MCR" RELATED [ChEMBL]
+synonym: "MLR" RELATED [ChEMBL]
+synonym: "MR" RELATED [ChEMBL]
+synonym: "NR3C2" RELATED [ChEMBL]
+synonym: "Mineralocorticoid receptor" RELATED [ChEMBL]
+synonym: "Nuclear receptor subfamily 3 group C member 2" RELATED [ChEMBL]
+is_a: MOA:0000200 ! Nuclear hormone receptor subfamily 3 group c member 2
+
+[Term]
+id: MOA:0000420
+name: Progesterone receptor
+synonym: "PGR" RELATED [ChEMBL]
+synonym: "NR3C3" RELATED [ChEMBL]
+synonym: "Progesterone receptor" RELATED [ChEMBL]
+synonym: "Nuclear receptor subfamily 3 group C member 3" RELATED [ChEMBL]
+synonym: "PR" RELATED [ChEMBL]
+is_a: MOA:0000201 ! Nuclear hormone receptor subfamily 3 group c member 3
+
+[Term]
+id: MOA:0000421
+name: Androgen Receptor
+synonym: "AR" RELATED [ChEMBL]
+synonym: "Androgen receptor" RELATED [ChEMBL]
+synonym: "Dihydrotestosterone receptor" RELATED [ChEMBL]
+synonym: "DHTR" RELATED [ChEMBL]
+synonym: "NR3C4" RELATED [ChEMBL]
+synonym: "Nuclear receptor subfamily 3 group C member 4" RELATED [ChEMBL]
+is_a: MOA:0000202 ! Nuclear hormone receptor subfamily 3 group c member 4
+
+[Term]
+id: MOA:0000423
+name: Dopamine transporter
+is_a: MOA:0000206 ! Slc06 neurotransmitter transporter family
+
+[Term]
+id: MOA:0000424
+name: Glycine transporter 1
+synonym: "GlyT-1" RELATED [ChEMBL]
+synonym: "Solute carrier family 6 member 9" RELATED [ChEMBL]
+synonym: "GlyT1" RELATED [ChEMBL]
+synonym: "Sodium- and chloride-dependent glycine transporter 1" RELATED [ChEMBL]
+synonym: "SLC6A9" RELATED [ChEMBL]
+is_a: MOA:0000206 ! Slc06 neurotransmitter transporter family
+
+[Term]
+id: MOA:0000425
+name: Monoamine transporters; Norepinephrine & dopamine
+is_a: MOA:0000206 ! Slc06 neurotransmitter transporter family
+
+[Term]
+id: MOA:0000426
+name: Norepinephrine transporter
+is_a: MOA:0000206 ! Slc06 neurotransmitter transporter family
+
+[Term]
+id: MOA:0000427
+name: Serotonin transporter
+synonym: "SLC6A4" RELATED [ChEMBL]
+synonym: "Sodium-dependent serotonin transporter" RELATED [ChEMBL]
+synonym: "Solute carrier family 6 member 4" RELATED [ChEMBL]
+synonym: "5HT transporter" RELATED [ChEMBL]
+synonym: "5HTT" RELATED [ChEMBL]
+synonym: "HTT" RELATED [ChEMBL]
+synonym: "SERT" RELATED [ChEMBL]
+is_a: MOA:0000206 ! Slc06 neurotransmitter transporter family
+
+[Term]
+id: MOA:0000428
+name: Sodium/hydrogen exchanger
+is_a: MOA:0000207 ! Slc09 family of sodium/hydrogen exchangers
+
+[Term]
+id: MOA:0000429
+name: Bile acid transporter
+synonym: "Sodium/bile acid cotransporter" RELATED [ChEMBL]
+synonym: "Solute carrier family 10 member 1" RELATED [ChEMBL]
+synonym: "Sodium/taurocholate cotransporting polypeptide" RELATED [ChEMBL]
+synonym: "NTCP" RELATED [ChEMBL]
+synonym: "SLC10A1" RELATED [ChEMBL]
+synonym: "Na(+)/taurocholate transport protein" RELATED [ChEMBL]
+synonym: "Na(+)/bile acid cotransporter" RELATED [ChEMBL]
+synonym: "Cell growth-inhibiting gene 29 protein" RELATED [ChEMBL]
+is_a: MOA:0000208 ! Slc10 family of sodium-bile acid co-transporters
+
+[Term]
+id: MOA:0000430
+name: Ileal bile acid transporter
+synonym: "Na(+)-dependent ileal bile acid transporter" RELATED [ChEMBL]
+synonym: "Sodium/taurocholate cotransporting polypeptide, ileal" RELATED [ChEMBL]
+synonym: "IBAT" RELATED [ChEMBL]
+synonym: "ISBT" RELATED [ChEMBL]
+synonym: "Solute carrier family 10 member 2" RELATED [ChEMBL]
+synonym: "Ileal sodium/bile acid cotransporter" RELATED [ChEMBL]
+synonym: "Ileal sodium-dependent bile acid transporter" RELATED [ChEMBL]
+synonym: "Apical sodium-dependent bile acid transporter" RELATED [ChEMBL]
+synonym: "ASBT" RELATED [ChEMBL]
+synonym: "SLC10A2" RELATED [ChEMBL]
+synonym: "NTCP2" RELATED [ChEMBL]
+synonym: "Ileal Na(+)/bile acid cotransporter" RELATED [ChEMBL]
+is_a: MOA:0000208 ! Slc10 family of sodium-bile acid co-transporters
+
+[Term]
+id: MOA:0000431
+name: Sodium-(potassium)-chloride cotransporter 2
+synonym: "Bumetanide-sensitive sodium-(potassium)-chloride cotransporter 2" RELATED [ChEMBL]
+synonym: "Solute carrier family 12 member 1" RELATED [ChEMBL]
+synonym: "NKCC2" RELATED [ChEMBL]
+synonym: "SLC12A1" RELATED [ChEMBL]
+synonym: "Kidney-specific Na-K-Cl symporter" RELATED [ChEMBL]
+is_a: MOA:0000209 ! Slc12 family of cation-coupled chloride transporters
+
+[Term]
+id: MOA:0000432
+name: Monocarboxylate transporter 1
+synonym: "MCT1" RELATED [ChEMBL]
+synonym: "Monocarboxylate transporter 1" RELATED [ChEMBL]
+synonym: "Solute carrier family 16 member 1" RELATED [ChEMBL]
+synonym: "MCT 1" RELATED [ChEMBL]
+synonym: "SLC16A1" RELATED [ChEMBL]
+is_a: MOA:0000210 ! Slc16 family of monocarboxylate transporters
+
+[Term]
+id: MOA:0000433
+name: ATP-binding cassette sub-family G member 2
+synonym: "MXR" RELATED [ChEMBL]
+synonym: "Urate exporter" RELATED [ChEMBL]
+synonym: "BCRP" RELATED [ChEMBL]
+synonym: "BCRP1" RELATED [ChEMBL]
+synonym: "Placenta-specific ATP-binding cassette transporter" RELATED [ChEMBL]
+synonym: "ATP-binding cassette sub-family G member 2" RELATED [ChEMBL]
+synonym: "CDw338" RELATED [ChEMBL]
+synonym: "CD_antigen=CD338" RELATED [ChEMBL]
+synonym: "Breast cancer resistance protein" RELATED [ChEMBL]
+synonym: "Mitoxantrone resistance-associated protein" RELATED [ChEMBL]
+synonym: "ABCG2" RELATED [ChEMBL]
+synonym: "ABCP" RELATED [ChEMBL]
+is_a: MOA:0000213 ! Abcg subfamily
+
+[Term]
+id: MOA:0000434
+name: Potassium-transporting ATPase
+synonym: "Proton pump" RELATED [ChEMBL]
+synonym: "Potassium-transporting ATPase alpha chain 1" RELATED [ChEMBL]
+synonym: "Gastric H(+)/K(+) ATPase subunit beta" RELATED [ChEMBL]
+synonym: "Potassium-transporting ATPase subunit beta" RELATED [ChEMBL]
+synonym: "ATP4A" RELATED [ChEMBL]
+synonym: "Gastric H(+)/K(+) ATPase subunit alpha" RELATED [ChEMBL]
+synonym: "ATP4B" RELATED [ChEMBL]
+synonym: "Proton pump beta chain" RELATED [ChEMBL]
+is_a: MOA:0000215 ! Hydrogen potassium atpase
+is_a: MOA:0000023 ! Hydrolase
+
+[Term]
+id: MOA:0000435
+name: Integrin alpha-2/beta-3
+synonym: "Platelet membrane glycoprotein Ia" RELATED [ChEMBL]
+synonym: "CD49 antigen-like family member B" RELATED [ChEMBL]
+synonym: "CD_antigen=CD49b" RELATED [ChEMBL]
+synonym: "GPIIIa" RELATED [ChEMBL]
+synonym: "Integrin alpha-2" RELATED [ChEMBL]
+synonym: "Platelet membrane glycoprotein IIIa" RELATED [ChEMBL]
+synonym: "Integrin beta-3" RELATED [ChEMBL]
+synonym: "ITGB3" RELATED [ChEMBL]
+synonym: "GPIa" RELATED [ChEMBL]
+synonym: "CD49B" RELATED [ChEMBL]
+synonym: "CD_antigen=CD61" RELATED [ChEMBL]
+synonym: "Collagen receptor" RELATED [ChEMBL]
+synonym: "VLA-2 subunit alpha" RELATED [ChEMBL]
+synonym: "ITGA2" RELATED [ChEMBL]
+synonym: "GP3A" RELATED [ChEMBL]
+is_a: MOA:0000004 ! Membrane receptor
+is_a: MOA:0000012 ! Unclassified protein
+
+[Term]
+id: MOA:0000436
+name: Matrix protein 2
+is_a: MOA:0000012 ! Unclassified protein
+
+[Term]
+id: MOA:0000437
+name: Neutrophil elastase
+synonym: "Leukocyte elastase" RELATED [ChEMBL]
+synonym: "Neutrophil elastase" RELATED [ChEMBL]
+synonym: "Elane" RELATED [ChEMBL]
+synonym: "Ela2" RELATED [ChEMBL]
+synonym: "Elastase-2" RELATED [ChEMBL]
+is_a: MOA:0000109 ! Serine protease s1a subfamily
+
+[Term]
+id: MOA:0000438
+name: Bone resoption
+is_a: MOA:0000005 ! Not applicable
+
+[Term]
+id: MOA:0000439
+name: Calcium
+is_a: MOA:0000005 ! Not applicable
+
+[Term]
+id: MOA:0000440
+name: Cell wall synthesis
+is_a: MOA:0000005 ! Not applicable
+
+[Term]
+id: MOA:0000441
+name: Chemokine synthesis
+is_a: MOA:0000005 ! Not applicable
+
+[Term]
+id: MOA:0000442
+name: Cholesterol
+is_a: MOA:0000005 ! Not applicable
+
+[Term]
+id: MOA:0000443
+name: Cholesterol absorption
+is_a: MOA:0000005 ! Not applicable
+
+[Term]
+id: MOA:0000444
+name: Cholesterol uptake
+is_a: MOA:0000005 ! Not applicable
+
+[Term]
+id: MOA:0000445
+name: Cyclin-dependent kinase
+synonym: "CDK" RELATED []
+is_a: MOA:0000044 ! Cmgc protein kinase cdc2 subfamily
+
+[Term]
+id: MOA:0000446
+name: Dopamine reuptake
+is_a: MOA:0000005 ! Not applicable
+
+[Term]
+id: MOA:0000447
+name: Leukocyte migration
+synonym: "Leukocyte extravasation" RELATED []
+is_a: MOA:0000005 ! Not applicable
+
+[Term]
+id: MOA:0000448
+name: M-Phase Cell Cycle
+is_a: MOA:0000005 ! Not applicable
+
+[Term]
+id: MOA:0000449
+name: Mast cell
+is_a: MOA:0000005 ! Not applicable
+
+[Term]
+id: MOA:0000450
+name: Mast cell degranulation
+is_a: MOA:0000005 ! Not applicable
+
+[Term]
+id: MOA:0000451
+name: Phosphodiesterase 11
+synonym: "PDE11" RELATED []
+is_a: MOA:0000078 ! Phosphodiesterase
+
+[Term]
+id: MOA:0000452
+name: Phosphodiesterase 2
+synonym: "PDE2" RELATED []
+is_a: MOA:0000078 ! Phosphodiesterase
+
+[Term]
+id: MOA:0000453
+name: Penicillin-binding protein
+is_a: MOA:0000088 ! Protease
+
+[Term]
+id: MOA:0000454
+name: Peroxisome proliferator-activated receptor
+is_a: MOA:0000187 ! Nuclear hormone receptor subfamily 1 group c
+
+[Term]
+id: MOA:0000455
+name: Poly [ADP-ribose] polymerase
+synonym: "PARP" RELATED []
+is_a: MOA:0000000 ! Enzyme
+
+[Term]
+id: MOA:0000456
+name: Polymerase
+is_a: MOA:0000000 ! Enzyme
+
+[Term]
+id: MOA:0000458
+name: PI3-kinase p110-beta subunit
+synonym: "PtdIns-3-kinase subunit beta" RELATED [ChEMBL]
+synonym: "PI3-kinase beta" RELATED [ChEMBL]
+synonym: "PI3K-beta" RELATED [ChEMBL]
+synonym: "p110beta" RELATED [ChEMBL]
+synonym: "Phosphatidylinositol 4,5-bisphosphate 3-kinase catalytic subunit beta isoform" RELATED [ChEMBL]
+synonym: "PI3Kbeta" RELATED [ChEMBL]
+synonym: "PtdIns-3-kinase subunit p110-beta" RELATED [ChEMBL]
+synonym: "Phosphatidylinositol 4,5-bisphosphate 3-kinase 110 kDa catalytic subunit beta" RELATED [ChEMBL]
+synonym: "PIK3C1" RELATED [ChEMBL]
+synonym: "PI3-kinase subunit beta" RELATED [ChEMBL]
+synonym: "PIK3CB" RELATED [ChEMBL]
+is_a: MOA:0000000 ! Enzyme
+
+[Term]
+id: MOA:0000459
+name: Purinergic receptor P1
+is_a: MOA:0000178 ! Purine receptor
+
+[Term]
+id: MOA:0000460
+name: Purinergic receptor P2Y13
+is_a: MOA:0000178 ! Purine receptor
+
+[Term]
+id: MOA:0000461
+name: Purinergic receptor P2Y
+is_a: MOA:0000178 ! Purine receptor
+
+[Term]
+id: MOA:0000462
+name: Potassium channel
+is_a: MOA:0000137 ! Potassium channels
+
+[Term]
+id: MOA:0000464
+name: Sebaceous Gland
+is_a: MOA:0000005 ! Not applicable
+
+[Term]
+id: MOA:0000465
+name: Serine/threonine-protein kinase
+is_a: MOA:0000026 ! Protein kinase
+
+[Term]
+id: MOA:0000466
+name: Camk protein kinase camk1 family
+is_a: MOA:0000040 ! Camk protein kinase group
+
+[Term]
+id: MOA:0000467
+name: Serine/threonine-protein kinase Chk
+is_a: MOA:0000466 ! Camk protein kinase camk1 family
+
+[Term]
+id: MOA:0000468
+name: Serine/threonine-protein kinase mTOR
+is_a: MOA:0000026 ! Protein kinase
+
+[Term]
+id: MOA:0000469
+name: Sigma receptor
+is_a: MOA:0000005 ! Not applicable
+
+[Term]
+id: MOA:0000470
+name: Tubulin
+synonym: "Tubulin beta-8 chain" RELATED [ChEMBL]
+synonym: "Tubulin alpha-2 chain" RELATED [ChEMBL]
+synonym: "Tubulin beta-4B chain" RELATED [ChEMBL]
+synonym: "Tubulin alpha-6 chain" RELATED [ChEMBL]
+synonym: "Tubulin alpha-ubiquitous chain" RELATED [ChEMBL]
+synonym: "Tubulin B-alpha-1" RELATED [ChEMBL]
+synonym: "Tubulin alpha-1B chain" RELATED [ChEMBL]
+synonym: "Tubulin H2-alpha" RELATED [ChEMBL]
+synonym: "TUBB" RELATED [ChEMBL]
+synonym: "Alpha-tubulin ubiquitous" RELATED [ChEMBL]
+synonym: "Tubulin beta chain" RELATED [ChEMBL]
+synonym: "TUBB2B" RELATED [ChEMBL]
+synonym: "TUBA1" RELATED [ChEMBL]
+synonym: "TUBA2" RELATED [ChEMBL]
+synonym: "TUBB2C" RELATED [ChEMBL]
+synonym: "TUBB2A" RELATED [ChEMBL]
+synonym: "and" RELATED [ChEMBL]
+synonym: "Testis-specific alpha-tubulin" RELATED [ChEMBL]
+synonym: "Tubulin beta-2C chain" RELATED [ChEMBL]
+synonym: "Alpha-tubulin 3E" RELATED [ChEMBL]
+synonym: "Tubulin alpha-3C/D chain" RELATED [ChEMBL]
+synonym: "Tubulin beta class V" RELATED [ChEMBL]
+synonym: "Tubulin beta-4 chain" RELATED [ChEMBL]
+synonym: "Tubulin alpha-4A chain" RELATED [ChEMBL]
+synonym: "Tubulin beta-1 chain" RELATED [ChEMBL]
+synonym: "Tubulin beta-4A chain" RELATED [ChEMBL]
+synonym: "Tubulin beta class IIa" RELATED [ChEMBL]
+synonym: "Tubulin alpha-1 chain" RELATED [ChEMBL]
+synonym: "TUBB4B" RELATED [ChEMBL]
+synonym: "Tubulin K-alpha-1" RELATED [ChEMBL]
+synonym: "TUBA1C" RELATED [ChEMBL]
+synonym: "Alpha-tubulin 2" RELATED [ChEMBL]
+synonym: "Tubulin 5 beta" RELATED [ChEMBL]
+synonym: "Alpha-tubulin 1" RELATED [ChEMBL]
+synonym: "TUBB4A" RELATED [ChEMBL]
+synonym: "TUBA1A" RELATED [ChEMBL]
+synonym: "Alpha-tubulin 6" RELATED [ChEMBL]
+synonym: "Alpha-tubulin 3" RELATED [ChEMBL]
+synonym: "TUBA1B" RELATED [ChEMBL]
+synonym: "Tubulin beta-2B chain" RELATED [ChEMBL]
+synonym: "Tubulin beta-3 chain" RELATED [ChEMBL]
+synonym: "TUBB5" RELATED [ChEMBL]
+synonym: "TUBB6" RELATED [ChEMBL]
+synonym: "TUBB8" RELATED [ChEMBL]
+synonym: "TUBA4A" RELATED [ChEMBL]
+synonym: "Tubulin alpha-1A chain" RELATED [ChEMBL]
+synonym: "Alpha-tubulin 3C/D" RELATED [ChEMBL]
+synonym: "Tubulin beta-2A chain" RELATED [ChEMBL]
+synonym: "Tubulin alpha-1C chain" RELATED [ChEMBL]
+synonym: "TUBB1" RELATED [ChEMBL]
+synonym: "TUBB2" RELATED [ChEMBL]
+synonym: "TUBB3" RELATED [ChEMBL]
+synonym: "TUBB4" RELATED [ChEMBL]
+synonym: "Tubulin beta-6 chain" RELATED [ChEMBL]
+synonym: "Tubulin alpha-3E chain" RELATED [ChEMBL]
+synonym: "TUBA3E" RELATED [ChEMBL]
+synonym: "TUBA3D" RELATED [ChEMBL]
+synonym: "TUBA6" RELATED [ChEMBL]
+synonym: "TUBA3" RELATED [ChEMBL]
+synonym: "Tubulin alpha-3 chain" RELATED [ChEMBL]
+synonym: "Tubulin beta-2 chain" RELATED [ChEMBL]
+synonym: "Tubulin beta-5 chain" RELATED [ChEMBL]
+synonym: "Tubulin beta-III" RELATED [ChEMBL]
+is_a: MOA:0000008 ! Structural protein
+
+[Term]
+id: MOA:0000471
+name: Tyrosine kinase
+is_a: MOA:0000057 ! Tk protein kinase group
+
+[Term]
+id: MOA:0000473
+name: Hedgehog pathway
+is_a: MOA:0000005 ! Not applicable
+
+[Term]
+id: MOA:0000474
+name: Human endogenous peptide hormone
+is_a: MOA:0000005 ! Not applicable
+
+[Term]
+id: MOA:0000475
+name: Interleukin-1
+is_a: MOA:0000005 ! Not applicable
+
+[Term]
+id: MOA:0000476
+name: Interleukin-13 receptor
+is_a: MOA:0000005 ! Not applicable
+
+[Term]
+id: MOA:0000477
+name: Interleukin-4 receptor
+is_a: MOA:0000005 ! Not applicable
+
+[Term]
+id: MOA:0000478
+name: Liver X receptor
+synonym: "LXR" RELATED []
+synonym: "Liver X receptor" RELATED []
+is_a: MOA:0000193 ! Nuclear hormone receptor subfamily 1 group h member 3
+
+[Term]
+id: MOA:0000479
+name: Matrix metalloproteinase
+is_a: MOA:0000105 ! Metallo protease m10a subfamily
+
+[Term]
+id: MOA:0000480
+name: Mitogen-activated protein kinase kinase kinase
+is_a: MOA:0000055 ! Ste protein kinase khs subfamily
+
+[Term]
+id: MOA:0000481
+name: H+/K+-exchanging ATPase
+is_a: MOA:0000005 ! Not applicable
+
+[Term]
+id: MOA:0000482
+name: Glucuronosyltransferase
+is_a: MOA:0000005 ! Not applicable
+
+[Term]
+id: MOA:0000483
+name: Target
+
