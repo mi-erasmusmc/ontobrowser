@@ -80,7 +80,7 @@ is_a: MC:0000001 ! morphologic change
 [Term]
 id: MC:0000007
 name: infiltrate, inflammatory cell
-def: "When the various combinations of inflammatory cell infiltrates occur in the absence of other features of inflammation  (congestion, hyperemia, hemorrhage, edema, necrosis, fibrosis, foreign material, bacterial organisms, etc.), the term \"infiltrate\" is preferred, usually further characterized as \"inflammatory cell\" and or with predominate appropriate cell type(s) composing the infiltrate" []
+def: "When the various combinations of inflammatory cell infiltrates occur in the absence of other features of inflammation  (congestion, hyperemia, hemorrhage, edema, necrosis, fibrosis, foreign material, bacterial organisms, etc.), the term "infiltrate" is preferred, usually further characterized as "inflammatory cell" and or with predominate appropriate cell type(s) composing the infiltrate" []
 synonym: "Focal inflammatory cell infiltrations" EXACT [VX]
 synonym: "Increase mast cell infiltration" EXACT [VX]
 synonym: "Catarrhalic inflammatory infiltrations in mucosa" EXACT [VX]
@@ -1026,7 +1026,7 @@ is_a: MC:0000006 ! inflammatory processes
 [Term]
 id: MC:0000008
 name: infiltration, mixed
-def: "Includes \"subacute -chronic\" inflammatory cell infiltrates  or mixtures of granulocytes and mononuclear cells" []
+def: "Includes "subacute -chronic" inflammatory cell infiltrates  or mixtures of granulocytes and mononuclear cells" []
 synonym: "Adjacent tissue mixed inflammatory cell infiltration" EXACT [VX]
 synonym: "Focus(i) of mixed cell infiltration; in adjacent serosa" EXACT [VX]
 synonym: "Mixed Cell Infiltration, Focal" EXACT [VX]
@@ -3355,7 +3355,7 @@ synonym: "Inflammation: duct" RELATED [VX]
 synonym: "Infl: epicard-nonsu." EXACT [VX]
 synonym: "Myocarditis chronic" EXACT [VX]
 synonym: "Inflammation   necrosis" RELATED [VX]
-synonym: "\"Inflammation, pv pb\"" RELATED [VX]
+synonym: "Inflammation, pv pb" RELATED [VX]
 synonym: "Bronchiolopneumonia" EXACT [VX]
 synonym: "Inflammation, surface" EXACT [VX]
 synonym: "Synovium inflammation" EXACT [VX]
@@ -3846,9 +3846,9 @@ synonym: "Myocardium, focal subacute lymphocytic inflam." EXACT [VX]
 synonym: "A single focus of subacute pneumonia" EXACT [VX]
 synonym: "Pneumonia,interst,subacute,multicentric" EXACT [VX]
 synonym: "One to a few foci or areas of subacute pneumonia" EXACT [VX]
-synonym: "Infl: mixed pericho." RELATED [VX]
-synonym: "\"Inflammation, mixed\"" RELATED [VX]
-synonym: "Infl: mixed-pericho.:" RELATED [VX]
+synonym: "Infl mixed pericho." RELATED [VX]
+synonym: "Inflammation, mixed" RELATED [VX]
+synonym: "Infl mixed-pericho." RELATED [VX]
 synonym: "Inflammation; mixed cell" EXACT [VX]
 synonym: "Inflammation, subac." RELATED [VX]
 synonym: "Inflammation, subchronic, alveolar, focal" EXACT [VX]
@@ -4095,8 +4095,8 @@ synonym: "Purulent inflammation" EXACT [VX]
 synonym: "Mediastinal inflammation acute" EXACT [VX]
 synonym: "Acute purulent inflammation" EXACT [VX]
 synonym: "Myocarditis, acute" RELATED [VX]
-synonym: "\"Pyelitis,acute\"" RELATED [VX]
-synonym: "\"Inflammation,acute\"" RELATED [VX]
+synonym: "Pyelitis,acute" RELATED [VX]
+synonym: "Inflammation,acute" RELATED [VX]
 synonym: "Haemorrhagic and purulent inflammation" EXACT [VX]
 synonym: "Inflammation, fibrinosuppurative" EXACT [VX]
 synonym: "Gastritis, ulcerative, suppurative, nonglandular mucosa, suppurative" RELATED [VX]
@@ -5818,8 +5818,8 @@ synonym: "Fibrosis, epicardial" EXACT [VX]
 synonym: "Interstit.fibrosis" RELATED [VX]
 synonym: "Fibrosis, cortex, focal, unilateral" EXACT [VX]
 synonym: "Superf.muc.fibrosis" EXACT [VX]
-synonym: "\"Fibrosis, dermal\"" RELATED [VX]
-synonym: "\"Fibrosis, dermis\"" EXACT [VX]
+synonym: "Fibrosis, dermal" RELATED [VX]
+synonym: "Fibrosis, dermis" EXACT [VX]
 synonym: "Capsule, fibrosis, focal" EXACT [VX]
 synonym: "Superf muc fibros" RELATED [VX]
 synonym: "Mesenteric,fibrosis, focal" EXACT [VX]
@@ -6339,7 +6339,7 @@ synonym: "Degeneration necrosis:duct epithelium" EXACT [VX]
 synonym: "Acinar degeneration necrosis" EXACT [VX]
 synonym: "Degeneration necrosis, corpora lutea" EXACT [VX]
 synonym: "Degeneration necrosis, white M" EXACT [VX]
-synonym: "\"Necrosis, multifocal\"" EXACT [VX]
+synonym: "Necrosis, multifocal" EXACT [VX]
 synonym: "Necrosis: cortex" EXACT [VX]
 synonym: "Necrosis: subcutis" RELATED [VX]
 synonym: "Degeneration necrosis: epidermis" EXACT [VX]
@@ -6436,7 +6436,7 @@ synonym: "Older small necrosis" EXACT [VX]
 synonym: "Fat necrosis, broad ligament" EXACT [VX]
 synonym: "Fat necrosis, focal" RELATED [VX]
 synonym: "Fat necrosis, in surrounding tissue, thoracic, focal" EXACT [VX]
-synonym: "\"Necrosis, fat\"" EXACT [VX]
+synonym: "Necrosis, fat" EXACT [VX]
 synonym: "Necrosis: fat" RELATED [VX]
 synonym: "Fat necrosis" RELATED [VX]
 synonym: "Adjacent fat necrosis" EXACT [VX]
@@ -6906,7 +6906,7 @@ synonym: "Relative cortical atrophy" RELATED [VX]
 synonym: "Cortex, left, atrophy" EXACT [VX]
 synonym: "Cortical atrophy of zona fasciculata" RELATED [VX]
 synonym: "Atrophy of zona glomerulosa" EXACT [VX]
-synonym: "\"Atrophy, cortical\"" EXACT [VX]
+synonym: "Atrophy, cortical" EXACT [VX]
 synonym: "Cortical atrophy (zona fasciculata)" RELATED [VX]
 synonym: "Cortical atrophies" EXACT [VX]
 synonym: "Cortical atrophy, zona fasciculata" RELATED [VX]
@@ -7564,7 +7564,7 @@ synonym: "Deposition: ceroid" RELATED [VX]
 synonym: "LipofuscinSchmorl" EXACT [VX]
 synonym: "Kupffer cell lipochrome" RELATED [VX]
 synonym: "Lipofuscinosis, bilateral, sporadic, increased" EXACT [VX]
-synonym: "Lysosomes with \"lipofuscinlike\" granules + lamellar bodies and forming aggregates" EXACT [VX]
+synonym: "Lysosomes with "lipofuscinlike" granules + lamellar bodies and forming aggregates" EXACT [VX]
 synonym: "Lipofuscin deposits" EXACT [VX]
 synonym: "Lipofuscin deposits on the poles of the nuclei" EXACT [VX]
 synonym: "Some Kupffer cells are swollen and contain lipochrome" EXACT [VX]
@@ -7582,7 +7582,7 @@ synonym: "Few lipofuscins in few hepatocytes" EXACT [VX]
 synonym: "Several lipofuscin pigments in several hepatocytes" EXACT [VX]
 synonym: "Lipofuscinosis, bilateral, multifocal, increased" EXACT [VX]
 synonym: "Lipofuscin, tubular epithelial" EXACT [VX]
-synonym: "Lysosomes with \"lipofuscinlike\" granules + lamellar bodies" EXACT [VX]
+synonym: "Lysosomes with "lipofuscinlike" granules + lamellar bodies" EXACT [VX]
 synonym: "A fair quantity of lipofuscin pigment" EXACT [VX]
 synonym: "Lipofuscinosis, bilateral, diffuse, increased" EXACT [VX]
 synonym: "Deposits: lipofuscin" RELATED [VX]
@@ -7601,13 +7601,13 @@ synonym: "Enhanced lipofuscin deposition in the myocardial fibers" EXACT [VX]
 synonym: "Lipofuscin" EXACT [VX]
 synonym: "Ceroid deposition" RELATED [VX]
 synonym: "A few lipofuscins in few hepatocytes" EXACT [VX]
-synonym: "Lysosomes with \"lipofuscinlike\" granules" EXACT [VX]
+synonym: "Lysosomes with "lipofuscinlike" granules" EXACT [VX]
 synonym: "Multifocal macrophage lipofuscinosis often in small aggregates" EXACT [VX]
 synonym: "Lipofuscin Deposit." RELATED []
 synonym: "Lipofuscin, hepatocellular" EXACT [VX]
 synonym: "Lipofuscinschmorl" EXACT [VX]
 synonym: "Ceroid Deposition" RELATED []
-synonym: "Lysosomes with \"lipofuscin-like\" granules" EXACT [VX]
+synonym: "Lysosomes with "lipofuscin-like" granules" EXACT [VX]
 synonym: "Lipofuscins deposition" EXACT [VX]
 synonym: "Multifocal macrophage lipofuscinosis often in small aggregates and with associated mixed inflammatory cell infiltration" EXACT [VX]
 synonym: "Periportal lipofuscinosis" EXACT [VX]
@@ -8376,7 +8376,7 @@ is_obsolete: true
 [Term]
 id: MC:0000106
 name: vacuolation, lipidic
-def: "Many organs, beside the liver, can accumulate lipids in physiological and pathological conditions. The synonyms \"fatty changes\" or \"lipid vacuolation\" have been used and they are therefore mapped under this term." []
+def: "Many organs, beside the liver, can accumulate lipids in physiological and pathological conditions. The synonyms "fatty changes" or "lipid vacuolation" have been used and they are therefore mapped under this term." []
 comment: Only for the liver INHAND admits the use of "fatty changes", therefore a general term has been generated, parent to the INHAND term. Ontology core team has favored the existence of a term to map synonyms present in other organs.
 synonym: "Steatopathy" RELATED [VX]
 synonym: "Macrovesiculation" RELATED [VX]
@@ -8417,7 +8417,7 @@ synonym: "Lipid content" EXACT [VX]
 synonym: "Steatopathy, brown fat" RELATED [VX]
 synonym: "Diffuse zona glomerulosa fat vacuolation (macro steatosis)" EXACT [VX]
 synonym: "Rich in lipids." EXACT [VX]
-synonym: "\"Vacuolation, cortex\"" RELATED [VX]
+synonym: "Vacuolation, cortex" RELATED [VX]
 synonym: "Fatty change: diffuse" EXACT [VX]
 synonym: "Focal fatty change" EXACT [VX]
 synonym: "Lipidosis, focal" EXACT [VX]
@@ -9771,7 +9771,7 @@ synonym: "Mucosa, hemorrhage" NARROW [VX]
 synonym: "Haemorrhage adjacent tissue" EXACT [VX]
 synonym: "Haemorrhage: multifocal" EXACT [VX]
 synonym: "Hemorrh.erythrophag." EXACT [VX]
-synonym: "\"Hemorrhage, intra-al\"" EXACT [VX]
+synonym: "Hemorrhage, intraal EXACT [VX]
 synonym: "HEMORRHAGE, ALVEOLAR" RELATED [VX]
 synonym: "Haemorrhage; multifocal" EXACT [VX]
 synonym: "Haemocyst single" EXACT [VX]
@@ -10101,7 +10101,7 @@ is_a: MC:0000136 ! structural injury
 [Term]
 id: MC:0000139
 name: hyperplasia, endothelial
-def: "In the liver this term is used for proliferation of normally present sinusoidal lining endothelial cells without sinusoidal dilation. Blood may not be present within the capillaries\". The Core Team has expanded the usage of this term also to other organ systems." []
+def: "In the liver this term is used for proliferation of normally present sinusoidal lining endothelial cells without sinusoidal dilation. Blood may not be present within the capillaries". The Core Team has expanded the usage of this term also to other organ systems." []
 synonym: "Hyperplasiaendocardial" EXACT [VX]
 synonym: "Endothelial hyperplasia" EXACT [VX]
 synonym: "Endocard.hyperplasia" EXACT [VX]
@@ -10289,7 +10289,7 @@ synonym: "Duct ectasia" EXACT [VX]
 synonym: "Glandular dilatation" EXACT [VX]
 synonym: "Glandular dilation" EXACT [VX]
 synonym: "Dilation, tubule" EXACT [VX]
-synonym: "\"Dilation, follicular\"" EXACT [VX]
+synonym: "Dilation, follicular" EXACT [VX]
 synonym: "Unilateral tubular dilatation" EXACT [VX]
 synonym: "Dilatation, tubular" EXACT [VX]
 synonym: "Ductal dilatation" EXACT [VX]
@@ -10393,7 +10393,7 @@ synonym: "Epithelial hyperplasia, occasionnal" EXACT [VX]
 synonym: "Epithel. Hyperplasia" EXACT [VX]
 synonym: "Focal epithelial hyperplasia with scab formation (total)" RELATED [VX]
 synonym: "Focal ductal epithelial hyperplasia" RELATED [VX]
-synonym: "\"Hyperplasia, epith.\"" EXACT [VX]
+synonym: "Hyperplasia, epith" EXACT [VX]
 synonym: "Focal mucosal hyperplasia" RELATED [VX]
 synonym: "EPITHELIAL HYPERPLASIA" EXACT [VX]
 synonym: "Focal hyperplasiahypertrophy of the surface epithelium" EXACT [VX]
@@ -11188,7 +11188,7 @@ id: MC:0000181
 name: increased, histiocyte number
 def: "A histiocyte is a cell that is part of the mononuclear phagocytic system (also called reticuloendothelial system or lymphoreticular system). The mononuclear phagocytic system is part of the organism's immune system. The histiocyte is usually refered to as a tissue macrophage." []
 synonym: "Histiocytic hyperplasia" EXACT [VX]
-synonym: "Histiocytosis\\" RELATED [VX]
+synonym: "Histiocytosis" RELATED [VX]
 synonym: "Kupffer-cell proliferations" EXACT [VX]
 synonym: "Histiocytic hypertrophy and hyperplasia" RELATED [VX]
 synonym: "Small Kupffer-cell proliferations" EXACT [VX]
@@ -13205,7 +13205,7 @@ is_obsolete: true
 [Term]
 id: MC:0000267
 name: cyst, squamous
-def: "those originating within the upper dermis are not considered a simple hyperplastic lesion. Their cause is generally unknown. Most likely they arise from injured pilosebaceous units in which squamous epithelial cells producing keratin arc trapped in the dermis. The lesion is comparable with \"infundibular cyst\" or \"isthmus cyst\" as described for dogs. Those found in the gastrointestinal system are usually seen the in nonglandular stomach or near the limiting ridge in glandular mucosa. They are tought to represent invagination of stratified squamous epithelium into the wall of the nonglandular stomach, and oftern accompanied by chronic inflammatory changes. Most of those cysts in the stomach are congenital, however some can occur after gastric wall damage form inflammation. For those, diverticulum may be chosen as preferred term." []
+def: "those originating within the upper dermis are not considered a simple hyperplastic lesion. Their cause is generally unknown. Most likely they arise from injured pilosebaceous units in which squamous epithelial cells producing keratin arc trapped in the dermis. The lesion is comparable with "infundibular cyst" or "isthmus cyst" as described for dogs. Those found in the gastrointestinal system are usually seen the in nonglandular stomach or near the limiting ridge in glandular mucosa. They are tought to represent invagination of stratified squamous epithelium into the wall of the nonglandular stomach, and oftern accompanied by chronic inflammatory changes. Most of those cysts in the stomach are congenital, however some can occur after gastric wall damage form inflammation. For those, diverticulum may be chosen as preferred term." []
 comment: Epidermoid cyst; Epidermal inclusion cyst; Epithelial inclusion cyst are synonyms for brain lesions.
 synonym: "Cyst: epidermoid" EXACT [VX]
 synonym: "Keratin Cyst" EXACT [VX]
@@ -13379,7 +13379,7 @@ replaced_by: MC:0000855 ! glomerulosclerosis
 [Term]
 id: MC:0000281
 name: pinealoma, benign
-def: "Proliferation of cells originating from differentiated c ells of the pineal parenchyma, benign. Pinealoma is rare variety of tumor affecting the pineal gland and comprised of neoplastic growths of large epithelial cells . The pineal gland (also called the pineal body, epiphysis cerebri, epiphysis or the \"third eye\") is a small endocrine gland in the vertebrate brain. It produces melatonin, a hormone that affects the modulation of wakesleep patterns and photoperiodic (seasonal) functions. It is shaped like a tiny pine cone (hence its name), and is located near to the center of the brain, between the two hemispheres, tucked in a groove where the two rounded thalamic bodies join." []
+def: "Proliferation of cells originating from differentiated c ells of the pineal parenchyma, benign. Pinealoma is rare variety of tumor affecting the pineal gland and comprised of neoplastic growths of large epithelial cells . The pineal gland (also called the pineal body, epiphysis cerebri, epiphysis or the "third eye") is a small endocrine gland in the vertebrate brain. It produces melatonin, a hormone that affects the modulation of wakesleep patterns and photoperiodic (seasonal) functions. It is shaped like a tiny pine cone (hence its name), and is located near to the center of the brain, between the two hemispheres, tucked in a groove where the two rounded thalamic bodies join." []
 synonym: "Tumor,Pineal Gland" RELATED []
 is_a: MC:0000017 ! benign tumor
 
@@ -13514,7 +13514,7 @@ is_obsolete: true
 [Term]
 id: MC:0000292
 name: deposition, cytoskeletal proteins
-def: "Defined in INHAND manuscript as \"axonal dystrophy\". A single unifying pathogenesis of axonal dystrophy has not been determined, but the mechanism is likely to involve a disturbance of retrograde axonal transport leading to regional accumulation of neurofilaments and entrapped organelles in spheroids located at sites of axonal constriction" []
+def: "Defined in INHAND manuscript as "axonal dystrophy". A single unifying pathogenesis of axonal dystrophy has not been determined, but the mechanism is likely to involve a disturbance of retrograde axonal transport leading to regional accumulation of neurofilaments and entrapped organelles in spheroids located at sites of axonal constriction" []
 is_obsolete: true
 replaced_by: MC:2000503 ! dystrophy axonal
 
@@ -13666,7 +13666,7 @@ synonym: "Diffuse glandular atrophy" EXACT [VX]
 synonym: "ATROPHY, ACINAR CELL" EXACT [VX]
 synonym: "Focal atrophy -ies" EXACT [VX]
 synonym: "Exocrine cell atrophy" EXACT [VX]
-synonym: "\"Atrophy, acinar\"" EXACT [VX]
+synonym: "Atrophy, acinar" EXACT [VX]
 synonym: "Atrophy, focal multifocal" RELATED [VX]
 synonym: "Atrophy: acinar cell lobule" EXACT [VX]
 synonym: "Diffuse atrophy with fatty growth" EXACT [VX]
@@ -14083,7 +14083,7 @@ synonym: "Lymphoid follicle(s)" RELATED [VX]
 synonym: "Peyer's patch normal" EXACT [VX]
 synonym: "No pathalogical changes" EXACT [VX]
 synonym: "Within normal limits (immature)" RELATED [VX]
-synonym: "\"Floater\" of normal testicular tissue" EXACT [VX]
+synonym: "Floater" of normal testicular tissue" EXACT [VX]
 synonym: "Hepatic architecture within normal limits. Occasional minimal cellular infiltration with cells of the chronic inflammatory type seen, associated with occasional reduplication of the bile ducts" EXACT [VX]
 synonym: "Normal spermatozoal contens" EXACT [VX]
 synonym: "Normal developing follicles and an occasional atretic follicle were present at the periphery" EXACT [VX]
@@ -15186,9 +15186,9 @@ synonym: "Crusted" RELATED [VX]
 synonym: "Ulcer Erosion" EXACT [VX]
 synonym: "Ulcer, glandular stomach" RELATED [VX]
 synonym: "Ulcer:gld.stomach" EXACT [VX]
-synonym: "\"Ulceration, epiderm.\"" NARROW [VX]
+synonym: "Ulceration, epiderm" NARROW [VX]
 synonym: "Serocellular debris" RELATED [VX]
-synonym: "\"Crust, serocellular\"" RELATED [VX]
+synonym: "Crust, serocellular" RELATED [VX]
 synonym: "Necrosis ulceration" EXACT [VX]
 synonym: "Serous crusts,focal" RELATED [VX]
 synonym: "Ulceration+necrosis" EXACT [VX]
@@ -15995,7 +15995,7 @@ is_obsolete: true
 [Term]
 id: MC:0000387
 name: sialodacryoadenitis
-def: "Sialodacryoadenitis virus (SDAV, coronavirus) is the most important infectious agent affecting the salivary gland in rats because of its potential to compromise the interpreation of toxicological studies. It is characterized by a gross enlargement ofthe salivary glands and mandibular lymph nodes and an increase in secretion of tears. The virus causes a severe self-limiting inflammation and necrosis of the salivary and nasolacrimal glands. In te early phase of the infection a neutrophilc infiltration is assocuiated with necrosis, but later the infiltrate consisit mainly of mononuclear cells. L.H. Kooistra & A.Nyska in \"Salivary Gland - Inflammation\" from NTP Nonneoplastic lesion Atals" []
+def: "Sialodacryoadenitis virus (SDAV, coronavirus) is the most important infectious agent affecting the salivary gland in rats because of its potential to compromise the interpreation of toxicological studies. It is characterized by a gross enlargement ofthe salivary glands and mandibular lymph nodes and an increase in secretion of tears. The virus causes a severe self-limiting inflammation and necrosis of the salivary and nasolacrimal glands. In te early phase of the infection a neutrophilc infiltration is assocuiated with necrosis, but later the infiltrate consisit mainly of mononuclear cells. L.H. Kooistra & A.Nyska in "Salivary Gland - Inflammation" from NTP Nonneoplastic lesion Atals" []
 synonym: "Sialodacryoadenitis" EXACT [VX]
 is_a: MC:0000385 ! rna-virus
 
@@ -16200,7 +16200,7 @@ is_obsolete: true
 [Term]
 id: MC:0000406
 name: phthisis bulbi
-def: "Phthisis bulbi is characterized by prominent shrinkage of the globe with marked displacement and disorganization of ocular structures. (M. M. Gruebbel \"Eye ¿ Phthisis Bulbi \"from NTP non-neoplastic lesion ATLAS)" []
+def: "Phthisis bulbi is characterized by prominent shrinkage of the globe with marked displacement and disorganization of ocular structures. (M. M. Gruebbel "Eye ¿ Phthisis Bulbi "from NTP non-neoplastic lesion ATLAS)" []
 comment: it could be observed in mice with retro-orbital bleeding procedures, as this could increase the chance for eyeball injury.
 synonym: "Phthisis bulbi" EXACT [VX]
 synonym: "Phthisis bulbi, unilateral" EXACT [VX]
@@ -16462,7 +16462,7 @@ is_a: MC:0000101 ! degeneration
 [Term]
 id: MC:0000416
 name: cataract
-def: "cataracts correspond to the clinical condition of eye opacity. It is mostly characterized by lens fiber degeneration but it can show additional features such as capsular thickening, wrinkling, and or rupture, or lens fiber or capsular mineralization. M. M. Gruebbel \"Eye, Lens & Cataract \"from NTP non-neoplastic lesion ATLAS" []
+def: "cataracts correspond to the clinical condition of eye opacity. It is mostly characterized by lens fiber degeneration but it can show additional features such as capsular thickening, wrinkling, and or rupture, or lens fiber or capsular mineralization. M. M. Gruebbel "Eye, Lens & Cataract "from NTP non-neoplastic lesion ATLAS" []
 synonym: "Unilateral cataract minimal" EXACT [VX]
 synonym: "Lens, cataract" EXACT [VX]
 synonym: "Cataracts" EXACT [VX]
@@ -17257,7 +17257,7 @@ is_a: MC:0000226 ! hyperplasia, myelostromal
 [Term]
 id: MC:0000430
 name: change not otherwise specified
-def: "grouping of changes where there is no literature or clear pathological description allowing the characterization of the change itself. Often representing a \"working diagnosis\", that only the toxicological report where it comes from could further clarify." []
+def: "grouping of changes where there is no literature or clear pathological description allowing the characterization of the change itself. Often representing a "working diagnosis", that only the toxicological report where it comes from could further clarify." []
 is_obsolete: true
 replaced_by: MC:0000960 ! morphological change, unspecified
 
@@ -18082,7 +18082,7 @@ synonym: "NECROSIS, SINGLE CEL" EXACT [VX]
 synonym: "Individual cell necrosis (apoptosis) without associated inflammation" EXACT [VX]
 synonym: "Unicellular necrosis, focal" EXACT [VX]
 synonym: "Apoptosis, increased" RELATED [VX]
-synonym: "\"Necrosis, single cel\"" EXACT [VX]
+synonym: "Necrosis, single cel" EXACT [VX]
 synonym: "Incr.single c.necr." RELATED [VX]
 synonym: "Single cells necrosis" EXACT [VX]
 synonym: "Single cell necrosis, unilateral" EXACT [VX]
@@ -18282,7 +18282,7 @@ synonym: "Apoptosis: acinar cell" EXACT [VX]
 synonym: "Apoptosis, acinar cell" EXACT [VX]
 synonym: "Incr. apoptosis SCN" EXACT [VX]
 synonym: "Apoptosis, multifocal" EXACT [VX]
-synonym: "\"Necrosis, single cell\"" EXACT [VX]
+synonym: "Necrosis, single cell" EXACT [VX]
 synonym: "Incr.apoptosis" EXACT [VX]
 synonym: "Incr Apoptosis" EXACT [VX]
 synonym: "Biliary epithelial degeneration apoptosis" EXACT [VX]
@@ -18553,7 +18553,7 @@ synonym: "Dilated Cortical tubules" EXACT [VX]
 synonym: "Cystic dilatation in medulla, focal" RELATED [VX]
 synonym: "Tubular impaction" RELATED [VX]
 synonym: "Cortex , tubular dilatation" EXACT [VX]
-synonym: "\"Dilation, tubule\"" EXACT [VX]
+synonym: "Dilation, tubule" EXACT [VX]
 synonym: "TUBULAR DILATION" EXACT [VX]
 synonym: "Tubule, dilatation" EXACT [VX]
 synonym: "Dilation, renal tubule" EXACT [VX]
@@ -18799,7 +18799,7 @@ synonym: "Atrophy,Tubular" RELATED [VX]
 synonym: "Atrophy of proximal tubules, interstitial cell accumulation" EXACT [VX]
 synonym: "Atrophy, seminiferous tubules, segmental, uni- bilateral" EXACT [VX]
 synonym: "Atrophy, seminiferous tubules, segmental" EXACT [VX]
-synonym: "Tubular \"Sertoli-cell-only\" atrophy" EXACT [VX]
+synonym: "Tubular "Sertoli-cell-only" atrophy" EXACT [VX]
 synonym: "Atrophy: seminiferous tubules" EXACT [VX]
 synonym: "Unilateral focal tubular atrophy" EXACT [VX]
 synonym: "Evidence of atrophy and complete inhibition of spermatogenesis seen in all the seminiferous tubules" EXACT [VX]
@@ -19064,7 +19064,7 @@ synonym: "Hypertrophy hyperplasia, distal tubules, multifocal," RELATED [VX]
 synonym: "Hypertrophy, tubular cell, focal" EXACT [VX]
 synonym: "Collecting tubule hypertrophy" EXACT [VX]
 synonym: "Hypertrophy, tubular cell, unilateral" EXACT [VX]
-synonym: "\"Hypertrophy, tubular\"" EXACT [VX]
+synonym: "Hypertrophy, tubular" EXACT [VX]
 synonym: "Hypertrophy hyperplasia, distal tubules, focal,unilateral" RELATED [VX]
 synonym: "Hypertrophy hyperplasia, distal tubules, multifocal,bilateral" EXACT [VX]
 synonym: "Pars recta hypertrophy" EXACT [VX]
@@ -19294,7 +19294,7 @@ synonym: "Basophilia, tubule, cortical" EXACT [VX]
 synonym: "Tubules-basophilic proliferation" EXACT [VX]
 synonym: "Tubules:Basophilic proliferation" EXACT [VX]
 synonym: "Degeneration Regeneration: renal tubule, multifocal, bilateral" EXACT [VX]
-synonym: "\"Basophilia, tubular\"" EXACT [VX]
+synonym: "Basophilia, tubular" EXACT [VX]
 synonym: "Basoph. cort. tubules" EXACT [VX]
 synonym: "Cortical tubular basophilia" EXACT [VX]
 synonym: "Basophilic tubuli," EXACT [VX]
@@ -19321,7 +19321,7 @@ replaced_by: MC:2000487 ! casts, granular
 [Term]
 id: MC:0000502
 name: casts
-def: "casts represent the accumulation of proteinaceous fluid and or cell breakdown products filling the nephric tubular lumina .the most common types of casts are hyaline or granular, but the preferred term \"cast\" can be used to describe all types." []
+def: "casts represent the accumulation of proteinaceous fluid and or cell breakdown products filling the nephric tubular lumina .the most common types of casts are hyaline or granular, but the preferred term "cast" can be used to describe all types." []
 synonym: "Cast, acidophilic, unilateral" EXACT [VX]
 synonym: "Protein cellular cast(s)." EXACT [VX]
 synonym: "Cast, hyaline" RELATED [VX]
@@ -19545,7 +19545,7 @@ is_a: MC:0000500 ! accumulation, filtrate
 id: MC:0000503
 name: accumulation, hyaline droplets
 def: "In the kidney, hyaline droplets represent low-molecular-weight protein accumulation within lysosomes due to disturbance of the normal balance of tubular reabsorption and hydrolysis as a result of either increased filtered protein loads or decreased catabolism." []
-synonym: "Intratubular red\\brown crystals" RELATED [VX]
+synonym: "Intratubular redbrown crystals" RELATED [VX]
 synonym: "Hyaline droplets,inc" RELATED [VX]
 synonym: "Accumulation of hyalin droplets in the proximal tubular cells" NARROW [VX]
 synonym: "HYALINE DROPLETS" RELATED [VX]
@@ -20412,7 +20412,7 @@ synonym: "Periportal fatty change, fine droplet, Oil Red-O positive" EXACT [VX]
 synonym: "With the oil-red-o some fatty change is seen" EXACT [VX]
 synonym: "Periportal fatty change with some vacuolization and occasional swelling, nuclear - size irregularity and degeneration of scattered cells" EXACT [VX]
 synonym: "Periportal and centrolobular fatty change, with vacuolization of cells to a corresponding distribution Mild passive hyperaemia, and some kupffer cell activity" EXACT [VX]
-synonym: "Periportal fatty change, moderate\", vacuolization, a few scattered degenerative cells" EXACT [VX]
+synonym: "Periportal fatty change, moderate", vacuolization, a few scattered degenerative cells" EXACT [VX]
 synonym: "Diffuse periportal hepatocellular vacuolation slight" RELATED [VX]
 synonym: "Localized hepatocellular fatty change" EXACT [VX]
 synonym: "Hepatocellular vacuolation, focal" RELATED [VX]
@@ -20828,7 +20828,7 @@ is_a: MC:0000004 ! carcinoma
 [Term]
 id: MC:0000528
 name: fibrosis regeneration
-def: "Regenerative nodules surrounded by fibrous bands in response to chronic liver injury are usually defined as \"cirrhosis\". Histologically, cirrhosis is characterized by vascularized fibrotic septa that link portal tracts with each other and with central veins, leading to hepatocyte islands that are surrounded by fibrotic septa and which are devoid of a central vein (D. Schuppan and N.H. Afdhal Lancet. 2008 Mar 8; 371(9615): 838¿851)" []
+def: "Regenerative nodules surrounded by fibrous bands in response to chronic liver injury are usually defined as "cirrhosis". Histologically, cirrhosis is characterized by vascularized fibrotic septa that link portal tracts with each other and with central veins, leading to hepatocyte islands that are surrounded by fibrotic septa and which are devoid of a central vein (D. Schuppan and N.H. Afdhal Lancet. 2008 Mar 8; 371(9615): 838¿851)" []
 comment: INHAND does not consider this term and the Core Team agrees, however for the purpose of mapping the few instances where the synonyms have been used, this term is maintained.
 synonym: "Cirrhosis" RELATED [VX]
 synonym: "Cirrhosis" RELATED []
@@ -20956,7 +20956,7 @@ synonym: "Hypertrophy, hepatocyte" EXACT [VX]
 synonym: "diff. Hypertrophy" EXACT [VX]
 synonym: "Hepatocellular hypertrophy, centrilobular to diffuse" EXACT [VX]
 synonym: "Hypertr. cytopl.chg." RELATED [VX]
-synonym: "\"Hypertrophy, hepat.\"" EXACT [VX]
+synonym: "Hypertrophy, hepat" EXACT [VX]
 synonym: "Centril hypertrophy" EXACT [VX]
 synonym: "Hypertrophy,  periac." EXACT [VX]
 synonym: "Hepatocellular hypertrophy,centrilobular,mid-zonal,with vacuolation" EXACT [VX]
@@ -21754,7 +21754,7 @@ synonym: "Cytoplasmic glycogen contents" RELATED [VX]
 synonym: "A moderate amount of glycogen and fat is seen" EXACT [VX]
 synonym: "Intrahepatic glycogen deposits centrilobular to midzonal" RELATED [VX]
 synonym: "Glycogen vacuolation, focal" RELATED [VX]
-synonym: "Slight distension of centrilobular hepatocytes (\"glycogen pallor\")" RELATED [VX]
+synonym: "Slight distension of centrilobular hepatocytes ("glycogen pallor")" RELATED [VX]
 synonym: "Minimal amounts of glycogen are present" EXACT [VX]
 synonym: "Moderate amount of glycogen present" EXACT [VX]
 synonym: "Increased glycogen, no findings" RELATED [VX]
@@ -21845,7 +21845,7 @@ synonym: "Margination cl" RELATED [VX]
 synonym: "Cytoplasmic margination: centrilobular" RELATED [VX]
 synonym: "Focal glycogen.acc" EXACT [VX]
 synonym: "Widespread diffuse distribution of distended glycogen-laden hepatocytes" EXACT [VX]
-synonym: "Hepatocytes with distended, \"rarefied\" cytoplasm, staining strongly positive for glycogen" EXACT [VX]
+synonym: "Hepatocytes with distended, "rarefied" cytoplasm, staining strongly positive for glycogen" EXACT [VX]
 synonym: "Cytoplasm.  marginat." RELATED [VX]
 synonym: "Cytoplasm. marginat." RELATED [VX]
 synonym: "HEPATOCELLULAR GLYCOGEN CONTENT" RELATED [VX]
@@ -21865,7 +21865,7 @@ replaced_by: MC:0001024 ! polyploidy
 [Term]
 id: MC:0000553
 name: inclusions, intranuclear and cytoplasmic
-def: "For the liver, this term is used for protrusion of cytoplasm into an invagination of the hepatocyte nuclear membrane without the actual protrusion necessarily being present in the plane of section; it is seen in specific viral infections and also in the context of deposition of protein material within hepatocyte cytoplasm. \"Inclusion bodies\" is a synonym, which is as well used in kidney. In renal tubules inclusions have been noted with heavy metals, anibiotics, and a wide variety of other agents, and they may also occur with viral infections." []
+def: "For the liver, this term is used for protrusion of cytoplasm into an invagination of the hepatocyte nuclear membrane without the actual protrusion necessarily being present in the plane of section; it is seen in specific viral infections and also in the context of deposition of protein material within hepatocyte cytoplasm. "Inclusion bodies" is a synonym, which is as well used in kidney. In renal tubules inclusions have been noted with heavy metals, anibiotics, and a wide variety of other agents, and they may also occur with viral infections." []
 comment: Nuclear and cytoplasmic inclusions may have quite diverse pathogenesis  Inclusions have been noted with heavy metals, antibiotics, and a wide variety of other agents, and they may also occur with viral infections. Depending on pathogenesis and location, inclusions may be associated with further parenchymal injury and degeneration over time.
 synonym: "Inclusion bodies" RELATED [VX]
 synonym: "Inclusions:mucosal" EXACT [VX]
@@ -22435,8 +22435,8 @@ synonym: "Bronchioloalveolar hyperplasia" RELATED [VX]
 synonym: "Bronchiolo-alveolar hyperplasia" EXACT [VX]
 synonym: "Hyperplasia, bronchiolar alveolar" EXACT [VX]
 synonym: "Hyperplasia bronchiolo-alveolar" EXACT [VX]
-synonym: "Hyperplasia, br.alv." RELATED [VX]
-synonym: "\"Hyperplasia, br-alv.\"" RELATED [VX]
+synonym: "Hyperplasia, br.alv" RELATED [VX]
+synonym: "Hyperplasia, br-alv" RELATED [VX]
 synonym: "Alveolar duct respiratory bronchiole - hyperplasia" EXACT [VX]
 synonym: "Hyperplasia, papillary" EXACT [VX]
 synonym: "Hyperplasia of the alveolar and bronchiolar epithelial cells" EXACT [VX]
@@ -23095,7 +23095,7 @@ is_a: MC:0000003 ! malignant tumor
 [Term]
 id: MC:0000595
 name: hyperplasia, reticulo-endothelial cell
-def: "Stroma is the connective, functionally supportive framework of a biological cell, tissue, or organ; in the lymph nodes, it is mainly composed of phagocytic cells  located in reticular connective tissue. The cells are primarily monocytes and macrophages, and they accumulate in lymph nodes and the spleen. The Kupffer cells of the liver and tissue histiocytes are also part of the MPS. \"Reticuloendothelial system\" is an older term for the mononuclear phagocyte system, but it is used less commonly now, as it is understood that most endothelial cells are not macrophages" []
+def: "Stroma is the connective, functionally supportive framework of a biological cell, tissue, or organ; in the lymph nodes, it is mainly composed of phagocytic cells  located in reticular connective tissue. The cells are primarily monocytes and macrophages, and they accumulate in lymph nodes and the spleen. The Kupffer cells of the liver and tissue histiocytes are also part of the MPS. "Reticuloendothelial system" is an older term for the mononuclear phagocyte system, but it is used less commonly now, as it is understood that most endothelial cells are not macrophages" []
 is_obsolete: true
 replaced_by: MC:0000181 ! increased, histiocyte number
 
@@ -24084,12 +24084,12 @@ is_a: MC:0000063 ! adenoma
 id: MC:0000660
 name: adenoma, ductal cell
 def: "Proliferation of ductal cells, benign" []
-synonym: "Single or multiple \"duct cell adenomas\" or \"lobular adenomas\"" EXACT [VX]
-synonym: "Large \"lobular adenoma\" or \"duct cell adenoma\"" EXACT [VX]
-synonym: "\"Lobular adenoma\" or duct cell adenoma\"" EXACT [VX]
+synonym: "Single or multiple "duct cell adenomas" or "lobular adenomas"" EXACT [VX]
+synonym: "Large "lobular adenoma" or "duct cell adenoma"" EXACT [VX]
+synonym: "Lobular adenoma" or duct cell adenoma" EXACT [VX]
 synonym: "Adenoma,Ductal Cell" RELATED []
 synonym: "Adenoma ductular" EXACT [VX]
-synonym: "\"Lobular adenoma\" or\"duct cell adenoma\"" EXACT [VX]
+synonym: "Lobular adenoma" or"duct cell adenoma" EXACT [VX]
 xref: INHAND:8003 "Adenoma, ductal cell"
 is_a: MC:0000063 ! adenoma
 
@@ -24866,7 +24866,7 @@ is_a: MC:0000252 ! general observation
 id: MC:0000680
 name: craniopharyngioma, benign
 def: "Proliferation of cells arising from remants of oro-pharyngeal epithelium of craniopharyngeal duct (Rathke's pouch), benign" []
-synonym: "\"Lobular adenoma\" or \"duct cell adenoma\"" EXACT [VX]
+synonym: "Lobular adenoma" or "duct cell adenoma" EXACT [VX]
 synonym: "Craniopharyngioma(B)" RELATED []
 is_a: MC:0000017 ! benign tumor
 
@@ -26531,7 +26531,7 @@ synonym: "Degeneration, spermatid" EXACT [VX]
 synonym: "Tubular epithelial degeneration grade 2" EXACT [VX]
 synonym: "Unilateral seminiferous tubular degeneration" RELATED [VX]
 synonym: "Degeneration atrophy, bilateral" EXACT [VX]
-synonym: "Focal tubular \"degeneration\"" RELATED [VX]
+synonym: "Focal tubular "degeneration"" RELATED [VX]
 synonym: "Tubulsr cell depletion degeneration" RELATED [VX]
 synonym: "Bilateral degeneration of the germinal epithelium" EXACT [VX]
 synonym: "Degeneration: vacuolar" EXACT [VX]
@@ -26954,7 +26954,7 @@ synonym: "Germinative centre hyperplasia" EXACT [VX]
 synonym: "Lymphoid hyperplasia, follicular, unilateral" EXACT [VX]
 synonym: "Hyperplasia, reactive, unilateral" EXACT [VX]
 synonym: "Organoid hyperplasia" RELATED [VX]
-synonym: "\"Hyperplasia, lymph.\"" EXACT [VX]
+synonym: "Hyperplasia, lymph" EXACT [VX]
 synonym: "Hyperplasia lymphoid, focal" EXACT [VX]
 synonym: "Periarteriolar lymphocytic sheets hyperplasia" RELATED [VX]
 synonym: "Lymphoid hyperplasia peribronchiolar" EXACT [VX]
@@ -27068,7 +27068,7 @@ is_a: MC:0000746 ! delayed maturation
 [Term]
 id: MC:0000751
 name: alteration, cortex medulla ratio
-def: "Alterationw of cortex medulla are characterized by a less pronounced cortex medulla delimitation and an increase of dark small mature lymphocytes, with medullary enlargement. An old synonym was thymic inversion, due to the \"inverted\" appearance of the typical architecture." []
+def: "Alterationw of cortex medulla are characterized by a less pronounced cortex medulla delimitation and an increase of dark small mature lymphocytes, with medullary enlargement. An old synonym was thymic inversion, due to the "inverted" appearance of the typical architecture." []
 synonym: "Inversion" RELATED [VX]
 synonym: "Inversion" RELATED []
 is_a: MC:0000746 ! delayed maturation
@@ -27621,12 +27621,12 @@ is_a: MC:0000450 ! hyperplasia, glandular
 [Term]
 id: MC:0000783
 name: hyperplasia, adipose tissue
-def: "diffuse or focal increase of adipose tissue with macrovesiculation (white adipose tissue) or microvesiculation (brown adipose tissue). Can be associated with variable focal fibrosis or fibroblastic proliferation. a synonym is \"polymorphic adipose tissue\"." []
+def: "diffuse or focal increase of adipose tissue with macrovesiculation (white adipose tissue) or microvesiculation (brown adipose tissue). Can be associated with variable focal fibrosis or fibroblastic proliferation. a synonym is "polymorphic adipose tissue"." []
 synonym: "Nodular fat cell hyperplasia" EXACT [VX]
 synonym: "Fat cell hyperplasia" RELATED [VX]
 synonym: "Promin.Adipose tis." EXACT [VX]
 synonym: "Activated fat cells" EXACT [VX]
-synonym: "Increased \"white\" fat cells" EXACT [VX]
+synonym: "Increased "white" fat cells" EXACT [VX]
 synonym: "Increased s.c. fat" RELATED [VX]
 synonym: "Lipomatosis" EXACT [VX]
 synonym: "Increased interstitial fat cells" RELATED [VX]
@@ -28587,7 +28587,7 @@ synonym: "Necrosis with mixed infiItration" EXACT [VX]
 synonym: "Acute necrosis" EXACT [VX]
 synonym: "Necrosis, hepatocellular, multi focal" EXACT [VX]
 synonym: "Necrosis coagulative" EXACT [VX]
-synonym: "\"Necrosis, coagulativ\"" EXACT [VX]
+synonym: "Necrosis, coagulativ" EXACT [VX]
 synonym: "Necrosis and haemorrhage" EXACT [VX]
 synonym: "A second section of liver showed massive necrosis of the parenchyma with the only viable liver cells being a few scattered parenchymal elements present about portal areas" EXACT [VX]
 synonym: "Several areas of recent necrosis" EXACT [VX]
@@ -29001,7 +29001,7 @@ synonym: "Cardiomyopathy" RELATED [VX]
 synonym: "Cardiomyopathy, chronic." EXACT [VX]
 synonym: "Focal cardiomyopathy" RELATED [VX]
 synonym: "Myocardial degeneration Fibrosis" RELATED [VX]
-synonym: "\"Cardiomyopathy, chr.\"" EXACT [VX]
+synonym: "Cardiomyopathy, chr" EXACT [VX]
 synonym: "Myocardial degeneration  fibroplasia" RELATED [VX]
 synonym: "Cardiomyopathy." RELATED [VX]
 synonym: "Cardiomyopathy, focal" RELATED [VX]
@@ -29125,7 +29125,7 @@ synonym: "NEPHROPATHY,  CHRONIC" EXACT [VX]
 synonym: "FOCAL NEPHROPATHY" EXACT [VX]
 synonym: "Multifocal unilateral nephropathy" EXACT [VX]
 synonym: "Nephropathy, multifocal" EXACT [VX]
-synonym: "\"Nephropathy,chronic\"" EXACT [VX]
+synonym: "Nephropathy,chronic" EXACT [VX]
 synonym: "Mild to moderate nephropathy" EXACT [VX]
 synonym: "Nephropathy minima" EXACT [VX]
 synonym: "Nephropathy moderate" EXACT [VX]
@@ -29675,7 +29675,7 @@ is_a: MC:0000997 ! aplasia
 [Term]
 id: MC:0000900
 name: apoptosis
-def: "Apoptosis is a form of genetically controlled \"programmed cell death\". Typical microscopic appearance includes condensed eosinophilic cytoplasm with maintenance of membrane integrity, cytoplasmic budding, nuclear fragmentation in the absence of an inflammatory response. Diagnosis may be confirmed by electron microscopy, immunostaining (e.g. activated caspase 3) or TUNEL staining. It can occur spontaneously, or be induced by xenobiotics." []
+def: "Apoptosis is a form of genetically controlled "programmed cell death". Typical microscopic appearance includes condensed eosinophilic cytoplasm with maintenance of membrane integrity, cytoplasmic budding, nuclear fragmentation in the absence of an inflammatory response. Diagnosis may be confirmed by electron microscopy, immunostaining (e.g. activated caspase 3) or TUNEL staining. It can occur spontaneously, or be induced by xenobiotics." []
 synonym: "Lamina propria apoptotic bodies" RELATED [VX]
 synonym: "Increased lamina propria apoptotic bodies" RELATED [VX]
 synonym: "Lymphoid tissue apoptosis" RELATED [VX]
@@ -29720,7 +29720,7 @@ name: cyst, follicular
 def: "Follicular cysts are a common finding in untreated rats and mice, particularly with increasing age, and their incidence is also related to strain. In older rats, as the ovarian cycle becomes prolonged, some pre-ovulatory follicles appear to lose the capacity to ovulate during periods of persistent estrus. In young rats, follicular cysts may develop in association with imbalances in thyroid hormone, prolactin, LH, or androgens. Follicular cysts may also result from factors that alter the secretion of, or ovarian responses to, gonadotropins. Some follicles may produce estradiol and can be associated with persistent estrus." []
 synonym: "Cystic, follicle" EXACT [VX]
 synonym: "Follicular cyst(6)" EXACT [VX]
-synonym: "\"Cyst(s), follicular\"" EXACT [VX]
+synonym: "Cyst(s), follicular" EXACT [VX]
 synonym: "Bilat, cystic follicle" EXACT [VX]
 synonym: "Cyst(s) follicular" EXACT [VX]
 synonym: "Follicle cyst" EXACT [VX]
@@ -29818,7 +29818,7 @@ is_a: MC:2000164 ! cyst
 [Term]
 id: MC:0000908
 name: decidualization, focal
-def: "Focal stromal decidualization is an uncommon stromal change. The hypertrophied stromal cells in the lesion resemble the true decidualized stromal cells in the decidual reaction, but the lesion does not show the structural organization as seen in the \"decidual reaction\". Also in polyps and tumors focal areas of decidualized stroma can be observed." []
+def: "Focal stromal decidualization is an uncommon stromal change. The hypertrophied stromal cells in the lesion resemble the true decidualized stromal cells in the decidual reaction, but the lesion does not show the structural organization as seen in the "decidual reaction". Also in polyps and tumors focal areas of decidualized stroma can be observed." []
 xref: INHAND:6373 "Decidualization, focal"
 xref: INHAND:6524
 is_a: MC:0000344 ! hypertrophy, stroma
@@ -29974,7 +29974,7 @@ is_a: MC:0000339 ! polyp
 [Term]
 id: MC:0000922
 name: prolapse
-def: "prolapse is a condition where organs, such as the uterus, fall down or slip out of place. It is used for organs protruding through the vagina or the rectum or for the misalignment of the valves of the heart. A spinal disc herniation is also sometimes called \"disc prolapse\"" []
+def: "prolapse is a condition where organs, such as the uterus, fall down or slip out of place. It is used for organs protruding through the vagina or the rectum or for the misalignment of the valves of the heart. A spinal disc herniation is also sometimes called "disc prolapse"" []
 synonym: "Prolapse" EXACT [VX]
 xref: INHAND:6382
 xref: INHAND:6382 "Prolapse"
@@ -30217,7 +30217,7 @@ is_a: MC:0000444 ! calculi
 [Term]
 id: MC:0000944
 name: dilatation, esophagus
-def: "This condition is typically related to a grossly distended esophagus containing food bedding material and has also been diagnosed as impaction because of the gross appearance. This has been described as a spontaneous or idiopathic change in rats and also attributed to feeding a powdered food diet. A synonym often in use in literature is \"megaesophagus\"" []
+def: "This condition is typically related to a grossly distended esophagus containing food bedding material and has also been diagnosed as impaction because of the gross appearance. This has been described as a spontaneous or idiopathic change in rats and also attributed to feeding a powdered food diet. A synonym often in use in literature is "megaesophagus"" []
 xref: INHAND:6392 "Dilatation, esophagus"
 is_a: MC:0000512 ! dilation, luminal
 
@@ -30355,7 +30355,7 @@ replaced_by: MC:0001009 ! hyperostosis
 [Term]
 id: MC:0000960
 name: morphological change, unspecified
-def: "This term is grouping morphologies for which there is nor literature nor enough clear pathological description allowing the characterization of the morphology. These morphologies are considered to represent a \"working morphology\" and only the toxicological report, where they come from, could further clarify them" []
+def: "This term is grouping morphologies for which there is nor literature nor enough clear pathological description allowing the characterization of the morphology. These morphologies are considered to represent a "working morphology" and only the toxicological report, where they come from, could further clarify them" []
 is_a: MC:0000054 ! cell adaptation injury death
 
 [Term]
@@ -31245,7 +31245,7 @@ is_a: MC:0000653 ! embryonic remnants
 [Term]
 id: MC:0001024
 name: polyploidy
-def: "the state or condition of having more than two complete sets of chromosomes. Many liver cells are polyploid, containing 4, 8, 16 or more times the haploid chromosome complement, although the significance of the phenomenon is not known. Increases in ploidy occur through failed cytokinesis, and decreases as a result of multipolar mitosis. The resulting genetic heterogeneity might be advantageous following hepatic injury when \"genetically robust\" cells could be selected from a pre-existing pool of diverse genotypes. (A.W. Duncan et al     Nature 2010. 467:707¿710)" []
+def: "the state or condition of having more than two complete sets of chromosomes. Many liver cells are polyploid, containing 4, 8, 16 or more times the haploid chromosome complement, although the significance of the phenomenon is not known. Increases in ploidy occur through failed cytokinesis, and decreases as a result of multipolar mitosis. The resulting genetic heterogeneity might be advantageous following hepatic injury when "genetically robust" cells could be selected from a pre-existing pool of diverse genotypes. (A.W. Duncan et al     Nature 2010. 467:707¿710)" []
 synonym: "Polyploidy" RELATED [VX]
 is_a: MC:0000367 ! normal physiological condition
 
@@ -31797,7 +31797,7 @@ relationship: part_of MC:0000088 ! metaplasia, osseous
 [Term]
 id: MC:2000091
 name: atrophy, white adipose
-def: "atrophy of white adipose tissue. If white or (brown; see \"atrophy, brown adipose\") fat is not specified in the term, the term is mapped to the more general category \"atrophy, adipose tissue\"" []
+def: "atrophy of white adipose tissue. If white or (brown; see "atrophy, brown adipose") fat is not specified in the term, the term is mapped to the more general category "atrophy, adipose tissue"" []
 synonym: "Atrophy,marrow" EXACT [VX]
 synonym: "Fatty involution," EXACT [VX]
 synonym: "White fat atrophy" RELATED [VX]
@@ -33219,7 +33219,7 @@ synonym: "Occasional focus of lymphocytic infiltration is noted." EXACT [VX]
 synonym: "Subepicardial lymphocytic infiltration" EXACT [VX]
 synonym: "Lymphoc.infilt.incr." RELATED [VX]
 synonym: "Lymphocytosis" RELATED [VX]
-synonym: "\"Infiltration, lymph\"" EXACT [VX]
+synonym: "Infiltration, lymph" EXACT [VX]
 synonym: "Microfocal lymphocyte infiltration" RELATED [VX]
 synonym: "Inflammatory lymphoid focus(i)" EXACT [VX]
 synonym: "Lymphoid cell infiltr." RELATED [VX]
@@ -33744,7 +33744,7 @@ synonym: "Mononuclear-cell perivascular infiltrate" EXACT [VX]
 synonym: "Mononuclear cell infiltrate, in perithymic fat" EXACT [VX]
 synonym: "Moderately large numbers of chronic inflammatory cells infiltrated the cortex" EXACT [VX]
 synonym: "Chronic inflammatory cell infiltrates" EXACT [VX]
-synonym: "Massive and heavy infiltration involving more than half of the tissue \"by chronic inflammatory cells was seen with cortex, medulla, and pelvis all heavily infiltrated" EXACT [VX]
+synonym: "Massive and heavy infiltration involving more than half of the tissue "by chronic inflammatory cells was seen with cortex, medulla, and pelvis all heavily infiltrated" EXACT [VX]
 synonym: "Interstitial mononuclear cell infiltrate, occasional" EXACT [VX]
 synonym: "Infiltrate: mononuclear cell, diffuse" EXACT [VX]
 synonym: "Mononuclear cell infiltrate, at heart base" EXACT [VX]
@@ -35008,7 +35008,7 @@ synonym: "Mononuclear infiltration, bilateral" EXACT [VX]
 synonym: "Focal mononuclear inflammatory cell infiltrates" EXACT [VX]
 synonym: "Infiltration, mono" RELATED [VX]
 synonym: "Focal right atrial epicardial mononuclear cell infiltration" EXACT [VX]
-synonym: "\"Infiltration, mono.\"" RELATED [VX]
+synonym: "Infiltration, mono" RELATED [VX]
 synonym: "Focal quadriceps femoris mononuclear cell infiltration" EXACT [VX]
 synonym: "Infiltration mononuclear cell, focal multifocal" EXACT [VX]
 synonym: "Focus of mononulcear cell infiltration" EXACT [VX]
@@ -35427,7 +35427,7 @@ synonym: "Upper mucosa diffuse chronic inflammation" EXACT [VX]
 synonym: "PROSTATITIS, NONSUPPURATIVE" EXACT [VX]
 synonym: "Prostatitis, Nonsuppurative" EXACT [VX]
 synonym: "Focal serositis characterised mainly by mononuclear cell infiltrate, fibroblast proliferation, myocytes regeneration in the contiguous tonaca muscolaris. Dosing injury." RELATED [VX]
-synonym: "\"Inflammation,chroni\"" RELATED [VX]
+synonym: "Inflammation,chroni" RELATED [VX]
 synonym: "Inflammation, chroni" RELATED [VX]
 synonym: "Glandular necrotizing chronic inflammation, focal, bilateral,with inflammation extending into peripheral muscles" RELATED [VX]
 synonym: "Glandular necrotizing chronic inflammation, focal, unilateral,infiltrating the adjacent periocular muscles" RELATED [VX]
@@ -36773,7 +36773,7 @@ synonym: "Focal perivascular mononuclear-cell infiltrate" EXACT [VX]
 synonym: "Perivascular lymphoid infiltrate" EXACT [VX]
 synonym: "Lymphoid hyperplasia, perivascular, focal" EXACT [VX]
 synonym: "Perivascular eosinophils" EXACT [VX]
-synonym: "Single perivascular \"cuff\" of lymphocytes in same section" EXACT [VX]
+synonym: "Single perivascular "cuff" of lymphocytes in same section" EXACT [VX]
 synonym: "Inflammatory cell infiltrate, eosinophilic, perivascular" EXACT [VX]
 synonym: "Perivascular mononuclears and eosinophils" EXACT [VX]
 synonym: "Perivascular mononuclear-cell infiltrate" EXACT [VX]
@@ -38322,7 +38322,7 @@ synonym: "MINERALIZATION, TUBULAR" EXACT [VX]
 synonym: "Mineralization, Tubular" EXACT [VX]
 synonym: "Mineralization, Pelvic" EXACT [VX]
 synonym: "Mineraliz. tubular" RELATED [VX]
-synonym: "\"Mineraliz., pelvis\"" EXACT [VX]
+synonym: "Mineraliz., pelvis" EXACT [VX]
 synonym: "Unilateral mineralisation" EXACT [VX]
 synonym: "Vascular mineralisation, present, occasionnal" EXACT [VX]
 synonym: "Peripelvic mineralisation" EXACT [VX]
@@ -38780,7 +38780,7 @@ is_a: MC:2000168 ! mineralization
 [Term]
 id: MC:2000173
 name: inflammation, lymphohistiocyte
-def: "Inflammation accompanied by lymphocytes and histiocytes macrophages. Note that lymphohistiocytic infiltrates are captured under \"inflammatory cell infiltrates\", not \"inflammation\"." []
+def: "Inflammation accompanied by lymphocytes and histiocytes macrophages. Note that lymphohistiocytic infiltrates are captured under "inflammatory cell infiltrates", not "inflammation"." []
 synonym: "Lymphohistiocytic inflammation" EXACT [VX]
 synonym: "Inflammation, interstitial, lymphohistiocytic" RELATED [VX]
 synonym: "Inflammation: lymphohistiocytic cell" EXACT [VX]
@@ -38817,7 +38817,7 @@ is_a: MC:0000091 ! deposition accumulation
 [Term]
 id: MC:2000179
 name: fibrosis, perivascular
-def: "Dense, circumferential \"collar\" of mature fibrous connective tissue or fibroblasts surrounding small to medium arteries . 'Healed' inflammatory lesions may include an admixture of mixed mononuclear inflammatory cells.   Perivascular fibrosis of chronic hemodynamic stress may be accompanied by mural hypertrophy of the associated artery" []
+def: "Dense, circumferential "collar" of mature fibrous connective tissue or fibroblasts surrounding small to medium arteries . 'Healed' inflammatory lesions may include an admixture of mixed mononuclear inflammatory cells.   Perivascular fibrosis of chronic hemodynamic stress may be accompanied by mural hypertrophy of the associated artery" []
 synonym: "Fibrosis of media and intima" EXACT [VX]
 synonym: "Perivascular subcutaneous fibrosis" EXACT [VX]
 synonym: "Fibrosis of media" EXACT [VX]
@@ -38833,8 +38833,8 @@ synonym: "Perivasc. fibrosis" RELATED [VX]
 synonym: "Multifocal vessel wall fibrosis" EXACT [VX]
 synonym: "Vena cava mural fibrosis" RELATED [VX]
 synonym: "Femoral vein pericannular fibrosis" RELATED [VX]
-synonym: "\"Fibrosis, perivascular\"" EXACT [VX]
-synonym: "Fibrosis: perivascul" EXACT [VX]
+synonym: "Fibrosis, perivascular" EXACT [VX]
+synonym: "Fibrosis, perivascul" EXACT [VX]
 synonym: "Fibrosis, perivascular" EXACT [VX]
 synonym: "Perivascular fibrosis minimal" EXACT [VX]
 synonym: "Focal fibroplasia  fibrosis of vein wall" EXACT [VX]
@@ -39156,7 +39156,7 @@ synonym: "Microfocal foam cell aggregate(s)" EXACT [VX]
 synonym: "Microfocal foam-cells" EXACT [VX]
 synonym: "Foam cell accumulation, focal" EXACT [VX]
 synonym: "Foam cell accumulation, disseminated" EXACT [VX]
-synonym: "Some \"foam cells\" isolated" EXACT [VX]
+synonym: "Some "foam cells" isolated" EXACT [VX]
 synonym: "Fat-laden foam cells" EXACT [VX]
 synonym: "Foam cell accumulation in Peyer's patches" EXACT [VX]
 synonym: "Microfocal foam cell accumulation" EXACT [VX]
@@ -39763,7 +39763,7 @@ is_a: MC:0000483 ! dilation, tubule
 id: MC:2000265
 name: pyogranuloma
 def: "pyogranulomas have the same characteristic of a granuloma (large epitheliod macrophages surrounded by variable lymphocytes and plasma cells and often encapsulated by fibrosis) which are organized around a core of viable and degenerated neutrophils." []
-comment: for  consistency  i.\tForeign body pyogranuloma have been anyway considered together with Foreign body granuloma as foreign body is the cause of it and the important etiological component to be mentioned. ii.\tPyogranulomatous abscesshave been mapped under pyogranuloma, to give relevance of the chronic granulomatous process.
+comment: for  consistency  i.tForeign body pyogranuloma have been anyway considered together with Foreign body granuloma as foreign body is the cause of it and the important etiological component to be mentioned. ii.tPyogranulomatous abscesshave been mapped under pyogranuloma, to give relevance of the chronic granulomatous process.
 synonym: "Dermis pyogranuloma" RELATED [VX]
 synonym: "Dermatitis pyogranuloma" RELATED [VX]
 is_a: MC:2000161 ! inflammation, granulomatous
@@ -39976,7 +39976,7 @@ is_a: MC:0000993 ! abnormal cartilage modelling remodelling
 [Term]
 id: MC:2000275
 name: hyperkeratosis, adnexal
-def: "hyperkeratosis with dilation of the follicular epithelium can be observed as treatment-related lesions. an example is given by \"chloracne\" caused by dioxin." []
+def: "hyperkeratosis with dilation of the follicular epithelium can be observed as treatment-related lesions. an example is given by "chloracne" caused by dioxin." []
 synonym: "Follicular hyperkeratosis" EXACT [VX]
 synonym: "Hair infundibular dilation with keratin" RELATED [VX]
 xref: INHAND:6329 "Hyperkeratosis, adnexal"
@@ -40323,12 +40323,12 @@ synonym: "Portal vein, thrombosis" EXACT [VX]
 synonym: "Multifocal  thrombosis in veins of the kidney" EXACT [VX]
 synonym: "Thrombosis in centrilobular vein, focal" EXACT [VX]
 synonym: "Thrombus" EXACT [VX]
-synonym: "\"Thrombosis, venous\"" EXACT [VX]
+synonym: "Thrombosis, venous" EXACT [VX]
 synonym: "Thrombus, vein" EXACT [VX]
 synonym: "Thrombus,vein" EXACT [VX]
-synonym: "Thrombus; vein" EXACT [VX]
+synonym: "Thrombus, vein" EXACT [VX]
 synonym: "Thrombosis, venous" EXACT [VX]
-synonym: "Thrombosis: atrial" EXACT [VX]
+synonym: "Thrombosis, atrial" EXACT [VX]
 synonym: "Thrombosis, vein" EXACT [VX]
 synonym: "Right atrial mural thrombosis" EXACT [VX]
 synonym: "Jugular vein thrombosis" EXACT [VX]
@@ -40562,7 +40562,7 @@ is_a: MC:0000034 ! infectious diseases
 [Term]
 id: MC:2000459
 name: helicobacter sp. hepatitis
-def: "Infection by a number of different Helicobacter spp..Can cause an increase in hepatocellular tumors in certain strains of infected mice, but are also known to generate liver lesions ( inflammation and inflammatory cell infiltrates). It is rare for H. hepaticus to cause liver lesions unless the facility and animal rooms are known to be infected.\"" []
+def: "Infection by a number of different Helicobacter spp..Can cause an increase in hepatocellular tumors in certain strains of infected mice, but are also known to generate liver lesions ( inflammation and inflammatory cell infiltrates). It is rare for H. hepaticus to cause liver lesions unless the facility and animal rooms are known to be infected."" []
 xref: INHAND:6168 "Helicobacter sp. hepatitis"
 is_a: MC:0000973 ! helicobacter
 
@@ -40591,7 +40591,7 @@ is_a: MC:0000124 ! architectural anomalies
 [Term]
 id: MC:2000465
 name: mouse hepatitis virus hepatitis
-def: "Infection by mouse hepatitis virus affecting hepatocytes, endothelium, and macrophages (Kupffer cells). It is a coronavirus which used to have high prevalance, but nowaday virtually disappeared from well-maintaned SPF \"barriered\" facilities\"." []
+def: "Infection by mouse hepatitis virus affecting hepatocytes, endothelium, and macrophages (Kupffer cells). It is a coronavirus which used to have high prevalance, but nowaday virtually disappeared from well-maintaned SPF "barriered" facilities"." []
 xref: INHAND:6170 "Mouse hepatitis virus hepatitis"
 is_a: MC:0000376 ! viruses
 
@@ -41366,7 +41366,7 @@ is_a: MC:0000124 ! architectural anomalies
 [Term]
 id: MC:2000599
 name: concretions
-def: "Small hyaline masses of degenerated epithelial cells that develop into compact concretions due to pressure dehydration and \"compaction\" of dead cells. Rounded, homogenous, or concentrically laminated bodies, which may appear mineralized." []
+def: "Small hyaline masses of degenerated epithelial cells that develop into compact concretions due to pressure dehydration and "compaction" of dead cells. Rounded, homogenous, or concentrically laminated bodies, which may appear mineralized." []
 synonym: "Concretions" EXACT [VX]
 synonym: "Concretion" EXACT [VX]
 xref: INHAND:6310 "Concretions"
@@ -41593,16 +41593,16 @@ relationship: develops_from MC:0000865 ! degeneration, germ cell
 [Term]
 id: MC:2000629
 name: dilatation, glands
-def: "Dilation of anatomical structures of glands." []
+def: "Dilation of anatomical structures of glands" []
 synonym: "Dilated glandes)" EXACT [VX]
 synonym: "Glands dilation" EXACT [VX]
-synonym: "Dilation gland." EXACT [VX]
+synonym: "Dilation gland" EXACT [VX]
 synonym: "Dilated gland" EXACT [VX]
 synonym: "Dilat gland" EXACT [VX]
 synonym: "Dilation intestinal glands" RELATED [VX]
 synonym: "Dilatation,Glandular" EXACT [VX]
-synonym: "Dilatation, glandul." EXACT [VX]
-synonym: "\"Dilatation, gland.\"" EXACT [VX]
+synonym: "Dilatation, glandul" EXACT [VX]
+synonym: "Dilatation, gland" EXACT [VX]
 synonym: "Glandular Dilation" EXACT [VX]
 synonym: "Dilation, crypt" EXACT [VX]
 synonym: "Dilation crypt" EXACT [VX]
