@@ -4209,7 +4209,7 @@ synonym: "Pituitary gand" RELATED [VX]
 synonym: "Pitituary gland" RELATED [VX]
 synonym: "Pititary gland" RELATED [VX]
 synonym: "Pituitary. gland" EXACT [VX]
-synonym: "Pituitary intervos" NARROW [VX]
+synonym: "Pituitary int/nervos" NARROW [VX]
 synonym: "Ant.pituitary" NARROW [VX]
 synonym: "Pituitarygland" RELATED [VX]
 synonym: "Pitiuitary" RELATED [VX]
@@ -4666,7 +4666,7 @@ relationship: part_of MA:0000207 ! midbrain
 
 [Term]
 id: MA:0000213
-name: cranial ganglionerve
+name: cranial ganglion/nerve
 is_a: MA:0000580 ! head nerve/ganglion
 relationship: part_of MA:0000167 ! central nervous system
 
@@ -4674,7 +4674,7 @@ relationship: part_of MA:0000167 ! central nervous system
 id: MA:0000214
 name: cranial ganglion
 is_a: MA:0001161 ! peripheral nervous system ganglion
-is_a: MA:0000213 ! cranial ganglionerve
+is_a: MA:0000213 ! cranial ganglion/nerve
 
 [Term]
 id: MA:0000215
@@ -4908,7 +4908,7 @@ relationship: part_of MA:0000218 ! peripheral nervous system
 
 [Term]
 id: MA:0000230
-name: spinal ganglionerve
+name: spinal ganglion/nerve
 relationship: part_of MA:0000218 ! peripheral nervous system
 
 [Term]
@@ -4918,7 +4918,7 @@ synonym: "Spinal ganglia" BROAD [VX]
 synonym: "Spinal ganglion" EXACT [VX]
 synonym: "Spinal ganglion" EXACT [VX]
 is_a: MA:0002566 ! sensory ganglion
-relationship: part_of MA:0000230 ! spinal ganglionerve
+relationship: part_of MA:0000230 ! spinal ganglion/nerve
 
 [Term]
 id: MA:0000232
@@ -4937,7 +4937,7 @@ id: MA:0000233
 name: spinal nerve
 synonym: "NERVE, SPINAL" EXACT [SEND:C12792]
 is_a: MA:0000217 ! nerve
-relationship: part_of MA:0000230 ! spinal ganglionerve
+relationship: part_of MA:0000230 ! spinal ganglion/nerve
 
 [Term]
 id: MA:0000234
@@ -4948,7 +4948,7 @@ is_a: MA:0000233 ! spinal nerve
 id: MA:0000235
 name: spinal nerve plexus
 is_a: MA:0002407 ! nerve plexus
-relationship: part_of MA:0000230 ! spinal ganglionerve
+relationship: part_of MA:0000230 ! spinal ganglion/nerve
 
 [Term]
 id: MA:0000236
@@ -5181,12 +5181,12 @@ synonym: "Eye (section 2)" NARROW [VX]
 synonym: "Eyes (l&r)" EXACT [VX]
 synonym: "Eyes and optic nerve left" BROAD [VX]
 synonym: "Eyes and optic n." BROAD [VX]
-synonym: "Eyeservi optici" BROAD [VX]
+synonym: "Eyes/nervi optici" BROAD [VX]
 synonym: "Eyes relative" RELATED [VX]
 synonym: "Eyes incl. optic nerve" BROAD [VX]
 synonym: "Eyes (incl. optical nerve/lenses)" BROAD [VX]
 synonym: "Eyes (incl. optical nerve/lenses)" BROAD [VX]
-synonym: "Eyeservi optici" BROAD [VX]
+synonym: "Eyes/nervi optici" BROAD [VX]
 synonym: "Eyes x2" EXACT [VX]
 synonym: "Eyes:" EXACT [VX]
 synonym: "Eyes (l&r)" EXACT [VX]
@@ -5494,7 +5494,7 @@ synonym: "Nasal cavities" EXACT [VX]
 synonym: "Nasal cavity (large/media-sized blood vessels)" NARROW [VX]
 synonym: "Nasal cav., sample 3p" NARROW [VX]
 synonym: "Nasal ducts" NARROW [VX]
-synonym: "Nasal tissuec (skullasal cavity)" NARROW [VX]
+synonym: "Nasal tissuec (skull/nasal cavity)" NARROW [VX]
 synonym: "Nasal cav.,sample 1s" NARROW [VX]
 synonym: "Nasal cavity" EXACT [VX]
 synonym: "Nasal cavity (level III)" NARROW [VX]
@@ -5502,10 +5502,10 @@ synonym: "Nasal tissue" NARROW [VX]
 synonym: "Nasal cavity (skull)" EXACT [VX]
 synonym: "Cavity-nasal" EXACT [VX]
 synonym: "Nasal cavities" EXACT [VX]
-synonym: "Nasal tissue (skullasal cavity)" NARROW [VX]
+synonym: "Nasal tissue (skull/nasal cavity)" NARROW [VX]
 synonym: "Nasal cavity I" NARROW [VX]
 synonym: "Cavity nasal/sinuses" NARROW [VX]
-synonym: "Nasal tissue(skullasal cavity)" NARROW [VX]
+synonym: "Nasal tissue(skull/nasal cavity)" NARROW [VX]
 synonym: "Nasal cavity 4" EXACT [VX]
 synonym: "Nasal cavity III" NARROW [VX]
 synonym: "Nasal cavity II" NARROW [VX]
@@ -5515,7 +5515,7 @@ synonym: "Cavity nasal" EXACT [VX]
 synonym: "Nasal cavity 3" EXACT [VX]
 synonym: "Nasal cavity 2" EXACT [VX]
 synonym: "Nasal cavity 1" EXACT [VX]
-synonym: "Nasal Tissuec (skullasal cavity)" NARROW [VX]
+synonym: "Nasal Tissuec (skull/nasal cavity)" NARROW [VX]
 synonym: "BODY CAVITY, NASAL" EXACT [SEND:C12424]
 synonym: "Nasal cavity 3" EXACT [VX]
 synonym: "Nasal cavity 2" EXACT [VX]
@@ -5523,7 +5523,7 @@ synonym: "Nasal cavity (level III)" NARROW [VX]
 synonym: "Cavity nasal" EXACT [VX]
 synonym: "Nasal cavity sinus" NARROW [VX]
 synonym: "Cavity-nasal" EXACT [VX]
-synonym: "Nasal Tissuec (skullasal cavity)" NARROW [VX]
+synonym: "Nasal Tissuec (skull/nasal cavity)" NARROW [VX]
 synonym: "Nasal cavity (level 2/right)" NARROW [VX]
 synonym: "Nasal cavity 1" EXACT [VX]
 synonym: "Nasal cavity IV" NARROW [VX]
@@ -5545,7 +5545,7 @@ synonym: "Nasal cavity (level 1/right)" NARROW [VX]
 synonym: "Nasal cavity (level 2/left)" NARROW [VX]
 synonym: "Nasal cavity (level 2/right)" NARROW [VX]
 synonym: "Nasal cavity (level 3/right)" NARROW [VX]
-synonym: "Nasal tissue (skullasal cavity)" NARROW [VX]
+synonym: "Nasal tissue (skull/nasal cavity)" NARROW [VX]
 synonym: "NASAL CAVITY" EXACT [VX]
 synonym: "Head (nasal cavities)" EXACT [VX]
 synonym: "Nasal cavity, level 3" RELATED [VX]
@@ -5560,7 +5560,7 @@ synonym: "Nasal cavity: L2" NARROW [VX]
 synonym: "Nasal cavity: L3" NARROW [VX]
 synonym: "Nasal cavity:L1" NARROW [VX]
 synonym: "Nasal cavity, level III" NARROW [VX]
-synonym: "Nasal tissue  (skullasal cavity)" NARROW [VX]
+synonym: "Nasal tissue  (skull/nasal cavity)" NARROW [VX]
 synonym: "Nasal cavity: L4" NARROW [VX]
 synonym: "Nasal cavity: L1" NARROW [VX]
 synonym: "Nasal cavity, level 4" RELATED [VX]
@@ -7292,7 +7292,7 @@ synonym: "Liver (ORO)" RELATED [VX]
 synonym: "Liver (relative to body)" RELATED [VX]
 synonym: "Liver (SCHMORL)" RELATED [VX]
 synonym: "Liver:oil red o" RELATED [VX]
-synonym: "Liver massodule" BROAD [VX]
+synonym: "Liver mass/nodule" BROAD [VX]
 synonym: "Liver relative % diff." RELATED [VX]
 synonym: "Liver (oro)" RELATED [VX]
 synonym: "Liver rel wt" RELATED [VX]
@@ -8871,7 +8871,7 @@ synonym: "Epididymis relative" NARROW [VX]
 synonym: "Epididimis" EXACT [VX]
 synonym: "Epididynides" RELATED [VX]
 synonym: "Epididymides  relative" NARROW [VX]
-synonym: "Epididymides massodule" BROAD [VX]
+synonym: "Epididymides mass/nodule" BROAD [VX]
 synonym: "Epididymis artery" NARROW [VX]
 synonym: "Epididymes" EXACT [VX]
 synonym: "Epididymes (Epidid)" EXACT [VX]
@@ -9117,7 +9117,7 @@ synonym: "PREPUTIAL GLAND" EXACT [VX]
 synonym: "Preputial/clitoral gland" BROAD [VX]
 synonym: "Preputial" EXACT [VX]
 synonym: "Perputial glands" EXACT [VX]
-synonym: "Preputial gland massodule" RELATED [VX]
+synonym: "Preputial gland mass/nodule" RELATED [VX]
 synonym: "Preputial gland(s)" EXACT [VX]
 synonym: "Preputial glands (inguinal glands)" EXACT [VX]
 synonym: "Perputial gland" EXACT [VX]
@@ -15254,7 +15254,7 @@ relationship: part_of MA:0001097 ! optic II nerve
 [Term]
 id: MA:0001100
 name: trigeminal V nerve
-synonym: "GANGLION, TRIGEMINALNERVE, TRIGEMINAL" BROAD [SEND:C92214]
+synonym: "GANGLION, TRIGEMINAL/NERVE, TRIGEMINAL" BROAD [SEND:C92214]
 synonym: "NERVE, TRIGEMINAL" EXACT [SEND:C12806]
 is_a: MA:0000215 ! cranial nerve
 
@@ -26421,7 +26421,7 @@ synonym: "Stomach (fundic and pyloric)" NARROW [VX]
 synonym: "Stomach (glandular, non-glandular)" NARROW [VX]
 synonym: "Stomach (glandular and nonglandular)" NARROW [VX]
 synonym: "Stomach (cardiac fundus and pylorus)" NARROW [VX]
-synonym: "Stomach massodule" RELATED [VX]
+synonym: "Stomach mass/nodule" RELATED [VX]
 synonym: "Soft tissue (stomach)" NARROW [VX]
 synonym: "Stomach, jonction fundus/pylore" NARROW [VX]
 synonym: "Stomach (glandular and nonglandular )" NARROW [VX]
@@ -30094,7 +30094,7 @@ is_a: MA:0003000 ! anatomical structure
 [Term]
 id: MA:0003034
 name: nictitating membrane
-def: "The nictitating membrane (from Latin nictare, to blink) is a transparent or translucent third eyelid present in some animals that can be drawn across the eye for protection and to moisten the eye while also keeping visibility. Various reptiles, birds, and sharks have a full nictitating membrane, whereas, in many mammals, there is a small vestigial remnant of the membrane present in the corner of the eye. Some mammals, such as polar bears, seals, and aardvarks, also have a full nictitating membrane. It is often called a third eyelid or haw and may be referred to as the plica semilunaris or palpebra tertia in scientific terminology." [http://en.wikipedia.org/wiki/nictitating_membrane]
+def: "The nictitating membrane (from Latin nictare, to blink) is a transparent or translucent third eyelid present in some animals that can be drawn across the eye for protection and to moisten the eye while also keeping visibility. Various reptiles, birds, and sharks have a full nictitating membrane, whereas, in many mammals, there is a small vestigial remnant of the membrane present in the corner of the eye. Some mammals, such as polar bears, seals, and aardvarks, also have a full nictitating membrane. It is often called a third eyelid or haw and may be referred to as the plica semilunaris or palpebra tertia in scientific terminology." [http://en.wikipedia.org/wiki/Nictitating_membrane]
 synonym: "Nictnictitating membranes" EXACT [VX]
 synonym: "Eye, nictit. Membrane" EXACT [VX]
 synonym: "Nictitating membrane (both)" EXACT [VX]
