@@ -1,0 +1,313 @@
+CODELIST_ID	TERM_ID	TERM_NAME	TERM_DEFINITION
+C85493	C102356	Accumulation Ratio AUCTAU	The area under the curve (AUCTAU) at steady state divided by the area under the curve (AUCTAU) over the initial dosing interval.
+C85493	C102357	Accumulation Ratio Cmax	The maximum concentration at steady state divided by the maximum concentration during the initial dosing interval.
+C85493	C102358	Accumulation Ratio Cmin	The minimum concentration at steady state divided by the minimum concentration during the initial dosing interval.
+C85493	C102359	Amt Rec from T1 to T2	The cumulative amount recovered from the specimen type specified in PPSPEC over the interval from T1 to T2.
+C85493	C102360	Amt Rec from T1 to T2 Norm by BMI	The cumulative amount recovered from the specimen type specified in PPSPEC over the interval from T1 to T2 divided by body mass index.
+C85493	C102361	Amt Rec from T1 to T2 Norm by SA	The cumulative amount recovered from the specimen type specified in PPSPEC over the interval from T1 to T2 divided by surface area.
+C85493	C102362	Amt Rec from T1 to T2 Norm by WT	The cumulative amount recovered from the specimen type specified in PPSPEC over the interval from T1 to T2 divided by weight.
+C85493	C102363	Amt Rec Over Dosing Interval	The cumulative amount recovered from the specimen type specified in PPSPEC between doses (TAU).
+C85493	C102364	Amt Rec Over Dosing Interval Norm by BMI	The cumulative amount recovered from the specimen type specified in PPSPEC between doses (TAU) divided by body mass index.
+C85493	C102365	Amt Rec Over Dosing Interval Norm by SA	The cumulative amount recovered from the specimen type specified in PPSPEC between doses (TAU) divided by surface area.
+C85493	C102366	Amt Rec Over Dosing Interval Norm by WT	The cumulative amount recovered from the specimen type specified in PPSPEC between doses (TAU) divided by weight.
+C85493	C102367	Conc by BMI	The concentration divided by body mass index.
+C85493	C102368	Conc by Dose	The concentration divided by dose.
+C85493	C102369	Conc by SA	The concentration divided by surface area.
+C85493	C102370	Conc by WT	The concentration divided by weight.
+C85493	C102371	Vol Dist Initial	The initial volume of distribution for a substance administered by bolus intravascular dosing.
+C85493	C102372	Vol Dist Initial Norm by BMI	The initial volume of distribution for a substance administered by bolus intravascular dosing divided by the body mass index.
+C85493	C102373	Vol Dist Initial Norm by Dose	The initial volume of distribution for a substance administered by bolus intravascular dosing divided by the dose.
+C85493	C102374	Vol Dist Initial Norm by SA	The initial volume of distribution for a substance administered by bolus intravascular dosing divided by the surface area.
+C85493	C102375	Vol Dist Initial Norm by WT	The initial volume of distribution for a substance administered by bolus intravascular dosing divided by the weight.
+C85493	C102376	Nonrenal CL	The total clearance of a substance from the blood less the renal clearance.
+C85493	C102377	Vol Dist Steady State Obs Norm by BMI	The volume of distribution at steady state based on the observed CLST for a substance administered by intravascular dosing divided by the body mass index.
+C85493	C102378	Vol Dist Steady State Obs Norm by Dose	The volume of distribution at steady state based on the observed CLST for a substance administered by intravascular dosing divided by the dose.
+C85493	C102379	Vol Dist Steady State Obs Norm by SA	The volume of distribution at steady state based on the observed CLST for a substance administered by intravascular dosing divided by the surface area.
+C85493	C102380	Vol Dist Steady State Obs Norm by WT	The volume of distribution at steady state based on the observed CLST for a substance administered by intravascular dosing divided by the weight.
+C85493	C102381	Peak Trough Ratio	The maximum concentration during a dosing interval divided by the concentration at the end of the dosing interval.
+C85493	C102382	Pct Rec from T1 to T2	The percentage of the administered dose that is recovered from the specimen type specified in PPSPEC, over the interval between T1 and T2.
+C85493	C102383	Pct Rec from T1 to T2 Norm by BMI	The percentage of the administered dose that is recovered from the specimen type specified in PPSPEC, over the interval between T1 and T2 divided by body mass index.
+C85493	C102384	Pct Rec from T1 to T2 Norm by SA	The percentage of the administered dose that is recovered from the specimen type specified in PPSPEC, over the interval between T1 and T2 divided by surface area.
+C85493	C102385	Pct Rec from T1 to T2 Norm by WT	The percentage of the administered dose that is recovered from the specimen type specified in PPSPEC, over the interval between T1 and T2 divided by weight.
+C85493	C102386	Pct Rec Over Dosing Interval	The percentage of the administered dose that is recovered from the specimen type specified in PPSPEC, between doses (TAU).
+C85493	C102387	Pct Rec Over Dosing Interval Norm by BMI	The percentage of the administered dose that is recovered from the specimen type specified in PPSPEC, between doses (TAU) divided by the body mass index.
+C85493	C102388	Pct Rec Over Dosing Interval Norm by SA	The percentage of the administered dose that is recovered from the specimen type specified in PPSPEC, between doses (TAU) divided by surface area.
+C85493	C102389	Pct Rec Over Dosing Interval Norm by WT	The percentage of the administered dose that is recovered from the specimen type specified in PPSPEC, between doses (TAU) divided by weight.
+C85493	C102390	Vol Dist Steady State Pred Norm by BMI	The volume of distribution at steady state based on the predicted CLST for a substance administered by intravascular dosing divided by the body mass index.
+C85493	C102391	Vol Dist Steady State Pred Norm by Dose	The volume of distribution at steady state based on the predicted CLST for a substance administered by intravascular dosing divided by the dose.
+C85493	C102392	Vol Dist Steady State Pred Norm by SA	The volume of distribution at steady state based on the predicted CLST for a substance administered by intravascular dosing divided by the surface area.
+C85493	C102393	Vol Dist Steady State Pred Norm by WT	The volume of distribution at steady state based on the predicted CLST for a substance administered by intravascular dosing divided by the weight.
+C85493	C102394	Conc Trough	Concentration at end of dosing interval.
+C85493	C102395	Conc Trough by BMI	The trough concentration divided by body mass index.
+C85493	C102396	Conc Trough by Dose	The trough concentration divided by dose.
+C85493	C102397	Conc Trough by SA	The trough concentration divided by surface area.
+C85493	C102398	Conc Trough by WT	The trough concentration divided by weight.
+C85493	C102426	Accumulation Ratio Ctrough	The trough concentration at steady state divided by the trough concentration during the initial dosing interval.
+C85493	C102683	Vz Obs Norm by Dose	The volume of distribution associated with the terminal slope following intravascular administration, calculated using the observed value of the last non-zero concentration, divided by the dose.
+C85493	C102696	Vz Pred Norm by Dose	The volume of distribution associated with the terminal slope following intravascular administration, calculated using the predicted value of the last non-zero concentration, divided by the dose.
+C85493	C102729	Vz Obs by F Norm by Dose	The volume of distribution associated with the terminal slope following extravascular administration divided by the fraction of dose absorbed, calculated using the observed value of the last non-zero concentration, divided by the dose.
+C85493	C102730	Vz Pred by F Norm by Dose	The volume of distribution associated with the terminal slope following extravascular administration divided by the fraction of dose absorbed, calculated using the predicted value of the last non-zero concentration, divided by the dose.
+C85493	C105449	Excret Rate from T1 to T2	The excretion rate over the interval from T1 to T2, determined for the specimen type specified in PPSPEC.
+C85493	C105450	Excret Rate from T1 to T2 Norm by BMI	The excretion rate over the interval from T1 to T2 divided by the body mass index, determined for the specimen type specified in PPSPEC.
+C85493	C105451	Excret Rate from T1 to T2 Norm by Dose	The excretion rate over the interval from T1 to T2 divided by the dose, determined for the specimen type specified in PPSPEC.
+C85493	C105452	Excret Rate from T1 to T2 Norm by SA	The excretion rate over the interval from T1 to T2 divided by the surface area, determined for the specimen type specified in PPSPEC.
+C85493	C105453	Excret Rate from T1 to T2 Norm by WT	The excretion rate over the interval from T1 to T2 divided by the weight, determined for the specimen type specified in PPSPEC.
+C85493	C105454	Nonrenal CL Norm by BMI	The total clearance of a substance from the blood minus the renal clearance divided by the body mass index.
+C85493	C105455	Nonrenal CL Norm by Dose	The total clearance of a substance from the blood minus the renal clearance divided by the dose.
+C85493	C105456	Nonrenal CL Norm by SA	The total clearance of a substance from the blood minus the renal clearance divided by the surface area.
+C85493	C105457	Nonrenal CL Norm by WT	The total clearance of a substance from the blood minus the renal clearance divided by the weight.
+C85493	C105458	Renal CL Norm by BMI	The clearance of a substance from the blood by the kidneys divided by the body mass index.
+C85493	C105459	Renal CL Norm by Dose	The clearance of a substance from the blood by the kidneys divided by the dose.
+C85493	C105460	Renal CL Norm by SA	The clearance of a substance from the blood by the kidneys divided by the surface area.
+C85493	C105461	Renal CL Norm by WT	The clearance of a substance from the blood by the kidneys divided by the weight.
+C85493	C111333	Vz for Dose Int	The volume of distribution associated with the terminal slope following intravascular administration, calculated using AUCTAU.
+C85493	C111364	Vz for Dose Int by F	The volume of distribution associated with the terminal slope following extravascular administration divided by the fraction of dose absorbed, calculated using AUCTAU.
+C85493	C111365	Vz for Dose Int by F Norm by BMI	The volume of distribution associated with the terminal slope following extravascular administration divided by the fraction of dose absorbed, calculated using AUCTAU, divided by the body mass index.
+C85493	C111366	Vz for Dose Int by F Norm by Dose	The volume of distribution associated with the terminal slope following extravascular administration divided by the fraction of dose absorbed, calculated using AUCTAU, divided by the dose.
+C85493	C111367	Vz for Dose Int by F Norm by SA	The volume of distribution associated with the terminal slope following extravascular administration divided by the fraction of dose absorbed, calculated using AUCTAU, divided by the surface area.
+C85493	C111368	Vz for Dose Int by F Norm by WT	The volume of distribution associated with the terminal slope following extravascular administration divided by the fraction of dose absorbed, calculated using AUCTAU, divided by the weight.
+C85493	C111369	Vz for Dose Int Norm by BMI	The volume of distribution associated with the terminal slope following intravascular administration, calculated using AUCTAU, divided by the body mass index.
+C85493	C111370	Vz for Dose Int Norm by Dose	The volume of distribution associated with the terminal slope following intravascular administration, calculated using AUCTAU, divided by the dose.
+C85493	C111371	Vz for Dose Int Norm by SA	The volume of distribution associated with the terminal slope following intravascular administration, calculated using AUCTAU, divided by the surface area.
+C85493	C111372	Vz for Dose Int Norm by WT	The volume of distribution associated with the terminal slope following intravascular administration, calculated using AUCTAU, divided by the weight.
+C85493	C112032	Amt Rec Infinity Obs	The cumulative amount recovered from the specimen type specified in PPSPEC extrapolated to infinity, calculated using the observed value of the last non-zero concentration.
+C85493	C112033	Amt Rec Infinity Pred	The cumulative amount recovered from the specimen type specified in PPSPEC extrapolated to infinity, calculated using the predicted value of the last non-zero concentration.
+C85493	C112034	Pct Rec Infinity Obs	The percentage of the administered dose that is recovered from the specimen type specified in PPSPEC extrapolated to infinity, calculated using the observed value of the last non-zero concentration.
+C85493	C112035	Pct Rec Infinity Pred	The percentage of the administered dose that is recovered from the specimen type specified in PPSPEC extrapolated to infinity, calculated using the predicted value of the last non-zero concentration.
+C85493	C112223	Amt Rec Infinity Obs Norm by BMI	The cumulative amount recovered from the specimen type specified in PPSPEC extrapolated to infinity, calculated using the observed value of the last non-zero concentration, divided by the body mass index.
+C85493	C112224	Amt Rec Infinity Obs Norm by SA	The cumulative amount recovered from the specimen type specified in PPSPEC extrapolated to infinity, calculated using the observed value of the last non-zero concentration, divided by the surface area.
+C85493	C112225	Amt Rec Infinity Obs Norm by WT	The cumulative amount recovered from the specimen type specified in PPSPEC extrapolated to infinity, calculated using the observed value of the last non-zero concentration, divided by the weight.
+C85493	C112226	Amt Rec Infinity Pred Norm by BMI	The cumulative amount recovered from the specimen type specified in PPSPEC extrapolated to infinity, calculated using the predicted value of the last non-zero concentration, divided by the body mass index.
+C85493	C112227	Amt Rec Infinity Pred Norm by SA	The cumulative amount recovered from the specimen type specified in PPSPEC extrapolated to infinity, calculated using the predicted value of the last non-zero concentration, divided by the surface area.
+C85493	C112228	Amt Rec Infinity Pred Norm by WT	The cumulative amount recovered from the specimen type specified in PPSPEC extrapolated to infinity, calculated using the predicted value of the last non-zero concentration, divided by the weight.
+C85493	C112287	Hemodialysis Clearance	The clearance of a substance from the blood during a hemodialysis session.
+C85493	C112389	Pct Rec Infinity Obs Norm by BMI	The percentage of the administered dose that is recovered from the specimen type specified in PPSPEC extrapolated to infinity, calculated using the observed value of the last non-zero concentration, divided by the body mass index.
+C85493	C112390	Pct Rec Infinity Obs Norm by SA	The percentage of the administered dose that is recovered from the specimen type specified in PPSPEC extrapolated to infinity, calculated using the observed value of the last non-zero concentration, divided by the surface area.
+C85493	C112391	Pct Rec Infinity Obs Norm by WT	The percentage of the administered dose that is recovered from the specimen type specified in PPSPEC extrapolated to infinity, calculated using the observed value of the last non-zero concentration, divided by the weight.
+C85493	C112392	Pct Rec Infinity Pred Norm by BMI	The percentage of the administered dose that is recovered from the specimen type specified in PPSPEC extrapolated to infinity, calculated using the predicted value of the last non-zero concentration, divided by the body mass index.
+C85493	C112393	Pct Rec Infinity Pred Norm by SA	The percentage of the administered dose that is recovered from the specimen type specified in PPSPEC extrapolated to infinity, calculated using the predicted value of the last non-zero concentration, divided by the surface area.
+C85493	C112394	Pct Rec Infinity Pred Norm by WT	The percentage of the administered dose that is recovered from the specimen type specified in PPSPEC extrapolated to infinity, calculated using the predicted value of the last non-zero concentration, divided by the weight.
+C85493	C114121	Total CL by F for Dose Int	The total body clearance for extravascular administration divided by the fraction of dose absorbed, calculated using AUCTAU.
+C85493	C114122	Total CL for Dose Int	The total body clearance for intravascular administration, calculated using AUCTAU.
+C85493	C114226	Total CL by F for Dose Int Norm by Dose	The total body clearance for extravascular administration divided by the fraction of dose absorbed, calculated using AUCTAU, divided by the dose.
+C85493	C114227	Total CL by F for Dose Int Norm by BMI	The total body clearance for extravascular administration divided by the fraction of dose absorbed, calculated using AUCTAU, divided by the body mass index.
+C85493	C114228	Total CL by F for Dose Int Norm by SA	The total body clearance for extravascular administration divided by the fraction of dose absorbed, calculated using AUCTAU, divided by the surface area.
+C85493	C114229	Total CL by F for Dose Int Norm by WT	The total body clearance for extravascular administration divided by the fraction of dose absorbed, calculated using AUCTAU, divided by the weight.
+C85493	C114230	Total CL for Dose Int Norm by Dose	The total body clearance for intravascular administration, calculated using AUCTAU, divided by the dose.
+C85493	C114231	Total CL for Dose Int Norm by BMI	The total body clearance for intravascular administration, calculated using AUCTAU, divided by the body mass index.
+C85493	C114232	Total CL for Dose Int Norm by SA	The total body clearance for intravascular administration, calculated using AUCTAU, divided by the surface area.
+C85493	C114233	Total CL for Dose Int Norm by WT	The total body clearance for intravascular administration, calculated using AUCTAU, divided by the weight.
+C85493	C114234	Accumulation Index using Lambda z	Predicted accumulation ratio for area under the curve (AUC) calculated using the Lambda z estimated from single dose data.
+C85493	C116213	Hemodialysis Extraction Ratio	The fractional content of a substance removed from the blood during a hemodialysis session.
+C85493	C120723	Mean Absorption Time	Mean absorption time of a substance administered by extravascular dosing.
+C85493	C120724	MRT Extravasc Infinity Obs	The mean residence time (MRT) extrapolated to infinity for a substance administered by extravascular dosing, calculated using the observed value of the last non-zero concentration. Extravascular MRT includes Mean Absorption Time (MAT).
+C85493	C120725	MRT Extravasc Infinity Pred	The mean residence time (MRT) extrapolated to infinity for a substance administered by extravascular dosing, calculated using the predicted value of the last non-zero concentration. Extravascular MRT includes Mean Absorption Time (MAT).
+C85493	C120726	MRT Extravasc to Last Nonzero Conc	Mean residence time (MRT) from the time of dosing to the time of the last measurable concentration for a substance administered by extravascular dosing. Extravascular MRT includes Mean Absorption Time (MAT).
+C85493	C121134	MRT Intravasc Infinity Obs	The mean residence time (MRT) extrapolated to infinity for a substance administered by intravascular dosing, calculated using the observed value of the last non-zero concentration.
+C85493	C121136	MRT Intravasc Infinity Pred	The mean residence time (MRT) extrapolated to infinity for a substance administered by intravascular dosing, calculated using the predicted value of the last non-zero concentration.
+C85493	C121137	MRT Intravasc to Last Nonzero Conc	Mean residence time (MRT) from the time of dosing to the time of the last measurable concentration, for a substance administered by intravascular dosing.
+C85493	C122049	Renal CL from T1 to T2	The clearance of a substance from the blood by the kidneys over the interval from T1 to T2.
+C85493	C122050	Renal CL for Dose Int	The clearance of a substance from the blood by the kidneys, calculated using AUCTAU.
+C85493	C122329	Accumulation Ratio AUC from T1 to T2	The area under the curve from T1 to T2 at steady state divided by the area under the curve from T1 to T2 during the initial dosing interval.
+C85493	C122330	Renal CL from T1 to T2 Norm by BMI	The clearance of a substance from the blood by the kidneys over the interval from T1 to T2 divided by the body mass index.
+C85493	C122331	Renal CL from T1 to T2 Norm by Dose	The clearance of a substance from the blood by the kidneys over the interval from T1 to T2 divided by the dose.
+C85493	C122332	Renal CL from T1 to T2 Norm by SA	The clearance of a substance from the blood by the kidneys over the interval from T1 to T2 divided by the surface area.
+C85493	C122333	Renal CL from T1 to T2 Norm by WT	The clearance of a substance from the blood by the kidneys over the interval from T1 to T2 divided by the weight.
+C85493	C122334	Renal CL for Dose Int Norm by BMI	The clearance of a substance from the blood by the kidneys, calculated using AUCTAU, divided by the body mass index.
+C85493	C122335	Renal CL for Dose Int Norm by Dose	The clearance of a substance from the blood by the kidneys, calculated using AUCTAU, divided by the dose.
+C85493	C122336	Renal CL for Dose Int Norm by SA	The clearance of a substance from the blood by the kidneys, calculated using AUCTAU, divided by the surface area.
+C85493	C122337	Renal CL for Dose Int Norm by WT	The clearance of a substance from the blood by the kidneys, calculated using AUCTAU, divided by the weight.
+C85493	C122338	Stationarity Ratio AUC	The area under the curve (AUCTAU) at steady state divided by the area under the curve extrapolated to infinity for the initial dosing interval.
+C85493	C122339	Trough Peak Ratio	The concentration at the start of a dosing interval divided by the maximum concentration during the dosing interval.
+C85493	C200002	Unassigned	PK parameter has not yet been assigned.
+C85493	C200003	Unknown	PK parameter is unknown.
+C85493	C41185	Concentration	The quantity of a specified substance in a unit volume or weight of another substance.
+C85493	C70918	Max Conc	The maximum concentration occurring at Tmax.
+C85493	C70919	Time of CMAX	The time of maximum observed concentration sampled during a dosing interval.
+C85493	C75913	Renal CL	The clearance of a substance from the blood by the kidneys.
+C85493	C85542	R Squared	The goodness of fit statistic for the terminal elimination phase.
+C85493	C85553	R Squared Adjusted	The goodness of fit statistic for the terminal elimination phase, adjusted for the number of time points used in the estimation of Lambda z.
+C85493	C85564	AUC All	The area under the curve (AUC) from the time of dosing to the time of the last observation, regardless of whether the last concentration is measurable or not.
+C85493	C85565	AUC to Last Nonzero Conc	The area under the curve (AUC) from the time of dosing to the last measurable concentration.
+C85493	C85566	AUC from T1 to T2	The area under the curve (AUC) over the interval from T1 to T2.
+C85493	C85567	AUC Over Dosing Interval	The area under the curve (AUC) for the defined interval between doses (TAU).
+C85493	C85569	AUMC to Last Nonzero Conc	The area under the moment curve (AUMC) from the time of dosing to the last measurable concentration.
+C85493	C85570	AUMC Over Dosing Interval	The area under the first moment curve (AUMC) for the defined interval between doses (TAU).
+C85493	C85571	AURC to Last Nonzero Rate	The area under the urinary excretion rate curve (AURC) from time zero to the time of the last measurable concentration.
+C85493	C85572	AURC from T1 to T2	The area under the urinary excretion rate curve (AURC) over the interval from T1 to T2.
+C85493	C85575	Average Concentration	AUCTAU divided by TAU.
+C85493	C85579	Min Conc	The minimum concentration between dose time and dose time plus Tau (at Tmin).
+C85493	C85580	Midpoint of Interval of Last Nonzero ER	The midpoint of collection interval associated with last measurable excretion rate.
+C85493	C85581	Fluctuation%	The difference between Cmin and Cmax standardized to Cavg, between dose time and Tau.
+C85493	C85644	Initial Conc	Initial concentration. Given only for bolus IV models.
+C85493	C85652	Lambda z	The first order rate constant associated with the terminal (log-linear) portion of the curve.
+C85493	C85653	Lambda z Lower Limit	The lower limit on time for values to be included in the calculation of Lambda z.
+C85493	C85654	Lambda z Upper Limit	The upper limit on time for values to be included in the calculation of Lambda z.
+C85493	C85655	Last Nonzero Conc	The concentration corresponding to Tlast.
+C85493	C85656	Last Meas Excretion Rate	The last measurable (positive) excretion rate determined for the specimen type specified in PPSPEC.
+C85493	C85698	Max Conc Norm by Dose	The maximum concentration occurring at Tmax, divided by the dose.
+C85493	C85699	Max Excretion Rate	The maximum excretion rate determined for the specimen type specified in PPSPEC.
+C85493	C85761	AUC Infinity Obs	The area under the curve (AUC) extrapolated to infinity, calculated using the observed value of the last non-zero concentration.
+C85493	C85763	AUC %Back Extrapolation Obs	Applies only for intravascular bolus dosing. The area under the curve (AUC) from the first measured concentration value back extrapolated to the concentration value at time zero as a percentage of the area under the curve extrapolated to infinity using the observed value of the last non-zero concentration.
+C85493	C85764	AUC %Extrapolation Obs	The area under the curve (AUC) from the last observed non-zero concentration value to infinity as a percentage of the area under the curve extrapolated to infinity.
+C85493	C85765	AUMC Infinity Obs	The area under the moment curve (AUMC) extrapolated to infinity, calculated using the observed value of the last non-zero concentration.
+C85493	C85766	AUMC % Extrapolation Obs	The area under the moment curve (AUMC) from the last observed non-zero concentration value to infinity as a percentage of the area under the moment curve extrapolated to infinity.
+C85493	C85767	AURC Infinity Obs	The area under the urinary excretion rate curve (AURC) extrapolated to infinity, calculated using the observed value of the last excretion rate.
+C85493	C85768	AURC % Extrapolation Obs	The area under the urinary excretion rate curve (AURC) from the last observed non-zero rate value to infinity as a percentage of the area under the urinary excretion rate curve extrapolated to infinity.
+C85493	C85770	Vol Dist Steady State Obs	The volume of distribution at steady state based on the observed CLST for a substance administered by intravascular dosing.
+C85493	C85772	Total CL Obs by F	The total body clearance for extravascular administration divided by the fraction of dose absorbed, calculated using the observed value of the last non-zero concentration.
+C85493	C85773	Total CL Obs	The total body clearance for intravascular administration, calculated using the observed value of the last non-zero concentration.
+C85493	C85774	Vz Obs	The volume of distribution associated with the terminal slope following intravascular administration, calculated using the observed value of the last non-zero concentration.
+C85493	C85775	Vz Obs by F	The volume of distribution associated with the terminal slope following extravascular administration divided by the fraction of dose absorbed, calculated using the observed value of the last non-zero concentration.
+C85493	C85785	AUC Infinity Pred	The area under the curve (AUC) extrapolated to infinity, calculated using the predicted value of the last non-zero concentration.
+C85493	C85786	AUC Infinity Pred Norm by Dose	The area under the curve (AUC) extrapolated to infinity, calculated using the predicted value of the last non-zero concentration, divided by the dose.
+C85493	C85787	AUC %Back Extrapolation Pred	Applies only for intravascular bolus dosing. The area under the curve (AUC) from the first measured concentration value back extrapolated to the concentration value at time zero as a percentage of the area under the curve extrapolated to infinity using the predicted value of the last non-zero concentration.
+C85493	C85788	AUC %Extrapolation Pred	The area under the curve (AUC) from the last predicted non-zero concentration value to infinity as a percentage of the area under the curve extrapolated to infinity.
+C85493	C85789	AUMC Infinity Pred	The area under the moment curve (AUMC) extrapolated to infinity, calculated using the predicted value of the last non-zero concentration.
+C85493	C85790	AUMC % Extrapolation Pred	The area under the moment curve (AUMC) from the last predicted non-zero concentration value to infinity as a percentage of the area under the moment curve extrapolated to infinity.
+C85493	C85791	AURC Infinity Pred	The area under the urinary excretion rate curve (AURC) extrapolated to infinity, calculated using the predicted value of the last non-zero excretion rate.
+C85493	C85792	AURC % Extrapolation Pred	The area under the urinary excretion rate curve (AURC) from the last predicted non-zero rate value to infinity as a percentage of the area under the urinary excretion rate curve extrapolated to infinity.
+C85493	C85794	Vol Dist Steady State Pred	The volume of distribution at steady state based on the predicted CLST for a substance administered by intravascular dosing.
+C85493	C85796	Total CL Pred by F	The total body clearance for extravascular administration divided by the fraction of dose absorbed, calculated using the predicted value of the last non-zero concentration.
+C85493	C85797	Total CL Pred	The total body clearance for intravascular administration, calculated using the predicted value of the last non-zero concentration.
+C85493	C85798	Vz Pred	The volume of distribution associated with the terminal slope following intravascular administration, calculated using the predicted value of the last non-zero concentration.
+C85493	C85799	Vz Pred by F	The volume of distribution associated with the terminal slope following extravascular administration divided by the fraction of dose absorbed, calculated using the predicted value of the last non-zero concentration.
+C85493	C85816	Number of Points for Lambda z	The number of time points used in computing Lambda z.
+C85493	C85817	Sum of Urine Vol	The sum of urine volumes that are used for PK parameters.
+C85493	C85818	Half-Life Lambda z	Terminal half-life.
+C85493	C85821	Correlation Between TimeX and Log ConcY	The correlation between time (X) and log concentration (Y) for the points used in the estimation of lambda z.
+C85493	C85822	Time of Last Nonzero Conc	The time of the last measurable (positive) concentration.
+C85493	C85823	Midpoint of Interval of Maximum ER	The midpoint of collection interval associated with the maximum excretion rate.
+C85493	C85824	Time Until First Nonzero Conc	The time prior to the first measurable (non-zero) concentration.
+C85493	C85825	Time of CMIN Observation	The time of minimum concentration sampled during a dosing interval.
+C85493	C85841	AURC All	The area under the urinary excretion rate curve (AURC) from time zero to the time of the last observation, regardless of whether the last observation is a measurable concentration or not.
+C85493	C92305	AUC to Last Nonzero Conc Norm by WT	The area under the curve (AUC) from the time of dosing to the last measurable concentration divided by the weight.
+C85493	C92306	AUC All Norm by Dose	The area under the curve (AUC) from the time of dosing to the time of the last observation divided by the dose, regardless of whether the last concentration is measurable or not.
+C85493	C92307	AUC All Norm by SA	The area under the curve (AUC) from the time of dosing to the time of the last observation divided by the surface area, regardless of whether the last concentration is measurable or not.
+C85493	C92308	AUC All Norm by WT	The area under the curve (AUC) from the time of dosing to the time of the last observation divided by the weight, regardless of whether the last concentration is measurable or not.
+C85493	C92309	AUC to Last Nonzero Conc Norm by BMI	The area under the curve (AUC) from the time of dosing to the last measurable concentration divided by the body mass index.
+C85493	C92310	AUC to Last Nonzero Conc Norm by Dose	The area under the curve (AUC) from the time of dosing to the last measurable concentration divided by the dose.
+C85493	C92311	AUC to Last Nonzero Conc Norm by SA	The area under the curve (AUC) from the time of dosing to the last measurable concentration divided by the surface area.
+C85493	C92312	AUC from T1 to T2 Norm by BMI	The area under the curve (AUC) over the interval from T1 to T2 divided by the body mass index.
+C85493	C92313	AUC from T1 to T2 Norm by Dose	The area under the curve (AUC) over the interval from T1 to T2 divided by the dose.
+C85493	C92314	AUC from T1 to T2 Norm by SA	The area under the curve (AUC) over the interval from T1 to T2 divided by the surface area.
+C85493	C92315	AUC from T1 to T2 Norm by WT	The area under the curve (AUC) over the interval from T1 to T2 divided by the weight.
+C85493	C92316	AUC Infinity Obs Norm by BMI	The area under the curve (AUC) extrapolated to infinity, calculated using the observed value of the last non-zero concentration, divided by the body mass index.
+C85493	C92317	AUC Infinity Obs Norm by SA	The area under the curve (AUC) extrapolated to infinity, calculated using the observed value of the last non-zero concentration, divided by the surface area.
+C85493	C92318	AUC Infinity Obs Norm by WT	The area under the curve (AUC) extrapolated to infinity, calculated using the observed value of the last non-zero concentration, divided by the weight.
+C85493	C92319	AUC Infinity Pred Norm by BMI	The area under the curve (AUC) extrapolated to infinity, calculated using the predicted value of the last non-zero concentration, divided by the body mass index.
+C85493	C92320	AUC Infinity Pred Norm by SA	The area under the curve (AUC) extrapolated to infinity, calculated using the predicted value of the last non-zero concentration, divided by the surface area.
+C85493	C92321	AUC Infinity Pred Norm by WT	The area under the curve (AUC) extrapolated to infinity, calculated using the predicted value of the last non-zero concentration, divided by the weight.
+C85493	C92322	AUC Over Dosing Interval Norm by BMI	The area under the curve (AUC) for the defined interval between doses (TAU) divided by the body mass index.
+C85493	C92323	AUC Over Dosing Interval Norm by Dose	The area under the curve (AUC) for the defined interval between doses (TAU) divided by the dose.
+C85493	C92324	AUC Over Dosing Interval Norm by SA	The area under the curve (AUC) for the defined interval between doses (TAU) divided by the surface area.
+C85493	C92325	AUC Over Dosing Interval Norm by WT	The area under the curve (AUC) for the defined interval between doses (TAU) divided by the weight.
+C85493	C92326	AUMC to Last Nonzero Conc Norm by BMI	The area under the moment curve (AUMC) from the time of dosing to the last measurable concentration divided by the body mass index.
+C85493	C92327	AUMC to Last Nonzero Conc Norm by Dose	The area under the moment curve (AUMC) from the time of dosing to the last measurable concentration divided by the dose.
+C85493	C92328	AUMC to Last Nonzero Conc Norm by SA	The area under the moment curve (AUMC) from the time of dosing to the last measurable concentration divided by the surface area.
+C85493	C92329	AUMC to Last Nonzero Conc Norm by WT	The area under the moment curve (AUMC) from the time of dosing to the last measurable concentration divided by the weight.
+C85493	C92330	AUMC Infinity Obs Norm by BMI	The area under the moment curve (AUMC) extrapolated to infinity, calculated using the observed value of the last non-zero concentration, divided by the body mass index.
+C85493	C92331	AUMC Infinity Obs Norm by Dose	The area under the moment curve (AUMC) extrapolated to infinity, calculated using the observed value of the last non-zero concentration, divided by the dose.
+C85493	C92332	AUMC Infinity Obs Norm by SA	The area under the moment curve (AUMC) extrapolated to infinity, calculated using the observed value of the last non-zero concentration, divided by the surface area.
+C85493	C92333	AUMC Infinity Obs Norm by WT	The area under the moment curve (AUMC) extrapolated to infinity, calculated using the observed value of the last non-zero concentration, divided by the weight.
+C85493	C92334	AUMC Infinity Pred Norm by BMI	The area under the moment curve (AUMC) extrapolated to infinity, calculated using the predicted value of the last non-zero concentration, divided by the body mass index.
+C85493	C92335	AUMC Infinity Pred Norm by Dose	The area under the moment curve (AUMC) extrapolated to infinity, calculated using the predicted value of the last non-zero concentration, divided by the dose.
+C85493	C92336	AUMC Infinity Pred Norm by SA	The area under the moment curve (AUMC) extrapolated to infinity, calculated using the predicted value of the last non-zero concentration, divided by the surface area.
+C85493	C92337	AUMC Infinity Pred Norm by WT	The area under the moment curve (AUMC) extrapolated to infinity, calculated using the predicted value of the last non-zero concentration, divided by the weight.
+C85493	C92338	AUMC Over Dosing Interval Norm by BMI	The area under the first moment curve (AUMC) for the defined interval between doses (TAU) divided by the body mass index.
+C85493	C92339	AUMC Over Dosing Interval Norm by Dose	The area under the first moment curve (AUMC) for the defined interval between doses (TAU) divided by the dose.
+C85493	C92340	AUMC Over Dosing Interval Norm by SA	The area under the first moment curve (AUMC) for the defined interval between doses (TAU) divided by the surface area.
+C85493	C92341	AUMC Over Dosing Interval Norm by WT	The area under the first moment curve (AUMC) for the defined interval between doses (TAU) divided by the weight.
+C85493	C92342	AURC All Norm by BMI	The area under the urinary excretion rate curve (AURC) from time zero to the last measurable rate divided by the body mass index.
+C85493	C92343	AURC All Norm by Dose	The area under the urinary excretion rate curve (AURC) from time zero to the last measurable rate divided by the dose.
+C85493	C92344	AURC All Norm by SA	The area under the urinary excretion rate curve (AURC) from time zero to the last measurable rate divided by the surface area.
+C85493	C92345	AURC All Norm by WT	The area under the urinary excretion rate curve (AURC) from time zero to the last measurable rate divided by the weight.
+C85493	C92346	AURC Dosing to Last Conc Norm by BMI	The area under the urinary excretion rate curve (AURC) from time zero to the last measurable rate, divided by the body mass index.
+C85493	C92347	AURC Dosing to Last Conc Norm by Dose	The area under the urinary excretion rate curve (AURC) from time zero to the last measurable rate, divided by the dose.
+C85493	C92348	AURC Dosing to Last Conc Norm by SA	The area under the urinary excretion rate curve (AURC) from time zero to the last measurable rate, divided by the surface area.
+C85493	C92349	AURC Dosing to Last Conc Norm by WT	The area under the urinary excretion rate curve (AURC) from time zero to the last measurable rate, divided by the weight.
+C85493	C92350	AURC from T1 to T2 Norm by BMI	The area under the urinary excretion rate curve (AURC) over the interval from T1 to T2 divided by the body mass index.
+C85493	C92351	AURC from T1 to T2 Norm by Dose	The area under the urinary excretion rate curve (AURC) over the interval from T1 to T2 divided by the dose.
+C85493	C92352	AURC from T1 to T2 Norm by SA	The area under the urinary excretion rate curve (AURC) over the interval from T1 to T2 divided by the surface area.
+C85493	C92353	AURC from T1 to T2 Norm by WT	The area under the urinary excretion rate curve (AURC) over the interval from T1 to T2 divided by the weight.
+C85493	C92354	AURC Infinity Obs Norm by BMI	The area under the urinary excretion rate curve (AURC) extrapolated to infinity, calculated using the observed value of the last excretion rate, divided by the body mass index.
+C85493	C92355	AURC Infinity Obs Norm by Dose	The area under the urinary excretion rate curve (AURC) extrapolated to infinity, calculated using the observed value of the last excretion rate, divided by the dose.
+C85493	C92356	AURC Infinity Obs Norm by SA	The area under the urinary excretion rate curve (AURC) extrapolated to infinity, calculated using the observed value of the last excretion rate, divided by the surface area.
+C85493	C92357	AURC Infinity Obs Norm by WT	The area under the urinary excretion rate curve (AURC) extrapolated to infinity, calculated using the observed value of the last excretion rate, divided by the weight.
+C85493	C92358	AURC Infinity Pred Norm by BMI	The area under the urinary excretion rate curve (AURC) extrapolated to infinity, calculated using the predicted value of the last non-zero excretion rate, divded by the body mass index.
+C85493	C92359	AURC Infinity Pred Norm by Dose	The area under the urinary excretion rate curve (AURC) extrapolated to infinity, calculated using the predicted value of the last non-zero excretion rate, divded by the dose.
+C85493	C92360	AURC Infinity Pred Norm by SA	The area under the urinary excretion rate curve (AURC) extrapolated to infinity, calculated using the predicted value of the last non-zero excretion rate, divded by the surface area.
+C85493	C92361	AURC Infinity Pred Norm by WT	The area under the urinary excretion rate curve (AURC) extrapolated to infinity, calculated using the predicted value of the last non-zero excretion rate, divded by the weight.
+C85493	C92362	AUC All Norm by BMI	The area under the curve (AUC) from the time of dosing to the time of the last observation divided by the body mass index, regardless of whether the last concentration is measurable or not.
+C85493	C92367	Average Conc Norm by BMI	AUCTAU divided by TAU and then divided by the body mass index.
+C85493	C92368	Average Conc Norm by Dose	AUCTAU divided by TAU and then divided by the dose.
+C85493	C92369	Average Conc Norm by SA	AUCTAU divided by TAU and then divided by the surface area.
+C85493	C92370	Average Conc Norm by WT	AUCTAU divided by TAU and then divided by the weight.
+C85493	C92371	Max Conc Norm by BMI	The maximum concentration occurring at Tmax, divided by the body mass index.
+C85493	C92372	Max Conc Norm by SA	The maximum concentration occurring at Tmax, divided by the surface area.
+C85493	C92373	Max Conc Norm by WT	The maximum concentration occurring at Tmax, divided by the weight.
+C85493	C92374	Min Conc Norm by BMI	The minimum concentration between dose time and dose time plus Tau (at Tmin) divided by the body mass index.
+C85493	C92375	Min Conc Norm by Dose	The minimum concentration between dose time and dose time plus Tau (at Tmin) divided by the dose.
+C85493	C92376	Min Conc Norm by SA	The minimum concentration between dose time and dose time plus Tau (at Tmin) divided by the surface area.
+C85493	C92377	Min Conc Norm by WT	The minimum concentration between dose time and dose time plus Tau (at Tmin) divided by the weight.
+C85493	C92383	Initial Conc Norm by BMI	Initial concentration divided by the body mass index. Given only for bolus IV models.
+C85493	C92384	Initial Conc Norm by Dose	Initial concentration divided by the dose. Given only for bolus IV models.
+C85493	C92385	Initial Conc Norm by SA	Initial concentration divided by the surface area. Given only for bolus IV models.
+C85493	C92386	Initial Conc Norm by WT	Initial concentration divided by the weight. Given only for bolus IV models.
+C85493	C92387	Last Nonzero Conc Norm by BMI	The concentration corresponding to Tlast divided by the body mass index.
+C85493	C92388	Last Nonzero Conc Norm by Dose	The concentration corresponding to Tlast divided by the dose.
+C85493	C92389	Last Nonzero Conc Norm by SA	The concentration corresponding to Tlast divided by the surface area.
+C85493	C92390	Last Nonzero Conc Norm by WT	The concentration corresponding to Tlast divided by the weight.
+C85493	C92391	Last Meas Excretion Rate Norm by BMI	The last measurable (positive) excretion rate divided by the body mass index.
+C85493	C92392	Last Meas Excretion Rate Norm by Dose	The last measurable (positive) excretion rate divided by the dose.
+C85493	C92393	Last Meas Excretion Rate Norm by SA	The last measurable (positive) excretion rate divided by the surface area.
+C85493	C92394	Last Meas Excretion Rate Norm by WT	The last measurable (positive) excretion rate divided by the weight.
+C85493	C92395	Max Excretion Rate Norm by BMI	The maximum excretion rate divided by the body mass index.
+C85493	C92396	Max Excretion Rate Norm by Dose	The maximum excretion rate divided by the dose.
+C85493	C92397	Max Excretion Rate Norm by SA	The maximum excretion rate divided by the surface area.
+C85493	C92398	Max Excretion Rate Norm by WT	The maximum excretion rate divided by the weight.
+C85493	C92399	Total CL Obs by F Norm by BMI	The total body clearance for extravascular administration divided by the fraction of dose absorbed, calculated using the observed value of the last non-zero concentration, divided by the body mass index.
+C85493	C92400	Total CL Obs by F Norm by Dose	The total body clearance for extravascular administration divided by the fraction of dose absorbed, calculated using the observed value of the last non-zero concentration, divided by the dose.
+C85493	C92401	Total CL Obs by F Norm by SA	The total body clearance for extravascular administration divided by the fraction of dose absorbed, calculated using the observed value of the last non-zero concentration, divided by the surface area.
+C85493	C92402	Total CL Obs by F Norm by WT	The total body clearance for extravascular administration divided by the fraction of dose absorbed, calculated using the observed value of the last non-zero concentration, divided by the weight.
+C85493	C92403	Total CL Obs Norm by BMI	The total body clearance for intravascular administration, calculated using the observed value of the last non-zero concentration, divided by the body mass index.
+C85493	C92404	Total CL Obs Norm by Dose	The total body clearance for intravascular administration, calculated using the observed value of the last non-zero concentration, divided by the dose.
+C85493	C92405	Total CL Obs Norm by SA	The total body clearance for intravascular administration, calculated using the observed value of the last non-zero concentration, divided by the surface area.
+C85493	C92406	Total CL Obs Norm by WT	The total body clearance for intravascular administration, calculated using the observed value of the last non-zero concentration, divided by the weight.
+C85493	C92407	Vz Obs Norm by BMI	The volume of distribution associated with the terminal slope following intravascular administration, calculated using the observed value of the last non-zero concentration, divided by the body mass index.
+C85493	C92408	Vz Obs Norm by SA	The volume of distribution associated with the terminal slope following intravascular administration, calculated using the observed value of the last non-zero concentration, divided by the surface area.
+C85493	C92409	Vz Obs Norm by WT	The volume of distribution associated with the terminal slope following intravascular administration, calculated using the observed value of the last non-zero concentration, divided by the weight.
+C85493	C92410	Vz Obs by F Norm by BMI	The volume of distribution associated with the terminal slope following extravascular administration divided by the fraction of dose absorbed, calculated using the observed value of the last non-zero concentration, divided by the body mass index.
+C85493	C92411	Vz Obs by F Norm by SA	The volume of distribution associated with the terminal slope following extravascular administration divided by the fraction of dose absorbed, calculated using the observed value of the last non-zero concentration, divided by the surface area.
+C85493	C92412	Vz Obs by F Norm by WT	The volume of distribution associated with the terminal slope following extravascular administration divided by the fraction of dose absorbed, calculated using the observed value of the last non-zero concentration, divided by the weight.
+C85493	C92417	Total CL Pred by F Norm by BMI	The total body clearance for extravascular administration divided by the fraction of dose absorbed, calculated using the predicted value of the last non-zero concentration, divided by body mass index.
+C85493	C92418	Total CL Pred by F Norm by Dose	The total body clearance for extravascular administration divided by the fraction of dose absorbed, calculated using the predicted value of the last non-zero concentration, divided by the dose.
+C85493	C92419	Total CL Pred by F Norm by SA	The total body clearance for extravascular administration divided by the fraction of dose absorbed, calculated using the predicted value of the last non-zero concentration, divided by the surface area.
+C85493	C92420	Total CL Pred by F Norm by WT	The total body clearance for extravascular administration divided by the fraction of dose absorbed, calculated using the predicted value of the last non-zero concentration, divided by the weight.
+C85493	C92421	Total CL Pred Norm by BMI	The total body clearance for intravascular administration, calculated using the predicted value of the last non-zero concentration, divided by the body mass index.
+C85493	C92422	Total CL Pred Norm by Dose	The total body clearance for intravascular administration, calculated using the predicted value of the last non-zero concentration, divided by the dose.
+C85493	C92423	Total CL Pred Norm by SA	The total body clearance for intravascular administration, calculated using the predicted value of the last non-zero concentration, divided by the surface area.
+C85493	C92424	Total CL Pred Norm by WT	The total body clearance for intravascular administration, calculated using the predicted value of the last non-zero concentration, divided by the weight.
+C85493	C92425	Vz Pred Norm by BMI	The volume of distribution associated with the terminal slope following intravascular administration, calculated using the predicted value of the last non-zero concentration, divided by the body mass index.
+C85493	C92426	Vz Pred Norm by SA	The volume of distribution associated with the terminal slope following intravascular administration, calculated using the predicted value of the last non-zero concentration, divided by the surface area.
+C85493	C92427	Vz Pred Norm by WT	The volume of distribution associated with the terminal slope following intravascular administration, calculated using the predicted value of the last non-zero concentration, divided by the weight.
+C85493	C92428	Vz Pred by F Norm by BMI	The volume of distribution associated with the terminal slope following extravascular administration divided by the fraction of dose absorbed, calculated using the predicted value of the last non-zero concentration, divided by the body mass index.
+C85493	C92429	Vz Pred by F Norm by SA	The volume of distribution associated with the terminal slope following extravascular administration divided by the fraction of dose absorbed, calculated using the predicted value of the last non-zero concentration, divided by the surface area.
+C85493	C92430	Vz Pred by F Norm by WT	The volume of distribution associated with the terminal slope following extravascular administration divided by the fraction of dose absorbed, calculated using the predicted value of the last non-zero concentration, divided by the weight.
+C85493	C95007	Effective Half-Life	The drug half-life that quantifies the accumulation ratio of a drug following multiple dosing.
+C85493	C96695	AUC Infinity Obs Norm by Dose	The area under the curve (AUC) extrapolated to infinity, calculated using the observed value of the last non-zero concentration, divided by the dose.
+C85493	PKPARM:2000307	Concentration at t=0	Concentration of analyte prior to dosing at T=0 (observed or extrapolated)
+C85493	PKPARM:2000309	Concentration at T=24hr	concentration of analyte at 24 hours post administration. For a qd dosing regimen this term corresponds to c trough (not at ss)
+C85493	PKPARM:2000311	AUC all, unbound	The area under the curve (AUC) from the time of dosing to the time of the last observation, regardless of whether the last concentration is measurable or not. Calculation based on free (unbound) concentrations of analyte
+C85493	PKPARM:2000313	AUC ratio male/female	The area under the curve (AUC) from the time of dosing to the time of the last observation, regardless of whether the last concentration is measurable or not. AUCs compared between males and females
+C85493	PKPARM:2000315	exposure	The ratio (male/female) of time of maximum observed concentration sampled during a dosing interval
+C85493	PKPARM:2000317	time of sampling	time of sampling from plasma or tissue after dosing
+C85493	PKPARM:2000319	Dose	administered dose (mg/kg) irrespective of route of administration
+C85493	PKPARM:2000321	renal excretion	Amount of drug related material excreted renally (urine) relative to administered dose
+C85493	PKPARM:2000323	Exposure ratio drug/ metabolite	The area under the curve (AUC) for parent drug vs a given metabolite from the time of dosing to the time of the last observation, regardless of whether the last concentration is measurable or not
+C85493	PKPARM:2000325	tissue/plasma ratio	concentration ratio for any given tissue and plasma at given time point or at tmax
+C85493	PKPARM:2000327	bioavailability	Dose normalized exposure ratio of drug as calculated by AUC obtained after dosing via a particular route (oral, inhalation, nasal, etc.) divided by observed AUC after respective iv administration
+C85493	PKPARM:2000559	Cmax ratio male/female	The ratio of the maximal concentrations as observed in the concentration-time profile for males versus females
+C85493	PKPARM:2000729	tissue concentration	Concentration of an analyte in a tissue other then blood or plsama
+C85493	PKPARM:2000731	Tissue Cmax	Maximun concentration as observed in a tiisue (not blood, plasma, serum)
+C85493	PKPARM:2000733	Tissue AUC	The area below the time-concentration profile as observed in a tissue between t1 and t2

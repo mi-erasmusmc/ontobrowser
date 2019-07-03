@@ -1,0 +1,27 @@
+format-version: 1.2
+data-version: 1
+date: 29:01:2018 01:11
+auto-generated-by: OntoBrowser Export Service
+
+[Term]
+id: terms:066732
+name: terms_C66732
+
+[Term]
+id: terms:016576
+name: F
+def: "A person who belongs to the sex that normally produces ova. The term is used to indicate biological sex distinctions, or cultural gender role distinctions, or both. (NCI)"[]
+is_a: terms:066732 ! terms_C66732
+
+[Term]
+id: terms:020197
+name: M
+def: "A person who belongs to the sex that normally produces sperm. The term is used to indicate biological sex distinctions, cultural gender role distinctions, or both. (NCI)"[]
+is_a: terms:066732 ! terms_C66732
+
+[Term]
+id: terms:049636
+name: BOTH
+def: "One and the other; relating to or being two in conjunction. (NCI)"[]
+is_a: terms:066732 ! terms_C66732
+

@@ -1,0 +1,171 @@
+format-version: 1.2
+data-version: 1
+date: 29:01:2018 01:11
+auto-generated-by: OntoBrowser Export Service
+
+[Term]
+id: terms:077808
+name: terms_C77808
+
+[Term]
+id: terms:014191
+name: CAT
+def: "The domestic cat, Felis catus. (NCI)"[]
+is_a: terms:077808 ! terms_C77808
+
+[Term]
+id: terms:014192
+name: BOVINE
+def: "The domesticated ungulates, Bos primigenius taurus and Bos primigenius indicus."[]
+is_a: terms:077808 ! terms_C77808
+
+[Term]
+id: terms:014193
+name: CHICKEN
+def: "The common domestic fowl, Gallus gallus. (NCI)"[]
+is_a: terms:077808 ! terms_C77808
+
+[Term]
+id: terms:014201
+name: DOG
+def: "The domestic dog, Canis familiaris. (NCI)"[]
+is_a: terms:077808 ! terms_C77808
+
+[Term]
+id: terms:014207
+name: FISH
+def: "Any jawed or jawless organisms in the phylum Chordata including the jawless fish, armored fish, cartilaginous fish, ray-finned fish and lobe-finned fish."[]
+is_a: terms:077808 ! terms_C77808
+
+[Term]
+id: terms:014210
+name: GOAT
+def: "Any one of several species in the genus Capra, most commonly Capra hircus."[]
+is_a: terms:077808 ! terms_C77808
+
+[Term]
+id: terms:014211
+name: GUINEA PIG
+def: "The domesticated guinea pig, Cavia porcellus. (NCI)"[]
+is_a: terms:077808 ! terms_C77808
+
+[Term]
+id: terms:014212
+name: HAMSTER
+def: "Any member of the subfamily cricetinae and the genuses Mesocricetus, Phodopus, Cricetus, Cricetulus, Allocricetulus, Cansumys and Tscherskia."[]
+is_a: terms:077808 ! terms_C77808
+
+[Term]
+id: terms:014222
+name: HORSE
+def: "The domestic horse, Equus caballus. (NCI)"[]
+is_a: terms:077808 ! terms_C77808
+
+[Term]
+id: terms:014238
+name: MOUSE
+def: "Any of numerous species of small rodents belonging to the genus Mus and various related genera of the family Muridae. (NCI)"[]
+is_a: terms:077808 ! terms_C77808
+
+[Term]
+id: terms:014243
+name: MONKEY
+def: "Any haplorhine primate not belonging to the family Tarsiidae, Hylobatidae, Pongidae, or Hominidae; this does not correspond to any taxon. This group is divided into Old World monkeys (Cercopithecidae) and New World monkeys (Callitrichidae and Cebidae)."[]
+is_a: terms:077808 ! terms_C77808
+
+[Term]
+id: terms:014252
+name: BABOON
+def: "Multiple species of large terrestrial monkeys in the genus Papio, including P. hamadryas, P. papio, P. anubis, P. cynocephalus and P. ursinus."[]
+is_a: terms:077808 ! terms_C77808
+
+[Term]
+id: terms:014264
+name: RABBIT
+def: "Various members of the family Leporidae, especially those of the genus Sylvilagus. (NCI)"[]
+is_a: terms:077808 ! terms_C77808
+
+[Term]
+id: terms:014265
+name: FROG
+def: "An amphibian in the order Anura, which includes the toads. (NCI)"[]
+is_a: terms:077808 ! terms_C77808
+
+[Term]
+id: terms:014266
+name: RAT
+def: "Any of numerous species of rodents belonging to the genus Rattus and/or various related genera of the family Muridae."[]
+is_a: terms:077808 ! terms_C77808
+
+[Term]
+id: terms:014273
+name: SHEEP
+def: "Any one of several species in the genus Ovis, most commonly Ovis aries."[]
+is_a: terms:077808 ! terms_C77808
+
+[Term]
+id: terms:014280
+name: PIG
+def: "The domestic pig Sus scrofa domestica. (NCI)"[]
+is_a: terms:077808 ! terms_C77808
+
+[Term]
+id: terms:014297
+name: CHIMPANZEE
+def: "The anthropoid ape, Pan troglodytes."[]
+is_a: terms:077808 ! terms_C77808
+
+[Term]
+id: terms:0200004
+name: UNASSIGNED
+def: "Species has not yet been assigned."[]
+is_a: terms:077808 ! terms_C77808
+
+[Term]
+id: terms:0200005
+name: UNKNOWN
+def: "Species is unknown."[]
+is_a: terms:077808 ! terms_C77808
+
+[Term]
+id: terms:077097
+name: FERRET
+def: "The common domestic mammal, Mustela putorious."[]
+is_a: terms:077808 ! terms_C77808
+
+[Term]
+id: terms:077115
+name: MARMOSET
+def: "The common marmoset, Callithrix jacchus."[]
+is_a: terms:077808 ! terms_C77808
+
+[Term]
+id: terms:077807
+name: GERBIL
+def: "Any of the small mammals belonging to the Gerbillinae subfamily."[]
+is_a: terms:077808 ! terms_C77808
+
+[Term]
+id: terms:091812
+name: PIGEON
+def: "A member of the Columbidae family of birds, most commonly referring to the species Columba livia."[]
+is_a: terms:077808 ! terms_C77808
+
+[Term]
+id: terms:091813
+name: QUAIL
+def: "A member of the Phasianidae family of pheasants that includes several genera, including Cotumix, Anurophasis, Perdicula and Ophrysia."[]
+is_a: terms:077808 ! terms_C77808
+
+[Term]
+id: terms:091815
+name: CHINCHILLA
+def: "A member of the Chinchillidae family of crepuscular rodents."[]
+is_a: terms:077808 ! terms_C77808
+
+[Term]
+id: terms:091816
+name: MASTOMYS
+def: "A genus of rodent in the family muridae."[]
+is_a: terms:077808 ! terms_C77808
+

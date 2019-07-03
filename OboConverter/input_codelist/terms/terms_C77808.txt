@@ -1,0 +1,28 @@
+CODELIST_ID	TERM_ID	TERM_NAME	TERM_DEFINITION
+C77808	C14191	CAT	The domestic cat, Felis catus. (NCI)
+C77808	C14192	BOVINE	The domesticated ungulates, Bos primigenius taurus and Bos primigenius indicus.
+C77808	C14193	CHICKEN	The common domestic fowl, Gallus gallus. (NCI)
+C77808	C14201	DOG	The domestic dog, Canis familiaris. (NCI)
+C77808	C14207	FISH	Any jawed or jawless organisms in the phylum Chordata including the jawless fish, armored fish, cartilaginous fish, ray-finned fish and lobe-finned fish.
+C77808	C14210	GOAT	Any one of several species in the genus Capra, most commonly Capra hircus.
+C77808	C14211	GUINEA PIG	The domesticated guinea pig, Cavia porcellus. (NCI)
+C77808	C14212	HAMSTER	Any member of the subfamily cricetinae and the genuses Mesocricetus, Phodopus, Cricetus, Cricetulus, Allocricetulus, Cansumys and Tscherskia.
+C77808	C14222	HORSE	The domestic horse, Equus caballus. (NCI)
+C77808	C14238	MOUSE	Any of numerous species of small rodents belonging to the genus Mus and various related genera of the family Muridae. (NCI)
+C77808	C14243	MONKEY	Any haplorhine primate not belonging to the family Tarsiidae, Hylobatidae, Pongidae, or Hominidae; this does not correspond to any taxon. This group is divided into Old World monkeys (Cercopithecidae) and New World monkeys (Callitrichidae and Cebidae).
+C77808	C14252	BABOON	Multiple species of large terrestrial monkeys in the genus Papio, including P. hamadryas, P. papio, P. anubis, P. cynocephalus and P. ursinus.
+C77808	C14264	RABBIT	Various members of the family Leporidae, especially those of the genus Sylvilagus. (NCI)
+C77808	C14265	FROG	An amphibian in the order Anura, which includes the toads. (NCI)
+C77808	C14266	RAT	Any of numerous species of rodents belonging to the genus Rattus and/or various related genera of the family Muridae.
+C77808	C14273	SHEEP	Any one of several species in the genus Ovis, most commonly Ovis aries.
+C77808	C14280	PIG	The domestic pig Sus scrofa domestica. (NCI)
+C77808	C14297	CHIMPANZEE	The anthropoid ape, Pan troglodytes.
+C77808	C200004	UNASSIGNED	Species has not yet been assigned.
+C77808	C200005	UNKNOWN	Species is unknown.
+C77808	C77097	FERRET	The common domestic mammal, Mustela putorious.
+C77808	C77115	MARMOSET	The common marmoset, Callithrix jacchus.
+C77808	C77807	GERBIL	Any of the small mammals belonging to the Gerbillinae subfamily.
+C77808	C91812	PIGEON	A member of the Columbidae family of birds, most commonly referring to the species Columba livia.
+C77808	C91813	QUAIL	A member of the Phasianidae family of pheasants that includes several genera, including Cotumix, Anurophasis, Perdicula and Ophrysia.
+C77808	C91815	CHINCHILLA	A member of the Chinchillidae family of crepuscular rodents.
+C77808	C91816	MASTOMYS	A genus of rodent in the family muridae.

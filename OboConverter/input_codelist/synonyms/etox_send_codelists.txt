@@ -1,0 +1,7 @@
+CODELIST_ID	CODELIST_NAME	CODELIST_ACRONYM	CODELIST_DESCRIPTION
+C66729	Route of Administration	ROUTE	The course by which a substance was administered in order to reach the site of action in the body.
+C66732	Sex of Participants	SEXPOP	The specific sex, either male, female, or mixed of the subject group being studied. (NCI)
+C67154	Laboratory Test Name	LBTEST	Terminology used for laboratory test names of the CDISC Standard Data Tabulation Model.
+C77530	Strain/Substrain	STRAIN	Terminology used to identify the vendor-supplied species, strain, substrain or breed designation for the test system under study. It may combine the species, background strain, substrain, and associated genetic modifications as supplied by the vendor (e.g., C57BL/6, A/J, B6.129-Pparg<tm2Rev>/J, FISCHER 344, SPRAGUE-DAWLEY IGS, WISTAR Kyoto, BEAGLE, CYNOMOLGUS, RHESUS and CHIMPANZEE).
+C77808	Species	SPECIES	Terminology related to the common name for an animal used as the test system in a study (e.g., dog, monkey, mouse, rabbit, rat).
+C85493	PK Parameters	PKPARM	Parameters used to describe the time-concentration curve.

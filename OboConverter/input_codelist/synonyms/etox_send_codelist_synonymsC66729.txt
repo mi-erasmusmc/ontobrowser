@@ -1,0 +1,456 @@
+CODELIST_ID	TERM_ID	TERM_SYNONYM	SYNONYM_TYPE	SYNONYM_SOURCE
+C66729	C28161	Intramuscular	EXACT	VX
+C66729	C28161	Intramuscular and subcutaneous	RELATED	VX
+C66729	C28161	Intramuscular depot injection	NARROW	VX
+C66729	C28161	Intramuscular injection	RELATED	VX
+C66729	C28161	Itramuscular injection every 3 day	RELATED	VX
+C66729	C38194	Instillation into the conjunctival sac	RELATED	VX
+C66729	C38208	Intratracheal	RELATED	VX
+C66729	C38216	Aerosol inhalation	EXACT	VX
+C66729	C38216	Dry powder	NARROW	VX
+C66729	C38216	Inhalation	RELATED	VX
+C66729	C38216	Inhalation  (nose only)	RELATED	VX
+C66729	C38216	Inhalation (WDF)	RELATED	VX
+C66729	C38216	Inhalation (dry powder aerosol)	NARROW	VX
+C66729	C38216	Inhalation (dry powder)	RELATED	VX
+C66729	C38216	Inhalation (nose only)	RELATED	VX
+C66729	C38216	Inhalation (nose-only exposure)	RELATED	VX
+C66729	C38216	Inhalation (nose-only)	RELATED	VX
+C66729	C38216	Inhalation 20-min	RELATED	VX
+C66729	C38216	Inhalation 30-min	RELATED	VX
+C66729	C38216	Inhalation 4-h	RELATED	VX
+C66729	C38216	Inhalation administration	EXACT	VX
+C66729	C38216	Inhalation by nose-only	RELATED	VX
+C66729	C38216	Inhalation by oropharyngeal tube	NARROW	VX
+C66729	C38216	Inhalation nasal 180-min	RELATED	VX
+C66729	C38216	Inhalation nasal 3-h	RELATED	VX
+C66729	C38216	Inhalation nose-only	RELATED	VX
+C66729	C38216	Inhalation nose-only (dry powder)	NARROW	VX
+C66729	C38216	Inhalation of dust	RELATED	VX
+C66729	C38216	Inhalation oro-nasal	NARROW	VX
+C66729	C38216	Inhalation oro-nasal (dry powder)	RELATED	VX
+C66729	C38216	Inhalation plus oral by gavage	RELATED	VX
+C66729	C38216	Inhalation under dynamic directed-flow nose-only exposure condition	RELATED	VX
+C66729	C38216	Inhalation,  2.5-10 min	RELATED	VX
+C66729	C38216	Inhalation, dry powder	RELATED	VX
+C66729	C38216	Mask inhalation	NARROW	VX
+C66729	C38216	Nasal inhalation	RELATED	VX
+C66729	C38216	Nose-only inhalation	RELATED	VX
+C66729	C38216	Nose-only inhalation (dry powder)	RELATED	VX
+C66729	C38216	Oral - inhalation	RELATED	VX
+C66729	C38216	Oral inhalation	RELATED	VX
+C66729	C38216	Orally inhalated	RELATED	VX
+C66729	C38216	Oronasal inhalation	RELATED	VX
+C66729	C38216	Snout-only inhalation	RELATED	VX
+C66729	C38223	Intra-articular injections	EXACT	VX
+C66729	C38223	Intraarticular injection	RELATED	VX
+C66729	C38238	Intradermal	EXACT	VX
+C66729	C38245	Esophageal intubation	EXACT	VX
+C66729	C38246	Intragastric	EXACT	VX
+C66729	C38249	Intraileum	RELATED	VX
+C66729	C38255	Instillation into the conjuctival sac	NARROW	VX
+C66729	C38255	Ocular	RELATED	VX
+C66729	C38258	Intraperitoneal	EXACT	VX
+C66729	C38258	Intraperitoneal injection	EXACT	VX
+C66729	C38267	Intrathecal	EXACT	VX
+C66729	C38272	Intrauterine	EXACT	VX
+C66729	C38274	Bolus Intravenous	EXACT	VX
+C66729	C38274	Bolus intravenous injection	RELATED	VX
+C66729	C38274	Intravenous (bolus injection into the jugular vein)	NARROW	VX
+C66729	C38274	Intravenous (bolus injection into the tail vein)	NARROW	VX
+C66729	C38274	Intravenous (bolus)	EXACT	VX
+C66729	C38274	Intravenous bolus	EXACT	VX
+C66729	C38274	Intravenous bolus (0.2 ml/100 g body weight)	RELATED	VX
+C66729	C38274	Intravenous bolus injection	EXACT	VX
+C66729	C38274	Intravenous single bolus injection	RELATED	VX
+C66729	C38274	Intravenous, bolus	EXACT	VX
+C66729	C38274	Intravenous, bolus injection	EXACT	VX
+C66729	C38274	Intravenous, by slow bolus	NARROW	VX
+C66729	C38274	Intravenous, by slow bolus injection	NARROW	VX
+C66729	C38274	Intravenous/bolus	EXACT	VX
+C66729	C38274	Intravenously (bolus - tail vein)	NARROW	VX
+C66729	C38274	Slow intravenous bolus	NARROW	VX
+C66729	C38276	Intavenous	EXACT	VX
+C66729	C38276	Intravenos injection	RELATED	VX
+C66729	C38276	Intravenous	EXACT	VX
+C66729	C38276	Intravenous (Tail vein)	NARROW	VX
+C66729	C38276	Intravenous (injection in the tail vein)	NARROW	VX
+C66729	C38276	Intravenous (jugular)	NARROW	VX
+C66729	C38276	Intravenous (jugularis)	NARROW	VX
+C66729	C38276	Intravenous (or exceptionally subcutaneously)	RELATED	VX
+C66729	C38276	Intravenous (tail vein - 0.1 ml/100 g b.w.)	RELATED	VX
+C66729	C38276	Intravenous (tail vein)	NARROW	VX
+C66729	C38276	Intravenous (via an implanted port catheter system)	NARROW	VX
+C66729	C38276	Intravenous Injection	RELATED	VX
+C66729	C38276	Intravenous at days 14 and 28 only	RELATED	VX
+C66729	C38276	Intravenous in the tail vein	NARROW	VX
+C66729	C38276	Intravenous injection	RELATED	VX
+C66729	C38276	Intravenous injection (tail vein)	NARROW	VX
+C66729	C38276	Intravenous injection (tail)	NARROW	VX
+C66729	C38276	Intravenous injections	RELATED	VX
+C66729	C38276	Intravenous into right ear	NARROW	VX
+C66729	C38276	Intravenous via a tail vein	NARROW	VX
+C66729	C38276	Intravenous via the tail vein	NARROW	VX
+C66729	C38276	Intravenous(via the tail)	NARROW	VX
+C66729	C38276	Intravenous, liposomal formulation	RELATED	VX
+C66729	C38276	Intravenous, via the tail vein	NARROW	VX
+C66729	C38276	Intravenous/perivenous/intraarterial	RELATED	VX
+C66729	C38276	Intravenously	EXACT	VX
+C66729	C38276	Intravenously (0.1 ml/100 g bw)	RELATED	VX
+C66729	C38276	Intravenously (jugular vein)	NARROW	VX
+C66729	C38276	Intravenously (tail vein)	RELATED	VX
+C66729	C38276	Intravenously (via jugular vein)	NARROW	VX
+C66729	C38276	Intravenously (via the tail)	RELATED	VX
+C66729	C38276	Intravenously via the tail vein	NARROW	VX
+C66729	C38276	Intravenously, i.p. when i.v. no longer possible	RELATED	VX
+C66729	C38276	Intravenously, via the tail vein	NARROW	VX
+C66729	C38276	Intraveous	RELATED	VX
+C66729	C38276	Introvenous	RELATED	VX
+C66729	C38276	intravenous	EXACT	VX
+C66729	C38279	Continuous intravenous infusion	NARROW	VX
+C66729	C38279	Intravenour 4h infusion	RELATED	VX
+C66729	C38279	Intravenous (1-hour infusion)	NARROW	VX
+C66729	C38279	Intravenous (2 h) infusion	NARROW	VX
+C66729	C38279	Intravenous (30 min) infusion	NARROW	VX
+C66729	C38279	Intravenous (4-hour per day) infusion	NARROW	VX
+C66729	C38279	Intravenous (5 min-duration)	NARROW	VX
+C66729	C38279	Intravenous (Continuous infusion)	RELATED	VX
+C66729	C38279	Intravenous (Infusion)	RELATED	VX
+C66729	C38279	Intravenous (continuous infusion)	RELATED	VX
+C66729	C38279	Intravenous (infusion)	RELATED	VX
+C66729	C38279	Intravenous 1-h infusion	RELATED	VX
+C66729	C38279	Intravenous 1-h-infusion	RELATED	VX
+C66729	C38279	Intravenous 1-hour infusion	NARROW	VX
+C66729	C38279	Intravenous 1.5 min	NARROW	VX
+C66729	C38279	Intravenous 10-min infusion	NARROW	VX
+C66729	C38279	Intravenous 15-min infusion	RELATED	VX
+C66729	C38279	Intravenous 16-min infusion	NARROW	VX
+C66729	C38279	Intravenous 18-min infusion	NARROW	VX
+C66729	C38279	Intravenous 1h infusion	NARROW	VX
+C66729	C38279	Intravenous 1h-infusion	NARROW	VX
+C66729	C38279	Intravenous 2-h infusion	NARROW	VX
+C66729	C38279	Intravenous 2-min	NARROW	VX
+C66729	C38279	Intravenous 2-min infusion	NARROW	VX
+C66729	C38279	Intravenous 20-min	NARROW	VX
+C66729	C38279	Intravenous 24-h	NARROW	VX
+C66729	C38279	Intravenous 24-h infusion	NARROW	VX
+C66729	C38279	Intravenous 2h-infusion	NARROW	VX
+C66729	C38279	Intravenous 3-h infusion	NARROW	VX
+C66729	C38279	Intravenous 3-min infusion	NARROW	VX
+C66729	C38279	Intravenous 30-min infusion	NARROW	VX
+C66729	C38279	Intravenous 3h-infusion	NARROW	VX
+C66729	C38279	Intravenous 4 h infusion	RELATED	VX
+C66729	C38279	Intravenous 4-h infusion	RELATED	VX
+C66729	C38279	Intravenous 5 days/week	RELATED	VX
+C66729	C38279	Intravenous 5-min infusion	NARROW	VX
+C66729	C38279	Intravenous 6-h infusion	NARROW	VX
+C66729	C38279	Intravenous 60-min	NARROW	VX
+C66729	C38279	Intravenous 8h-infusion	NARROW	VX
+C66729	C38279	Intravenous Infusion	RELATED	VX
+C66729	C38279	Intravenous Infusion for 1 hour	NARROW	VX
+C66729	C38279	Intravenous continuous	RELATED	VX
+C66729	C38279	Intravenous continuous for 24 h	NARROW	VX
+C66729	C38279	Intravenous continuous infusion	RELATED	VX
+C66729	C38279	Intravenous infused for 20 min	RELATED	VX
+C66729	C38279	Intravenous infusion	RELATED	VX
+C66729	C38279	Intravenous infusion (1 hour period)	NARROW	VX
+C66729	C38279	Intravenous infusion (1-h)	NARROW	VX
+C66729	C38279	Intravenous infusion (1.7 ¿ 6.7 ml/kg/hour)	NARROW	VX
+C66729	C38279	Intravenous infusion (1.7-6.7 ml/kg/hour)	NARROW	VX
+C66729	C38279	Intravenous infusion (1h)	NARROW	VX
+C66729	C38279	Intravenous infusion (30 minutes   cephalic or saphenous vein)	NARROW	VX
+C66729	C38279	Intravenous infusion (30 minutes - cephalic or saphenous vein)	NARROW	VX
+C66729	C38279	Intravenous infusion (caudal vein - 10ml/kg - 5 min)	NARROW	VX
+C66729	C38279	Intravenous infusion (caudal vein)	RELATED	VX
+C66729	C38279	Intravenous infusion for 1 h	NARROW	VX
+C66729	C38279	Intravenous infusion for 2 h	NARROW	VX
+C66729	C38279	Intravenous infusion over 0.5 h	NARROW	VX
+C66729	C38279	Intravenous infusion via a tail vein at 0.5 ml/min	NARROW	VX
+C66729	C38279	Intravenous infusion via the femoral vein	NARROW	VX
+C66729	C38279	Intravenous infusion via the left femoral vein	NARROW	VX
+C66729	C38279	Intravenous over 5 min	NARROW	VX
+C66729	C38279	Intravenous, 1 hour infusion once a day	RELATED	VX
+C66729	C38279	Intravenous, 1-min	RELATED	VX
+C66729	C38279	Intravenous, 10-min	RELATED	VX
+C66729	C38279	Intravenous, 14-min infusion	NARROW	VX
+C66729	C38279	Intravenous, 5-min	RELATED	VX
+C66729	C38279	Intravenous, slow	NARROW	VX
+C66729	C38279	Intravenous: 15 min infusion	RELATED	VX
+C66729	C38279	Intravenously, bolus followed by an infusion	NARROW	VX
+C66729	C38279	intravenous 1-h infusion	RELATED	VX
+C66729	C38284	Intranasal	RELATED	VX
+C66729	C38284	Intranasal (spray)	EXACT	VX
+C66729	C38284	Intranasal instillation	EXACT	VX
+C66729	C38284	Intranasal spray	EXACT	VX
+C66729	C38284	Intranasally	EXACT	VX
+C66729	C38284	Nasal	EXACT	VX
+C66729	C38285	Oral, by naso-gastric intubation	EXACT	VX
+C66729	C38288	Ora in capsule	RELATED	VX
+C66729	C38288	Oral	EXACT	VX
+C66729	C38288	Oral (Capsule)	RELATED	VX
+C66729	C38288	Oral (Gelatin Capsule)	RELATED	VX
+C66729	C38288	Oral (Gelatin capsule)	RELATED	VX
+C66729	C38288	Oral (capsule)	RELATED	VX
+C66729	C38288	Oral (capsules)	NARROW	VX
+C66729	C38288	Oral (gelatin capsule)	RELATED	VX
+C66729	C38288	Oral (gelatin capsules)	RELATED	VX
+C66729	C38288	Oral (gelatine capsules)	NARROW	VX
+C66729	C38288	Oral (in gelatin capsules)	NARROW	VX
+C66729	C38288	Oral (individual amounts in gelatin capsules)	EXACT	VX
+C66729	C38288	Oral (tablet)	NARROW	VX
+C66729	C38288	Oral (tablets)	NARROW	VX
+C66729	C38288	Oral (via gelatin capsules)	RELATED	VX
+C66729	C38288	Oral - liquid filled gelatin capsule	NARROW	VX
+C66729	C38288	Oral administration	EXACT	VX
+C66729	C38288	Oral by capsula	RELATED	VX
+C66729	C38288	Oral by capsule	NARROW	VX
+C66729	C38288	Oral by gelatin capsules	NARROW	VX
+C66729	C38288	Oral capsule	RELATED	VX
+C66729	C38288	Oral capsule/gavage	NARROW	VX
+C66729	C38288	Oral gavage ZD7054, Oral, via drinking water ZD1033	RELATED	VX
+C66729	C38288	Oral in  capsules	RELATED	VX
+C66729	C38288	Oral in capsule	RELATED	VX
+C66729	C38288	Oral in capsules	RELATED	VX
+C66729	C38288	Oral in gelatin capsules	NARROW	VX
+C66729	C38288	Oral in gelatine capsules	NARROW	VX
+C66729	C38288	Oral route (capsules)	NARROW	VX
+C66729	C38288	Oral via gelatin capsules	RELATED	VX
+C66729	C38288	Oral via hard shell gelatin capsule	NARROW	VX
+C66729	C38288	Oral, by gelatin capsule	NARROW	VX
+C66729	C38288	Oral, by gelatine capsules	NARROW	VX
+C66729	C38288	Oral, capsules	NARROW	VX
+C66729	C38288	Oral, enteric-coated pellets	NARROW	VX
+C66729	C38288	Oral, in capsules	RELATED	VX
+C66729	C38288	Oral, in gelatine capsules	NARROW	VX
+C66729	C38288	Oral, once daily	NARROW	VX
+C66729	C38288	Oral, twice daily	NARROW	VX
+C66729	C38288	Oral/gelatin capsule	RELATED	VX
+C66729	C38288	Oralin capsule	RELATED	VX
+C66729	C38288	Orally	EXACT	VX
+C66729	C38288	Orally (gavage of capsule)	NARROW	VX
+C66729	C38288	Orally by capsule	RELATED	VX
+C66729	C38288	Orally by capsule, once daily	NARROW	VX
+C66729	C38288	Orally by capsules	NARROW	VX
+C66729	C38288	Orally in capsules	RELATED	VX
+C66729	C38288	Orally in gelatin capsules	RELATED	VX
+C66729	C38288	Orally in gelatine capsule	NARROW	VX
+C66729	C38288	Orally in gelatine capsules	RELATED	VX
+C66729	C38288	Orally via gelatin capsule	RELATED	VX
+C66729	C38288	Orally with gelatine capsules	NARROW	VX
+C66729	C38288	Oraly in capsules	RELATED	VX
+C66729	C38288	Orat	RELATED	VX
+C66729	C38288	oral	EXACT	VX
+C66729	C38289	Oropharyngeal	EXACT	VX
+C66729	C38291	Parenteral I.V.	EXACT	VX
+C66729	C38291	Parenteral I.V. (0.1 ml/100 g body weight/day)	RELATED	VX
+C66729	C38295	Rectal	EXACT	VX
+C66729	C38295	Rectal (suppositoria)	RELATED	VX
+C66729	C38295	Rectal gavage	RELATED	VX
+C66729	C38295	Rectal suppositoria	RELATED	VX
+C66729	C38297	Subarachnoidal	EXACT	VX
+C66729	C38299	Subcutaneous	EXACT	VX
+C66729	C38299	Subcutaneous  injection	RELATED	VX
+C66729	C38299	Subcutaneous bolus injection	EXACT	VX
+C66729	C38299	Subcutaneous by osmotic minipump	RELATED	VX
+C66729	C38299	Subcutaneous implantation	RELATED	VX
+C66729	C38299	Subcutaneous infusion	NARROW	VX
+C66729	C38299	Subcutaneous injection	RELATED	VX
+C66729	C38299	Subcutaneous minipump infusion	NARROW	VX
+C66729	C38299	Subcutaneous(injection)	RELATED	VX
+C66729	C38299	Subcutaneous, as microspheres (65:35 PLG-COOH)	NARROW	VX
+C66729	C38299	Subcutaneous, as microspheres (75:25 PLG-COOH)	NARROW	VX
+C66729	C38299	Subcutaneously	EXACT	VX
+C66729	C38299	Subcutaneously, in the neck region	NARROW	VX
+C66729	C38299	Subcutaneuos	RELATED	VX
+C66729	C38299	Subcutanous	EXACT	VX
+C66729	C38299	Subcutanous injection	EXACT	VX
+C66729	C38299	Subutaneus	RELATED	VX
+C66729	C38299	subcutaneous	EXACT	VX
+C66729	C38304	Topical	EXACT	VX
+C66729	C38310	Combinding inhalation and subcutaneous injection	RELATED	VX
+C66729	C38310	Combining inhalation and subcutaneous injection	RELATED	VX
+C66729	C38310	IV (0.1 ml/100 g b.w./day) in combination with OR (2 ml/100 g b.w./day)	RELATED	VX
+C66729	C38310	Inhalation + Subcutaneous injection	RELATED	VX
+C66729	C38310	Inhalation + subcutaneous	RELATED	VX
+C66729	C38310	Intranasal (for first 2 weeks) and oral (gavage) (for next 2 weeks)	RELATED	VX
+C66729	C38310	Intravenous infusions, subcutaneous injections	RELATED	VX
+C66729	C38310	Nasal inhalation (4h) followed by a subcutaneous injection 1 h post inhalation	RELATED	VX
+C66729	C38310	Nasal inhalation/subcutaneous	RELATED	VX
+C66729	C38310	Oral and nasal	RELATED	VX
+C66729	C38310	Oral and subcutaneous	RELATED	VX
+C66729	C38310	Oral and subcutaneous injection	RELATED	VX
+C66729	C38310	Oral gavage (dexametason); Intravenous (GGA_IRIS_SER013)	RELATED	VX
+C66729	C38310	Oral gavage plus subcutaneous dosing	RELATED	VX
+C66729	C38310	Oral gavage, subcutaneous	RELATED	VX
+C66729	C38310	Oral gavage/subcutaneous injection	RELATED	VX
+C66729	C38310	Oral, by gavage and intravenous	RELATED	VX
+C66729	C38310	Oral, by gavage/intravenous	RELATED	VX
+C66729	C38310	Oral/Intravenous	RELATED	VX
+C66729	C38310	Oral/subcutaneous	RELATED	VX
+C66729	C38310	Oral/subcutaneous injection	RELATED	VX
+C66729	C38310	Orally: through the diet/Intranasally: via nose drops	RELATED	VX
+C66729	C38310	Subcutaneously and rectally	RELATED	VX
+C66729	C38311	Not available	EXACT	VX
+C66729	C38311	Unreported	EXACT	VX
+C66729	C38313	Dermal, vaginal	RELATED	VX
+C66729	C38313	Intravaginal	RELATED	VX
+C66729	C38675	Cutaneous	EXACT	VX
+C66729	C38675	Dermal	EXACT	VX
+C66729	C38675	Dermal (micropipette)	NARROW	VX
+C66729	C38675	Dermal aplication	EXACT	VX
+C66729	C38675	Dermal application	EXACT	VX
+C66729	C38675	Dermal application about 10% of the total skin surface	RELATED	VX
+C66729	C38675	Dermal patch	NARROW	VX
+C66729	C38675	Dermal, 30-min application	NARROW	VX
+C66729	C38675	Dermal, scarified	RELATED	VX
+C66729	C38675	Dermally to intact skin	EXACT	VX
+C66729	C38675	Skin (patch)	NARROW	VX
+C66729	C38675	Skin application for 18-20 h daily	RELATED	VX
+C66729	C38675	Topical application	EXACT	VX
+C66729	C38676	Percutaneous	EXACT	VX
+C66729	C78373	Diet	EXACT	VX
+C66729	C78373	Diet (Altromin 1321 meal)	NARROW	VX
+C66729	C78373	Diet (Altromin¿ 1321 meal)	NARROW	VX
+C66729	C78373	Dietary	EXACT	VX
+C66729	C78373	Dietary admixture	RELATED	VX
+C66729	C78373	Drinking water	RELATED	VX
+C66729	C78373	Feed	EXACT	VX
+C66729	C78373	Feed admix	RELATED	VX
+C66729	C78373	Feed-admix	RELATED	VX
+C66729	C78373	Ground diet	RELATED	VX
+C66729	C78373	In feed	EXACT	VX
+C66729	C78373	Oral (Feed admix)	RELATED	VX
+C66729	C78373	Oral (NDD diet)	NARROW	VX
+C66729	C78373	Oral (admixture with the diet)	RELATED	VX
+C66729	C78373	Oral (aqueous solution)	NARROW	VX
+C66729	C78373	Oral (diet)	RELATED	VX
+C66729	C78373	Oral (dietary admix)	RELATED	VX
+C66729	C78373	Oral (dietary admixture)	EXACT	VX
+C66729	C78373	Oral (dietary)	RELATED	VX
+C66729	C78373	Oral (feed)	EXACT	VX
+C66729	C78373	Oral (in feed admixtures)	NARROW	VX
+C66729	C78373	Oral (in feed)	RELATED	VX
+C66729	C78373	Oral (in the diet)	EXACT	VX
+C66729	C78373	Oral by dietary admix	RELATED	VX
+C66729	C78373	Oral by dietary admixture	EXACT	VX
+C66729	C78373	Oral diet	RELATED	VX
+C66729	C78373	Oral dietary	RELATED	VX
+C66729	C78373	Oral drinking	RELATED	VX
+C66729	C78373	Oral feeding	RELATED	VX
+C66729	C78373	Oral in diet	RELATED	VX
+C66729	C78373	Oral in drinking water	RELATED	VX
+C66729	C78373	Oral in feed	RELATED	VX
+C66729	C78373	Oral in food	RELATED	VX
+C66729	C78373	Oral in the diet	EXACT	VX
+C66729	C78373	Oral on diet	RELATED	VX
+C66729	C78373	Oral via drinking water	EXACT	VX
+C66729	C78373	Oral(diet)	RELATED	VX
+C66729	C78373	Oral, Dietary admix	RELATED	VX
+C66729	C78373	Oral, by dietary admix	RELATED	VX
+C66729	C78373	Oral, in diet	RELATED	VX
+C66729	C78373	Orally  in the diet	EXACT	VX
+C66729	C78373	Orally (in the diet)	EXACT	VX
+C66729	C78373	Orally as a dietary admix	RELATED	VX
+C66729	C78373	Orally by incorporation into the diet	EXACT	VX
+C66729	C78373	Orally in diet	EXACT	VX
+C66729	C78373	Orally in drinking water	RELATED	VX
+C66729	C78373	Orally in feed	RELATED	VX
+C66729	C78373	Orally in the diet	EXACT	VX
+C66729	C78373	Orally in the food	EXACT	VX
+C66729	C78373	Orally through the diet	EXACT	VX
+C66729	C78373	Orally via dietary admixture	EXACT	VX
+C66729	C78373	Orally with feed	RELATED	VX
+C66729	C78373	Orally, via incorporation into the diet	RELATED	VX
+C66729	C78373	Via the food	RELATED	VX
+C66729	C78373	dietary	EXACT	VX
+C66729	C78374	By gavage	EXACT	VX
+C66729	C78374	Forced oral	EXACT	VX
+C66729	C78374	Gastric intubation	EXACT	VX
+C66729	C78374	Gavage	EXACT	VX
+C66729	C78374	Naso-oesophageal	RELATED	VX
+C66729	C78374	Oesophageal gavage	RELATED	VX
+C66729	C78374	Oral  by gavage	RELATED	VX
+C66729	C78374	Oral  gavage	EXACT	VX
+C66729	C78374	Oral (Gavage)	EXACT	VX
+C66729	C78374	Oral (Stomach tube)	RELATED	VX
+C66729	C78374	Oral (by gavage)	RELATED	VX
+C66729	C78374	Oral (by intubation)	RELATED	VX
+C66729	C78374	Oral (by stomach tube)	RELATED	VX
+C66729	C78374	Oral (esophageal intubation)	RELATED	VX
+C66729	C78374	Oral (gastric tube)	RELATED	VX
+C66729	C78374	Oral (gavage )	EXACT	VX
+C66729	C78374	Oral (gavage tube)	EXACT	VX
+C66729	C78374	Oral (gavage using a plastic cannula)	NARROW	VX
+C66729	C78374	Oral (gavage)	EXACT	VX
+C66729	C78374	Oral (intragastric intubation)	NARROW	VX
+C66729	C78374	Oral (intubation)	RELATED	VX
+C66729	C78374	Oral , by gavage	RELATED	VX
+C66729	C78374	Oral Gavage	EXACT	VX
+C66729	C78374	Oral Intubation	RELATED	VX
+C66729	C78374	Oral by Gavage	RELATED	VX
+C66729	C78374	Oral by gavage	RELATED	VX
+C66729	C78374	Oral by gavage (1 ml/100 g body weight/day)	NARROW	VX
+C66729	C78374	Oral by gavage, twice daily	RELATED	VX
+C66729	C78374	Oral by stomach tube	RELATED	VX
+C66729	C78374	Oral gavage	EXACT	VX
+C66729	C78374	Oral gavage (0.5 ml per 100g body weight)	NARROW	VX
+C66729	C78374	Oral gavage (1 ml/100 g body weight)	NARROW	VX
+C66729	C78374	Oral gavage (flexible cannula)	NARROW	VX
+C66729	C78374	Oral gavage (intubation)	NARROW	VX
+C66729	C78374	Oral gavage once daily	RELATED	VX
+C66729	C78374	Oral gavage, once daily	RELATED	VX
+C66729	C78374	Oral gavage, twice daily	RELATED	VX
+C66729	C78374	Oral gvage	RELATED	VX
+C66729	C78374	Oral intubation	RELATED	VX
+C66729	C78374	Oral via gavage	EXACT	VX
+C66729	C78374	Oral via intubation	NARROW	VX
+C66729	C78374	Oral via stomach tube	RELATED	VX
+C66729	C78374	Oral(intragastric)	RELATED	VX
+C66729	C78374	Oral(intubation)	RELATED	VX
+C66729	C78374	Oral, be gavage	RELATED	VX
+C66729	C78374	Oral, by Gavage	RELATED	VX
+C66729	C78374	Oral, by HPMC capsules	RELATED	VX
+C66729	C78374	Oral, by Intubation	RELATED	VX
+C66729	C78374	Oral, by gastric intubation	NARROW	VX
+C66729	C78374	Oral, by gavage	RELATED	VX
+C66729	C78374	Oral, by gavage with long catheter	NARROW	VX
+C66729	C78374	Oral, by gavage with short catheter	NARROW	VX
+C66729	C78374	Oral, by gavage, once daily	RELATED	VX
+C66729	C78374	Oral, by gavage, twice daily	RELATED	VX
+C66729	C78374	Oral, by gavage.	RELATED	VX
+C66729	C78374	Oral, by intubation	RELATED	VX
+C66729	C78374	Oral, by stomach tube	RELATED	VX
+C66729	C78374	Oral, esophageal intubation	RELATED	VX
+C66729	C78374	Oral, gavage	EXACT	VX
+C66729	C78374	Oral, gavage using a plastic cannula	RELATED	VX
+C66729	C78374	Oral, naso-esophagial intubation	NARROW	VX
+C66729	C78374	Oral, with stomach tube	RELATED	VX
+C66729	C78374	Oral, with the aid of a metal rodent intubator	RELATED	VX
+C66729	C78374	Oral: esophageal intubation	RELATED	VX
+C66729	C78374	Oral: naso-oesophageal intubation	NARROW	VX
+C66729	C78374	Oraliy by gavage (gastric catheter)	EXACT	VX
+C66729	C78374	Orally (by gavage)	RELATED	VX
+C66729	C78374	Orally by a stomach tube	NARROW	VX
+C66729	C78374	Orally by gastric intubation,	EXACT	VX
+C66729	C78374	Orally by gastric tube	RELATED	VX
+C66729	C78374	Orally by gavage	RELATED	VX
+C66729	C78374	Orally by gavage (0.8 ml/100 g b. w./day)	NARROW	VX
+C66729	C78374	Orally by gavage as a suspension (1 ml/100g b.w./day); Orally through the food	NARROW	VX
+C66729	C78374	Orally by gavage as a suspension, daily	RELATED	VX
+C66729	C78374	Orally by gavage once a day	RELATED	VX
+C66729	C78374	Orally by gavage once daily	RELATED	VX
+C66729	C78374	Orally by gavage, once daily	RELATED	VX
+C66729	C78374	Orally by intubation	RELATED	VX
+C66729	C78374	Orally by stomach tube	RELATED	VX
+C66729	C78374	Orally via gastric tube	RELATED	VX
+C66729	C78374	Orally via gavage	EXACT	VX
+C66729	C78374	Orally with a stomach tube	RELATED	VX
+C66729	C78374	Orally, by gavage	RELATED	VX
+C66729	C78374	Orally, by gavage, as suspension	NARROW	VX
+C66729	C78374	Orally/gavage	EXACT	VX
+C66729	C78374	PO (Gavage)	RELATED	VX
+C66729	C78374	Per os / gavage	RELATED	VX
+C66729	C78374	Stomach tube	NARROW	VX
+C66729	C78374	oral (gavage)	EXACT	VX
+C66729	C78374	oral by gavage	RELATED	VX
+C66729	C78374	p.o.	RELATED	VX

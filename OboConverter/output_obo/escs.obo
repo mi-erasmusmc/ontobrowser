@@ -1,0 +1,2284 @@
+format-version: 1.2
+data-version: 1
+date: 29:01:2018 01:11
+auto-generated-by: OntoBrowser Export Service
+
+[Term]
+id: scs:066729
+name: main_synonym
+
+[Term]
+id: sct:028161
+synonym: "Intramuscular"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:028161
+synonym: "Intramuscular and subcutaneous"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:028161
+synonym: "Intramuscular depot injection"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:028161
+synonym: "Intramuscular injection"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:028161
+synonym: "Itramuscular injection every 3 day"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038194
+synonym: "Instillation into the conjunctival sac"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038208
+synonym: "Intratracheal"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038216
+synonym: "Aerosol inhalation"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038216
+synonym: "Dry powder"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038216
+synonym: "Inhalation"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038216
+synonym: "Inhalation  (nose only)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038216
+synonym: "Inhalation (WDF)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038216
+synonym: "Inhalation (dry powder aerosol)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038216
+synonym: "Inhalation (dry powder)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038216
+synonym: "Inhalation (nose only)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038216
+synonym: "Inhalation (nose-only exposure)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038216
+synonym: "Inhalation (nose-only)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038216
+synonym: "Inhalation 20-min"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038216
+synonym: "Inhalation 30-min"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038216
+synonym: "Inhalation 4-h"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038216
+synonym: "Inhalation administration"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038216
+synonym: "Inhalation by nose-only"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038216
+synonym: "Inhalation by oropharyngeal tube"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038216
+synonym: "Inhalation nasal 180-min"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038216
+synonym: "Inhalation nasal 3-h"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038216
+synonym: "Inhalation nose-only"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038216
+synonym: "Inhalation nose-only (dry powder)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038216
+synonym: "Inhalation of dust"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038216
+synonym: "Inhalation oro-nasal"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038216
+synonym: "Inhalation oro-nasal (dry powder)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038216
+synonym: "Inhalation plus oral by gavage"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038216
+synonym: "Inhalation under dynamic directed-flow nose-only exposure condition"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038216
+synonym: "Inhalation,  2.5-10 min"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038216
+synonym: "Inhalation, dry powder"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038216
+synonym: "Mask inhalation"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038216
+synonym: "Nasal inhalation"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038216
+synonym: "Nose-only inhalation"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038216
+synonym: "Nose-only inhalation (dry powder)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038216
+synonym: "Oral - inhalation"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038216
+synonym: "Oral inhalation"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038216
+synonym: "Orally inhalated"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038216
+synonym: "Oronasal inhalation"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038216
+synonym: "Snout-only inhalation"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038223
+synonym: "Intra-articular injections"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038223
+synonym: "Intraarticular injection"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038238
+synonym: "Intradermal"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038245
+synonym: "Esophageal intubation"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038246
+synonym: "Intragastric"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038249
+synonym: "Intraileum"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038255
+synonym: "Instillation into the conjuctival sac"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038255
+synonym: "Ocular"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038258
+synonym: "Intraperitoneal"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038258
+synonym: "Intraperitoneal injection"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038267
+synonym: "Intrathecal"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038272
+synonym: "Intrauterine"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038274
+synonym: "Bolus Intravenous"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038274
+synonym: "Bolus intravenous injection"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038274
+synonym: "Intravenous (bolus injection into the jugular vein)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038274
+synonym: "Intravenous (bolus injection into the tail vein)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038274
+synonym: "Intravenous (bolus)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038274
+synonym: "Intravenous bolus"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038274
+synonym: "Intravenous bolus (0.2 ml/100 g body weight)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038274
+synonym: "Intravenous bolus injection"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038274
+synonym: "Intravenous single bolus injection"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038274
+synonym: "Intravenous, bolus"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038274
+synonym: "Intravenous, bolus injection"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038274
+synonym: "Intravenous, by slow bolus"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038274
+synonym: "Intravenous, by slow bolus injection"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038274
+synonym: "Intravenous/bolus"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038274
+synonym: "Intravenously (bolus - tail vein)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038274
+synonym: "Slow intravenous bolus"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038276
+synonym: "Intavenous"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038276
+synonym: "Intravenos injection"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038276
+synonym: "Intravenous"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038276
+synonym: "Intravenous (Tail vein)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038276
+synonym: "Intravenous (injection in the tail vein)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038276
+synonym: "Intravenous (jugular)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038276
+synonym: "Intravenous (jugularis)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038276
+synonym: "Intravenous (or exceptionally subcutaneously)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038276
+synonym: "Intravenous (tail vein - 0.1 ml/100 g b.w.)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038276
+synonym: "Intravenous (tail vein)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038276
+synonym: "Intravenous (via an implanted port catheter system)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038276
+synonym: "Intravenous Injection"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038276
+synonym: "Intravenous at days 14 and 28 only"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038276
+synonym: "Intravenous in the tail vein"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038276
+synonym: "Intravenous injection"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038276
+synonym: "Intravenous injection (tail vein)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038276
+synonym: "Intravenous injection (tail)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038276
+synonym: "Intravenous injections"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038276
+synonym: "Intravenous into right ear"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038276
+synonym: "Intravenous via a tail vein"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038276
+synonym: "Intravenous via the tail vein"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038276
+synonym: "Intravenous(via the tail)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038276
+synonym: "Intravenous, liposomal formulation"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038276
+synonym: "Intravenous, via the tail vein"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038276
+synonym: "Intravenous/perivenous/intraarterial"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038276
+synonym: "Intravenously"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038276
+synonym: "Intravenously (0.1 ml/100 g bw)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038276
+synonym: "Intravenously (jugular vein)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038276
+synonym: "Intravenously (tail vein)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038276
+synonym: "Intravenously (via jugular vein)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038276
+synonym: "Intravenously (via the tail)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038276
+synonym: "Intravenously via the tail vein"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038276
+synonym: "Intravenously, i.p. when i.v. no longer possible"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038276
+synonym: "Intravenously, via the tail vein"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038276
+synonym: "Intraveous"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038276
+synonym: "Introvenous"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038276
+synonym: "intravenous"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Continuous intravenous infusion"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenour 4h infusion"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous (1-hour infusion)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous (2 h) infusion"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous (30 min) infusion"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous (4-hour per day) infusion"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous (5 min-duration)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous (Continuous infusion)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous (Infusion)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous (continuous infusion)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous (infusion)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous 1-h infusion"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous 1-h-infusion"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous 1-hour infusion"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous 1.5 min"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous 10-min infusion"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous 15-min infusion"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous 16-min infusion"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous 18-min infusion"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous 1h infusion"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous 1h-infusion"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous 2-h infusion"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous 2-min"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous 2-min infusion"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous 20-min"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous 24-h"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous 24-h infusion"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous 2h-infusion"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous 3-h infusion"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous 3-min infusion"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous 30-min infusion"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous 3h-infusion"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous 4 h infusion"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous 4-h infusion"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous 5 days/week"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous 5-min infusion"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous 6-h infusion"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous 60-min"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous 8h-infusion"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous Infusion"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous Infusion for 1 hour"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous continuous"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous continuous for 24 h"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous continuous infusion"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous infused for 20 min"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous infusion"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous infusion (1 hour period)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous infusion (1-h)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous infusion (1.7 ¿ 6.7 ml/kg/hour)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous infusion (1.7-6.7 ml/kg/hour)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous infusion (1h)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous infusion (30 minutes   cephalic or saphenous vein)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous infusion (30 minutes - cephalic or saphenous vein)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous infusion (caudal vein - 10ml/kg - 5 min)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous infusion (caudal vein)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous infusion for 1 h"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous infusion for 2 h"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous infusion over 0.5 h"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous infusion via a tail vein at 0.5 ml/min"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous infusion via the femoral vein"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous infusion via the left femoral vein"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous over 5 min"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous, 1 hour infusion once a day"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous, 1-min"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous, 10-min"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous, 14-min infusion"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous, 5-min"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous, slow"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenous: 15 min infusion"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "Intravenously, bolus followed by an infusion"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038279
+synonym: "intravenous 1-h infusion"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038284
+synonym: "Intranasal"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038284
+synonym: "Intranasal (spray)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038284
+synonym: "Intranasal instillation"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038284
+synonym: "Intranasal spray"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038284
+synonym: "Intranasally"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038284
+synonym: "Nasal"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038285
+synonym: "Oral, by naso-gastric intubation"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Ora in capsule"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Oral"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Oral (Capsule)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Oral (Gelatin Capsule)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Oral (Gelatin capsule)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Oral (capsule)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Oral (capsules)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Oral (gelatin capsule)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Oral (gelatin capsules)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Oral (gelatine capsules)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Oral (in gelatin capsules)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Oral (individual amounts in gelatin capsules)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Oral (tablet)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Oral (tablets)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Oral (via gelatin capsules)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Oral - liquid filled gelatin capsule"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Oral administration"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Oral by capsula"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Oral by capsule"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Oral by gelatin capsules"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Oral capsule"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Oral capsule/gavage"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Oral gavage ZD7054, Oral, via drinking water ZD1033"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Oral in  capsules"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Oral in capsule"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Oral in capsules"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Oral in gelatin capsules"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Oral in gelatine capsules"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Oral route (capsules)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Oral via gelatin capsules"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Oral via hard shell gelatin capsule"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Oral, by gelatin capsule"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Oral, by gelatine capsules"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Oral, capsules"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Oral, enteric-coated pellets"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Oral, in capsules"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Oral, in gelatine capsules"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Oral, once daily"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Oral, twice daily"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Oral/gelatin capsule"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Oralin capsule"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Orally"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Orally (gavage of capsule)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Orally by capsule"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Orally by capsule, once daily"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Orally by capsules"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Orally in capsules"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Orally in gelatin capsules"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Orally in gelatine capsule"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Orally in gelatine capsules"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Orally via gelatin capsule"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Orally with gelatine capsules"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Oraly in capsules"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "Orat"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038288
+synonym: "oral"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038289
+synonym: "Oropharyngeal"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038291
+synonym: "Parenteral I.V."[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038291
+synonym: "Parenteral I.V. (0.1 ml/100 g body weight/day)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038295
+synonym: "Rectal"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038295
+synonym: "Rectal (suppositoria)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038295
+synonym: "Rectal gavage"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038295
+synonym: "Rectal suppositoria"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038297
+synonym: "Subarachnoidal"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038299
+synonym: "Subcutaneous"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038299
+synonym: "Subcutaneous  injection"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038299
+synonym: "Subcutaneous bolus injection"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038299
+synonym: "Subcutaneous by osmotic minipump"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038299
+synonym: "Subcutaneous implantation"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038299
+synonym: "Subcutaneous infusion"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038299
+synonym: "Subcutaneous injection"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038299
+synonym: "Subcutaneous minipump infusion"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038299
+synonym: "Subcutaneous(injection)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038299
+synonym: "Subcutaneous, as microspheres (65:35 PLG-COOH)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038299
+synonym: "Subcutaneous, as microspheres (75:25 PLG-COOH)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038299
+synonym: "Subcutaneously"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038299
+synonym: "Subcutaneously, in the neck region"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038299
+synonym: "Subcutaneuos"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038299
+synonym: "Subcutanous"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038299
+synonym: "Subcutanous injection"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038299
+synonym: "Subutaneus"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038299
+synonym: "subcutaneous"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038304
+synonym: "Topical"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038310
+synonym: "Combinding inhalation and subcutaneous injection"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038310
+synonym: "Combining inhalation and subcutaneous injection"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038310
+synonym: "IV (0.1 ml/100 g b.w./day) in combination with OR (2 ml/100 g b.w./day)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038310
+synonym: "Inhalation + Subcutaneous injection"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038310
+synonym: "Inhalation + subcutaneous"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038310
+synonym: "Intranasal (for first 2 weeks) and oral (gavage) (for next 2 weeks)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038310
+synonym: "Intravenous infusions, subcutaneous injections"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038310
+synonym: "Nasal inhalation (4h) followed by a subcutaneous injection 1 h post inhalation"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038310
+synonym: "Nasal inhalation/subcutaneous"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038310
+synonym: "Oral and nasal"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038310
+synonym: "Oral and subcutaneous"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038310
+synonym: "Oral and subcutaneous injection"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038310
+synonym: "Oral gavage (dexametason); Intravenous (GGA_IRIS_SER013)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038310
+synonym: "Oral gavage plus subcutaneous dosing"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038310
+synonym: "Oral gavage, subcutaneous"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038310
+synonym: "Oral gavage/subcutaneous injection"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038310
+synonym: "Oral, by gavage and intravenous"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038310
+synonym: "Oral, by gavage/intravenous"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038310
+synonym: "Oral/Intravenous"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038310
+synonym: "Oral/subcutaneous"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038310
+synonym: "Oral/subcutaneous injection"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038310
+synonym: "Orally: through the diet/Intranasally: via nose drops"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038310
+synonym: "Subcutaneously and rectally"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038311
+synonym: "Not available"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038311
+synonym: "Unreported"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038313
+synonym: "Dermal, vaginal"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038313
+synonym: "Intravaginal"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038675
+synonym: "Cutaneous"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038675
+synonym: "Dermal"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038675
+synonym: "Dermal (micropipette)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038675
+synonym: "Dermal aplication"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038675
+synonym: "Dermal application"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038675
+synonym: "Dermal application about 10% of the total skin surface"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038675
+synonym: "Dermal patch"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038675
+synonym: "Dermal, 30-min application"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038675
+synonym: "Dermal, scarified"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038675
+synonym: "Dermally to intact skin"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038675
+synonym: "Skin (patch)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038675
+synonym: "Skin application for 18-20 h daily"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038675
+synonym: "Topical application"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:038676
+synonym: "Percutaneous"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Diet"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Diet (Altromin 1321 meal)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Diet (Altromin¿ 1321 meal)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Dietary"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Dietary admixture"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Drinking water"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Feed"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Feed admix"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Feed-admix"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Ground diet"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "In feed"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Oral (Feed admix)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Oral (NDD diet)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Oral (admixture with the diet)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Oral (aqueous solution)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Oral (diet)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Oral (dietary admix)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Oral (dietary admixture)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Oral (dietary)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Oral (feed)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Oral (in feed admixtures)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Oral (in feed)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Oral (in the diet)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Oral by dietary admix"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Oral by dietary admixture"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Oral diet"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Oral dietary"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Oral drinking"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Oral feeding"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Oral in diet"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Oral in drinking water"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Oral in feed"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Oral in food"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Oral in the diet"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Oral on diet"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Oral via drinking water"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Oral(diet)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Oral, Dietary admix"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Oral, by dietary admix"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Oral, in diet"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Orally  in the diet"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Orally (in the diet)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Orally as a dietary admix"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Orally by incorporation into the diet"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Orally in diet"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Orally in drinking water"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Orally in feed"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Orally in the diet"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Orally in the food"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Orally through the diet"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Orally via dietary admixture"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Orally with feed"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Orally, via incorporation into the diet"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "Via the food"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078373
+synonym: "dietary"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "By gavage"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Forced oral"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Gastric intubation"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Gavage"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Naso-oesophageal"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oesophageal gavage"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral  by gavage"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral  gavage"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral (Gavage)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral (Stomach tube)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral (by gavage)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral (by intubation)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral (by stomach tube)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral (esophageal intubation)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral (gastric tube)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral (gavage )"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral (gavage tube)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral (gavage using a plastic cannula)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral (gavage)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral (intragastric intubation)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral (intubation)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral , by gavage"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral Gavage"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral Intubation"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral by Gavage"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral by gavage"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral by gavage (1 ml/100 g body weight/day)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral by gavage, twice daily"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral by stomach tube"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral gavage"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral gavage (0.5 ml per 100g body weight)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral gavage (1 ml/100 g body weight)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral gavage (flexible cannula)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral gavage (intubation)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral gavage once daily"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral gavage, once daily"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral gavage, twice daily"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral gvage"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral intubation"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral via gavage"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral via intubation"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral via stomach tube"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral(intragastric)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral(intubation)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral, be gavage"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral, by Gavage"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral, by HPMC capsules"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral, by Intubation"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral, by gastric intubation"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral, by gavage"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral, by gavage with long catheter"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral, by gavage with short catheter"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral, by gavage, once daily"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral, by gavage, twice daily"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral, by gavage."[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral, by intubation"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral, by stomach tube"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral, esophageal intubation"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral, gavage"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral, gavage using a plastic cannula"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral, naso-esophagial intubation"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral, with stomach tube"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral, with the aid of a metal rodent intubator"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral: esophageal intubation"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oral: naso-oesophageal intubation"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Oraliy by gavage (gastric catheter)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Orally (by gavage)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Orally by a stomach tube"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Orally by gastric intubation,"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Orally by gastric tube"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Orally by gavage"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Orally by gavage (0.8 ml/100 g b. w./day)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Orally by gavage as a suspension (1 ml/100g b.w./day); Orally through the food"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Orally by gavage as a suspension, daily"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Orally by gavage once a day"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Orally by gavage once daily"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Orally by gavage, once daily"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Orally by intubation"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Orally by stomach tube"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Orally via gastric tube"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Orally via gavage"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Orally with a stomach tube"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Orally, by gavage"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Orally, by gavage, as suspension"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Orally/gavage"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "PO (Gavage)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Per os / gavage"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "Stomach tube"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "oral (gavage)"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "oral by gavage"[VX]
+is_a: scs:066729 ! main_synonym
+
+[Term]
+id: sct:078374
+synonym: "p.o."[VX]
+is_a: scs:066729 ! main_synonym
+

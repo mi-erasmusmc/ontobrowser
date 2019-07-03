@@ -1,0 +1,1307 @@
+CODELIST_ID	TERM_ID	TERM_NAME	TERM_DEFINITION
+C67154	C100122	Pepsinogen	A measurement of the pepsinogen in a biological specimen.
+C67154	C100418	Sideroblast	A measurement of the sideroblasts (nucleated erythroblasts with iron granules in the cytoplasm) in a biological specimen.
+C67154	C100419	Ringed Sideroblasts	A measurement of the ringed sideroblasts (abnormal nucleated erythroblasts with a large number of iron deposits in the perinuclear mitochondria, forming a ring around the nucleus) in a biological specimen.
+C67154	C100420	Tricyclic Antidepressants	A measurement of tricyclic antidepressants in a biological specimen.
+C67154	C100422	Ecarin Clotting Time	A measurement of the activity of thrombin inhibitors in a biological specimen based on the generation of meizothrombin.
+C67154	C100423	Complement CH50	A measurement of the complement required to lyse 50 percent of red blood cells in a biological specimen.
+C67154	C100424	Platelet Hematocrit	A relative measurement (ratio or percentage) of the proportion of the volume of blood taken up by platelets.
+C67154	C100425	HDL Cholesterol/LDL Cholesterol Ratio	A relative measurement (ratio or percentage) of the amount of HDL cholesterol compared to LDL cholesterol in a biological specimen.
+C67154	C100426	Beta-Trace Protein	A measurement of the beta-trace protein in a biological specimen.
+C67154	C100427	Apolipoprotein C2	A measurement of the apolipoprotein C2 in a biological specimen.
+C67154	C100428	Apolipoprotein J	A measurement of the apolipoprotein J in a biological specimen.
+C67154	C100429	Alpha-1 Acid Glycoprotein	A measurement of the alpha-1 acid glycoprotein in a biological specimen.
+C67154	C100430	Alanine Aminopeptidase	A measurement of the alanine aminopeptidase in a biological specimen.
+C67154	C100431	Chemokine (C-X-C Motif) Receptor 3	A measurement of the CXCR3, chemokine (C-X-C motif) receptor 3, in a biological specimen.
+C67154	C100432	Ceruloplasmin	A measurement of ceruloplasmin in a biological specimen.
+C67154	C100433	Kidney Injury Molecule-1	A measurement of the kidney injury molecule-1 (Kim-1) in a biological specimen.
+C67154	C100434	Non-Prostatic Acid Phosphatase	A measurement of the non-prostatic acid phosphatase in a biological specimen.
+C67154	C100435	Prealbumin	A measurement of the prealbumin in a biological specimen.
+C67154	C100436	Protein S	A measurement of the total protein S in a biological specimen.
+C67154	C100437	Retinol Binding Protein	A measurement of the total retinol binding protein in a biological specimen.
+C67154	C100438	Soluble Transferrin Receptor	A measurement of the soluble transferrin receptor in a biological specimen.
+C67154	C100439	Iohexol Clearance	A measurement of the volume of serum or plasma that would be cleared of Iohexol through excretion for a specified unit of time.
+C67154	C100440	EDTA Clearance	A measurement of the volume of serum or plasma that would be cleared of Ethylenediamine tetraacetic acid (EDTA) through its excretion for a specified unit of time.
+C67154	C100441	DTPA Clearance	A measurement of the volume of serum or plasma that would be cleared of Diethylenetriamine pentaacetate (DTPA) through its excretion for a specified unit of time.
+C67154	C100442	Immature Neutrophils/Leukocytes	A relative measurement (ratio or percentage) of the immature neutrophils to leukocytes in a biological specimen.
+C67154	C100443	Immature Lymphocytes/Leukocytes	A relative measurement (ratio or percentage) of the immature lymphocytes to leukocytes in a biological specimen.
+C67154	C100444	Immature Lymphocytes	A measurement of the immature lymphocytes in a biological specimen.
+C67154	C100445	Immature Granulocytes/Leukocytes	A relative measurement (ratio or percentage) of the immature granulocytes to leukocytes in a biological specimen (for example a bone marrow specimen).
+C67154	C100446	Proerythroblast	A measurement of the proerythroblasts in a biological specimen.
+C67154	C100448	Free Glycerol	A measurement of the amount of unbound glycerol in a biological specimen.
+C67154	C100449	GFR from Beta-Trace Protein Adj for BSA	A measurement of the glomerular filtration rate (GFR) based on the clearance of beta-trace protein after adjusting it for the body surface area.
+C67154	C100450	GFR from B-2 Microglobulin Adj for BSA	A measurement of the glomerular filtration rate (GFR) based on the clearance of beta-2 microglobulin after adjusting it for the body surface area.
+C67154	C100452	Ova and Parasite	A measurement of the parasites and ova in a biological specimen.
+C67154	C100453	Plasmodium	Examination of a biological specimen to detect the presence of any protozoan belonging to the Plasmodium genus.
+C67154	C100454	Liver Kidney Microsomal Type 1 IgG Ab	A measurement of the liver kidney microsomal type 1 IgG antibodies in a biological specimen.
+C67154	C100455	Liver Kidney Microsomal Type 1 IgM Ab	A measurement of the liver kidney microsomal type 1 IgM antibodies in a biological specimen.
+C67154	C100456	Liver Kidney Microsomal Type 1 IgA Ab	A measurement of the liver kidney microsomal type 1 IgA antibodies in a biological specimen.
+C67154	C100457	Ribonucleoprotein Antibody	A measurement of the ribonucleoprotein antibody in a biological specimen.
+C67154	C100458	Scl-70 Antibody	A measurement of the total Scl-70 antibody in a biological specimen.
+C67154	C100459	Jo-1 Antibody	A measurement of the Jo-1 antibody in a biological specimen.
+C67154	C100460	HLA-B27 Antigen	A measurement of the human leukocyte antigen B27 (HLA-B27) in a biological specimen.
+C67154	C100461	Alpha-1 Microglobulin	A measurement of the alpha-1 microglobulin in a biological specimen.
+C67154	C100462	Alpha-1 Microglobulin/Creatinine	A relative measurement (ratio or percentage) of the alpha-1 microglobulin to creatinine in a biological specimen.
+C67154	C100463	DNase-B Antibody	A measurement of Dnase-B antibody in a biological specimen.
+C67154	C100464	Chlamydia trachomatis IgA Antibody	A measurement of the Chlamydia trachomatis IgA antibody in a biological specimen.
+C67154	C100465	Chlamydia trachomatis IgM Antibody	A measurement of the Chlamydia trachomatis IgM antibody in a biological specimen.
+C67154	C100466	Chlamydia trachomatis IgG Antibody	A measurement of the Chlamydia trachomatis IgG antibody in a biological specimen.
+C67154	C100467	Pepsinogen I	A measurement of the pepsinogen I in a biological specimen.
+C67154	C100468	Pepsinogen II	A measurement of the pepsinogen II in a biological specimen.
+C67154	C100469	Pepsinogen A	A measurement of the pepsinogen A in a biological specimen.
+C67154	C100470	Pepsinogen C	A measurement of the pepsinogen C in a biological specimen.
+C67154	C100471	Activated Protein C Resistance	A measurement of the resistance in the anticoagulation response to activated protein C in a biological specimen.
+C67154	C100472	Beta Carotene	A measurement of the beta carotene in a biological specimen.
+C67154	C101016	Carbohydrate-Deficient Transferrin	A measurement of transferrin with a reduced number of carbohydrate moieties in a biological specimen.
+C67154	C101017	3,4-Dihydroxyphenylglycol	A measurement of the catecholamine metabolite, 3,4-Dihydroxyphenylglycol in a biological specimen.
+C67154	C102257	Adenosine Diphosphate	A measurement of the adenosine diphosphate in a biological specimen.
+C67154	C102258	Antiphospholipid Antibodies	A measurement of the antiphospholipid antibodies in a biological specimen.
+C67154	C102259	Arachidonic Acid	A measurement of the arachidonic acid present in a biological specimen.
+C67154	C102260	CD34	A measurement of the CD34 expressing cells per unit in a biological specimen.
+C67154	C102261	Clue Cells	A measurement of the clue cells in a biological specimen.
+C67154	C102262	Dextroamphetamine	A measurement of the dextroamphetamine in a biological specimen.
+C67154	C102263	ETP Area Under Curve	A measurement of the area under the thrombin generation curve.
+C67154	C102264	ETP Lag Time	A measurement of time from the start of the thrombin generation test to the point where a predetermined amount of thrombin is generated.
+C67154	C102265	ETP Lag Time Relative	A relative measurement (ratio or percentage) of time from the start of the thrombin generation test to the point where a predetermined amount of thrombin is generated.
+C67154	C102266	Endogenous Thrombin Potential	A measurement of the total concentration of thrombin generated in the presence of a substrate in a plasma or blood sample.
+C67154	C102267	ETP Peak Height	A measurement of the maximum concentration of thrombin generated during a thrombin generation test.
+C67154	C102268	ETP Peak Height Relative	A relative (ratio or percentage) of the maximum concentration of thrombin generated during a thrombin generation test.
+C67154	C102269	ETP Time to Peak	A measurement of the time it takes to generate the maximum concentration of thrombin.
+C67154	C102270	ETP Time to Peak Relative	A relative (ratio or percentage) measurement of the time it takes to generate the maximum concentration of thrombin.
+C67154	C102271	Factor V Leiden	A measurement of the Factor V Leiden in a biological specimen.
+C67154	C102272	Factor XIV	A measurement of the factor XIV in a biological specimen.
+C67154	C102273	Hematocrit Corrected Reticulocytes	A measurement of the hematocrit corrected reticulocytes in a biological specimen.
+C67154	C102274	HCT Corrected Reticulocytes/Erythrocytes	A relative measurement (ratio or percentage) of the hematocrit corrected reticulocytes to erythrocytes in a biological specimen.
+C67154	C102275	Hydrogen	A measurement of the hydrogen in a biological specimen.
+C67154	C102276	Immature Reticulocyte Fraction	A measurement of the immature reticulocyte fraction present in a biological specimen.
+C67154	C102277	Lupus Anticoagulant Sensitive APTT	A measurement of the length of time that it takes for clotting to occur when a lupus sensitive reagent is added to a plasma specimen.
+C67154	C102278	Lymphoblasts	A measurement of the lymphoblasts (immature cells that differentiate to form lymphocytes) in a biological specimen.
+C67154	C102279	P50 Oxygen	A measurement of the partial pressure of oxygen when hemoglobin is half saturated in a biological specimen.
+C67154	C102280	Soluble Interleukin 2 Receptor Activity	A measurement of the soluble interleukin 2 receptor activity in a biological specimen.
+C67154	C102281	Sperm Motility	A measurement of the sperm capable of forward, progressive movement in a semen specimen.
+C67154	C102282	Urine Conductivity	A measurement of the urine conductivity which is a non-linear function of the electrolyte concentration in the urine.
+C67154	C103343	Prostaglandin	A measurement of the total prostaglandin in a biological specimen.
+C67154	C103344	11-Dehydro-Thromboxane B2	A measurement of the 11-dehydro-thromboxane B2 in a biological specimen.
+C67154	C103345	3,4-Dihydroxyphenylacetic Acid	A measurement of the 3,4-dihydroxyphenylacetic acid in a biological specimen.
+C67154	C103348	Activated Coagulation Time	A measurement of the inhibition of blood coagulation in response to anticoagulant therapies.
+C67154	C103349	Alpha Tocopherol	A measurement of the alpha tocopherol in a biological specimen.
+C67154	C103350	Alpha Tocopherol/Vitamin E	A relative measurement (ratio or percentage) of alpha-tocopherol to the total vitamin E in a biological specimen.
+C67154	C103351	Alpha-2 Antiplasmin	A measurement of the alpha-2 antiplasmin in a biological specimen.
+C67154	C103352	Amyloid Beta 1-38	A measurement of amyloid beta protein which is composed of peptides 1 to 38 in a biological specimen.
+C67154	C103353	Amyloid Beta 1-40	A measurement of amyloid beta protein which is composed of peptides 1 to 40 in a biological specimen.
+C67154	C103354	Apolipoprotein A4	A measurement of the apolipoprotein A4 in a biological specimen.
+C67154	C103355	Apolipoprotein A5	A measurement of the apolipoprotein A5 in a biological specimen.
+C67154	C103356	Apolipoprotein B/Apolipoprotein A1	A relative measurement (ratio or percentage) of the Apolipoprotein B to Apolipoprotein A1 in a biological specimen.
+C67154	C103357	Beta Catenin	A measurement of the beta catenin in a biological specimen.
+C67154	C103358	Beta-2 Glycoprotein 1 IgG Antibody	A measurement of the Beta-2 glycoprotein 1 IgG antibodies in a biological specimen.
+C67154	C103359	Beta-2 Glycoprotein 1 IgM Antibody	A measurement of the Beta-2 glycoprotein 1 IgM antibodies in a biological specimen.
+C67154	C103360	Calcium - Phosphorus Product	A measurement of the product of the calcium and phosphate measurements in a biological specimen.
+C67154	C103361	Cancer Antigen 1	A measurement of the cancer antigen 1 in a biological specimen.
+C67154	C103362	Cancer Antigen 15-3	A measurement of the cancer antigen 15-3 in a biological specimen.
+C67154	C103363	Cardiolipin IgM Antibody	A measurement of the cardiolipin IgM antibodies in a biological specimen.
+C67154	C103364	CD1	A count of the CD1 expressing cells per unit of a biological specimen.
+C67154	C103365	CD14	A count of the CD14 expressing cells per unit of a biological specimen.
+C67154	C103366	CD2	A count of the CD2 expressing cells per unit of a biological specimen.
+C67154	C103367	CD2/Lymphocytes	A relative measurement (ratio or percentage) of CD2 expressing cells to all lymphocytes in a biological specimen.
+C67154	C103368	CD20	A count of the CD20 expressing cells per unit of a biological specimen.
+C67154	C103369	CD5	A count of the CD5 expressing cells per unit of a biological specimen.
+C67154	C103370	CD56	A count of the CD56 expressing cells per unit of a biological specimen.
+C67154	C103380	Cholesteryl Ester Transfer Protein Act	A measurement of the biological activity of cholesteryl ester transfer protein in a biological specimen.
+C67154	C103381	Clostridium difficile Toxin	A measurement of the Clostridium difficile toxin in a biological specimen.
+C67154	C103382	Clostridium tetani IgG Antibody	A measurement of the Clostridium tetani IgG antibody in a biological specimen.
+C67154	C103383	Collagen Type IV	A measurement of the collagen type IV in a biological specimen.
+C67154	C103386	Dilute Russell's Viper Venom Time Ratio	A relative measurement (ratio or percentage) of the dilute Russell's viper venom time in a subject sample to a control sample.
+C67154	C103387	Dipeptidyl Peptidase-4 Activity	A measurement of the biological activity of dipeptidyl peptidase-4 in a biological specimen.
+C67154	C103388	Diphtheria IgG Antibody	A measurement of the Diphtheria IgG antibodies in a biological specimen.
+C67154	C103395	Factor IX Activity	A measurement of the biological activity of factor IX in a biological specimen.
+C67154	C103396	Factor V Activity	A measurement of the biological activity of factor V in a biological specimen.
+C67154	C103397	Factor VII Activity	A measurement of the biological activity of factor VII in a biological specimen.
+C67154	C103398	Factor VIIa Activity	A measurement of the biological activity of factor VIIa in a biological specimen.
+C67154	C103399	Factor VIII Activity	A measurement of the biological activity of factor VIII in a biological specimen.
+C67154	C103402	HDL Particle Size	A measurement of the average particle size of high-density lipoprotein in a biological specimen.
+C67154	C103403	Helicobacter pylori IgG Antibody	A measurement of the Helicobacter pylori IgG antibody in a biological specimen.
+C67154	C103404	Hepatitis B DNA	A measurement of hepatitis B virus DNA in a biological specimen.
+C67154	C103405	Human Albumin Antibody	A measurement of the human albumin antibody in a biological specimen.
+C67154	C103406	Human Anti-Mouse Antibody	A measurement of the human anti-mouse antibody in a biological specimen.
+C67154	C103407	Immunoblasts	A measurement of the immunoblasts in a biological specimen.
+C67154	C103408	Influenza A IgG Antibody	A measurement of the Influenza A IgG antibody in a biological specimen.
+C67154	C103409	Influenza B IgG Antibody	A measurement of the Influenza B IgG antibody in a biological specimen.
+C67154	C103410	Isoleucine	A measurement of the isoleucine in a biological specimen.
+C67154	C103412	LDL Particle Size	A measurement of the average particle size of low-density lipoprotein in a biological specimen.
+C67154	C103413	Leukotriene B4	A measurement of the leukotriene B4 in a biological specimen.
+C67154	C103414	Leukotriene D4	A measurement of the leukotriene D4 in a biological specimen.
+C67154	C103415	Leukotriene E4	A measurement of the leukotriene E4 in a biological specimen.
+C67154	C103418	Myelin Antibodies	A measurement of the myelin antibodies in a biological specimen.
+C67154	C103419	N-acetyl-beta-D-glucosaminidase	A measurement of the N-acetyl-beta-D-glucosaminidase (enzyme) in a biological specimen.
+C67154	C103427	Platelet Aggregation	A measurement of the association of platelets to one another via adhesion molecules in a biological sample.
+C67154	C103430	Procalcitonin	A measurement of the procalcitonin in a biological specimen.
+C67154	C103431	Prostaglandin D2	A measurement of the prostaglandin D2 in a biological specimen.
+C67154	C103432	Prostaglandin D2 Synthase	A measurement of the prostaglandin D2 synthase in a biological specimen.
+C67154	C103433	Prostaglandin E Synthase	A measurement of the prostaglandin E synthase in a biological specimen.
+C67154	C103434	Prostaglandin E1	A measurement of the prostaglandin E1 in a biological specimen.
+C67154	C103435	Prostaglandin E2	A measurement of the prostaglandin E2 in a biological specimen.
+C67154	C103436	Prostaglandin F1 Alpha	A measurement of the prostaglandin F1 alpha in a biological specimen.
+C67154	C103437	Prostaglandin F2 Alpha	A measurement of the prostaglandin F2 alpha in a biological specimen.
+C67154	C103440	Rubella IgG Antibody	A measurement of the Rubella IgG antibody in a biological specimen.
+C67154	C103445	Thromboxane B2	A measurement of the thromboxane B2 in a biological specimen.
+C67154	C103446	Thyroglobulin	A measurement of the thyroglobulin in a biological specimen.
+C67154	C103448	Vitamin E/Cholesterol	A relative measurement (ratio or percentage) of vitamin E to total cholesterol in a biological specimen.
+C67154	C103449	Vitamin K1	A measurement of the Vitamin K1 in a biological specimen.
+C67154	C103450	VLDL Particle Size	A measurement of the average particle size of very-low-density lipoprotein in a biological specimen.
+C67154	C103451	Parathyroid Hormone, Whole	A measurement of the whole parathyroid hormone (consisting of amino acids 1-84) in a biological specimen.
+C67154	C103453	Albumin/Total Protein	A relative measurement (ratio or percentage) of the albumin to total protein in a biological specimen.
+C67154	C103808	CD19	A count of the CD19 expressing cells per unit in a biological specimen.
+C67154	C103809	CD3	A count of the CD3 expressing cells per unit in a biological specimen.
+C67154	C103810	CD4	A count of the CD4 expressing cells per unit in a biological specimen.
+C67154	C103811	CD8	A count of the CD8 expressing cells per unit in a biological specimen.
+C67154	C103812	CD19/Lymphocytes	A relative measurement (ratio or percentage) of CD19 expressing cells to all lymphocytes in a biological specimen.
+C67154	C103813	CD3/Lymphocytes	A relative measurement (ratio or percentage) of CD3 expressing cells to all lymphocytes in a biological specimen.
+C67154	C103814	CD4/CD8	A relative measurement (ratio or percentage) of CD4 expressing cells to the CD8 expressing cells in a biological specimen.
+C67154	C103815	CD4/Lymphocytes	A relative measurement (ratio or percentage) of CD4 expressing cells to all lymphocytes in a biological specimen.
+C67154	C103816	CD8/Lymphocytes	A relative measurement (ratio or percentage) of CD8 expressing cells to all lymphocytes in a biological specimen.
+C67154	C105438	Amyloid Beta Precursor Protein	A measurement of the amyloid beta precursor protein present in a biological specimen.
+C67154	C105439	CD11A	A count of the CD11a expressing cells per unit of a biological specimen.
+C67154	C105440	CD11B	A count of the CD11b expressing cells per unit of a biological specimen.
+C67154	C105441	Cystine	A measurement of the cystine in a biological specimen.
+C67154	C105442	Factor XIV Activity	A measurement of the factor XIV activity in a biological specimen.
+C67154	C105443	FibroTest Score	A biomarker test that measures liver pathology through the assessment of a six-parameter blood test (for Alpha-2-macroglobulin, Haptoglobin, Apolipoprotein A1, Gamma-glutamyl transpeptidase (GGT), Total bilirubin, and Alanine aminotransferase (ALT)), taking into account the age and gender of the patient.
+C67154	C105444	Lymphoblasts/Leukocytes	A relative measurement (ratio or percentage) of the lymphoblasts to leukocytes in a biological specimen.
+C67154	C105445	Theophylline	A measurement of the Theophylline present in a biological specimen.
+C67154	C105585	Glucose	A measurement of the glucose in a biological specimen.
+C67154	C105586	Cholesterol	A measurement of the cholesterol in a biological specimen.
+C67154	C105587	HDL Cholesterol	A measurement of the high density lipoprotein cholesterol in a biological specimen.
+C67154	C105588	LDL Cholesterol	A measurement of the low density lipoprotein cholesterol in a biological specimen.
+C67154	C105589	VLDL Cholesterol	A measurement of the very low density lipoprotein cholesterol in a biological specimen.
+C67154	C105590	Ammonium Biurate Crystals	A measurement of the ammonium biurate crystals present in a biological specimen.
+C67154	C105744	Sediment Examination	An observation, assessment or examination of the sediment in a biological specimen.
+C67154	C106498	ALT/AST	A relative measurement (ratio or percentage) of the alanine aminotransferase (ALT) to aspartate aminotransferase (AST) present in a sample.
+C67154	C106499	Alpha Fetoprotein Activity	A measurement of the alpha fetoprotein activity in a biological specimen.
+C67154	C106504	Yeast Budding	A measurement of the budding yeast present in a biological specimen.
+C67154	C106505	Cancer Antigen 72-4	A measurement of the cancer antigen 72-4 in a biological specimen.
+C67154	C106509	Chloride Clearance	A measurement of the volume of serum or plasma that would be cleared of chloride by excretion of urine for a specified unit of time (e.g. one minute).
+C67154	C106511	Corticosterone/Creatinine	A relative measurement (ratio or percentage) of the corticosterone to creatinine present in a sample.
+C67154	C106512	Cortisol/Creatinine	A relative measurement (ratio or percentage) of the cortisol to creatinine present in a sample.
+C67154	C106513	Cystatin C/Creatinine	A relative measurement (ratio or percentage) of the cystatin C to creatinine present in a sample.
+C67154	C106514	Cytokeratin Fragment 21-1	A measurement of the cytokeratin 19 fragment 21-1 in a biological specimen.
+C67154	C106518	Epstein-Barr Nuclear Antigen 1 IgG Ab	A measurement of the Epstein-Barr nuclear antigen 1 IgG antibody in a biological specimen.
+C67154	C106519	EBV Profile Interpretation	An assessment of Epstein-Barr virus infection based on a panel of EBV antigen antibody tests.
+C67154	C106521	Fatty Acid Binding Protein 3	A measurement of the fatty acid binding protein 3 in a biological specimen.
+C67154	C106525	Hemoglobin Distribution Width	A measurement of the distribution of the hemoglobin concentration in red blood cells.
+C67154	C106526	Hepatitis E Virus IgG Antibody	A measurement of IgG antibody to the hepatitis E virus in a biological specimen.
+C67154	C106527	HIV Antibody	A measurement of the antibody reaction of a biological specimen to the HIV virus.
+C67154	C106535	Immunoblasts/Lymphocytes	A relative measurement (ratio or percentage) of immunoblasts to all lymphocytes present in a sample.
+C67154	C106537	Glucose-dep Insulinotropic Pep, Intact	A measurement of the intact (containing amino acids 1-42) glucose-dependent insulinotropic peptide in a biological specimen.
+C67154	C106539	Lipocalin-2	A measurement of lipocalin-2 in a biological specimen.
+C67154	C106540	Lipocalin-2/Creatinine	A relative measurement (ratio or percentage) of the lipocalin-2 to creatinine present in a sample.
+C67154	C106544	Monocytes/Macrocytes	A relative measurement (ratio or percentage) of the monocytes to macrocytes present in a sample.
+C67154	C106546	Myoglobin/Creatinine	A relative measurement (ratio or percentage) of the myoglobin to creatinine present in a sample.
+C67154	C106547	Myosin Light Chain 3	A measurement of myosin light chain 3 in a biological specimen.
+C67154	C106553	Phosphate Clearance	A measurement of the volume of serum or plasma that would be cleared of phosphate by excretion of urine for a specified unit of time (e.g. one minute).
+C67154	C106560	Potassium Clearance	A measurement of the volume of serum or plasma that would be cleared of potassium by excretion of urine for a specified unit of time (e.g. one minute).
+C67154	C106568	Sodium Clearance	A measurement of the volume of serum or plasma that would be cleared of sodium by excretion of urine for a specified unit of time (e.g. one minute).
+C67154	C106569	Specimen Weight	A measurement of the weight of a biological specimen.
+C67154	C106574	Thrombin/Antithrombin	A relative measurement (ratio or percentage) of the thrombin to antithrombin present in a sample.
+C67154	C106575	TIMP1/Creatinine	A relative measurement (ratio or percentage) of the tissue inhibitor of metalloproteinase 1 to creatinine present in a sample.
+C67154	C107435	Fractional Sodium Excretion	A measurement of the fractional excretion of sodium that is computed based upon the concentrations of sodium and creatinine in both blood and urine.
+C67154	C110935	Glomerular Filtration Rate, Estimated	A kidney function test that estimates the fluid volume that is filtered from the kidney glomeruli to the Bowman's capsule per unit of time.
+C67154	C111123	A Proliferation-Inducing Ligand	A measurement of the a proliferation-inducing ligand in a biological specimen.
+C67154	C111124	Abnormal Cells	A measurement of the abnormal cells in a biological specimen.
+C67154	C111125	Adenovirus Antibody	A measurement of the adenovirus antibody in a biological specimen.
+C67154	C111126	Alpha Hydroxybutyrate Dehydrogenase	A measurement of the alpha-hydroxybutyrate dehydrogenase in a biological specimen.
+C67154	C111127	Aluminum	A measurement of aluminum in a biological specimen.
+C67154	C111128	Angiopoietin 1	A measurement of angiopoietin 1 in a biological specimen.
+C67154	C111130	Apolipoprotein J/Creatinine	A relative measurement (ratio or percentage) of the apolipoprotein J to creatinine in a biological specimen.
+C67154	C111135	B-Cell Activating Factor	A measurement of the B-cell activating factor in a biological specimen.
+C67154	C111136	Bence-Jones Protein	A measurement of the total Bence-Jones protein in a biological specimen.
+C67154	C111142	Butyrylcholinesterase	A measurement of the total butyrylcholinesterase in a biological specimen.
+C67154	C111143	Cancer Antigen 27-29	A measurement of the cancer antigen 27-29 in a biological specimen.
+C67154	C111144	Cardiolipin IgG Antibody	A measurement of the cardiolipin IgG antibody in a biological specimen.
+C67154	C111145	Cartilage Oligomeric Matrix Protein	A measurement of the cartilage oligomeric matrix protein in a biological specimen.
+C67154	C111146	CD10	A measurement of the CD10 expressing cells per unit in a biological specimen.
+C67154	C111147	CD13	A measurement of the CD13 expressing cells per unit in a biological specimen.
+C67154	C111148	CD22	A measurement of the CD22 expressing cells per unit in a biological specimen.
+C67154	C111149	CD23	A measurement of the CD23 expressing cells per unit in a biological specimen.
+C67154	C111150	CD33	A measurement of the CD33 expressing cells per unit in a biological specimen.
+C67154	C111151	CD38	A measurement of the CD38 expressing cells per unit in a biological specimen.
+C67154	C111152	CD79A	A measurement of the CD79A expressing cells per unit in a biological specimen.
+C67154	C111153	Cellularity	A measurement of the degree, quality or condition of cells in a biological specimen.
+C67154	C111154	Centromere B Antibodies	A measurement of centromere B antibodies in a biological specimen.
+C67154	C111159	Chymotrypsin	A measurement of the total chymotrypsin in a biological specimen.
+C67154	C111160	Coccidioides Antibody	A measurement of the coccidioides antibody in a biological specimen.
+C67154	C111161	Copper	A measurement of copper in a biological specimen.
+C67154	C111164	Cryoglobulin	A measurement of cryoglobulin in a biological specimen.
+C67154	C111165	Cyclic Guanosine Monophosphate	A measurement of the cyclic guanosine 3,5-monophosphate in a biological specimen.
+C67154	C111166	Cytoplasmic Basophilia Neutrophil	A measurement of the neutrophils in a biological specimen showing a dark staining pattern in the cytoplasm due to increased acidic content.
+C67154	C111190	Degenerated Leukocytes	A measurement of the degenerated leukocytes (leukocytes that show deterioration in form or function) in a biological specimen.
+C67154	C111197	Erythrocyte Agglutination	A measurement of the erythrocyte agglutination in a biological specimen.
+C67154	C111206	Heinz Bodies/Erythrocytes	A relative measurement (ratio or percentage) of the erythrocytes that contain heinz bodies to total erythrocytes in a biological specimen.
+C67154	C111207	Hemoglobin A1C/Hemoglobin	A relative measurement (ratio or percentage) of the glycosylated hemoglobin to total hemoglobin in a biological specimen.
+C67154	C111208	Hemolytic Index	A measurement of the destruction of red blood cells in a biological specimen.
+C67154	C111209	Histone Antibodies	A measurement of histone antibodies in a biological specimen.
+C67154	C111232	Icteric Index	A measurement of the yellow color of a biological specimen, due to the presence of bile pigments.
+C67154	C111233	IgG IgM IgA Total	A measurement of the total IgG, IgM, and IgA in a biological specimen.
+C67154	C111234	Immature Cells/Total Cells	A relative measurement (ratio or percentage) of the immature hematopoietic cells to total cells in a biological specimen.
+C67154	C111239	Ketone Bodies	A measurement of the ketone bodies (acetone, acetoacetic acid, beta-hydroxybutyric acid, beta-ketopentanoate and beta-hydroxypentanoate) in a biological specimen.
+C67154	C111242	Lipemic Index	A measurement of the abnormally high concentration of lipid in a biological specimen.
+C67154	C111243	Macroamylase	A measurement of macroamylase in a biological specimen.
+C67154	C111244	Macrophages/Total Cells	A relative measurement (ratio or percentage) of the macrophages to total cells in a biological specimen.
+C67154	C111246	Mast Cells	A measurement of the mast cells in a biological specimen.
+C67154	C111247	Mast Cells/Total Cells	A relative measurement (ratio or percentage) of the mast cells to total cells in a biological specimen.
+C67154	C111250	Meningeal Cells	A measurement of the mengingeal cells in a biological specimen.
+C67154	C111251	Meningeal Cells/Total Cells	A relative measurement (ratio or percentage) of the meningeal cells to total cells in a biological specimen.
+C67154	C111276	Monocytoid Cells	A measurement of the monocytoid cells in a biological specimen.
+C67154	C111277	Monocytoid Cells/Total Cells	A relative measurement (ratio or percentage) of the monocytoid cells to total cells in a biological specimen.
+C67154	C111283	Thrombocytes	A measurement of the nucleated platelets, namely thrombocytes, in a biological specimen. This is typically measured in birds and other non-mammalian vertebrates.
+C67154	C111284	Oxygen Content	A measurement of the amount of oxygen content in a biological specimen.
+C67154	C111292	Platelet Activating Factor	A measurement of the platelet activating factor in a biological specimen.
+C67154	C111293	Platelet Aggregation Amplitude	A measurement of the magnitude of the platelet aggregation in a biological specimen.
+C67154	C111294	Platelet Component Distribution Width	A measurement of a marker of platelet shape change in a biological specimen.
+C67154	C111295	Platelet Function Closure Time	A measurement of the platelet function closure time in a biological specimen.
+C67154	C111296	Platelet Morphology	An examination or assessment of the form and structure of platelets.
+C67154	C111299	Proinsulin/Insulin Ratio	A relative measurement (ratio or percentage) of the proinsulin to insulin in a biological specimen.
+C67154	C111305	Renin Activity	A measurement of the renin activity in a biological specimen.
+C67154	C111317	Smooth Muscle Antibody	A measurement of the total smooth muscle antibody in a biological specimen.
+C67154	C111322	Surfactant Protein D	A measurement of the surfactant protein D in a biological specimen.
+C67154	C111327	Troponin	A measurement of the total troponin in a biological specimen.
+C67154	C111329	Vacuolated Lymphocytes	A measurement of the vacuolated lymphocytes in a biological specimen.
+C67154	C112217	5-Hydroxyindoleacetic Acid	A measurement of 5-hydroxyindoleacetic acid in a biological specimen.
+C67154	C112219	Active Ghrelin	A measurement of active ghrelin in a biological specimen.
+C67154	C112220	Aggrecan Chondroitin Sulfate Epitope 846	A measurement of the 846 epitope present on the chondroitin sulfate chains of aggrecan in a biological specimen.
+C67154	C112236	Chemokine (C-C Motif) Ligand 17	A measurement of the CCL17, chemokine (C-C motif) ligand 17, in a biological specimen.
+C67154	C112237	Chemokine (C-C Motif) Ligand 18	A measurement of the CCL18, chemokine (C-C motif) ligand 18, in a biological specimen.
+C67154	C112238	Chemokine (C-X-C Motif) Ligand 10	A measurement of the CXCL10, chemokine (C-X-C motif) ligand 10, in a biological specimen.
+C67154	C112239	Coagulation Index	A measurement of the efficiency of coagulation of a biological specimen. This is calculated by a mathematical formula that takes into account the R value, K value, angle and maximum amplitude of clot formation.
+C67154	C112241	Unspecified Cells	A measurement of the cells not otherwise identified or specified in a biological specimen.
+C67154	C112273	Epidermal Growth Factor Receptor	A measurement of the cells with positive expression of EGFR in a biological specimen.
+C67154	C112274	Estrogen Receptor	A measurement of estrogen receptor protein in a biological specimen.
+C67154	C112277	Factor XIII	A measurement of the factor XIII in a biological specimen.
+C67154	C112280	Fibroblast Growth Factor 21	A measurement of the fibroblast growth factor 21 in a biological specimen.
+C67154	C112286	Ghrelin	A measurement of total ghrelin in a biological specimen.
+C67154	C112288	Hemoglobin C Crystals	A measurement of hemoglobin C crystals in a biological specimen.
+C67154	C112291	HER2 Antigen	A measurement of the HER2 antigen in a biological specimen.
+C67154	C112292	Herpes Simplex Virus 6 Antibody	A measurement of the herpes simplex virus 6 antibody in a biological specimen.
+C67154	C112293	Histone 1 Antibody	A measurement of the total histone 1 antibodies in a biological specimen.
+C67154	C112294	Histone 2A Antibody	A measurement of the total histone 2A antibodies in a biological specimen.
+C67154	C112295	Histone 2B Antibody	A measurement of the total histone 2B antibodies in a biological specimen.
+C67154	C112296	Histone 3 Antibody	A measurement of the total histone 3 antibodies in a biological specimen.
+C67154	C112297	Histone 4 Antibody	A measurement of the total histone 4 antibodies in a biological specimen.
+C67154	C112312	Human Epidermal Growth Factor Receptor 2	A measurement of HER2 protein in a biological specimen.
+C67154	C112319	Hyaluronic Acid	A measurement of hyaluronic acid in a biological specimen.
+C67154	C112322	Insulin-Like Growth Factor Binding Prot3	A measurement of the insulin-like growth factor binding protein 3 in a biological specimen.
+C67154	C112323	Interleukin 1 Beta	A measurement of interleukin 1 beta in a biological specimen.
+C67154	C112324	Interleukin 1 Receptor Antagonist	A measurement of the interleukin 1 receptor antagonist in a biological specimen.
+C67154	C112325	IDL Cholesterol	A measurement of the intermediate density lipoprotein in a biological specimen.
+C67154	C112326	JC Virus Antibody	A measurement of the JC virus antibody in a biological specimen.
+C67154	C112360	Nitric Oxide	A measurement of the nitric oxide in a biological specimen.
+C67154	C112395	Periostin	A measurement of the periostin in a biological specimen.
+C67154	C112412	Rubeola IgG Antibody	A measurement of the Measles (Rubeola) virus IgG antibody in a biological specimen.
+C67154	C112413	Rubeola IgM Antibody	A measurement of the Measles (Rubeola) virus IgM antibody in a biological specimen.
+C67154	C114210	Platelet Aggregation Curve Type	The classification of the curve pattern that is formed as a result of platelet aggregation.
+C67154	C114211	Platelet Aggregation Mean Amplitude	An average of the measurements of the magnitude of the platelet aggregation in a biological specimen.
+C67154	C114212	Platelet Aggregation Mean Curve Type	The classification of the curve pattern that is formed as the average result of the platelet aggregation curve measurements.
+C67154	C114213	Nuclear Swelling	A measurement of the expansion of the nucleus of the cells in a biological specimen.
+C67154	C114214	Mean Platelet Dry Mass	A measurement of the mean platelet dry mass in a biological specimen.
+C67154	C114215	MCV Reticulocytes	A measurement of the mean volume of reticulocytes in a biological specimen.
+C67154	C114216	Eosinophils Band Form	A measurement of the banded eosinophils in a biological specimen.
+C67154	C114217	Eosinophils Band Form/Leukocytes	A relative measurement (ratio or percentage) of the banded eosinophils to leukocytes in a biological specimen.
+C67154	C114218	Reticulocyte Distribution Width	A measurement of the range of reticulocyte sizes in a biological specimen.
+C67154	C114219	Fractional Calcium Excretion	A measurement of the fractional excretion of calcium that is computed based upon the concentrations of calcium and creatinine in both blood and urine.
+C67154	C114220	Fractional Chloride Excretion	A measurement of the fractional excretion of chloride that is computed based upon the concentrations of chloride and creatinine in both blood and urine.
+C67154	C114221	Fractional Phosphorus Excretion	A measurement of the fractional excretion of phosphorus that is computed based upon the concentrations of phosphorus and creatinine in both blood and urine.
+C67154	C114222	Fractional Potassium Excretion	A measurement of the fractional excretion of potassium that is computed based upon the concentrations of potassium and creatinine in both blood and urine.
+C67154	C114223	Sialyl SSEA-1 Antigen	A measurement of the sialyl stage-specific embryonic antigen-1 in a biological specimen.
+C67154	C114224	Sulfur Dioxide	A measurement of the sulfur dioxide in a biological specimen.
+C67154	C114225	Unspecified Cells/Total Cells	A relative measurement (ratio or percentage) of the cells not otherwise identified or specified to total cells in a biological specimen.
+C67154	C116184	Inclusion Bodies	A measurement of the inclusion bodies in a biological specimen.
+C67154	C116185	Azurophilic Granules	An observation of azurophilic granules in a biological specimen.
+C67154	C116186	Heterophils	A measurement of heterophils (granular leukocytes) in a biological specimen from avian species.
+C67154	C116187	Heterophils/Leukocytes	A relative measurement (ratio or percentage) of heterophils to leukocytes in a biological specimen from avian species.
+C67154	C116188	High Absorption Reticulocytes	A measurement of the high absorption reticulocytes in a biological specimen.
+C67154	C116189	High Absorption Retic/Reticulocytes	A relative measurement (ratio or percentage) of the high absorption reticulocytes to total reticulocytes in a biological specimen.
+C67154	C116190	Low Absorption Reticulocytes	A measurement of the low absorption reticulocytes in a biological specimen.
+C67154	C116191	Low Absorption Retic/Reticulocytes	A relative measurement (ratio or percentage) of the low absorption reticulocytes to total reticulocytes in a biological specimen.
+C67154	C116192	Medium Absorption Reticulocytes	A measurement of the medium absorption reticulocytes in a biological specimen.
+C67154	C116193	Medium Absorption Retic/Reticulocytes	A relative measurement (ratio or percentage) of the medium absorption reticulocytes to total reticulocytes in a biological specimen.
+C67154	C116194	Cholera Toxin B Subunit IgG Antibody	A measurement of the cholera toxin B subunit IgG antibody in a biological specimen.
+C67154	C116195	Leukemic Cells	A measurement of the leukemic cells in a biological specimen.
+C67154	C116196	Hepatitis C Virus Antigen	A measurement of the hepatitis C virus antigen in a biological specimen.
+C67154	C116197	IDL Particles	A measurement of the concentration of IDL particles in a biological specimen.
+C67154	C116198	Metanephrine	A measurement of the metanephrine in a biological specimen.
+C67154	C116199	Mid Cell Fraction	A measurement of the mid cell fraction, including eosinophils, basophils, monocytes and other precursor white blood cells, in a biological specimen.
+C67154	C116200	Agranular Neutrophils	A measurement of the agranular neutrophils in a biological specimen.
+C67154	C116201	Hypogranular Neutrophils	A measurement of the hypogranular neutrophils in a biological specimen.
+C67154	C116202	Left Shift Neutrophils	An observation of the above normal incidence of immature neutrophils, including band neutrophils and neutrophil precursors in a biological specimen.
+C67154	C116203	Natural Killer Cell Function	A measurement of the natural killer cell function in a biological specimen.
+C67154	C116204	Non-HDL Cholesterol	A measurement of the non-high density lipoprotein cholesterol in a biological specimen.
+C67154	C116205	Neuron Specific Enolase	A measurement of the neuron specific enolase in a biological specimen.
+C67154	C116206	Osteoprotegerin	A measurement of the osteoprotegerin in a biological specimen.
+C67154	C116207	Parietal Cell Antibody	A measurement of the parietal cell antibody in a biological specimen.
+C67154	C116208	Platelet Derived Growth Factor IsoformAB	A measurement of the platelet derived growth factor isoform AB in a biological specimen.
+C67154	C116209	Platelet Satellitism	An examination or assessment of the platelet satellitism (platelet rosetting around cells) in a biological specimen.
+C67154	C116210	Panel Reactive Antibody	A measurement of the panel reactive antibody (the reactivity between host immune cells and donor human leukocyte antigen) in a biological specimen.
+C67154	C116211	Gamma Tocopherol	A measurement of the gamma tocopherol in a biological specimen.
+C67154	C116212	Erythrocyte Fragment	A measurement of the red blood cell fragments (red cell fragments that have a reticular-like shape with rounded ends and no spicules, differentiating them from schistocytes and acanthocytes) in a biological specimen.
+C67154	C117748	Lipase	A measurement of the total lipase in a biological specimen.
+C67154	C117749	Soluble Tumor Necrosis Factor Receptor	A measurement of the total soluble tumor necrosis factor receptor in a biological specimen.
+C67154	C117829	Albumin Excretion Rate	A measurement of the amount of albumin being excreted in urine over a defined period of time (e.g. one hour).
+C67154	C117830	Aspartate Aminotransferase/Creatinine	A relative measurement (ratio or percentage) of the aspartate aminotransferase to creatinine in a biological specimen.
+C67154	C117831	Calcium Excretion Rate	A measurement of the amount of calcium being excreted in urine over a defined period of time (e.g. one hour).
+C67154	C117832	Chloride Excretion Rate	A measurement of the amount of chloride being excreted in urine over a defined period of time (e.g. one hour).
+C67154	C117833	Creatinine Excretion Rate	A measurement of the amount of creatinine being excreted in urine over a defined amount of time (e.g. one hour).
+C67154	C117834	Glucose Excretion Rate	A measurement of the amount of glucose being excreted in urine over a defined amount of time (e.g. one hour).
+C67154	C117835	Soluble Immunoglobulin	A measurement of the soluble total immunoglobulin in a biological specimen.
+C67154	C117836	Soluble Interleukin-1 Receptor Type I	A measurement of the soluble interleukin-1 receptor type I in a biological specimen.
+C67154	C117837	Soluble Interleukin 6 Receptor	A measurement of the soluble interleukin 6 receptor in a biological specimen.
+C67154	C117838	Iron Excretion Rate	A measurement of the amount of iron being excreted in urine over a defined amount of time (e.g. one hour).
+C67154	C117839	Potassium Excretion Rate	A measurement of the amount of potassium being excreted in urine over a defined amount of time (e.g. one hour).
+C67154	C117840	Lipase, Gastric	A measurement of the gastric triacylglycerol lipase in a biological specimen.
+C67154	C117841	Lipase, Pancreatic	A measurement of the pancreatic triacylglycerol lipase in a biological specimen.
+C67154	C117842	Lipase, Lysosomal Acid	A measurement of the lysosomal acid lipase in a biological specimen.
+C67154	C117843	Microfilaria	Presence of microfilaria stage of filarial nematodes in smears prepared from whole blood or other body fluids.
+C67154	C117844	Monoclonal Protein Spike	A measurement of the monoclonal protein in the region of the electrophoresis field containing a spike (increase) in protein.
+C67154	C117845	Phosphorus Excretion Rate	A measurement of the amount of phosphorus being excreted in urine over a defined amount of time (e.g. one hour).
+C67154	C117846	Progesterone Receptor	A measurement of the progesterone receptor protein in a biological specimen.
+C67154	C117847	Promyeloblasts	A measurement of the promyeloblasts in a biological specimen.
+C67154	C117848	Protein Excretion Rate	A measurement of the amount of total protein being excreted in urine over a defined amount of time (e.g. one hour).
+C67154	C117849	Protozoa	Examination of a biological specimen to detect the presence of protozoa in a biological specimen.
+C67154	C117850	P-Selectin	A measurement of total P-selectin in a biological specimen.
+C67154	C117851	Parathyroid Hormone-related Protein	A measurement of parathyroid hormone-related protein in a biological specimen.
+C67154	C117852	Receptor Activator Nuclear KappaB Ligand	A measurement of the receptor activator of nuclear kappa-B ligand in a biological specimen.
+C67154	C117853	Dimorphic Erythrocyte Population	Examination of a biological specimen to detect the presence of dimorphic erythrocyte population.
+C67154	C117855	Ret. Mean Corpuscular Hemoglobin	A quantitative measurement of the mean amount of hemoglobin per reticulocyte in a biological specimen.
+C67154	C117856	Sodium Excretion Rate	A measurement of the amount of sodium being excreted in urine over a defined amount of time (e.g. one hour).
+C67154	C117857	Sclerostin	A measurement of the sclerostin in a biological specimen.
+C67154	C117858	Strongyloides IgG Antibody	A measurement of strongyloides IgG antibody in a biological specimen.
+C67154	C117859	Terminal Deoxynucleotidyl Transferase Ag	A measurement of the terminal deoxynucleotidyl transferase antigen in a biological specimen.
+C67154	C117860	Bioavailable Testosterone	A measurement of bioavailable testosterone in a biological specimen.
+C67154	C117861	Transforming Growth Factor Beta 1	A measurement of the transforming growth factor beta 1 in a biological specimen.
+C67154	C117862	TNF-a Production Inhibitory Activity	A measurement of TNF-a production inhibitory activity in a biological specimen.
+C67154	C117863	Soluble TNF Receptor Type I	A measurement of the soluble tumor necrosis factor receptor type I in a biological specimen.
+C67154	C117864	Soluble TNF Receptor Type II	A measurement of the soluble tumor necrosis factor receptor type II in a biological specimen.
+C67154	C117865	Tartrate-Resistant Acid Phosphatase 5b	A measurement of tartrate-resistant acid phosphatase 5b in a biological specimen.
+C67154	C117866	Urate/Creatinine	A relative measurement (ratio or percentage) of the urate to creatinine in a biological specimen.
+C67154	C117867	Varicella Zoster Virus Antibody	A measurement of the total varicella zoster virus antibody in a biological specimen.
+C67154	C117983	Oxalate/Creatinine	A relative measurement (ratio or percentage) of the oxalate to creatinine in a biological specimen.
+C67154	C119266	Intestinal Specific Alkaline Phosphatase	A measurement of the intestinal specific alkaline phosphatase isoform in a biological specimen.
+C67154	C119267	Liver Specific Alkaline Phosphatase	A measurement of the liver specific alkaline phosphatase isoform in a biological specimen.
+C67154	C119268	Amyloid Alpha Precursor Protein	A measurement of the amyloid alpha precursor protein present in a biological specimen.
+C67154	C119269	Total Amyloid Precursor Protein	A measurement of the total amyloid precursor protein present in a biological specimen.
+C67154	C119270	Base Excess	A measurement of the amount of acid or alkali required to return a biological specimen to a normal pH under standard conditions.
+C67154	C119271	Complement C3d Antibody	A measurement of the complement C3d antibody in a biological specimen.
+C67154	C119272	Calcium Corrected	A measurement of calcium, which has been corrected for albumin, in a biological specimen.
+C67154	C119273	Soluble E-Selectin	A measurement of the soluble E-Selectin activity in a biological specimen.
+C67154	C119274	Beta-1 Globulin	A measurement of the beta-1 globulin in a biological specimen.
+C67154	C119275	Beta-1 Globulin/Total Protein	A relative measurement (ratio or percentage) of beta-1-fraction proteins to total proteins in a biological specimen.
+C67154	C119276	Beta-2 Globulin	A measurement of the beta-2 globulin in a biological specimen.
+C67154	C119277	Beta-2 Globulin/Total Protein	A relative measurement (ratio or percentage) of beta-2-fraction proteins to total proteins in a biological specimen.
+C67154	C119278	Alpha-GST Excretion Rate	A measurement of the amount of Alpha Glutathione-S-Transferase being excreted in urine over a defined period of time (e.g. one hour).
+C67154	C119279	Pi-GST Excretion Rate	A measurement of the amount of Pi Glutathione-S-Transferase being excreted in urine over a defined period of time (e.g. one hour).
+C67154	C119280	Hepatitis B Virus Core IgG Antibody	A measurement of the hepatitis B virus core IgG antibody in a biological specimen.
+C67154	C119281	Hepatitis D Virus IgG Antibody	A measurement of the hepatitis D virus IgG antibody in a biological specimen.
+C67154	C119282	Hepatitis D Virus IgM Antibody	A measurement of the hepatitis D virus IgM antibody in a biological specimen.
+C67154	C119283	Hepatitis E Virus Antibody	A measurement of the antibody reaction of a biological specimen to the Hepatitis E virus.
+C67154	C119284	Insulinoma-Associated Protein 2 Antibody	A measurement of the insulinoma-associated protein 2 antibody in a biological specimen.
+C67154	C119285	Immunoglobulin G/Creatinine	A relative measurement (ratio or percentage) of the immunoglobulin G to creatinine in a biological specimen.
+C67154	C119286	Insulin Autoantibody	A measurement of the antibody to endogenous insulin in a biological specimen.
+C67154	C119287	Insulin Antibody	A measurement of the antibody to therapeutic insulin in a biological specimen.
+C67154	C119288	Oxidized LDL Cholesterol Antibody	A measurement of the total oxidized low density lipoprotein cholesterol antibody in a biological specimen.
+C67154	C119289	Lymphocytes Activated	A measurement of the total activated lymphocytes in a biological specimen.
+C67154	C119290	Myeloperoxidase Index	The mean peroxidase activity index or staining intensity of the neutrophil population relative to the archetype.
+C67154	C119291	8-Iso-PGF2alpha/Creatinine	A relative measurement (ratio or percentage) of the prostaglandin F2 alpha isoform 8 to creatinine in a biological specimen.
+C67154	C119292	8-Iso-Prostaglandin F2 Alpha	A measurement of the prostaglandin F2 alpha isoform 8 in a biological specimen.
+C67154	C119293	PP Arterial O2/Fraction Inspired O2	A relative measurement (ratio or percentage) of the force per unit area (pressure) of oxygen dissolved in arterial blood to the percentage oxygen of an inhaled mixture of gasses.
+C67154	C119294	Smudge Cells/Leukocytes	A relative measurement (ratio or percentage) of smudge cells to leukocytes in a biological specimen.
+C67154	C120625	Anti-Mullerian Hormone	A measurement of the anti-Mullerian hormone in a biological specimen.
+C67154	C120626	Anti-Neutrophil Cytoplasmic Antibody	A measurement of the anti-neutrophil cytoplasmic antibody in a biological specimen.
+C67154	C120627	Anti-Nucleosome Antibody	A measurement of the anti-nucleosome antibody in a biological specimen.
+C67154	C120628	Apolipoprotein B100	A measurement of the apolipoprotein B100 in a biological specimen.
+C67154	C120629	Apolipoprotein B48	A measurement of the apolipoprotein B48 in a biological specimen.
+C67154	C120630	Apolipoprotein CI	A measurement of the apolipoprotein CI in a biological specimen.
+C67154	C120631	Bactericidal/Permeability-Inc Protein Ab	A measurement of the bactericidal/permeability-increasing protein antibody in a biological specimen.
+C67154	C120632	Cholesteryl Ester Transfer Protein	A measurement of the cholesteryl ester transfer protein in a biological specimen.
+C67154	C120633	Chylomicrons	A measurement of the chylomicrons in a biological specimen.
+C67154	C120634	Cathepsin Antibody	A measurement of the total cathepsin antibody in a biological specimen.
+C67154	C120635	Oxidized LDL Cholesterol	A measurement of the oxidized low density lipoprotein cholesterol in a biological specimen.
+C67154	C120636	LDL Particles	A measurement of the concentration of the total LDL particles in a biological specimen.
+C67154	C120637	LDL Subtype Pattern	A description of the low density lipoprotein particle pattern (an interpretation of the amounts of LDL particles based on size and density) in a biological specimen.
+C67154	C120638	Lipoprotein Associated Phospholipase A2	A measurement of the lipoprotein associated phospholipase A2 in a biological specimen.
+C67154	C120639	Lactoferrin Antibody	A measurement of the lactoferrin antibody in a biological specimen.
+C67154	C120640	Lysozyme	A measurement of lysozyme in a biological specimen.
+C67154	C120641	Monocytoid Cells/Leukocytes	A relative measurement (ratio or percentage) of the monocytoid cells to leukocytes in a biological specimen.
+C67154	C120642	Neutrophils Band Form/ Neutrophils	A relative measurement (ratio or percentage) of banded neutrophils to total neutrophils in a biological specimen.
+C67154	C120643	Neutrophils, Segmented/Neutrophils	A relative measurement (ratio or percentage) of segmented neutrophils to total neutrophils in a biological specimen.
+C67154	C120644	Non-HDL Cholesterol/HDL Cholesterol	A relative measurement (ratio or percentage) of non-high density lipoprotein cholesterol to high density lipoprotein cholesterol in a biological specimen.
+C67154	C120645	N-telopeptide/Creatinine	A relative measurement (ratio or percentage) of the N-telopeptide to creatinine in a biological specimen.
+C67154	C120646	Proliferating Cell Nuclear Antigen	A measurement of the proliferating cell nuclear antigen in a biological specimen.
+C67154	C120647	Proprotein Convertase Subtilisin/Kexin 9	A measurement of the proprotein convertase subtilisin/kexin type 9 in a biological specimen.
+C67154	C120648	Porphyrin	A measurement of the total porphyrin in a biological specimen.
+C67154	C120649	Proteinase 3 Antibody	A measurement of the proteinase 3 antibody in a biological specimen.
+C67154	C120650	Soluble P-Selectin	A measurement of the soluble P-selectin in a biological specimen.
+C67154	C120651	P100 Polymyositis-scleroderma Autoag Ab	A measurement of the p100 polymyositis-scleroderma overlap syndrome-associated autoantigen antibody in a biological specimen.
+C67154	C120652	Rheumatoid Factor Antibody IgA	A measurement of the rheumatoid factor IgA antibody in a biological specimen.
+C67154	C120653	Rheumatoid Factor Antibody IgG	A measurement of the rheumatoid factor IgG antibody in a biological specimen.
+C67154	C120654	Rheumatoid Factor Antibody IgM	A measurement of the rheumatoid factor IgM antibody in a biological specimen.
+C67154	C120655	RLP Cholesterol	A measurement of the cholesterol remnant-like particles in a biological specimen.
+C67154	C120656	Remnant Lipoprotein	A measurement of the remnant lipoproteins in a biological specimen.
+C67154	C120657	Ribonucleoprotein-70 Antibody	A measurement of the small nuclear ribonucleoprotein 70 antibody in a biological specimen.
+C67154	C120658	Ribonucleoprotein Smith Complex Antibody	A measurement of the ribonucleoprotein Smith complex antibody in a biological specimen.
+C67154	C120659	Ribosomal P Protein Antibody	A measurement of the total ribosomal P protein antibody in a biological specimen.
+C67154	C120660	Squamous Cell Carcinoma Antigen	A measurement of the squamous cell carcinoma antigen in a biological specimen.
+C67154	C120661	Sjogrens SS-A52 Antibody	A measurement of the Sjogrens SS-A52 antibody in a biological specimen.
+C67154	C120662	Sjogrens SS-A60 Antibody	A measurement of the Sjogrens SS-A60 antibody in a biological specimen.
+C67154	C120663	Type II Secretory Phospholipase A2	A measurement of the type II secretory phospholipase A2 in a biological specimen.
+C67154	C120664	Thyroxine, Free, Indirect	An indirect measurement of the free thyroxine in a biological specimen.
+C67154	C120665	Thymidine Kinase	A measurement of the thymidine kinase in a biological specimen.
+C67154	C120666	Tumor Necrosis Factor Receptor 1	A measurement of the tumor necrosis factor receptor 1 (CD120a) in a biological specimen.
+C67154	C120667	VLDL Cholesterol Subtype 1	A measurement of the very low density lipoprotein cholesterol subtype 1 in a biological specimen.
+C67154	C120668	VLDL Cholesterol Subtype 2	A measurement of the very low density lipoprotein cholesterol subtype 2 in a biological specimen.
+C67154	C120669	VLDL Cholesterol Subtype 3	A measurement of the very low density lipoprotein cholesterol subtype 3 in a biological specimen.
+C67154	C121182	LDL Cholesterol/HDL Cholesterol	A relative measurement (ratio or percentage) of the low density lipoprotein cholesterol to high density lipoprotein cholesterol in a biological specimen.
+C67154	C121183	Triglycerides/HDL Cholesterol	A relative measurement (ratio or percentage) of the triglycerides to high density lipoprotein cholesterol in a biological specimen.
+C67154	C122091	Alanine	A measurement of the alanine in a biological specimen.
+C67154	C122092	Glycated Albumin	A measurement of the glycated albumin present in a biological specimen.
+C67154	C122093	Antinuclear IgG Antibody	A measurement of the antinuclear IgG antibody in a biological specimen.
+C67154	C122094	Alpha-2 Antiplasmin Activity	A measurement of the alpha-2 antiplasmin activity in a biological specimen.
+C67154	C122095	Arginine	A measurement of the arginine in a biological specimen.
+C67154	C122096	Asparagine	A measurement of the asparagine in a biological specimen.
+C67154	C122097	Aspartic Acid	A measurement of the aspartic acid in a biological specimen.
+C67154	C122098	Borrelia burgdorferi Antibody	A measurement of the total Borrelia burgdorferi antibody in a biological specimen.
+C67154	C122099	Borrelia burgdorferi IgA Antibody	A measurement of the Borrelia burgdorferi IgA antibody in a biological specimen.
+C67154	C122100	Borrelia burgdorferi IgG Antibody	A measurement of the Borrelia burgdorferi IgG antibody in a biological specimen.
+C67154	C122101	Borrelia burgdorferi IgM Antibody	A measurement of the Borrelia burgdorferi IgM antibody in a biological specimen.
+C67154	C122102	Beta-defensin 2	A measurement of the beta-defensin 2 in a biological specimen.
+C67154	C122103	C-C Chemokine Receptor Type 5	A measurement of the CCR5, chemokine (C-C motif) receptor type 5, in a biological specimen.
+C67154	C122104	CD161a/Lymphocytes	A relative measurement (ratio or percentage) of CD161a expressing cells to all lymphocytes in a biological specimen.
+C67154	C122105	CD161/Lymphocytes	A relative measurement (ratio or percentage) of CD161 expressing cells to all lymphocytes in a biological specimen.
+C67154	C122106	CD45/Lymphocytes	A relative measurement (ratio or percentage) of CD45 expressing cells to all lymphocytes in a biological specimen.
+C67154	C122107	CD45RA/Lymphocytes	A relative measurement (ratio or percentage) of CD45RA expressing cells to all lymphocytes in a biological specimen.
+C67154	C122108	Chromogranin A	A measurement of the chromogranin A in a biological specimen.
+C67154	C122109	Citrulline	A measurement of the citrulline in a biological specimen.
+C67154	C122110	Citrate/Creatinine	A relative measurement (ratio or percentage) of the citrate to creatinine in a biological specimen.
+C67154	C122111	Centromere IgG Antibody	A measurement of the centromere IgG antibody in a biological specimen.
+C67154	C122112	Cardiolipin IgA Antibody	A measurement of the cardiolipin IgA antibody in a biological specimen.
+C67154	C122113	Type II Collagen C-Telopeptides/Creat	A relative measurement (ratio or percentage) of the type II collagen C-telopeptides to creatinine in a biological specimen.
+C67154	C122114	Desmoglein 1 Antibody	A measurement of the desmoglein 1 antibody in a biological specimen.
+C67154	C122115	Desmoglein 3 Antibody	A measurement of the desmoglein 3 antibody in a biological specimen.
+C67154	C122116	Epstein-Barr Early D Antigen IgG Ab	A measurement of the Epstein-Barr early diffuse antigen IgG antibody in a biological specimen.
+C67154	C122117	von Willebrand Factor Activity	A measurement of the biological activity of von Willebrand factor in a biological specimen.
+C67154	C122118	Factor X Activity	A measurement of the factor X activity in a biological specimen.
+C67154	C122119	Fractional Magnesium Excretion	A measurement of the fractional excretion of magnesium that is computed based upon the concentrations of magnesium and creatinine in both blood and urine.
+C67154	C122120	Fluoride	A measurement of the fluoride in a biological specimen.
+C67154	C122121	Glutamine	A measurement of the glutamine in a biological specimen.
+C67154	C122122	Glycine	A measurement of the glycine in a biological specimen.
+C67154	C122123	Hemoglobin S	A measurement of the hemoglobin S in a biological specimen.
+C67154	C122124	Histidine	A measurement of the histidine in a biological specimen.
+C67154	C122125	HTLV-1/2 Antibody	A measurement of the antibody reaction of a biological specimen to either the HTLV-1 or HTLV-2 virus.
+C67154	C122126	Islet Cell Cytoplasmic IgG Antibody	A measurement of the islet cell cytoplasmic IgG antibody in a biological specimen.
+C67154	C122127	Immunoglobulin G Subclass 1	A measurement of the immunoglobulin G subclass 1 in a biological specimen.
+C67154	C122128	Immunoglobulin G Subclass 2	A measurement of the immunoglobulin G subclass 2 in a biological specimen.
+C67154	C122129	Immunoglobulin G Subclass 3	A measurement of the immunoglobulin G subclass 3 in a biological specimen.
+C67154	C122130	Immunoglobulin G Subclass 4	A measurement of the immunoglobulin G subclass 4 in a biological specimen.
+C67154	C122131	Interleukin 1 Alpha	A measurement of interleukin 1 alpha in a biological specimen.
+C67154	C122132	Leucine Aminopeptidase	A measurement of the total leucine aminopeptidase present in a biological specimen.
+C67154	C122133	Leucine	A measurement of the leucine in a biological specimen.
+C67154	C122134	Lysine	A measurement of the lysine in a biological specimen.
+C67154	C122135	Myelin Basic Protein	A measurement of the myelin basic protein in a biological specimen.
+C67154	C122136	Mumps Virus IgG Antibody	A measurement of the mumps virus IgG antibody in a biological specimen.
+C67154	C122137	Sodium/Potassium	A relative measurement (ratio or percentage) of the sodium to potassium in a biological specimen.
+C67154	C122138	Normetanephrine	A measurement of the normetanephrine in a biological specimen.
+C67154	C122139	Oligoclonal Bands	A measurement of the oligoclonal bands in a biological specimen.
+C67154	C122140	Ornithine	A measurement of the ornithine in a biological specimen.
+C67154	C122141	Proline	A measurement of the proline in a biological specimen.
+C67154	C122142	Protein S, Free	A measurement of the unbound protein S in a biological specimen.
+C67154	C122143	Phosphatidylserine IgA Antibody	A measurement of the phosphatidylserine IgA antibody in a biological specimen.
+C67154	C122144	Phosphatidylserine IgG Antibody	A measurement of the phosphatidylserine IgG antibody in a biological specimen.
+C67154	C122145	Phosphatidylserine IgM Antibody	A measurement of the phosphatidylserine IgM antibody in a biological specimen.
+C67154	C122146	Reactive Oxygen Metabolite	A measurement of the reactive oxygen metabolite in a biological specimen.
+C67154	C122147	RNA Polymerase III IgG Antibody	A measurement of the RNA polymerase III IgG antibody in a biological specimen.
+C67154	C122148	Scl-70 IgG Antibody	A measurement of the Scl-70 IgG antibody in a biological specimen.
+C67154	C122149	Serine	A measurement of the serine in a biological specimen.
+C67154	C122150	Soluble Liver Antigen IgG Antibody	A measurement of the soluble liver antigen IgG antibody in a biological specimen.
+C67154	C122151	Smooth Muscle IgG Antibody	A measurement of the smooth muscle IgG antibody in a biological specimen.
+C67154	C122152	Streptococcus pneumoniae Antigen	A measurement of the Streptococcus pneumoniae antigen in a biological specimen.
+C67154	C122153	Sulfate	A measurement of the sulfate in a biological specimen.
+C67154	C122154	Taurine	A measurement of the taurine in a biological specimen.
+C67154	C122155	Transforming Growth Factor Beta	A measurement of the total transforming growth factor beta in a biological specimen.
+C67154	C122156	Threonine	A measurement of the threonine in a biological specimen.
+C67154	C122157	T-Lymphocytes	A measurement of the total thymocyte-derived lymphocytes in a biological specimen.
+C67154	C122158	Thyrotropin Receptor Antibody	A measurement of the thyrotropin receptor antibody in a biological specimen.
+C67154	C122159	Tyrosine	A measurement of the tyrosine in a biological specimen.
+C67154	C122160	Valine	A measurement of the valine in a biological specimen.
+C67154	C122238	Methionine	A measurement of the methionine in a biological specimen.
+C67154	C123455	Beta-cell Function	A measurement of the beta cell function (insulin production and secretion) in a biological specimen.
+C67154	C123458	Insulin Resistance	A measurement of the insulin resistance (a cell's inability to respond to insulin) in a biological specimen.
+C67154	C123459	Insulin Sensitivity	A measurement of the insulin sensitivity (cells are stimulated by lower than normal insulin levels) in a biological specimen.
+C67154	C123460	Macrophages/Leukocytes	A relative measurement (ratio or percentage) of the macrophages to leukocytes in a biological specimen.
+C67154	C16790	Mixed Lymphocyte Reaction	A measurement of the histocompatibility at the HL-A locus between two populations of lymphocytes taken from two separate individuals.
+C67154	C17634	Prostate Specific Antigen	A measurement of the prostate specific antigen in a biological specimen.
+C67154	C200000	Unassigned	Laboratory test has not yet been assigned.
+C67154	C200001	Unknown	Laboratory test is unknown.
+C67154	C25377	Specimen Appearance	The outward or visible aspect of a specimen.
+C67154	C25747	Creatinine Clearance	A measurement of the volume of serum or plasma that would be cleared of creatinine by excretion of urine for a specified unit of time (e.g. one minute).
+C67154	C38037	Bilirubin	A measurement of the total bilirubin in a biological specimen.
+C67154	C38462	Activated Partial Thromboplastin Time	A measurement of the length of time that it takes for clotting to occur when reagents are added to a plasma specimen. The test is partial due to the absence of tissue factor (Factor III) from the reaction mixture.
+C67154	C45781	Density	A measurement of the compactness of a biological specimen expressed in mass per unit volume.
+C67154	C45997	pH	The negative logarithm (base 10) of the concentration of hydronium ions, which is used as a measure of the acidity or alkalinity of a fluid.
+C67154	C51946	Erythrocytes	A measurement of the total erythrocytes in a biological specimen.
+C67154	C51947	Reticulocytes	A measurement of the reticulocytes in a biological specimen.
+C67154	C51948	Leukocytes	A measurement of the leukocytes in a biological specimen.
+C67154	C51949	Lymphocytes	A measurement of the lymphocytes in a biological specimen.
+C67154	C51951	Platelets	A measurement of the platelets (non-nucleated thrombocytes) in a biological specimen.
+C67154	C60832	Oxygen Saturation	A measurement of the oxygen-hemoglobin saturation of a volume of blood.
+C67154	C61019	Blood Urea Nitrogen	A measurement of the urea nitrogen in a blood specimen.
+C67154	C62656	Prothrombin Time	A blood clotting measurement that evaluates the extrinsic pathway of coagulation.
+C67154	C63321	Neutrophils	A measurement of the neutrophils in a biological specimen.
+C67154	C64431	Albumin	A measurement of the albumin protein in a biological specimen.
+C67154	C64432	Alkaline Phosphatase	A measurement of the alkaline phosphatase in a biological specimen.
+C67154	C64433	Alanine Aminotransferase	A measurement of the alanine aminotransferase in a biological specimen.
+C67154	C64434	Amylase	A measurement of the total enzyme amylase in a biological specimen.
+C67154	C64467	Aspartate Aminotransferase	A measurement of the aspartate aminotransferase in a biological specimen.
+C67154	C64469	Bacteria	A measurement of the bacteria in a biological specimen.
+C67154	C64470	Basophils	A measurement of the basophils in a biological specimen.
+C67154	C64471	Basophils/Leukocytes	A relative measurement (ratio or percentage) of the basophils to leukocytes in a biological specimen.
+C67154	C64481	Direct Bilirubin	A measurement of the conjugated or water-soluble bilirubin in a biological specimen.
+C67154	C64483	Indirect Bilirubin	A measurement of the unconjugated or non-water-soluble bilirubin in a biological specimen.
+C67154	C64487	Blasts/Leukocytes	A relative measurement (ratio or percentage) of the blasts to leukocytes in a biological specimen.
+C67154	C64488	Calcium	A measurement of the calcium in a biological specimen.
+C67154	C64489	Creatine Kinase	A measurement of the total creatine kinase in a biological specimen.
+C67154	C64490	Creatine Kinase BB	A measurement of the homozygous B-type creatine kinase in a biological specimen.
+C67154	C64491	Creatine Kinase MB	A measurement of the heterozygous MB-type creatine kinase in a biological specimen.
+C67154	C64494	Creatine Kinase MM	A measurement of the homozygous M-type creatine kinase in a biological specimen.
+C67154	C64495	Chloride	A measurement of the chloride in a biological specimen.
+C67154	C64545	Carbon Dioxide	A measurement of the carbon dioxide gas in a biological specimen.
+C67154	C64546	Color	A measurement of the color of a biological specimen.
+C67154	C64547	Creatinine	A measurement of the creatinine in a biological specimen.
+C67154	C64548	C Reactive Protein	A measurement of the C reactive protein in a biological specimen.
+C67154	C64549	Elliptocytes	A measurement of the elliptically shaped erythrocytes in a biological specimen.
+C67154	C64550	Eosinophils	A measurement of the eosinophils in a biological specimen.
+C67154	C64604	Eosinophils/Leukocytes	A relative measurement (ratio or percentage) of the eosinophils to leukocytes in a biological specimen.
+C67154	C64605	Epithelial Cells	A measurement of the epithelial cells in a biological specimen.
+C67154	C64606	Fibrinogen	A measurement of the fibrinogen in a biological specimen.
+C67154	C64796	Hematocrit	The percentage of a whole blood specimen that is composed of red blood cells (erythrocytes).
+C67154	C64797	Ery. Mean Corpuscular Hemoglobin	A quantitative measurement of the mean amount of hemoglobin per erythrocyte in a biological specimen.
+C67154	C64798	Ery. Mean Corpuscular HGB Concentration	A quantitative measurement of the mean amount of hemoglobin per erythrocytes in a specified volume of a biological specimen.
+C67154	C64799	Ery. Mean Corpuscular Volume	A quantitative measurement of the mean volume of erythrocytes in a biological specimen.
+C67154	C64800	Erythrocytes Distribution Width	A value derived from mean corpuscular volume and the standard deviation of the red blood cell volume in a whole blood specimen.
+C67154	C64801	Dacryocytes	A measurement of dacryocytes in a biological specimen.
+C67154	C64802	Hypochromia	An observation which indicates that the hemoglobin concentration in a red blood cell specimen has fallen below a specified level.
+C67154	C64803	Polychromasia	A measurement of the blue-staining characteristic of newly generated erythrocytes.
+C67154	C64805	Prothrombin Intl. Normalized Ratio	A ratio that represents the prothrombin time for a plasma specimen, divided by the result for a control plasma specimen, further standardized for the International Sensitivity Index of the tissue factor (thromboplastin) used in the test.
+C67154	C64809	Sodium	A measurement of the sodium in a biological specimen.
+C67154	C64810	Nitrite	A measurement of the nitrite in a urine specimen.
+C67154	C64812	Triglycerides	A measurement of the triglycerides in a biological specimen.
+C67154	C64813	Thyrotropin	A measurement of the thyrotropin in a biological specimen.
+C67154	C64814	Urate	A measurement of the urate in a biological specimen.
+C67154	C64815	Urea	A measurement of the urea in a biological specimen.
+C67154	C64816	Urobilinogen	A measurement of the urobilinogen in a biological specimen.
+C67154	C64817	Vitamin B12	A measurement of the Vitamin B12 in a serum specimen.
+C67154	C64818	Lymphocytes Atypical	A measurement of the atypical lymphocytes in a biological specimen.
+C67154	C64819	Lymphocytes Atypical/Leukocytes	A relative measurement (ratio or percentage) of the atypical lymphocytes to leukocytes in a biological specimen.
+C67154	C64820	Lymphocytes/Leukocytes	A relative measurement (ratio or percentage) of the lymphocytes to leukocytes in a biological specimen.
+C67154	C64821	Macrocytes	A measurement of the macrocytes in a biological specimen.
+C67154	C64822	Microcytes	A measurement of the microcytes in a biological specimen.
+C67154	C64823	Monocytes	A measurement of the monocytes in a biological specimen.
+C67154	C64824	Monocytes/Leukocytes	A relative measurement (ratio or percentage) of the monocytes to leukocytes in a biological specimen.
+C67154	C64825	Myeloblasts/Leukocytes	A relative measurement (ratio or percentage) of the myeloblasts to leukocytes in a biological specimen.
+C67154	C64826	Myelocytes/Leukocytes	A relative measurement (ratio or percentage) of the myelocytes to leukocytes in a biological specimen.
+C67154	C64827	Neutrophils/Leukocytes	A relative measurement (ratio or percentage) of the neutrophils to leukocytes in a biological specimen.
+C67154	C64828	Reticulocytes/Erythrocytes	A relative measurement (ratio or percentage) of reticulocytes to erythrocytes in a biological specimen.
+C67154	C64829	Prolymphocytes/Leukocytes	A relative measurement (ratio or percentage) of prolymphocytes to leukocytes in a biological specimen.
+C67154	C64830	Neutrophils Band Form	A measurement of the banded neutrophils in a biological specimen.
+C67154	C64831	Neutrophils Band Form/Leukocytes	A relative measurement (ratio or percentage) of the banded neutrophils to leukocytes in a biological specimen.
+C67154	C64832	Specific Gravity	A ratio of the density of a fluid to the density of water.
+C67154	C64840	Magnesium	A measurement of the magnesium in a biological specimen.
+C67154	C64847	Gamma Glutamyl Transferase	A measurement of the gamma glutamyl transferase in a biological specimen.
+C67154	C64848	Hemoglobin	A measurement of the non-cellular hemoglobin in a biological specimen.
+C67154	C64849	Hemoglobin A1C	A measurement of the glycosylated hemoglobin in a biological specimen.
+C67154	C64850	Hepatitis B Virus Surface Antigen	A measurement of the surface antigen reaction of a biological specimen to the Hepatitis B virus.
+C67154	C64851	Choriogonadotropin Beta	A measurement of the Choriogonadotropin Beta in a biological specimen.
+C67154	C64853	Potassium	A measurement of the potassium in a biological specimen.
+C67154	C64854	Ketones	A measurement of the ketones in a biological specimen.
+C67154	C64855	Lactate Dehydrogenase	A measurement of the lactate dehydrogenase in a biological specimen.
+C67154	C64856	Leukocyte Esterase	A measurement of the enzyme which indicates the presence of white blood cells in a biological specimen.
+C67154	C64857	Phosphate	A measurement of the phosphate in a biological specimen.
+C67154	C64858	Protein	A measurement of the total protein in a biological specimen.
+C67154	C71251	Partial Pressure Oxygen	A measurement of the pressure of oxygen in a biological specimen.
+C67154	C74604	Hairy Cells	A measurement of the hairy cells (b-cell lymphocytes with hairy projections from the cytoplasm) in a biological specimen.
+C67154	C74605	Blasts	A measurement of the blast cells in a biological specimen.
+C67154	C74610	Dohle Bodies	A measurement of the Dohle bodies (blue-gray, basophilic, leukocyte inclusions located in the peripheral cytoplasm of neutrophils) in a biological specimen.
+C67154	C74611	Erythrocyte Sedimentation Rate	The distance (e.g. millimeters) that red blood cells settle in unclotted blood over a specified unit of time (e.g. one hour).
+C67154	C74612	Hypersegmented Cells	A measurement of the hypersegmented (more than five lobes) neutrophils in a biological specimen.
+C67154	C74613	Lymphoma Cells	A measurement of the malignant lymphocytes in a biological specimen.
+C67154	C74614	May-Hegglin Anomaly	A measurement of the May-Hegglin anomaly in a blood sample. This anomaly is characterized by large, misshapen platelets and the presence of Dohle bodies in leukocytes.
+C67154	C74615	Metamyelocytes	A measurement of the metamyelocytes (small, myelocytic neutrophils with an indented nucleus) in a biological specimen.
+C67154	C74616	Pappenheimer Bodies	A measurement of the cells containing Pappenheimer Bodies (violet or blue staining ferritin granules usually found along the periphery of the red blood cells) in a biological specimen.
+C67154	C74617	Pelger Huet Anomaly	A measurement of the Pelger Huet Anomaly (nuclei of neutrophils and eosinophils appear rod-like, spherical or dumbbell shaped) in a biological specimen.
+C67154	C74618	Plasmacytoid Lymphocytes	A measurement of the plasmacytoid lymphocytes (lymphocytes with peripherally clumped chromatin and often deep blue cytoplasm, and that appear similar to plasma cells) in a biological specimen.
+C67154	C74619	Precursor Plasma Cells	A measurement of the precursor (blast stage) plasma cells (antibody secreting cells derived from B cells via antigen stimulation) in a biological specimen.
+C67154	C74620	Prolymphocytes	A measurement of the prolymphocytes in a biological specimen.
+C67154	C74621	Promonocytes	A measurement of the promonocytes in a biological specimen.
+C67154	C74622	Promyelocytes	A measurement of the promyelocytes (immature myelocytes) in a biological specimen.
+C67154	C74624	Rouleaux Formation	A measurement of the number of stacking red blood cells within a biological specimen.
+C67154	C74625	Sezary Cells	A measurement of the Sezary cells (atypical lymphocytes with cerebriform nuclei) in a biological specimen.
+C67154	C74626	Sickle Cells	A measurement of the sickle cells (sickle shaped red blood cells) in a biological specimen.
+C67154	C74627	Smudge Cells	A measurement of the smudge cells (the nuclear remnant of a ruptured white blood cell) in a biological specimen.
+C67154	C74628	Vacuolated Neutrophils	A measurement of the neutrophils containing small vacuoles in a biological specimen.
+C67154	C74629	Reactive Lymphocytes	A measurement of the reactive lymphocytes (lymphocytes which have become large due to an antigen reaction) in a biological specimen.
+C67154	C74630	Leukemic Blasts	A measurement of the leukemic blasts (lymphoblasts that remain in an immature state even when outside the bone marrow) in a biological specimen.
+C67154	C74631	Monoblasts	A measurement of the monoblast cells in a biological specimen.
+C67154	C74632	Myeloblasts	A measurement of the myeloblast cells in a biological specimen.
+C67154	C74633	Acanthocytes/Erythrocytes	A relative measurement (ratio or percentage) of acanthocytes to all erythrocytes in a biological specimen.
+C67154	C74634	Bite Cells/Erythrocytes	A relative measurement (ratio or percentage) of bite cells (erythrocytes with the appearance of a bite having been removed, due to oxidative hemolysis) to all erythrocytes in a biological specimen.
+C67154	C74640	Hairy Cells/Lymphocytes	A relative measurement (ratio or percentage) of the hairy cells (b-cell lymphocytes with hairy projections from the cytoplasm) to all lymphocytes in a biological specimen .
+C67154	C74641	Leukemic Blasts/Lymphocytes	A relative measurement (ratio or percentage) of the leukemic blasts (immature lymphoblasts) to mature lymphocytes in a biological specimen.
+C67154	C74643	Malignant Cells, NOS/Blood Cells	A relative measurement (ratio or percentage) of the malignant cells of all types to all blood cells in a biological specimen.
+C67154	C74645	Metamyelocytes/Leukocytes	A relative measurement (ratio or percentage) of the metamyelocytes (small, myelocytic neutrophils with an indented nucleus) to all leukocytes in a biological specimen.
+C67154	C74646	Monoblasts/Leukocytes	A relative measurement (ratio or percentage) of the monoblasts to leukocytes in a biological specimen.
+C67154	C74647	Nucleated Erythrocytes/Erythrocytes	A relative measurement (ratio or percentage) of the nucleated erythrocytes (large, immature nucleated erythrocytes) to all erythrocytes in a biological specimen.
+C67154	C74648	Plasmacytoid Lymphocytes/Lymphocytes	A relative measurement (ratio or percentage) of the plasmacytoid lymphocytes (lymphocytes with peripherally clumped chromatin and often deep blue cytoplasm, and that appear similar to plasma cells) to all lymphocytes in a biological specimen.
+C67154	C74649	Poikilocytes/Erythrocytes	A relative measurement (ratio or percentage) of the poikilocytes, or irregularly shaped erythrocytes, to all erythrocytes in a biological specimen.
+C67154	C74650	Precursor Plasma Cells/Lymphocytes	A relative measurement (ratio or percentage) of the precursor (blast stage) plasma cells (antibody secreting cells derived from B cells via antigen stimulation) to all lymphocytes in a biological specimen.
+C67154	C74651	Prolymphocytes/Lymphocytes	A relative measurement (ratio or percentage) of the prolymphocytes to all lymphocytes in a biological specimen.
+C67154	C74652	Promonocytes/Leukocytes	A relative measurement (ratio or percentage) of the promonocytes to all leukocytes in a biological specimen.
+C67154	C74653	Promyelocytes/Leukocytes	A relative measurement (ratio or percentage) of the promyelocytes (immature myelocytes) to all leukocytes in a biological specimen.
+C67154	C74654	Reactive Lymphocytes/Lymphocytes	A relative measurement (ratio or percentage) of the reactive lymphocytes (lymphocytes which have become large due to an antigen reaction) to all lymphocytes in a biological specimen.
+C67154	C74655	Sezary Cells/Lymphocytes	A relative measurement (ratio or percentage of the Sezary cells (atypical lymphocytes with cerebriform nuclei) to all lymphocytes in a biological specimen.
+C67154	C74656	Sickle Cells/Erythrocytes	A relative measurement (ratio or percentage) of the sickle cells (sickle shaped red blood cells) to all erythrocytes in a biological specimen.
+C67154	C74657	Auer Rods	A measurement of the Auer rods (elongated needle structures that are found in the cytoplasm of leukemic blasts and are formed by clumps of azurophilic granular material) in a biological specimen.
+C67154	C74658	Helmet Cells	A measurement of the Helmet cells (specialized Keratocytes with two projections on either end that are tapered and hornlike) in a biological specimen.
+C67154	C74659	Large Unstained Cells	A measurement of the large, peroxidase-negative cells which cannot be further characterized (i.e. as large lymphocytes, virocytes, or stem cells) present in a biological specimen.
+C67154	C74660	Malignant Cells, NOS	A measurement of the malignant cells of all types in a biological specimen.
+C67154	C74661	Mature Plasma Cells	A measurement of the mature plasma cells (plasmacytes) in a biological specimen.
+C67154	C74662	Myelocytes	A measurement of the myelocytes in a biological specimen.
+C67154	C74663	Spermatozoa	A measurement of the spermatozoa cells present in a biological specimen.
+C67154	C74664	Yeast Cells	A measurement of the yeast cells present in a biological specimen.
+C67154	C74665	Amorphous Crystals	A measurement of the amorphous (Note: phosphate or urate, depending on pH) crystals present in a biological specimen.
+C67154	C74666	Amorphous Sediment	A measurement of the amorphous sediment present in a biological specimen.
+C67154	C74667	Bicarbonate	A measurement of the bicarbonate in a biological specimen.
+C67154	C74668	Bilirubin Crystals	A measurement of the bilirubin crystals present in a biological specimen.
+C67154	C74669	Calcium Carbonate Crystals	A measurement of the calcium carbonate crystals present in a biological specimen.
+C67154	C74670	Calcium Oxalate Crystals	A measurement of the calcium oxalate crystals present in a biological specimen.
+C67154	C74671	Calcium Phosphate Crystals	A measurement of the calcium phosphate crystals present in a biological specimen.
+C67154	C74672	Cholesterol Crystals	A measurement of the cholesterol crystals present in a biological specimen.
+C67154	C74673	Crystals	A statement that indicates crystals were looked for in a biological specimen.
+C67154	C74674	Cystine Crystals	A measurement of the cystine crystals present in a biological specimen.
+C67154	C74676	Vitamin B9	A measurement of the folic acid in a biological specimen.
+C67154	C74677	Carnitine, Free	A measurement of the free carnitine in a biological specimen.
+C67154	C74678	Fructosamine	A measurement of the fructosamine in a biological specimen.
+C67154	C74679	Iron	A measurement of the iron in a biological specimen.
+C67154	C74680	Leucine Crystals	A measurement of the leucine crystals present in a biological specimen.
+C67154	C74681	Monosodium Urate Crystals	A measurement of the monosodium urate crystals present in a biological specimen.
+C67154	C74682	Carnitine	A measurement of the total carnitine in a biological specimen.
+C67154	C74683	Tyrosine Crystals	A measurement of the tyrosine crystals present in a biological specimen.
+C67154	C74684	Uric Acid Crystals	A measurement of the uric acid crystals present in a biological specimen.
+C67154	C74685	Anion Gap	A computed estimate of the unmeasured anions (those other than the chloride and bicarbonate anions) in a biological specimen.
+C67154	C74686	Occult Blood	A measurement of the blood in body products such as a urine or stool sample, not detectable on gross examination.
+C67154	C74687	Amphetamine	A measurement of any amphetamine class drug present in a biological specimen.
+C67154	C74688	Barbiturates	A measurement of any barbiturate class drug present in a biological specimen.
+C67154	C74689	Cannabinoids	A measurement of any cannabinoid class drug present in a biological specimen.
+C67154	C74690	Cocaine	A measurement of the cocaine present in a biological specimen.
+C67154	C74691	Antidepressants	A measurement of any antidepressant class drug present in a biological specimen.
+C67154	C74692	Benzodiazepine	A measurement of any benzodiazepine class drug present in a biological specimen.
+C67154	C74693	Ethanol	A measurement of the ethanol present in a biological specimen.
+C67154	C74694	Phencyclidine	A measurement of the phencyclidine present in a biological specimen.
+C67154	C74695	Phenothiazine	A measurement of the phenothiazine present in a biological specimen.
+C67154	C74696	Pseudoephedrine	A measurement of the pseudoephedrine present in a biological specimen.
+C67154	C74698	Round Epithelial Cells	A measurement of the round epithelial cells present in a biological specimen.
+C67154	C74699	Acanthocytes	A measurement of the acanthocytes in a biological specimen.
+C67154	C74700	Bite Cells	A measurement of the bite cells (erythrocytes with the appearance of a bite having been removed, due to oxidative hemolysis) in a biological specimen.
+C67154	C74701	Burr Cells	A measurement of the Burr cells (erythrocytes characterized by the presence of small, blunt projections evenly distributed across the cell surface) in a biological specimen.
+C67154	C74702	Cabot Rings	A measurement of the Cabot rings (red-purple staining, threadlike, ring or figure 8 shaped filaments in an erythrocyte) in a biological specimen.
+C67154	C74703	Crenated Cells	A measurement of the Burr cells (erythrocytes characterized by the presence of multiple small, sharp projections evenly distributed across the cell surface) in a biological specimen.
+C67154	C74704	Howell-Jolly Bodies	A measurement of the Howell-Jolly bodies (spherical, blue-black condensed DNA inclusions within the body of a red blood cell that appear under Wright-stain) in a biological specimen.
+C67154	C74705	Nucleated Erythrocytes	A measurement of the nucleated erythrocytes (large, immature nucleated erythrocytes) in a biological specimen.
+C67154	C74706	Schistocytes	A measurement of the schistocytes (fragmented red blood cells) in a biological specimen.
+C67154	C74707	Spherocytes	A measurement of the spherocytes (small, sphere-shaped red blood cells) in a biological specimen.
+C67154	C74708	Stomatocytes	A measurement of the stomatocytes (red blood cells with an oval or rectangular area of central pallor, producing the appearance of a cell mouth) in a biological specimen.
+C67154	C74709	Heinz Bodies	A measurement of the Heinz bodies (small round inclusions within the body of a red blood cell) in a biological specimen.
+C67154	C74711	Hepatitis B Virus Surface Antibody	A measurement of the surface antibody reaction of a biological specimen to the Hepatitis B virus.
+C67154	C74713	HIV-1 Antibody	A measurement of the antibody reaction of a biological specimen to the HIV-1 virus.
+C67154	C74714	HIV-1/2 Antibody	A measurement of the antibody reaction of a biological specimen to either the HIV-1 or HIV-2 virus.
+C67154	C74715	HIV-2 Antibody	A measurement of the antibody reaction of a biological specimen to the HIV-2 virus.
+C67154	C74716	Rapid Plasma Reagin	A measurement of the antibodies produced by cellular damage caused by Treponema pallidum (syphilis) in a biological specimen.
+C67154	C74717	Rheumatoid Factor	A measurement of the rheumatoid factor antibody in a biological specimen.
+C67154	C74718	Total Iron Binding Capacity	A measurement of the amount of iron needed to fully saturate the transferrin in a biological specimen.
+C67154	C74719	Unsaturated Iron Binding Capacity	A measurement of the binding capacity of unsaturated iron in a biological specimen.
+C67154	C74720	Volume	A measurement of the volume of a biological specimen.
+C67154	C74721	Mucous Threads	A measurement of the mucous threads present in a biological specimen.
+C67154	C74723	Turbidity	A measurement of the opacity of a biological specimen.
+C67154	C74728	Giant Platelets	A measurement of the giant (larger than 7um in diameter) platelets in a biological specimen.
+C67154	C74729	Large Platelets	A measurement of the large (between 4 um and 7um in diameter) platelets in a biological specimen.
+C67154	C74730	Mean Platelet Volume	A measurement of the average size of the platelets present in a blood sample.
+C67154	C74731	Aldolase	A measurement of the aldolase enzyme in a biological specimen.
+C67154	C74732	Alpha Fetoprotein	A measurement of the alpha fetoprotein in a biological specimen.
+C67154	C74733	Apolipoprotein A1	A measurement of the apolipoprotein A1 in the high density lipoproteins of a biological specimen.
+C67154	C74734	Apolipoprotein B	A measurement of the total apolipoprotein B in a biological specimen.
+C67154	C74735	Brain Natriuretic Peptide	A measurement of the brain (B-type) natriuretic peptide in a biological specimen.
+C67154	C74736	C-peptide	A measurement of the C (connecting) peptide of insulin in a biological specimen.
+C67154	C74737	Ferritin	A measurement of the ferritin in a biological specimen.
+C67154	C74738	Globulin	A measurement of the globulin protein in a biological specimen.
+C67154	C74739	Glutamate	A measurement of the glutamate in a biological specimen.
+C67154	C74740	Haptoglobin	A measurement of the haptoglobin protein in a biological specimen.
+C67154	C74741	Homocysteine	A measurement of the homocysteine amino acid in a biological specimen.
+C67154	C74743	N-telopeptide	A measurement of the N-telopeptide in a biological specimen.
+C67154	C74744	Osteocalcin	A measurement of the osteocalcin in a biological specimen.
+C67154	C74745	Sex Hormone Binding Globulin	A measurement of the sex hormone binding (globulin) protein in a biological specimen.
+C67154	C74746	Thyroxine Binding Globulin	A measurement of the thyroxine binding globulin protein in a biological specimen.
+C67154	C74747	Triiodothyronine	A measurement of the total (free and bound) triiodothyronine in a biological specimen.
+C67154	C74748	Triiodothyronine Uptake	A measurement of the binding of triiodothyonine to thyroxine binding globulin protein in a biological specimen.
+C67154	C74749	Troponin I	A measurement of the actin binding troponin in a biological specimen.
+C67154	C74750	Troponin T	A measurement of the tropomyosin binding troponin in a biological specimen.
+C67154	C74751	Tumor Necrosis Factor	A measurement of the total tumor necrosis factor (cachexin) cytokine in a biological specimen.
+C67154	C74753	BUN/Creatinine	A relative measurement (ratio or percentage) (ratio) of the blood urea nitrogen (BUN) to the creatinine in a biological specimen.
+C67154	C74754	Hippuric Acid Crystals	A measurement of the hippuric acid crystals present in a biological specimen.
+C67154	C74755	Sulfa Crystals	A measurement of the sulfa crystals present in a biological specimen.
+C67154	C74756	Triple Phosphate Crystals	A measurement of the triple phosphate crystals present in a biological specimen.
+C67154	C74757	Unclassified Crystals	A measurement of the unclassifiable crystals present in a biological specimen.
+C67154	C74759	Ammonium Oxalate Crystals	A measurement of the ammonium oxalate crystals present in a urine specimen.
+C67154	C74761	Albumin/Creatinine	A relative measurement (ratio or percentage) of the albumin to the creatinine in a biological specimen.
+C67154	C74762	Bacterial Casts	A measurement of the bacterial casts present in a biological specimen.
+C67154	C74763	Casts	A statement that indicates casts were looked for in a biological specimen.
+C67154	C74764	Cellular Casts	A measurement of the cellular (white blood cell, red blood cell, epithelial and bacterial) casts present in a biological specimen.
+C67154	C74765	Granular Coarse Casts	A measurement of the coarse granular casts present in a biological specimen.
+C67154	C74766	Fatty Casts	A measurement of the fatty casts present in a biological specimen.
+C67154	C74768	Granular Casts	A measurement of the granular (coarse and fine) casts present in a biological specimen.
+C67154	C74769	Granular Fine Casts	A measurement of the fine granular casts present in a biological specimen.
+C67154	C74770	Hyaline Casts	A measurement of the hyaline casts present in a biological specimen.
+C67154	C74771	Mixed Casts	A measurement of the mixed (the cast contains a mixture of cell types) casts present in a biological specimen.
+C67154	C74772	RBC Casts	A measurement of the red blood cell casts present in a biological specimen.
+C67154	C74773	Squamous Epithelial Cells	A measurement of the squamous epithelial cells present in a biological specimen.
+C67154	C74774	Squamous Transitional Epithelial Cells	A measurement of the squamous transitional epithelial cells present in a biological specimen.
+C67154	C74775	Tubular Epithelial Cells	A measurement of the tubular epithelial cells present in a biological specimen.
+C67154	C74776	Unclassified Casts	A measurement of the unclassifiable casts present in a biological specimen.
+C67154	C74777	Waxy Casts	A measurement of the waxy casts present in a biological specimen.
+C67154	C74778	WBC Casts	A measurement of the white blood cell casts present in a biological specimen.
+C67154	C74779	Epithelial Casts	A measurement of the epithelial cell casts present in a biological specimen.
+C67154	C74780	Adrenocorticotropic Hormone	A measurement of the adrenocorticotropic hormone in a biological specimen.
+C67154	C74781	Cortisol	A measurement of the cortisol in a biological specimen.
+C67154	C74782	Estradiol	A measurement of the estradiol in a biological specimen.
+C67154	C74783	Follicle Stimulating Hormone	A measurement of the follicle stimulating hormone (FSH) in a biological specimen.
+C67154	C74784	Parathyroid Hormone, Fragmented	A measurement of the fragmented parathyroid hormone in a biological specimen.
+C67154	C74785	Testosterone, Free	A measurement of the free testosterone in a biological specimen.
+C67154	C74786	Thyroxine, Free	A measurement of the free thyroxine in a biological specimen.
+C67154	C74787	Triiodothyronine, Free	A measurement of the free triiodothyronine in a biological specimen.
+C67154	C74788	Insulin	A measurement of the insulin in a biological specimen.
+C67154	C74789	Parathyroid Hormone, Intact	A measurement of the intact parathyroid hormone (consisting of amino acids 1-84 or 7-84) in a biological specimen.
+C67154	C74790	Luteinizing Hormone	A measurement of the luteinizing hormone in a biological specimen.
+C67154	C74791	Progesterone	A measurement of the progesterone hormone in a biological specimen.
+C67154	C74793	Testosterone	A measurement of the total (free and bound) testosterone in a biological specimen.
+C67154	C74794	Thyroxine	A measurement of the total (free and bound) thyroxine in a biological specimen.
+C67154	C74796	Opiate	A measurement of any opiate class drug present in a biological specimen.
+C67154	C74797	Anisocytes	A measurement of the variability in the size of the red blood cells in a whole blood specimen.
+C67154	C74798	Macrophages	A measurement of the macrophages in a biological specimen.
+C67154	C74799	Ammonia	A measurement of the ammonia in a biological specimen.
+C67154	C74800	Bile Acid	A measurement of the total bile acids in a biological specimen.
+C67154	C74801	Osmolality	A measurement of the osmoles of solute per unit of biological specimen.
+C67154	C74802	Osmolarity	A measurement of the osmoles of solute per liter of solution.
+C67154	C74805	Interleukin 1	A measurement of the interleukin 1 in a biological specimen.
+C67154	C74806	Interleukin 10	A measurement of the interleukin 10 in a biological specimen.
+C67154	C74807	Interleukin 11	A measurement of the interleukin 11 in a biological specimen.
+C67154	C74808	Interleukin 12	A measurement of the interleukin 12 in a biological specimen.
+C67154	C74809	Interleukin 13	A measurement of the interleukin 13 in a biological specimen.
+C67154	C74810	Interleukin 14	A measurement of the interleukin 14 in a biological specimen.
+C67154	C74811	Interleukin 15	A measurement of the interleukin 15 in a biological specimen.
+C67154	C74812	Interleukin 16	A measurement of the interleukin 16 in a biological specimen.
+C67154	C74813	Interleukin 17	A measurement of the interleukin 17 in a biological specimen.
+C67154	C74814	Interleukin 18	A measurement of the interleukin 18 in a biological specimen.
+C67154	C74815	Interleukin 19	A measurement of the interleukin 19 in a biological specimen.
+C67154	C74816	Interleukin 2	A measurement of the interleukin 2 in a biological specimen.
+C67154	C74817	Interleukin 20	A measurement of the interleukin 20 in a biological specimen.
+C67154	C74818	Interleukin 21	A measurement of the interleukin 21 in a biological specimen.
+C67154	C74819	Interleukin 22	A measurement of the interleukin 22 in a biological specimen.
+C67154	C74820	Interleukin 23	A measurement of the interleukin 23 in a biological specimen.
+C67154	C74821	Interleukin 24	A measurement of the interleukin 24 in a biological specimen.
+C67154	C74822	Interleukin 25	A measurement of the interleukin 25 in a biological specimen.
+C67154	C74823	Interleukin 26	A measurement of the interleukin 26 in a biological specimen.
+C67154	C74824	Interleukin 27	A measurement of the interleukin 27 in a biological specimen.
+C67154	C74825	Interleukin 28	A measurement of the interleukin 28 in a biological specimen.
+C67154	C74826	Interleukin 29	A measurement of the interleukin 29 in a biological specimen.
+C67154	C74827	Interleukin 3	A measurement of the interleukin 3 in a biological specimen.
+C67154	C74828	Interleukin 30	A measurement of the interleukin 30 in a biological specimen.
+C67154	C74829	Interleukin 31	A measurement of the interleukin 31 in a biological specimen.
+C67154	C74830	Interleukin 32	A measurement of the interleukin 32 in a biological specimen.
+C67154	C74831	Interleukin 33	A measurement of the interleukin 33 in a biological specimen.
+C67154	C74832	Interleukin 4	A measurement of the interleukin 4 in a biological specimen.
+C67154	C74833	Interleukin 5	A measurement of the interleukin 5 in a biological specimen.
+C67154	C74834	Interleukin 6	A measurement of the interleukin 6 in a biological specimen.
+C67154	C74835	Interleukin 7	A measurement of the interleukin 7 in a biological specimen.
+C67154	C74836	Interleukin 8	A measurement of the interleukin 8 in a biological specimen.
+C67154	C74837	Interleukin 9	A measurement of the interleukin 9 in a biological specimen.
+C67154	C74838	Acetylcholine	A measurement of the acetylcholine hormone in a biological specimen.
+C67154	C74839	Adiponectin	A measurement of the adiponectin hormone in a biological specimen.
+C67154	C74841	Aldosterone	A measurement of the aldosterone hormone in a biological specimen.
+C67154	C74842	Androstenediol	A measurement of the androstenediol metabolite in a biological specimen.
+C67154	C74843	Androstenedione	A measurement of the androstenedione hormone in a biological specimen.
+C67154	C74844	Angiotensin I	A measurement of the angiotensin I hormone in a biological specimen.
+C67154	C74845	Angiotensin II	A measurement of the angiotensin II hormone in a biological specimen.
+C67154	C74846	Angiotensinogen	A measurement of the angiotensinogen hormone in a biological specimen.
+C67154	C74847	Antidiuretic Hormone	A measurement of the antidiuretic hormone in a biological specimen.
+C67154	C74848	Calcitonin	A measurement of the calcitonin hormone in a biological specimen.
+C67154	C74849	Calcitriol	A measurement of the calcitriol hormone in a biological specimen.
+C67154	C74850	Cholecystokinin	A measurement of the cholecystokinin hormone in a biological specimen.
+C67154	C74851	Corticotropin Releasing Hormone	A measurement of the corticotropin releasing hormone in a biological specimen.
+C67154	C74852	Dehydroepiandrosterone	A measurement of the dehydroepiandrosterone hormone in a biological specimen.
+C67154	C74853	Dihydrotestosterone	A measurement of the dihydrotestosterone hormone in a biological specimen.
+C67154	C74854	Dopamine	A measurement of the dopamine hormone in a biological specimen.
+C67154	C74855	Erythropoietin	A measurement of the erythropoietin hormone in a biological specimen.
+C67154	C74856	Estriol	A measurement of the estriol hormone in a biological specimen.
+C67154	C74857	Estrone	A measurement of the estrone hormone in a biological specimen.
+C67154	C74858	Gastrin	A measurement of the gastrin hormone in a biological specimen.
+C67154	C74859	Glucagon	A measurement of the glucagon hormone in a biological specimen.
+C67154	C74860	Gonadotropin Releasing Hormone	A measurement of the gonadotropin releasing hormone in a biological specimen.
+C67154	C74861	Growth Hormone Inhibiting Hormone	A measurement of the growth hormone inhibiting hormone in a biological specimen.
+C67154	C74862	Growth Hormone Releasing Hormone	A measurement of the growth hormone releasing hormone in a biological specimen.
+C67154	C74863	Homovanillic Acid	A measurement of the homovanillic acid metabolite in a biological specimen.
+C67154	C74864	Insulin-like Growth Factor-1	A measurement of the insulin-like growth factor-1 in a biological specimen.
+C67154	C74865	Insulin-like Growth Factor-2	A measurement of the insulin-like growth factor-2 in a biological specimen.
+C67154	C74866	Leptin	A measurement of the leptin hormone in a biological specimen.
+C67154	C74867	Melatonin	A measurement of the melatonin hormone in a biological specimen.
+C67154	C74868	Norepinephrine	A measurement of the norepinephrine hormone in a biological specimen.
+C67154	C74869	Oxytocin	A measurement of the oxytocin hormone in a biological specimen.
+C67154	C74870	Prolactin	A measurement of the prolactin hormone in a biological specimen.
+C67154	C74871	Secretin	A measurement of the secretin hormone in a biological specimen.
+C67154	C74872	Serotonin	A measurement of the serotonin hormone in a biological specimen.
+C67154	C74873	Thrombopoietin	A measurement of the thrombopoietin hormone in a biological specimen.
+C67154	C74874	Thyrotropin Releasing Hormone	A measurement of the thyrotropin releasing hormone in a biological specimen.
+C67154	C74875	Vanillyl Mandelic Acid	A measurement of the vanillyl mandelic acid metabolite in a biological specimen.
+C67154	C74876	6-Monoacetylmorphine	A measurement of the 6-monoacetylmorphine present in a biological specimen.
+C67154	C74877	Codeine	A measurement of the codeine present in a biological specimen.
+C67154	C74878	Dihydrocodeine	A measurement of the dihydrocodeine present in a biological specimen.
+C67154	C74879	Hydrocodone	A measurement of the hydrocodone present in a biological specimen.
+C67154	C74880	Hydromorphone	A measurement of the hydromorphone present in a biological specimen.
+C67154	C74881	Methadone	A measurement of the methadone present in a biological specimen.
+C67154	C74882	Methaqualone	A measurement of the methaqualone present in a biological specimen.
+C67154	C74883	Morphine	A measurement of the morphine present in a biological specimen.
+C67154	C74884	Oxycodone	A measurement of the oxycodone present in a biological specimen.
+C67154	C74885	Propoxyphene	A measurement of the propoxyphene present in a biological specimen.
+C67154	C74886	Atrial Natriuretic Peptide	A measurement of the atrial natriuretic peptide in a biological specimen.
+C67154	C74887	LDH Isoenzyme 1	A measurement of the lactate dehydrogenase isoenzyme 1 in a biological specimen.
+C67154	C74888	LDH Isoenzyme 2	A measurement of the lactate dehydrogenase isoenzyme 2 in a biological specimen.
+C67154	C74889	LDH Isoenzyme 3	A measurement of the lactate dehydrogenase isoenzyme 3 in a biological specimen.
+C67154	C74890	LDH Isoenzyme 4	A measurement of the lactate dehydrogenase isoenzyme 4 in a biological specimen.
+C67154	C74891	LDH Isoenzyme 5	A measurement of the lactate dehydrogenase isoenzyme 5 in a biological specimen.
+C67154	C74892	Neuropeptide Y	A measurement of the neuropeptide Y in a biological specimen.
+C67154	C74893	Renin	A measurement of the renin in a biological specimen.
+C67154	C74894	Albumin/Globulin	The ratio of albumin to globulin in a biological specimen.
+C67154	C74895	Vitamin A	A measurement of the Vitamin A in a biological specimen.
+C67154	C74896	Thiamine	A measurement of the thiamine in a biological specimen.
+C67154	C74897	Vitamin B17	A measurement of the Vitamin B17 in a biological specimen.
+C67154	C74898	Riboflavin	A measurement of the riboflavin in a biological specimen.
+C67154	C74899	Niacin	A measurement of the niacin in a biological specimen.
+C67154	C74900	Vitamin B5	A measurement of the Vitamin B5 in a biological specimen.
+C67154	C74901	Vitamin B6	A measurement of the Vitamin B6 in a biological specimen.
+C67154	C74902	Vitamin B7	A measurement of the Vitamin B7 in a biological specimen.
+C67154	C74903	Vitamin C	A measurement of the Vitamin C in a biological specimen.
+C67154	C74904	Vitamin D2	A measurement of the Vitamin D2 in a biological specimen.
+C67154	C74905	Vitamin D3	A measurement of the Vitamin D3 in a biological specimen.
+C67154	C74906	Vitamin E	A measurement of the Vitamin E in a biological specimen.
+C67154	C74907	Vitamin K	A measurement of the total Vitamin K in a biological specimen.
+C67154	C74910	Lymphoma Cells/Lymphocytes	A relative measurement (ratio or percentage) of the malignant lymphocytes to all lymphocytes in a biological specimen.
+C67154	C74911	Mature Plasma Cells/Lymphocytes	A relative measurement (ratio or percentage) of the mature plasma cells (plasmacytes) to all lymphocytes in a biological specimen.
+C67154	C74912	Acid Urate Crystals	A measurement of the acid urate crystals present in a biological specimen.
+C67154	C74913	Anti-Double Stranded DNA	A measurement of the anti-double stranded DNA antibody in a biological specimen.
+C67154	C74916	Antinuclear Antibodies	A measurement of the total antinuclear antibodies (antibodies that attack the body's own tissue) in a biological specimen.
+C67154	C75346	Caffeine	A measurement of the caffeine in a biological specimen.
+C67154	C75348	Methamphetamine	A measurement of the methamphetamine drug present in a biological specimen.
+C67154	C75350	Benzoylecgonine	A measurement of the benzoylecgonine in a biological specimen.
+C67154	C75352	Buprenorphine	A measurement of the buprenorphine drug present in a biological specimen.
+C67154	C75354	Lysergic Acid Diethylamide	A measurement of the lysergic acid diethylamine (LSD) in a biological specimen.
+C67154	C75359	3,4-methylenedioxymethamphetamine	A measurement of the 3,4-methylenedioxymethamphetamine (MDMA) in a biological specimen.
+C67154	C75368	Phenobarbital	A measurement of the phenobarbital present in a biological specimen.
+C67154	C75912	Viscosity	The resistance of a liquid to sheer forces and flow. (NCI)
+C67154	C78139	Drug Screen	An indication of the presence or absence of recreational drugs or drugs of abuse in a biological specimen.
+C67154	C79089	Cancer Antigen 125	A measurement of the cancer antigen 125 in a biological specimen.
+C67154	C79433	Alpha Glutathione-S-Transferase	A measurement of the alpha form of glutathione S-transferase in a biological specimen.
+C67154	C79434	Corticosterone	A measurement of corticosterone in a biological specimen.
+C67154	C79435	Glutathione-S-Transferase/Creatinine	A relative measurement (ratio or percentage) of the glutathione S-transferase to creatinine in a biological specimen.
+C67154	C79436	Myoglobin	A measurement of myoglobin in a biological specimen.
+C67154	C79437	5 Prime Nucleotidase	A measurement of the 5'-nucleotidase in a biological specimen.
+C67154	C79438	Alkaline Phosphatase/Creatinine	A relative measurement (ratio or percentage) of the alkaline phosphatase to creatinine in a biological specimen.
+C67154	C79439	Calcium/Creatinine	A relative measurement (ratio or percentage) of the calcium to creatinine in a biological specimen.
+C67154	C79440	Chloride/Creatinine	A relative measurement (ratio or percentage) of the chloride to creatinine in a biological specimen.
+C67154	C79441	Creatine Kinase MB/Total Creatine Kinase	A relative measurement (ratio or percentage) of the MB-type creatine kinase to total creatine kinase in a biological specimen.
+C67154	C79442	Creatine Kinase MM/Total Creatine Kinase	A relative measurement (ratio or percentage) of the MM-type creatine kinase to total creatine kinase in a biological specimen.
+C67154	C79443	Deoxypyridinoline	A measurement of the deoxypyridinoline in a biological specimen.
+C67154	C79444	Deoxypyridinoline/Creatinine	A relative measurement (ratio or percentage) of the deoxypyridinoline to creatinine in a biological specimen.
+C67154	C79445	Epinephrine	A measurement of the epinephrine hormone in a biological specimen.
+C67154	C79446	Gamma Glutamyl Transferase/Creatinine	A relative measurement (ratio or percentage) of the gamma glutamyl transferase to creatinine in a biological specimen.
+C67154	C79447	Glucose/Creatinine	A relative measurement (ratio or percentage) of the glucose to creatinine in a biological specimen.
+C67154	C79448	Glutamate Dehydrogenase	A measurement of the glutamate dehydrogenase in a biological specimen.
+C67154	C79449	Lactate Dehydrogenase/Creatinine	A relative measurement (ratio or percentage) of the lactate dehydrogenase to creatinine in a biological specimen.
+C67154	C79450	Lactic Acid	A measurement of the lactic acid in a biological specimen.
+C67154	C79451	LDH Isoenzyme 1/LDH	A relative measurement (ratio or percentage) of the lactate dehydrogenase isoenzyme 1 to total lactate dehydrogenase in a biological specimen.
+C67154	C79452	LDH Isoenzyme 2/LDH	A relative measurement (ratio or percentage) of the lactate dehydrogenase isoenzyme 2 to total lactate dehydrogenase in a biological specimen.
+C67154	C79453	LDH Isoenzyme 3/LDH	A relative measurement (ratio or percentage) of the lactate dehydrogenase isoenzyme 3 to total lactate dehydrogenase in a biological specimen.
+C67154	C79454	LDH Isoenzyme 4/LDH	A relative measurement (ratio or percentage) of the lactate dehydrogenase isoenzyme 4 to total lactate dehydrogenase in a biological specimen.
+C67154	C79455	LDH Isoenzyme 5/LDH	A relative measurement (ratio or percentage) of the lactate dehydrogenase isoenzyme 5 to total lactate dehydrogenase in a biological specimen.
+C67154	C79456	Magnesium/Creatinine	A relative measurement (ratio or percentage) of the magnesium to creatinine in a biological specimen.
+C67154	C79457	Mu Glutathione-S-Transferase	A measurement of the mu form of glutathione S-transferase in a biological specimen.
+C67154	C79458	Mu Glutathione-S-Transferase/Creatinine	A relative measurement (ratio or percentage) of the mu gamma glutamyl transpeptidase to creatinine in a biological specimen.
+C67154	C79459	N-Acetyl Glucosamide	A measurement of N-acetyl glucosamide (sugar derivative) in a biological specimen.
+C67154	C79460	N-Acetyl Glucosamide/Creatinine	A relative measurement (ratio or percentage) of the N-acetyl glucosamide to creatinine in a biological specimen.
+C67154	C79461	Phosphate/Creatinine	A relative measurement (ratio or percentage) of the phosphate to creatinine in a biological specimen.
+C67154	C79462	Potassium/Creatinine	A relative measurement (ratio or percentage) of the potassium to creatinine in a biological specimen.
+C67154	C79463	Protein/Creatinine	A relative measurement (ratio or percentage) of the total protein to creatinine in a biological specimen.
+C67154	C79464	Sodium/Creatinine	A relative measurement (ratio or percentage) of the sodium to creatinine in a biological specimen.
+C67154	C79465	Sorbitol Dehydrogenase	A measurement of the sorbitol dehydrogenase in a biological specimen.
+C67154	C79466	Creatine Kinase BB/Total Creatine Kinase	A relative measurement (ratio or percentage) of the BB-type creatine kinase to total creatine kinase in a biological specimen.
+C67154	C79467	Large Unstained Cells/Leukocytes	A relative measure (ratio or percentage) of the large unstained cells to leukocytes in a biological specimen.
+C67154	C79602	Poikilocytes	A measurement of the odd-shaped erythrocytes in a whole blood specimen.
+C67154	C80160	Complement Total	A measurement of the total complement in a biological specimen.
+C67154	C80163	Acid Phosphatase	A measurement of the acid phosphatase in a biological specimen.
+C67154	C80164	Glucagon-Like Peptide-1, Active Form	A measurement of the active form of glucagon-like peptide-1 in a biological specimen.
+C67154	C80165	Glucuronidase, Alpha	A measurement of the alpha glucuronidase in a biological specimen.
+C67154	C80166	Glutathione S-Transferase, Alpha/Creat	A relative measurement (ratio or percentage) of the alpha glutathione-S-transferase to creatinine in a biological specimen.
+C67154	C80167	Alpha-1 Antitrypsin	A measurement of the alpha-1 antitrypsin in a biological specimen.
+C67154	C80168	Alpha-2 Macroglobulin	A measurement of the alpha-2 macroglobulin in a biological specimen.
+C67154	C80169	Angiotensin Converting Enzyme	A measurement of the angiotensin converting enzyme in a biological specimen.
+C67154	C80170	Glucuronidase, Beta	A measurement of the beta glucuronidase in a biological specimen.
+C67154	C80171	Cholesterol/HDL-Cholesterol	A relative measurement (ratio or percentage) of total cholesterol to high-density lipoprotein cholesterol (HDL-C) in a biological specimen.
+C67154	C80172	Complement Bb	A measurement of the Bb fragment of complement factor B in a biological specimen.
+C67154	C80173	Complement C1q Antibody	A measurement of the complement C1q antibody in a biological specimen.
+C67154	C80174	Complement C3	A measurement of the complement C3 in a biological specimen.
+C67154	C80175	Complement C3a	A measurement of the complement C3a in a biological specimen.
+C67154	C80176	Complement C3b	A measurement of the complement C3b in a biological specimen.
+C67154	C80177	Complement C4	A measurement of the complement C4 in a biological specimen.
+C67154	C80178	Complement C4a	A measurement of the complement C4a in a biological specimen.
+C67154	C80179	Complement C5a	A measurement of the complement C5a in a biological specimen.
+C67154	C80180	F2-Isoprostane	A measurement of the F2-isoprostane in a biological specimen.
+C67154	C80182	Galanin	A measurement of the galanin in a biological specimen.
+C67154	C80183	Glucagon-Like Peptide-1	A measurement of the total glucagon-like peptide-1 in a biological specimen.
+C67154	C80184	Glucose-6-Phosphate Dehydrogenase	A measurement of the glucose-6-phosphate dehydrogenase in a biological specimen.
+C67154	C80185	Glutathione S-Transferase, Total	A measurement of the total glutathione-s-transferase in a biological specimen.
+C67154	C80186	Gold	A measurement of the gold in a biological specimen.
+C67154	C80187	HDL-Cholesterol Subclass 2	A measurement of the high-density lipoprotein (HDL) cholesterol subclass 2 in a biological specimen.
+C67154	C80188	HDL-Cholesterol Subclass 3	A measurement of the high-density lipoprotein (HDL) cholesterol subclass 3 in a biological specimen.
+C67154	C80189	Histamine	A measurement of the histamine in a biological specimen.
+C67154	C80190	Hydroxyproline	A measurement of the total hydroxyproline in a biological specimen.
+C67154	C80191	Macrophage Colony Stimulating Factor	A measurement of the macrophage colony stimulating factor in a biological specimen.
+C67154	C80192	Matrix Metalloproteinase 1	A measurement of the matrix metalloproteinase 1 in a biological specimen.
+C67154	C80193	Matrix Metalloproteinase 2	A measurement of the matrix metalloproteinase 2 in a biological specimen.
+C67154	C80194	Matrix Metalloproteinase 3	A measurement of the matrix metalloproteinase 3 in a biological specimen.
+C67154	C80195	Matrix Metalloproteinase 7	A measurement of the matrix metalloproteinase 7 in a biological specimen.
+C67154	C80196	Matrix Metalloproteinase 8	A measurement of the matrix metalloproteinase 8 in a biological specimen.
+C67154	C80197	Matrix Metalloproteinase 9	A measurement of the matrix metalloproteinase 9 in a biological specimen.
+C67154	C80198	Myeloperoxidase	A measurement of the myeloperoxidase in a biological specimen.
+C67154	C80199	Neopterin	A measurement of the neopterin in a biological specimen.
+C67154	C80200	Free Fatty Acid	A measurement of the total non-esterified fatty acids in a biological specimen.
+C67154	C80201	Pancreatic Polypeptide	A measurement of the pancreatic polypeptide in a biological specimen.
+C67154	C80202	Peptide YY	A measurement of the peptide YY in a biological specimen.
+C67154	C80203	Glutathione S-Transferase, Pi	A measurement of the Pi glutathione-s-transferase in a biological specimen.
+C67154	C80204	Prostatic Acid Phosphatase	A measurement of the prostatic acid phosphatase in a biological specimen.
+C67154	C80205	Resistin	A measurement of the resistin in a biological specimen.
+C67154	C80206	Free Fatty Acid, Saturated	A measurement of the saturated non-esterified fatty acids in a biological specimen.
+C67154	C80207	Glutathione S-Transferase, Theta	A measurement of the theta glutathione-s-transferase in a biological specimen.
+C67154	C80208	Total Radical-Trap Antioxidant Potential	A measurement of the ability of the antioxidants in a biological specimen to buffer free radicals in a suspension.
+C67154	C80209	Free Fatty Acid, Unsaturated	A measurement of the unsaturated non-esterified fatty acids in a biological specimen.
+C67154	C80210	Zinc	A measurement of the zinc in a biological specimen.
+C67154	C80211	Pyridinoline	A measurement of the pyridinoline in a biological specimen.
+C67154	C80360	Somatotrophin	A measurement of the somatotrophin (growth) hormone in a biological specimen.
+C67154	C80365	Thrombin Time	A measurement of the time it takes a plasma sample to clot after adding the active enzyme thrombin. (NCI)
+C67154	C81280	Phenylalanine	A measurement of the phenylalanine in a biological specimen.
+C67154	C81947	Fat Bodies, Oval	A measurement of the oval-shaped fat bodies, usually renal proximal tubular cells with lipid aggregates in the cytoplasm, in a biological specimen.
+C67154	C81948	Calcium, Ionized	A measurement of the ionized calcium in a biological specimen.
+C67154	C81951	Starch Crystals	A measurement of the starch crystals in a biological specimen.
+C67154	C81952	Eotaxin-1	A measurement of the eotaxin-1 in a biological specimen.
+C67154	C81953	Eotaxin-2	A measurement of the eotaxin-2 in a biological specimen.
+C67154	C81954	Eotaxin-3	A measurement of the eotaxin-3 in a biological specimen.
+C67154	C81955	Lymphotactin	A measurement of the lymphotactin in a biological specimen.
+C67154	C81956	Macrophage-Derived Chemokine	A measurement of the macrophage-derived chemokine in a biological specimen.
+C67154	C81957	Reg upon Act Normal T-cell Exprd Secrtd	A measurement of the RANTES (regulated on activation, normally, T-cell expressed, and secreted) chemokine in a biological specimen.
+C67154	C81958	Antithrombin	A measurement of the antithrombin activity in a biological specimen.
+C67154	C81959	Factor III	A measurement of the factor III in a biological specimen.
+C67154	C81960	Factor VII	A measurement of the factor VII in a biological specimen.
+C67154	C81961	Factor VIII	A measurement of the factor VIII in a biological specimen.
+C67154	C81962	Platelet Distribution Width	A measurement of the range of platelet sizes in a biological specimen.
+C67154	C81963	Estriol, Free	A measurement of the free estriol in a biological specimen.
+C67154	C81964	Parathyroid Hormone, C-Terminal	A measurement of the C-terminal fragment of parathyroid hormone in a biological specimen.
+C67154	C81965	Parathyroid Hormone, Mid-Molecule	A measurement of the mid-molecule fragment of parathyroid hormone in a biological specimen.
+C67154	C81966	Parathyroid Hormone, N-Terminal	A measurement of the N-terminal fragment of parathyroid hormone in a biological specimen.
+C67154	C81967	Proinsulin	A measurement of the proinsulin in a biological specimen.
+C67154	C81968	Triiodothyronine, Reverse	A measurement of the reverse triiodothyronine in a biological specimen.
+C67154	C81969	Immunoglobulin A	A measurement of the Immunoglobulin A in a biological specimen.
+C67154	C81970	Immunoglobulin E	A measurement of the Immunoglobulin E in a biological specimen.
+C67154	C81971	Immunoglobulin G	A measurement of the Immunoglobulin G in a biological specimen.
+C67154	C81972	Immunoglobulin M	A measurement of the Immunoglobulin M in a biological specimen.
+C67154	C81973	Anti-DNA Antibodies	A measurement of the anti-DNA antibodies in a biological specimen.
+C67154	C81974	Antiglobulin Test, Direct	A measurement of the antibody or complement-coated erythrocytes in a biological specimen in vivo.
+C67154	C81975	Antimitochondrial Antibodies	A measurement of the antimitochondrial antibodies in a biological specimen.
+C67154	C81976	Anti-Saccharomyces cerevisiae Antibody	A measurement of the anti-Saccharomyces cerevisiae antibody in a biological specimen.
+C67154	C81977	Antithrombin Antigen	A measurement of the antithrombin antigen in a biological specimen.
+C67154	C81978	Aspartate Aminotransferase Antigen	A measurement of the aspartate aminotransferase antigen in a biological specimen.
+C67154	C81979	Beta-2 Glycoprotein Antibody	A measurement of the beta-2 glycoprotein antibody in a biological specimen.
+C67154	C81980	Beta-2 Microglobulin	A measurement of the beta-2 microglobulin in a biological specimen.
+C67154	C81982	Cancer Antigen 19-9	A measurement of the cancer antigen 19-9 in a biological specimen.
+C67154	C81983	Carcinoembryonic Antigen	A measurement of the carcinoembryonic antigen in a biological specimen.
+C67154	C81984	Heterophile Antibodies	A measurement of the heterophile antibodies in a biological specimen.
+C67154	C81985	Islet Cell 512 Antibody	A measurement of the islet cell 512 antibody in a biological specimen.
+C67154	C81986	Islet Cell 512 Antigen	A measurement of the islet cell 512 antigen in a biological specimen.
+C67154	C81987	Islet Neogenesis Assoc Protein Antibody	A measurement of the islet neogenesis associated protein antibody in a biological specimen.
+C67154	C81988	Pemphigoid Antibodies	A measurement of the pemphigoid antibodies in a biological specimen.
+C67154	C81989	Plasminogen Activator Inhibitor-1 AG	A measurement of the plasminogen activator inhibitor-1 antigen in a biological specimen.
+C67154	C81990	Thyroid Antibodies	A measurement of the thyroid antibodies in a biological specimen.
+C67154	C81991	Thyroid Antimicrosomal Antibodies	A measurement of the thyroid antimicrosomal antibodies in a biological specimen.
+C67154	C81992	Thyroid Antithyroglobulin Antibodies	A measurement of the thyroid antithyroglobulin antibodies in a biological specimen.
+C67154	C81993	Tissue Plasminogen Activator Antigen	A measurement of the tissue plasminogen activator antigen in a biological specimen.
+C67154	C81994	Interferon Alpha	A measurement of the interferon alpha in a biological specimen.
+C67154	C81995	Interferon Beta	A measurement of the interferon beta in a biological specimen.
+C67154	C81996	Interferon Gamma	A measurement of the interferon gamma in a biological specimen.
+C67154	C81997	Neutrophils, Segmented	A measurement of the segmented neutrophils in a biological specimen.
+C67154	C81998	Amyloid P	A measurement of the total amyloid P in a biological specimen.
+C67154	C81999	Amyloid, Beta	A measurement of the total amyloid beta in a biological specimen.
+C67154	C82000	Apolipoprotein AII	A measurement of the apolipoprotein AII in a biological specimen.
+C67154	C82001	Apolipoprotein CIII	A measurement of the apolipoprotein CIII in a biological specimen.
+C67154	C82002	Apolipoprotein E	A measurement of the apolipoprotein E in a biological specimen.
+C67154	C82003	Apolipoprotein H	A measurement of the apolipoprotein H in a biological specimen.
+C67154	C82004	Brain-Derived Neurotrophic Factor	A measurement of the brain-derived neurotrophic factor in a biological specimen.
+C67154	C82005	Calprotectin	A measurement of the calprotectin in a biological specimen.
+C67154	C82006	CD40	A count of the CD40 cells per unit in a biological specimen.
+C67154	C82007	CD40 Ligand	A count of the CD40 ligand cells per unit in a biological specimen.
+C67154	C82008	Endothelin-1	A measurement of the endothelin-1 in a biological specimen.
+C67154	C82009	Epidermal Growth Factor	A measurement of the epidermal growth factor in a biological specimen.
+C67154	C82010	Epith Neutrophil-Activating Peptide 78	A measurement of the epithelial neutrophil-activating peptide in a biological specimen.
+C67154	C82011	Extracell Newly Ident RAGE Bind Protein	A measurement of the extracellular newly identified RAGE (receptor for advanced glycation end products) binding protein in a biological specimen.
+C67154	C82012	Fatty Acid Binding Protein 1	A measurement of the fatty acid binding protein 1 in a biological specimen.
+C67154	C82013	Fibrin Degradation Products	A measurement of the fibrin degradation products in a biological specimen.
+C67154	C82014	Fibroblast Growth Factor Basic Form	A measurement of the basic form of fibroblast growth factor in a biological specimen.
+C67154	C82015	Glutamic Acid Decarboxylase 1	A measurement of the glutamic acid decarboxylase 1 in a biological specimen.
+C67154	C82016	Glutamic Acid Decarboxylase 2	A measurement of the glutamic acid decarboxylase 2 in a biological specimen.
+C67154	C82017	Glutamic Acid Decarboxylase 2 Antibody	A measurement of the glutamic acid decarboxylase 2 antibody in a biological specimen.
+C67154	C82018	Granulocyte Colony Stimulating Factor	A measurement of the granulocyte colony stimulating factor in a biological specimen.
+C67154	C82019	Granulocyte Macrophage Colony Stm Factor	A measurement of the granulocyte macrophage colony stimulating factor in a biological specimen.
+C67154	C82020	Inhibin A	A measurement of the inhibin A in a biological specimen.
+C67154	C82021	Lactoferrin	A measurement of the lactoferrin in a biological specimen.
+C67154	C82022	Lipoprotein-a	A measurement of the lipoprotein-a in a biological specimen.
+C67154	C82023	Macrophage Inflammatory Protein 1 Alpha	A measurement of the macrophage inflammatory protein 1 alpha in a biological specimen.
+C67154	C82024	Macrophage Inflammatory Protein 1 Beta	A measurement of the macrophage inflammatory protein 1 beta in a biological specimen.
+C67154	C82025	Monocyte Chemotactic Protein 1	A measurement of the monocyte chemotactic protein 1 in a biological specimen.
+C67154	C82026	Neutrophil Elastase	A measurement of the neutrophil elastase in a biological specimen.
+C67154	C82027	Neutrophil Elastase, Polymorphonuclear	A measurement of the polymorphonuclear neutrophil elastase in a biological specimen.
+C67154	C82028	Pancreatic Elastase 1	A measurement of the pancreatic elastase 1 in a biological specimen.
+C67154	C82029	Pancreatic Elastase 1, Polymorphonuclear	A measurement of the polymorphonuclear pancreatic elastase 1 in a biological specimen.
+C67154	C82030	Plasminogen Activator Inhibitor-1	A measurement of the plasminogen activator inhibitor-1 in a biological specimen.
+C67154	C82031	Pregnancy-Associated Plasma Protein-A	A measurement of the pregnancy-associated plasma protein-A in a biological specimen.
+C67154	C82032	ProB-type Natriuretic Peptide	A measurement of the proB-type natriuretic peptide in a biological specimen.
+C67154	C82033	Procollagen Type I Carboxy Term Peptide	A measurement of the procollagen-1 carboxy-terminal peptide in a biological specimen.
+C67154	C82034	Prothrombin Fragments 1 + 2	A measurement of the prothrombin fragments 1 and 2 in a biological specimen.
+C67154	C82035	Stem Cell Factor	A measurement of the stem cell factor in a biological specimen.
+C67154	C82036	Tissue Inhibitor of Metalloproteinase 1	A measurement of the tissue inhibitor of metalloproteinase 1 in a biological specimen.
+C67154	C82037	Transferrin	A measurement of the transferrin in a biological specimen.
+C67154	C82038	Type I Collagen C-Telopeptides	A measurement of the type I collagen C-telopeptides in a biological specimen.
+C67154	C82039	Type I Collagen N-Telopeptides	A measurement of the type I collagen N-telopeptides in a biological specimen.
+C67154	C82040	Type II Collagen C-Telopeptides	A measurement of the type II collagen C-telopeptides in a biological specimen.
+C67154	C82041	Type II Collagen N-Telopeptides	A measurement of the type II collagen N-telopeptides in a biological specimen.
+C67154	C82042	Vascular Cell Adhesion Molecule 1	A measurement of the vascular cell adhesion molecule 1 in a biological specimen.
+C67154	C82044	Indican	A measurement of the indican present in a biological specimen.
+C67154	C82045	Neutrophils, Segmented/Leukocytes	A relative measurement (ratio or percentage) of segmented neutrophils to leukocytes in a biological specimen.
+C67154	C82046	Nucleated Erythrocytes/Leukocytes	A relative measurement (ratio or percentage) of nucleated erythrocytes to leukocytes in a biological specimen.
+C67154	C82621	D-Dimer	A measurement of the d-dimers in a biological specimen.
+C67154	C82625	Partial Pressure Carbon Dioxide	A measurement of the pressure of carbon dioxide in a biological specimen.
+C67154	C84809	Amyloid Beta 1-42	A measurement of amyloid beta protein which is composed of peptides 1 to 42 in a biological specimen.
+C67154	C84810	Tau Protein	A measurement of the total Tau protein in a biological specimen.
+C67154	C84811	Non-Phosphorylated Tau Protein	A measurement of the non-phosphorylated Tau protein in a biological specimen.
+C67154	C84812	Phosphorylated Tau Protein	A measurement of the phosphorylated Tau protein in a biological specimen.
+C67154	C84818	Vitamin D	A measurement of the total Vitamin D in a biological specimen.
+C67154	C84819	Eosinophilic Metamyelocytes	A measurement of the eosinphilic metamyelocytes in a biological specimen.
+C67154	C84821	Eosinophilic Myelocytes	A measurement of the eosinophilic myelocytes in a biological specimen.
+C67154	C84822	Neutrophilic Metamyelocytes	A measurement of the neutrophilic metamyelocytes in a biological specimen.
+C67154	C84823	Neutrophilic Myelocytes	A measurement of the neutrophilic myelocytes in a biological specimen.
+C67154	C88113	Cortisol, Free	A measurement of the free, unbound cortisol in a biological specimen.
+C67154	C89775	Bleeding Time	A measurement of the time from the start to cessation of an induced bleed.
+C67154	C90505	Glomerular Filtration Rate	A kidney function test that measures the fluid volume that is filtered from the kidney glomeruli to the Bowman's capsule per unit of time.
+C67154	C91372	Antiglobulin Test, Indirect	A test that uses Coombs' reagent to detect the presence of anti-erythrocyte antibodies in a biological specimen.
+C67154	C92236	Sjogrens SS-A Antibody	A measurement of the Sjogrens SS-A antibody in a biological specimen.
+C67154	C92237	Sjogrens SS-B Antibody	A measurement of the Sjogrens SS-B antibody in a biological specimen.
+C67154	C92238	Trichomonas	Examination of a biological specimen to detect the presence of any protozoan belonging to the Trichomonas genus.
+C67154	C92239	Yeast Hyphae	A measurement of the yeast hyphae present in a biological specimen.
+C67154	C92240	Protein/Osmolality	A relative measurement (ratio or percentage) of total proteins to the osmolality of a biological specimen.
+C67154	C92241	M. tuberculosis IFN Gamma Response	A measurement of the amount of interferon gamma that is released when Mycobacterium tuberculosis antigen is incubated with a biological specimen, usually blood. Increased amounts of interferon gamma suggests a prior or existing M. tuberculosis infection.
+C67154	C92242	Myeloid/Erythroid Ratio	A relative measurement (ratio or percentage) of myeloid progenitor cells to erythrocyte precursor cells in a biological specimen.
+C67154	C92243	Amorphous Phosphate Crystals	A measurement of the amorphous phosphate crystals in a biological specimen.
+C67154	C92244	Amorphous Urate Crystals	A measurement of the amorphous urate crystals in a biological specimen.
+C67154	C92245	Erythrocyte Cell Clumps	A measurement of red blood cell clumps in a biological specimen.
+C67154	C92246	Leukocyte Cell Clumps	A measurement of white blood cell clumps in a biological specimen.
+C67154	C92247	Acetoacetic Acid	A measurement of the acetoacetic acid in a biological specimen.
+C67154	C92248	Citrate	A measurement of the citrate in a biological specimen.
+C67154	C92249	Cotinine	A measurement of the cotinine in a biological specimen.
+C67154	C92250	Oxalate	A measurement of the oxalate in a biological specimen.
+C67154	C92251	Transitional Epithelial Cells	A measurement of the transitional epithelial cells present in a biological specimen.
+C67154	C92252	Alpha-1 Globulin	A measurement of the proteins contributing to the alpha 1 fraction in a biological specimen.
+C67154	C92253	Alpha-1 Globulin/Total Protein	A relative measurement (ratio or percentage) of alpha-1-fraction proteins to total proteins in a biological specimen.
+C67154	C92254	Alpha-2 Globulin	A measurement of the proteins contributing to the alpha 2 fraction in a biological specimen.
+C67154	C92255	Alpha-2 Globulin/Total Protein	A relative measurement (ratio or percentage) of alpha-2-fraction proteins to total proteins in a biological specimen.
+C67154	C92256	Beta Globulin	A measurement of the proteins contributing to the beta fraction in a biological specimen.
+C67154	C92257	Gamma Globulin	A measurement of the proteins contributing to the gamma fraction in a biological specimen.
+C67154	C92258	Hemoglobin A	A measurement of the hemoglobin A in a biological specimen.
+C67154	C92259	Hemoglobin A2	A measurement of the hemoglobin A2 in a biological specimen.
+C67154	C92260	Hemoglobin B	A measurement of the hemoglobin B in a biological specimen.
+C67154	C92261	Hemoglobin C	A measurement of the hemoglobin C in a biological specimen.
+C67154	C92262	Hemoglobin F	A measurement of the hemoglobin F in a biological specimen.
+C67154	C92263	HIV-1 Group M and O Nucleic Acid	A measurement of the HIV-1 group M and O nucleic acids in a biological specimen.
+C67154	C92264	HIV-1 Group O Antibody	A measurement of the HIV-1 group O antibody in a biological specimen.
+C67154	C92265	HIV-1 p24 Antigen	A measurement of the HIV-1 p24 antigen in a biological specimen.
+C67154	C92266	HIV-2 Nucleic Acid	A measurement of the HIV-2 nucleic acids in a biological specimen.
+C67154	C92267	1, 25-Dihydroxyvitamin D	A measurement of the total active Vitamin D in a biological specimen.
+C67154	C92268	25-Hydroxyvitamin D	A measurement of the total inactive Vitamin D in a biological specimen.
+C67154	C92269	Anti-Single Stranded DNA IgG	A measurement of the anti-single stranded DNA IgG antibody in a biological specimen.
+C67154	C92270	Extractable Nuclear Antigen Antibody	A measurement of the extractable nuclear antigen antibody in a biological specimen.
+C67154	C92271	Hepatitis A Virus Antibody IgM	A measurement of hepatitis A virus antibody IgM in a biological specimen.
+C67154	C92272	Hepatitis G RNA	A measurement of the Hepatitis G RNA in a biological specimen.
+C67154	C92273	Influenza A H1N1 Viral Load	A measurement of the Influenza A H1N1 viral load in a biological specimen.
+C67154	C92274	Influenza A Viral Load	A measurement of the Influenza A viral load in a biological specimen.
+C67154	C92275	Legionella pneumophila Antigen	A measurement of the Legionella pneumophila antigen in a biological specimen.
+C67154	C92276	Legionella pneumophila IgG Antibody	A measurement of the Legionella pneumophila IgG antibody in a biological specimen.
+C67154	C92277	Legionella pneumophila IgG IgM Antibody	A measurement of the Legionella pneumophila IgG and IgM in a biological specimen.
+C67154	C92278	Legionella pneumophila IgM Antibody	A measurement of the Legionella pneumophila IgM antibody in a biological specimen.
+C67154	C92279	Mycobacterium tuberculosis Nucleic Acid	A measurement of the Mycobacterium tuberculosis nucleic acid in a biological specimen.
+C67154	C92280	Myeloperoxidase Antibody	A measurement of the myeloperoxidase antibody in a biological specimen.
+C67154	C92281	Smith Antibody	A measurement of the Smith antibody in a biological specimen.
+C67154	C92282	Streptolysin O Antibody	A measurement of Streptolysin O Antibody in a biological specimen.
+C67154	C92283	Type I Myeloblasts	A measurement of type I myeloblast cells per unit of a biological specimen.
+C67154	C92284	Type II Myeloblasts	A measurement of type II myeloblast cells per unit of a biological specimen.
+C67154	C92285	Type III Myeloblasts	A measurement of type III myeloblast cells per unit of a biological specimen.
+C67154	C92286	Acyl Coenzyme A Oxidase	A measurement of the acyl coenzyme A oxidase in a biological specimen.
+C67154	C92287	Bone Specific Alkaline Phosphatase	A measurement of the bone specific alkaline phosphatase isoform in a biological specimen.
+C67154	C92288	Carnitine Acetyl Transferase	A measurement of the carnitine acetyl transferase in a biological specimen.
+C67154	C92289	Cholinesterase	A measurement of the cholinesterase in a biological specimen.
+C67154	C92290	Cystatin C	A measurement of the cystatin C in a biological specimen.
+C67154	C92291	Monoclonal Protein	A measurement of homogenous immunoglobulin resulting from the proliferation of a single clone of plasma cells in a biological specimen.
+C67154	C92292	Tryptase	A measurement of the tryptase in a biological specimen.
+C67154	C92293	Apolipoprotein E4	A measurement of the apolipoprotein E4 in a biological specimen.
+C67154	C92294	Beta Globulin/Total Protein	A relative measurement (ratio or percentage) of beta fraction proteins to total proteins in a biological specimen.
+C67154	C92295	Gamma Globulin/Total Protein	A relative measurement (ratio or percentage) of gamma fraction proteins to total proteins in a biological specimen.
+C67154	C92296	Erythrocyte Cell Morphology	An examination or assessment of the form and structure of red blood cells.
+C67154	C92297	Leukocyte Cell Morphology	An examination or assessment of the form and structure of white blood cells.
+C67154	C92298	Neisseria gonorrhoeae Screening	Examination of a biological specimen to detect the presence of Neisseria gonorrhoeae.
+C67154	C92432	Chlamydia pneumoniae IgA Antibody	A measurement of the Chlamydia pneumoniae IgA antibody in a biological specimen.
+C67154	C92433	Chlamydia pneumoniae IgM Antibody	A measurement of the Chlamydia pneumoniae IgM in a biological specimen.
+C67154	C92514	Vascular Endothelial Growth Factor	A measurement of the vascular endothelial growth factor in a biological specimen.
+C67154	C92533	Soluble Vasc Cell Adhesion Molecule 1	A measurement of the soluble vascular cell adhesion molecule 1 in a biological specimen.
+C67154	C92534	Hepatitis A Virus Antibody	A measurement of the antibody reaction of a biological specimen to the Hepatitis A virus.
+C67154	C92535	Hepatitis C Virus Antibody	A measurement of the antibody reaction of a biological specimen to the Hepatitis C virus.
+C67154	C92541	HAV Viral Load	A measurement of the hepatitis A viral load in a biological specimen.
+C67154	C92542	HBV Viral Load	A measurement of the hepatitis B viral load in a biological specimen.
+C67154	C92543	HCV Viral Load	A measurement of the hepatitis C viral load in a biological specimen.
+C67154	C92544	HIV Viral Load	A measurement of the HIV viral load in a biological specimen.
+C67154	C96559	Acetylcholine Receptor Antibody	A measurement of the acetylcholine receptor antibody in a biological specimen.
+C67154	C96560	Acetylcholinesterase	A measurement of the acetylcholinesterase in a biological specimen.
+C67154	C96562	Alpha Fetoprotein L1	A measurement of the alpha fetoprotein L1 in a biological specimen.
+C67154	C96563	Alpha Fetoprotein L2	A measurement of the alpha fetoprotein L2 in a biological specimen.
+C67154	C96564	Alpha Fetoprotein L3	A measurement of the alpha fetoprotein L3 in a biological specimen.
+C67154	C96565	A Fetoprotein L3/A Fetoprotein	A relative measurement (ratio or percentage) of alpha fetoprotein L3 to total alpha fetoprotein in a biological specimen.
+C67154	C96567	Basophilic Stippling	A measurement of the basophilic stippling in a biological specimen.
+C67154	C96568	Beta-Hydroxybutyrate	A measurement of the total Beta-hydroxybutyrate in a biological specimen.
+C67154	C96588	Broad Casts	A measurement of the broad casts in a biological specimen.
+C67154	C96589	Calcium Clearance	A measurement of the volume of serum or plasma that would be cleared of calcium by excretion of urine for a specified unit of time (e.g. one minute).
+C67154	C96590	Calcium Sulphate	A measurement of the calcium sulphate in a biological specimen.
+C67154	C96591	Carboxyhemoglobin	A measurement of the carboxyhemoglobin, carbon monoxide-bound hemoglobin, in a biological specimen.
+C67154	C96592	Circulating Endothelial Cells	A measurement of the circulating endothelial cells in a biological specimen.
+C67154	C96593	Circulating Tumor Cells	A measurement of the circulating tumor cells in a biological specimen.
+C67154	C96594	Clarity	A measurement of the transparency of a biological specimen.
+C67154	C96595	Cyclic Citrullinated Peptide Antibody	A measurement of the cyclic citrullinated peptide antibody in a biological specimen.
+C67154	C96596	Cytomegalovirus IgG Antibody	A measurement of the cytomegalovirus IgG antibody in a biological specimen.
+C67154	C96597	Cytomegalovirus IgM Antibody	A measurement of the cytomegalovirus IgM antibody in a biological specimen.
+C67154	C96598	Eccentrocytes	A measurement of the eccentrocytes (erythrocytes in which the hemoglobin is localized to a particular portion of the cell, noticeable as localized staining) in a biological specimen.
+C67154	C96600	Epstein-Barr Capsid IgG Antibody	A measurement of the Epstein-Barr capsid IgG antibody in a biological specimen.
+C67154	C96601	Epstein-Barr Capsid IgM Antibody	A measurement of the Epstein-Barr capsid IgM antibody in a biological specimen.
+C67154	C96602	Epstein-Barr Early Antigen	A measurement of the Epstein-Barr early antigen in a biological specimen.
+C67154	C96603	Epstein-Barr Nuclear Antibody	A measurement of the Epstein-Barr nuclear antibody in a biological specimen.
+C67154	C96604	Epstein-Barr Nuclear Antigen	A measurement of the Epstein-Barr nuclear antigen in a biological specimen.
+C67154	C96605	Erythrocyte Ghosts	A measurement of the erythrocyte ghosts (erythrocytes in which hemoglobin has been removed through hemolysis) in a biological specimen.
+C67154	C96610	N-Terminal ProB-type Natriuretic Peptide	A measurement of the N-terminal proB-type natriuretic peptide in a biological specimen.
+C67154	C96614	Oxygen Capacity	A measurement of the maximum amount of oxygen that can be combined chemically with hemoglobin in a volume of blood.
+C67154	C96616	Oxyhemoglobin	A measurement of the oxyhemoglobin, oxygen-bound hemoglobin, in a biological specimen.
+C67154	C96617	Parvovirus B19 IgG Antibody	A measurement of the Parvovirus B19 IgG antibody in a biological specimen.
+C67154	C96618	Parvovirus B19 IgM Antibody	A measurement of the Parvovirus B19 IgM antibody in a biological specimen.
+C67154	C96623	Phospholipid	A measurement of the phospholipids in a biological specimen.
+C67154	C96624	Platelet Clumps	A measurement of the platelet clumps in a biological specimen.
+C67154	C96625	Procollagen 1 N-Terminal Propeptide	A measurement of the procollagen 1 N-terminal propeptide in a biological specimen.
+C67154	C96626	Factor II	A measurement of the Factor II in a biological specimen.
+C67154	C96628	Reptilase Time	A measurement of the time it takes a plasma sample to clot after adding the active enzyme reptilase.
+C67154	C96629	Dehydroepiandrosterone Sulfate	A measurement of the sulfated Dehydroepiandrosterone in a biological specimen.
+C67154	C96636	Target Cells	A measurement of the target cells in a biological specimen.
+C67154	C96638	Thyroperoxidase Antibody	A measurement of the thyroperoxidase antibody in a biological specimen.
+C67154	C96639	Thyroperoxidase	A measurement of the thyroperoxidase in a biological specimen.
+C67154	C96641	Toxic Granulation	A measurement of the toxic granulation in neutrophilic blood cells.
+C67154	C96645	Urea/Creatinine	A relative measurement (ratio or percentage) of the urea to creatinine in a biological specimen.
+C67154	C96648	Fat	A measurement of the fat in a biological specimen.
+C67154	C96650	Fibroblast Growth Factor 23	A measurement of the fibroblast growth factor 23 in a biological specimen.
+C67154	C96651	Giant Neutrophils	A measurement of the giant neutrophils in a biological specimen.
+C67154	C96652	Glucose Clearance	A measurement of the volume of serum or plasma that would be cleared of glucose by excretion of urine for a specified unit of time (e.g. one minute).
+C67154	C96653	Glutamic Acid Decarboxylase Antibody	A measurement of the glutamic acid decarboxylase antibody in a biological specimen.
+C67154	C96654	Granulocytes	A measurement of the granulocytes in a biological specimen.
+C67154	C96659	Hemosiderin	A measurement of the hemosiderin complex in a biological specimen.
+C67154	C96660	Hepatitis B Virus Core Antibody	A measurement of the hepatitis B virus core antibody in a biological specimen.
+C67154	C96661	Hepatitis B Virus Core IgM Antibody	A measurement of the hepatitis B virus core IgM antibody in a biological specimen.
+C67154	C96662	Hepatitis B Virus e Antibody	A measurement of the hepatitis B e antibody in a biological specimen.
+C67154	C96663	Hepatitis B Virus e Antigen	A measurement of the hepatitis B e antigen in a biological specimen.
+C67154	C96664	Hepatitis D Virus Antibody	A measurement of the hepatitis D virus antibody in a biological specimen.
+C67154	C96665	Hepatitis E Virus IgM Antibody	A measurement of the hepatitis E virus IgM antibody in a biological specimen.
+C67154	C96666	Herpes Simplex Virus 1 IgG Antibody	A measurement of the herpes simplex virus 1 IgG antibody in a biological specimen.
+C67154	C96667	Herpes Simplex Virus 2 IgG Antibody	A measurement of the herpes simplex virus 2 IgG antibody in a biological specimen.
+C67154	C96668	Hexokinase	A measurement of the hexokinase in a biological specimen.
+C67154	C96669	Hyperchromia	A measurement of the prevalence of the erthrocytes with an elevated hemoglobin concentration.
+C67154	C96670	Immature Basophils	A measurement of the immature basophils in a biological specimen.
+C67154	C96671	Immature Basophils/Leukocytes	A relative measurement (ratio or percentage) of immature basophils to total leukocytes in a biological specimen.
+C67154	C96672	Immature Cells	A measurement of the total immature cells in a blood specimen.
+C67154	C96673	Immature Eosinophils	A measurement of the immature eosinophils in a biological specimen.
+C67154	C96674	Immature Eosinophils/Leukocytes	A relative measurement (ratio or percentage) of immature eosinophils to total leukocytes in a biological specimen.
+C67154	C96675	Immature Granulocytes	A measurement of the total immature granulocytes in a biological specimen.
+C67154	C96676	Immature Monocytes	A measurement of the immature monocytes in a biological specimen.
+C67154	C96677	Immature Monocytes/Leukocytes	A relative measurement (ratio or percentage) of immature monocytes to total leukocytes in a biological specimen.
+C67154	C96678	Immature Neutrophils	A measurement of the total immature neutrophils in a biological specimen.
+C67154	C96679	Immature Plasma Cells	A measurement of the immature plasma cells in a biological specimen.
+C67154	C96680	Immature Plasma Cells/Lymphocytes	A relative measurement (ratio or percentage) of immature plasma cells to total lymphocytes in a biological specimen.
+C67154	C96681	Inhibin B	A measurement of the inhibin B in a biological specimen.
+C67154	C96682	Kurloff Cells	A measurement of the large secretory granule-containing immune cells in a biological specimen taken from members of certain genera of the Caviidae family.
+C67154	C96683	Liver Kidney Microsomal Type 1 Antibody	A measurement of the liver kidney microsomal type 1 antibody in a biological specimen.
+C67154	C96686	Mean Platelet Component	A measurement of the mean platelet component (platelet activity) in a blood specimen.
+C67154	C96688	Megakaryocytes	A measurement of the megakaryocytes per unit of a biological specimen.
+C67154	C96689	Methemoglobin	A measurement of the methemoglobin in a biological specimen.
+C67154	C96690	Methylmalonic Acid	A measurement of the methylmalonic acid in a biological specimen.
+C67154	C96696	Dilute Russell's Viper Venom Time	A measurement of the time it takes a plasma sample to clot after adding dilute Russell's viper venom.
+C67154	C96697	Herpes Simplex Virus 1/2 IgG Antibody	A measurement of the herpes simplex virus 1 and 2 IgG antibody in a biological specimen.
+C67154	C96698	Herpes Simplex Virus 1/2 IgM Antibody	A measurement of the herpes simplex virus 1 and 2 IgM antibody in a biological specimen.
+C67154	C98705	ADV Viral Load	A measurement of the adenovirus viral load in a biological specimen.
+C67154	C98706	Anti-Factor Xa Activity	A measurement of the anti-activated Factor X in a biological specimen. This test is used to monitor low molecular weight or unfractionated heparin levels in a biological specimen.
+C67154	C98710	BKV Viral Load	A measurement of the BK virus viral load in a biological specimen.
+C67154	C98716	CMV Viral Load	A measurement of the cytomegalovirus viral load in a biological specimen.
+C67154	C98720	Eosinophils/Total Cells	A relative measurement (ratio or percentage) of the eosinophils to total cells in a biological specimen (for example a bone marrow specimen).
+C67154	C98721	EBV Viral Load	A measurement of the Epstein-Barr virus viral load in a biological specimen.
+C67154	C98725	Factor IX	A measurement of the factor IX in a biological specimen.
+C67154	C98726	Factor V	A measurement of the factor V in a biological specimen.
+C67154	C98727	Factor X	A measurement of the factor X in a biological specimen.
+C67154	C98728	Fat Droplet	A measurement of the triglyceride aggregates within a biological specimen.
+C67154	C98730	Kappa Light Chain, Free	A measurement of the free kappa light chain in a biological specimen.
+C67154	C98731	Kappa Lt Chain,Free/Lambda Lt Chain,Free	A relative measurement (ratio or percentage) of the free kappa light chain to the free lambda light chain in a biological specimen.
+C67154	C98732	Lambda Light Chain, Free	A measurement of the free lambda light chain in a biological specimen.
+C67154	C98734	Glomerular Filtration Rate Adj for BSA	A measurement of the glomerular filtration rate adjusted for body size.
+C67154	C98735	GFR from Creatinine Adjusted for BSA	An estimation of the glomerular filtration rate adjusted for body size based on creatinine.
+C67154	C98736	GFR from Cystatin C Adjusted for BSA	An estimation of the glomerular filtration rate adjusted for body size based on cystatin C.
+C67154	C98738	Herpes Simplex Virus 1 IgM Antibody	A measurement of the Herpes Simplex virus 1 IgM antibodies in a biological specimen.
+C67154	C98739	Herpes Simplex Virus 2 IgM Antibody	A measurement of the Herpes Simplex virus 2 IgM antibodies in a biological specimen.
+C67154	C98740	Human Anti-Sheep IgE Antibody	A measurement of the human anti-sheep IgE antibodies in a biological specimen.
+C67154	C98741	Human Anti-Sheep IgG Antibody	A measurement of the human anti-sheep IgG antibodies in a biological specimen.
+C67154	C98742	Human Anti-Sheep IgM Antibody	A measurement of the human anti-sheep IgM antibodies in a biological specimen.
+C67154	C98745	Immunoglobulin D	A measurement of the Immunoglobulin D in a biological specimen.
+C67154	C98748	Inulin Clearance	A measurement of the volume of serum or plasma that would be cleared of inulin by excretion of urine for a specified unit of time (e.g. one minute).
+C67154	C98749	Iothalamate Clearance	A measurement of the volume of serum or plasma that would be cleared of iothalamate by excretion of urine for a specified unit of time (e.g. one minute).
+C67154	C98750	Iothalamate Clearance Adjusted for BSA	A measurement of the volume of serum or plasma that would be cleared of iothalamate by excretion of urine for a specified unit of time (e.g. one minute), adjusted for body size.
+C67154	C98751	Lymphocytes/Total Cells	A relative measurement (ratio or percentage) of the lymphocytes to total cells in a biological specimen (for example a bone marrow specimen).
+C67154	C98752	Megakaryoblasts	A measurement of the megakaryoblasts in a biological specimen.
+C67154	C98753	Megakaryoblasts/Total Cells	A relative measurement (ratio or percentage) of the megakaryoblasts to total cells in a biological specimen (for example a bone marrow specimen).
+C67154	C98754	Metamyelocytes/Total Cells	A relative measurement (ratio or percentage ) of the metamyelocytes (small, myelocytic neutrophils with an indented nucleus) to total cells in a biological specimen (for example a bone marrow specimen).
+C67154	C98761	Myeloblasts/Total Cells	A relative measurement (ratio or percentage) of the myeloblasts to total cells in a biological specimen (for example a bone marrow specimen).
+C67154	C98762	Natural Killer Cells	A measurement of the total natural killer cells in a biological specimen.
+C67154	C98763	Neutrophils/Total Cells	A relative measurement (ratio or percentage) of the neutrophils to total cells in a biological specimen (for example a bone marrow specimen).
+C67154	C98764	Normoblasts/Total Cells	A relative measurement (ratio or percentage) of the normoblasts to total cells in a biological specimen (for example a bone marrow specimen).
+C67154	C98767	Amylase, Pancreatic	A measurement of the pancreatic enzyme amylase in a biological specimen.
+C67154	C98773	Promyelocytes/Total Cells	A relative measurement (ratio or percentage) of the promyelocytes (immature myelocytes) to total cells in a biological specimen (for example a bone marrow specimen).
+C67154	C98774	Prothrombin Activity	A measurement of the biological activity of prothrombin in a biological specimen.
+C67154	C98776	Ret. Corpuscular Hemoglobin Content	A quantitative measurement of the total amount of hemoglobin in the reticulocyte population.
+C67154	C98780	Amylase, Salivary	A measurement of the salivary enzyme amylase in a biological specimen.
+C67154	C98792	Transferrin Saturation	A measurement of the iron bound to transferrin in a biological specimen.
+C67154	C98795	Varicella Zoster Virus IgA Antibody	A measurement of the Varicella Zoster virus IgA antibodies in a biological specimen.
+C67154	C98796	Varicella Zoster Virus IgG Antibody	A measurement of the Varicella Zoster virus IgG antibodies in a biological specimen.
+C67154	C98797	Varicella Zoster Virus IgM Antibody	A measurement of the Varicella Zoster virus IgM antibodies in a biological specimen.
+C67154	C98799	von Willebrand Factor	A measurement of the von Willebrand factor in a biological specimen.

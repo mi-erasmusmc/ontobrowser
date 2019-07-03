@@ -1,0 +1,747 @@
+format-version: 1.2
+data-version: 1
+date: 29:01:2018 01:11
+auto-generated-by: OntoBrowser Export Service
+
+[Term]
+id: terms:066729
+name: terms_C66729
+
+[Term]
+id: terms:0102399
+name: INTRAJEJUNAL
+def: "Administration into the jejunum."[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:0102400
+name: INTRAPALATAL
+def: "Administration into the palate."[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:0111326
+name: TRANSMAMMARY
+def: "Administration by ingestion of colostrum or breast milk."[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:0112396
+name: PERIVENOUS
+def: "Administration into the area surrounding a vein. (NCI)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:0119548
+name: INTRAPARENCHYMAL
+def: "Administration within or into the parenchyma of a targeted organ."[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:028161
+name: INTRAMUSCULAR
+def: "Administration within a muscle. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038192
+name: AURICULAR (OTIC)
+def: "Administration to or by way of the ear. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038193
+name: BUCCAL
+def: "Administration directed toward the cheek, generally from within the mouth. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038194
+name: CONJUNCTIVAL
+def: "Administration to the conjunctiva, the delicate membrane that lines the eyelids and covers the exposed surface of the eyeball. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038197
+name: DENTAL
+def: "Administration to a tooth or teeth. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038198
+name: SOFT TISSUE
+def: "Administration into any soft tissue. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038200
+name: HEMODIALYSIS
+def: "Administration through hemodialysate fluid. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038203
+name: IONTOPHORESIS
+def: "Administration by means of an electric current where ions of soluble salts migrate into the tissues of the body. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038205
+name: ENDOCERVICAL
+def: "Administration within the canal of the cervix uteri. Synonymous with the term intracervical. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038206
+name: ENDOSINUSIAL
+def: "Administration within the nasal sinuses of the head. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038207
+name: INTRATHORACIC
+def: "Administration within the thorax (internal to the ribs); synonymous with the term endothoracic. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038208
+name: ENDOTRACHEAL
+def: "Administration directly into the trachea. Synonymous with the term intratracheal. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038209
+name: ENTERAL
+def: "Administration directly into the intestines. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038210
+name: EPIDURAL
+def: "Administration upon or over the dura mater. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038211
+name: EXTRA-AMNIOTIC
+def: "Administration to the outside of the membrane enveloping the fetus. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038212
+name: EXTRACORPOREAL
+def: "Administration outside of the body. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038215
+name: INFILTRATION
+def: "Administration that results in substances passing into tissue spaces or into cells. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038216
+name: RESPIRATORY (INHALATION)
+def: "Administration within the respiratory tract by inhaling orally or nasally for local or systemic effect. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038217
+name: INTRACORONAL, DENTAL
+def: "Administration of a drug within a portion of a tooth which is covered by enamel and which is separated from the roots by a slightly constricted region known as the neck. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038218
+name: INTRACORONARY
+def: "Administration within the coronary arteries. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038219
+name: INTERSTITIAL
+def: "Administration to or in the interstices of a tissue. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038220
+name: INTRA-ABDOMINAL
+def: "Administration within the abdomen. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038221
+name: INTRA-AMNIOTIC
+def: "Administration within the amnion. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038222
+name: INTRA-ARTERIAL
+def: "Administration within an artery or arteries. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038223
+name: INTRA-ARTICULAR
+def: "Administration within a joint. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038224
+name: INTRABILIARY
+def: "Administration within the bile, bile ducts or gallbladder. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038225
+name: INTRABRONCHIAL
+def: "Administration within a bronchus. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038226
+name: INTRABURSAL
+def: "Administration within a bursa. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038227
+name: INTRACARDIAC
+def: "Administration within the heart. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038228
+name: INTRACARTILAGINOUS
+def: "Administration within a cartilage; endochondral. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038229
+name: INTRACAUDAL
+def: "Administration within the cauda equina. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038230
+name: INTRACAVERNOUS
+def: "Administration within a pathologic cavity, such as occurs in the lung in tuberculosis. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038231
+name: INTRACAVITARY
+def: "Administration within a non-pathologic cavity, such as that of the cervix, uterus, or penis, or such as that is formed as the result of a wound. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038232
+name: INTRACEREBRAL
+def: "Administration within the cerebrum. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038233
+name: INTRACISTERNAL
+def: "Administration within the cisterna magna cerebellomedularis. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038234
+name: INTRACORNEAL
+def: "Administration within the cornea (the transparent structure forming the anterior part of the fibrous tunic of the eye). (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038235
+name: INTRACORPORUS CAVERNOSUM
+def: "Administration within the dilatable spaces of the corporus cavernosa of the penis. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038238
+name: INTRADERMAL
+def: "Administration within the dermis. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038239
+name: INTRADISCAL
+def: "Administration within a disc. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038240
+name: INTRADUCTAL
+def: "Administration within the duct of a gland. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038241
+name: INTRADUODENAL
+def: "Administration within the duodenum. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038242
+name: INTRADURAL
+def: "Administration within or beneath the dura. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038243
+name: INTRAEPIDERMAL
+def: "Administration within the epidermis. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038245
+name: INTRAESOPHAGEAL
+def: "Administration within the esophagus. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038246
+name: INTRAGASTRIC
+def: "Administration within the stomach. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038247
+name: INTRAGINGIVAL
+def: "Administration within the gingivae. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038248
+name: INTRAHEPATIC
+def: "Administration into the liver."[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038249
+name: INTRAILEAL
+def: "Administration within the distal portion of the small intestine, from the jejunum to the cecum. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038250
+name: INTRALESIONAL
+def: "Administration within or introduced directly into a localized lesion. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038251
+name: INTRALUMINAL
+def: "Administration within the lumen of a tube. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038252
+name: INTRALYMPHATIC
+def: "Administration within the lymph. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038253
+name: INTRAMEDULLARY
+def: "Administration within the marrow cavity of a bone. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038254
+name: INTRAMENINGEAL
+def: "Administration within the meninges (the three membranes that envelope the brain and spinal cord). (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038255
+name: INTRAOCULAR
+def: "Administration within the eye. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038256
+name: INTRAOVARIAN
+def: "Administration within the ovary. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038257
+name: INTRAPERICARDIAL
+def: "Administration within the pericardium. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038258
+name: INTRAPERITONEAL
+def: "Administration within the peritoneal cavity. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038259
+name: INTRAPLEURAL
+def: "Administration within the pleura. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038260
+name: INTRAPROSTATIC
+def: "Administration within the prostate gland. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038261
+name: INTRAPULMONARY
+def: "Administration within the lungs or its bronchi. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038262
+name: INTRASINAL
+def: "Administration within the nasal or periorbital sinuses. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038263
+name: INTRASPINAL
+def: "Administration within the vertebral column. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038264
+name: INTRASYNOVIAL
+def: "Administration within the synovial cavity of a joint. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038265
+name: INTRATENDINOUS
+def: "Administration within a tendon. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038266
+name: INTRATESTICULAR
+def: "Administration within the testicle. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038267
+name: INTRATHECAL
+def: "Administration within the cerebrospinal fluid at any level of the cerebrospinal axis, including injection into the cerebral ventricles. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038268
+name: INTRATUBULAR
+def: "Administration within the tubules of an organ. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038269
+name: INTRATUMOR
+def: "Administration within a tumor. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038270
+name: INTRATYMPANIC
+def: "Administration within the auris media. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038271
+name: URETHRAL
+def: "Administration into the urethra. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038272
+name: INTRAUTERINE
+def: "Administration within the uterus. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038273
+name: INTRAVASCULAR
+def: "Administration within a vessel or vessels. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038274
+name: INTRAVENOUS BOLUS
+def: "Administration within or into a vein or veins all at once. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038276
+name: INTRAVENOUS
+def: "Administration within or into a vein or veins. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038277
+name: INTRAVENTRICULAR
+def: "Administration within a ventricle. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038278
+name: INTRAVESICAL
+def: "Administration within the bladder. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038279
+name: INTRAVENOUS DRIP
+def: "Administration within or into a vein or veins over a sustained period of time. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038280
+name: INTRAVITREAL
+def: "Administration within the vitreous body of the eye. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038281
+name: IRRIGATION
+def: "Administration to bathe or flush open wounds or body cavities. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038282
+name: LARYNGEAL
+def: "Administration directly upon the larynx. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038283
+name: TRANSMUCOSAL
+def: "Administration across the mucosa. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038284
+name: NASAL
+def: "Administration to the nose; administered by way of the nose. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038285
+name: NASOGASTRIC
+def: "Administration through the nose and into the stomach, usually by means of a tube. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038286
+name: OCCLUSIVE DRESSING TECHNIQUE
+def: "Administration by the topical route which is then covered by a dressing which occludes the area. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038287
+name: OPHTHALMIC
+def: "Administration to the external eye. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038288
+name: ORAL
+def: "Administration to or by way of the mouth. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038289
+name: OROPHARYNGEAL
+def: "Administration directly to the mouth and pharynx. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038291
+name: PARENTERAL
+def: "Administration by injection, infusion, or implantation. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038292
+name: PERIARTICULAR
+def: "Administration around a joint. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038293
+name: PERINEURAL
+def: "Administration surrounding a nerve or nerves. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038294
+name: PERIODONTAL
+def: "Administration around a tooth. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038295
+name: RECTAL
+def: "Administration to the rectum. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038296
+name: RETROBULBAR
+def: "Administration behind the pons or behind the eyeball. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038297
+name: SUBARACHNOID
+def: "Administration beneath the arachnoid. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038298
+name: SUBCONJUNCTIVAL
+def: "Administration beneath the conjunctiva. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038299
+name: SUBCUTANEOUS
+def: "Administration beneath the skin; hypodermic. Synonymous with the term SUBDERMAL. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038300
+name: SUBLINGUAL
+def: "Administration beneath the tongue. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038301
+name: SUBMUCOSAL
+def: "Administration beneath the mucous membrane. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038304
+name: TOPICAL
+def: "Administration to a particular spot on the outer surface of the body. The E2B term TRANSMAMMARY is a subset of the term TOPICAL. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038305
+name: TRANSDERMAL
+def: "Administration through the dermal layer of the skin to the systemic circulation by diffusion. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038307
+name: TRANSPLACENTAL
+def: "Administration through or across the placenta. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038308
+name: TRANSTRACHEAL
+def: "Administration through the wall of the trachea. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038309
+name: TRANSTYMPANIC
+def: "Administration across or through the tympanic cavity. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038310
+name: UNASSIGNED
+def: "Route of administration has not yet been assigned. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038311
+name: UNKNOWN
+def: "Route of administration is unknown. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038312
+name: URETERAL
+def: "Administration into the ureter. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038313
+name: VAGINAL
+def: "Administration into the vagina. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038633
+name: ELECTRO-OSMOSIS
+def: "Administration of through the diffusion of substance through a membrane in an electric field. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038675
+name: CUTANEOUS
+def: "Administration to the skin. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038676
+name: PERCUTANEOUS
+def: "Administration through the skin. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:038677
+name: PERIDURAL
+def: "Administration to the outside of the dura mater of the spinal cord. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:048623
+name: NOT APPLICABLE
+def: "Routes of administration are not applicable. (FDA)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:064906
+name: OROMUCOSAL
+def: "Administration across the mucosa of the oral cavity."[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:064984
+name: INTRACAMERAL
+def: "Administration by injection directly into the anterior chamber of the eye."[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:065138
+name: INTRASTOMAL
+def: "Administration into a stoma."[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:078373
+name: DIETARY
+def: "Administration by way of food stuff. (NCI)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:078374
+name: ORAL GAVAGE
+def: "Administration through the mouth and into the stomach, usually by means of a tube. (NCI)"[]
+is_a: terms:066729 ! terms_C66729
+
+[Term]
+id: terms:094636
+name: SUBTENON
+def: "Administration by injection through the membrane covering the muscles and nerves at the back of the eyeball."[]
+is_a: terms:066729 ! terms_C66729
+

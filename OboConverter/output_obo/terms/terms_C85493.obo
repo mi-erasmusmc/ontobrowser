@@ -1,0 +1,1881 @@
+format-version: 1.2
+data-version: 1
+date: 29:01:2018 01:11
+auto-generated-by: OntoBrowser Export Service
+
+[Term]
+id: terms:085493
+name: terms_C85493
+
+[Term]
+id: terms:0102356
+name: Accumulation Ratio AUCTAU
+def: "The area under the curve (AUCTAU) at steady state divided by the area under the curve (AUCTAU) over the initial dosing interval."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102357
+name: Accumulation Ratio Cmax
+def: "The maximum concentration at steady state divided by the maximum concentration during the initial dosing interval."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102358
+name: Accumulation Ratio Cmin
+def: "The minimum concentration at steady state divided by the minimum concentration during the initial dosing interval."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102359
+name: Amt Rec from T1 to T2
+def: "The cumulative amount recovered from the specimen type specified in PPSPEC over the interval from T1 to T2."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102360
+name: Amt Rec from T1 to T2 Norm by BMI
+def: "The cumulative amount recovered from the specimen type specified in PPSPEC over the interval from T1 to T2 divided by body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102361
+name: Amt Rec from T1 to T2 Norm by SA
+def: "The cumulative amount recovered from the specimen type specified in PPSPEC over the interval from T1 to T2 divided by surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102362
+name: Amt Rec from T1 to T2 Norm by WT
+def: "The cumulative amount recovered from the specimen type specified in PPSPEC over the interval from T1 to T2 divided by weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102363
+name: Amt Rec Over Dosing Interval
+def: "The cumulative amount recovered from the specimen type specified in PPSPEC between doses (TAU)."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102364
+name: Amt Rec Over Dosing Interval Norm by BMI
+def: "The cumulative amount recovered from the specimen type specified in PPSPEC between doses (TAU) divided by body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102365
+name: Amt Rec Over Dosing Interval Norm by SA
+def: "The cumulative amount recovered from the specimen type specified in PPSPEC between doses (TAU) divided by surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102366
+name: Amt Rec Over Dosing Interval Norm by WT
+def: "The cumulative amount recovered from the specimen type specified in PPSPEC between doses (TAU) divided by weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102367
+name: Conc by BMI
+def: "The concentration divided by body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102368
+name: Conc by Dose
+def: "The concentration divided by dose."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102369
+name: Conc by SA
+def: "The concentration divided by surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102370
+name: Conc by WT
+def: "The concentration divided by weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102371
+name: Vol Dist Initial
+def: "The initial volume of distribution for a substance administered by bolus intravascular dosing."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102372
+name: Vol Dist Initial Norm by BMI
+def: "The initial volume of distribution for a substance administered by bolus intravascular dosing divided by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102373
+name: Vol Dist Initial Norm by Dose
+def: "The initial volume of distribution for a substance administered by bolus intravascular dosing divided by the dose."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102374
+name: Vol Dist Initial Norm by SA
+def: "The initial volume of distribution for a substance administered by bolus intravascular dosing divided by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102375
+name: Vol Dist Initial Norm by WT
+def: "The initial volume of distribution for a substance administered by bolus intravascular dosing divided by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102376
+name: Nonrenal CL
+def: "The total clearance of a substance from the blood less the renal clearance."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102377
+name: Vol Dist Steady State Obs Norm by BMI
+def: "The volume of distribution at steady state based on the observed CLST for a substance administered by intravascular dosing divided by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102378
+name: Vol Dist Steady State Obs Norm by Dose
+def: "The volume of distribution at steady state based on the observed CLST for a substance administered by intravascular dosing divided by the dose."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102379
+name: Vol Dist Steady State Obs Norm by SA
+def: "The volume of distribution at steady state based on the observed CLST for a substance administered by intravascular dosing divided by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102380
+name: Vol Dist Steady State Obs Norm by WT
+def: "The volume of distribution at steady state based on the observed CLST for a substance administered by intravascular dosing divided by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102381
+name: Peak Trough Ratio
+def: "The maximum concentration during a dosing interval divided by the concentration at the end of the dosing interval."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102382
+name: Pct Rec from T1 to T2
+def: "The percentage of the administered dose that is recovered from the specimen type specified in PPSPEC, over the interval between T1 and T2."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102383
+name: Pct Rec from T1 to T2 Norm by BMI
+def: "The percentage of the administered dose that is recovered from the specimen type specified in PPSPEC, over the interval between T1 and T2 divided by body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102384
+name: Pct Rec from T1 to T2 Norm by SA
+def: "The percentage of the administered dose that is recovered from the specimen type specified in PPSPEC, over the interval between T1 and T2 divided by surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102385
+name: Pct Rec from T1 to T2 Norm by WT
+def: "The percentage of the administered dose that is recovered from the specimen type specified in PPSPEC, over the interval between T1 and T2 divided by weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102386
+name: Pct Rec Over Dosing Interval
+def: "The percentage of the administered dose that is recovered from the specimen type specified in PPSPEC, between doses (TAU)."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102387
+name: Pct Rec Over Dosing Interval Norm by BMI
+def: "The percentage of the administered dose that is recovered from the specimen type specified in PPSPEC, between doses (TAU) divided by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102388
+name: Pct Rec Over Dosing Interval Norm by SA
+def: "The percentage of the administered dose that is recovered from the specimen type specified in PPSPEC, between doses (TAU) divided by surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102389
+name: Pct Rec Over Dosing Interval Norm by WT
+def: "The percentage of the administered dose that is recovered from the specimen type specified in PPSPEC, between doses (TAU) divided by weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102390
+name: Vol Dist Steady State Pred Norm by BMI
+def: "The volume of distribution at steady state based on the predicted CLST for a substance administered by intravascular dosing divided by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102391
+name: Vol Dist Steady State Pred Norm by Dose
+def: "The volume of distribution at steady state based on the predicted CLST for a substance administered by intravascular dosing divided by the dose."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102392
+name: Vol Dist Steady State Pred Norm by SA
+def: "The volume of distribution at steady state based on the predicted CLST for a substance administered by intravascular dosing divided by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102393
+name: Vol Dist Steady State Pred Norm by WT
+def: "The volume of distribution at steady state based on the predicted CLST for a substance administered by intravascular dosing divided by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102394
+name: Conc Trough
+def: "Concentration at end of dosing interval."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102395
+name: Conc Trough by BMI
+def: "The trough concentration divided by body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102396
+name: Conc Trough by Dose
+def: "The trough concentration divided by dose."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102397
+name: Conc Trough by SA
+def: "The trough concentration divided by surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102398
+name: Conc Trough by WT
+def: "The trough concentration divided by weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102426
+name: Accumulation Ratio Ctrough
+def: "The trough concentration at steady state divided by the trough concentration during the initial dosing interval."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102683
+name: Vz Obs Norm by Dose
+def: "The volume of distribution associated with the terminal slope following intravascular administration, calculated using the observed value of the last non-zero concentration, divided by the dose."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102696
+name: Vz Pred Norm by Dose
+def: "The volume of distribution associated with the terminal slope following intravascular administration, calculated using the predicted value of the last non-zero concentration, divided by the dose."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102729
+name: Vz Obs by F Norm by Dose
+def: "The volume of distribution associated with the terminal slope following extravascular administration divided by the fraction of dose absorbed, calculated using the observed value of the last non-zero concentration, divided by the dose."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0102730
+name: Vz Pred by F Norm by Dose
+def: "The volume of distribution associated with the terminal slope following extravascular administration divided by the fraction of dose absorbed, calculated using the predicted value of the last non-zero concentration, divided by the dose."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0105449
+name: Excret Rate from T1 to T2
+def: "The excretion rate over the interval from T1 to T2, determined for the specimen type specified in PPSPEC."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0105450
+name: Excret Rate from T1 to T2 Norm by BMI
+def: "The excretion rate over the interval from T1 to T2 divided by the body mass index, determined for the specimen type specified in PPSPEC."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0105451
+name: Excret Rate from T1 to T2 Norm by Dose
+def: "The excretion rate over the interval from T1 to T2 divided by the dose, determined for the specimen type specified in PPSPEC."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0105452
+name: Excret Rate from T1 to T2 Norm by SA
+def: "The excretion rate over the interval from T1 to T2 divided by the surface area, determined for the specimen type specified in PPSPEC."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0105453
+name: Excret Rate from T1 to T2 Norm by WT
+def: "The excretion rate over the interval from T1 to T2 divided by the weight, determined for the specimen type specified in PPSPEC."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0105454
+name: Nonrenal CL Norm by BMI
+def: "The total clearance of a substance from the blood minus the renal clearance divided by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0105455
+name: Nonrenal CL Norm by Dose
+def: "The total clearance of a substance from the blood minus the renal clearance divided by the dose."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0105456
+name: Nonrenal CL Norm by SA
+def: "The total clearance of a substance from the blood minus the renal clearance divided by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0105457
+name: Nonrenal CL Norm by WT
+def: "The total clearance of a substance from the blood minus the renal clearance divided by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0105458
+name: Renal CL Norm by BMI
+def: "The clearance of a substance from the blood by the kidneys divided by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0105459
+name: Renal CL Norm by Dose
+def: "The clearance of a substance from the blood by the kidneys divided by the dose."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0105460
+name: Renal CL Norm by SA
+def: "The clearance of a substance from the blood by the kidneys divided by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0105461
+name: Renal CL Norm by WT
+def: "The clearance of a substance from the blood by the kidneys divided by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0111333
+name: Vz for Dose Int
+def: "The volume of distribution associated with the terminal slope following intravascular administration, calculated using AUCTAU."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0111364
+name: Vz for Dose Int by F
+def: "The volume of distribution associated with the terminal slope following extravascular administration divided by the fraction of dose absorbed, calculated using AUCTAU."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0111365
+name: Vz for Dose Int by F Norm by BMI
+def: "The volume of distribution associated with the terminal slope following extravascular administration divided by the fraction of dose absorbed, calculated using AUCTAU, divided by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0111366
+name: Vz for Dose Int by F Norm by Dose
+def: "The volume of distribution associated with the terminal slope following extravascular administration divided by the fraction of dose absorbed, calculated using AUCTAU, divided by the dose."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0111367
+name: Vz for Dose Int by F Norm by SA
+def: "The volume of distribution associated with the terminal slope following extravascular administration divided by the fraction of dose absorbed, calculated using AUCTAU, divided by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0111368
+name: Vz for Dose Int by F Norm by WT
+def: "The volume of distribution associated with the terminal slope following extravascular administration divided by the fraction of dose absorbed, calculated using AUCTAU, divided by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0111369
+name: Vz for Dose Int Norm by BMI
+def: "The volume of distribution associated with the terminal slope following intravascular administration, calculated using AUCTAU, divided by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0111370
+name: Vz for Dose Int Norm by Dose
+def: "The volume of distribution associated with the terminal slope following intravascular administration, calculated using AUCTAU, divided by the dose."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0111371
+name: Vz for Dose Int Norm by SA
+def: "The volume of distribution associated with the terminal slope following intravascular administration, calculated using AUCTAU, divided by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0111372
+name: Vz for Dose Int Norm by WT
+def: "The volume of distribution associated with the terminal slope following intravascular administration, calculated using AUCTAU, divided by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0112032
+name: Amt Rec Infinity Obs
+def: "The cumulative amount recovered from the specimen type specified in PPSPEC extrapolated to infinity, calculated using the observed value of the last non-zero concentration."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0112033
+name: Amt Rec Infinity Pred
+def: "The cumulative amount recovered from the specimen type specified in PPSPEC extrapolated to infinity, calculated using the predicted value of the last non-zero concentration."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0112034
+name: Pct Rec Infinity Obs
+def: "The percentage of the administered dose that is recovered from the specimen type specified in PPSPEC extrapolated to infinity, calculated using the observed value of the last non-zero concentration."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0112035
+name: Pct Rec Infinity Pred
+def: "The percentage of the administered dose that is recovered from the specimen type specified in PPSPEC extrapolated to infinity, calculated using the predicted value of the last non-zero concentration."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0112223
+name: Amt Rec Infinity Obs Norm by BMI
+def: "The cumulative amount recovered from the specimen type specified in PPSPEC extrapolated to infinity, calculated using the observed value of the last non-zero concentration, divided by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0112224
+name: Amt Rec Infinity Obs Norm by SA
+def: "The cumulative amount recovered from the specimen type specified in PPSPEC extrapolated to infinity, calculated using the observed value of the last non-zero concentration, divided by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0112225
+name: Amt Rec Infinity Obs Norm by WT
+def: "The cumulative amount recovered from the specimen type specified in PPSPEC extrapolated to infinity, calculated using the observed value of the last non-zero concentration, divided by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0112226
+name: Amt Rec Infinity Pred Norm by BMI
+def: "The cumulative amount recovered from the specimen type specified in PPSPEC extrapolated to infinity, calculated using the predicted value of the last non-zero concentration, divided by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0112227
+name: Amt Rec Infinity Pred Norm by SA
+def: "The cumulative amount recovered from the specimen type specified in PPSPEC extrapolated to infinity, calculated using the predicted value of the last non-zero concentration, divided by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0112228
+name: Amt Rec Infinity Pred Norm by WT
+def: "The cumulative amount recovered from the specimen type specified in PPSPEC extrapolated to infinity, calculated using the predicted value of the last non-zero concentration, divided by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0112287
+name: Hemodialysis Clearance
+def: "The clearance of a substance from the blood during a hemodialysis session."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0112389
+name: Pct Rec Infinity Obs Norm by BMI
+def: "The percentage of the administered dose that is recovered from the specimen type specified in PPSPEC extrapolated to infinity, calculated using the observed value of the last non-zero concentration, divided by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0112390
+name: Pct Rec Infinity Obs Norm by SA
+def: "The percentage of the administered dose that is recovered from the specimen type specified in PPSPEC extrapolated to infinity, calculated using the observed value of the last non-zero concentration, divided by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0112391
+name: Pct Rec Infinity Obs Norm by WT
+def: "The percentage of the administered dose that is recovered from the specimen type specified in PPSPEC extrapolated to infinity, calculated using the observed value of the last non-zero concentration, divided by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0112392
+name: Pct Rec Infinity Pred Norm by BMI
+def: "The percentage of the administered dose that is recovered from the specimen type specified in PPSPEC extrapolated to infinity, calculated using the predicted value of the last non-zero concentration, divided by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0112393
+name: Pct Rec Infinity Pred Norm by SA
+def: "The percentage of the administered dose that is recovered from the specimen type specified in PPSPEC extrapolated to infinity, calculated using the predicted value of the last non-zero concentration, divided by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0112394
+name: Pct Rec Infinity Pred Norm by WT
+def: "The percentage of the administered dose that is recovered from the specimen type specified in PPSPEC extrapolated to infinity, calculated using the predicted value of the last non-zero concentration, divided by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0114121
+name: Total CL by F for Dose Int
+def: "The total body clearance for extravascular administration divided by the fraction of dose absorbed, calculated using AUCTAU."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0114122
+name: Total CL for Dose Int
+def: "The total body clearance for intravascular administration, calculated using AUCTAU."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0114226
+name: Total CL by F for Dose Int Norm by Dose
+def: "The total body clearance for extravascular administration divided by the fraction of dose absorbed, calculated using AUCTAU, divided by the dose."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0114227
+name: Total CL by F for Dose Int Norm by BMI
+def: "The total body clearance for extravascular administration divided by the fraction of dose absorbed, calculated using AUCTAU, divided by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0114228
+name: Total CL by F for Dose Int Norm by SA
+def: "The total body clearance for extravascular administration divided by the fraction of dose absorbed, calculated using AUCTAU, divided by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0114229
+name: Total CL by F for Dose Int Norm by WT
+def: "The total body clearance for extravascular administration divided by the fraction of dose absorbed, calculated using AUCTAU, divided by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0114230
+name: Total CL for Dose Int Norm by Dose
+def: "The total body clearance for intravascular administration, calculated using AUCTAU, divided by the dose."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0114231
+name: Total CL for Dose Int Norm by BMI
+def: "The total body clearance for intravascular administration, calculated using AUCTAU, divided by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0114232
+name: Total CL for Dose Int Norm by SA
+def: "The total body clearance for intravascular administration, calculated using AUCTAU, divided by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0114233
+name: Total CL for Dose Int Norm by WT
+def: "The total body clearance for intravascular administration, calculated using AUCTAU, divided by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0114234
+name: Accumulation Index using Lambda z
+def: "Predicted accumulation ratio for area under the curve (AUC) calculated using the Lambda z estimated from single dose data."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0116213
+name: Hemodialysis Extraction Ratio
+def: "The fractional content of a substance removed from the blood during a hemodialysis session."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0120723
+name: Mean Absorption Time
+def: "Mean absorption time of a substance administered by extravascular dosing."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0120724
+name: MRT Extravasc Infinity Obs
+def: "The mean residence time (MRT) extrapolated to infinity for a substance administered by extravascular dosing, calculated using the observed value of the last non-zero concentration. Extravascular MRT includes Mean Absorption Time (MAT)."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0120725
+name: MRT Extravasc Infinity Pred
+def: "The mean residence time (MRT) extrapolated to infinity for a substance administered by extravascular dosing, calculated using the predicted value of the last non-zero concentration. Extravascular MRT includes Mean Absorption Time (MAT)."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0120726
+name: MRT Extravasc to Last Nonzero Conc
+def: "Mean residence time (MRT) from the time of dosing to the time of the last measurable concentration for a substance administered by extravascular dosing. Extravascular MRT includes Mean Absorption Time (MAT)."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0121134
+name: MRT Intravasc Infinity Obs
+def: "The mean residence time (MRT) extrapolated to infinity for a substance administered by intravascular dosing, calculated using the observed value of the last non-zero concentration."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0121136
+name: MRT Intravasc Infinity Pred
+def: "The mean residence time (MRT) extrapolated to infinity for a substance administered by intravascular dosing, calculated using the predicted value of the last non-zero concentration."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0121137
+name: MRT Intravasc to Last Nonzero Conc
+def: "Mean residence time (MRT) from the time of dosing to the time of the last measurable concentration, for a substance administered by intravascular dosing."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0122049
+name: Renal CL from T1 to T2
+def: "The clearance of a substance from the blood by the kidneys over the interval from T1 to T2."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0122050
+name: Renal CL for Dose Int
+def: "The clearance of a substance from the blood by the kidneys, calculated using AUCTAU."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0122329
+name: Accumulation Ratio AUC from T1 to T2
+def: "The area under the curve from T1 to T2 at steady state divided by the area under the curve from T1 to T2 during the initial dosing interval."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0122330
+name: Renal CL from T1 to T2 Norm by BMI
+def: "The clearance of a substance from the blood by the kidneys over the interval from T1 to T2 divided by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0122331
+name: Renal CL from T1 to T2 Norm by Dose
+def: "The clearance of a substance from the blood by the kidneys over the interval from T1 to T2 divided by the dose."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0122332
+name: Renal CL from T1 to T2 Norm by SA
+def: "The clearance of a substance from the blood by the kidneys over the interval from T1 to T2 divided by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0122333
+name: Renal CL from T1 to T2 Norm by WT
+def: "The clearance of a substance from the blood by the kidneys over the interval from T1 to T2 divided by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0122334
+name: Renal CL for Dose Int Norm by BMI
+def: "The clearance of a substance from the blood by the kidneys, calculated using AUCTAU, divided by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0122335
+name: Renal CL for Dose Int Norm by Dose
+def: "The clearance of a substance from the blood by the kidneys, calculated using AUCTAU, divided by the dose."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0122336
+name: Renal CL for Dose Int Norm by SA
+def: "The clearance of a substance from the blood by the kidneys, calculated using AUCTAU, divided by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0122337
+name: Renal CL for Dose Int Norm by WT
+def: "The clearance of a substance from the blood by the kidneys, calculated using AUCTAU, divided by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0122338
+name: Stationarity Ratio AUC
+def: "The area under the curve (AUCTAU) at steady state divided by the area under the curve extrapolated to infinity for the initial dosing interval."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0122339
+name: Trough Peak Ratio
+def: "The concentration at the start of a dosing interval divided by the maximum concentration during the dosing interval."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0200002
+name: Unassigned
+def: "PK parameter has not yet been assigned."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0200003
+name: Unknown
+def: "PK parameter is unknown."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:041185
+name: Concentration
+def: "The quantity of a specified substance in a unit volume or weight of another substance."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:070918
+name: Max Conc
+def: "The maximum concentration occurring at Tmax."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:070919
+name: Time of CMAX
+def: "The time of maximum observed concentration sampled during a dosing interval."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:075913
+name: Renal CL
+def: "The clearance of a substance from the blood by the kidneys."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085542
+name: R Squared
+def: "The goodness of fit statistic for the terminal elimination phase."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085553
+name: R Squared Adjusted
+def: "The goodness of fit statistic for the terminal elimination phase, adjusted for the number of time points used in the estimation of Lambda z."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085564
+name: AUC All
+def: "The area under the curve (AUC) from the time of dosing to the time of the last observation, regardless of whether the last concentration is measurable or not."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085565
+name: AUC to Last Nonzero Conc
+def: "The area under the curve (AUC) from the time of dosing to the last measurable concentration."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085566
+name: AUC from T1 to T2
+def: "The area under the curve (AUC) over the interval from T1 to T2."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085567
+name: AUC Over Dosing Interval
+def: "The area under the curve (AUC) for the defined interval between doses (TAU)."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085569
+name: AUMC to Last Nonzero Conc
+def: "The area under the moment curve (AUMC) from the time of dosing to the last measurable concentration."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085570
+name: AUMC Over Dosing Interval
+def: "The area under the first moment curve (AUMC) for the defined interval between doses (TAU)."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085571
+name: AURC to Last Nonzero Rate
+def: "The area under the urinary excretion rate curve (AURC) from time zero to the time of the last measurable concentration."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085572
+name: AURC from T1 to T2
+def: "The area under the urinary excretion rate curve (AURC) over the interval from T1 to T2."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085575
+name: Average Concentration
+def: "AUCTAU divided by TAU."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085579
+name: Min Conc
+def: "The minimum concentration between dose time and dose time plus Tau (at Tmin)."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085580
+name: Midpoint of Interval of Last Nonzero ER
+def: "The midpoint of collection interval associated with last measurable excretion rate."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085581
+name: Fluctuation%
+def: "The difference between Cmin and Cmax standardized to Cavg, between dose time and Tau."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085644
+name: Initial Conc
+def: "Initial concentration. Given only for bolus IV models."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085652
+name: Lambda z
+def: "The first order rate constant associated with the terminal (log-linear) portion of the curve."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085653
+name: Lambda z Lower Limit
+def: "The lower limit on time for values to be included in the calculation of Lambda z."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085654
+name: Lambda z Upper Limit
+def: "The upper limit on time for values to be included in the calculation of Lambda z."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085655
+name: Last Nonzero Conc
+def: "The concentration corresponding to Tlast."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085656
+name: Last Meas Excretion Rate
+def: "The last measurable (positive) excretion rate determined for the specimen type specified in PPSPEC."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085698
+name: Max Conc Norm by Dose
+def: "The maximum concentration occurring at Tmax, divided by the dose."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085699
+name: Max Excretion Rate
+def: "The maximum excretion rate determined for the specimen type specified in PPSPEC."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085761
+name: AUC Infinity Obs
+def: "The area under the curve (AUC) extrapolated to infinity, calculated using the observed value of the last non-zero concentration."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085763
+name: AUC %Back Extrapolation Obs
+def: "Applies only for intravascular bolus dosing. The area under the curve (AUC) from the first measured concentration value back extrapolated to the concentration value at time zero as a percentage of the area under the curve extrapolated to infinity using the observed value of the last non-zero concentration."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085764
+name: AUC %Extrapolation Obs
+def: "The area under the curve (AUC) from the last observed non-zero concentration value to infinity as a percentage of the area under the curve extrapolated to infinity."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085765
+name: AUMC Infinity Obs
+def: "The area under the moment curve (AUMC) extrapolated to infinity, calculated using the observed value of the last non-zero concentration."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085766
+name: AUMC % Extrapolation Obs
+def: "The area under the moment curve (AUMC) from the last observed non-zero concentration value to infinity as a percentage of the area under the moment curve extrapolated to infinity."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085767
+name: AURC Infinity Obs
+def: "The area under the urinary excretion rate curve (AURC) extrapolated to infinity, calculated using the observed value of the last excretion rate."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085768
+name: AURC % Extrapolation Obs
+def: "The area under the urinary excretion rate curve (AURC) from the last observed non-zero rate value to infinity as a percentage of the area under the urinary excretion rate curve extrapolated to infinity."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085770
+name: Vol Dist Steady State Obs
+def: "The volume of distribution at steady state based on the observed CLST for a substance administered by intravascular dosing."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085772
+name: Total CL Obs by F
+def: "The total body clearance for extravascular administration divided by the fraction of dose absorbed, calculated using the observed value of the last non-zero concentration."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085773
+name: Total CL Obs
+def: "The total body clearance for intravascular administration, calculated using the observed value of the last non-zero concentration."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085774
+name: Vz Obs
+def: "The volume of distribution associated with the terminal slope following intravascular administration, calculated using the observed value of the last non-zero concentration."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085775
+name: Vz Obs by F
+def: "The volume of distribution associated with the terminal slope following extravascular administration divided by the fraction of dose absorbed, calculated using the observed value of the last non-zero concentration."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085785
+name: AUC Infinity Pred
+def: "The area under the curve (AUC) extrapolated to infinity, calculated using the predicted value of the last non-zero concentration."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085786
+name: AUC Infinity Pred Norm by Dose
+def: "The area under the curve (AUC) extrapolated to infinity, calculated using the predicted value of the last non-zero concentration, divided by the dose."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085787
+name: AUC %Back Extrapolation Pred
+def: "Applies only for intravascular bolus dosing. The area under the curve (AUC) from the first measured concentration value back extrapolated to the concentration value at time zero as a percentage of the area under the curve extrapolated to infinity using the predicted value of the last non-zero concentration."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085788
+name: AUC %Extrapolation Pred
+def: "The area under the curve (AUC) from the last predicted non-zero concentration value to infinity as a percentage of the area under the curve extrapolated to infinity."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085789
+name: AUMC Infinity Pred
+def: "The area under the moment curve (AUMC) extrapolated to infinity, calculated using the predicted value of the last non-zero concentration."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085790
+name: AUMC % Extrapolation Pred
+def: "The area under the moment curve (AUMC) from the last predicted non-zero concentration value to infinity as a percentage of the area under the moment curve extrapolated to infinity."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085791
+name: AURC Infinity Pred
+def: "The area under the urinary excretion rate curve (AURC) extrapolated to infinity, calculated using the predicted value of the last non-zero excretion rate."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085792
+name: AURC % Extrapolation Pred
+def: "The area under the urinary excretion rate curve (AURC) from the last predicted non-zero rate value to infinity as a percentage of the area under the urinary excretion rate curve extrapolated to infinity."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085794
+name: Vol Dist Steady State Pred
+def: "The volume of distribution at steady state based on the predicted CLST for a substance administered by intravascular dosing."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085796
+name: Total CL Pred by F
+def: "The total body clearance for extravascular administration divided by the fraction of dose absorbed, calculated using the predicted value of the last non-zero concentration."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085797
+name: Total CL Pred
+def: "The total body clearance for intravascular administration, calculated using the predicted value of the last non-zero concentration."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085798
+name: Vz Pred
+def: "The volume of distribution associated with the terminal slope following intravascular administration, calculated using the predicted value of the last non-zero concentration."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085799
+name: Vz Pred by F
+def: "The volume of distribution associated with the terminal slope following extravascular administration divided by the fraction of dose absorbed, calculated using the predicted value of the last non-zero concentration."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085816
+name: Number of Points for Lambda z
+def: "The number of time points used in computing Lambda z."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085817
+name: Sum of Urine Vol
+def: "The sum of urine volumes that are used for PK parameters."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085818
+name: Half-Life Lambda z
+def: "Terminal half-life."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085821
+name: Correlation Between TimeX and Log ConcY
+def: "The correlation between time (X) and log concentration (Y) for the points used in the estimation of lambda z."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085822
+name: Time of Last Nonzero Conc
+def: "The time of the last measurable (positive) concentration."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085823
+name: Midpoint of Interval of Maximum ER
+def: "The midpoint of collection interval associated with the maximum excretion rate."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085824
+name: Time Until First Nonzero Conc
+def: "The time prior to the first measurable (non-zero) concentration."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085825
+name: Time of CMIN Observation
+def: "The time of minimum concentration sampled during a dosing interval."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:085841
+name: AURC All
+def: "The area under the urinary excretion rate curve (AURC) from time zero to the time of the last observation, regardless of whether the last observation is a measurable concentration or not."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092305
+name: AUC to Last Nonzero Conc Norm by WT
+def: "The area under the curve (AUC) from the time of dosing to the last measurable concentration divided by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092306
+name: AUC All Norm by Dose
+def: "The area under the curve (AUC) from the time of dosing to the time of the last observation divided by the dose, regardless of whether the last concentration is measurable or not."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092307
+name: AUC All Norm by SA
+def: "The area under the curve (AUC) from the time of dosing to the time of the last observation divided by the surface area, regardless of whether the last concentration is measurable or not."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092308
+name: AUC All Norm by WT
+def: "The area under the curve (AUC) from the time of dosing to the time of the last observation divided by the weight, regardless of whether the last concentration is measurable or not."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092309
+name: AUC to Last Nonzero Conc Norm by BMI
+def: "The area under the curve (AUC) from the time of dosing to the last measurable concentration divided by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092310
+name: AUC to Last Nonzero Conc Norm by Dose
+def: "The area under the curve (AUC) from the time of dosing to the last measurable concentration divided by the dose."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092311
+name: AUC to Last Nonzero Conc Norm by SA
+def: "The area under the curve (AUC) from the time of dosing to the last measurable concentration divided by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092312
+name: AUC from T1 to T2 Norm by BMI
+def: "The area under the curve (AUC) over the interval from T1 to T2 divided by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092313
+name: AUC from T1 to T2 Norm by Dose
+def: "The area under the curve (AUC) over the interval from T1 to T2 divided by the dose."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092314
+name: AUC from T1 to T2 Norm by SA
+def: "The area under the curve (AUC) over the interval from T1 to T2 divided by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092315
+name: AUC from T1 to T2 Norm by WT
+def: "The area under the curve (AUC) over the interval from T1 to T2 divided by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092316
+name: AUC Infinity Obs Norm by BMI
+def: "The area under the curve (AUC) extrapolated to infinity, calculated using the observed value of the last non-zero concentration, divided by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092317
+name: AUC Infinity Obs Norm by SA
+def: "The area under the curve (AUC) extrapolated to infinity, calculated using the observed value of the last non-zero concentration, divided by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092318
+name: AUC Infinity Obs Norm by WT
+def: "The area under the curve (AUC) extrapolated to infinity, calculated using the observed value of the last non-zero concentration, divided by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092319
+name: AUC Infinity Pred Norm by BMI
+def: "The area under the curve (AUC) extrapolated to infinity, calculated using the predicted value of the last non-zero concentration, divided by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092320
+name: AUC Infinity Pred Norm by SA
+def: "The area under the curve (AUC) extrapolated to infinity, calculated using the predicted value of the last non-zero concentration, divided by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092321
+name: AUC Infinity Pred Norm by WT
+def: "The area under the curve (AUC) extrapolated to infinity, calculated using the predicted value of the last non-zero concentration, divided by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092322
+name: AUC Over Dosing Interval Norm by BMI
+def: "The area under the curve (AUC) for the defined interval between doses (TAU) divided by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092323
+name: AUC Over Dosing Interval Norm by Dose
+def: "The area under the curve (AUC) for the defined interval between doses (TAU) divided by the dose."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092324
+name: AUC Over Dosing Interval Norm by SA
+def: "The area under the curve (AUC) for the defined interval between doses (TAU) divided by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092325
+name: AUC Over Dosing Interval Norm by WT
+def: "The area under the curve (AUC) for the defined interval between doses (TAU) divided by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092326
+name: AUMC to Last Nonzero Conc Norm by BMI
+def: "The area under the moment curve (AUMC) from the time of dosing to the last measurable concentration divided by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092327
+name: AUMC to Last Nonzero Conc Norm by Dose
+def: "The area under the moment curve (AUMC) from the time of dosing to the last measurable concentration divided by the dose."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092328
+name: AUMC to Last Nonzero Conc Norm by SA
+def: "The area under the moment curve (AUMC) from the time of dosing to the last measurable concentration divided by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092329
+name: AUMC to Last Nonzero Conc Norm by WT
+def: "The area under the moment curve (AUMC) from the time of dosing to the last measurable concentration divided by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092330
+name: AUMC Infinity Obs Norm by BMI
+def: "The area under the moment curve (AUMC) extrapolated to infinity, calculated using the observed value of the last non-zero concentration, divided by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092331
+name: AUMC Infinity Obs Norm by Dose
+def: "The area under the moment curve (AUMC) extrapolated to infinity, calculated using the observed value of the last non-zero concentration, divided by the dose."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092332
+name: AUMC Infinity Obs Norm by SA
+def: "The area under the moment curve (AUMC) extrapolated to infinity, calculated using the observed value of the last non-zero concentration, divided by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092333
+name: AUMC Infinity Obs Norm by WT
+def: "The area under the moment curve (AUMC) extrapolated to infinity, calculated using the observed value of the last non-zero concentration, divided by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092334
+name: AUMC Infinity Pred Norm by BMI
+def: "The area under the moment curve (AUMC) extrapolated to infinity, calculated using the predicted value of the last non-zero concentration, divided by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092335
+name: AUMC Infinity Pred Norm by Dose
+def: "The area under the moment curve (AUMC) extrapolated to infinity, calculated using the predicted value of the last non-zero concentration, divided by the dose."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092336
+name: AUMC Infinity Pred Norm by SA
+def: "The area under the moment curve (AUMC) extrapolated to infinity, calculated using the predicted value of the last non-zero concentration, divided by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092337
+name: AUMC Infinity Pred Norm by WT
+def: "The area under the moment curve (AUMC) extrapolated to infinity, calculated using the predicted value of the last non-zero concentration, divided by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092338
+name: AUMC Over Dosing Interval Norm by BMI
+def: "The area under the first moment curve (AUMC) for the defined interval between doses (TAU) divided by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092339
+name: AUMC Over Dosing Interval Norm by Dose
+def: "The area under the first moment curve (AUMC) for the defined interval between doses (TAU) divided by the dose."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092340
+name: AUMC Over Dosing Interval Norm by SA
+def: "The area under the first moment curve (AUMC) for the defined interval between doses (TAU) divided by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092341
+name: AUMC Over Dosing Interval Norm by WT
+def: "The area under the first moment curve (AUMC) for the defined interval between doses (TAU) divided by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092342
+name: AURC All Norm by BMI
+def: "The area under the urinary excretion rate curve (AURC) from time zero to the last measurable rate divided by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092343
+name: AURC All Norm by Dose
+def: "The area under the urinary excretion rate curve (AURC) from time zero to the last measurable rate divided by the dose."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092344
+name: AURC All Norm by SA
+def: "The area under the urinary excretion rate curve (AURC) from time zero to the last measurable rate divided by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092345
+name: AURC All Norm by WT
+def: "The area under the urinary excretion rate curve (AURC) from time zero to the last measurable rate divided by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092346
+name: AURC Dosing to Last Conc Norm by BMI
+def: "The area under the urinary excretion rate curve (AURC) from time zero to the last measurable rate, divided by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092347
+name: AURC Dosing to Last Conc Norm by Dose
+def: "The area under the urinary excretion rate curve (AURC) from time zero to the last measurable rate, divided by the dose."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092348
+name: AURC Dosing to Last Conc Norm by SA
+def: "The area under the urinary excretion rate curve (AURC) from time zero to the last measurable rate, divided by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092349
+name: AURC Dosing to Last Conc Norm by WT
+def: "The area under the urinary excretion rate curve (AURC) from time zero to the last measurable rate, divided by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092350
+name: AURC from T1 to T2 Norm by BMI
+def: "The area under the urinary excretion rate curve (AURC) over the interval from T1 to T2 divided by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092351
+name: AURC from T1 to T2 Norm by Dose
+def: "The area under the urinary excretion rate curve (AURC) over the interval from T1 to T2 divided by the dose."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092352
+name: AURC from T1 to T2 Norm by SA
+def: "The area under the urinary excretion rate curve (AURC) over the interval from T1 to T2 divided by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092353
+name: AURC from T1 to T2 Norm by WT
+def: "The area under the urinary excretion rate curve (AURC) over the interval from T1 to T2 divided by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092354
+name: AURC Infinity Obs Norm by BMI
+def: "The area under the urinary excretion rate curve (AURC) extrapolated to infinity, calculated using the observed value of the last excretion rate, divided by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092355
+name: AURC Infinity Obs Norm by Dose
+def: "The area under the urinary excretion rate curve (AURC) extrapolated to infinity, calculated using the observed value of the last excretion rate, divided by the dose."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092356
+name: AURC Infinity Obs Norm by SA
+def: "The area under the urinary excretion rate curve (AURC) extrapolated to infinity, calculated using the observed value of the last excretion rate, divided by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092357
+name: AURC Infinity Obs Norm by WT
+def: "The area under the urinary excretion rate curve (AURC) extrapolated to infinity, calculated using the observed value of the last excretion rate, divided by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092358
+name: AURC Infinity Pred Norm by BMI
+def: "The area under the urinary excretion rate curve (AURC) extrapolated to infinity, calculated using the predicted value of the last non-zero excretion rate, divded by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092359
+name: AURC Infinity Pred Norm by Dose
+def: "The area under the urinary excretion rate curve (AURC) extrapolated to infinity, calculated using the predicted value of the last non-zero excretion rate, divded by the dose."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092360
+name: AURC Infinity Pred Norm by SA
+def: "The area under the urinary excretion rate curve (AURC) extrapolated to infinity, calculated using the predicted value of the last non-zero excretion rate, divded by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092361
+name: AURC Infinity Pred Norm by WT
+def: "The area under the urinary excretion rate curve (AURC) extrapolated to infinity, calculated using the predicted value of the last non-zero excretion rate, divded by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092362
+name: AUC All Norm by BMI
+def: "The area under the curve (AUC) from the time of dosing to the time of the last observation divided by the body mass index, regardless of whether the last concentration is measurable or not."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092367
+name: Average Conc Norm by BMI
+def: "AUCTAU divided by TAU and then divided by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092368
+name: Average Conc Norm by Dose
+def: "AUCTAU divided by TAU and then divided by the dose."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092369
+name: Average Conc Norm by SA
+def: "AUCTAU divided by TAU and then divided by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092370
+name: Average Conc Norm by WT
+def: "AUCTAU divided by TAU and then divided by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092371
+name: Max Conc Norm by BMI
+def: "The maximum concentration occurring at Tmax, divided by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092372
+name: Max Conc Norm by SA
+def: "The maximum concentration occurring at Tmax, divided by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092373
+name: Max Conc Norm by WT
+def: "The maximum concentration occurring at Tmax, divided by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092374
+name: Min Conc Norm by BMI
+def: "The minimum concentration between dose time and dose time plus Tau (at Tmin) divided by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092375
+name: Min Conc Norm by Dose
+def: "The minimum concentration between dose time and dose time plus Tau (at Tmin) divided by the dose."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092376
+name: Min Conc Norm by SA
+def: "The minimum concentration between dose time and dose time plus Tau (at Tmin) divided by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092377
+name: Min Conc Norm by WT
+def: "The minimum concentration between dose time and dose time plus Tau (at Tmin) divided by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092383
+name: Initial Conc Norm by BMI
+def: "Initial concentration divided by the body mass index. Given only for bolus IV models."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092384
+name: Initial Conc Norm by Dose
+def: "Initial concentration divided by the dose. Given only for bolus IV models."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092385
+name: Initial Conc Norm by SA
+def: "Initial concentration divided by the surface area. Given only for bolus IV models."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092386
+name: Initial Conc Norm by WT
+def: "Initial concentration divided by the weight. Given only for bolus IV models."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092387
+name: Last Nonzero Conc Norm by BMI
+def: "The concentration corresponding to Tlast divided by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092388
+name: Last Nonzero Conc Norm by Dose
+def: "The concentration corresponding to Tlast divided by the dose."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092389
+name: Last Nonzero Conc Norm by SA
+def: "The concentration corresponding to Tlast divided by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092390
+name: Last Nonzero Conc Norm by WT
+def: "The concentration corresponding to Tlast divided by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092391
+name: Last Meas Excretion Rate Norm by BMI
+def: "The last measurable (positive) excretion rate divided by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092392
+name: Last Meas Excretion Rate Norm by Dose
+def: "The last measurable (positive) excretion rate divided by the dose."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092393
+name: Last Meas Excretion Rate Norm by SA
+def: "The last measurable (positive) excretion rate divided by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092394
+name: Last Meas Excretion Rate Norm by WT
+def: "The last measurable (positive) excretion rate divided by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092395
+name: Max Excretion Rate Norm by BMI
+def: "The maximum excretion rate divided by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092396
+name: Max Excretion Rate Norm by Dose
+def: "The maximum excretion rate divided by the dose."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092397
+name: Max Excretion Rate Norm by SA
+def: "The maximum excretion rate divided by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092398
+name: Max Excretion Rate Norm by WT
+def: "The maximum excretion rate divided by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092399
+name: Total CL Obs by F Norm by BMI
+def: "The total body clearance for extravascular administration divided by the fraction of dose absorbed, calculated using the observed value of the last non-zero concentration, divided by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092400
+name: Total CL Obs by F Norm by Dose
+def: "The total body clearance for extravascular administration divided by the fraction of dose absorbed, calculated using the observed value of the last non-zero concentration, divided by the dose."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092401
+name: Total CL Obs by F Norm by SA
+def: "The total body clearance for extravascular administration divided by the fraction of dose absorbed, calculated using the observed value of the last non-zero concentration, divided by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092402
+name: Total CL Obs by F Norm by WT
+def: "The total body clearance for extravascular administration divided by the fraction of dose absorbed, calculated using the observed value of the last non-zero concentration, divided by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092403
+name: Total CL Obs Norm by BMI
+def: "The total body clearance for intravascular administration, calculated using the observed value of the last non-zero concentration, divided by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092404
+name: Total CL Obs Norm by Dose
+def: "The total body clearance for intravascular administration, calculated using the observed value of the last non-zero concentration, divided by the dose."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092405
+name: Total CL Obs Norm by SA
+def: "The total body clearance for intravascular administration, calculated using the observed value of the last non-zero concentration, divided by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092406
+name: Total CL Obs Norm by WT
+def: "The total body clearance for intravascular administration, calculated using the observed value of the last non-zero concentration, divided by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092407
+name: Vz Obs Norm by BMI
+def: "The volume of distribution associated with the terminal slope following intravascular administration, calculated using the observed value of the last non-zero concentration, divided by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092408
+name: Vz Obs Norm by SA
+def: "The volume of distribution associated with the terminal slope following intravascular administration, calculated using the observed value of the last non-zero concentration, divided by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092409
+name: Vz Obs Norm by WT
+def: "The volume of distribution associated with the terminal slope following intravascular administration, calculated using the observed value of the last non-zero concentration, divided by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092410
+name: Vz Obs by F Norm by BMI
+def: "The volume of distribution associated with the terminal slope following extravascular administration divided by the fraction of dose absorbed, calculated using the observed value of the last non-zero concentration, divided by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092411
+name: Vz Obs by F Norm by SA
+def: "The volume of distribution associated with the terminal slope following extravascular administration divided by the fraction of dose absorbed, calculated using the observed value of the last non-zero concentration, divided by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092412
+name: Vz Obs by F Norm by WT
+def: "The volume of distribution associated with the terminal slope following extravascular administration divided by the fraction of dose absorbed, calculated using the observed value of the last non-zero concentration, divided by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092417
+name: Total CL Pred by F Norm by BMI
+def: "The total body clearance for extravascular administration divided by the fraction of dose absorbed, calculated using the predicted value of the last non-zero concentration, divided by body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092418
+name: Total CL Pred by F Norm by Dose
+def: "The total body clearance for extravascular administration divided by the fraction of dose absorbed, calculated using the predicted value of the last non-zero concentration, divided by the dose."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092419
+name: Total CL Pred by F Norm by SA
+def: "The total body clearance for extravascular administration divided by the fraction of dose absorbed, calculated using the predicted value of the last non-zero concentration, divided by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092420
+name: Total CL Pred by F Norm by WT
+def: "The total body clearance for extravascular administration divided by the fraction of dose absorbed, calculated using the predicted value of the last non-zero concentration, divided by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092421
+name: Total CL Pred Norm by BMI
+def: "The total body clearance for intravascular administration, calculated using the predicted value of the last non-zero concentration, divided by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092422
+name: Total CL Pred Norm by Dose
+def: "The total body clearance for intravascular administration, calculated using the predicted value of the last non-zero concentration, divided by the dose."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092423
+name: Total CL Pred Norm by SA
+def: "The total body clearance for intravascular administration, calculated using the predicted value of the last non-zero concentration, divided by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092424
+name: Total CL Pred Norm by WT
+def: "The total body clearance for intravascular administration, calculated using the predicted value of the last non-zero concentration, divided by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092425
+name: Vz Pred Norm by BMI
+def: "The volume of distribution associated with the terminal slope following intravascular administration, calculated using the predicted value of the last non-zero concentration, divided by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092426
+name: Vz Pred Norm by SA
+def: "The volume of distribution associated with the terminal slope following intravascular administration, calculated using the predicted value of the last non-zero concentration, divided by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092427
+name: Vz Pred Norm by WT
+def: "The volume of distribution associated with the terminal slope following intravascular administration, calculated using the predicted value of the last non-zero concentration, divided by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092428
+name: Vz Pred by F Norm by BMI
+def: "The volume of distribution associated with the terminal slope following extravascular administration divided by the fraction of dose absorbed, calculated using the predicted value of the last non-zero concentration, divided by the body mass index."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092429
+name: Vz Pred by F Norm by SA
+def: "The volume of distribution associated with the terminal slope following extravascular administration divided by the fraction of dose absorbed, calculated using the predicted value of the last non-zero concentration, divided by the surface area."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:092430
+name: Vz Pred by F Norm by WT
+def: "The volume of distribution associated with the terminal slope following extravascular administration divided by the fraction of dose absorbed, calculated using the predicted value of the last non-zero concentration, divided by the weight."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:095007
+name: Effective Half-Life
+def: "The drug half-life that quantifies the accumulation ratio of a drug following multiple dosing."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:096695
+name: AUC Infinity Obs Norm by Dose
+def: "The area under the curve (AUC) extrapolated to infinity, calculated using the observed value of the last non-zero concentration, divided by the dose."[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0KPARM:2000307
+name: Concentration at t=0
+def: "Concentration of analyte prior to dosing at T=0 (observed or extrapolated)"[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0KPARM:2000309
+name: Concentration at T=24hr
+def: "concentration of analyte at 24 hours post administration. For a qd dosing regimen this term corresponds to c trough (not at ss)"[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0KPARM:2000311
+name: AUC all, unbound
+def: "The area under the curve (AUC) from the time of dosing to the time of the last observation, regardless of whether the last concentration is measurable or not. Calculation based on free (unbound) concentrations of analyte"[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0KPARM:2000313
+name: AUC ratio male/female
+def: "The area under the curve (AUC) from the time of dosing to the time of the last observation, regardless of whether the last concentration is measurable or not. AUCs compared between males and females"[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0KPARM:2000315
+name: exposure
+def: "The ratio (male/female) of time of maximum observed concentration sampled during a dosing interval"[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0KPARM:2000317
+name: time of sampling
+def: "time of sampling from plasma or tissue after dosing"[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0KPARM:2000319
+name: Dose
+def: "administered dose (mg/kg) irrespective of route of administration"[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0KPARM:2000321
+name: renal excretion
+def: "Amount of drug related material excreted renally (urine) relative to administered dose"[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0KPARM:2000323
+name: Exposure ratio drug/ metabolite
+def: "The area under the curve (AUC) for parent drug vs a given metabolite from the time of dosing to the time of the last observation, regardless of whether the last concentration is measurable or not"[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0KPARM:2000325
+name: tissue/plasma ratio
+def: "concentration ratio for any given tissue and plasma at given time point or at tmax"[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0KPARM:2000327
+name: bioavailability
+def: "Dose normalized exposure ratio of drug as calculated by AUC obtained after dosing via a particular route (oral, inhalation, nasal, etc.) divided by observed AUC after respective iv administration"[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0KPARM:2000559
+name: Cmax ratio male/female
+def: "The ratio of the maximal concentrations as observed in the concentration-time profile for males versus females"[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0KPARM:2000729
+name: tissue concentration
+def: "Concentration of an analyte in a tissue other then blood or plsama"[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0KPARM:2000731
+name: Tissue Cmax
+def: "Maximun concentration as observed in a tiisue (not blood, plasma, serum)"[]
+is_a: terms:085493 ! terms_C85493
+
+[Term]
+id: terms:0KPARM:2000733
+name: Tissue AUC
+def: "The area below the time-concentration profile as observed in a tissue between t1 and t2"[]
+is_a: terms:085493 ! terms_C85493
+
