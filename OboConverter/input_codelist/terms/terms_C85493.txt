@@ -296,18 +296,3 @@ C85493	C92429	Vz Pred by F Norm by SA	The volume of distribution associated with
 C85493	C92430	Vz Pred by F Norm by WT	The volume of distribution associated with the terminal slope following extravascular administration divided by the fraction of dose absorbed, calculated using the predicted value of the last non-zero concentration, divided by the weight.
 C85493	C95007	Effective Half-Life	The drug half-life that quantifies the accumulation ratio of a drug following multiple dosing.
 C85493	C96695	AUC Infinity Obs Norm by Dose	The area under the curve (AUC) extrapolated to infinity, calculated using the observed value of the last non-zero concentration, divided by the dose.
-C85493	PKPARM:2000307	Concentration at t=0	Concentration of analyte prior to dosing at T=0 (observed or extrapolated)
-C85493	PKPARM:2000309	Concentration at T=24hr	concentration of analyte at 24 hours post administration. For a qd dosing regimen this term corresponds to c trough (not at ss)
-C85493	PKPARM:2000311	AUC all, unbound	The area under the curve (AUC) from the time of dosing to the time of the last observation, regardless of whether the last concentration is measurable or not. Calculation based on free (unbound) concentrations of analyte
-C85493	PKPARM:2000313	AUC ratio male/female	The area under the curve (AUC) from the time of dosing to the time of the last observation, regardless of whether the last concentration is measurable or not. AUCs compared between males and females
-C85493	PKPARM:2000315	exposure	The ratio (male/female) of time of maximum observed concentration sampled during a dosing interval
-C85493	PKPARM:2000317	time of sampling	time of sampling from plasma or tissue after dosing
-C85493	PKPARM:2000319	Dose	administered dose (mg/kg) irrespective of route of administration
-C85493	PKPARM:2000321	renal excretion	Amount of drug related material excreted renally (urine) relative to administered dose
-C85493	PKPARM:2000323	Exposure ratio drug/ metabolite	The area under the curve (AUC) for parent drug vs a given metabolite from the time of dosing to the time of the last observation, regardless of whether the last concentration is measurable or not
-C85493	PKPARM:2000325	tissue/plasma ratio	concentration ratio for any given tissue and plasma at given time point or at tmax
-C85493	PKPARM:2000327	bioavailability	Dose normalized exposure ratio of drug as calculated by AUC obtained after dosing via a particular route (oral, inhalation, nasal, etc.) divided by observed AUC after respective iv administration
-C85493	PKPARM:2000559	Cmax ratio male/female	The ratio of the maximal concentrations as observed in the concentration-time profile for males versus females
-C85493	PKPARM:2000729	tissue concentration	Concentration of an analyte in a tissue other then blood or plsama
-C85493	PKPARM:2000731	Tissue Cmax	Maximun concentration as observed in a tiisue (not blood, plasma, serum)
-C85493	PKPARM:2000733	Tissue AUC	The area below the time-concentration profile as observed in a tissue between t1 and t2

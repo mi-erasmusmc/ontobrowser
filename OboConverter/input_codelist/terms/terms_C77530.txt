@@ -83,4 +83,3 @@ C77530	C98707	B6.129-Trp53tm1Brd N5	A partial congenic mouse with background str
 C77530	C98711	CB6F1-TgN (RasH2)	A transgenic mouse at F1 generation with background strain C57BL/6 crossed with BALB/cAn, containing three copies of the human c-Ha-Ras gene introduced in tandem. (NCI)
 C77530	C98733	FVB/NTac-Tg(Hba-x-v-Ha-ras)TG.ACLed	A transgenic mouse with background strain FVB/N containing a mouse Hba-x promoter coupled to an Hras1 coding sequence with activating mutations at G12 (G12R) and A59 (A59T) followed by a SV40 polyadenylation signal. (NCI)
 C77530	C98782	SKH1-Hr hr	An uncharacterized and non-pedigreed hairless albino mouse strain that is immunocompetent and euthymic. (NCI)
-C77530	STRAIN:2000677	magf	White mouse
