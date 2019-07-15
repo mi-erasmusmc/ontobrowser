@@ -249,6 +249,23 @@ Note: This setting works with the String username = "SYSTEM" in java file.
 
 Note: Proxy parameters or environment variables maybe be require when downloading behind a corporate firewall.
 
+
+## Loading Codelist
+Codelist can be loaded into OntoBrowser using the `/ontobrowser/ontologies` [RESTful](http://en.wikipedia.org/wiki/Representational_state_transfer) web service. The web service only supports the PUT method for loading codelist and only accepts [OBO formatted](http://oboformat.googlecode.com/svn/trunk/doc/GO.format.obo-1_2.html) data.
+
+The following example downloads demo codelists, and then loads them into OntoBrowser using the web service:
+
+```bash
+
+$ curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@terms_C66729.obo" -u SYSTEM "http://localhost:8080/ontobrowser/ontologies/terms_C66729"
+$ curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@terms_C66732.obo" -u SYSTEM "http://localhost:8080/ontobrowser/ontologies/terms_C66732"
+$ curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@terms_C67154.obo" -u SYSTEM "http://localhost:8080/ontobrowser/ontologies/terms_C67154"
+$ curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@terms_C77530.obo" -u SYSTEM "http://localhost:8080/ontobrowser/ontologies/terms_C77530"
+$ curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@terms_C77808.obo" -u SYSTEM "http://localhost:8080/ontobrowser/ontologies/terms_C77808"
+$ curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@terms_C85493.obo" -u SYSTEM "http://localhost:8080/ontobrowser/ontologies/terms_C85493"
+
+After uploading the codelist one have to set the values of IS_CODELIST in mysql = 1 for the particular codelist.
+
 ## Setup a Controlled Vocabulary
 An example SQL script to setup a *controlled vocabulary* is provided in the [mysql](../mysql) directory of the project: [insert_crtld_vocab_example.sql](../mysql/insert_crtld_vocab_example.sql). The example defines the [SEND Specimen](http://evs.nci.nih.gov/ftp1/CDISC/SEND/SEND%20Terminology.html#CL.C77529.SPEC) code list in the database as a *controlled vocabulary* so the terms from the code list can be subsequently loaded (and then mapped to the *Mouse adult gross anatomy* ontology loaded previously).
 
