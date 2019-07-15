@@ -264,7 +264,7 @@ $ curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-bina
 $ curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@terms_C77808.obo" -u SYSTEM "http://localhost:8080/ontobrowser/ontologies/terms_C77808"
 $ curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@terms_C85493.obo" -u SYSTEM "http://localhost:8080/ontobrowser/ontologies/terms_C85493"
 
-After uploading the codelist one have to set the values of IS_CODELIST in mysql = 1 for the particular codelist.
+After uploading the codelist one have to set the values of IS_CODELIST in mysql ONTOLOGY table = 1 for the particular codelist.
 
 ## Setup a Controlled Vocabulary
 An example SQL script to setup a *controlled vocabulary* is provided in the [mysql](../mysql) directory of the project: [insert_crtld_vocab_example.sql](../mysql/insert_crtld_vocab_example.sql). The example defines the [SEND Specimen](http://evs.nci.nih.gov/ftp1/CDISC/SEND/SEND%20Terminology.html#CL.C77529.SPEC) code list in the database as a *controlled vocabulary* so the terms from the code list can be subsequently loaded (and then mapped to the *Mouse adult gross anatomy* ontology loaded previously).
