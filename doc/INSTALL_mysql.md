@@ -263,6 +263,7 @@ $ curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-bina
 $ curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@terms_C77530.obo" -u SYSTEM "http://localhost:8080/ontobrowser/ontologies/terms_C77530"
 $ curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@terms_C77808.obo" -u SYSTEM "http://localhost:8080/ontobrowser/ontologies/terms_C77808"
 $ curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@terms_C85493.obo" -u SYSTEM "http://localhost:8080/ontobrowser/ontologies/terms_C85493"
+```
 
 After uploading the codelist one have to set the values of IS_CODELIST in mysql ONTOLOGY table = 1 for the particular codelist.
 UPDATE [ONTOLOGY] SET [IS_CODELIST] = '[1]' WHERE [IS_CODELIST] = [0];
