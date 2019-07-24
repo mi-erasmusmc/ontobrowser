@@ -58,7 +58,7 @@ read new_user_name
 if [ "$new_user_name" != "" ]; then
 	sed -i "s@<user-name>root</user-name>@<user-name>${new_user_name}</user-name>@g" wildfly-14.0.1.Final/standalone/configuration/standalone.xml
 else
-   new_user_name="root"
+	new_user_name="root"
 fi
 
 echo "Enter MySql password (default is 'root', but if you don't want to change this then please press Enter)"
@@ -67,7 +67,7 @@ read password
 if [ "$password" != "" ]; then
 	sed -i "s@<password>root</password>@<password>${password}</password>@g" wildfly-14.0.1.Final/standalone/configuration/standalone.xml
 else
-   password="root"
+	password="root"
 fi
 
 echo "Enter the port number on which the ontobrowser web-application should run (default is '8080', but if you don't want to change this then please press Enter)"
