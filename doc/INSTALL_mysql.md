@@ -235,10 +235,10 @@ Ontologies can be loaded into OntoBrowser using the `/ontobrowser/ontologies` [R
 The following example downloads demo ontologies, and then loads them into OntoBrowser using the web service:
 
 ```bash
-$ wget https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/ontologies/hpath.obo
-$ wget https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/ontologies/in-life_observation.obo
-$ wget https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/ontologies/ma.obo
-$ wget https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/ontologies/moa.obo
+$ curl -O https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/ontologies/hpath.obo
+$ curl -O https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/ontologies/in-life_observation.obo
+$ curl -O https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/ontologies/ma.obo
+$ curl -O https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/ontologies/moa.obo
 
 $ curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@hpath.obo" -u SYSTEM "http://localhost:8080/ontobrowser/ontologies/hpath"
 $ curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@in-life_observation.obo" -u SYSTEM "http://localhost:8080/ontobrowser/ontologies/inlife_observation"
