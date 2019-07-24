@@ -100,4 +100,4 @@ cd ..
 rm -r .tmp_onto
 
 echo "Installation complete"
-echo "You can run wildfly by executing the standalone.sh file in $final_path/wildfly-14.0.1.Final/bin folder."
+echo "You can run wildfly by executing the standalone.sh file in inal_path/wildfly-14.0.1.Final/bin folder."
