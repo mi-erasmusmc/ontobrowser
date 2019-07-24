@@ -34,7 +34,7 @@ curl -Lo "wildfly-14.0.1.Final/modules/system/layers/base/com/mysql/main/module.
 curl -Lo "wildfly-14.0.1.Final/standalone/configuration/standalone.xml" https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/wildfly_mysql_config/standalone.xml
 curl -Lo "wildfly-14.0.1.Final/standalone/deployments/ontobrowser.war" https://github.com/nikhitajatain/ontobrowser/raw/master/target/ontobrowser.war
 
-echo "Enter MySql IP address (default is 'localhost', but if you don't want to change this then please press Enter) "
+echo "Enter MySql hostname/IP address (default is 'localhost', but if you don't want to change this then please press Enter) "
 read mysql_ip
 
 if [ "$mysql_ip" != "" ]; then

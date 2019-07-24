@@ -2,19 +2,13 @@
 #This is a comment!
 
 echo "This script uploads the ontologies and codelist."
-echo "Please confirm the ontobrowser is running? (y/n)"
-read yesno
-
-if [ "$yesno" != "y" ]; then 
-  exit
-fi
 
 echo "Creating temporary installation folder .tmp_onto"
 rm -rf .tmp_onto
 mkdir .tmp_onto
 cd .tmp_onto
 
-echo "Enter MySql IP address (default is 'localhost', but if you don't want to change this then please press Enter) "
+echo "Enter MySql hostname/IP address (default is 'localhost', but if you don't want to change this then please press Enter) "
 read mysql_ip
 
 if [ "$mysql_ip" == "" ]; then
@@ -42,6 +36,21 @@ if [ "$password" == "" ]; then
 	password="root"
 fi
 
+
+echo "Enter Ontobrowser hostname/IP address (default is 'localhost', but if you don't want to change this then please press Enter) "
+read ontobrowser_ip
+
+if [ "$ontobrowser_ip" == "" ]; then
+	ontobrowser_ip="localhost"
+fi
+
+echo "Enter Ontobrowser port address (default is '8080', but if you don't want to change this then please press Enter) "
+read ontobrowser_port
+
+if [ "$ontobrowser_port" == "" ]; then
+	ontobrowser_port="8080"
+fi
+
 echo "Should we remove all previous ontologies and codelists? (y/n)"
 read yesno
 
@@ -64,6 +73,16 @@ mysql -h $mysql_ip -P $mysql_port -u $new_user_name -p$password ontobrowser < in
 curl -O https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/mysql/insert_curator_mysql.sql
 mysql -h $mysql_ip -P $mysql_port -u $new_user_name -p$password ontobrowser < insert_curator_mysql.sql
 
+echo "Please restart ontobrowser and press enter"
+read temp
+
+fi
+
+echo "Please confirm the ontobrowser is running? (y/n)"
+read yesno
+
+if [ "$yesno" != "y" ]; then 
+  exit
 fi
 
 #echo "Enter the port number on which the ontobrowser web-application should run (default is '8080', but if you don't want to change this then please press Enter)"
@@ -85,17 +104,17 @@ curl -O https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/codel
 curl -O https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/codelists/code_list.obo/terms_C77808.obo
 curl -O https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/codelists/code_list.obo/terms_C85493.obo
 
-curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@hpath.obo" -u SYSTEM "http://localhost:8080/ontobrowser/ontologies/hpath"
-curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@in-life_observation.obo" -u SYSTEM "http://localhost:8080/ontobrowser/ontologies/inlife_observation"
-curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@ma.obo" -u SYSTEM "http://localhost:8080/ontobrowser/ontologies/Mouse%20adult%20gross%20anatomy"
-curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@moa.obo" -u SYSTEM "http://localhost:8080/ontobrowser/ontologies/moa"
+curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@hpath.obo" -u SYSTEM "http://${ontobrowser_ip}:${ontobrowser_port}/ontobrowser/ontologies/hpath"
+curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@in-life_observation.obo" -u SYSTEM "http://${ontobrowser_ip}:${ontobrowser_port}/ontobrowser/ontologies/inlife_observation"
+curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@ma.obo" -u SYSTEM "http://${ontobrowser_ip}:${ontobrowser_port}/ontobrowser/ontologies/Mouse%20adult%20gross%20anatomy"
+curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@moa.obo" -u SYSTEM "http://${ontobrowser_ip}:${ontobrowser_port}/ontobrowser/ontologies/moa"
 
-curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@terms_C66729.obo" -u SYSTEM "http://localhost:8080/ontobrowser/ontologies/terms_C66729"
-curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@terms_C66732.obo" -u SYSTEM "http://localhost:8080/ontobrowser/ontologies/terms_C66732"
-curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@terms_C67154.obo" -u SYSTEM "http://localhost:8080/ontobrowser/ontologies/terms_C67154"
-curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@terms_C77530.obo" -u SYSTEM "http://localhost:8080/ontobrowser/ontologies/terms_C77530"
-curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@terms_C77808.obo" -u SYSTEM "http://localhost:8080/ontobrowser/ontologies/terms_C77808"
-curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@terms_C85493.obo" -u SYSTEM "http://localhost:8080/ontobrowser/ontologies/terms_C85493"
+curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@terms_C66729.obo" -u SYSTEM "http://${ontobrowser_ip}:${ontobrowser_port}/ontobrowser/ontologies/terms_C66729"
+curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@terms_C66732.obo" -u SYSTEM "http://${ontobrowser_ip}:${ontobrowser_port}/ontobrowser/ontologies/terms_C66732"
+curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@terms_C67154.obo" -u SYSTEM "http://${ontobrowser_ip}:${ontobrowser_port}/ontobrowser/ontologies/terms_C67154"
+curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@terms_C77530.obo" -u SYSTEM "http://${ontobrowser_ip}:${ontobrowser_port}/ontobrowser/ontologies/terms_C77530"
+curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@terms_C77808.obo" -u SYSTEM "http://${ontobrowser_ip}:${ontobrowser_port}/ontobrowser/ontologies/terms_C77808"
+curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@terms_C85493.obo" -u SYSTEM "http://${ontobrowser_ip}:${ontobrowser_port}/ontobrowser/ontologies/terms_C85493"
 
 mysql -h $mysql_ip -P $mysql_port -u $new_user_name -p$password -e "UPDATE ontobrowser.ONTOLOGY SET IS_CODELIST = 1 WHERE (ONTOLOGY_NAME = 'terms_C66729')"
 mysql -h $mysql_ip -P $mysql_port -u $new_user_name -p$password -e "UPDATE ontobrowser.ONTOLOGY SET IS_CODELIST = 1 WHERE (ONTOLOGY_NAME = 'terms_C66732')"
