@@ -37,20 +37,18 @@ curl -Lo "wildfly-14.0.1.Final/standalone/deployments/ontobrowser.war" https://g
 echo "Enter MySql hostname/IP address (default is 'localhost', but if you don't want to change this then please press Enter) "
 read mysql_ip
 
-if [ "$mysql_ip" != "" ]; then
-	sed -i "s/localhost/${mysql_ip}/g" wildfly-14.0.1.Final/standalone/configuration/standalone.xml
-else
-	mysql_ip="localhost"
-fi
-
 echo "Enter MySql port address (default is '3306', but if you don't want to change this then please press Enter) "
 read mysql_port
 
-if [ "$mysql_port" != "" ]; then
-	sed -i "s/3306/${mysql_port}/g" wildfly-14.0.1.Final/standalone/configuration/standalone.xml
-else
+if [ "$mysql_ip" == "" ]; then
+	mysql_ip="localhost"
+fi
+
+if [ "$mysql_port" == "" ]; then
 	mysql_port="3306"
 fi
+
+sed -i "s/localhost:3306/${mysql_ip}:${mysql_port}/g" wildfly-14.0.1.Final/standalone/configuration/standalone.xml
 
 echo "Enter MySql username (default is 'root', but if you don't want to change this then please press Enter)"
 read new_user_name
