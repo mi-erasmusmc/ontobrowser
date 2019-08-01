@@ -1,40 +1,86 @@
-# Use latest jboss/base-jdk:11 image as the base
-FROM jboss/base-jdk:11
+FROM debian:bullseye
 
-# Set the WILDFLY_VERSION env variable
-ENV WILDFLY_VERSION 17.0.1.Final
-ENV WILDFLY_SHA1 eaef7a87062837c215e54511c4ada8951f0bd8d5
-ENV JBOSS_HOME /opt/jboss/wildfly
+# add our user and group first to make sure their IDs get assigned consistently, regardless of whatever dependencies get added
+RUN groupadd -r mysql && useradd -r -g mysql mysql
 
-USER root
+RUN apt-get update && apt-get install -y --no-install-recommends gnupg dirmngr && rm -rf /var/lib/apt/lists/*
 
-# Add the WildFly distribution to /opt, and make wildfly the owner of the extracted tar content
-# Make sure the distribution is available from a well-known place
-RUN cd $HOME \
-    && yum -y install graphviz \
-    && curl -O https://download.jboss.org/wildfly/$WILDFLY_VERSION/wildfly-$WILDFLY_VERSION.tar.gz \
-    && sha1sum wildfly-$WILDFLY_VERSION.tar.gz | grep $WILDFLY_SHA1 \
-    && tar xf wildfly-$WILDFLY_VERSION.tar.gz \
-    && curl -Lo "mysql.tar.xz" "https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-8.0.16.zip" \
-    && unzip "mysql.tar.xz" -d "mysqlj" \
-    && mkdir -p wildfly-$WILDFLY_VERSION/modules/system/layers/base/com/mysql/main \
-    && cp "mysqlj/mysql-connector-java-8.0.16/mysql-connector-java-8.0.16.jar" wildfly-$WILDFLY_VERSION/modules/system/layers/base/com/mysql/main \
-    && curl -Lo wildfly-$WILDFLY_VERSION/modules/system/layers/base/com/mysql/main/module.xml https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/wildfly_mysql_config/module.xml \
-    && curl -Lo wildfly-$WILDFLY_VERSION/standalone/configuration/standalone.xml https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/wildfly_mysql_config/standalone.xml \
-    && curl -Lo wildfly-$WILDFLY_VERSION/standalone/deployments/ontobrowser.war https://github.com/nikhitajatain/ontobrowser/raw/master/target/ontobrowser.war \
-    && mv $HOME/wildfly-$WILDFLY_VERSION $JBOSS_HOME \
-    && rm wildfly-$WILDFLY_VERSION.tar.gz \
-    && chown -R jboss:0 ${JBOSS_HOME} \
-    && chmod -R g+rw ${JBOSS_HOME}
+RUN apt-get update && apt-get install -y software-properties-common
+RUN apt-get update && apt-get install -y graphviz
 
-# Ensure signals are forwarded to the JVM process correctly for graceful shutdown
-ENV LAUNCH_JBOSS_IN_BACKGROUND true
+# add gosu for easy step-down from root
+ENV GOSU_VERSION 1.7
+RUN set -x \
+	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* \
+	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" \
+	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" \
+	&& export GNUPGHOME="$(mktemp -d)" \
+	&& gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 \
+	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu \
+	&& gpgconf --kill all \
+	&& rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc \
+	&& chmod +x /usr/local/bin/gosu \
+	&& gosu nobody true \
+	&& apt-get purge -y --auto-remove ca-certificates wget
 
-USER jboss
+RUN mkdir /docker-entrypoint-initdb.d
 
-# Expose the ports we're interested in
-EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends \
+# for MYSQL_RANDOM_ROOT_PASSWORD
+		pwgen \
+# for mysql_ssl_rsa_setup
+		openssl \
+# FATAL ERROR: please install the following Perl modules before executing /usr/local/mysql/scripts/mysql_install_db:
+# File::Basename
+# File::Copy
+# Sys::Hostname
+# Data::Dumper
+		perl \
+	&& rm -rf /var/lib/apt/lists/*
 
-# Set the default command to run on boot
-# This will boot WildFly in the standalone mode and bind to all interface
-CMD ["/opt/jboss/wildfly/bin/standalone.sh", "-b", "0.0.0.0"]
+RUN set -ex; \
+# gpg: key 5072E1F5: public key "MySQL Release Engineering <mysql-build@oss.oracle.com>" imported
+	key='A4A9406876FCBD3C456770C88C718D3B5072E1F5'; \
+	export GNUPGHOME="$(mktemp -d)"; \
+	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; \
+	gpg --batch --export "$key" > /etc/apt/trusted.gpg.d/mysql.gpg; \
+	gpgconf --kill all; \
+	rm -rf "$GNUPGHOME"; \
+	apt-key list > /dev/null
+
+ENV MYSQL_MAJOR 8.0
+ENV MYSQL_VERSION 8.0.17-1debian9
+
+RUN echo "deb http://repo.mysql.com/apt/debian/ stretch mysql-${MYSQL_MAJOR}" > /etc/apt/sources.list.d/mysql.list
+
+# the "/var/lib/mysql" stuff here is because the mysql-server postinst doesn't have an explicit way to disable the mysql_install_db codepath besides having a database already "configured" (ie, stuff in /var/lib/mysql/mysql)
+# also, we set debconf keys to make APT a little quieter
+RUN { \
+		echo mysql-community-server mysql-community-server/data-dir select ''; \
+		echo mysql-community-server mysql-community-server/root-pass password ''; \
+		echo mysql-community-server mysql-community-server/re-root-pass password ''; \
+		echo mysql-community-server mysql-community-server/remove-test-db select false; \
+	} | debconf-set-selections \
+	&& apt-get update && apt-get install -y mysql-community-client="${MYSQL_VERSION}" mysql-community-server-core="${MYSQL_VERSION}" && rm -rf /var/lib/apt/lists/* \
+	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld \
+	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld \
+# ensure that /var/run/mysqld (used for socket and lock files) is writable regardless of the UID our mysqld instance ends up having at runtime
+	&& chmod 777 /var/run/mysqld
+
+RUN apt-get update && apt-get install -y curl
+RUN apt-get update && apt-get install -y unzip
+
+RUN curl -Lo java.tar.gz https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u222-b10/OpenJDK8U-jre_x64_linux_hotspot_8u222b10.tar.gz
+RUN tar -xvzf java.tar.gz
+ENV JAVA_HOME /jdk8u222-b10-jre
+
+VOLUME /var/lib/mysql
+# Config files
+COPY config/ /etc/mysql/
+COPY docker-entrypoint.sh /usr/local/bin/
+RUN chmod 777 /usr/local/bin/docker-entrypoint.sh
+RUN ln -s /usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
+ENTRYPOINT ["docker-entrypoint.sh"]
+
+EXPOSE 3306 33060 8080
+CMD ["mysqld"]
