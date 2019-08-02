@@ -215,4 +215,18 @@ if [ "$1" = 'mysqld' -a -z "$wantHelp" ]; then
 	fi
 fi
 
+whoami
+#This is to make sure schedule is loaded only once
+if [ ! -f /wildfly-14.0.1.Final/parchi ]
+then
+	touch /wildfly-14.0.1.Final/parchi
+	echo "Running wildfly in 10 seconds"
+	#sleep 10 && /schemaCreator.sh && /wildfly-14.0.1.Final/bin/standalone.sh &
+	sleep 10 && /schemaCreator.sh &
+else
+	echo "Running wildfly in 10 seconds"
+	#sleep 10 && /wildfly-14.0.1.Final/bin/standalone.sh &
+fi
+
 exec "$@"
+
