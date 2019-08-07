@@ -82,6 +82,7 @@ _get_config() {
 	# match "datadir      /some/path with/spaces in/it here" but not "--xyz=abc\n     datadir (xyz)"
 }
 
+
 # allow the container to be started with `--user`
 if [ "$1" = 'mysqld' -a -z "$wantHelp" -a "$(id -u)" = '0' ]; then
 	_check_config "$@"
@@ -215,17 +216,29 @@ if [ "$1" = 'mysqld' -a -z "$wantHelp" ]; then
 	fi
 fi
 
-whoami
 #This is to make sure schedule is loaded only once
-if [ ! -f /wildfly-14.0.1.Final/parchi ]
+if [ ! -f /wildfly-14.0.1.Final/first_time_run ]
 then
-	touch /wildfly-14.0.1.Final/parchi
-	echo "Running wildfly in 10 seconds"
-	#sleep 10 && /schemaCreator.sh && /wildfly-14.0.1.Final/bin/standalone.sh &
-	sleep 10 && /schemaCreator.sh &
+	touch /wildfly-14.0.1.Final/first_time_run
+	echo "**************" 
+	echo "Creating Schema in 10 seconds"
+	echo "**************" 
+	sleep 10 && /schema-creator.sh &
+
+	echo "**************" 
+	echo "** Staring wildfly in 20 seconds"
+	echo "**************"
+	sleep 20 && /wildfly-14.0.1.Final/bin/standalone.sh -b 0.0.0.0 &
+
+	echo "**************" 
+	echo "** Loading ontologies in 40 seconds"
+	echo "**************"
+	sleep 40 && /load-ontologies.sh &
 else
-	echo "Running wildfly in 10 seconds"
-	#sleep 10 && /wildfly-14.0.1.Final/bin/standalone.sh &
+	echo "**************" 
+	echo "** Staring wildfly in 20 seconds"
+	echo "**************"
+	sleep 20 && /wildfly-14.0.1.Final/bin/standalone.sh -b 0.0.0.0 &
 fi
 
 exec "$@"

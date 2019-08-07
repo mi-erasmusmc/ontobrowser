@@ -24,6 +24,7 @@ RUN mkdir .tmp_onto && cd .tmp_onto \
     && curl -Lo "wildfly-14.0.1.Final/modules/system/layers/base/com/mysql/main/module.xml" https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/wildfly_mysql_config/module.xml \
     && curl -Lo "wildfly-14.0.1.Final/standalone/configuration/standalone.xml" https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/wildfly_mysql_config/standalone.xml \
     && curl -Lo "wildfly-14.0.1.Final/standalone/deployments/ontobrowser.war" https://github.com/nikhitajatain/ontobrowser/raw/master/target/ontobrowser.war \
+    && chmod o+r wildfly-14.0.1.Final/standalone/configuration/* \
     && mv wildfly-14.0.1.Final ../ \
     && cd .. && rm -rf .tmp_onto
 
@@ -32,6 +33,21 @@ RUN curl -Ok https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/
 RUN curl -Ok https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/mysql/insert_initial_data_mysql.sql
 RUN curl -Ok https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/mysql/insert_crtld_vocab_example.sql
 RUN curl -Ok https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/mysql/insert_curator_mysql.sql
+
+#Downloading ontologies and codelists
+
+RUN curl -Ok https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/ontologies/hpath.obo
+RUN curl -Ok https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/ontologies/in-life_observation.obo
+RUN curl -Ok https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/ontologies/ma.obo
+RUN curl -Ok https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/ontologies/moa.obo
+
+RUN curl -Ok https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/codelists/code_list.obo/terms_C66729.obo
+RUN curl -Ok https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/codelists/code_list.obo/terms_C66732.obo
+RUN curl -Ok https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/codelists/code_list.obo/terms_C67154.obo
+RUN curl -Ok https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/codelists/code_list.obo/terms_C77530.obo
+RUN curl -Ok https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/codelists/code_list.obo/terms_C77808.obo
+RUN curl -Ok https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/codelists/code_list.obo/terms_C85493.obo
+
 
 # add our user and group first to make sure their IDs get assigned consistently, regardless of whatever dependencies get added
 RUN groupadd -r mysql && useradd -r -g mysql mysql
@@ -100,14 +116,18 @@ RUN { \
 VOLUME /var/lib/mysql
 # Config files
 COPY config/ /etc/mysql/
+
 COPY docker-entrypoint.sh /usr/local/bin/
 RUN chmod 777 /usr/local/bin/docker-entrypoint.sh
-COPY schemaCreator.sh /schemaCreator.sh
-RUN chmod 777 /schemaCreator.sh
+COPY schema-creator.sh /schema-creator.sh
+RUN chmod 777 /schema-creator.sh
+COPY load-ontologies.sh /load-ontologies.sh
+RUN chmod 777 /load-ontologies.sh
+
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
 ENTRYPOINT ["docker-entrypoint.sh"]
 
 RUN chmod -R a+w /wildfly-14.0.1.Final
 
-EXPOSE 3306 33060
+EXPOSE 3306 33060 8080
 CMD ["mysqld"]
