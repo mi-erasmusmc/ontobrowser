@@ -4,8 +4,11 @@ INSERT INTO index_study(study_identifier) SELECT NCT FROM clinicaltrials;
 
 faers
 
-INSERT INTO index_finding( finding_identifier) SELECT MeddraID FROM faers;
+
 ALTER TABLE faers ADD COLUMN CombinedID varchar(100)
 UPDATE fares SET CombinedID =CONCAT(RxNormID, '-', MeddraID);
 
 INSERT INTO index_study(study_identifier) SELECT CONCAT(RxNormID, '-', MeddraID) FROM faers;
+
+
+INSERT INTO clinicaltrials180619.index_compound( compound_identifier, name) SELECT RxNormID, RxNormLabel FROM clinicaltrials180619.clinicaltrials;
