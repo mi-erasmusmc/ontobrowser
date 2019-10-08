@@ -1,4 +1,4 @@
-Download the whole docker folder from https://github.com/nikhitajatain/ontobrowser/tree/master/docker
+Following commands will download the docker file for ontobrowser, buid it, and run it.
 
 
 ```bash
