@@ -1,0 +1,96 @@
+e oban;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.TreeMap;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class ApachePOIExcelRead {
+
+	private static final String FILE_NAME = "/home/nikhita/clinical_rxnorm_name2structure.xlsx";
+	private static Statement statement;
+	private static Connection connect;
+	private static ResultSet resultSet;
+		
+    public static void main(String[] args) {
+    	Map<String, String> inchiMap = new TreeMap<String, String>(String.CASE_INSENSITIVE_ORDER);
+
+        try {
+            FileInputStream excelFile = new FileInputStream(FILE_NAME);
+            Workbook workbook = new XSSFWorkbook(excelFile);
+            Sheet datatypeSheet = workbook.getSheetAt(0);
+            Iterator<Row> iterator = datatypeSheet.iterator();
+            
+            while (iterator.hasNext()) {
+
+                Row currentRow = iterator.next();
+                Cell inchiKeyCell = currentRow.getCell(3);
+                
+                if(inchiKeyCell == null) {
+                	inchiMap.put(currentRow.getCell(0).getStringCellValue(), 
+                			"");
+                } else {
+                	inchiMap.put(currentRow.getCell(0).getStringCellValue(), 
+                    		inchiKeyCell.getStringCellValue());
+				}
+            }
+            
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        
+        try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			connect = DriverManager.getConnection("jdbc:mysql://oban.erasmusmc.nl:3306/clinicaltrials180619?"
+					+ "user=biosemantics&password=bios4u" + "&serverTimezone=UTC");
+			statement = connect.createStatement();
+			// Result set get the result of the SQL query
+			resultSet = statement.executeQuery("select name from index_compound");
+			
+			String query = "update index_compound set inchikey = ? where name = ?";							
+			PreparedStatement preparedStmt = connect.prepareStatement(query);
+			
+			while (resultSet.next() == true) {
+				String name = resultSet.getString("name");
+				String inchikey = inchiMap.get(name);
+				
+				if(inchikey != null & inchikey != "") {
+					preparedStmt.setString(1, inchikey);
+					preparedStmt.setString(2, name);
+					preparedStmt.execute();
+				}
+			}
+			
+			preparedStmt.close();
+
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+    }
+
+}
+
