@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Created-By: Apache Maven 3.6.1
+Built-By: nikhita
+Build-Jdk: 11.0.1
+Implementation-Title: clinicaltrials-pa
+Implementation-Version: 1.0.0
+Implementation-Vendor-Id: org.lhasalimited.etransafe.wp6.clinical
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/clinicaltrials-pa
+

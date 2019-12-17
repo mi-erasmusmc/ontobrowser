@@ -1,0 +1,41 @@
+{
+  "type" : "object",
+  "properties" : {
+    "id" : {
+      "type" : "integer"
+    },
+    "findingIdentifier" : {
+      "type" : "string"
+    },
+    "specimenOrgan" : {
+      "type" : "string"
+    },
+    "finding" : {
+      "type" : "string"
+    },
+    "severity" : {
+      "type" : "string"
+    },
+    "observation" : {
+      "type" : "string"
+    },
+    "frequency" : {
+      "type" : "string"
+    },
+    "dose" : {
+      "type" : "string"
+    },
+    "studyDay" : {
+      "type" : "string"
+    },
+    "treatmentRelated" : {
+      "type" : "boolean"
+    },
+    "compoundId" : {
+      "type" : "integer"
+    },
+    "studyId" : {
+      "type" : "integer"
+    }
+  }
+}

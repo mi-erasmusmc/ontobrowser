@@ -1,0 +1,546 @@
+openapi: 3.0.2
+info:
+  title: eTRANSAFE Clinical database Primitive Adapter
+  termsOfService: https://www.lhasalimited.org/
+  description: >
+    Clinical Primitive Adapter component to test registration and Clinical searchable data (index) query
+  contact:
+    name: Lhasa Limited 
+    url: https://www.lhasalimited.org/
+    email: tima.camara@lhasalimited.org
+  license:
+    name: Contact Lhasa Limited
+    url: https://www.apache.org/licenses/LICENSE-2.0.html
+  version: "1.0.0"
+  x-meta:
+    serviceType: MySQL Clinical database
+    uuid: c2ccb18d-5aef-4930-a7d5-6c9dbbf133ea
+    provider: Service Provider
+    created: 2019-07-08
+    released: 2019-09-25
+    lastChanged: 2019-08-07
+    software: 
+      - name: Clinical Primitive Adapter (PA)
+        version: 1.0
+        description: Clinical Primitive Adapter to access MySQL Clinical Database
+        provider: Lhasa Limited
+        license:
+          name: Lhasa Limited License
+          url : https://www.lhasalimited.org
+
+servers:
+- description: Base URL of the API
+  url: /clinicaltrials-pa/v1/
+tags:
+  - name: Data 
+    description: Everything about the Clinical data
+  - name: KHR metadata 
+    description: Everything about the KHR metadata
+paths:
+  /api:
+    get:
+      tags:
+        - KHR metadata 
+      summary: Returns YAML specification of this Clinical Primitive Adapter API.
+      description: Returns YAML specification of this Clinical Primitive Adapter API.
+      operationId: api
+      responses:
+        200:
+          description: YAML specification of the eTOXSys PA API
+          content:
+            text/yaml:
+              schema:
+                type: object
+        404:
+          description: Resource not_found
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: Yaml file is not available
+      security:
+      - bearerAuth: [] 
+    
+  /ready:
+    get:
+      tags:
+      - KHR metadata 
+      summary: Returns the online status of the service
+      description: Reports the online status (readiness) of the service.
+      operationId: ready
+      responses:
+        200:
+          description: Service is up and operational
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: Service is ready.
+        503:
+          description: Service is not operational
+          content:
+            text/plain:
+              schema:
+                type: string
+
+  /alive:
+    get:
+      tags:
+      - KHR metadata 
+      summary: Performs a health check of the service
+      description: Reports the health status (leaviness) of the service.
+      operationId: alive
+      responses:
+        200:
+          description: Service passes the internal tests and works
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: Service is up and running
+        503:
+          description: Service is not operational
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: Service is non-operation
+        
+  /query:
+    post:
+      tags:
+        - Data 
+      
+      summary: Query endpoint to access the Clinical data. 
+      operationId: query
+      requestBody: 
+        description: Query endpoint to access the Clinical data. 
+        required: true
+        content:
+         application/json:
+          schema:
+            $ref: '#/components/schemas/Query'
+
+      responses:
+        200:
+          description: Query result.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Result'
+        401:
+          $ref: '#/components/responses/UnauthorizedError'
+      security:
+        - bearerAuth: [] 
+  /metadata:
+    get:
+      tags:
+        - Data 
+      summary: Returns the properties of the requested data class. 
+      description: Returns the properties of the requested data class. 
+      operationId: metadata
+      parameters:
+        - name: dataClassKey
+          in: query
+          description: The data class parameter
+          required: true
+          schema:
+            $ref: '#/components/schemas/DataClassKey'
+      responses:
+        200:
+          description: The properties of the requested data class.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/DataClassProperty'
+        401:
+          $ref: '#/components/responses/UnauthorizedError'
+      security:
+        - bearerAuth: [] 
+        
+  /data:
+    get:
+      tags:
+        - Data 
+      summary: Returns the records of the requested data class. 
+      description: Returns the records of the requested data class. 
+      operationId: data
+      parameters:
+        - name: dataClassKey
+          in: query
+          description: The data class parameter
+          required: true
+          schema:
+            $ref: '#/components/schemas/DataClassKey' 
+        - in: query
+          name: offset
+          schema:
+            type: integer
+          description: The number of records to skip before starting to collect the result set. Default to 0.
+        - in: query
+          name: limit
+          schema:
+            type: integer
+          description: The numbers of records to return. Default to 100.
+          
+      responses:
+        200:
+          description: Query result.
+          content:
+            application/json:
+              schema:
+                type : object
+        401:
+          $ref: '#/components/responses/UnauthorizedError'
+      security:
+        - bearerAuth: [] 
+        
+  /count:
+    get:
+      tags:
+        - Data 
+      summary: Returns the number of records corresponding to the supplied data class. 
+      description: Returns the number of records corresponding to the supplied data class. 
+      operationId: count
+      parameters:
+        - name: dataClassKey
+          in: query
+          description: The data class parameter
+          required: true
+          schema:
+            $ref: '#/components/schemas/DataClassKey'
+            
+      responses:
+        200:
+          description: Returns the count of a Data class 
+          content:
+            application/json:
+              schema:
+                type: integer
+        400:
+          description:  Data Class key is missing or invalid  
+          content:
+            text/plain:
+              schema:
+                type: string
+        401:
+          $ref: '#/components/responses/UnauthorizedError'
+      security:
+        - bearerAuth: [] 
+  
+  /unknownTerms:
+    get:
+      tags:
+      - Data 
+      summary: Returns a list of terms that have not yet been matched with a preferred term. This will be used by the WP9 Semantic service.
+      description: Returns a list of terms that have not yet been matched with a preferred term. This will be used by the WP9 Semantic service.
+      operationId: getUnknownTerms
+                  
+      responses:
+        200:
+          description: List of unknown synonyms. 
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: string
+        401:
+          $ref: '#/components/responses/UnauthorizedError'         
+      security:
+        - bearerAuth: []   
+components:
+  
+  responses:
+    UnauthorizedError:
+      description: Access token is missing or invalid
+      content:
+         text/plain:
+           schema:
+            type: string
+  
+  schemas:
+    Query:
+      type: object
+      properties:
+        searchConcept:
+          $ref: '#/components/schemas/SearchConcept'
+        searchFilter:
+          $ref: '#/components/schemas/SearchFilter'
+        searchFieldSelection:
+          $ref: '#/components/schemas/SearchFieldSelection'
+        searchSort:
+          $ref: '#/components/schemas/SearchSort'
+        searchOffset:
+          type: integer
+          default: 0
+        searchLimit:
+          type: integer
+          default: 100
+  
+    SearchConcept:
+      type: object
+      properties:
+        concepts:
+          type: array
+          items:
+            $ref: '#/components/schemas/Concept'
+        targetConceptGroups:
+          type: array
+          items:
+            $ref: '#/components/schemas/TargetConceptGroup'
+            
+    TargetConceptGroup:
+      type: object
+      properties:
+        concepts:
+          type: array
+          items:
+            $ref: '#/components/schemas/Concept'
+            
+    Concept:
+      type: object
+      properties:
+        id:
+          type: string
+        code:
+          type: string
+        preferredTerm:
+          type: string
+        vocabularyId:
+          type: string
+              
+      example:
+         id: '10019708'
+         code: '50325005'
+         name: organ:liver
+         vocabularyId: Histopath
+    
+    SearchFilter:
+      type: object
+      properties:
+      
+        criteria:
+          type: array
+          items:
+            $ref: '#/components/schemas/DataClassCriteria'
+      
+         
+    SearchFieldSelection:
+      type: object
+      properties:
+        dataClassFields:
+          type: array
+          items:
+            $ref: '#/components/schemas/DataClassField'
+            
+    SearchSort:
+      type: object
+      properties:
+        dataClassKey:
+          $ref: '#/components/schemas/DataClassKey'
+        field:
+          type: string
+        order:
+          $ref: '#/components/schemas/Order'
+          
+      example:
+        dataClassKey: FINDING
+        field: 'id'
+        order: ASC
+    
+    DataClassCriteria:
+      properties:
+        dataClassKey:
+          $ref: '#/components/schemas/DataClassKey'
+       
+        links:
+          type: array
+          items:
+            $ref: '#/components/schemas/Link'
+            
+        operator:
+          $ref: '#/components/schemas/Operator'
+          
+        fieldCriteria:    
+          type: array
+          items:
+            $ref: '#/components/schemas/DataClassFieldCriteria'
+      
+      example:
+        dataClassKey: STUDY
+        operator: AND
+        link: 
+        - field: compoundId
+          dataClassKey: COMPOUND
+          dataClassKeyField: id
+        
+        dataClassFieldCriteria: 
+        - field: species
+          comparisonOperator: EQUALS
+          primitiveType: String
+          values: 
+          - rat
+        - field: doseDuration
+          comparisonOperator: GREATER_THAN_OR_EQUAL
+          primitiveType: Integer
+          values: 
+          - 30
+        - field: doseDuration
+          comparisonOperator: LESS_THAN_OR_EQUAL
+          primitiveType: Integer
+          values: 
+          - 90
+      
+    DataClassFieldCriteria:
+      type: object
+      properties:
+        field:
+          type: string
+        comparisonOperator:
+          $ref: '#/components/schemas/ComparisonOperator'
+        primitiveType:
+          $ref: '#/components/schemas/PrimitiveType'
+        values:
+          type: array
+          items:
+            type: string
+      
+      example:
+        field: species
+        comparisonOperator: EQUAL
+        primitiveType: String
+        values:
+        - rat
+        - mouse
+    
+    DataClassField:
+      type: object
+      properties:
+        dataClassKey:
+          $ref: '#/components/schemas/DataClassKey'
+        fields:
+          type: array
+          items:
+            type: string
+      
+      example:
+        dataClassKey: FINDING
+        fields:
+        - id
+        - specimenOrgan
+        - finding
+        - severity
+      
+    PrimitiveType:
+      type: string
+      enum:
+      - String
+      - Integer
+      - Float
+      - Date
+      - Timestamp
+      - Boolean
+          
+    DataClassKey:
+      type: string
+      enum: 
+      - COMPOUND
+      - STUDY
+      - FINDING
+      
+    Link:
+     type: object
+     properties:
+      field:
+        type: string
+      dataClassKey:
+        $ref: '#/components/schemas/DataClassKey'
+      dataClassKeyField:
+        type: string
+    
+    Result:
+      type: object
+      properties:
+        origin:
+          type: string
+        dataType:
+          $ref: '#/components/schemas/DataType'
+        querySearchFilter:
+          $ref: '#/components/schemas/SearchFilter'
+        fields:
+          type: array
+          items:
+            $ref: '#/components/schemas/DataClassResult'
+            
+    DataClassResult:
+      type: object
+      properties:
+        dataClassKey:
+          $ref: '#/components/schemas/DataClassKey'
+        total:
+          type: integer
+        fields:
+          type: array
+          items:
+            type: string
+        data:
+          type: array
+          items:
+            type: array
+            items:
+              type: string
+
+    DataType:
+      type: string
+      enum: 
+      - Clinical
+      - Preclinical
+      
+    Operator:
+      type: string
+      enum:
+      - AND
+      - OR
+    
+    Order:
+      type: string
+      enum:
+      - ASC
+      - DESC 
+   
+    ComparisonOperator:
+      type: string
+      enum: 
+      - EQUALS
+      - NOT_EQUAL, 
+      - IN
+      - NOT
+      - NOT_IN
+      - LESS_THAN
+      - LESS_THAN_OR_EQUAL
+      - GREATER_THAN
+      - GREATER_THAN_OR_EQUAL
+      - CONTAINS
+      - LIKE
+      - IS_NULL
+      - NOT_NULL
+    
+    DataClassProperty:
+      type: object
+      properties:
+        name:
+          type: string
+        type:
+          $ref: '#/components/schemas/PrimitiveType'
+      
+    
+  securitySchemes:
+
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+      description: JWT accessToken to identify the logged in customer.
