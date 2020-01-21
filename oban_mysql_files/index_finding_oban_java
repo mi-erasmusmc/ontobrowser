@@ -1,0 +1,82 @@
+package oban;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class oban33 {
+
+	private static Statement statement;
+	private static Connection connect;
+	private static ResultSet resultSet;
+
+	public oban33() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			connect = DriverManager.getConnection("jdbc:mysql://oban.erasmusmc.nl:3306/clinicaltrials180619?"
+					+ "user=biosemantics&password=bios4u" + "&serverTimezone=UTC");
+			statement = connect.createStatement();
+			// Result set get the result of the SQL query
+			resultSet = statement.executeQuery("select * from clinicaltrials");
+			while (resultSet.next() == true) {
+				String meddraSocLabels = resultSet.getString("MeddraSocLabel");
+				String meddraSocIDs = resultSet.getString("MeddraSocID");
+				String meddraLabels = resultSet.getString("MeddraLabel");
+				String identifier = resultSet.getString("MeddraID");
+				String rxnormId = resultSet.getString("RxNormID");
+				String meddraid = resultSet.getString("MeddraID");
+				String casecount = resultSet.getString("CaseCount");
+		
+				String meddraLabel = resultSet.getString("MeddraLabel");
+				String meddraID = resultSet.getString("MeddraID");
+
+				String[] socLabelParts = meddraSocLabels.split(";");
+				String[] socIDParts = meddraSocIDs.split(";");
+
+				for (int i = 0; i < socLabelParts.length; i++) {
+					String socLabel = socLabelParts[i];
+					String socID = socIDParts[i];
+					
+					
+					String query = " insert into index_finding (finding_identifier,specimen_organ,specimen_organ_code,specimen_organ_vocabulary,finding,finding_code,finding_vocabulary,severity,compound_id)"
+							+ " values (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+
+					// create the mysql insert preparedstatement
+					PreparedStatement preparedStmt = connect.prepareStatement(query);
+					preparedStmt.setString(1, meddraID);
+					preparedStmt.setString(2, socLabel);
+					preparedStmt.setString(3, socID);
+					preparedStmt.setString(4, "MedDRA");
+					preparedStmt.setString(5, meddraLabel);
+					preparedStmt.setString(6, meddraid);
+					preparedStmt.setString(7, "MedDRA");
+					preparedStmt.setString(8, casecount);
+					preparedStmt.setString(9, rxnormId);
+
+					// execute the preparedstatement
+					preparedStmt.execute();
+					
+				}
+			}
+
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+}
