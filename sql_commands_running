@@ -1,0 +1,169 @@
+Insert into index_findings
+(finding_identifier,specimen_organ,specimen_organ_code,specimen_organ_vocabulary,finding,finding_code,finding_vocabulary,severity, finding_type, CombinedID,RxNormID)
+							 						
+SELECT
+MeddraID, MeddraSocLabel, MeddraSocID, "MedDRA", MeddraLabel,MeddraID , "MedDRA", casecount, "Adverse event",CombinedID, RxNormID
+From faers 
+-------------------------------------------------------------------------
+UPDATE index_findings
+INNER JOIN index_study ON index_findings.CombinedID = index_study.study_identifier
+SET index_findings.study_id = index_study.id;
+
+
+---------------------------------------------
+
+UPDATE index_findings
+INNER JOIN index_compound ON index_findings.RxNormID = index_compound.compound_identifier
+SET index_findings.compound_id = index_compound.id;
+
+-----------------------------------
+Insert into index_findings
+(finding_identifier,specimen_organ,specimen_organ_code,specimen_organ_vocabulary,finding,finding_code,finding_vocabulary,severity, finding_type, NCT,RxNormID)
+							 						
+SELECT
+MeddraID, MeddraSocLabel, MeddraSocID, "MedDRA", MeddraLabel,MeddraID , "MedDRA", casecount, "Adverse event",NCT, RxNormID
+From clinicaltrials
+
+-------------------------------------------------------------------------------
+
+UPDATE index_findings set treatment_related="1"
+
+
+-------------------------------------------------------------------------------------
+(FINAL CHANGES DONE)
+
+
+
+ alter table index_compound_study add COLUMN NCT varchar(256);
+
+alter table index_compound_study add COLUMN RxNormID varchar(256);
+
+insert into index_compound_study (NCT, RxNormID) SELECT DISTINCT NCT, RxNormID from clinicaltrials;
+
+ 
+
+UPDATE index_compound_study
+
+INNER JOIN index_study ON index_compound_study.NCT = index_study.study_identifier
+
+SET index_compound_study.index_study_id = index_study.id
+
+ 
+
+UPDATE index_compound_study
+
+INNER JOIN index_compound ON index_compound_study.RxNormID = index_compound.compound_identifier
+
+SET index_compound_study.index_compound_id = index_compound.id
+
+ 
+
+ALTER TABLE index_compound_study DROP COLUMN RxNormID;
+
+ALTER TABLE index_compound_study DROP COLUMN NCT
+
+-----------------------------------------------------------------------------------------------------
+
+DELETE FROM index_study;
+
+INSERT into index_study (study_identifier) SELECT DISTINCT medline.CombinedID FROM medline;
+
+ 
+
+ 
+
+alter table index_compound_study add COLUMN CombinedID varchar(256);
+
+alter table index_compound_study add COLUMN RxNormID varchar(256);
+
+insert into index_compound_study (CombinedID, RxNormID) SELECT DISTINCT CombinedID, RxNormID from medline;
+
+ 
+
+UPDATE index_compound_study
+
+INNER JOIN index_study ON index_compound_study.CombinedID = index_study.study_identifier
+
+SET index_compound_study.index_study_id = index_study.id;
+
+ 
+
+UPDATE index_compound_study
+
+INNER JOIN index_compound ON index_compound_study.RxNormID = index_compound.compound_identifier
+
+SET index_compound_study.index_compound_id = index_compound.id;
+
+ 
+
+ALTER TABLE index_compound_study DROP COLUMN RxNormID;
+
+ALTER TABLE index_compound_study DROP COLUMN CombinedID;
+
+ 
+
+ 
+
+ 
+
+ 
+
+INSERT INTO index_compoundnew (compound_identifier,name,inchikey,smiles)
+
+SELECT DISTINCT compound_identifier, name, inchikey, smiles FROM index_compound;
+
+
+----------------------------
+
+SELECT CombinedID FROM `faers` WHERE 1
+
+SELECT DISTINCT CombinedID FROM `faers` WHERE 1
+
+
+
+SELECT DISTINCT CombinedID FROM `faers` WHERE CombinedID NOT IN (SELECT CombinedID FROM faers)
+
+
+-------------------------
+
+faers creation query
+
+
+
+select distinct d.concept_code as RxNormID, d.concept_name as RxNormLabel, m.concept_code as MeddraID, m.concept_name as MeddraLabel, meddra.soc_code AS MeddraSocID, meddra.soc_name as MeddraSocLabel, c1.statistic_value as CaseCount, c2.statistic_value as PRR, c3.statistic_value as ChiSquare from common_evidence_model.cem_unified c1, common_evidence_model.cem_unified c2,
+ common_evidence_model.cem_unified c3, cdmv5.concept d, cdmv5.concept m, MEDDRA.
+MDHIER meddra  where c1.source_id = 'aeolus' AND c1.statistic_value_type = 'CASE COUNT' AND c1.
+statistic_value >= 3.0 AND c2.source_id = 'aeolus' AND c2.statistic_value_type = 'PRR' AND c2.statistic_value >= 2.0 AND c3.source_id = 'aeolus' AND c3.statistic_value_type = 'CHI_SQUARE' AND c3.statistic_value >= 4.0 AND c1.unique_identifier = c2.unique_identifier AND c1.unique_identifier = c3.unique_identifier AND c1.source_code_1 = d.concept_id AND c1.source_code_2 = m.concept_id AND m.concept_code = meddra.pt_code AND meddra.primary_soc_fg = "Y"
+
+----------------------------------------------------------
+
+Insert into index_findings
+(finding_identifier,specimen_organ,specimen_organ_code,specimen_organ_vocabulary,finding,finding_code,finding_vocabulary,severity, finding_type, CombinedID,RxNormID)
+                                                     
+SELECT
+MeddraID, MeddraSocLabel, MeddraSocID, "MedDRA", MeddraLabel,MeddraID , "MedDRA", casecount, "Adverse event",CombinedID, RxNormID
+From faers
+-------------------------------------------------------------------------
+UPDATE index_findings
+INNER JOIN index_study ON index_findings.CombinedID = index_study.study_identifier
+SET index_findings.study_id = index_study.id;
+
+
+---------------------------------------------
+
+UPDATE index_findings
+INNER JOIN index_compound ON index_findings.RxNormID = index_compound.compound_identifier
+SET index_findings.compound_id = index_compound.id;
+
+-----------------------------------
+Insert into index_findings
+(finding_identifier,specimen_organ,specimen_organ_code,specimen_organ_vocabulary,finding,finding_code,finding_vocabulary,severity, finding_type, NCT,RxNormID)
+                                                     
+SELECT
+MeddraID, MeddraSocLabel, MeddraSocID, "MedDRA", MeddraLabel,MeddraID , "MedDRA", casecount, "Adverse event",NCT, RxNormID
+From clinicaltrials
+
+-------------------------------------------------------------------------------
+
+UPDATE index_findings set treatment_related="1"
+
