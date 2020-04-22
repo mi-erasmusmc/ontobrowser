@@ -32,13 +32,12 @@ During deployment, the service app in the container can use whatever port it nee
 
 [https://dockerhub.etransafe.eu/WP9/emc/blob/master/clinical-pa/kubernetes/etransafe.clinicalpa.service.yaml]
 
-You can use this as a template for your manifest. As soon as you have your manifest ready, you can deploy the service using the following command:
+You can use this as a template for your manifest. Please consider the information from System architecture & deployment PowerPoint, in particular, the naming conventions and the default namespace "kh". These must be followed when implementing the deployment manifest in order to allow the semantic service component to be registered by the KH registry later on. As soon as you have your manifest ready, you can deploy the service using the following command:
 
 ```sh
 $ kubectl apply -f <name of your manifest file.yaml>
 ```
-
-You need the cluster config file for this, but since you are already were using "kubectl -n kh port-forward..." command, you already have it. After deployment the service will appear in the Rancher dashboard at:
+You will need the cluster config file for this, but if you have used the port forwarding command in Step 2, you already have it. After deployment the service will appear in the Rancher dashboard at:
 
 [https://dev.kh.etransafe.eu:38443/p/c-gzkgs:p-nbr4c/workloads]
 
