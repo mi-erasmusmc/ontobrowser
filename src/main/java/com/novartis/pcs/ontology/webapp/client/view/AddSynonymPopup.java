@@ -21,6 +21,7 @@ import static com.google.gwt.event.dom.client.KeyCodes.KEY_ENTER;
 
 import java.util.Collections;
 import java.util.List;
+import java.util.logging.Logger;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ChangeEvent;
@@ -73,6 +74,8 @@ public class AddSynonymPopup implements OntoBrowserPopup, ViewTermHandler,
 	private final Button addButton = new Button("Add");
 	
 	private Term currentTerm;
+	
+	private Logger logger = Logger.getLogger(AddSynonymPopup.class.getName());
 	
 	public AddSynonymPopup(OntoBrowserServiceAsync service,
 			EventBus eventBus) {
@@ -142,6 +145,7 @@ public class AddSynonymPopup implements OntoBrowserPopup, ViewTermHandler,
 	
 	@Override
 	public void onClick(ClickEvent event) {
+		logger.info("onClick");
 		submit();
 	}
 	

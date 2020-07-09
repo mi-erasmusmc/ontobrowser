@@ -223,12 +223,14 @@ public class OntologySearchServiceImpl implements
 				throw new RuntimeException(msg);
 			}
 			
-			logger.info("Deleting term from search index: " + term);
+			logger.info("Deleting term from search index2: " + term);
 			writer.deleteDocuments(id);		
 			if(StatusChecker.isValid(term)) {
 				Collection<Document> docs = createDocuments(term);
 				for(Document doc : docs) {
+					logger.info("Add term to search index2: " + term);
 					writer.addDocument(doc);
+					logger.info("Added term to search index2: " + term);
 				}
 			}
 		} catch (SystemException e) {

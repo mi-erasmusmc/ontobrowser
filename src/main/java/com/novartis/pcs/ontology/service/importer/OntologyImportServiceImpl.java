@@ -167,6 +167,7 @@ public class OntologyImportServiceImpl extends OntologyService implements Ontolo
 			}	
 			
 			for(Term term : terms) {
+				logger.info("importOntology save term: " + term.getName());
 				if(term.getId() == 0L) {
 					termDAO.save(term);
 				} else if(term.getStatus() == Status.OBSOLETE) {

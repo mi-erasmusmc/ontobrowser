@@ -201,6 +201,7 @@ public class OntologiesServlet extends HttpServlet {
 		} else {
 			try {
 				String ontologyName = pathInfo.substring(1);
+				log("Starting to import ontology");
 				importService.importOntology(ontologyName, request.getInputStream(), curator);
 				response.setStatus(HttpServletResponse.SC_OK);
 				response.setHeader("Access-Control-Allow-Origin", "*");
