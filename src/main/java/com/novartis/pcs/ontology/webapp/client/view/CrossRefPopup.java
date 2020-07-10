@@ -27,7 +27,6 @@ import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import java.util.logging.Logger;
 
 import com.google.gwt.cell.client.CheckboxCell;
 import com.google.gwt.cell.client.ClickableTextCell;
@@ -239,8 +238,6 @@ public class CrossRefPopup implements OntoBrowserPopup, ViewTermHandler,
 	private Term currentTerm;
 	private ControlledVocabularyTerm selectOnLoad;
 	
-	private static Logger logger = Logger.getLogger(CrossRefPopup.class.getName());
-	
 	public CrossRefPopup(OntoBrowserServiceAsync service,
 			EventBus eventBus, Curator curator, 
 			final OntoBrowserPopup createChildTermView) {
@@ -249,8 +246,6 @@ public class CrossRefPopup implements OntoBrowserPopup, ViewTermHandler,
 		this.curator = curator;
 		this.linkedTermsView = new ControlledVocabularyTermLinksView(service);
 						
-		logger.info("begin of CrossRefPopup");
-		
 		dialogBox.setText("Vocabulary Mapping");
 		dialogBox.setGlassEnabled(false);
 		dialogBox.setAnimationEnabled(true);
@@ -361,9 +356,7 @@ public class CrossRefPopup implements OntoBrowserPopup, ViewTermHandler,
 		busyIndicator.busy();
 		
 		if(source == null || domainDropBox.equals(source)) {
-			logger.info("before loading controlled vocabulary terms");
 			service.loadControlledVocabularyTerms(domain, this);
-			logger.info("after loading controlled vocabulary terms");
 			
 			contexts.clear();
 			sources.clear();
@@ -374,10 +367,7 @@ public class CrossRefPopup implements OntoBrowserPopup, ViewTermHandler,
 			contextDropBox.addItem("all");
 			sourceDropBox.addItem("all");
 
-			logger.info("after clearing dropboxes");
-			
 			for(ControlledVocabulary vocab : vocabs) {
-				logger.info("before traversing vocabs");
 				if(vocab.getDomain().equals(domain)) {
 					if(!contexts.contains(vocab.getContext())) {
 						contexts.add(vocab.getContext());

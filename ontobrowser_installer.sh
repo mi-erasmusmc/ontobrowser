@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash 
 #This is a comment!
 
 echo "This script helps users to install Ontobrowser on their Linux distribution."

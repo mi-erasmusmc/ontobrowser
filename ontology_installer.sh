@@ -20,16 +20,16 @@ if [ "$mysql_port" == "" ]; then
 	mysql_port="3306"
 fi
 
-read -e -p "Enter MySql username (default is 'root'): " new_user_name
+read -e -p "Enter MySql username (default is 'etransafe'): " new_user_name
 
 if [ "$new_user_name" == "" ]; then
-	new_user_name="root"
+	new_user_name="etransafe"
 fi
 
-read -e -p "Enter MySql password (default is 'root'): " password
+read -e -p "Enter MySql password (default is 'etransafe'): " password
 
 if [ "$password" == "" ]; then
-	password="root"
+	password="etransafe"
 fi
 
 
@@ -56,8 +56,8 @@ if [ "$yesno" == "y" ]; then
 	for FILE in create_schema_mysql.sql insert_initial_data_mysql.sql insert_crtld_vocab_example.sql insert_curator_mysql.sql
 	do
 		echo "processing file $FILE..."
-		if test -f "../mysql/mysql/$FILE"; then
-			SQLfile="../mysql/mysql/$FILE"
+		if test -f "../mysql/$FILE"; then
+			SQLFile="../mysql/$FILE"
 		else 
 			curl -sO https://raw.githubusercontent.com/mi-erasmusmc/ontobrowser/master/mysql/$FILE
 			SQLFile=$FILE
@@ -68,7 +68,7 @@ fi
 
 read -e -p "Please restart ontobrowser and press enter: " temp
 
-read -e -p "Please confirm the ontobrowser is running? (y/n)" yesno
+read -e -p "Please confirm the ontobrowser is running? (y/n): " yesno
 
 if [ "$yesno" != "y" ]; then 
   exit
