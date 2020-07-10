@@ -12,6 +12,7 @@
 -- See the License for the specific language governing permissions and
 -- limitations under the License.
 
+
 INSERT INTO CURATOR (
   CURATOR_ID, 
   USERNAME, 
