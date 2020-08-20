@@ -21,32 +21,32 @@ RUN mkdir .tmp_onto && cd .tmp_onto \
     && tar -xvzf "wildfly.tar.gz" \
     && mkdir -p "wildfly-14.0.1.Final/modules/system/layers/base/com/mysql/main" \
     && cp "mysqlj/mysql-connector-java-8.0.13/mysql-connector-java-8.0.13.jar" "wildfly-14.0.1.Final/modules/system/layers/base/com/mysql/main" \
-    && curl -Lo "wildfly-14.0.1.Final/modules/system/layers/base/com/mysql/main/module.xml" https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/wildfly_mysql_config/module.xml \
-    && curl -Lo "wildfly-14.0.1.Final/standalone/configuration/standalone.xml" https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/wildfly_mysql_config/standalone.xml \
-    && curl -Lo "wildfly-14.0.1.Final/standalone/deployments/ontobrowser.war" https://github.com/nikhitajatain/ontobrowser/raw/master/target/ontobrowser.war \
+    && curl -Lo "wildfly-14.0.1.Final/modules/system/layers/base/com/mysql/main/module.xml" https://raw.githubusercontent.com/mi-erasmusmc/ontobrowser/master/wildfly_mysql_config/module.xml \
+    && curl -Lo "wildfly-14.0.1.Final/standalone/configuration/standalone.xml" https://raw.githubusercontent.com/mi-erasmusmc/ontobrowser/master/wildfly_mysql_config/standalone.xml \
+    && curl -Lo "wildfly-14.0.1.Final/standalone/deployments/ontobrowser.war" https://github.com/mi-erasmusmc/ontobrowser/raw/master/target/ontobrowser.war \
     && chmod o+r wildfly-14.0.1.Final/standalone/configuration/* \
     && mv wildfly-14.0.1.Final ../ \
     && cd .. && rm -rf .tmp_onto
 
 # Downloading Mysql files
-RUN curl -Ok https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/mysql/create_schema_mysql.sql
-RUN curl -Ok https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/mysql/insert_initial_data_mysql.sql
-RUN curl -Ok https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/mysql/insert_crtld_vocab_example.sql
-RUN curl -Ok https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/mysql/insert_curator_mysql.sql
+RUN curl -Ok https://raw.githubusercontent.com/mi-erasmusmc/ontobrowser/master/mysql/create_schema_mysql.sql
+RUN curl -Ok https://raw.githubusercontent.com/mi-erasmusmc/ontobrowser/master/mysql/insert_initial_data_mysql.sql
+RUN curl -Ok https://raw.githubusercontent.com/mi-erasmusmc/ontobrowser/master/mysql/insert_crtld_vocab_example.sql
+RUN curl -Ok https://raw.githubusercontent.com/mi-erasmusmc/ontobrowser/master/mysql/insert_curator_mysql.sql
 
 #Downloading ontologies and codelists
 
-RUN curl -Ok https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/ontologies/hpath.obo
-RUN curl -Ok https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/ontologies/in-life_observation.obo
-RUN curl -Ok https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/ontologies/ma.obo
-RUN curl -Ok https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/ontologies/moa.obo
+RUN curl -Ok https://raw.githubusercontent.com/mi-erasmusmc/ontobrowser/master/ontologies/hpath.obo
+RUN curl -Ok https://raw.githubusercontent.com/mi-erasmusmc/ontobrowser/master/ontologies/in-life_observation.obo
+RUN curl -Ok https://raw.githubusercontent.com/mi-erasmusmc/ontobrowser/master/ontologies/ma.obo
+RUN curl -Ok https://raw.githubusercontent.com/mi-erasmusmc/ontobrowser/master/ontologies/moa.obo
 
-RUN curl -Ok https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/codelists/code_list.obo/terms_C66729.obo
-RUN curl -Ok https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/codelists/code_list.obo/terms_C66732.obo
-RUN curl -Ok https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/codelists/code_list.obo/terms_C67154.obo
-RUN curl -Ok https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/codelists/code_list.obo/terms_C77530.obo
-RUN curl -Ok https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/codelists/code_list.obo/terms_C77808.obo
-RUN curl -Ok https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/codelists/code_list.obo/terms_C85493.obo
+RUN curl -Ok https://raw.githubusercontent.com/mi-erasmusmc/ontobrowser/master/codelists/code_list.obo/terms_C66729.obo
+RUN curl -Ok https://raw.githubusercontent.com/mi-erasmusmc/ontobrowser/master/codelists/code_list.obo/terms_C66732.obo
+RUN curl -Ok https://raw.githubusercontent.com/mi-erasmusmc/ontobrowser/master/codelists/code_list.obo/terms_C67154.obo
+RUN curl -Ok https://raw.githubusercontent.com/mi-erasmusmc/ontobrowser/master/codelists/code_list.obo/terms_C77530.obo
+RUN curl -Ok https://raw.githubusercontent.com/mi-erasmusmc/ontobrowser/master/codelists/code_list.obo/terms_C77808.obo
+RUN curl -Ok https://raw.githubusercontent.com/mi-erasmusmc/ontobrowser/master/codelists/code_list.obo/terms_C85493.obo
 
 
 # add our user and group first to make sure their IDs get assigned consistently, regardless of whatever dependencies get added
@@ -95,7 +95,7 @@ RUN set -ex; \
     apt-key list > /dev/null
 
 ENV MYSQL_MAJOR 8.0
-ENV MYSQL_VERSION 8.0.19-1debian10
+ENV MYSQL_VERSION 8.0.21-1debian10
 
 RUN echo "deb http://repo.mysql.com/apt/debian/ buster mysql-${MYSQL_MAJOR}" > /etc/apt/sources.list.d/mysql.list
 

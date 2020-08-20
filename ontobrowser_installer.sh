@@ -1,5 +1,10 @@
 #!/bin/bash 
-#This is a comment!
+
+function absolute_path {
+	x=$1
+	x="${x//\~/$HOME}"
+	echo $x
+}
 
 echo "This script helps users to install Ontobrowser on their Linux distribution."
 echo "Ontobrowser requires a) MySql 8 or above, b)Graphviz 2.28 or above c) JAVA_HOME is set to JRE 8 or above."
@@ -105,7 +110,10 @@ do
 done
 
 read -e -p "Installation path for Ontobrowser:" path
-final_path=$(echo $path | sed 's:/*$::')
+abs_path=`absolute_path $path`
+final_path=$(echo $abs_path | sed 's:/*$::')
+
+echo "final destination path is $final_path"
 
 if [ -d "$final_path/wildfly-14.0.1.Final" ]
 then
