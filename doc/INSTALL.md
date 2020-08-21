@@ -98,6 +98,12 @@ Edit the `$JBOSS_HOME/standalone/configuration/standalone.xml` configuration fil
 See the [Naming Subsystem Configuration](https://docs.jboss.org/author/display/WFLY8/Naming+Subsystem+Configuration) Wildfly documentation for more information.
 
 ### Additional Wildfly configuration (optional)
+Modify `$JBOSS_HOME/standalone/configuration/standalone.xml` configuration file to change the installation path for DOT (default /usr/bin/dot):
+```xml 
+<simple name="java:global/ontobrowser/dot/path" value="/usr/bin/dot" type="java.lang.String"/>
+```
+
+### Additional Wildfly configuration (optional)
 By default Stateless Session Bean (SLSB) pooling is not enabled in Wildfly. When deploying OntoBrowser in a production environment is it recommended to enable SLSB pooling to prevent a Graphviz dot process being spawned for each request.
 
 Edit the `$JBOSS_HOME/standalone/configuration/standalone.xml` configuration file and add the following XML to the `<session-bean>` element of the `urn:jboss:domain:ejb3:2.0` subsystem:
