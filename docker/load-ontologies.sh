@@ -10,7 +10,7 @@ ontobrowser_port="8080"
 curator_username="SYSTEM"
 curator_password=""
 
-url=${ontobrowser_ip}
+url=${ontobrowser_ip}:${ontobrowser_port}
 #url=${ontobrowser_ip}:${ontobrowser_port}/ontobrowser
 
 curl -s -S -H "Content-Type: application/obo;charset=utf-8" -X PUT --data-binary "@hpath.obo" -u $curator_username:$curator_password "http://${url}/ontologies/hpath"
