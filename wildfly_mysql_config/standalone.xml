@@ -424,7 +424,7 @@
                 <simple name="java:global/ontobrowser/url" value="http://localhost/ontobrowser/" type="java.net.URL"/>
                 <simple name="java:global/ontobrowser/curator/system" value="SYSTEM" type="java.lang.String"/>
                 <simple name="java:global/ontobrowser/index/path" value="${jboss.server.data.dir}/ontobrowser/index" type="java.lang.String"/>
-                <simple name="java:global/ontobrowser/dot/path" value="/Users/mulligen/miniconda3/bin/dot" type="java.lang.String"/>
+                <simple name="java:global/ontobrowser/dot/path" value="/usr/bin/dot" type="java.lang.String"/>
                 <simple name="java:global/ontobrowser/export/owl/uri" value="http://localhost/ontobrowser/ontologies" type="java.net.URL"/>
                 <simple name="java:global/ontobrowser/database/oracle" value="false" type="boolean"/>
             </bindings>
