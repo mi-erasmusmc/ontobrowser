@@ -44,7 +44,6 @@ public class ControlledVocabularyImportServiceImpl implements ControlledVocabula
     @Override
     public void importControlledVocabulary(ControlledVocabularyDTO dto, Curator creator) throws InvalidEntityException {
 
-
         ControlledVocabulary vocabulary = getOrCreateVocabulary(dto, creator);
 
         Set<ControlledVocabularyTerm> terms = new HashSet<>(dto.getTerms().size());

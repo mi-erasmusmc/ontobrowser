@@ -61,9 +61,10 @@ public class ControlledVocabulariesServlet extends HttpServlet {
 
     @Override
     protected void doPut(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        log("Received controlled vocabulary import request");
         String mediaType = getExpectedMediaType(request);
         String encoding = StringUtils.trimToNull(request.getCharacterEncoding());
-        // TODO: See if the user of this endpoint needs a particual reference
+        // TODO: See if the user of this endpoint needs a particular reference
         Curator curator = curatorService.loadByUsername("SYSTEM");
 
 
@@ -71,25 +72,27 @@ public class ControlledVocabulariesServlet extends HttpServlet {
                 || !StringUtils.equalsIgnoreCase(encoding, UTF_8)) {
             log("Failed to import controlled vocabulary: invalid media type or encoding "
                     + mediaType + ";charset=" + encoding);
-            response.setStatus(HttpServletResponse.SC_UNSUPPORTED_MEDIA_TYPE);
+            returnError(response, HttpServletResponse.SC_UNSUPPORTED_MEDIA_TYPE,
+                    "UNSUPPORTED MEDIA TYPE",
+                    String.format("Received Accept header containing: %s;charset=%s . Expected: %s;charset=%s",
+                            mediaType, encoding, APPLICATION_JSON, UTF_8));
+
         } else {
             try {
                 String jsonString = IOUtils.toString(request.getReader());
                 ControlledVocabularyDTO controlledVocab = mapper.readValue(jsonString, ControlledVocabularyDTO.class);
-                log(controlledVocab.toString());
+                log("Started import controlled vocabulary");
                 importService.importControlledVocabulary(controlledVocab, curator);
+                log("Finished import controlled vocabulary");
                 response.setStatus(HttpServletResponse.SC_ACCEPTED);
             } catch (IOException e) {
-                log("Something went wrong parsing the request body most likely request was malformed");
+                log("Something went wrong parsing the request body, most likely the request was malformed");
                 log(Arrays.toString(e.getStackTrace()));
-                response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+                returnError(response, HttpServletResponse.SC_BAD_REQUEST, "BAD REQUEST",
+                        "Something went wrong parsing the request body, most likely request was malformed");
             } catch (InvalidEntityException e) {
-                log("Client posted an invalid entity " + e.getMessage());
-                String errorJson = mapper.writeValueAsString(new ErrorResponse("BAD REQUEST", e.getMessage()));
-                response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
-                response.getWriter().write(errorJson);
-                response.getWriter().close();
-                response.getWriter().flush();
+                log("Import contained an invalid entity " + e.getMessage());
+                returnError(response, HttpServletResponse.SC_BAD_REQUEST, "BAD REQUEST", e.getMessage());
             }
         }
         response.setContentLength(0);
@@ -129,5 +132,14 @@ public class ControlledVocabulariesServlet extends HttpServlet {
         return mediaType;
     }
 
+
+    private void returnError(HttpServletResponse response, int responseCode, String error, String message)
+            throws IOException {
+        String errorJson = mapper.writeValueAsString(new ErrorResponse(error, message));
+        response.setStatus(responseCode);
+        response.getWriter().write(errorJson);
+        response.getWriter().close();
+        response.getWriter().flush();
+    }
 }
 

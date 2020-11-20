@@ -115,8 +115,9 @@ public class OntologySynonymServiceImpl extends OntologyService implements Ontol
 	@Override
 	public Collection<ControlledVocabularyTerm> loadUnmappedControlledVocabularyTerms(
 			ControlledVocabularyDomain domain) {
+    	// UI submits a null domain, which breaks the pop-up.
+		// Better to fix problem closer to the root cause, but this is easy for now.
     	if (domain == null) {
-			System.out.println("loading all unmapped vocab terms");
     		return sort(vocabTermDAO.loadUnmapped());
 		}
 		return sort(vocabTermDAO.loadUnmapped(domain));
