@@ -20,6 +20,8 @@ package com.novartis.pcs.ontology.entity;
 import javax.persistence.AttributeOverride;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.NamedQuery;
+import javax.persistence.QueryHint;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 import javax.validation.constraints.NotNull;
@@ -27,19 +29,26 @@ import javax.validation.constraints.NotNull;
 @Entity
 @Table(name = "CTRLD_VOCAB_CONTEXT", uniqueConstraints = {
 		@UniqueConstraint(columnNames = "CTRLD_VOCAB_CONTEXT")})
-@AttributeOverride(name = "id", 
+@AttributeOverride(name = "id",
 		column = @Column(name = "CTRLD_VOCAB_CONTEXT_ID", unique = true, nullable = false))
+@NamedQuery(name = ControlledVocabularyContext.QUERY_BY_NAME,
+        query = "select cvc from ControlledVocabularyContext as cvc where cvc.name = :name",
+        hints = {@QueryHint(name = "org.hibernate.cacheable", value = "true")})
+
 public class ControlledVocabularyContext extends ModifiableEntity {
 	private static final long serialVersionUID = 1L;
-	
+
+    public static final String QUERY_BY_NAME = "ControlledVocabularyContext.byName";
+
+
 	@NotNull
 	@Column(name = "CTRLD_VOCAB_CONTEXT", nullable = false)
 	private String name;
-	
+
 	protected ControlledVocabularyContext() {
-		
+
 	}
-	
+
 	public ControlledVocabularyContext(String name,
 			Curator creator) {
 		super(creator);
