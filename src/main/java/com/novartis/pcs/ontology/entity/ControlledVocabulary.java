@@ -38,20 +38,25 @@ import javax.validation.constraints.NotNull;
 @AttributeOverride(name = "id", 
 		column = @Column(name = "CTRLD_VOCAB_ID", unique = true, nullable = false))
 @NamedQueries({
-		@NamedQuery(name=ControlledVocabulary.QUERY_UNMAPPED_TERMS,
-				query="select distinct c from ControlledVocabularyTerm as t" +
+		@NamedQuery(name = ControlledVocabulary.QUERY_UNMAPPED_TERMS,
+				query = "select distinct c from ControlledVocabularyTerm as t" +
 						" inner join t.controlledVocabulary as c" +
 						" where t.id not in (select s.controlledVocabularyTerm.id" +
 						" from Synonym as s" +
 						" where s.controlledVocabularyTerm is not null" +
 						" and s.status in ('PENDING','APPROVED'))",
-				hints={ @QueryHint(name="org.hibernate.cacheable", value="true") })
+				hints = {@QueryHint(name = "org.hibernate.cacheable", value = "true")}),
+		@NamedQuery(name = ControlledVocabulary.QUERY_BY_NAME,
+				query = "select cv from ControlledVocabulary as cv where cv.name = :name",
+				hints = {@QueryHint(name = "org.hibernate.cacheable", value = "true")})
 })
 public class ControlledVocabulary extends ModifiableEntity {
 	private static final long serialVersionUID = 1L;
 	
 	public static final String QUERY_UNMAPPED_TERMS = "ControlledVocabulary.unmappedTerms";
-	
+	public static final String QUERY_BY_NAME = "ControlledVocabulary.byName";
+
+
 	@Valid
 	@ManyToOne
 	@JoinColumn(name = "DATASOURCE_ID", nullable = false)

@@ -17,9 +17,11 @@ limitations under the License.
 */
 package com.novartis.pcs.ontology.dao;
 
+import static com.novartis.pcs.ontology.entity.ControlledVocabulary.QUERY_BY_NAME;
 import static com.novartis.pcs.ontology.entity.ControlledVocabulary.QUERY_UNMAPPED_TERMS;
 
 import java.util.Collection;
+import java.util.List;
 
 import javax.ejb.Local;
 import javax.ejb.Remote;
@@ -41,11 +43,23 @@ public class ControlledVocabularyDAO extends ModifiableEntityDAO<ControlledVocab
         super();
     }
 
-	@Override
-	@SuppressWarnings("unchecked")
-	public Collection<ControlledVocabulary> loadByUnmappedTerms() {
-		Query query = entityManager.createNamedQuery(
-				QUERY_UNMAPPED_TERMS);
-		return query.getResultList();
-	}
+    @Override
+    @SuppressWarnings("unchecked")
+    public Collection<ControlledVocabulary> loadByUnmappedTerms() {
+        Query query = entityManager.createNamedQuery(
+                QUERY_UNMAPPED_TERMS);
+        return query.getResultList();
+    }
+
+    @Override
+    @SuppressWarnings("unchecked")
+    public ControlledVocabulary loadByName(String name) {
+        Query query = entityManager.createNamedQuery(QUERY_BY_NAME, ControlledVocabulary.class);
+        query.setParameter("name", name);
+        List<ControlledVocabulary> vocabularies = query.getResultList();
+        if (vocabularies == null || vocabularies.isEmpty()) {
+            return null;
+        }
+        return vocabularies.get(0);
+    }
 }

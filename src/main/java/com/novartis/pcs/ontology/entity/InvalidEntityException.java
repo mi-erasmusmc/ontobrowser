@@ -29,6 +29,10 @@ public class InvalidEntityException extends Exception {
 		super();
 	}
 
+	public InvalidEntityException(String message) {
+		super(message);
+	}
+
 	public InvalidEntityException(AbstractEntity entity) {
 		super();
 		this.entity = entity;

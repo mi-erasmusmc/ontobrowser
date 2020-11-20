@@ -16,16 +16,18 @@ limitations under the License.
 
 */
 package com.novartis.pcs.ontology.dao;
-import java.util.Collection;
-
-import javax.ejb.Local;
 
 import com.novartis.pcs.ontology.entity.ControlledVocabulary;
+
+import javax.ejb.Local;
+import java.util.Collection;
 
 
 @Local
 public interface ControlledVocabularyDAOLocal extends DAO<ControlledVocabulary> {
-	
-	public Collection<ControlledVocabulary> loadByUnmappedTerms();
+
+    Collection<ControlledVocabulary> loadByUnmappedTerms();
+
+    ControlledVocabulary loadByName(String name);
 
 }

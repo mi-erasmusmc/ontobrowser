@@ -115,6 +115,10 @@ public class OntologySynonymServiceImpl extends OntologyService implements Ontol
 	@Override
 	public Collection<ControlledVocabularyTerm> loadUnmappedControlledVocabularyTerms(
 			ControlledVocabularyDomain domain) {
+    	if (domain == null) {
+			System.out.println("loading all unmapped vocab terms");
+    		return sort(vocabTermDAO.loadUnmapped());
+		}
 		return sort(vocabTermDAO.loadUnmapped(domain));
 	}
 	
