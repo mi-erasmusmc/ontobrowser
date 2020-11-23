@@ -171,8 +171,8 @@ public class ControlledVocabularyTerm extends ModifiableEntity
 		return usage;
 	}
 	
-	public void setUsage(int usgae) {
-		this.usage = usgae;
+	public void setUsage(int usage) {
+		this.usage = usage;
 	}
 		
 	public boolean isExcluded() {

@@ -21,7 +21,6 @@ import javax.ejb.Remote;
 import javax.ejb.Stateless;
 import java.util.HashSet;
 import java.util.Set;
-import java.util.logging.Level;
 import java.util.logging.Logger;
 
 @Stateless
@@ -58,9 +57,13 @@ public class ControlledVocabularyImportServiceImpl implements ControlledVocabula
             //TODO: What is the idea behind the usage count?
             ControlledVocabularyTerm term =
                     new ControlledVocabularyTerm(vocabulary, termDTO.getName(), 1, creator);
-            terms.add(term);
+            if (!terms.add(term)) {
+                throw new InvalidEntityException(
+                        String.format("Term %s was submitted twice, please be only submit unique terms.", termDTO.getName()));
+            }
         }
         // TODO: Find out amount of terms that will be posted in one go, perhaps store them in batches?
+        // TODO: What to do with potential exceptions thrown by the db (e.g. duplicate entry)
         termDAO.saveAll(terms);
     }
 
@@ -81,9 +84,6 @@ public class ControlledVocabularyImportServiceImpl implements ControlledVocabula
         }
     }
 
-    // TODO: For some reason the db enforces the datasource to be unique for each vocabulary, this does not make sense to me,
-    //  the code says it should be a many to one relation, the unique constraint makes it a one on one.
-    //  Same issue with the the terms and the vocabulary!
     private Datasource getDatasource(ControlledVocabularyDTO dto) throws InvalidEntityException {
         Datasource dataSource = dataSourceDAO.loadByAcronym(dto.getDataSourceAcronym());
 
@@ -108,7 +108,7 @@ public class ControlledVocabularyImportServiceImpl implements ControlledVocabula
         ControlledVocabularyDomain domain = domainDAO.loadByName(domainName);
 
         if (domain == null) {
-            logger.log(Level.INFO, "Creating new domain: {}", domainName);
+            logger.info("Creating new domain: " + domainName);
             domain = new ControlledVocabularyDomain(domainName, creator);
             domainDAO.save(domain);
         }
@@ -120,7 +120,7 @@ public class ControlledVocabularyImportServiceImpl implements ControlledVocabula
         ControlledVocabularyContext context = contextDAO.loadByName(dto.getContext());
 
         if (context == null) {
-            logger.log(Level.INFO, "Creating new context: {}", dto.getContext());
+            logger.info("Creating new context: " + dto.getContext());
             context = new ControlledVocabularyContext(dto.getContext(), creator);
             contextDAO.save(context);
         }
