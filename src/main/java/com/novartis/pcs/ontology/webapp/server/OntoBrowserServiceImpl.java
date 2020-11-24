@@ -20,6 +20,7 @@ package com.novartis.pcs.ontology.webapp.server;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Base64;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
@@ -63,7 +64,6 @@ import com.novartis.pcs.ontology.service.search.result.HTMLSearchResult;
 import com.novartis.pcs.ontology.service.search.result.InvalidQuerySyntaxException;
 import com.novartis.pcs.ontology.service.util.TermNameComparator;
 import com.novartis.pcs.ontology.webapp.client.OntoBrowserService;
-import org.apache.commons.codec.binary.Base64;
 
 /**
  * The server side implementation of the RPC service.
@@ -97,7 +97,7 @@ public class OntoBrowserServiceImpl extends RemoteServiceServlet implements
 		if (authHeader != null && authHeader.startsWith("Bearer ")) {
 			String token = authHeader.substring(7);
 			DecodedJWT jwt = JWT.decode(token);
-			String jsonString = new String(Base64.decodeBase64(jwt.getPayload().getBytes()));
+			String jsonString = new String(Base64.getDecoder().decode(jwt.getPayload()));
 			try {
 				return mapper.readValue(jsonString, TokenPayload.class).getUsername();
 			} catch (IOException e) {

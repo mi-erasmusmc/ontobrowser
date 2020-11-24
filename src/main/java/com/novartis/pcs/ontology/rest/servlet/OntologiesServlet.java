@@ -24,8 +24,8 @@ import static com.novartis.pcs.ontology.service.export.OntologyFormat.RDFXML;
 import static com.novartis.pcs.ontology.service.export.OntologyFormat.Turtle;
 
 import java.io.IOException;
-import java.security.Principal;
 import java.util.ArrayList;
+import java.util.Base64;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.EnumSet;
@@ -42,7 +42,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.interfaces.DecodedJWT;
-import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.lang.StringUtils;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -348,7 +347,7 @@ public class OntologiesServlet extends HttpServlet {
 		if (authHeader.startsWith("Bearer ")) {
 			String token = authHeader.substring(7);
 			DecodedJWT jwt = JWT.decode(token);
-			String jsonString = new String(Base64.decodeBase64(jwt.getPayload().getBytes()));
+			String jsonString = new String(Base64.getDecoder().decode(jwt.getPayload()));
 			try {
 				return mapper.readValue(jsonString, TokenPayload.class).getUsername();
 			} catch (IOException e) {

@@ -23,6 +23,8 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.logging.Logger;
 
+import static java.util.stream.Collectors.joining;
+
 @Stateless
 @Local(ControlledVocabularyImportServiceLocal.class)
 @Remote(ControlledVocabularyImportServiceRemote.class)
@@ -75,7 +77,7 @@ public class ControlledVocabularyImportServiceImpl implements ControlledVocabula
         if (vocabulary != null) {
             if (!vocabulary.getDomain().getName().equals(dto.getDomain().getName())) {
                 throw new InvalidEntityException(String.format("Vocabulary %s is already linked to domain %s, " +
-                        "cannot link it to the provided domain %s",
+                                "cannot link it to the provided domain %s",
                         vocabulary.getName(), vocabulary.getDomain().getName(), dto.getDomain().getName()));
             }
 
@@ -94,15 +96,12 @@ public class ControlledVocabularyImportServiceImpl implements ControlledVocabula
         Datasource dataSource = dataSourceDAO.loadByAcronym(dto.getDataSourceAcronym());
 
         if (dataSource == null) {
-            StringBuilder knownSources = new StringBuilder();
-            for (Datasource knownSource : dataSourceDAO.loadAll()) {
-                knownSources.append(", ");
-                knownSources.append(knownSource.getAcronym());
-            }
-            knownSources.deleteCharAt(0);
+            String knownSources = dataSourceDAO.loadAll().stream()
+                    .map(Datasource::getAcronym)
+                    .collect(joining(", "));
             throw new InvalidEntityException(String.format(
-                    "Data source %s could not be found, known data source acronyms are%s.",
-                    dto.getDataSourceAcronym(), knownSources.toString()));
+                    "Data source %s could not be found, known data source acronyms are %s.",
+                    dto.getDataSourceAcronym(), knownSources));
         }
         return dataSource;
     }

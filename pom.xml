@@ -12,12 +12,11 @@
 
 	<properties>
 		<!-- Convenience properties to keep dependency versions DRY -->
-		<gwt.version>2.7.0</gwt.version>
-		<jackson.version>2.1.5</jackson.version>
+		<gwt.version>2.9.0</gwt.version>
+		<jackson.version>2.8.11</jackson.version>
 		<lucene.version>3.6.2</lucene.version>
 
-		<!-- GWT needs at least java 1.7, Java EE 7 does not allow higher... -->
-		<maven.compiler.source>1.7</maven.compiler.source>
+		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<failOnMissingWebXml>false</failOnMissingWebXml>
 
@@ -58,11 +57,6 @@
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
 			<version>2.8.0</version>
-		</dependency>
-		<dependency>
-			<groupId>commons-codec</groupId>
-			<artifactId>commons-codec</artifactId>
-			<version>1.15</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.lucene</groupId>
@@ -119,7 +113,7 @@
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>gwt-maven-plugin</artifactId>
-				<version>2.7.0</version>
+				<version>${gwt.version}</version>
 				<executions>
 					<execution>
 						<goals>
