@@ -68,8 +68,7 @@ public class OntologyCuratorServiceImpl extends OntologyService implements Ontol
 	@Override
 	public Curator loadByUsername(String username) {
 		Curator curator = curatorDAO.loadByUsername(username);
-				
-		
+
 		if(curator != null && curator.isActive()) {
 			return curator;
 		}
@@ -95,6 +94,11 @@ public class OntologyCuratorServiceImpl extends OntologyService implements Ontol
 	public Relationship approveRelationship(long relationshipId, String comments, 
 			String curatorUsername) throws InvalidEntityException {
 		Curator curator = curatorDAO.loadByUsername(curatorUsername);
+
+		if(curator == null || !curator.isActive()) {
+			throw new InvalidEntityException(curator, "Curator is invalid/inactive");
+		}
+
 		Relationship relationship = relationshipDAO.load(relationshipId, true);
 		Version version = lastUnpublishedVersion(curator);
 				
@@ -118,6 +122,11 @@ public class OntologyCuratorServiceImpl extends OntologyService implements Ontol
 	public Synonym approveSynonym(long synonymId, String comments, 
 			String curatorUsername) throws InvalidEntityException {
 		Curator curator = curatorDAO.loadByUsername(curatorUsername);
+
+		if(curator == null || !curator.isActive()) {
+			throw new InvalidEntityException(curator, "Curator is invalid/inactive");
+		}
+
 		Synonym synonym = synonymDAO.load(synonymId, true);
 		Version version = lastUnpublishedVersion(curator);
 						
@@ -136,14 +145,17 @@ public class OntologyCuratorServiceImpl extends OntologyService implements Ontol
 	public Term approveTerm(long termId, String comments, 
 			String curatorUsername) throws InvalidEntityException {
 		Curator curator = curatorDAO.loadByUsername(curatorUsername);
+
+		if(curator == null || !curator.isActive()) {
+			throw new InvalidEntityException(curator, "Curator is invalid/inactive");
+		}
+
 		Term term = termDAO.load(termId, true);
 		Version version = lastUnpublishedVersion(curator);
-		
-		if(!term.getOntology().isCodelist()) {
-			if(term.getRelationships() == null 
-					|| StatusChecker.valid(term.getRelationships()).size() == 0) {
-				throw new InvalidEntityException(term, "Cannot approve term with no valid relationships");
-			}
+
+		if (!term.getOntology().isCodelist() &&
+				(term.getRelationships() == null || StatusChecker.valid(term.getRelationships()).isEmpty())) {
+			throw new InvalidEntityException(term, "Cannot approve term with no valid relationships");
 		}
 		
 		createCuratorActionAndUpdateStatus(term, Action.APPROVE,
@@ -166,6 +178,11 @@ public class OntologyCuratorServiceImpl extends OntologyService implements Ontol
 	public Relationship rejectRelationship(long relationshipId, String comments, 
 			String curatorUsername) throws InvalidEntityException {
 		Curator curator = curatorDAO.loadByUsername(curatorUsername);
+
+		if(curator == null || !curator.isActive()) {
+			throw new InvalidEntityException(curator, "Curator is invalid/inactive");
+		}
+
 		Relationship relationship = relationshipDAO.load(relationshipId, true);
 		Version version = lastUnpublishedVersion(curator);
 		createCuratorActionAndUpdateStatus(relationship, Action.REJECT,
@@ -177,7 +194,10 @@ public class OntologyCuratorServiceImpl extends OntologyService implements Ontol
 	@Interceptors({OntologySearchServiceListener.class})
 	public Synonym rejectSynonym(long synonymId, String comments, 
 			String curatorUsername) throws InvalidEntityException {
-		Curator curator = curatorDAO.loadByUsername(curatorUsername);		
+		Curator curator = curatorDAO.loadByUsername(curatorUsername);
+		if(curator == null || !curator.isActive()) {
+			throw new InvalidEntityException(curator, "Curator is invalid/inactive");
+		}
 		Synonym synonym = synonymDAO.load(synonymId, true);
 		Version version = lastUnpublishedVersion(curator);
 		createCuratorActionAndUpdateStatus(synonym, Action.REJECT,
@@ -190,6 +210,9 @@ public class OntologyCuratorServiceImpl extends OntologyService implements Ontol
 	public Term rejectTerm(long termId, String comments, 
 			String curatorUsername) throws InvalidEntityException {
 		Curator curator = curatorDAO.loadByUsername(curatorUsername);
+		if(curator == null || !curator.isActive()) {
+			throw new InvalidEntityException(curator, "Curator is invalid/inactive");
+		}
 		Term term = termDAO.load(termId, true);
 		Version version = lastUnpublishedVersion(curator);
 		
@@ -226,15 +249,18 @@ public class OntologyCuratorServiceImpl extends OntologyService implements Ontol
 	public Relationship obsoleteRelationship(long relationshipId, long replacementRelationshipId,
 			String comments, String curatorUsername) throws InvalidEntityException {
 		Curator curator = curatorDAO.loadByUsername(curatorUsername);
+
+		if(curator == null || !curator.isActive()) {
+			throw new InvalidEntityException(curator, "Curator is invalid/inactive");
+		}
+
 		BigDecimal approvalWeight = curator.getEntityApprovalWeight(Entity.TERM_RELATIONSHIP);
 		Relationship relationship = relationshipDAO.load(relationshipId);
 		Version version = lastUnpublishedVersion(curator);
 		Term term = relationship.getTerm();
 		int count = 0;
 		
-		if(curator == null || !curator.isActive()) {
-			throw new InvalidEntityException(curator, "Curator is invalid/inactive");
-		}
+
 		
 		if(!relationship.getStatus().equals(Status.APPROVED)) {
 			throw new InvalidEntityException(relationship, "Relationship is not approved");
@@ -278,13 +304,14 @@ public class OntologyCuratorServiceImpl extends OntologyService implements Ontol
 	public Synonym obsoleteSynonym(long synonymId, long replacementSynonymId, String comments, 
 			String curatorUsername) throws InvalidEntityException {
 		Curator curator = curatorDAO.loadByUsername(curatorUsername);
-		BigDecimal approvalWeight = curator.getEntityApprovalWeight(Entity.TERM_SYNONYM);
-		Synonym synonym = synonymDAO.load(synonymId);
-		Version version = lastUnpublishedVersion(curator);
-				
+
 		if(curator == null || !curator.isActive()) {
 			throw new InvalidEntityException(curator, "Curator is invalid/inactive");
 		}
+
+		BigDecimal approvalWeight = curator.getEntityApprovalWeight(Entity.TERM_SYNONYM);
+		Synonym synonym = synonymDAO.load(synonymId);
+		Version version = lastUnpublishedVersion(curator);
 		
 		if(!synonym.getStatus().equals(Status.APPROVED)) {
 			throw new InvalidEntityException(synonym, "Synonym is not approved");
@@ -318,13 +345,15 @@ public class OntologyCuratorServiceImpl extends OntologyService implements Ontol
 	public Term obsoleteTerm(long termId, long replacementTermId, String comments, 
 			String curatorUsername) throws InvalidEntityException {
 		Curator curator = curatorDAO.loadByUsername(curatorUsername);
+
+		if (curator == null || !curator.isActive()) {
+			throw new InvalidEntityException(curator, "Curator is invalid/inactive");
+		}
+
 		BigDecimal approvalWeight = curator.getEntityApprovalWeight(Entity.TERM);
 		Term term = termDAO.load(termId);
 		Version version = lastUnpublishedVersion(curator);
-		
-		if(curator == null || !curator.isActive()) {
-			throw new InvalidEntityException(curator, "Curator is invalid/inactive");
-		}
+
 				
 		if(!term.getStatus().equals(Status.APPROVED)) {
 			throw new InvalidEntityException(term, "Term is not approved");
@@ -533,17 +562,18 @@ public class OntologyCuratorServiceImpl extends OntologyService implements Ontol
 
 	private void createCuratorActionAndUpdateStatus(VersionedEntity entity, 
 			Action actionType, Status status, Curator curator, String comments, Version version) throws InvalidEntityException {
-		Entity entityType = Entity.valueOf(entity);
+
+		if(curator == null || !curator.isActive()) {
+			throw new InvalidEntityException(curator, "Curator is invalid/inactive");
+		}
+
+    	Entity entityType = Entity.valueOf(entity);
 		BigDecimal approvalWeight = curator.getEntityApprovalWeight(entityType);
 		Collection<CuratorAction> actions = entity.getCuratorActions();
 		CuratorAction newAction = null;
 		
 		comments = comments != null && comments.trim().length() > 0 ?
 				comments.trim() : null;
-		
-		if(curator == null || !curator.isActive()) {
-			throw new InvalidEntityException(curator, "Curator is invalid/inactive");
-		}
 		
 		if(!entity.getStatus().equals(Status.PENDING)) {
 			throw new InvalidEntityException(entity, 
