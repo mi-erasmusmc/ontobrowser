@@ -40,6 +40,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.auth0.jwt.JWT;
+import com.auth0.jwt.interfaces.DecodedJWT;
+import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.lang.StringUtils;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -65,6 +68,7 @@ import com.novartis.pcs.ontology.rest.json.RelationshipMixInAnnotations;
 import com.novartis.pcs.ontology.rest.json.RelationshipTypeMixInAnnotations;
 import com.novartis.pcs.ontology.rest.json.SynonymMixInAnnotations;
 import com.novartis.pcs.ontology.rest.json.TermMixInAnnotations;
+import com.novartis.pcs.ontology.rest.json.TokenPayload;
 import com.novartis.pcs.ontology.service.OntologyCuratorServiceLocal;
 import com.novartis.pcs.ontology.service.export.OntologyExportServiceLocal;
 import com.novartis.pcs.ontology.service.export.OntologyFormat;
@@ -338,30 +342,33 @@ public class OntologiesServlet extends HttpServlet {
 			response.setContentLength(0);
 		}
 	}
-	
+
 	private String getUsername(HttpServletRequest request) {
-		String username = request.getRemoteUser();
-		
-		if(username == null) {
-			Principal principal = request.getUserPrincipal();
-			if(principal != null) {
-				username = principal.getName();
+		String authHeader = request.getHeader("Authorization");
+		if (authHeader.startsWith("Bearer ")) {
+			String token = authHeader.substring(7);
+			DecodedJWT jwt = JWT.decode(token);
+			String jsonString = new String(Base64.decodeBase64(jwt.getPayload().getBytes()));
+			try {
+				return mapper.readValue(jsonString, TokenPayload.class).getUsername();
+			} catch (IOException e) {
+				// TODO: return bad request
+				return "SYSTEM";
 			}
+		} else {
+			//TODO: return unauthorized
+			return "SYSTEM";
 		}
-		
-		return username;
 	}
-	
-	public Curator loadCurator(HttpServletRequest request) {
-		Curator curator = null;
-		// String username = getUsername(request);
-		String username = "SYSTEM";
-						
-		if(username != null) {
-			curator = curatorService.loadByUsername(username);
+
+	private Curator loadCurator(HttpServletRequest request) {
+		String username = getUsername(request);
+		Curator curator = curatorService.loadByUsername(username);
+		if (curator == null) {
+			log(username + " has logged on, this person is not a curator.");
 		}
-				
+
 		return curator;
 	}
-	
+
 }

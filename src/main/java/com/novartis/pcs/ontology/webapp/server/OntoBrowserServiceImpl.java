@@ -18,6 +18,7 @@ limitations under the License.
 package com.novartis.pcs.ontology.webapp.server;
 
 
+import java.io.IOException;
 import java.security.Principal;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -25,12 +26,17 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Set;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import javax.ejb.EJB;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 
+import com.auth0.jwt.JWT;
+import com.auth0.jwt.interfaces.DecodedJWT;
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 import com.novartis.pcs.ontology.entity.ControlledVocabulary;
 import com.novartis.pcs.ontology.entity.ControlledVocabularyContext;
@@ -48,6 +54,7 @@ import com.novartis.pcs.ontology.entity.Synonym;
 import com.novartis.pcs.ontology.entity.Synonym.Type;
 import com.novartis.pcs.ontology.entity.Term;
 import com.novartis.pcs.ontology.entity.VersionedEntity;
+import com.novartis.pcs.ontology.rest.json.TokenPayload;
 import com.novartis.pcs.ontology.service.OntologyCuratorServiceLocal;
 import com.novartis.pcs.ontology.service.OntologySynonymServiceLocal;
 import com.novartis.pcs.ontology.service.OntologyTermServiceLocal;
@@ -57,6 +64,7 @@ import com.novartis.pcs.ontology.service.search.result.HTMLSearchResult;
 import com.novartis.pcs.ontology.service.search.result.InvalidQuerySyntaxException;
 import com.novartis.pcs.ontology.service.util.TermNameComparator;
 import com.novartis.pcs.ontology.webapp.client.OntoBrowserService;
+import org.apache.commons.codec.binary.Base64;
 
 /**
  * The server side implementation of the RPC service.
@@ -67,6 +75,7 @@ import com.novartis.pcs.ontology.webapp.client.OntoBrowserService;
 public class OntoBrowserServiceImpl extends RemoteServiceServlet implements
 		OntoBrowserService {
 	private Logger logger = Logger.getLogger(getClass().getName());
+	private ObjectMapper mapper = new ObjectMapper().configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 	
 	@EJB
 	private OntologyCuratorServiceLocal curatorService;
@@ -85,33 +94,33 @@ public class OntoBrowserServiceImpl extends RemoteServiceServlet implements
 		
 	private String getUsername() {
 		HttpServletRequest request = getThreadLocalRequest();
-		String username = request.getRemoteUser();
-		
-		if(username == null) {
-			Principal principal = request.getUserPrincipal();
-			if(principal != null) {
-				username = principal.getName();
+		String authHeader = request.getHeader("Authorization");
+		if (authHeader != null && authHeader.startsWith("Bearer ")) {
+			String token = authHeader.substring(7);
+			DecodedJWT jwt = JWT.decode(token);
+			String jsonString = new String(Base64.decodeBase64(jwt.getPayload().getBytes()));
+			try {
+				return mapper.readValue(jsonString, TokenPayload.class).getUsername();
+			} catch (IOException e) {
+				// TODO: return bad request
+				logger.log(Level.WARNING, "Received request with malformed token payload: " + jsonString);
+				return "SYSTEM";
 			}
+		} else {
+			//TODO: return unauthorized
+			logger.log(Level.WARNING, "Received request without bearer token: " + authHeader);
+			return "SYSTEM";
 		}
-		
-		if (username == null) {
-			username = "SYSTEM";
-		}
-		
-		return username;
 	}
-	
+
 	@Override
 	public Curator loadCurrentCurator() {
-		Curator curator = null;
 		String username = getUsername();
-		
 		logger.info("Loading curator: " + username);
-		
-		if(username != null) {
-			curator = curatorService.loadByUsername(username);
+		Curator curator = curatorService.loadByUsername(username);
+		if (curator == null) {
+			logger.log(Level.WARNING, username + " is using OntoBrowswer, this person is not a curator.");
 		}
-				
 		return curator;
 	}
 	
@@ -344,7 +353,7 @@ public class OntoBrowserServiceImpl extends RemoteServiceServlet implements
 	public <T extends VersionedEntity> void delete(T entity)
 			throws InvalidEntityException {
 		String username = getUsername();
-		logger.info(username + " deleteing " 
+		logger.info(username + " deleting "
 				+ entity.getClass().getSimpleName() + ": " + entity.toString());
 				
 		if(entity instanceof Synonym) {
