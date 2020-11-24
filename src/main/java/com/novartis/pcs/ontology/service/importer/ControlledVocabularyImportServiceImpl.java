@@ -73,6 +73,12 @@ public class ControlledVocabularyImportServiceImpl implements ControlledVocabula
         vocabulary = vocabularyDAO.loadByName(dto.getName());
 
         if (vocabulary != null) {
+            if (!vocabulary.getDomain().getName().equals(dto.getDomain().getName())) {
+                throw new InvalidEntityException(String.format("Vocabulary %s is already linked to domain %s, " +
+                        "cannot link it to the provided domain %s",
+                        vocabulary.getName(), vocabulary.getDomain().getName(), dto.getDomain().getName()));
+            }
+
             return vocabulary;
         } else {
             Datasource dataSource = getDatasource(dto);

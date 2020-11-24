@@ -348,8 +348,12 @@ public class CrossRefPopup implements OntoBrowserPopup, ViewTermHandler,
 		domainDropBox.setEnabled(false);
 		contextDropBox.setEnabled(false);
 		sourceDropBox.setEnabled(false);
-		
-		ControlledVocabularyDomain domain = domainDropBox.getSelectedIndex() > 0 ? domains.get(domainDropBox.getSelectedIndex()) : null;
+
+		// TODO: Each domain has only one context and one datasource,
+		//  as each filter option is based on the domain the other filters are practically useless (as there is always just one option).
+		//  Solution would be to allow the dropdown filters to work irrespective of the domain,
+		//  this would require additional queries (or a dynamic query) and changing the else-if tree below
+		ControlledVocabularyDomain domain = domainDropBox.getSelectedIndex() < 0 ? null : domains.get(domainDropBox.getSelectedIndex());
 		ControlledVocabularyContext context = contextDropBox.getSelectedIndex() > 0 ? contexts.get(contextDropBox.getSelectedIndex()-1) : null;
 		Datasource datasource = sourceDropBox.getSelectedIndex() > 0 ? sources.get(sourceDropBox.getSelectedIndex()-1) : null;
 		
