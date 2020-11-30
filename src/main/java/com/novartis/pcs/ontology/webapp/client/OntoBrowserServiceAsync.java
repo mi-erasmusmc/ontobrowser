@@ -43,7 +43,7 @@ import com.novartis.pcs.ontology.service.search.result.HTMLSearchResult;
  */
 public interface OntoBrowserServiceAsync {
 	void loadRootTerms(AsyncCallback<List<Term>> callback);
-	void loadCurrentCurator(String token, AsyncCallback<Curator> callback);
+	void loadCurrentCurator(AsyncCallback<Curator> callback);
 	void loadTerm(String referenceId, AsyncCallback<Term> asyncCallback);
 	void loadOntologyTerms(String ontology, AsyncCallback<List<Term>> callback);
 	void loadSVG(String referenceId, AsyncCallback<String> asyncCallback);

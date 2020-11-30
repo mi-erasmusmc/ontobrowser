@@ -31,7 +31,6 @@ import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.event.shared.SimpleEventBus;
 import com.google.gwt.user.client.Command;
 import com.google.gwt.user.client.History;
-import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.DockLayoutPanel;
 import com.google.gwt.user.client.ui.FlowPanel;
@@ -101,9 +100,7 @@ public class OntoBrowser implements EntryPoint, ValueChangeHandler<String> {
 		layoutViews(false);
 		RootLayoutPanel.get().add(layoutPanel);
 
-		// Load the current user before loading terms, as loading the current term will change the url
-		// and loose the token by which to indentify the user
-		service.loadCurrentCurator(getTokenFromUrl(), new AsyncCallback<Curator>() {
+		service.loadCurrentCurator(new AsyncCallback<Curator>() {
 			@Override
 			public void onSuccess(Curator curator) {
 				createPopups(curator);
@@ -172,21 +169,10 @@ public class OntoBrowser implements EntryPoint, ValueChangeHandler<String> {
 		});
 	}
 
-	// Keycloak submits the JWT as a query param. GWT does not handle query params well and prepends a #.
-	// Therefore we subtract the token in a somewhat a roundabout way.
-	// Note that this implementation is very tightly coupled to how Keycloak submits the token
-	private String getTokenFromUrl() {
-		String url = Window.Location.getHref();
-		return url.substring(url.indexOf("access_token") + 13, url.indexOf("&token_type"));
-	}
-
-	// Checks the validity of the current history token,
-	// Also checks for possible query params passed by Keycloak that can cause a problem loading a term
 	private boolean isValidHistoryToken(String historyToken) {
 		return historyToken == null
 				|| historyToken.isEmpty()
-				|| historyToken.trim().isEmpty()
-				|| historyToken.contains("?");
+				|| historyToken.trim().isEmpty();
 	}
 
 	private void layoutViews(boolean isCodelist) {

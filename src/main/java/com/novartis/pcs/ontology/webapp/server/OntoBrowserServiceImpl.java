@@ -18,8 +18,6 @@ limitations under the License.
 package com.novartis.pcs.ontology.webapp.server;
 
 
-import com.auth0.jwt.JWT;
-import com.auth0.jwt.interfaces.DecodedJWT;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
@@ -39,7 +37,6 @@ import com.novartis.pcs.ontology.entity.Synonym;
 import com.novartis.pcs.ontology.entity.Synonym.Type;
 import com.novartis.pcs.ontology.entity.Term;
 import com.novartis.pcs.ontology.entity.VersionedEntity;
-import com.novartis.pcs.ontology.rest.json.KeycloakTokenPayload;
 import com.novartis.pcs.ontology.service.OntologyCuratorServiceLocal;
 import com.novartis.pcs.ontology.service.OntologySynonymServiceLocal;
 import com.novartis.pcs.ontology.service.OntologyTermServiceLocal;
@@ -54,15 +51,12 @@ import javax.ejb.EJB;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Base64;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Set;
-import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import static org.apache.commons.lang.StringUtils.isEmpty;
@@ -95,91 +89,38 @@ public class OntoBrowserServiceImpl extends RemoteServiceServlet implements
 	private OntologyGraphServiceLocal graphService;
 
 
-	private void setCuratorInSession(Curator curator) {
-		HttpServletRequest httpServletRequest = this.getThreadLocalRequest();
-		HttpSession session = httpServletRequest.getSession(true);
-		session.setAttribute("curator", curator);
-	}
+    @Override
+    public Curator loadCurrentCurator() {
+        HttpServletRequest httpServletRequest = this.getThreadLocalRequest();
+        HttpSession session = httpServletRequest.getSession();
+        Object curatorObj = session.getAttribute("curator");
+        if (curatorObj instanceof Curator) {
+            Curator curator = (Curator) curatorObj;
+            logger.info("Loaded curator [" + curator + "] from session");
+            return curator;
+        }
+        return null;
+    }
 
+    @Override
+    public List<Term> loadRootTerms() {
+        List<Term> terms = asList(termService.loadRoots());
+        Collections.sort(terms, new Comparator<Term>() {
+            @Override
+            public int compare(Term t1, Term t2) {
+                return t1.getOntology().getName().compareToIgnoreCase(
+                        t2.getOntology().getName());
+            }
+        });
+        return terms;
+    }
 
-	private Curator loadCuratorFromSession() {
-		HttpServletRequest httpServletRequest = this.getThreadLocalRequest();
-		HttpSession session = httpServletRequest.getSession();
-		Object curatorObj = session.getAttribute("curator");
-		if (curatorObj instanceof Curator) {
-			Curator curator = (Curator) curatorObj;
-			logger.info("Loaded curator [" + curator + "] from session");
-			return curator;
-		}
-		return null;
-	}
-
-	private Curator loadCuratorFromToken(String token) {
-		DecodedJWT jwt = JWT.decode(token);
-		String jsonString = new String(Base64.getDecoder().decode(jwt.getPayload()));
-		Curator curator = null;
-
-		try {
-			KeycloakTokenPayload payload = mapper.readValue(jsonString, KeycloakTokenPayload.class);
-			String username = payload.getUsername();
-			if (payload.containsCuratorRole()) {
-				curator = curatorService.loadByUsername(username);
-				if (curator == null) {
-					logger.info("Creating new curator: " + username);
-					curator = new Curator(username, curatorService.loadByUsername("SYSTEM"));
-					curatorService.save(curator);
-				}
-			} else {
-				logger.log(Level.WARNING, "No curator loaded. User [" + payload.getUsername() + "] does not have curator permission");
-			}
-		} catch (IOException e) {
-			// TODO: return bad request
-			logger.log(Level.WARNING, "Received request with malformed token payload: " + jsonString);
-		} catch (InvalidEntityException e) {
-			logger.log(Level.WARNING, "Something went wrong trying to store a new curator for: " + jsonString);
-		}
-		return curator;
-	}
-
-	@Override
-	public Curator loadCurrentCurator(String token) {
-		logger.log(Level.FINE, "Loading curator: " + token);
-		Curator curator = null;
-
-		if (!isEmpty(token)) {
-			logger.info("Loading curator from token: " + token);
-			curator = loadCuratorFromToken(token);
-			setCuratorInSession(curator);
-			logger.info("Loaded curator [" + curator + "] from token");
-		}
-		if (curator == null) {
-			curator = loadCuratorFromSession();
-		}
-		if (curator == null && isEmpty(token)) {
-			logger.log(Level.WARNING, "No curator loaded. Both session and token were empty");
-		}
-		return curator;
-	}
-
-	@Override
-	public List<Term> loadRootTerms() {
-		List<Term> terms = asList(termService.loadRoots());
-		Collections.sort(terms, new Comparator<Term>() {
-			@Override
-			public int compare(Term t1, Term t2) {
-				return t1.getOntology().getName().compareToIgnoreCase(
-						t2.getOntology().getName());
-			}
-		});
-		return terms;
-	}
-	
-	@Override
-	public List<Term> loadOntologyTerms(String ontology) {
-		List<Term> terms = asList(termService.loadAll(ontology));
-		Collections.sort(terms, new TermNameComparator());
-		return terms;
-	}
+    @Override
+    public List<Term> loadOntologyTerms(String ontology) {
+        List<Term> terms = asList(termService.loadAll(ontology));
+        Collections.sort(terms, new TermNameComparator());
+        return terms;
+    }
 
 	@Override
 	public Term loadTerm(String referenceId) {
@@ -216,13 +157,13 @@ public class OntoBrowserServiceImpl extends RemoteServiceServlet implements
 			String relatedTermRefId, String relationshipType,
 			String datasourceAcronym, String referenceId,
 			List<ControlledVocabularyTerm> synonyms,
-			Synonym.Type synonymType) 
+			Synonym.Type synonymType)
 					throws DuplicateEntityException, InvalidEntityException {
-		Curator curator = loadCuratorFromSession();
-		
+		Curator curator = loadCurrentCurator();
+
 		logger.info(curator + " creating term: " + termName);
-		
-		return termService.createTerm(ontologyName, termName, 
+
+		return termService.createTerm(ontologyName, termName,
 				definition, url, comments,
 				relatedTermRefId, relationshipType,
 				datasourceAcronym, referenceId,
@@ -233,7 +174,7 @@ public class OntoBrowserServiceImpl extends RemoteServiceServlet implements
 	public Term addSynonym(String termRefId, String synonym, Type type,
 			String datasource, String referenceId) 
 			throws DuplicateEntityException, InvalidEntityException {
-		Curator curator = loadCuratorFromSession();
+		Curator curator = loadCurrentCurator();
 		
 		logger.info(curator + " adding synonym: " + synonym + " for " + termRefId);
 		
@@ -245,7 +186,7 @@ public class OntoBrowserServiceImpl extends RemoteServiceServlet implements
 			Collection<ControlledVocabularyTerm> terms,
 			Synonym.Type type) 
 			throws DuplicateEntityException, InvalidEntityException {
-		Curator curator = loadCuratorFromSession();
+		Curator curator = loadCurrentCurator();
 		
 		logger.info(curator + " adding synonyms from vocab for " + termRefId);
 		
@@ -255,7 +196,7 @@ public class OntoBrowserServiceImpl extends RemoteServiceServlet implements
 	@Override
 	public Term addRelationship(String termRefId, String relatedTermRefId,
 			String relationship) throws DuplicateEntityException, InvalidEntityException {
-		Curator curator = loadCuratorFromSession();
+		Curator curator = loadCurrentCurator();
 		
 		logger.info(curator + " adding relationship: "
 				+ termRefId + " " + relationship + " " + relatedTermRefId);
@@ -305,7 +246,7 @@ public class OntoBrowserServiceImpl extends RemoteServiceServlet implements
 	@Override
 	public void excludeControlledVocabularyTerms(
 			Set<ControlledVocabularyTerm> terms) throws InvalidEntityException {
-		Curator curator = loadCuratorFromSession();
+		Curator curator = loadCurrentCurator();
 		logger.info(curator + " excluding " + terms.size() + " controlled vocab terms");
 		synonymService.excludeUnmappedControlledVocabularyTerms(terms, curator);
 	}
@@ -334,7 +275,7 @@ public class OntoBrowserServiceImpl extends RemoteServiceServlet implements
 	@Override
 	public <T extends VersionedEntity> Set<T> approve(Set<T> pending,
 			String comments) throws InvalidEntityException {
-		Curator curator = loadCuratorFromSession();
+		Curator curator = loadCurrentCurator();
 		logger.info(curator + " approving " + pending.size() + " items");
 		return curatorService.approve(pending, comments, curator);
 	}
@@ -342,7 +283,7 @@ public class OntoBrowserServiceImpl extends RemoteServiceServlet implements
 	@Override
 	public <T extends VersionedEntity> Set<T> reject(Set<T> pending, 
 			String comments) throws InvalidEntityException {
-		Curator curator = loadCuratorFromSession();
+		Curator curator = loadCurrentCurator();
 		logger.info(curator + " rejecting " + pending.size() + " items");
 		
 		return curatorService.reject(pending, comments, curator);
@@ -351,38 +292,38 @@ public class OntoBrowserServiceImpl extends RemoteServiceServlet implements
 	@Override
 	public Term updateTerm(long termId, String definition, String url,
 			String comments) throws InvalidEntityException {
-		return termService.updateTerm(termId, definition, url, comments, loadCuratorFromSession());
+		return termService.updateTerm(termId, definition, url, comments, loadCurrentCurator());
 	}
 
 	@Override
 	public Synonym updateSynonym(long synonymId, Type type) 
 			throws InvalidEntityException {
-		return termService.updateSynonym(synonymId, type, loadCuratorFromSession());
+		return termService.updateSynonym(synonymId, type, loadCurrentCurator());
 	}
 
 	@Override
 	public Relationship updateRelationship(long relationshipId,
 			String relationship) throws DuplicateEntityException, InvalidEntityException {
-		return termService.updateRelationship(relationshipId, relationship, loadCuratorFromSession());
+		return termService.updateRelationship(relationshipId, relationship, loadCurrentCurator());
 	}
 	
 	@Override
 	public Term obsoleteTerm(long termId, long replacementTermId,
 			String comments) throws InvalidEntityException {
-		return curatorService.obsoleteTerm(termId, replacementTermId, comments, loadCuratorFromSession());
+		return curatorService.obsoleteTerm(termId, replacementTermId, comments, loadCurrentCurator());
 	}
 	
 	@Override
 	public Synonym obsoleteSynonym(long synonymId, long replacementSynonymId,
 			String comments) throws InvalidEntityException {
-		return curatorService.obsoleteSynonym(synonymId, replacementSynonymId, comments, loadCuratorFromSession());
+		return curatorService.obsoleteSynonym(synonymId, replacementSynonymId, comments, loadCurrentCurator());
 	}
 
 	@Override
 	public Relationship obsoleteRelationship(long relationshipId,
 			long replacementRelationshipId, String comments)
 			throws InvalidEntityException {
-		return curatorService.obsoleteRelationship(relationshipId, replacementRelationshipId, comments, loadCuratorFromSession());
+		return curatorService.obsoleteRelationship(relationshipId, replacementRelationshipId, comments, loadCurrentCurator());
 	}
 
 	@Override
@@ -393,7 +334,7 @@ public class OntoBrowserServiceImpl extends RemoteServiceServlet implements
 	@Override
 	public <T extends VersionedEntity> void delete(T entity)
 			throws InvalidEntityException {
-		Curator curator = loadCuratorFromSession();
+		Curator curator = loadCurrentCurator();
 		logger.info(curator + " deleting "
 				+ entity.getClass().getSimpleName() + ": " + entity.toString());
 				
@@ -408,7 +349,7 @@ public class OntoBrowserServiceImpl extends RemoteServiceServlet implements
 	
 	@Override
 	public void changePassword(String oldPassword, String newPassword) throws InvalidEntityException {
-		Curator curator = loadCuratorFromSession();
+		Curator curator = loadCurrentCurator();
 		if(curator != null) {
 			logger.info(curator + " changing password");
 			curatorService.changePassword(curator, oldPassword, newPassword);

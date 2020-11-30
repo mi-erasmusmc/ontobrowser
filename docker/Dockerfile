@@ -21,9 +21,9 @@ RUN mkdir .tmp_onto && cd .tmp_onto \
     && tar -xvzf "wildfly.tar.gz" \
     && mkdir -p "wildfly-14.0.1.Final/modules/system/layers/base/com/mysql/main" \
     && cp "mysqlj/mysql-connector-java-8.0.13/mysql-connector-java-8.0.13.jar" "wildfly-14.0.1.Final/modules/system/layers/base/com/mysql/main" \
-    && curl -Lo "wildfly-14.0.1.Final/modules/system/layers/base/com/mysql/main/module.xml" https://raw.githubusercontent.com/mi-erasmusmc/ontobrowser/master/wildfly_mysql_config/module.xml \
-    && curl -Lo "wildfly-14.0.1.Final/standalone/configuration/standalone.xml" https://raw.githubusercontent.com/mi-erasmusmc/ontobrowser/master/wildfly_mysql_config/standalone.xml \
-    && curl -Lo "wildfly-14.0.1.Final/standalone/deployments/ROOT.war" https://github.com/mi-erasmusmc/ontobrowser/raw/master/target/ontobrowser.war \
+    && curl -Lo "wildfly-14.0.1.Final/modules/system/layers/base/com/mysql/main/module.xml" https://raw.githubusercontent.com/mi-erasmusmc/ontobrowser/new_endpoint/wildfly_mysql_config/module.xml \
+    && curl -Lo "wildfly-14.0.1.Final/standalone/configuration/standalone.xml" https://raw.githubusercontent.com/mi-erasmusmc/ontobrowser/new_endpoint/wildfly_mysql_config/standalone.xml \
+    && curl -Lo "wildfly-14.0.1.Final/standalone/deployments/ROOT.war" https://github.com/mi-erasmusmc/ontobrowser/raw/new_endpoint/target/ontobrowser.war \
     && chmod o+r wildfly-14.0.1.Final/standalone/configuration/* \
     && mv wildfly-14.0.1.Final ../ \
     && cd .. && rm -rf .tmp_onto
