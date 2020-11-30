@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 @Data
-public class TokenPayload {
+public class KeycloakTokenPayload {
 
     @JsonProperty("preferred_username")
     private String username;

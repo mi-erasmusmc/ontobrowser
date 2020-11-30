@@ -24,6 +24,7 @@ import com.novartis.pcs.ontology.entity.ControlledVocabularyContext;
 import com.novartis.pcs.ontology.entity.ControlledVocabularyDomain;
 import com.novartis.pcs.ontology.entity.ControlledVocabularyTerm;
 import com.novartis.pcs.ontology.entity.ControlledVocabularyTermLink;
+import com.novartis.pcs.ontology.entity.Curator;
 import com.novartis.pcs.ontology.entity.Datasource;
 import com.novartis.pcs.ontology.entity.InvalidEntityException;
 import com.novartis.pcs.ontology.entity.Synonym;
@@ -48,7 +49,7 @@ public interface OntologySynonymService {
 			ControlledVocabularyContext context, Datasource datasource);
 	
 	public void excludeUnmappedControlledVocabularyTerms(Collection<ControlledVocabularyTerm> terms, 
-			String curatorUsername) throws InvalidEntityException;
+			Curator curator) throws InvalidEntityException;
 	
 	public Collection<ControlledVocabularyTermLink> loadControlledVocabularyTermLinks(ControlledVocabularyTerm term);
 }

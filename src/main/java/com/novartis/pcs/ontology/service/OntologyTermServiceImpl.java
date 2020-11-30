@@ -108,8 +108,7 @@ public class OntologyTermServiceImpl extends OntologyService implements Ontology
 	@Interceptors({OntologySearchServiceListener.class})
 	public Term addRelationship(String termRefId,
 			String relatedTermRefId, String relationshipType,
-			String curatorUsername) throws DuplicateEntityException, InvalidEntityException {
-		Curator curator = curatorDAO.loadByUsername(curatorUsername);
+			Curator curator) throws DuplicateEntityException, InvalidEntityException {
 		Version version = lastUnpublishedVersion(curator);
 		RelationshipType type = relationshipTypeDAO.loadByRelationship(relationshipType);
 		Term term = termDAO.loadByReferenceId(termRefId, true);
@@ -139,8 +138,7 @@ public class OntologyTermServiceImpl extends OntologyService implements Ontology
 	public Term addSynonym(String termRefId, 
 			ControlledVocabularyTerm vocabTerm,
 			Synonym.Type type,
-			String curatorUsername) throws DuplicateEntityException, InvalidEntityException {
-		Curator curator = curatorDAO.loadByUsername(curatorUsername);
+			Curator curator) throws DuplicateEntityException, InvalidEntityException {
 		Version version = lastUnpublishedVersion(curator);
 		Term term = termDAO.loadByReferenceId(termRefId, true);
 		vocabTerm = vocabTermDAO.load(vocabTerm.getId());
@@ -193,9 +191,8 @@ public class OntologyTermServiceImpl extends OntologyService implements Ontology
 	@Interceptors({OntologySearchServiceListener.class})
 	@SuppressWarnings("unchecked")
 	public Term addSynonym(String termRefId, String synonym, Synonym.Type type,
-			String datasourceAcronym, String referenceId, String curatorUsername)
+			String datasourceAcronym, String referenceId, Curator curator)
 			throws DuplicateEntityException, InvalidEntityException {
-		Curator curator = curatorDAO.loadByUsername(curatorUsername);
 		Version version = lastUnpublishedVersion(curator);
 		Term term = termDAO.loadByReferenceId(termRefId, true);
 		Collection<Synonym> duplicates = synonymDAO.loadBySynonym(synonym);
@@ -237,11 +234,11 @@ public class OntologyTermServiceImpl extends OntologyService implements Ontology
 	public Term addSynonyms(String termRefId, 
 			Collection<ControlledVocabularyTerm> terms,
 			Synonym.Type synonymType,
-			String curatorUsername) throws DuplicateEntityException, InvalidEntityException {
+			Curator curator) throws DuplicateEntityException, InvalidEntityException {
 		Term term = null;
 		for(ControlledVocabularyTerm vocabTerm : terms) {
 			term = addSynonym(termRefId, 
-					vocabTerm, synonymType, curatorUsername);
+					vocabTerm, synonymType, curator);
 		}
 		return term;
 	}
@@ -251,12 +248,12 @@ public class OntologyTermServiceImpl extends OntologyService implements Ontology
 	public Term createTerm(String ontologyName, String termName,
 			String definition, String url, String comments,
 			String relatedTermRefId, String relationshipType,
-			String curatorUsername) throws DuplicateEntityException, InvalidEntityException {
+			Curator curator) throws DuplicateEntityException, InvalidEntityException {
 		return createTerm(ontologyName, termName, 
 				definition, url, comments, 
 				relatedTermRefId, relationshipType,
 				null, null,
-				null, null, curatorUsername);
+				null, null, curator);
 	}
 
 	@Override
@@ -268,11 +265,10 @@ public class OntologyTermServiceImpl extends OntologyService implements Ontology
 			String datasourceAcronym, String sourceReferenceId,
 			Collection<ControlledVocabularyTerm> synonyms,
 			Synonym.Type synonymType,
-			String curatorUsername) throws DuplicateEntityException, InvalidEntityException {
+			Curator curator) throws DuplicateEntityException, InvalidEntityException {
 		// Lock ontology because of update of term reference id value
 		Ontology ontology = ontologyDAO.loadByName(ontologyName, true);
-		Curator curator = curatorDAO.loadByUsername(curatorUsername);
-		
+
 		StatusChecker.validate(ontology);
 		
 		if(curator == null || !curator.isActive()) {
@@ -349,8 +345,7 @@ public class OntologyTermServiceImpl extends OntologyService implements Ontology
 	
 	@Override
 	public Term updateTerm(long termId, String definition, String url,
-			String comments, String curatorUsername) throws InvalidEntityException {
-		Curator curator = curatorDAO.loadByUsername(curatorUsername);
+			String comments, Curator curator) throws InvalidEntityException {
 		Term term = termDAO.load(termId, true);
 				
 		if(curator == null || !curator.isActive()) {
@@ -382,8 +377,7 @@ public class OntologyTermServiceImpl extends OntologyService implements Ontology
 
 	@Override
 	public Synonym updateSynonym(long synonymId, Synonym.Type type, 
-			String curatorUsername) throws InvalidEntityException {
-		Curator curator = curatorDAO.loadByUsername(curatorUsername);
+			Curator curator) throws InvalidEntityException {
 		Synonym synonym = synonymDAO.load(synonymId);
 		
 		if(curator == null || !curator.isActive()) {
@@ -400,9 +394,8 @@ public class OntologyTermServiceImpl extends OntologyService implements Ontology
 	@Override
 	@SuppressWarnings("unchecked")
 	public Relationship updateRelationship(long relationshipId,
-			String relationshipType, String curatorUsername) 
+			String relationshipType, Curator curator)
 			throws InvalidEntityException, DuplicateEntityException {
-		Curator curator = curatorDAO.loadByUsername(curatorUsername);
 		Relationship relationship = relationshipDAO.load(relationshipId);
 		RelationshipType type = relationshipTypeDAO.loadByRelationship(relationshipType);
 		
@@ -427,9 +420,8 @@ public class OntologyTermServiceImpl extends OntologyService implements Ontology
 	}
 	
 	@Override
-	public void deleteTerm(long termId, String curatorUsername) 
+	public void deleteTerm(long termId, Curator curator)
 			throws InvalidEntityException {
-		Curator curator = curatorDAO.loadByUsername(curatorUsername);
 		Term term = termDAO.load(termId, true);
 		if(term != null) {		
 			if(curator == null || !curator.isActive()) {
@@ -457,9 +449,8 @@ public class OntologyTermServiceImpl extends OntologyService implements Ontology
 	}
 
 	@Override
-	public void deleteSynonym(long synonymId, String curatorUsername)
+	public void deleteSynonym(long synonymId, Curator curator)
 			throws InvalidEntityException {
-		Curator curator = curatorDAO.loadByUsername(curatorUsername);
 		Synonym synonym = synonymDAO.load(synonymId);
 		if(synonym != null) {
 			Term term = synonym.getTerm(); 
@@ -483,9 +474,8 @@ public class OntologyTermServiceImpl extends OntologyService implements Ontology
 	}
 
 	@Override
-	public void deleteRelationship(long relationshipId, String curatorUsername) 
+	public void deleteRelationship(long relationshipId, Curator curator)
 			throws InvalidEntityException {
-		Curator curator = curatorDAO.loadByUsername(curatorUsername);
 		Relationship relationship = relationshipDAO.load(relationshipId);
 		if(relationship != null) {
 			Term term = relationship.getTerm();

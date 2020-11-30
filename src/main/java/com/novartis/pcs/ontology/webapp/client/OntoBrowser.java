@@ -70,6 +70,7 @@ import com.novartis.pcs.ontology.webapp.client.view.TermSynonymsView;
  * Entry point classes define <code>onModuleLoad()</code>.
  */
 public class OntoBrowser implements EntryPoint, ValueChangeHandler<String> {
+	public static final String DEFAULT_TERM = "MC:0000001";
 	private final EventBus eventBus = new SimpleEventBus();
 	
 	/**
@@ -99,21 +100,38 @@ public class OntoBrowser implements EntryPoint, ValueChangeHandler<String> {
 		History.addValueChangeHandler(this);
 		layoutViews(false);
 		RootLayoutPanel.get().add(layoutPanel);
-		
+
+		// Load the current user before loading terms, as loading the current term will change the url
+		// and loose the token by which to indentify the user
+		service.loadCurrentCurator(getTokenFromUrl(), new AsyncCallback<Curator>() {
+			@Override
+			public void onSuccess(Curator curator) {
+				createPopups(curator);
+				// synonymsView.setCurator(curator);
+				// relationshipsView.setCurator(curator);
+			}
+
+			@Override
+			public void onFailure(Throwable caught) {
+				GWT.log("Failed to load curator", caught);
+				ErrorView.instance().onUncaughtException(caught);
+			}
+		});
+
+
 		final String historyToken = History.getToken();
-		if(historyToken != null && historyToken.length() > 0) {
+		if (isValidHistoryToken(historyToken)) {
 			History.fireCurrentHistoryState();
 		}
-		
+
 		service.loadRootTerms(new AsyncCallback<List<Term>>() {			
 			@Override
 			public void onSuccess(List<Term> terms) {
 				createMenus(terms);
-								
+
 				// If the application starts with no history token,
-				// redirect to a new initial state.
-				if(!terms.isEmpty() && 
-						(historyToken == null || historyToken.length() == 0)) {
+				// or the keycloak params are getting int the way, redirect to a new initial state.
+				if (!terms.isEmpty() && !isValidHistoryToken(historyToken)) {
 					History.newItem(terms.get(0).getReferenceId());
 				}
 			}
@@ -124,50 +142,53 @@ public class OntoBrowser implements EntryPoint, ValueChangeHandler<String> {
 				ErrorView.instance().onUncaughtException(caught);
 			}
 		});
-				
-		service.loadCurrentCurator(new AsyncCallback<Curator>() {			
-			@Override
-			public void onSuccess(Curator curator) {
-				createPopups(curator);
-				// synonymsView.setCurator(curator);
-				// relationshipsView.setCurator(curator);
-			}
-			
-			@Override
+	}
+
+	@Override
+	public void onValueChange(ValueChangeEvent<String> event) {
+		String historyToken = event.getValue();
+		if (!isValidHistoryToken(historyToken)) {
+			historyToken = DEFAULT_TERM;
+		}
+		final String term = historyToken;
+		GWT.log("History token: " + historyToken);
+		service.loadTerm(term, new AsyncCallback<Term>() {
 			public void onFailure(Throwable caught) {
-				GWT.log("Failed to load curator", caught);
+				GWT.log("Failed to load term: " + term, caught);
 				ErrorView.instance().onUncaughtException(caught);
+			}
+
+			public void onSuccess(Term term) {
+				if (term != null) {
+					boolean codelist = term.getOntology().isCodelist();
+					layoutViews(codelist);
+
+					for (MenuItem menuItem : ontologyMenuItems) {
+						menuItem.setEnabled(!codelist);
+					}
+					eventBus.fireEvent(new ViewTermEvent(term));
+				}
 			}
 		});
 	}
-	
-	@Override
-	public void onValueChange(ValueChangeEvent<String> event) {
-		final String historyToken = event.getValue();
-		if(historyToken != null && historyToken.length() > 0) {
-			GWT.log("History token: " + historyToken);
-			service.loadTerm(historyToken, new AsyncCallback<Term>() {
-				public void onFailure(Throwable caught) {
-					GWT.log("Failed to load term: " + historyToken, caught);
-					ErrorView.instance().onUncaughtException(caught);
-				}
 
-				public void onSuccess(Term term) {
-					if(term != null) {
-						boolean codelist = term.getOntology().isCodelist(); 
-						layoutViews(codelist);
-						
-						for(MenuItem menuItem : ontologyMenuItems) {
-							menuItem.setEnabled(!codelist);
-						}
-						
-						eventBus.fireEvent(new ViewTermEvent(term));
-					}
-				}
-			});
-		}
+	// Keycloak submits the JWT as a query param. GWT does not handle query params well and prepends a #.
+	// Therefore we subtract the token in a somewhat a roundabout way.
+	// Note that this implementation is very tightly coupled to how Keycloak submits the token
+	private String getTokenFromUrl() {
+		String url = Window.Location.getHref();
+		return url.substring(url.indexOf("access_token") + 13, url.indexOf("&token_type"));
 	}
-	
+
+	// Checks the validity of the current history token,
+	// Also checks for possible query params passed by Keycloak that can cause a problem loading a term
+	private boolean isValidHistoryToken(String historyToken) {
+		return historyToken == null
+				|| historyToken.isEmpty()
+				|| historyToken.trim().isEmpty()
+				|| historyToken.contains("?");
+	}
+
 	private void layoutViews(boolean isCodelist) {
 		if(currentCentrePanel == null) {
 			Panel eastPanel = createEastPanel();

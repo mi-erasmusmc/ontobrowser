@@ -74,6 +74,11 @@ public class OntologyCuratorServiceImpl extends OntologyService implements Ontol
 		}
 		return null;
 	}
+
+	@Override
+	public void save(Curator curator) throws InvalidEntityException {
+    	curatorDAO.save(curator);
+	}
 	
 	@Override
 	public Collection<Term> loadPendingTerms() {
@@ -92,8 +97,7 @@ public class OntologyCuratorServiceImpl extends OntologyService implements Ontol
 
 	@Override
 	public Relationship approveRelationship(long relationshipId, String comments, 
-			String curatorUsername) throws InvalidEntityException {
-		Curator curator = curatorDAO.loadByUsername(curatorUsername);
+			Curator curator) throws InvalidEntityException {
 
 		if(curator == null || !curator.isActive()) {
 			throw new InvalidEntityException(curator, "Curator is invalid/inactive");
@@ -120,8 +124,7 @@ public class OntologyCuratorServiceImpl extends OntologyService implements Ontol
 	
 	@Override
 	public Synonym approveSynonym(long synonymId, String comments, 
-			String curatorUsername) throws InvalidEntityException {
-		Curator curator = curatorDAO.loadByUsername(curatorUsername);
+			Curator curator) throws InvalidEntityException {
 
 		if(curator == null || !curator.isActive()) {
 			throw new InvalidEntityException(curator, "Curator is invalid/inactive");
@@ -143,8 +146,7 @@ public class OntologyCuratorServiceImpl extends OntologyService implements Ontol
 
 	@Override
 	public Term approveTerm(long termId, String comments, 
-			String curatorUsername) throws InvalidEntityException {
-		Curator curator = curatorDAO.loadByUsername(curatorUsername);
+			Curator curator) throws InvalidEntityException {
 
 		if(curator == null || !curator.isActive()) {
 			throw new InvalidEntityException(curator, "Curator is invalid/inactive");
@@ -176,8 +178,7 @@ public class OntologyCuratorServiceImpl extends OntologyService implements Ontol
 	
 	@Override
 	public Relationship rejectRelationship(long relationshipId, String comments, 
-			String curatorUsername) throws InvalidEntityException {
-		Curator curator = curatorDAO.loadByUsername(curatorUsername);
+			Curator curator) throws InvalidEntityException {
 
 		if(curator == null || !curator.isActive()) {
 			throw new InvalidEntityException(curator, "Curator is invalid/inactive");
@@ -193,8 +194,7 @@ public class OntologyCuratorServiceImpl extends OntologyService implements Ontol
 	@Override
 	@Interceptors({OntologySearchServiceListener.class})
 	public Synonym rejectSynonym(long synonymId, String comments, 
-			String curatorUsername) throws InvalidEntityException {
-		Curator curator = curatorDAO.loadByUsername(curatorUsername);
+			Curator curator) throws InvalidEntityException {
 		if(curator == null || !curator.isActive()) {
 			throw new InvalidEntityException(curator, "Curator is invalid/inactive");
 		}
@@ -208,8 +208,7 @@ public class OntologyCuratorServiceImpl extends OntologyService implements Ontol
 	@Override
 	@Interceptors({OntologySearchServiceListener.class})
 	public Term rejectTerm(long termId, String comments, 
-			String curatorUsername) throws InvalidEntityException {
-		Curator curator = curatorDAO.loadByUsername(curatorUsername);
+			Curator curator) throws InvalidEntityException {
 		if(curator == null || !curator.isActive()) {
 			throw new InvalidEntityException(curator, "Curator is invalid/inactive");
 		}
@@ -247,8 +246,7 @@ public class OntologyCuratorServiceImpl extends OntologyService implements Ontol
 	@Override
 	@Interceptors({OntologySearchServiceListener.class})
 	public Relationship obsoleteRelationship(long relationshipId, long replacementRelationshipId,
-			String comments, String curatorUsername) throws InvalidEntityException {
-		Curator curator = curatorDAO.loadByUsername(curatorUsername);
+			String comments, Curator curator) throws InvalidEntityException {
 
 		if(curator == null || !curator.isActive()) {
 			throw new InvalidEntityException(curator, "Curator is invalid/inactive");
@@ -302,8 +300,7 @@ public class OntologyCuratorServiceImpl extends OntologyService implements Ontol
 	@Override
 	@Interceptors({OntologySearchServiceListener.class})
 	public Synonym obsoleteSynonym(long synonymId, long replacementSynonymId, String comments, 
-			String curatorUsername) throws InvalidEntityException {
-		Curator curator = curatorDAO.loadByUsername(curatorUsername);
+			Curator curator) throws InvalidEntityException {
 
 		if(curator == null || !curator.isActive()) {
 			throw new InvalidEntityException(curator, "Curator is invalid/inactive");
@@ -343,8 +340,7 @@ public class OntologyCuratorServiceImpl extends OntologyService implements Ontol
 	@Override
 	@Interceptors({OntologySearchServiceListener.class})
 	public Term obsoleteTerm(long termId, long replacementTermId, String comments, 
-			String curatorUsername) throws InvalidEntityException {
-		Curator curator = curatorDAO.loadByUsername(curatorUsername);
+			Curator curator) throws InvalidEntityException {
 
 		if (curator == null || !curator.isActive()) {
 			throw new InvalidEntityException(curator, "Curator is invalid/inactive");
@@ -478,18 +474,18 @@ public class OntologyCuratorServiceImpl extends OntologyService implements Ontol
 	@Override
 	@SuppressWarnings("unchecked")
 	public <T extends VersionedEntity> Set<T> approve(Set<T> pending, String comments, 
-			String curatorUsername) throws InvalidEntityException {				
+			Curator curator) throws InvalidEntityException {
 		Set<T> approved = new LinkedHashSet<T>();
 		for(T entity : pending) {
 			if(entity instanceof Synonym) {
 				Synonym synonym = (Synonym)entity;
-				approved.add((T)approveSynonym(synonym.getId(), comments, curatorUsername));
+				approved.add((T)approveSynonym(synonym.getId(), comments, curator));
 			} else if(entity instanceof Relationship) {
 				Relationship relationship = (Relationship)entity;
-				approved.add((T)approveRelationship(relationship.getId(), comments, curatorUsername));
+				approved.add((T)approveRelationship(relationship.getId(), comments, curator));
 			} else if(entity instanceof Term) {
 				Term term = (Term)entity;
-				approved.add((T)approveTerm(term.getId(), comments, curatorUsername));
+				approved.add((T)approveTerm(term.getId(), comments, curator));
 			} else {
 				throw new UnsupportedOperationException("Approving " 
 						+ entity.getClass().getSimpleName()
@@ -503,18 +499,18 @@ public class OntologyCuratorServiceImpl extends OntologyService implements Ontol
 	@Override
 	@SuppressWarnings("unchecked")
 	public <T extends VersionedEntity> Set<T> reject(Set<T> pending, String comments, 
-			String curatorUsername) throws InvalidEntityException {
+			Curator curator) throws InvalidEntityException {
 		Set<T> rejected = new LinkedHashSet<T>();
 		for(T entity : pending) {
 			if(entity instanceof Synonym) {
 				Synonym synonym = (Synonym)entity;
-				rejected.add((T)rejectSynonym(synonym.getId(), comments, curatorUsername));
+				rejected.add((T)rejectSynonym(synonym.getId(), comments, curator));
 			} else if(entity instanceof Relationship) {
 				Relationship relationship = (Relationship)entity;
-				rejected.add((T)rejectRelationship(relationship.getId(), comments, curatorUsername));
+				rejected.add((T)rejectRelationship(relationship.getId(), comments, curator));
 			} else if(entity instanceof Term) {
 				Term term = (Term)entity;
-				rejected.add((T)rejectTerm(term.getId(), comments, curatorUsername));
+				rejected.add((T)rejectTerm(term.getId(), comments, curator));
 			} else {
 				throw new UnsupportedOperationException("Rejecting " 
 						+ entity.getClass().getSimpleName()
@@ -532,9 +528,8 @@ public class OntologyCuratorServiceImpl extends OntologyService implements Ontol
 	}
 	
 	@Override
-	public void changePassword(String username, String oldPassword, String newPassword)
+	public void changePassword(Curator curator, String oldPassword, String newPassword)
 			throws InvalidEntityException {
-		Curator curator = curatorDAO.loadByUsername(username);
 		if(curator != null) {
 			String oldPasswordEncrypted = encryptPassword(oldPassword);
 			if(!oldPasswordEncrypted.equals(curator.getPassword())) {

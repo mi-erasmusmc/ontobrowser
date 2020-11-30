@@ -67,7 +67,7 @@ import com.novartis.pcs.ontology.rest.json.RelationshipMixInAnnotations;
 import com.novartis.pcs.ontology.rest.json.RelationshipTypeMixInAnnotations;
 import com.novartis.pcs.ontology.rest.json.SynonymMixInAnnotations;
 import com.novartis.pcs.ontology.rest.json.TermMixInAnnotations;
-import com.novartis.pcs.ontology.rest.json.TokenPayload;
+import com.novartis.pcs.ontology.rest.json.KeycloakTokenPayload;
 import com.novartis.pcs.ontology.service.OntologyCuratorServiceLocal;
 import com.novartis.pcs.ontology.service.export.OntologyExportServiceLocal;
 import com.novartis.pcs.ontology.service.export.OntologyFormat;
@@ -349,7 +349,7 @@ public class OntologiesServlet extends HttpServlet {
 			DecodedJWT jwt = JWT.decode(token);
 			String jsonString = new String(Base64.getDecoder().decode(jwt.getPayload()));
 			try {
-				return mapper.readValue(jsonString, TokenPayload.class).getUsername();
+				return mapper.readValue(jsonString, KeycloakTokenPayload.class).getUsername();
 			} catch (IOException e) {
 				// TODO: return bad request
 				return "SYSTEM";

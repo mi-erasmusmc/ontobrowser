@@ -121,9 +121,8 @@ public class OntologySynonymServiceImpl extends OntologyService implements Ontol
 	
 	@Override
 	public void excludeUnmappedControlledVocabularyTerms(Collection<ControlledVocabularyTerm> terms,
-			String curatorUsername) throws InvalidEntityException {
-		Curator curator = curatorDAO.loadByUsername(curatorUsername);
-		
+			Curator curator) throws InvalidEntityException {
+
 		if(curator == null || !curator.isActive()) {
 			throw new InvalidEntityException(curator, "Curator is invalid/inactive");
 		}

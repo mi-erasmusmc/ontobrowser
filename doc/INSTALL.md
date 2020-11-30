@@ -150,6 +150,14 @@ The example Hibernate secondary cache configuration below (from the `$JBOSS_HOME
 </cache-container>
 ```
 
+
+## Authentication as used on the eTRANSAFE project
+
+In the eTRANSAFE AWS environment the application is only reachable by logging in via Keycloack.
+User/Curator authentication is based on JWT tokens passed by Keycloak in a query param, after which the current user is stored in a session.
+
+
+
 ## Apache Basic Authentication and Proxy Setup (optional)
 In a production environment it is recommended to perform the user authentication using a web server (e.g. Apache) located in a [DMZ](http://en.wikipedia.org/wiki/DMZ_(computing)).  Alternatively if installing OntoBrowser on a corporate intranet it is recommended to use a corporate single sign-on (SSO) system for user authentication.
 
@@ -185,7 +193,7 @@ For more details see the Apache [mod_authn_dbd](http://httpd.apache.org/docs/2.2
 ## Building and Deploying OntoBrowser
 1. Download the project from GitHub: https://github.com/Novartis/ontobrowser/archive/master.zip
 2. Unzip the master.zip file
-3. Build and package the project using Maven i.e. `mvn package`
+3. Build and package the project using Maven i.e. `mvn clean package`
 4. Copy the `ontobrowser.war` file (located in the `target` directory) to Wildfly's `deployments` directory
 
 **Note:** If using a non-Oracle database perform the changes listed in the [non-oracle_changes.md](./non-oracle_changes.md) file before building the project.

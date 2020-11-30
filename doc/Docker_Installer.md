@@ -13,7 +13,7 @@ $ docker run --name ontobrowser ontobrowser:latest
 At present there is no docker-compose in place for smooth local development.
 If you would like to use Docker for local development nonetheless, Maven and Docker are required.
 
-First build an image and run it with application and db (optional) ports exposed locally.
+Navigate to the docker folder, build an image and run it with application and db (optional) ports exposed locally.
 ```bash
 $ cd docker
 $ docker build -t ontobrowser .

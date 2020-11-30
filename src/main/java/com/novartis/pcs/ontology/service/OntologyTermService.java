@@ -20,6 +20,7 @@ package com.novartis.pcs.ontology.service;
 import java.util.Collection;
 
 import com.novartis.pcs.ontology.entity.ControlledVocabularyTerm;
+import com.novartis.pcs.ontology.entity.Curator;
 import com.novartis.pcs.ontology.entity.DuplicateEntityException;
 import com.novartis.pcs.ontology.entity.InvalidEntityException;
 import com.novartis.pcs.ontology.entity.Relationship;
@@ -42,7 +43,7 @@ public interface OntologyTermService {
 	public Term createTerm(String ontologyName, String term,
 			String definition, String url, String comments,
 			String relatedTermRefId, String relationshipType,
-			String curatorUsername) throws DuplicateEntityException, InvalidEntityException;
+			Curator curator) throws DuplicateEntityException, InvalidEntityException;
 	
 	public Term createTerm(String ontologyName, String term,
 			String definition, String url, String comments,
@@ -50,42 +51,42 @@ public interface OntologyTermService {
 			String datasourceAcronym, String referenceId,
 			Collection<ControlledVocabularyTerm> synonyms,
 			Synonym.Type synonymType,
-			String curatorUsername) throws DuplicateEntityException, InvalidEntityException;
+			Curator curator) throws DuplicateEntityException, InvalidEntityException;
 	
 	public Term addSynonym(String termRefId, String synonym, Synonym.Type type,
-			String datasourceAcronym, String referenceId, String curatorUsername)
+			String datasourceAcronym, String referenceId, Curator curator)
 			throws DuplicateEntityException, InvalidEntityException;
 	
 	public Term addSynonym(String termRefId, 
 			ControlledVocabularyTerm vocabTerm, 
 			Synonym.Type synonymType,
-			String curatorUsername)
+			Curator curator)
 			throws DuplicateEntityException, InvalidEntityException;
 	
 	public Term addSynonyms(String termRefId, 
 			Collection<ControlledVocabularyTerm> terms, 
 			Synonym.Type synonymType,
-			String curatorUsername)
+			Curator curator)
 			throws DuplicateEntityException, InvalidEntityException;
 	
 	public Term addRelationship(String termRefId, String relatedTermRefId,
-			String relationshipType, String curatorUsername) 
+			String relationshipType, Curator curator)
 			throws DuplicateEntityException, InvalidEntityException;
 	
 	public Term updateTerm(long termId, String definition, String url, 
-			String comments, String curatorUsername) throws InvalidEntityException;
+			String comments, Curator curator) throws InvalidEntityException;
 	
 	public Synonym updateSynonym(long synonymId, Synonym.Type type, 
-			String curatorUsername) throws InvalidEntityException;
+			Curator curator) throws InvalidEntityException;
 	
 	public Relationship updateRelationship(long relationshipId, 
-			String relationship, String curatorUsername)
+			String relationship, Curator curator)
 			throws InvalidEntityException, DuplicateEntityException;
 	
-	public void deleteTerm(long termId, String curatorUsername) throws InvalidEntityException;
+	public void deleteTerm(long termId, Curator curator) throws InvalidEntityException;
 	
-	public void deleteSynonym(long synonymId, String curatorUsername) throws InvalidEntityException;
+	public void deleteSynonym(long synonymId, Curator curator) throws InvalidEntityException;
 	
-	public void deleteRelationship(long relationshipId, String curatorUsername)
+	public void deleteRelationship(long relationshipId, Curator curator)
 			throws InvalidEntityException;
 }
