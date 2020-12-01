@@ -77,10 +77,10 @@ import com.novartis.pcs.ontology.service.parser.InvalidFormatException;
 
 /**
  * A simple REST service for ontologies. Produces OBO, OWL and JSON formats
- * 
+ *
  * Note: Could use JAX-RS (e.g. RESTEasy or Jersey) but this RESTful
  * service is so trivial that it does not warrant a framework.
- * 
+ *
  * @author Carlo Ravagli
  *
  */
@@ -90,7 +90,7 @@ public class OntologiesServlet extends HttpServlet {
 	private static final String MEDIA_TYPE_JSON = "application/json";
 	private static final String MEDIA_TYPE_OBO = "application/obo";
 	private static final Map<String,OntologyFormat> mediaTypes;
-	
+
 	static {
         mediaTypes = new LinkedHashMap<String,OntologyFormat>();
         // a registered media type does not exist for OBO
@@ -105,28 +105,28 @@ public class OntologiesServlet extends HttpServlet {
         mediaTypes.put(MEDIA_TYPE_OBO, OBO);
         mediaTypes.put(MEDIA_TYPE_JSON, null);
     }
-			
+
 	@EJB
 	private OntologyExportServiceLocal exportService;
-	
+
 	@EJB
 	private OntologyImportServiceLocal importService;
-	
+
 	@EJB
 	private OntologyCuratorServiceLocal curatorService;
-	
+
 	@EJB
 	protected OntologyDAOLocal ontologyDAO;
-	
+
 	@EJB
 	protected TermDAOLocal termDAO;
-	
+
 	private ObjectMapper mapper = new ObjectMapper();
-	
+
 	@Override
 	public void init() throws ServletException {
     	mapper.setSerializationInclusion(JsonInclude.Include.NON_EMPTY);
-    	mapper.addMixInAnnotations(Datasource.class, DatasourceMixInAnnotations.class);    	
+    	mapper.addMixInAnnotations(Datasource.class, DatasourceMixInAnnotations.class);
     	mapper.addMixInAnnotations(RelationshipType.class, RelationshipTypeMixInAnnotations.class);
     	mapper.addMixInAnnotations(Ontology.class, OntologyMixInAnnotations.class);
     	mapper.addMixInAnnotations(Term.class, TermMixInAnnotations.class);
@@ -145,7 +145,7 @@ public class OntologiesServlet extends HttpServlet {
 		if(mediaType == null) {
 			response.setStatus(HttpServletResponse.SC_UNSUPPORTED_MEDIA_TYPE);
 			response.setContentLength(0);
-		} else if(pathInfo != null && pathInfo.length() > 1) {	
+		} else if(pathInfo != null && pathInfo.length() > 1) {
 			String ontologyName = pathInfo.substring(1);
 			if(mediaType.equals(MEDIA_TYPE_JSON)) {
 				serialize(ontologyName, response);
@@ -153,7 +153,7 @@ public class OntologiesServlet extends HttpServlet {
 				export(ontologyName, includeNonPublicXrefs, mediaType, response);
 			}
 		} else {
-			mediaType = getExpectedMediaType(request, 
+			mediaType = getExpectedMediaType(request,
 					Collections.singletonList(MEDIA_TYPE_JSON));
 			if(mediaType.equals(MEDIA_TYPE_JSON)) {
 				serializeAll(response);
@@ -163,7 +163,7 @@ public class OntologiesServlet extends HttpServlet {
 			}
 		}
 	}
-	
+
 	@Override
 	protected void doDelete(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
@@ -182,17 +182,17 @@ public class OntologiesServlet extends HttpServlet {
 	protected void doPut(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		String mediaType = StringUtils.trimToNull(request.getContentType());
-		String encoding = StringUtils.trimToNull(request.getCharacterEncoding());	
+		String encoding = StringUtils.trimToNull(request.getCharacterEncoding());
 		String pathInfo = StringUtils.trimToNull(request.getPathInfo());
 		Curator curator = loadCurator(request);
-		
+
 		if(mediaType != null && mediaType.indexOf(';') > 0) {
 			mediaType = mediaType.substring(0, mediaType.indexOf(';'));
 		}
-		
+
 		if(!StringUtils.equalsIgnoreCase(mediaType,MEDIA_TYPE_OBO)
 				|| !StringUtils.equalsIgnoreCase(encoding,"utf-8")) {
-			log("Failed to import ontology: invalid media type or encoding " 
+			log("Failed to import ontology: invalid media type or encoding "
 					+ mediaType + ";charset=" + encoding);
 			response.setStatus(HttpServletResponse.SC_UNSUPPORTED_MEDIA_TYPE);
 		} else if(pathInfo == null || pathInfo.length() <= 1) {
@@ -224,12 +224,12 @@ public class OntologiesServlet extends HttpServlet {
 		}
 		response.setContentLength(0);
 	}
-	
+
 	@Override
 	protected void doOptions(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		String mediaType = getExpectedMediaType(request);
-		
+
 		OntologyFormat format = mediaTypes.get(mediaType);
 		if(format != null) {
 			// Preflight CORS support
@@ -249,48 +249,48 @@ public class OntologiesServlet extends HttpServlet {
 	protected long getLastModified(HttpServletRequest req) {
 		return System.currentTimeMillis();
 	}
-	
+
 	private String getExpectedMediaType(HttpServletRequest request) {
 		return getExpectedMediaType(request, mediaTypes.keySet());
 	}
-	
-	private String getExpectedMediaType(HttpServletRequest request, 
+
+	private String getExpectedMediaType(HttpServletRequest request,
 			Collection<String> acceptedMediaTypes) {
 		String mediaType = null;
 		String acceptHeader = request.getHeader("Accept");
 		if(acceptHeader != null) {
 			mediaType = StringUtils.trimToNull(MIMEParse.bestMatch(acceptedMediaTypes, acceptHeader));
 		}
-		
+
 		return mediaType;
 	}
-	
+
 	private void serializeAll(HttpServletResponse response) {
 		try {
 			List<Ontology> all = ontologyDAO.loadByStatus(EnumSet.of(Status.APPROVED));
 			List<Ontology> ontologies = new ArrayList<Ontology>();
-			
+
 			for(Ontology ontology : all) {
 				if(!ontology.isCodelist()) {
 					ontologies.add(ontology);
 				}
 			}
-			
+
 			response.setStatus(HttpServletResponse.SC_OK);
 			response.setHeader("Access-Control-Allow-Origin", "*");
 			response.setContentType(MEDIA_TYPE_JSON + ";charset=utf-8");
 			response.setHeader("Cache-Control", "public, max-age=0");
-			
+
 			// As per jackson javadocs - Encoding will be UTF-8
 			mapper.writeValue(response.getOutputStream(), ontologies);
-			
+
 		} catch (Exception e) {
 			log("Failed to serialize ontologies to JSON", e);
 			response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
 			response.setContentLength(0);
 		}
 	}
-	
+
 	private void serialize(String ontologyName, HttpServletResponse response) {
 		try {
 			Ontology ontology = ontologyDAO.loadByName(ontologyName);
@@ -300,12 +300,12 @@ public class OntologiesServlet extends HttpServlet {
 			} else {
 				Collection<Term> terms = termDAO.loadAll(ontology);
 				OntologyDelegate delegate = new OntologyDelegate(ontology, terms);
-								
+
 				response.setStatus(HttpServletResponse.SC_OK);
 				response.setHeader("Access-Control-Allow-Origin", "*");
 				response.setContentType(MEDIA_TYPE_JSON + ";charset=utf-8");
 				response.setHeader("Cache-Control", "public, max-age=0");
-				
+
 				// As per jackson javadocs - Encoding will be UTF-8
 				mapper.writeValue(response.getOutputStream(), delegate);
 			}
@@ -315,17 +315,17 @@ public class OntologiesServlet extends HttpServlet {
 			response.setContentLength(0);
 		}
 	}
-		
+
 	private void export(String ontologyName, boolean includeNonPublicXrefs, String mediaType,
 			HttpServletResponse response) {
 		OntologyFormat format = mediaTypes.get(mediaType);
 		if(format != null) {
-			try {				
+			try {
 				response.setStatus(HttpServletResponse.SC_OK);
 				response.setHeader("Access-Control-Allow-Origin", "*");
 				response.setContentType(mediaType + ";charset=utf-8");
 				response.setHeader("Cache-Control", "public, max-age=0");
-				
+
 				exportService.exportOntology(ontologyName, response.getOutputStream(), format,
 						includeNonPublicXrefs);
 			} catch(OntologyNotFoundException e) {
@@ -344,7 +344,7 @@ public class OntologiesServlet extends HttpServlet {
 
 	private String getUsername(HttpServletRequest request) {
 		String authHeader = request.getHeader("Authorization");
-		if (authHeader.startsWith("Bearer ")) {
+        if (authHeader != null && authHeader.startsWith("Bearer ")) {
 			String token = authHeader.substring(7);
 			DecodedJWT jwt = JWT.decode(token);
 			String jsonString = new String(Base64.getDecoder().decode(jwt.getPayload()));
@@ -360,13 +360,14 @@ public class OntologiesServlet extends HttpServlet {
 		}
 	}
 
+	// Because this method is now used for populating the db it should (at present) always return a curator
 	private Curator loadCurator(HttpServletRequest request) {
 		String username = getUsername(request);
 		Curator curator = curatorService.loadByUsername(username);
 		if (curator == null) {
-			log(username + " has logged on, this person is not a curator.");
+		    curatorService.loadByUsername("SYSTEM");
 		}
-
+        log(username + " has posted on the ontologies endpoint.");
 		return curator;
 	}
 

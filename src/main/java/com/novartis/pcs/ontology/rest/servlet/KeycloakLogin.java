@@ -62,10 +62,10 @@ public class KeycloakLogin extends HttpServlet {
     @Resource(lookup = "java:global/keycloak/host")
     private String keycloakHost;
 
-    @Resource(lookup = "java:global/kleycloak/client/secret")
+    @Resource(lookup = "java:global/keycloak/client/secret")
     private String clientSecret;
 
-    @Resource(lookup = "java:global/kleycloak/redirect/uri")
+    @Resource(lookup = "java:global/keycloak/redirect/uri")
     private String keycloakRedirectUri;
 
     @Resource(lookup = "java:global/ontobrowser/entrypoint")
