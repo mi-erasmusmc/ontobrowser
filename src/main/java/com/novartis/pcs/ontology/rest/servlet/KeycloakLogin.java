@@ -18,11 +18,11 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicHeader;
 import org.apache.http.message.BasicNameValuePair;
-import org.apache.http.protocol.HTTP;
 
 import javax.annotation.Resource;
 import javax.ejb.EJB;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -31,6 +31,7 @@ import java.io.UnsupportedEncodingException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Base64;
 import java.util.List;
 import java.util.logging.Level;
@@ -40,10 +41,12 @@ import static com.fasterxml.jackson.databind.DeserializationFeature.FAIL_ON_UNKN
 import static java.nio.charset.StandardCharsets.UTF_8;
 import static javax.ws.rs.core.MediaType.APPLICATION_FORM_URLENCODED;
 import static javax.ws.rs.core.MediaType.APPLICATION_JSON;
+import static org.apache.commons.lang.StringUtils.isEmpty;
 
 @WebServlet("/login")
 public class KeycloakLogin extends HttpServlet {
 
+    private static final String ONTOBROWSER = "ontobrowser";
     private static final String CODE = "code";
     private static final String CLIENT_ID = "client_id";
     private static final String CLIENT_SECRET = "client_secret";
@@ -51,13 +54,29 @@ public class KeycloakLogin extends HttpServlet {
     private static final String REDIRECT_URI = "redirect_uri";
     private static final String ACCEPT = "Accept";
     private static final String CURATOR = "curator";
+    private static final String AUTHORIZATION_CODE = "authorization_code";
+    private static final String KEYCLOAK_TOKEN_PATH = "/auth/realms/KH/protocol/openid-connect/token";
+    private static final String HTTP = "http";
+    private static final String KEYCLOAK_IDENTITY = "KEYCLOAK_IDENTITY";
 
     @Resource(lookup = "java:global/keycloak/host")
     private String keycloakHost;
 
+    @Resource(lookup = "java:global/kleycloak/client/secret")
+    private String clientSecret;
 
-    private Logger logger = Logger.getLogger(getClass().getName());
-    private ObjectMapper mapper = new ObjectMapper().configure(FAIL_ON_UNKNOWN_PROPERTIES, false);
+    @Resource(lookup = "java:global/kleycloak/redirect/uri")
+    private String keycloakRedirectUri;
+
+    @Resource(lookup = "java:global/ontobrowser/entrypoint")
+    private String ontobrowserEntrypoint;
+
+    @Resource(lookup = "java:global/ontobrowser/env")
+    private String environment;
+
+
+    private final Logger logger = Logger.getLogger(getClass().getName());
+    private final ObjectMapper mapper = new ObjectMapper().configure(FAIL_ON_UNKNOWN_PROPERTIES, false);
 
     @EJB
     private OntologyCuratorServiceLocal curatorService;
@@ -91,30 +110,35 @@ public class KeycloakLogin extends HttpServlet {
     }
 
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String code = request.getParameter(CODE);
+        String token = null;
 
-        try (CloseableHttpClient client = HttpClients.createDefault()) {
+        if (!isEmpty(code)) {
+            try (CloseableHttpClient client = HttpClients.createDefault()) {
 
-            HttpPost post = getPost(code);
-            HttpResponse keycloakResp = client.execute(post);
+                HttpPost post = getPost(code);
+                HttpResponse keycloakResp = client.execute(post);
+                token = getTokenFromResponse(keycloakResp);
 
-            String token = getTokenFromResponse(keycloakResp);
-            Curator curator = loadCuratorFromToken(token);
-
-            request.getSession(true).setAttribute(CURATOR, curator);
-            response.sendRedirect("http://localhost:8080");
-
-        } catch (IOException e) {
-            logger.log(Level.WARNING, "Something went wrong requesting the keycloak token: {}", e.getMessage());
-            e.printStackTrace();
+            } catch (IOException e) {
+                logger.log(Level.WARNING, "Something went wrong requesting the keycloak token: {}", e.getMessage());
+                e.printStackTrace();
+            }
+        } else {
+            token = Arrays.stream(request.getCookies())
+                    .filter(c -> c.getName().equalsIgnoreCase(KEYCLOAK_IDENTITY))
+                    .map(Cookie::getValue)
+                    .findFirst().orElse(null);
         }
+        Curator curator = loadCuratorFromToken(token);
+        request.getSession(true).setAttribute(CURATOR, curator);
+        response.sendRedirect(ontobrowserEntrypoint);
     }
 
     private String getTokenFromResponse(HttpResponse keycloakResponse) throws IOException {
 
         String responseString = IOUtils.toString(keycloakResponse.getEntity().getContent(), UTF_8);
-
 
         if (keycloakResponse.getStatusLine().getStatusCode() != 200) {
             String message = String.format("Received a %d %s response from Keycloak after requesting the token with message: %s",
@@ -132,7 +156,7 @@ public class KeycloakLogin extends HttpServlet {
             URI uri = getDevUri();
 
             HttpPost post = new HttpPost(uri);
-            post.setHeader(new BasicHeader(HTTP.CONTENT_TYPE, APPLICATION_FORM_URLENCODED));
+            post.setHeader(new BasicHeader(org.apache.http.protocol.HTTP.CONTENT_TYPE, APPLICATION_FORM_URLENCODED));
             post.setHeader(new BasicHeader(ACCEPT, APPLICATION_JSON));
             post.setEntity(getEntity(code));
 
@@ -147,46 +171,53 @@ public class KeycloakLogin extends HttpServlet {
     private UrlEncodedFormEntity getEntity(String code) throws UnsupportedEncodingException {
         List<NameValuePair> params = new ArrayList<>(5);
 
-        params.add(new BasicNameValuePair(CLIENT_ID, "ontobrowser"));
-        params.add(new BasicNameValuePair(CLIENT_SECRET, "26f5b221-7912-46c0-862d-e3af6e3aa480"));
+        params.add(new BasicNameValuePair(CLIENT_ID, ONTOBROWSER));
+        params.add(new BasicNameValuePair(CLIENT_SECRET, clientSecret));
         params.add(new BasicNameValuePair(CODE, code));
-        params.add(new BasicNameValuePair(GRANT_TYPE, "authorization_code"));
-        params.add(new BasicNameValuePair(REDIRECT_URI, "http://localhost:8080/login"));
+        params.add(new BasicNameValuePair(GRANT_TYPE, AUTHORIZATION_CODE));
+        params.add(new BasicNameValuePair(REDIRECT_URI, keycloakRedirectUri));
 
         return new UrlEncodedFormEntity(params);
     }
 
     private URI getDevUri() throws URISyntaxException {
         return new URIBuilder()
-                .setScheme("http")
+                .setScheme(HTTP)
                 .setHost(keycloakHost)
-                .setPath("/auth/realms/KH/protocol/openid-connect/token")
+                .setPath(KEYCLOAK_TOKEN_PATH)
                 .build();
     }
 
     private Curator loadCuratorFromToken(String token) {
-        DecodedJWT jwt = JWT.decode(token);
-        String jsonString = new String(Base64.getDecoder().decode(jwt.getPayload()));
         Curator curator = null;
 
-        try {
-            KeycloakTokenPayload payload = mapper.readValue(jsonString, KeycloakTokenPayload.class);
-            String username = payload.getUsername();
-            if (payload.containsCuratorRole()) {
-                curator = curatorService.loadByUsername(username);
-                if (curator == null) {
-                    logger.info("Creating new curator: " + username);
-                    curator = new Curator(username, curatorService.loadByUsername("SYSTEM"));
-                    curatorService.save(curator);
+        if (!isEmpty(token)) {
+            DecodedJWT jwt = JWT.decode(token);
+            String jsonString = new String(Base64.getDecoder().decode(jwt.getPayload()));
+
+            try {
+                KeycloakTokenPayload payload = mapper.readValue(jsonString, KeycloakTokenPayload.class);
+                String username = payload.getUsername();
+                if (payload.containsCuratorRole()) {
+                    curator = curatorService.loadByUsername(username);
+                    if (curator == null) {
+                        logger.info("Creating new curator: " + username);
+                        curator = new Curator(username, curatorService.loadByUsername("SYSTEM"));
+                        curatorService.save(curator);
+                    }
+                } else {
+                    logger.log(Level.WARNING, "No curator loaded. User [" + payload.getUsername() + "] does not have curator permission");
                 }
-            } else {
-                logger.log(Level.WARNING, "No curator loaded. User [" + payload.getUsername() + "] does not have curator permission");
+            } catch (IOException e) {
+                // TODO: return bad request
+                logger.log(Level.WARNING, "Received request with malformed token payload: " + jsonString);
+            } catch (InvalidEntityException e) {
+                logger.log(Level.WARNING, "Something went wrong trying to store a new curator for: " + jsonString);
             }
-        } catch (IOException e) {
-            // TODO: return bad request
-            logger.log(Level.WARNING, "Received request with malformed token payload: " + jsonString);
-        } catch (InvalidEntityException e) {
-            logger.log(Level.WARNING, "Something went wrong trying to store a new curator for: " + jsonString);
+            // For local development we can circumvent keycloak and load System as our curator
+        } else if (environment.equals("LOCAL")) {
+            logger.log(Level.INFO, "Loading curator [SYSTEM] for local development");
+            curator = curatorService.loadByUsername("SYSTEM");
         }
         return curator;
     }

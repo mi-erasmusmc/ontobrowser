@@ -34,7 +34,7 @@ mkdir -p "wildfly-14.0.1.Final/modules/system/layers/base/com/mysql/main"
 #	cp "../wildfly_mysql_config/standalone.xml" "wildfly-14.0.1.Final/modules/system/layers/base/com/mysql/main/standalone.xml"
 #else
  	echo "Downloading standalone WildFly configuration" 
-	curl -# -Lo "wildfly-14.0.1.Final/standalone/configuration/standalone.xml" https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/wildfly_mysql_config/standalone.xml
+	curl -# -Lo "wildfly-14.0.1.Final/standalone/configuration/standalone.xml" https://raw.githubusercontent.com/nikhitajatain/ontobrowser/master/wildfly_mysql_config/standalone-local.xml
 #fi
 
 mkdir -p "wildfly-14.0.1.Final/standalone/deployments"
