@@ -15,7 +15,8 @@ The OntoBrowser tool was developed to manage ontologies (and controlled terminol
 * Full curator audit trail/history
 
 # Documentation
-* [Build and Deploy](doc/INSTALL.md)
+* [Build and Deploy (Docker)](doc/docker_install.md)
+* [Build and Deploy (Local)](doc/install.md) (no longer maintained)
 * [Approval Workflow](doc/approval_workflow.pdf)
 * [Web Services](doc/web_services.md)
 * [Database Design](doc/database_design.pdf)

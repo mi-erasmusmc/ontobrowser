@@ -1,0 +1,49 @@
+version: "3.8"
+
+services:
+
+  web:
+    container_name: ontobrowser
+    build: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      OB_DATASOURCE_PASSWORD: "root"
+      OB_DATASOURCE_USERNAME: "root"
+      OB_DATASOURCE_URL: "jdbc:mysql://host.docker.internal:3306/ontobrowser"
+      KEYCLOAK_REDIRECT_URI: "http://localhost:8080/login"
+      KEYCLOAK_CLIENT_SECRET: "**********"
+      KEYCLOAK_TOKEN_URI: "http://host.docker.internal:8090/auth/realms/KH/protocol/openid-connect/token"
+
+  db:
+    # TODO: Match MySQL version to version used in production
+    image: mysql:latest
+    container_name: ontobrowser_db
+    volumes:
+      - db_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: ontobrowser
+    healthcheck:
+      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
+      timeout: 10s
+      retries: 6
+
+  # Keycloak is not necessary to run ontobrowser but is used in the eTransafe environment to grant permissions to curators
+  # It is here for in case you need to work authorization and authentication.
+  keycloak:
+    image: jboss/keycloak:11.0.2
+    container_name: etransafe_keycloak
+    ports:
+      - "8090:8080"
+    environment:
+      KEYCLOAK_USER: "admin"
+      KEYCLOAK_PASSWORD: "admin"
+
+volumes:
+  db_data:

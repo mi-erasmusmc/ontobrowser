@@ -13,7 +13,6 @@ import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpPost;
-import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicHeader;
@@ -28,8 +27,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
-import java.net.URI;
-import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Base64;
@@ -46,7 +43,7 @@ import static org.apache.commons.lang.StringUtils.isEmpty;
 @WebServlet("/login")
 public class KeycloakLogin extends HttpServlet {
 
-    private static final String ONTOBROWSER = "ontobrowser";
+    private static final String KNOWLEDGE_HUB = "knowledge-hub";
     private static final String CODE = "code";
     private static final String CLIENT_ID = "client_id";
     private static final String CLIENT_SECRET = "client_secret";
@@ -55,21 +52,16 @@ public class KeycloakLogin extends HttpServlet {
     private static final String ACCEPT = "Accept";
     private static final String CURATOR = "curator";
     private static final String AUTHORIZATION_CODE = "authorization_code";
-    private static final String KEYCLOAK_TOKEN_PATH = "/auth/realms/KH/protocol/openid-connect/token";
-    private static final String HTTP = "http";
     private static final String KEYCLOAK_IDENTITY = "KEYCLOAK_IDENTITY";
 
-    @Resource(lookup = "java:global/keycloak/host")
-    private String keycloakHost;
+    @Resource(lookup = "java:global/keycloak/token/uri")
+    private String tokenUri;
 
     @Resource(lookup = "java:global/keycloak/client/secret")
     private String clientSecret;
 
     @Resource(lookup = "java:global/keycloak/redirect/uri")
     private String keycloakRedirectUri;
-
-    @Resource(lookup = "java:global/ontobrowser/entrypoint")
-    private String ontobrowserEntrypoint;
 
     @Resource(lookup = "java:global/ontobrowser/env")
     private String environment;
@@ -133,7 +125,7 @@ public class KeycloakLogin extends HttpServlet {
         }
         Curator curator = loadCuratorFromToken(token);
         request.getSession(true).setAttribute(CURATOR, curator);
-        response.sendRedirect(ontobrowserEntrypoint);
+        response.sendRedirect("/");
     }
 
     private String getTokenFromResponse(HttpResponse keycloakResponse) throws IOException {
@@ -153,16 +145,15 @@ public class KeycloakLogin extends HttpServlet {
 
     private HttpPost getPost(String code) {
         try {
-            URI uri = getDevUri();
 
-            HttpPost post = new HttpPost(uri);
+            HttpPost post = new HttpPost(tokenUri);
             post.setHeader(new BasicHeader(org.apache.http.protocol.HTTP.CONTENT_TYPE, APPLICATION_FORM_URLENCODED));
             post.setHeader(new BasicHeader(ACCEPT, APPLICATION_JSON));
             post.setEntity(getEntity(code));
 
             return post;
 
-        } catch (URISyntaxException | IOException e) {
+        } catch (IOException e) {
             logger.log(Level.WARNING, "Something went wrong creating the token request: {}", e.getMessage());
             throw new RuntimeException(e);
         }
@@ -171,7 +162,7 @@ public class KeycloakLogin extends HttpServlet {
     private UrlEncodedFormEntity getEntity(String code) throws UnsupportedEncodingException {
         List<NameValuePair> params = new ArrayList<>(5);
 
-        params.add(new BasicNameValuePair(CLIENT_ID, ONTOBROWSER));
+        params.add(new BasicNameValuePair(CLIENT_ID, KNOWLEDGE_HUB));
         params.add(new BasicNameValuePair(CLIENT_SECRET, clientSecret));
         params.add(new BasicNameValuePair(CODE, code));
         params.add(new BasicNameValuePair(GRANT_TYPE, AUTHORIZATION_CODE));
@@ -180,13 +171,6 @@ public class KeycloakLogin extends HttpServlet {
         return new UrlEncodedFormEntity(params);
     }
 
-    private URI getDevUri() throws URISyntaxException {
-        return new URIBuilder()
-                .setScheme(HTTP)
-                .setHost(keycloakHost)
-                .setPath(KEYCLOAK_TOKEN_PATH)
-                .build();
-    }
 
     private Curator loadCuratorFromToken(String token) {
         Curator curator = null;
