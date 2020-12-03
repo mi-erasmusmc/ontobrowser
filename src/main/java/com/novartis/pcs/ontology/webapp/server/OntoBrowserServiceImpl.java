@@ -59,8 +59,6 @@ import java.util.List;
 import java.util.Set;
 import java.util.logging.Logger;
 
-import static org.apache.commons.lang.StringUtils.isEmpty;
-
 /**
  * The server side implementation of the RPC service.
  */
@@ -124,10 +122,6 @@ public class OntoBrowserServiceImpl extends RemoteServiceServlet implements
 
 	@Override
 	public Term loadTerm(String referenceId) {
-		// Deal with buggyness when loading reference ids passed by GWT History
-		if (isEmpty(referenceId)) {
-			referenceId = DEFAULT_TERM;
-		}
 		return termService.loadByReferenceId(referenceId);
 	}
 		

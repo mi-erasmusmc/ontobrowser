@@ -34,16 +34,17 @@ services:
       timeout: 10s
       retries: 6
 
-  # Keycloak is not necessary to run ontobrowser but is used in the eTransafe environment to grant permissions to curators
-  # It is here for in case you need to work authorization and authentication.
-  keycloak:
-    image: jboss/keycloak:11.0.2
-    container_name: etransafe_keycloak
-    ports:
-      - "8090:8080"
-    environment:
-      KEYCLOAK_USER: "admin"
-      KEYCLOAK_PASSWORD: "admin"
+  # Keycloak is not necessary to run Ontobrowser but is used in the eTransafe AWS environment to grant permissions to curators
+  # It is here in case you need to work authorization and authentication flows.
+
+#  keycloak:
+#    image: jboss/keycloak:11.0.2
+#    container_name: etransafe_keycloak
+#    ports:
+#      - "8090:8080"
+#    environment:
+#      KEYCLOAK_USER: "admin"
+#      KEYCLOAK_PASSWORD: "admin"
 
 volumes:
   db_data:

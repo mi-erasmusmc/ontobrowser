@@ -17,11 +17,6 @@ limitations under the License.
 */
 package com.novartis.pcs.ontology.webapp.client;
 
-import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.dom.client.Style.Unit;
@@ -64,6 +59,11 @@ import com.novartis.pcs.ontology.webapp.client.view.SearchOptionsView;
 import com.novartis.pcs.ontology.webapp.client.view.SearchResultsView;
 import com.novartis.pcs.ontology.webapp.client.view.TermDetailsView;
 import com.novartis.pcs.ontology.webapp.client.view.TermSynonymsView;
+
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
 
 /**
  * Entry point classes define <code>onModuleLoad()</code>.
@@ -126,8 +126,7 @@ public class OntoBrowser implements EntryPoint, ValueChangeHandler<String> {
 			public void onSuccess(List<Term> terms) {
 				createMenus(terms);
 
-				// If the application starts with no history token,
-				// or the keycloak params are getting int the way, redirect to a new initial state.
+				// If the application starts with no history token redirect to a new initial state.
 				if (!terms.isEmpty() && !isValidHistoryToken(historyToken)) {
 					History.newItem(terms.get(0).getReferenceId());
 				}
@@ -144,35 +143,31 @@ public class OntoBrowser implements EntryPoint, ValueChangeHandler<String> {
 	@Override
 	public void onValueChange(ValueChangeEvent<String> event) {
 		String historyToken = event.getValue();
-		if (!isValidHistoryToken(historyToken)) {
-			historyToken = DEFAULT_TERM;
-		}
-		final String term = historyToken;
-		GWT.log("History token: " + historyToken);
-		service.loadTerm(term, new AsyncCallback<Term>() {
-			public void onFailure(Throwable caught) {
-				GWT.log("Failed to load term: " + term, caught);
-				ErrorView.instance().onUncaughtException(caught);
-			}
-
-			public void onSuccess(Term term) {
-				if (term != null) {
-					boolean codelist = term.getOntology().isCodelist();
-					layoutViews(codelist);
-
-					for (MenuItem menuItem : ontologyMenuItems) {
-						menuItem.setEnabled(!codelist);
-					}
-					eventBus.fireEvent(new ViewTermEvent(term));
+		if (isValidHistoryToken(historyToken)) {
+			GWT.log("History token: " + historyToken);
+			service.loadTerm(historyToken, new AsyncCallback<Term>() {
+				public void onFailure(Throwable caught) {
+					GWT.log("Failed to load term: " + historyToken, caught);
+					ErrorView.instance().onUncaughtException(caught);
 				}
-			}
-		});
+
+				public void onSuccess(Term term) {
+					if (term != null) {
+						boolean codelist = term.getOntology().isCodelist();
+						layoutViews(codelist);
+
+						for (MenuItem menuItem : ontologyMenuItems) {
+							menuItem.setEnabled(!codelist);
+						}
+						eventBus.fireEvent(new ViewTermEvent(term));
+					}
+				}
+			});
+		}
 	}
 
 	private boolean isValidHistoryToken(String historyToken) {
-		return historyToken == null
-				|| historyToken.isEmpty()
-				|| historyToken.trim().isEmpty();
+		return historyToken != null && !historyToken.isEmpty();
 	}
 
 	private void layoutViews(boolean isCodelist) {
