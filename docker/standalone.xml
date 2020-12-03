@@ -161,20 +161,6 @@
                         <idle-timeout-minutes>5</idle-timeout-minutes>
                     </timeout>
                 </datasource>
-                <!--<datasource jndi-name="java:/MySqlDS" pool-name="MySqlDS">
-                    <connection-url>jdbc:mysql://localhost:3306/mysqldb</connection-url>
-                    <driver-class>com.mysql.jdbc.Driver</driver-class>
-                    <driver>mysql-connector-java-8.0.13.jar</driver>
-                    <security>
-                        <user-name>root</user-name>
-                        <password>root</password>
-                    </security>
-                    <validation>
-                        <valid-connection-checker class-name="org.jboss.jca.adapters.jdbc.extensions.mysql.MySQLValidConnectionChecker"/>
-                        <background-validation>true</background-validation>
-                        <exception-sorter class-name="org.jboss.jca.adapters.jdbc.extensions.mysql.MySQLExceptionSorter"/>
-                    </validation>
-                </datasource>-->
                 <drivers>
                     <driver name="com.mysql" module="com.mysql">
                         <xa-datasource-class>com.mysql.cj.jdbc.MysqlXADataSource</xa-datasource-class>
@@ -496,7 +482,7 @@
         <subsystem xmlns="urn:jboss:domain:undertow:7.0" default-server="default-server" default-virtual-host="default-host" default-servlet-container="default" default-security-domain="other">
             <buffer-cache name="default"/>
             <server name="default-server">
-             <ajp-listener name="ajp-default" socket-binding="ajp" />               
+             <ajp-listener name="ajp-default" socket-binding="ajp" />
              <http-listener name="default" socket-binding="http" redirect-socket="https" enable-http2="true"/>
                 <https-listener name="https" socket-binding="https" security-realm="ApplicationRealm" enable-http2="true"/>
                 <host name="default-host" alias="localhost">
@@ -544,12 +530,4 @@
             <remote-destination host="localhost" port="25"/>
         </outbound-socket-binding>
     </socket-binding-group>
-    <!--<deployments>
-        <deployment name="mysql-connector-java-8.0.13.jar" runtime-name="mysql-connector-java-8.0.13.jar">
-            <content sha1="953696f04371daccaeffa0c858df021ae3e85e31"/>
-        </deployment>
-        <deployment name="jboss-modules.jar" runtime-name="jboss-modules.jar">
-            <content sha1="78fab247226a5c3bd7a21043c82dc87145c7234c"/>
-        </deployment>
-    </deployments>-->
 </server>

@@ -1,54 +1,40 @@
 ##Local development using Docker
-This is how you can use Docker to run Ontobrowser.
+This is how you can easily use Docker to run Ontobrowser.
 
-All commands below presume your present working directory is the docker folder
+Required:\
+Docker - https://docs.docker.com/get-docker/\
+Maven - https://maven.apache.org/download.cgi\
+Make - https://www.gnu.org/software/make/ Note: it is pre installed with Mac command line tools enter ```make -v``` to check
 
-Start Ontobrowser and a mysql database
-```bash
-$ docker-compose up
-```
+Run these commands from the project root where the Makefile is located (if you want to see what the commands do, look there also)
+To start Ontobrowser and a mysql database
+```make up```
+
+First time round this will take a couple of minutes to download everything you need.
 
 The database is now running on localhost:3306 with username root and password root.
 The application runs on localhost:8080
 
-That was easy...
+That was easy ... first time round the deployment of the Ontobrowser in Wildfly will fail because the db has not yet been created.
+use ```make db-init```. The db is now persisted in a volume and until you remove it will stay there. The app will restart automagically.
 
-...First time round the deployment of the Ontobrowser in Wildfly will fail because the db has not yet been initialized.
-Run the create_db.sql file either in workbench or from the commandline
-```bash
-$ docker cp ../db/db_create.sql ontobrowser_db:/
-$ docker exec -it ontobrowser_db /bin/bash -c 'mysql -u root -proot </db_create.sql'
-```
+You are good to go ```make up``` wil do the job each time you need to start.
 
-You are now good to go and docker-compose up will do the job :-)
+To redeploy the changed code into the containerized Wildfly you need to do a Maven clean package and replace the .war file in your running container with the newly created one.
+This will automatically kickstart the whole thing. Use this command:
+```make build-deploy```
 
-To redeploy in the containerized Wildfly do a Maven clean package and replace the .war file in your running container with the newly created one.
-This will automatically kickstart the whole thing.
-```bash
-$ mvn clean package
-$ docker cp ../target/ontobrowser.war ontobrowser:/wildfly-14.0.1.Final/standalone/deployments/ROOT.war
-```
+To stop your containers ```make down```
 
-
+For more details about what is happening check the Makefile and the docker-compose.yml.
 
 ##Deployment to AWS Test using Docker 
 At present we only push an image of ontobrowser to ECR (Elastic Container Repository) and GMV handle the rest.
-To do this you need to be have configured the ECR first.
+To do this you need to be have configured in the ECR first.
 
-First make sure sure you are building the latest version of your app, so build the war file and copy it to the docker folder.
+```make build-push-image version="<version number>"```
 
-```bash
-$ mvn clean package
-$ cp ../target/ontobrowser.war ./
-```
+This builds the current version of your app, copies it to the docker folder.
+it then builds the image and pushes it to the AWS test env.
 
-Then build the image and push it to the AWS test env
-
-```bash
-$ docker build -t etransafe/test-app:version .
-$ docker tag test-app:version 393732904747.dkr.ecr.eu-west-1.amazonaws.com/etransafe/test-app:version
-$ docker push 393732904747.dkr.ecr.eu-west-1.amazonaws.com/etransafe/test-app:version
-```
-
-Contact GMV (Enric) to release the image
-
+Contact GMV (Enric) to release the image.
