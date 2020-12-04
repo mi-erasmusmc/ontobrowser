@@ -17,15 +17,14 @@ limitations under the License.
 */
 package com.novartis.pcs.ontology.entity;
 
-import static javax.persistence.GenerationType.SEQUENCE;
-import static javax.persistence.GenerationType.IDENTITY;
-
-import java.io.Serializable;
+import com.google.gwt.user.client.rpc.IsSerializable;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
-import javax.persistence.SequenceGenerator;
+import java.io.Serializable;
+
+import static javax.persistence.GenerationType.IDENTITY;
 
 /**
  * EJB3 entity bean base class for all ontology entities
@@ -34,7 +33,7 @@ import javax.persistence.SequenceGenerator;
  */
 
 @MappedSuperclass
-public abstract class AbstractEntity implements Serializable {
+public abstract class AbstractEntity implements Serializable, IsSerializable {
 	private static final long serialVersionUID = 1L;
 	
 	@Id

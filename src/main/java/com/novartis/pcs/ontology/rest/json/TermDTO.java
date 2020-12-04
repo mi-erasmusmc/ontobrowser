@@ -35,7 +35,7 @@ public class TermDTO {
 	
 	static {
 		InitialContext context = null;
-		URL url = null;		
+		URL url = null;
 		try {
 			context = new InitialContext();
 			url = (URL)context.lookup("java:global/ontobrowser/url");
@@ -46,7 +46,7 @@ public class TermDTO {
 				try {
 					context.close();
 				} catch(Throwable t) {
-					
+
 				}
 			}
 		}

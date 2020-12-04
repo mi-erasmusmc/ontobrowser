@@ -4,8 +4,7 @@ public class CodelistObo {
 		// TODO Auto-generated method stub
 
 		final String dir = System.getProperty("user.dir");
-        System.out.println("current dir = " + dir);
-        
+
         new TermsOboConverter("C66729").convertObo();
         new TermsOboConverter("C66732").convertObo();
         new TermsOboConverter("C67154").convertObo();

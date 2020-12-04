@@ -153,8 +153,8 @@
                         <max-pool-size>20</max-pool-size>
                     </pool>
                     <security>
-                        <user-name>${env.OB_DATASOURCE_PASSWORD}</user-name>
-                        <password>${env.OB_DATASOURCE_USERNAME}</password>
+                        <user-name>${env.OB_DATASOURCE_USERNAME}</user-name>
+                        <password>${env.OB_DATASOURCE_PASSWORD}</password>
                     </security>
                     <timeout>
                         <blocking-timeout-millis>5000</blocking-timeout-millis>

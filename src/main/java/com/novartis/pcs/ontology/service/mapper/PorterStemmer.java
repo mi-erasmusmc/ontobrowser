@@ -519,7 +519,6 @@ class PorterStemmer
           }
           else {
              s.stem();
-             System.out.print(s.toString());
              s.reset();
              if (ch < 0)
                break;

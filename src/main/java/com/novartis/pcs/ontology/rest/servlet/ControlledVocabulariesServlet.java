@@ -24,7 +24,7 @@ import java.util.Collections;
 import static javax.ws.rs.core.MediaType.APPLICATION_JSON;
 import static org.apache.commons.lang.CharEncoding.UTF_8;
 
-@WebServlet("/controlledvocabularies")
+@WebServlet("/cntrldvocabs")
 public class ControlledVocabulariesServlet extends HttpServlet {
 
     @EJB
@@ -42,25 +42,25 @@ public class ControlledVocabulariesServlet extends HttpServlet {
     }
 
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) {
-        response.setStatus(HttpServletResponse.SC_METHOD_NOT_ALLOWED);
-        response.setContentLength(0);
-    }
-
-    @Override
     protected void doDelete(HttpServletRequest req, HttpServletResponse resp) {
         resp.setStatus(HttpServletResponse.SC_METHOD_NOT_ALLOWED);
         resp.setContentLength(0);
     }
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) {
+    protected void doPut(HttpServletRequest req, HttpServletResponse resp) {
         resp.setStatus(HttpServletResponse.SC_METHOD_NOT_ALLOWED);
         resp.setContentLength(0);
     }
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) {
+        log("Received controlled vocabulary get request");
+    }
+
+
 
     @Override
-    protected void doPut(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         log("Received controlled vocabulary import request");
         String mediaType = getExpectedMediaType(request);
         String encoding = StringUtils.trimToNull(request.getCharacterEncoding());

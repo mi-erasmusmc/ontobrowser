@@ -44,6 +44,7 @@ import com.novartis.pcs.ontology.service.graph.OntologyGraphServiceLocal;
 import com.novartis.pcs.ontology.service.search.OntologySearchServiceLocal;
 import com.novartis.pcs.ontology.service.search.result.HTMLSearchResult;
 import com.novartis.pcs.ontology.service.search.result.InvalidQuerySyntaxException;
+import com.novartis.pcs.ontology.service.util.ContextRemoteServiceServlet;
 import com.novartis.pcs.ontology.service.util.TermNameComparator;
 import com.novartis.pcs.ontology.webapp.client.OntoBrowserService;
 
@@ -65,9 +66,8 @@ import java.util.logging.Logger;
 
 @WebServlet("/ontobrowser/service")
 @SuppressWarnings("serial")
-public class OntoBrowserServiceImpl extends RemoteServiceServlet implements
+public class OntoBrowserServiceImpl extends ContextRemoteServiceServlet implements
 		OntoBrowserService {
-	public static final String DEFAULT_TERM = "MC:0000001";
 	private Logger logger = Logger.getLogger(getClass().getName());
 	private ObjectMapper mapper = new ObjectMapper().configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 	
