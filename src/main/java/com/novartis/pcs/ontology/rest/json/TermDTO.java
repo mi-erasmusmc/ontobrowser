@@ -17,20 +17,26 @@ limitations under the License.
 */
 package com.novartis.pcs.ontology.rest.json;
 
-import java.net.URL;
-
-import javax.naming.InitialContext;
-
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.novartis.pcs.ontology.entity.Ontology;
 import com.novartis.pcs.ontology.entity.Term;
+import org.apache.commons.lang.StringUtils;
+
+import javax.naming.InitialContext;
+import java.net.URL;
+import java.util.List;
 
 public class TermDTO {
-	private String ontology;
+	@JsonProperty("term_id")
 	private String termId;
+	@JsonProperty("term_name")
 	private String termName;
+	@JsonProperty("term_url")
 	private String termUrl;
+	@JsonProperty("term_status")
 	private String termStatus;
-		
+	private String ontology;
+
 	private static final URL baseURL;
 	
 	static {
@@ -38,14 +44,15 @@ public class TermDTO {
 		URL url = null;
 		try {
 			context = new InitialContext();
-			url = (URL)context.lookup("java:global/ontobrowser/url");
-		} catch(Throwable t) {
+			// Using the keycloak login url and will trim the 'login', not very clean, but it suffices.
+			url = (URL)context.lookup("java:global/keycloak/redirect/uri");
+		} catch(Exception e) {
 			url = null;
 		} finally {
 			if(context != null) {
 				try {
 					context.close();
-				} catch(Throwable t) {
+				} catch(Exception ignored) {
 
 				}
 			}
@@ -59,8 +66,7 @@ public class TermDTO {
 		this.ontology = ontology.getName();
 		this.termId = term.getReferenceId();
 		this.termName = term.getName();
-		this.termUrl = baseURL != null ? 
-				baseURL.toString() + "index.html#" + term.getReferenceId() : null;
+		this.termUrl = buildTermUrl(term.getReferenceId());
 		this.termStatus = term.getStatus().toString();
 	}
 
@@ -82,5 +88,15 @@ public class TermDTO {
 
 	public String getTermStatus() {
 		return termStatus;
+	}
+
+	private String buildTermUrl(String refId) {
+		if (baseURL != null) {
+			String baseUrlString = baseURL.toString();
+			if (!StringUtils.isEmpty(baseUrlString)) {
+				return baseUrlString.substring(0, baseUrlString.length() - 5) + "index.html#" + refId;
+			}
+		}
+		return null;
 	}
 }

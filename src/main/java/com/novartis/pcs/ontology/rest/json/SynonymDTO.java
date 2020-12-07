@@ -17,18 +17,25 @@ limitations under the License.
 */
 package com.novartis.pcs.ontology.rest.json;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.novartis.pcs.ontology.entity.ControlledVocabulary;
 import com.novartis.pcs.ontology.entity.ControlledVocabularyTerm;
 import com.novartis.pcs.ontology.entity.Datasource;
 import com.novartis.pcs.ontology.entity.Synonym;
 
 public class SynonymDTO extends TermDTO {
-	private String synonymId;
-	private String synonym;
-	private String synonymType;
-	private String synonymStatus;
+	@JsonProperty("data_source_acronym")
 	private String datasource;
+	@JsonProperty("cntrldvocab")
 	private String vocabulary;
+	private String synonym;
+	@JsonProperty("synonym_id")
+	private String synonymId;
+	@JsonProperty("synonym_type")
+	private String synonymType;
+	@JsonProperty("synonym_status")
+	private String synonymStatus;
+
 		
 	public SynonymDTO(Synonym synonym) {
 		super(synonym.getTerm());

@@ -130,7 +130,7 @@ public class OntologySynonymServiceImpl extends OntologyService implements Ontol
 		for(ControlledVocabularyTerm term : terms) {
 			term = vocabTermDAO.load(term.getId());
 			if(term != null && !term.isExcluded()) {
-				Collection<Synonym> synonyms = synonymDAO.loadByCtrldVocabTermId(term);
+				Collection<Synonym> synonyms = synonymDAO.loadByCtrldVocabTerm(term);
 				for(Synonym synonym : synonyms) {
 					if(StatusChecker.isValid(synonym)) {
 						throw new InvalidEntityException(term, "Cannot exclude previously mapped vocabulary term");

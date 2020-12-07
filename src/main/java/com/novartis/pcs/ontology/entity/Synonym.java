@@ -61,26 +61,36 @@ import com.novartis.pcs.ontology.entity.util.UrlParser;
 					+ " inner join t.controlledVocabulary as v"
 					+ " where v.datasource = :datasource)",
 				hints={ @QueryHint(name="org.hibernate.cacheable", value="true") }),
-		@NamedQuery(name=Synonym.QUERY_BY_CTRLD_VOCAB_REF_ID,
+		@NamedQuery(name=Synonym.QUERY_BY_CTRLD_VOCAB_REF_ID_AND_DATASOURCE,
 				query="select s from Synonym as s"
 					+ " where s.controlledVocabularyTerm in (select t.id"
 					+ " from ControlledVocabularyTerm as t"
 					+ " inner join t.controlledVocabulary as v"
 					+ " where v.datasource = :datasource"
 					+ " and v.referenceId = :referenceId)",
+				hints={ @QueryHint(name="org.hibernate.cacheable", value="true") }),
+		@NamedQuery(name=Synonym.QUERY_BY_CTRLD_VOCAB_REF_ID,
+				query="select s from Synonym as s"
+						+ " where s.controlledVocabularyTerm in (select t.id"
+						+ " from ControlledVocabularyTerm as t"
+						+ " inner join t.controlledVocabulary as v"
+						+ " where v.referenceId = :referenceId)",
 				hints={ @QueryHint(name="org.hibernate.cacheable", value="true") })
 })
 public class Synonym extends VersionedEntity implements ReplaceableEntity<Synonym>, Comparable<Synonym> {
 	private static final long serialVersionUID = 1L;
 
-	public enum Type {BROAD, EXACT, NARROW, RELATED};
+	public enum Type {BROAD, EXACT, NARROW, RELATED}
 	
 	public static final String QUERY_BY_TERM_REF_ID = "Synonym.loadByTermRefId";
-	public static final String QUERY_BY_CTRLD_VOCAB_TERM = "Synonym.loadByCtrldVocabTermId";
+	public static final String QUERY_BY_CTRLD_VOCAB_TERM = "Synonym.loadByCtrldVocabTerm";
 	public static final String QUERY_BY_SYNONYM = "Synonym.loadBySynonym";
 	public static final String QUERY_BY_DATASOURCE = "Synonym.loadByDatasource";
 	public static final String QUERY_BY_CTRLD_VOCAB_REF_ID = "Synonym.loadByCtrldVocabRefId";
-	
+	public static final String QUERY_BY_CTRLD_VOCAB_REF_ID_AND_DATASOURCE = "Synonym.loadByCtrldVocabRefIdAndDataSource";
+
+
+
 	@NotNull
 	@Valid
 	@ManyToOne(optional=false)

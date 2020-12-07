@@ -23,7 +23,7 @@ services:
     image: mysql:latest
     container_name: ontobrowser_db
     volumes:
-      - db_data:/var/lib/mysql
+      - ontobrowser_db_data:/var/lib/mysql
     ports:
       - "3306:3306"
     environment:
@@ -33,6 +33,8 @@ services:
       test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
       timeout: 10s
       retries: 6
+    cap_add:
+      - SYS_NICE  # Hides the 'mbind not permitted' warning from the logs
 
   # Keycloak is not necessary to run Ontobrowser but is used in the eTransafe AWS environment to grant permissions to curators
   # It is here in case you need to work authorization and authentication flows.
@@ -47,4 +49,4 @@ services:
 #      KEYCLOAK_PASSWORD: "admin"
 
 volumes:
-  db_data:
+  ontobrowser_db_data:

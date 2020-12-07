@@ -51,7 +51,7 @@ public class SynonymDAO extends VersionedEntityDAO<Synonym>
 	
 	@Override
 	@SuppressWarnings("unchecked")
-	public Collection<Synonym> loadByCtrldVocabTermId(ControlledVocabularyTerm ctrldVocabTerm) {
+	public Collection<Synonym> loadByCtrldVocabTerm(ControlledVocabularyTerm ctrldVocabTerm) {
 		Query query = entityManager.createNamedQuery(Synonym.QUERY_BY_CTRLD_VOCAB_TERM);
 		query.setParameter("ctrldVocabTerm", ctrldVocabTerm);
 		return query.getResultList();
@@ -75,9 +75,17 @@ public class SynonymDAO extends VersionedEntityDAO<Synonym>
 	
 	@Override
 	@SuppressWarnings("unchecked")
-	public Collection<Synonym> loadByCtrldVocabRefId(Datasource datasource, String referenceId) {
-		Query query = entityManager.createNamedQuery(Synonym.QUERY_BY_CTRLD_VOCAB_REF_ID);
+	public Collection<Synonym> loadByCtrldVocabRefIdAndDataSource(Datasource datasource, String referenceId) {
+		Query query = entityManager.createNamedQuery(Synonym.QUERY_BY_CTRLD_VOCAB_REF_ID_AND_DATASOURCE);
 		query.setParameter("datasource", datasource);
+		query.setParameter("referenceId", referenceId);
+		return query.getResultList();
+	}
+
+	@Override
+	@SuppressWarnings("unchecked")
+	public Collection<Synonym> loadByCtrldVocabRefId(String referenceId) {
+		Query query = entityManager.createNamedQuery(Synonym.QUERY_BY_CTRLD_VOCAB_REF_ID_AND_DATASOURCE);
 		query.setParameter("referenceId", referenceId);
 		return query.getResultList();
 	}

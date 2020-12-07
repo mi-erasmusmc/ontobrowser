@@ -1,16 +1,21 @@
 openapi: '3.0.3'
 info:
-  description: 'This API is used to post controlled vocabulaires with unmapped
-   terms and get mapped terms in return.'
-  version: '1.0.0'
-  title: 'Controlled Vocabularies'
+  description: 'This API is used to reach the Ontobrowser, main functionality is to post controlled vocabulaires with unmapped
+   terms and get mapped terms with synonyms.'
+  version: '0.4.0'
+  title: 'Ontobrowser'
   contact:
-    email: 'rparry@erasmusmc.nl'
+    email: 'r.parry@erasmusmc.nl'
 servers:
   - url: 'http://a05f2bb1dd55e4b78b61a78a780a5e5c-96677817.eu-west-1.elb.amazonaws.com/ontobrowser.kh.svc/'
 
 paths:
   /cntrldvocabs:
+    get:
+      summary: 'Find all controlled vocabularies present in the db'
+      responses:
+        200:
+          $ref: '#/components/responses/SimpleControlledVocabularyList'
     post:
       tags:
         - 'controlled vocabularies'
@@ -23,18 +28,63 @@ paths:
             schema:
               $ref: '#/components/schemas/ControlledVocabulary'
       responses:
-        '200':
+        200:
           description: ok
-        '400':
+        400:
           $ref: '#/components/responses/BadRequest'
-        '401':
+        401:
           $ref: '#/components/responses/Unauthorized'
-        '405':
+        405:
           $ref: '#/components/responses/NotFound'
-        '500':
+        500:
+          $ref: '#/components/responses/InternalServerError'
+  /synonyms:
+    get:
+      summary: 'Find synonyms that have been mapped to terms'
+      parameters:
+        - in: query
+          name: data_source_acronym
+          required: false
+          schema:
+            $ref: '#/components/schemas/Datasource'
+        - in: query
+          name: cntrldvocab
+          required: false
+          schema:
+            type: string
+            description: The controlled vocabulary reference id
+        - in: query
+          name: pending
+          required: false
+          schema:
+            type: boolean
+            default: false
+            description: Set to true to include mapped synonyms that have not yet been approved
+      responses:
+        200:
+          $ref: '#/components/responses/Synonyms'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        405:
+          $ref: '#/components/responses/NotFound'
+        500:
           $ref: '#/components/responses/InternalServerError'
 components:
   responses:
+    SimpleControlledVocabularyList:
+      description: List of names and and ids for present controlled vocabularies
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/SimpleControlledVocabularyList'
+    Synonyms:
+      description: List of names terms and synonyms
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schemas/Synonym'
     NotFound:
       description: The specified resource was not found
       content:
@@ -60,6 +110,15 @@ components:
           schema:
             $ref: '#/components/schemas/Error'
   schemas:
+    SimpleControlledVocabularyList:
+      type: array
+      items:
+        type: object
+        properties:
+          name:
+            type: string
+          reference_id:
+            type: string
     ControlledVocabulary:
       type: object
       properties:
@@ -68,18 +127,7 @@ components:
         reference_id:
           type: string
         data_source_acronym:
-          type: string
-          enum:
-            - 'CDISC'
-            - 'SEND'
-            - 'NCI'
-            - 'MedDRA'
-            - 'INHAND'
-            - 'MeSH'
-            - 'SNOMED'
-            - 'VX'
-            - 'EMAPS'
-            - 'ChEMBL'
+          $ref: '#/components/schemas/Datasource'
         context:
           type: string
         domain:
@@ -88,6 +136,28 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/Term'
+    Datasource:
+      type: string
+      example: "SEND"
+      enum:
+        - 'CDISC'
+        - 'SEND'
+        - 'NCI'
+        - 'MedDRA'
+        - 'INHAND'
+        - 'MeSH'
+        - 'SNOMED'
+        - 'VX'
+        - 'EMAPS'
+        - 'ChEMBL'
+    Status:
+      type: string
+      example: "PENDING"
+      enum:
+        - "PENDING"
+        - "APPROVED"
+        - "REJECTED"
+        - "OBSOLETE"
     Domain:
       type: 'object'
       properties:
@@ -104,6 +174,31 @@ components:
           type: string
         reference_id:
           type: string
+    Synonym:
+      type: object
+      properties:
+        term_id:
+          type: string
+        term_name:
+          type: string
+        term_url:
+          type: string
+        term_status:
+          $ref: '#/components/schemas/Status'
+        ontology:
+          type: string
+        data_source_acronym:
+          $ref: '#/components/schemas/Datasource'
+        cntrldvocab:
+          type: string
+        synonym:
+          type: string
+        synonym_id:
+          type: string
+        synonym_type:
+          type: string
+        synonym_status:
+          $ref: '#/components/schemas/Status'
     Error:
       type: object
       properties:

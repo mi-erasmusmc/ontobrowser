@@ -8,7 +8,7 @@ import com.novartis.pcs.ontology.entity.InvalidEntityException;
 import com.novartis.pcs.ontology.rest.json.ErrorResponse;
 import com.novartis.pcs.ontology.rest.json.controlledvocabulary.ControlledVocabularyDTO;
 import com.novartis.pcs.ontology.service.OntologyCuratorServiceLocal;
-import com.novartis.pcs.ontology.service.importer.ControlledVocabularyImportServiceLocal;
+import com.novartis.pcs.ontology.service.importer.ControlledVocabularyServiceLocal;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang.StringUtils;
 
@@ -20,6 +20,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.List;
+import java.util.stream.Collectors;
 
 import static javax.ws.rs.core.MediaType.APPLICATION_JSON;
 import static org.apache.commons.lang.CharEncoding.UTF_8;
@@ -28,7 +30,7 @@ import static org.apache.commons.lang.CharEncoding.UTF_8;
 public class ControlledVocabulariesServlet extends HttpServlet {
 
     @EJB
-    private ControlledVocabularyImportServiceLocal importService;
+    private ControlledVocabularyServiceLocal vocabService;
 
     @EJB
     private OntologyCuratorServiceLocal curatorService;
@@ -52,11 +54,24 @@ public class ControlledVocabulariesServlet extends HttpServlet {
         resp.setStatus(HttpServletResponse.SC_METHOD_NOT_ALLOWED);
         resp.setContentLength(0);
     }
-    @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) {
-        log("Received controlled vocabulary get request");
-    }
 
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        log("Received controlled vocabulary get request");
+        String pathInfo = StringUtils.trimToNull(request.getPathInfo());
+        log(pathInfo);
+        if (pathInfo == null || pathInfo.length() == 1) {
+            log("Loading controlled vocabularies");
+            List<ControlledVocabularyDTO> vocabs = vocabService.loadAll()
+                    .stream()
+                    .map(ControlledVocabularyDTO::mapNameAndReferenceFromEntity)
+                    .collect(Collectors.toList());
+            returnJson(response, vocabs);
+        } else {
+            returnError(response, HttpServletResponse.SC_NOT_IMPLEMENTED, "NOT IMPLEMENTED",
+                    "Additional path params have not been implemented, see the API specs for what is available");
+        }
+    }
 
 
     @Override
@@ -82,7 +97,7 @@ public class ControlledVocabulariesServlet extends HttpServlet {
                 String jsonString = IOUtils.toString(request.getReader());
                 ControlledVocabularyDTO controlledVocab = mapper.readValue(jsonString, ControlledVocabularyDTO.class);
                 log("Started import controlled vocabulary");
-                importService.importControlledVocabulary(controlledVocab, curator);
+                vocabService.importControlledVocabulary(controlledVocab, curator);
                 log("Finished import controlled vocabulary");
                 response.setStatus(HttpServletResponse.SC_ACCEPTED);
             } catch (IOException e) {
@@ -141,5 +156,18 @@ public class ControlledVocabulariesServlet extends HttpServlet {
         response.getWriter().close();
         response.getWriter().flush();
     }
-}
 
+    private void returnJson(HttpServletResponse response, Object objectToReturn) throws IOException {
+        try {
+            String jsonString = mapper.writeValueAsString(objectToReturn);
+            log(jsonString);
+            response.setStatus(HttpServletResponse.SC_OK);
+            response.getWriter().write(jsonString);
+            response.getWriter().close();
+            response.getWriter().flush();
+
+        } catch (IOException e) {
+            returnError(response, HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "INTERNAL SERVER ERROR", "Something went wrong serializing the response");
+        }
+    }
+}

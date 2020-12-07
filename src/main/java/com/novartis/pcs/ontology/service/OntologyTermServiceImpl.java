@@ -159,7 +159,7 @@ public class OntologyTermServiceImpl extends OntologyService implements Ontology
 					+ " ontology/codelist");
 		}
 		
-		Collection<Synonym> duplicates = synonymDAO.loadByCtrldVocabTermId(vocabTerm);
+		Collection<Synonym> duplicates = synonymDAO.loadByCtrldVocabTerm(vocabTerm);
 		for(Synonym duplicate : duplicates) {
 			if(StatusChecker.isValid(duplicate)) {
 				throw new DuplicateEntityException(duplicate, 
@@ -316,7 +316,7 @@ public class OntologyTermServiceImpl extends OntologyService implements Ontology
 		
 		if(synonyms != null) {
 			for(ControlledVocabularyTerm vocabTerm : synonyms) {
-				Collection<Synonym> existingSynonyms = synonymDAO.loadByCtrldVocabTermId(vocabTerm);				
+				Collection<Synonym> existingSynonyms = synonymDAO.loadByCtrldVocabTerm(vocabTerm);
 				for(Synonym existingSynonym : existingSynonyms) {
 					if(StatusChecker.isValid(existingSynonym)) {
 						throw new DuplicateEntityException(existingSynonym, 
